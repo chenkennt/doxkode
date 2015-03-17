@@ -37,9 +37,14 @@
     }
 
     grunt.log.writeln('Building single index.html of mode: ' + mode + ' and config: ' + config);
+    var js = grunt.config('copydest').js;
+    var css = grunt.config('copydest').css;
+    var ext = grunt.config('copydest').ext;
 
-    var ownJsFileFull = grunt.config('concat').dev.dest;
-    var ownJsFileMin = grunt.config('uglify').build.dest;
+    var ownJsFileFull =  grunt.config('concat').js.dest;
+    var ownCssFileFull = grunt.config('concat').css.dest;
+    var ownJsFileMin = grunt.config('uglify').js.dest;
+    var ownCssFileMin = grunt.config('cssmin').target.dest;
 
     function print_script_ref(ref) {
         print('<script type="text/javascript" src="' + ref + '"></script>\n');
@@ -47,7 +52,8 @@
     function print_style_ref(ref) {
         print('<link rel="stylesheet" href="' + ref + '" type="text/css"></link>\n');
     }
-    function print_script_inline(name, content) {
+    function print_script_inline(name, grunt) {
+        var content = grunt.file.read(name)
         if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<script type="text/javascript">');
@@ -56,7 +62,8 @@
         if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
-    function print_style_inline(name, content) {
+    function print_style_inline(name, grunt) {
+        var content = grunt.file.read(name)
         if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<style id="style:' + name + '">');
@@ -65,71 +72,104 @@
         if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
+    function getReferencePath(type, path, grunt){
+      var relPath = path;
+      if (type !== 'css' && type !== 'js' && type !== 'ext'){
+        grunt.log.error('Unsupported type: ' + type);
+      }
+      var i = path.lastIndexOf('/')
+
+      if (i > -1){
+        relPath = path.substr(i + 1);
+      }
+      
+      if (type === 'css'){
+        relPath = css + '/' + relPath;
+      }
+      
+      if (type === 'js'){
+        relPath = js + '/' + relPath;
+      }
+      
+      if (type === 'ext'){
+        relPath = ext + '/' + relPath;
+      }
+
+      grunt.log.writeln('Getting reference path' + relPath + ' for type:' + type + ', path: ' + path + ', index: ' +i);
+
+      return relPath;
+    }
 
     // For CDNs always ref
     for(var i = 0, len = cdnCssFiles.length; i < len; i++) {
-        print_style_ref(cdnCssFiles[i]);
+        print_style_ref(cdnCssFiles[i], grunt);
     }
     for(var i = 0, len = cdnJsFiles.length; i < len; i++) {
-        print_script_ref(cdnJsFiles[i]);
+        print_script_ref(cdnJsFiles[i], grunt);
     }
 
     if (mode === 'inline' && config === 'debug') {
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(unminifiedCssFiles[i]);
-            print_style_inline(unminifiedCssFiles[i], fileContent);
+            print_style_inline(unminifiedCssFiles[i], grunt);
         }
         for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(unminifiedJsFiles[i]);
-            print_script_inline(unminifiedJsFiles[i], fileContent);
+            print_script_inline(unminifiedJsFiles[i], grunt);
         }
 
         // OUR OWN CODE
-        fileContent = grunt.file.read(ownJsFileFull);
-        print_script_inline(ownJsFileFull, fileContent);
+        print_script_inline(ownJsFileFull, grunt);
+        print_style_inline(ownCssFileFull, grunt);
     }
 
     if (mode === 'ref' && config === 'debug') {
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
-            print_style_ref(unminifiedCssFiles[i]);
+            var path = getReferencePath('ext', unminifiedCssFiles[i], grunt);
+            print_style_ref(path, grunt);
         }
         for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
-            print_script_ref(unminifiedJsFiles[i]);
+            var path = getReferencePath('ext', unminifiedJsFiles[i], grunt);
+            print_script_ref(path, grunt);
         }
 
         // OUR OWN CODE
-        print_script_ref(ownJsFileFull);
+        var path = getReferencePath('css', ownCssFileFull, grunt);
+        print_style_ref(path, grunt);
+        path = getReferencePath('js', ownJsFileFull, grunt);
+        print_script_ref(path, grunt);
     }
 
     if (mode === 'inline' && config === 'release') {
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = cssFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(cssFiles[i]);
-            print_style_inline(cssFiles[i], fileContent);
+            print_style_inline(cssFiles[i], grunt);
         }
         for(var i = 0, len = jsFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(jsFiles[i]);
-            print_script_inline(jsFiles[i], fileContent);
+            print_script_inline(jsFiles[i], grunt);
         }
 
         // OUR OWN CODE
-        fileContent = grunt.file.read(ownJsFileMin);
-        print_script_inline(ownJsFileMin, fileContent);
+        print_script_inline(ownJsFileMin, grunt);
+        print_script_inline(ownCssFileMin, grunt);
     }
 
     if (mode === 'ref' && config === 'release') {
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = cssFiles.length; i < len; i++) {
-            print_style_ref(cssFiles[i]);
+            var path = getReferencePath('ext', cssFiles[i], grunt);
+            print_style_ref(path, grunt);
         }
         for(var i = 0, len = jsFiles.length; i < len; i++) {
-            print_style_ref(jsFiles[i]);
+            var path = getReferencePath('ext', jsFiles[i], grunt);
+            print_style_ref(path, grunt);
         }
 
         // OUR OWN CODE
-        print_script_ref(ownJsFileMin);
+        var path = getReferencePath('css', ownCssFileMin, grunt);
+        print_style_ref(path, grunt);
+        path = getReferencePath('js', ownJsFileMin, grunt);
+        print_script_ref(path, grunt);
     }
 %>>
 </head>
