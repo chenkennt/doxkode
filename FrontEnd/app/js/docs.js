@@ -198,8 +198,13 @@ angular.module('DocsController', [])
         repo = repo.substr(0, repo.length-4);
       }
       var linenum = startLine? startLine:item.startLine;
-      var url = repo + '/blob'+'/'+ item.remote.branch+'/'+ item.path+'/#L'+linenum;url = url.replace('\\','/');
-      return url;
+      if (repo.match(/https:\/\/.*\.visualstudio\.com\/.*/g)){
+        // TODO: line not working for vso
+        return repo + '#path=/' + item.path+'&line='+linenum;
+      }
+      if (repo.match(/https:\/\/.*github\.com\/.*/g)){
+        return repo + '/blob'+'/'+ item.remote.branch+'/'+ item.path+'/#L'+linenum;
+      }
     }else{
       return "#";
     }
