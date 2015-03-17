@@ -182,6 +182,7 @@ module.exports = function(grunt) {
         },*/
         debug: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'debug/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'debug/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'debug/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'debug/template/', filter: 'isFile'},
@@ -189,6 +190,7 @@ module.exports = function(grunt) {
         },
         test_roslyn: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'test1/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'test1/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test1/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'test1/template/', filter: 'isFile'},
@@ -197,6 +199,7 @@ module.exports = function(grunt) {
         },
         test_simple: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'test2/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'test2/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test2/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'test2/template/', filter: 'isFile'},
@@ -205,6 +208,7 @@ module.exports = function(grunt) {
         },
         release: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'release/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'release/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: 'release/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'release/template/', filter: 'isFile'},
@@ -212,6 +216,7 @@ module.exports = function(grunt) {
         },
         vsix: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},
@@ -219,6 +224,7 @@ module.exports = function(grunt) {
         },
         vsix_debug: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},

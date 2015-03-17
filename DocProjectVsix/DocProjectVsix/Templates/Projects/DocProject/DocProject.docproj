@@ -20,6 +20,7 @@
     <Folder Include="template"/>
     <Folder Include="Targets"/>
     <None Include="Targets/Microsoft.DocProject.targets" />
+    <None Include="favicon.ico" />
     <Content Include="template/class.tmpl" />
     <Content Include="template/namespace.tmpl" />
     <Content Include="index.html" />

@@ -11,7 +11,7 @@
         content="Docascode with pure client-side JavaScript!">
   <meta name="fragment" content="!">
   <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script type="text/javascript">
     // dynamically add base tag as well as css and javascript files.
     // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
@@ -23,7 +23,7 @@
           production = location.hostname === 'docs.angularjs.org',
           headEl = document.getElementsByTagName('head')[0],
           sync = true;
-    })();  
+    })();
     </script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
@@ -97,7 +97,7 @@
     } else if (task === 'release') {
         fileContent = grunt.file.read(ownJsFileMin);
         print_script_inline(ownJsFileMin, fileContent);
-    } 
+    }
 %>>
 </head>
 <body>
@@ -209,7 +209,7 @@
       </div>
     </section>
 
-    <!-- 
+    <!--
     comment out footer as it is currently having display issue
     <footer class="footer">
       <div class="container">
