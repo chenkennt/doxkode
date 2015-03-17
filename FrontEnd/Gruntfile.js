@@ -1,11 +1,11 @@
-var createIndex = function (grunt, taskname) {
+var createIndex = function (grunt, config, mode) {
     'use strict';
-    var conf = grunt.config('index')[taskname],
+    var conf = grunt.config('index')[config],
     tmpl = grunt.file.read(conf.template);
     var templatesString = grunt.file.read('tmp/templates.html');
     grunt.config.set('templatesString', templatesString);
     // register the task name in global scope so we can access it in the .tmpl file
-    grunt.config.set('currentTask', {name: taskname});
+    grunt.config.set('compileConfig', {mode: mode, config: config});
     var gruntTemplate = grunt.template;
 
     //google-code-prettify/src/prettify.js contains <% %> pair, so use customized delimiters instead
@@ -99,6 +99,14 @@ module.exports = function(grunt) {
         'app/js/angular-bootstrap/bootstrap.min.js',
         'app/js/angular-bootstrap/dropdown-toggle.min.js'
     ],
+    cdnCssFiles: [
+        "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+    ],
+    cdnJsFiles: [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
+    ],
     /* make it use .jshintrc */
     jshint: {
         options: {
@@ -182,6 +190,7 @@ module.exports = function(grunt) {
         },*/
         debug: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'debug/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'debug/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'debug/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'debug/template/', filter: 'isFile'},
@@ -189,6 +198,7 @@ module.exports = function(grunt) {
         },
         test_roslyn: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'test1/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'test1/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test1/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'test1/template/', filter: 'isFile'},
@@ -197,6 +207,7 @@ module.exports = function(grunt) {
         },
         test_simple: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'test2/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'test2/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test2/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'test2/template/', filter: 'isFile'},
@@ -205,6 +216,7 @@ module.exports = function(grunt) {
         },
         release: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: 'release/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: 'release/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: 'release/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'release/template/', filter: 'isFile'},
@@ -212,6 +224,7 @@ module.exports = function(grunt) {
         },
         vsix: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},
@@ -219,6 +232,7 @@ module.exports = function(grunt) {
         },
         vsix_debug: {
           files: [
+            {expand: false,flatten: true, src: ['app/favicon.ico'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/favicon.ico'},
             {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},
@@ -231,18 +245,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
     /*** CUSTOM CODED TASKS ***/
-    grunt.registerTask('index', 'Generate docascode.html, inline all scripts', function() {
-        createIndex(grunt, 'release');
+    grunt.registerTask('index_release_inline', 'Generate docascode.html, inline all scripts', function() {
+        createIndex(grunt, 'release', 'inline');
+    });
+
+    grunt.registerTask('index_release_ref', 'Generate docascode.html, ref all scripts minified', function() {
+        createIndex(grunt, 'release', 'ref');
     });
 
     /*  is basically the releaes version but without any minifing */
-    grunt.registerTask('index_debug', 'Generate docascode-debug.html, inline all scripts unminified', function() {
-        createIndex(grunt, 'debug');
+    grunt.registerTask('index_debug_inline', 'Generate docascode-debug.html, inline all scripts unminified', function() {
+        createIndex(grunt, 'debug', 'inline');
     });
 
     /* Debug is basically the releaes version but without any minifing */
-    grunt.registerTask('index_default', 'Generate docascode-debug.html, inline all scripts unminified', function() {
-        createIndex(grunt, 'default');
+    grunt.registerTask('index_debug_ref', 'Generate docascode-debug.html, ref all scripts unminified', function() {
+        createIndex(grunt, 'debug', 'ref');
     });
 
     grunt.registerTask('assembleTemplates', 'Adds a script tag with id to each template', function() {
@@ -256,10 +274,10 @@ module.exports = function(grunt) {
         grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test_roslyn', 'copy:test_simple']);
-    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:release']);
-    grunt.registerTask('vsix', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:vsix']);
-    grunt.registerTask('vsix-debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:vsix_debug']);
+    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:debug']);
+    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:test_roslyn', 'copy:test_simple']);
+    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index_release_inline', 'copy:release']);
+    grunt.registerTask('vsix', [ 'assembleTemplates', 'concat', 'uglify', 'index_release_inline', 'copy:vsix']);
+    grunt.registerTask('vsix-debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:vsix_debug']);
     grunt.registerTask('default', ['uglify']);
 };

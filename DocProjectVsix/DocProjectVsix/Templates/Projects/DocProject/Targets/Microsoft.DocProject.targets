@@ -81,7 +81,7 @@
 
     <!-- BuildMeta.exe <ProjectFiles> /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- ProjectFiles => Generate metadata file for each project in $(IntermediateOutputPath) and list the file paths in obj.list -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;', ',') /i：&quot;$(IntermediateFilePath)&quot; /target:build" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;', ',') /i:&quot;$(IntermediateFilePath)&quot; /target:build" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -103,7 +103,7 @@
   <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(IntermediateOutputPath)/obj.list => merge metadata file in $(IntermediateOutputPath) and output the yaml metadata in $(OutputPath) -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i：&quot;$(IntermediateFilePath)&quot; /o:&quot;$(OutputPath)&quot; /target:merge" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(OutputPath)&quot; /target:merge" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -112,6 +112,7 @@
   </Target>
 
   <Target Name ="IndexMarkdown">
+    <CallTarget Targets="CleanupExistingMarkdownIndexFile" />
     <CallTarget Targets="_IndexMarkdown" />
   </Target>
 
@@ -131,6 +132,15 @@
 
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
+  </Target>
+
+  <Target Name="CleanupExistingMarkdownIndexFile">
+    <ItemGroup>
+      <MarkdownIndexFiles Include="$(MarkdownIndexFilePath)" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Message Text="Deleting @(MarkdownIndexFiles)" />
+    <Delete Files="@(MarkdownIndexFiles)" ContinueOnError="true" />
   </Target>
 
   <Target Name="PublishDoc">

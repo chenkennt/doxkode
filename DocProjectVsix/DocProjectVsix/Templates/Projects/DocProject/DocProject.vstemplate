@@ -17,6 +17,9 @@
         index.html
       </ProjectItem>
       <ProjectItem>
+        favicon.ico
+      </ProjectItem>
+      <ProjectItem>
         web.config
       </ProjectItem>
       <ProjectItem ReplaceParameters="true">
