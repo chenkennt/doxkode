@@ -112,6 +112,7 @@
   </Target>
 
   <Target Name ="IndexMarkdown">
+    <CallTarget Targets="CleanupExistingMarkdownIndexFile" />
     <CallTarget Targets="_IndexMarkdown" />
   </Target>
 
@@ -131,6 +132,15 @@
 
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
+  </Target>
+
+  <Target Name="CleanupExistingMarkdownIndexFile">
+    <ItemGroup>
+      <MarkdownIndexFiles Include="$(MarkdownIndexFilePath)" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Message Text="Deleting @(MarkdownIndexFiles)" />
+    <Delete Files="@(MarkdownIndexFiles)" ContinueOnError="true" />
   </Target>
 
   <Target Name="PublishDoc">
