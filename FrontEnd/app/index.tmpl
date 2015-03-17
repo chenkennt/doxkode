@@ -25,59 +25,56 @@
           sync = true;
     })();
     </script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js"></script>
 <<%
-    var task = grunt.config('currentTask').name;
-    if (task === 'default'){
-        task = 'debug'
+    var mode = grunt.config('compileConfig').mode;
+    var config = grunt.config('compileConfig').config;
+    if (config !== 'debug' && config !== 'release'){
+      grunt.log.error('Unsupported config: ' + config);
     }
-    grunt.log.writeln('Building single index.html of type: ' + task);
+
+    if (mode !== 'inline' && mode !== 'ref'){
+      grunt.log.error('Unsupported mode: ' + mode);
+    }
+
+    grunt.log.writeln('Building single index.html of mode: ' + mode + ' and config: ' + config);
 
     var ownJsFileFull = grunt.config('concat').dev.dest;
     var ownJsFileMin = grunt.config('uglify').build.dest;
 
-    var minifiedJsFiles = grunt.config('internalJsFiles');
-    var minifiedCssFiles = grunt.config('internalCssFiles');
-
     function print_script_ref(ref) {
-        print('<script type="text/javascript" src="../' + ref + '"></script>\n');
+        print('<script type="text/javascript" src="' + ref + '"></script>\n');
     }
     function print_style_ref(ref) {
-        print('<link rel="stylesheet" href="../' + ref + '" type="text/css"></link>\n');
+        print('<link rel="stylesheet" href="' + ref + '" type="text/css"></link>\n');
     }
     function print_script_inline(name, content) {
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<script type="text/javascript">');
         print(content);
         print('</script>\n');
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
     function print_style_inline(name, content) {
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<style id="style:' + name + '">');
         print(content);
         print('</style>');
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
 
-    if (task === 'release') {
-        // INLINE SCRIPTS AND CSS
-        for(var i = 0, len = cssFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(cssFiles[i]);
-            print_style_inline(cssFiles[i], fileContent);
-        }
-        for(var i = 0, len = jsFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(jsFiles[i]);
-            print_script_inline(jsFiles[i], fileContent);
-        }
-    } else if (task === 'debug') {
+    // For CDNs always ref
+    for(var i = 0, len = cdnCssFiles.length; i < len; i++) {
+        print_style_ref(cdnCssFiles[i]);
+    }
+    for(var i = 0, len = cdnJsFiles.length; i < len; i++) {
+        print_script_ref(cdnJsFiles[i]);
+    }
+
+    if (mode === 'inline' && config === 'debug') {
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
             var fileContent = grunt.file.read(unminifiedCssFiles[i]);
@@ -87,16 +84,52 @@
             var fileContent = grunt.file.read(unminifiedJsFiles[i]);
             print_script_inline(unminifiedJsFiles[i], fileContent);
         }
-    }
 
-    // OUR OWN CODE
-    var fileContent = '';
-    if (task === 'debug') {
+        // OUR OWN CODE
         fileContent = grunt.file.read(ownJsFileFull);
         print_script_inline(ownJsFileFull, fileContent);
-    } else if (task === 'release') {
+    }
+
+    if (mode === 'ref' && config === 'debug') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
+            print_style_ref(unminifiedCssFiles[i]);
+        }
+        for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
+            print_script_ref(unminifiedJsFiles[i]);
+        }
+
+        // OUR OWN CODE
+        print_script_ref(ownJsFileFull);
+    }
+
+    if (mode === 'inline' && config === 'release') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = cssFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(cssFiles[i]);
+            print_style_inline(cssFiles[i], fileContent);
+        }
+        for(var i = 0, len = jsFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(jsFiles[i]);
+            print_script_inline(jsFiles[i], fileContent);
+        }
+
+        // OUR OWN CODE
         fileContent = grunt.file.read(ownJsFileMin);
         print_script_inline(ownJsFileMin, fileContent);
+    }
+
+    if (mode === 'ref' && config === 'release') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = cssFiles.length; i < len; i++) {
+            print_style_ref(cssFiles[i]);
+        }
+        for(var i = 0, len = jsFiles.length; i < len; i++) {
+            print_style_ref(jsFiles[i]);
+        }
+
+        // OUR OWN CODE
+        print_script_ref(ownJsFileMin);
     }
 %>>
 </head>

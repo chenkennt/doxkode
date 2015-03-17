@@ -1,11 +1,11 @@
-var createIndex = function (grunt, taskname) {
+var createIndex = function (grunt, config, mode) {
     'use strict';
-    var conf = grunt.config('index')[taskname],
+    var conf = grunt.config('index')[config],
     tmpl = grunt.file.read(conf.template);
     var templatesString = grunt.file.read('tmp/templates.html');
     grunt.config.set('templatesString', templatesString);
     // register the task name in global scope so we can access it in the .tmpl file
-    grunt.config.set('currentTask', {name: taskname});
+    grunt.config.set('compileConfig', {mode: mode, config: config});
     var gruntTemplate = grunt.template;
 
     //google-code-prettify/src/prettify.js contains <% %> pair, so use customized delimiters instead
@@ -98,6 +98,14 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlightjs/highlight.pack.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
         'app/js/angular-bootstrap/dropdown-toggle.min.js'
+    ],
+    cdnCssFiles: [
+        "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+    ],
+    cdnJsFiles: [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
     ],
     /* make it use .jshintrc */
     jshint: {
@@ -237,18 +245,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
     /*** CUSTOM CODED TASKS ***/
-    grunt.registerTask('index', 'Generate docascode.html, inline all scripts', function() {
-        createIndex(grunt, 'release');
+    grunt.registerTask('index_release_inline', 'Generate docascode.html, inline all scripts', function() {
+        createIndex(grunt, 'release', 'inline');
+    });
+
+    grunt.registerTask('index_release_ref', 'Generate docascode.html, ref all scripts minified', function() {
+        createIndex(grunt, 'release', 'ref');
     });
 
     /*  is basically the releaes version but without any minifing */
-    grunt.registerTask('index_debug', 'Generate docascode-debug.html, inline all scripts unminified', function() {
-        createIndex(grunt, 'debug');
+    grunt.registerTask('index_debug_inline', 'Generate docascode-debug.html, inline all scripts unminified', function() {
+        createIndex(grunt, 'debug', 'inline');
     });
 
     /* Debug is basically the releaes version but without any minifing */
-    grunt.registerTask('index_default', 'Generate docascode-debug.html, inline all scripts unminified', function() {
-        createIndex(grunt, 'default');
+    grunt.registerTask('index_debug_ref', 'Generate docascode-debug.html, ref all scripts unminified', function() {
+        createIndex(grunt, 'debug', 'ref');
     });
 
     grunt.registerTask('assembleTemplates', 'Adds a script tag with id to each template', function() {
@@ -262,10 +274,10 @@ module.exports = function(grunt) {
         grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test_roslyn', 'copy:test_simple']);
-    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:release']);
-    grunt.registerTask('vsix', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:vsix']);
-    grunt.registerTask('vsix-debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:vsix_debug']);
+    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:debug']);
+    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:test_roslyn', 'copy:test_simple']);
+    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index_release_inline', 'copy:release']);
+    grunt.registerTask('vsix', [ 'assembleTemplates', 'concat', 'uglify', 'index_release_inline', 'copy:vsix']);
+    grunt.registerTask('vsix-debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug_inline', 'copy:vsix_debug']);
     grunt.registerTask('default', ['uglify']);
 };
