@@ -460,7 +460,7 @@ namespace EntityModel
                         .NormalizeWhitespace()
                         .ToString()
                         .Trim();
-
+                
                 item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
                 return item;
             }
