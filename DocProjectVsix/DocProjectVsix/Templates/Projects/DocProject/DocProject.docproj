@@ -19,8 +19,12 @@
   <ItemGroup>
     <Folder Include="template"/>
     <Folder Include="Targets"/>
+    <Folder Include="js"/>
+    <Folder Include="css"/>
     <None Include="Targets/Microsoft.DocProject.targets" />
     <None Include="favicon.ico" />
+    <Content Include="js/docascode.js" />
+    <Content Include="css/docascode.css" />
     <Content Include="template/class.tmpl" />
     <Content Include="template/namespace.tmpl" />
     <Content Include="index.html" />

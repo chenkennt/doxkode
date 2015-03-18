@@ -38,26 +38,35 @@
 
   <Target Name="CopyWebsiteFiles">
     <ItemGroup>
-      <!--<WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html'" />
-      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html'" />
-      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.html'" />
-      
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
+      <WebsiteFiles  Include="@(Compile)"  Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
+      <!--
       <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
       <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />
       <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.js'" />
-      
+
       <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.css'" />
       <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.css'" />
       <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.css'" />-->
-      <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
+      <!--   <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
       <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.tmpl" />
-      <WebsiteFiles Include="$(MSBuildProjectDirectory)/web.config" />
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/web.config" /> -->
     </ItemGroup>
     <!--<Copy SourceFiles="@(WebsiteFiles)"  DestinationFolder="$(OutputPath)" />-->
+    <Message Text="Copying @(WebsiteFiles)" />
     <Copy
         SourceFiles="@(WebsiteFiles)"
-        DestinationFiles="@(WebsiteFiles->'$(OutputPath)\%(RecursiveDir)%(Filename)%(Extension)')"
+        DestinationFiles="@(WebsiteFiles->'$(OutputPath)\%(RelativeDir)%(Filename)%(Extension)')"
         />
+  </Target>
+
+  <Target Name="CleanupExistingObj">
+    <ItemGroup>
+      <ObjFiles Include="$(IntermediateOutputPath)\**\*.*" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(ObjFiles)"  ContinueOnError="true" />
   </Target>
 
   <Target Name="CleanupExistingOutput">
@@ -73,12 +82,11 @@
     <ItemGroup>
       <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
     </ItemGroup>
+    <CallTarget Targets="CleanupExistingObj" />
     <Message Text="InputProjectFiles: @(InputProjectFiles)" />
     <CallTarget Targets="_GenerateMetadata" />
   </Target>
   <Target Name ="_GenerateMetadata" Outputs="$(IntermediateFilePath)">
-    <Message Text ="%(DocMta.FullPath)" />
-
     <!-- BuildMeta.exe <ProjectFiles> /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- ProjectFiles => Generate metadata file for each project in $(IntermediateOutputPath) and list the file paths in obj.list -->
     <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;', ',') /i:&quot;$(IntermediateFilePath)&quot; /target:build" >
@@ -95,6 +103,7 @@
       <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
       <OutputMetadataFiles Include="$(OutputPath)\**\*.*" />
     </ItemGroup>
+    <CallTarget Targets="CleanupExistingOutput" />
     <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
     <Message Text="OutputMetadataFiles: @(OutputMetadataFiles)" />
     <CallTarget Targets="_MergeMetadata" />

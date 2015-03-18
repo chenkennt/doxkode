@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         'app/css/prettify-theme.css',
         'app/css/csplay.css',
         'app/css/animations.css',
-        'app/css/open-sans.css'
+        // 'app/css/open-sans.css'
     ],
     // REMEMBER:
     // * ORDER OF FILES IS IMPORTANT
@@ -49,8 +49,8 @@ module.exports = function(grunt) {
     cssFiles: [
        /* move to use CDN
         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
-        'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
-        'app/bower_components/highlightjs/styles/vs.css',
+        // 'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
+        // 'app/bower_components/highlightjs/styles/vs.css',
     ],
     jsFiles: [
     /*  move to use CDN
@@ -76,8 +76,8 @@ module.exports = function(grunt) {
     unminifiedCssFiles: [
        /* move to use CDN
          'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
-        'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
-        'app/bower_components/highlightjs/styles/vs.css',
+        // 'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
+        // 'app/bower_components/highlightjs/styles/vs.css',
     ],
     unminifiedJsFiles: [
       /* move to use CDN
@@ -177,13 +177,13 @@ module.exports = function(grunt) {
       },
       js: {
         src: '<%= ownJsFiles %>',
-        dest: 'tmp/<%= pkg.name %>.min.js'
+        dest: 'tmp/<%= pkg.name %>.js'
       }
     },
     cssmin: {
       target: {
           src:  ['<%= ownCssFiles %>'],
-          dest: 'tmp/<%= pkg.name %>.min.css'
+          dest: 'tmp/<%= pkg.name %>.css'
       }
     },
     index: {
@@ -325,7 +325,7 @@ module.exports = function(grunt) {
     grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     // TODO: change to ref 1. Change exts to CDN; 2. Add js/css to project
-    grunt.registerTask('vsix', [ 'releaseinline', 'copy:vsix']);
-    grunt.registerTask('vsix-debug', [ 'debuginline', 'copy:vsix_debug']);
+    grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
+    grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
 };
