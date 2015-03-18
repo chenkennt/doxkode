@@ -175,8 +175,8 @@ angular.module('DocsController', [])
 
   $scope.navClass = function(navItem) {
     return {
-      active: navItem.href && this.currentPage && this.currentPage.path,
-      current: this.currentPage && this.currentPage.path === navItem.href,
+      active: navItem.href && this.currentPage,
+      current: this.currentPage === navItem.href,
       'nav-index-section': navItem.type === 'section'
     };
   };
@@ -265,7 +265,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
 
     path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
 
-    currentPage = $scope.currentPage = path;//NG_PAGES[path];
+    var currentPage = $scope.currentPage = path;//NG_PAGES[path];
 
     // TODO: check if it is inside NG_PAGES
     // If current page exists in NG_PAGES

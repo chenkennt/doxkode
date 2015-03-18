@@ -29,10 +29,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
+        'app/js/bootstrap.js',
         'app/js/pages-data.js',
         'app/js/versions-data.js',
         'app/js/csplay.js',
-        'app/js/docs.js'
+        'app/js/docs.js',
     ],
     ownCssFiles: [
         'app/css/default.css',
@@ -46,12 +47,14 @@ module.exports = function(grunt) {
     // * ORDER OF FILES IS IMPORTANT
     // * ALWAYS ADD EACH FILE TO BOTH minified/unminified SECTIONS!
     cssFiles: [
-       /* 'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
+       /* move to use CDN
+        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
     ],
     jsFiles: [
-    /*    'app/bower_components/jquery/dist/jquery.min.js',
+    /*  move to use CDN
+        'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -67,16 +70,18 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlightjs/highlight.pack.js',
         // 'app/bower_components/highlight/src/highlight.js',
         // 'app/bower_components/highlight/src/languages/cs.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'*/
-        'app/js/angular-bootstrap/bootstrap.min.js',
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'
+        'app/js/angular-bootstrap/bootstrap.min.js',*/
     ],
     unminifiedCssFiles: [
-       /* 'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
+       /* move to use CDN
+         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
     ],
     unminifiedJsFiles: [
-      /*  'app/bower_components/jquery/dist/jquery.min.js',
+      /* move to use CDN
+        'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -92,8 +97,8 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlight/src/highlight.js',
         // 'app/bower_components/highlight/src/languages/cs.js',
         // 'app/bower_components/highlightjs/highlight.pack.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'*/
-        'app/js/angular-bootstrap/bootstrap.min.js',
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'
+        'app/js/angular-bootstrap/bootstrap.min.js',*/
     ],
     cdnCssFiles: [
         "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
