@@ -46,12 +46,12 @@ module.exports = function(grunt) {
     // * ORDER OF FILES IS IMPORTANT
     // * ALWAYS ADD EACH FILE TO BOTH minified/unminified SECTIONS!
     cssFiles: [
-        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
+       /* 'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
     ],
     jsFiles: [
-        'app/bower_components/jquery/dist/jquery.min.js',
+    /*    'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -67,16 +67,16 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlightjs/highlight.pack.js',
         // 'app/bower_components/highlight/src/highlight.js',
         // 'app/bower_components/highlight/src/languages/cs.js',
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'*/
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
     ],
     unminifiedCssFiles: [
-        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
+       /* 'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
     ],
     unminifiedJsFiles: [
-        'app/bower_components/jquery/dist/jquery.min.js',
+      /*  'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -92,16 +92,29 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlight/src/highlight.js',
         // 'app/bower_components/highlight/src/languages/cs.js',
         // 'app/bower_components/highlightjs/highlight.pack.js',
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'*/
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
     ],
     cdnCssFiles: [
         "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+        "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.2/custom/bootstrap.min.css",
     ],
     cdnJsFiles: [
         "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
+        "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/js-yaml/3.2.7/js-yaml.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-resource.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-cookies.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-sanitize.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-touch.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js",
     ],
     /* make it use .jshintrc */
     jshint: {
@@ -233,9 +246,9 @@ module.exports = function(grunt) {
             {expand: true,flatten: false, src: ['template/*', 'web.config', 'favicon.ico'], cwd: 'app', dest: 'release/', filter: 'isFile'},
             {expand: false,flatten: true, src: ['<%= index.release.dest %>'], dest: 'release/index.html'},
             {expand: true,flatten: true, src: ['<%= jsFiles %>', '<%= cssFiles %>'], dest: 'release/<%= copydest.ext %>', filter: 'isFile'},
-            {expand: true,flatten: true, src: ['<%= concat.js.dest %>'], dest: 'release/<%= copydest.js %>', filter: 'isFile'},
-            {expand: true,flatten: true, src: ['<%= concat.css.dest %>'], dest: 'release/<%= copydest.css %>', filter: 'isFile'},
-          
+            {expand: true,flatten: true, src: ['<%= uglify.js.dest %>'], dest: 'release/<%= copydest.js %>', filter: 'isFile'},
+            {expand: true,flatten: true, src: ['<%= cssmin.target.dest %>'], dest: 'release/<%= copydest.css %>', filter: 'isFile'},
+
           ]
         },
         test_roslyn: {
@@ -300,10 +313,10 @@ module.exports = function(grunt) {
         grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'index_debug_inline', 'clean:debug', 'copy:debug_ref']);
-    grunt.registerTask('debuginline', [ 'assembleTemplates', 'concat', 'index_debug_ref','clean:debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'debug', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
-    grunt.registerTask('testinline', [ 'debuginline','clean:test', 'copy:test_roslyn', 'copy:test_simple']);
+    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
+    grunt.registerTask('debuginline', [ 'assembleTemplates', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
     grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     // TODO: change to ref 1. Change exts to CDN; 2. Add js/css to project
