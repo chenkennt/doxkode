@@ -324,7 +324,6 @@ module.exports = function(grunt) {
     grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
     grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
-    // TODO: change to ref 1. Change exts to CDN; 2. Add js/css to project
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
