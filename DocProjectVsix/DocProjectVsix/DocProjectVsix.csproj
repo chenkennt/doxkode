@@ -30,6 +30,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <GetVsixSourceItemsDependsOn>$(GetVsixSourceItemsDependsOn);GetVsixTemplateItems</GetVsixSourceItemsDependsOn>
+  </PropertyGroup>
+  <Target Name="GetVsixTemplateItems" DependsOnTargets="ZipProjects;ZipItems">
+    <ItemGroup>
+      <VSIXSourceItem Include="@(IntermediateZipItem)">
+        <VSIXSubPath>ItemTemplates\%(IntermediateZipItem.Language)\%(IntermediateZipItem.OutputSubPath)\%(IntermediateZipItem.Culture)</VSIXSubPath>
+      </VSIXSourceItem>
+      <VSIXSourceItem Include="@(IntermediateZipProject)">
+        <VSIXSubPath>ProjectTemplates\%(IntermediateZipProject.Language)\%(IntermediateZipProject.OutputSubPath)\%(IntermediateZipProject.Culture)</VSIXSubPath>
+      </VSIXSourceItem>
+    </ItemGroup>
+  </Target>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -121,6 +134,15 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <ZipItem Include="Templates\Items\JavaScript\JavaScript.vstemplate" />
+    <ZipItem Include="Templates\Items\JavaScript\JavaScriptTemplate.ico" />
+    <ZipItem Include="Templates\Items\JavaScript\JavaScript.js" />
+    <ZipItem Include="Templates\Items\StyleSheet\StyleSheet.vstemplate" />
+    <ZipItem Include="Templates\Items\StyleSheet\StyleSheetTemplate.ico" />
+    <ZipItem Include="Templates\Items\StyleSheet\Stylesheet.css" />
+    <ZipItem Include="Templates\Items\Html\HTMLPageTemplate.ico" />
+    <ZipItem Include="Templates\Items\Html\HTMLPage.html" />
+    <ZipItem Include="Templates\Items\Html\HTMLPage.vstemplate" />
     <None Include="Key.snk" />
     <None Include="packages.config" />
     <None Include="source.extension.vsixmanifest">
@@ -157,6 +179,15 @@
     <VSCTCompile Include="DocProject.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
+    <ZipItem Include="Templates\Items\Markdown\Class.md">
+      <RootPath>Templates\Items\Markdown</RootPath>
+    </ZipItem>
+    <ZipItem Include="Templates\Items\Markdown\MarkdownTemplate.ico">
+      <RootPath>Templates\Items\Markdown</RootPath>
+    </ZipItem>
+    <ZipItem Include="Templates\Items\Markdown\Markdown.vstemplate">
+      <RootPath>Templates\Items\Markdown</RootPath>
+    </ZipItem>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>

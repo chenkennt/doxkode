@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>JavaScript</Name>
+    <Description>This is the JavaScript Template for DocProject</Description>
+    <Icon>JavaScriptTemplate.ico</Icon>
+    <TemplateID>BEFBAF78-68A8-4956-B880-76CE7F41166C</TemplateID>
+    <ProjectType>DocProject</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>JavaScript.js</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">JavaScript.js</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
