@@ -213,6 +213,15 @@
     <ZipProject Include="Templates\Projects\DocProject\web.config">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\favicon.ico">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\css\docascode.css">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\js\docascode.js">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
     <VSIXSourceItem Include="$(OutputPath)\ProjectTemplates\DocProject.zip">
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
     </VSIXSourceItem>

@@ -11,7 +11,7 @@
         content="Docascode with pure client-side JavaScript!">
   <meta name="fragment" content="!">
   <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script type="text/javascript">
     // dynamically add base tag as well as css and javascript files.
     // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
@@ -23,81 +23,154 @@
           production = location.hostname === 'docs.angularjs.org',
           headEl = document.getElementsByTagName('head')[0],
           sync = true;
-    })();  
+    })();
     </script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js"></script>
 <<%
-    var task = grunt.config('currentTask').name;
-    if (task === 'default'){
-        task = 'debug'
+    var mode = grunt.config('compileConfig').mode;
+    var config = grunt.config('compileConfig').config;
+    if (config !== 'debug' && config !== 'release'){
+      grunt.log.error('Unsupported config: ' + config);
     }
-    grunt.log.writeln('Building single index.html of type: ' + task);
 
-    var ownJsFileFull = grunt.config('concat').dev.dest;
-    var ownJsFileMin = grunt.config('uglify').build.dest;
+    if (mode !== 'inline' && mode !== 'ref'){
+      grunt.log.error('Unsupported mode: ' + mode);
+    }
 
-    var minifiedJsFiles = grunt.config('internalJsFiles');
-    var minifiedCssFiles = grunt.config('internalCssFiles');
+    grunt.log.writeln('Building single index.html of mode: ' + mode + ' and config: ' + config);
+    var js = grunt.config('copydest').js;
+    var css = grunt.config('copydest').css;
+    var ext = grunt.config('copydest').ext;
+
+    var ownJsFileFull =  grunt.config('concat').js.dest;
+    var ownCssFileFull = grunt.config('concat').css.dest;
+    var ownJsFileMin = grunt.config('uglify').js.dest;
+    var ownCssFileMin = grunt.config('cssmin').target.dest;
 
     function print_script_ref(ref) {
-        print('<script type="text/javascript" src="../' + ref + '"></script>\n');
+        print('<script type="text/javascript" src="' + ref + '"></script>\n');
     }
     function print_style_ref(ref) {
-        print('<link rel="stylesheet" href="../' + ref + '" type="text/css"></link>\n');
+        print('<link rel="stylesheet" href="' + ref + '" type="text/css"></link>\n');
     }
-    function print_script_inline(name, content) {
-        if (task === 'debug')
+    function print_script_inline(name, grunt) {
+        var content = grunt.file.read(name)
+        if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<script type="text/javascript">');
         print(content);
         print('</script>\n');
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
-    function print_style_inline(name, content) {
-        if (task === 'debug')
+    function print_style_inline(name, grunt) {
+        var content = grunt.file.read(name)
+        if (config === 'debug')
             print('<!-- START ' + name + ' -->\n');
         print('<style id="style:' + name + '">');
         print(content);
         print('</style>');
-        if (task === 'debug')
+        if (config === 'debug')
             print('<!-- END ' + name + ' -->\n');
     }
+    function getReferencePath(type, path, grunt){
+      var relPath = path;
+      if (type !== 'css' && type !== 'js' && type !== 'ext'){
+        grunt.log.error('Unsupported type: ' + type);
+      }
+      var i = path.lastIndexOf('/')
 
-    if (task === 'release') {
-        // INLINE SCRIPTS AND CSS
-        for(var i = 0, len = cssFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(cssFiles[i]);
-            print_style_inline(cssFiles[i], fileContent);
-        }
-        for(var i = 0, len = jsFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(jsFiles[i]);
-            print_script_inline(jsFiles[i], fileContent);
-        }
-    } else if (task === 'debug') {
-        // INLINE SCRIPTS AND CSS
-        for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(unminifiedCssFiles[i]);
-            print_style_inline(unminifiedCssFiles[i], fileContent);
-        }
-        for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
-            var fileContent = grunt.file.read(unminifiedJsFiles[i]);
-            print_script_inline(unminifiedJsFiles[i], fileContent);
-        }
+      if (i > -1){
+        relPath = path.substr(i + 1);
+      }
+
+      if (type === 'css'){
+        relPath = css + '/' + relPath;
+      }
+
+      if (type === 'js'){
+        relPath = js + '/' + relPath;
+      }
+
+      if (type === 'ext'){
+        relPath = ext + '/' + relPath;
+      }
+
+      grunt.log.writeln('Getting reference path' + relPath + ' for type:' + type + ', path: ' + path + ', index: ' +i);
+
+      return relPath;
     }
 
-    // OUR OWN CODE
-    var fileContent = '';
-    if (task === 'debug') {
-        fileContent = grunt.file.read(ownJsFileFull);
-        print_script_inline(ownJsFileFull, fileContent);
-    } else if (task === 'release') {
-        fileContent = grunt.file.read(ownJsFileMin);
-        print_script_inline(ownJsFileMin, fileContent);
-    } 
+    // For CDNs always ref
+    for(var i = 0, len = cdnCssFiles.length; i < len; i++) {
+        print_style_ref(cdnCssFiles[i], grunt);
+    }
+    for(var i = 0, len = cdnJsFiles.length; i < len; i++) {
+        print_script_ref(cdnJsFiles[i], grunt);
+    }
+
+    if (mode === 'inline' && config === 'debug') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
+            print_style_inline(unminifiedCssFiles[i], grunt);
+        }
+        for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
+            print_script_inline(unminifiedJsFiles[i], grunt);
+        }
+
+        // OUR OWN CODE
+        print_script_inline(ownJsFileFull, grunt);
+        print_style_inline(ownCssFileFull, grunt);
+    }
+
+    if (mode === 'ref' && config === 'debug') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
+            var path = getReferencePath('ext', unminifiedCssFiles[i], grunt);
+            print_style_ref(path, grunt);
+        }
+        for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
+            var path = getReferencePath('ext', unminifiedJsFiles[i], grunt);
+            print_script_ref(path, grunt);
+        }
+
+        // OUR OWN CODE
+        var path = getReferencePath('css', ownCssFileFull, grunt);
+        print_style_ref(path, grunt);
+        path = getReferencePath('js', ownJsFileFull, grunt);
+        print_script_ref(path, grunt);
+    }
+
+    if (mode === 'inline' && config === 'release') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = cssFiles.length; i < len; i++) {
+            print_style_inline(cssFiles[i], grunt);
+        }
+        for(var i = 0, len = jsFiles.length; i < len; i++) {
+            print_script_inline(jsFiles[i], grunt);
+        }
+
+        // OUR OWN CODE
+        print_script_inline(ownJsFileMin, grunt);
+        print_script_inline(ownCssFileMin, grunt);
+    }
+
+    if (mode === 'ref' && config === 'release') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = cssFiles.length; i < len; i++) {
+            var path = getReferencePath('ext', cssFiles[i], grunt);
+            print_style_ref(path, grunt);
+        }
+        for(var i = 0, len = jsFiles.length; i < len; i++) {
+            var path = getReferencePath('ext', jsFiles[i], grunt);
+            print_script_ref(path, grunt);
+        }
+
+        // OUR OWN CODE
+        var path = getReferencePath('css', ownCssFileMin, grunt);
+        print_style_ref(path, grunt);
+        path = getReferencePath('js', ownJsFileMin, grunt);
+        print_script_ref(path, grunt);
+    }
 %>>
 </head>
 <body>
@@ -209,7 +282,7 @@
       </div>
     </section>
 
-    <!-- 
+    <!--
     comment out footer as it is currently having display issue
     <footer class="footer">
       <div class="container">

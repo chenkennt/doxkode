@@ -17,7 +17,16 @@
         index.html
       </ProjectItem>
       <ProjectItem>
+        favicon.ico
+      </ProjectItem>
+      <ProjectItem>
         web.config
+      </ProjectItem>
+      <ProjectItem>
+        js\docascode.js
+      </ProjectItem>
+      <ProjectItem>
+        css\docascode.css
       </ProjectItem>
       <ProjectItem ReplaceParameters="true">
         template\class.tmpl
