@@ -12,27 +12,6 @@ namespace EntityModel
         public const string SyntaxType = "SyntaxType";
     }
 
-    public interface IMetadata
-    {
-        Identity Identity { get; set; }
-
-        IMetadata Parent { get; set; }
-
-        IMetadata OwnerNamespace { get; set; }
-
-        MemberType MemberType { get; set; }
-
-        Version MscorlibVersion { get; set; }
-
-        string FilePath { get; set; }
-
-        string AssemblyName { get; set; }
-
-        SyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
-
-        Task AcceptAsync<TContext>(IMetadataVisitor<TContext> visitor, TContext context);
-    }
-
     public enum MemberType
     {
         Default,

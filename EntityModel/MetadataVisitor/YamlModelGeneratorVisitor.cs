@@ -11,15 +11,6 @@ using DocAsCode.Utility;
 
 namespace EntityModel
 {
-    public interface IMetadataVisitor<TContext>
-    {
-        Task VisitAsync(IMetadata metadata, TContext context);
-
-        Task VisitAsync(INamespaceMember metadata, TContext context);
-
-        Task VisitAsync(INamespaceMembersMember metadata, TContext context);
-    }
-
     public class YamlModelGeneratorVisitor : SymbolVisitor<YamlItemViewModel>
     {
         private YamlItemViewModel parent = new YamlItemViewModel();

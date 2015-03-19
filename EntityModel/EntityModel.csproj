@@ -123,25 +123,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions.cs" />
-    <Compile Include="MetadataModel\Comment.cs" />
-    <Compile Include="MetadataModel\Description.cs" />
-    <Compile Include="MetadataModel\Identify.cs" />
-    <Compile Include="MetadataModel\IHierarchy.cs" />
-    <Compile Include="MetadataModel\INamespaceMembersMember.cs" />
-    <Compile Include="MetadataModel\INamespaceMember.cs" />
-    <Compile Include="MetadataModel\IMetadataExtractor.cs" />
-    <Compile Include="MetadataModel\NamespaceMemberMetadata.cs" />
-    <Compile Include="MetadataModel\NamespaceMetadata.cs" />
-    <Compile Include="Converters.cs" />
-    <Compile Include="MetadataModel\BaseMetadata.cs" />
-    <Compile Include="MetadataModel\NamespaceMembersMemberMetadata.cs" />
+    <Compile Include="MetadataModel\SyntaxLanguage.cs" />
+    <Compile Include="MetadataModel\MemberType.cs" />
     <Compile Include="MetadataModel\ParseResult.cs" />
-    <Compile Include="MetadataVisitor\CommentVisitor.cs" />
-    <Compile Include="MetadataVisitor\IMetadataVisitor.cs" />
-    <Compile Include="MetadataModel\IMetadata.cs" />
+    <Compile Include="MetadataVisitor\YamlModelGeneratorVisitor.cs" />
     <Compile Include="MetadataVisitor\YamlMetadataResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\ViewModelExtension.cs" />
+    <Compile Include="ViewModel\Utility.cs" />
     <Compile Include="ViewModel\YamlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

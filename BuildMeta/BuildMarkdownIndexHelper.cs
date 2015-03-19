@@ -1,5 +1,4 @@
-﻿using DocAsCode.EntityModel;
-using DocAsCode.Utility;
+﻿using DocAsCode.Utility;
 using EntityModel;
 using EntityModel.ViewModel;
 using System;

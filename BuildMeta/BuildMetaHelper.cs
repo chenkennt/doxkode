@@ -279,127 +279,6 @@ namespace DocAsCode.BuildMeta
             return null;
         }
 
-
-        private static async Task<string> MergeMetadataFromMetadataListCoreAsync(List<string> metadataFiles, string outputFolder, string indexFileName)
-        {
-            if (metadataFiles == null || metadataFiles.Count == 0)
-            {
-                return null;
-            }
-
-            List<string> outputFilePathList = new List<string>();
-            if (Directory.Exists(outputFolder))
-            {
-                ParseResult.WriteToConsole(ResultLevel.Warn, "{0} directory already exists.", outputFolder);
-            }
-            else
-            {
-                Directory.CreateDirectory(outputFolder);
-            }
-
-            List<ProjectMetadata> projectMetadataList = new List<ProjectMetadata>();
-            foreach (var metadataFile in metadataFiles)
-            {
-                string projectFilePath;
-                ProjectMetadata projectMetadata;
-                var result = TryParseMetadataFile(metadataFile, out projectMetadata);
-                if (result.ResultLevel == ResultLevel.Success)
-                {
-                    projectMetadataList.Add(projectMetadata);
-                }
-                else
-                {
-                    result.WriteToConsole();
-                }
-            }
-            DocumentationMetadata documentationMetadata = MergeProjectMetadata(projectMetadataList);
-
-            if (documentationMetadata == null)
-            {
-                ParseResult.WriteToConsole(ResultLevel.Error, "No metadata is generated for {0}.", metadataFiles.ToDelimitedString());
-            }
-            else
-            {
-                string indexFilePath;
-                ParseResult result = TryExportMetadataFile(documentationMetadata, outputFolder, indexFileName, out indexFilePath);
-                if (result.ResultLevel == ResultLevel.Success)
-                {
-                    return indexFilePath;
-                }
-                else
-                {
-                    result.WriteToConsole();
-                }
-            }
-
-            return null;
-        }
-        private static DocumentationMetadata MergeProjectMetadata(List<ProjectMetadata> projectMetadataList)
-        {
-            if (projectMetadataList == null || projectMetadataList.Count == 0)
-            {
-                return null;
-            }
-
-            DocumentationMetadata document = new DocumentationMetadata();
-            document.Namespaces = new IdentityMapping<NamespaceMetadata>();
-            document.AllMembers = new IdentityMapping<IMetadata>();
-
-            foreach (var project in projectMetadataList)
-            {
-                if (project.Namespaces != null)
-                {
-                    foreach (var ns in project.Namespaces)
-                    {
-                        NamespaceMetadata nsOther;
-                        if (document.Namespaces.TryGetValue(ns.Key, out nsOther))
-                        {
-                            ns.Value.Members.AddRange(nsOther.Members);
-                        }
-                        else
-                        {
-                            document.Namespaces.Add(ns.Key, ns.Value);
-                        }
-
-                        document.AllMembers.GetOrAdd(ns.Key, ns.Value);
-                        if (ns.Value.Members != null)
-                        {
-                            ns.Value.Members.ForEach(s =>
-                            {
-                                IMetadata existingMetadata;
-                                if (document.AllMembers.TryGetValue(s.Identity, out existingMetadata))
-                                {
-                                    ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s.Identity.ToString(), existingMetadata.FilePath, s.FilePath);
-                                }
-                                else
-                                {
-                                    document.AllMembers.Add(s.Identity, s);
-
-                                }
-
-                                if (s.Members != null)
-                                {
-                                    s.Members.ForEach(s1 =>
-                                    {
-                                        IMetadata existingMetadata1;
-                                        if (document.AllMembers.TryGetValue(s1.Identity, out existingMetadata1))
-                                        {
-                                            ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s1.Identity.ToString(), existingMetadata1.FilePath, s1.FilePath);
-                                        }
-                                        else
-                                        {
-                                            document.AllMembers.Add(s1.Identity, s1);
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    }
-                }
-            }
-
-            return document;
-        }
         private static Dictionary<string, YamlItemViewModel> MergeYamlProjectMetadata(List<YamlItemViewModel> projectMetadataList)
         {
             if (projectMetadataList == null || projectMetadataList.Count == 0)
@@ -477,9 +356,6 @@ namespace DocAsCode.BuildMeta
             return allMembers;
         }
 
-        private class SymbolMetadataTable : ConcurrentDictionary<ISymbol, IMetadata>
-        {
-        }
 
         private static async Task<YamlItemViewModel> GenerateYamlMetadataAsync(Project project)
         {
@@ -494,121 +370,6 @@ namespace DocAsCode.BuildMeta
             YamlItemViewModel item = compilation.Assembly.Accept(new YamlModelGeneratorVisitor(visitorContext));
             return item;
         }
-
-        private static async Task<ProjectMetadata> GenerateMetadataAsync(Project project)
-        {
-            if (project == null)
-            {
-                return null;
-            }
-
-            IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
-
-            // Stores the generated IMetadata with the relationship to ISymbol
-            SymbolMetadataTable symbolMetadataTable = new SymbolMetadataTable();
-
-            ProjectMetadata projectMetadata = new ProjectMetadata
-            {
-                ProjectName = project.Name,
-                Namespaces = namespaceMapping,
-            };
-
-            // Project.Name is unique per solution
-            MetadataExtractContext context = new MetadataExtractContext
-            {
-                ProjectName = project.Name
-            };
-
-            var compilation = await project.GetCompilationAsync();
-            object visitorContext = new object();
-
-            YamlItemViewModel item = compilation.Assembly.Accept(new YamlModelGeneratorVisitor(visitorContext));
-
-            var namespaceMembers = compilation.Assembly.GlobalNamespace.GetNamespaceMembers();
-            var namespaceQueue = new Queue<INamespaceSymbol>();
-
-            foreach (var ns in namespaceMembers)
-            {
-                await TreeIterator.PreorderAsync<ISymbol>(
-                    ns
-                    , null
-                    , s =>
-                    {
-                        var namespaceOrTypeSymbol = s as INamespaceOrTypeSymbol;
-                        if (namespaceOrTypeSymbol != null)
-                        {
-                            return namespaceOrTypeSymbol.GetMembers();
-                        }
-                        else
-                        {
-                            return null;
-                        }
-                    }
-                    , (current, parent) => GenerateMetadataForEachSymbol(current, parent, context, namespaceMapping, symbolMetadataTable)
-                    );
-            }
-
-            return projectMetadata;
-        }
-
-        private static async Task<bool> GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
-        {
-            if (!MetadataExtractorManager.CanExtract(current))
-            {
-                return false;
-            }
-
-            var namespaceSymbol = current as INamespaceSymbol;
-
-            if (namespaceSymbol != null)
-            {
-                NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMetadata;
-                context.OwnerNamespace = nsMetadata;
-
-                // Namespace(N)--(N)Project is N-N mapping
-                nsMetadata = namespaceMapping.GetOrAdd(nsMetadata.Identity, nsMetadata);
-
-                Debug.Assert(!symbolMetadataTable.ContainsKey(current), "Should not contain current symbol in the first iteration");
-                symbolMetadataTable.TryAdd(current, nsMetadata);
-            }
-            else
-            {
-                var currentAsTypeSymbol = current as ITypeSymbol;
-                var parentAsNamespaceSymbol = parent as INamespaceSymbol;
-
-                // Flatten TypeSymbol hierarchy
-                if (currentAsTypeSymbol != null || parentAsNamespaceSymbol != null)
-                {
-                    IMetadata parentMetadata;
-                    NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMemberMetadata;
-                    if (nsMemberMetadata != null)
-                    {
-                        // Will not check if members with duplicate Identify exists
-                        // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
-                        ((NamespaceMetadata)context.OwnerNamespace).Members.Add(nsMemberMetadata);
-
-                        Debug.Assert(!symbolMetadataTable.ContainsKey(current), "Should not contain current symbol in the first iteration");
-                        symbolMetadataTable.TryAdd(current, nsMemberMetadata);
-                    }
-                }
-                else
-                {
-                    IMetadata parentMetadata;
-                    symbolMetadataTable.TryGetValue(parent, out parentMetadata);
-                    var parentNamespaceMetadata = parentMetadata as NamespaceMemberMetadata;
-                    Debug.Assert(parentNamespaceMetadata != null, "Non-INamespaceSymbol should correspond to NamespaceMemberMetadata");
-
-                    NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMembersMemberMetadata;
-                    if (nsMembersMembersMetadata != null)
-                    {
-                        parentNamespaceMetadata.Members.Add(nsMembersMembersMetadata);
-                    }
-                }
-            }
-
-            return true;
-        }
-
 
         private static ParseResult TryParseYamlMetadataFile(string metadataFileName, out YamlItemViewModel projectMetadata)
         {
@@ -626,24 +387,6 @@ namespace DocAsCode.BuildMeta
                 return new ParseResult(ResultLevel.Error, e.Message);
             }
         }
-
-        private static ParseResult TryParseMetadataFile(string metadataFileName, out ProjectMetadata projectMetadata)
-        {
-            projectMetadata = null;
-            try
-            {
-                using (StreamReader reader = new StreamReader(metadataFileName))
-                {
-                    projectMetadata = JsonUtility.Deserialize<ProjectMetadata>(reader);
-                    return new ParseResult(ResultLevel.Success);
-                }
-            }
-            catch (Exception e)
-            {
-                return new ParseResult(ResultLevel.Error, e.Message);
-            }
-        }
-
         private static ParseResult TryExportYamlMetadataFile(YamlItemViewModel doc, string folder, UriKind uriKind, out string filePath)
         {
             filePath = Path.Combine(folder, doc.Name).FormatPath(uriKind, folder);
@@ -654,24 +397,6 @@ namespace DocAsCode.BuildMeta
                 {
                     YamlUtility.Serializer.Serialize(writer, doc);
                     return new ParseResult(ResultLevel.Success, "Successfully generated metadata {0} for {1}", filePath, doc.Name);
-                }
-            }
-            catch (Exception e)
-            {
-                return new ParseResult(ResultLevel.Error, e.Message);
-            }
-        }
-
-        private static ParseResult TryExportMetadataFile(ProjectMetadata doc, string folder, UriKind uriKind, out string filePath)
-        {
-            filePath = Path.Combine(folder, doc.ProjectName).FormatPath(uriKind, folder);
-
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    JsonUtility.Serialize(doc, writer);
-                    return new ParseResult(ResultLevel.Success, "Successfully generated metadata {0} for {1}", filePath, doc.ProjectName);
                 }
             }
             catch (Exception e)
@@ -693,47 +418,6 @@ namespace DocAsCode.BuildMeta
 
             // 2. generate api.yaml
             string indexFilePath = Path.Combine(folder, indexFileName);
-            using (StreamWriter sw = new StreamWriter(indexFilePath))
-            {
-                YamlUtility.Serializer.Serialize(sw, viewModel.IndexYamlViewModel);
-            }
-
-            // 3. generate each item's yaml
-            foreach (var item in viewModel.MemberYamlViewModelList)
-            {
-                string itemFilepath = Path.Combine(folder, item.YamlPath);
-                Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
-                using (StreamWriter sw = new StreamWriter(itemFilepath))
-                {
-                    YamlUtility.Serializer.Serialize(sw, item);
-                    ParseResult.WriteToConsole(ResultLevel.Success, "Metadata file for {0} is saved to {1}", item.Name, itemFilepath);
-                }
-            }
-
-            return new ParseResult(ResultLevel.Success);
-        }
-
-        private static ParseResult TryExportMetadataFile(DocumentationMetadata doc, string folder, string indexFileName, out string indexFilePath)
-        {
-            // Folder structure
-            // toc.yaml # toc containing all the namespaces
-            // api.yaml # id-yaml mapping
-            // api/{id}.yaml # items
-            const string YamlExtension = ".yaml";
-            const string TocYamlFileName = "toc" + YamlExtension;
-            const string ApiFolder = "api";
-            indexFilePath = null;
-            var viewModel = doc.ToYamlViewModel(ApiFolder);
-
-            // 1. generate toc.yaml
-            string tocFilePath = Path.Combine(folder, TocYamlFileName);
-            using (StreamWriter sw = new StreamWriter(tocFilePath))
-            {
-                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
-            }
-
-            // 2. generate api.yaml
-            indexFilePath = Path.Combine(folder, indexFileName);
             using (StreamWriter sw = new StreamWriter(indexFilePath))
             {
                 YamlUtility.Serializer.Serialize(sw, viewModel.IndexYamlViewModel);
