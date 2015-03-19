@@ -9,16 +9,15 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
   startLine: 34
-summary: >+
+summary: >-
   Describes a symbol edit between two compilations.
 
   For example, an addition of a method, an update of a method, removal of a type, etc.
-
 syntax:
   content:
     CSharp: public struct SemanticEdit
@@ -41,14 +40,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 42
-  summary: >+
-    The type of edit.
-
+  summary: The type of edit.
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol
   yaml: api/Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api/Microsoft.CodeAnalysis.Emit.SemanticEdit
@@ -60,16 +57,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 48
-  summary: >+
+  summary: >-
     The symbol from the earlier compilation,
 
     or null if the edit represents an addition.
-
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol
   yaml: api/Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api/Microsoft.CodeAnalysis.Emit.SemanticEdit
@@ -81,16 +77,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 54
-  summary: >+
+  summary: >-
     The symbol from the later compilation,
 
     or null if the edit represents a deletion.
-
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap
   yaml: api/Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api/Microsoft.CodeAnalysis.Emit.SemanticEdit
@@ -102,18 +97,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 65
-  summary: >+
+  summary: >-
     A map from syntax node in the later compilation to syntax node in the previous compilation,
 
     or null if [Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables](#/api/Microsoft.CodeAnalysis.Emit.SemanticEdit) is false and the map is not needed or
 
     the source of the current method is the same as the source of the previous method.
-
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables
   yaml: api/Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api/Microsoft.CodeAnalysis.Emit.SemanticEdit
@@ -125,16 +119,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 71
-  summary: >+
+  summary: >-
     True if the edit is an update of the active method and local values
 
     should be preserved; false otherwise.
-
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.#ctor(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
   yaml: api/Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api/Microsoft.CodeAnalysis.Emit.SemanticEdit
@@ -146,14 +139,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 91
-  summary: >+
-    Initializes an instance of [Microsoft.CodeAnalysis.Emit.SemanticEdit](#/api/Microsoft.CodeAnalysis.Emit.SemanticEdit).
-
+  summary: Initializes an instance of [Microsoft.CodeAnalysis.Emit.SemanticEdit](#/api/Microsoft.CodeAnalysis.Emit.SemanticEdit).
   syntax:
     content:
       CSharp: public SemanticEdit(SemanticEditKind kind, ISymbol oldSymbol, ISymbol newSymbol, Func<SyntaxNode, SyntaxNode> syntaxMap = null, bool preserveLocalVariables = false)
@@ -181,7 +172,12 @@ items:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         isExternal: true
-      description: "A map from syntax node in the later compilation to syntax node in the previous compilation, \r\n    or null if  is false and the map is not needed or \r\n    the source of the current method is the same as the source of the previous method."
+      description: >-
+        A map from syntax node in the later compilation to syntax node in the previous compilation,
+
+        or null if  is false and the map is not needed or
+
+        the source of the current method is the same as the source of the previous method.
     - id: preserveLocalVariables
       type:
         id: System.Boolean
@@ -199,8 +195,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 101
@@ -221,8 +217,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 108
@@ -248,8 +244,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 113

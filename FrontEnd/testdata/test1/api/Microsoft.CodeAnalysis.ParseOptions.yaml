@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
   startLine: 14
-summary: >+
-  Represents parse options common to C# and VB.
-
+summary: Represents parse options common to C# and VB.
 syntax:
   content:
     CSharp: public abstract class ParseOptions
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 19
-  summary: >+
-    Specifies whether to parse as regular code files, script files or interactive code.
-
+  summary: Specifies whether to parse as regular code files, script files or interactive code.
   syntax:
     content:
       CSharp: public SourceCodeKind Kind
@@ -63,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 19
@@ -79,14 +75,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 25
-  summary: >+
-    Gets a value indicating whether the documentation comments are parsed.
-
+  summary: Gets a value indicating whether the documentation comments are parsed.
   syntax:
     content:
       CSharp: public DocumentationMode DocumentationMode
@@ -106,8 +100,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 25
@@ -122,14 +116,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 36
-  summary: >+
-    Creates a new options instance with the specified source code kind.
-
+  summary: Creates a new options instance with the specified source code kind.
   syntax:
     content:
       CSharp: public ParseOptions WithKind(SourceCodeKind kind)
@@ -152,14 +144,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 46
-  summary: >+
-    Creates a new options instance with the specified documentation mode.
-
+  summary: Creates a new options instance with the specified documentation mode.
   syntax:
     content:
       CSharp: public ParseOptions WithDocumentationMode(DocumentationMode documentationMode)
@@ -182,14 +172,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 56
-  summary: >+
-    Enable some experimental language features for testing.
-
+  summary: Enable some experimental language features for testing.
   syntax:
     content:
       CSharp: public ParseOptions WithFeatures(IEnumerable<KeyValuePair<string, string>> features)
@@ -212,14 +200,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 66
-  summary: >+
-    Returns the experimental features.
-
+  summary: Returns the experimental features.
   syntax:
     content:
       CSharp: public abstract IReadOnlyDictionary<string, string> Features
@@ -239,8 +225,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 68
@@ -255,14 +241,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 74
-  summary: >+
-    Names of defined preprocessor symbols.
-
+  summary: Names of defined preprocessor symbols.
   syntax:
     content:
       CSharp: public abstract IEnumerable<string> PreprocessorSymbolNames
@@ -282,8 +266,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 74
@@ -298,8 +282,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 76
@@ -325,8 +309,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 92
@@ -346,8 +330,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 115
@@ -361,8 +345,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 120

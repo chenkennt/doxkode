@@ -9,14 +9,12 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
   startLine: 7
-summary: >+
-  The state of the visibility of a line.
-
+summary: The state of the visibility of a line.
 syntax:
   content:
     CSharp: public enum LineVisibility
@@ -42,18 +40,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 14
-  summary: >+
+  summary: >-
     The line is located before any #line directive and there is at least one #line directive present in this syntax tree.
 
     This enum value is used for C# only to enable the consumer to define how to interpret the lines before the first
 
     line directive.
-
   syntax:
     content:
       CSharp: BeforeFirstLineDirective = 0
@@ -68,14 +65,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 19
-  summary: >+
-    The line is following a #line hidden directive.
-
+  summary: 'The line is following a #line hidden directive.'
   syntax:
     content:
       CSharp: Hidden = 1
@@ -90,16 +85,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 25
-  summary: >+
+  summary: >-
     The line is following a #line default directive or a #line directive with at least a line number.
 
     If there is no line directive at all, Visible is returned for all lines.
-
   syntax:
     content:
       CSharp: Visible = 2

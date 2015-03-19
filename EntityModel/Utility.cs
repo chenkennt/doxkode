@@ -136,9 +136,9 @@ namespace DocAsCode.EntityModel
         /// 
         /// </summary>
         /// <param name="xml"></param>
-        /// <param name="trim"></param>
+        /// <param name="normalize"></param>
         /// <returns></returns>
-        public static string GetSummary(string xml, bool trim)
+        public static string GetSummary(string xml, bool normalize)
         {
             // Resolve <see cref> to @ syntax
             // Also support <seealso cref>
@@ -147,26 +147,11 @@ namespace DocAsCode.EntityModel
             xml = ResolveSeeAlsoCref(xml, selector);
 
             // Trim each line as a temp workaround
-            var summary = GetSingleNode(xml, selector, trim, (e) => null);
-            if (!string.IsNullOrEmpty(summary))
-            {
-                StringBuilder builder = new StringBuilder();
-                using (StringReader reader = new StringReader(summary))
-                {
-                    string line;
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        builder.AppendLine(line.Trim());
-                    }
-                }
-
-                return builder.ToString();
-            }
-
+            var summary = GetSingleNode(xml, selector, normalize, (e) => null);
             return summary;
         }
 
-        public static string GetReturns(string xml, bool trim)
+        public static string GetReturns(string xml, bool normalize)
         {
             // Resolve <see cref> to @ syntax
             // Also support <seealso cref>
@@ -174,10 +159,10 @@ namespace DocAsCode.EntityModel
             xml = ResolveSeeCref(xml, selector);
             xml = ResolveSeeAlsoCref(xml, selector);
 
-            return GetSingleNode(xml, selector, trim, (e) => null);
+            return GetSingleNode(xml, selector, normalize, (e) => null);
         }
 
-        public static string GetParam(string xml, string param, bool trim)
+        public static string GetParam(string xml, string param, bool normalize)
         {
             if (string.IsNullOrEmpty(xml)) return null;
             Debug.Assert(!string.IsNullOrEmpty(param));
@@ -192,7 +177,7 @@ namespace DocAsCode.EntityModel
             xml = ResolveSeeCref(xml, selector);
             xml = ResolveSeeAlsoCref(xml, selector);
 
-            return GetSingleNode(xml, selector, trim, (e) => null);
+            return GetSingleNode(xml, selector, normalize, (e) => null);
         }
 
         /// <summary>
@@ -264,7 +249,7 @@ namespace DocAsCode.EntityModel
             return xml;
         }
 
-        public static string GetSingleNode(string xml, string selector, bool trim, Func<Exception, string> errorHandler)
+        public static string GetSingleNode(string xml, string selector, bool normalize, Func<Exception, string> errorHandler)
         {
             try
             {
@@ -279,7 +264,7 @@ namespace DocAsCode.EntityModel
                     }
 
                     var output = node.Value;
-                    if (trim) output = output.Trim();
+                    if (normalize) output = NormalizeContentFromTripleSlashComment(output);
                     return output;
                 }
             }
@@ -294,6 +279,31 @@ namespace DocAsCode.EntityModel
                     throw;
                 }
             }
+        }
+
+        /// <summary>
+        /// The issue with GetXmlDocumentationXML is that it append /r/n and 4 spaces to the new line,
+        /// which is considered as code in Markdown syntax
+        /// </summary>
+        /// <param name="content">The content from triple slash comment</param>
+        /// <returns></returns>
+        private static string NormalizeContentFromTripleSlashComment(string content)
+        {
+            if (string.IsNullOrEmpty(content)) return content;
+            StringBuilder builder = new StringBuilder();
+            using (StringReader reader = new StringReader(content))
+            {
+                string line;
+                // Trim spaces for each line, thus actually Tab to indent is not supported...while new line is kept
+                while ((line = reader.ReadLine()) != null)
+                {
+                    line = line.Trim();
+                    builder.AppendLine(line);
+                }
+            }
+
+            // Trim again, e.g. <summary> always starts a new line and thus a \r\n is the first line
+            return builder.ToString().Trim();
         }
     }
 

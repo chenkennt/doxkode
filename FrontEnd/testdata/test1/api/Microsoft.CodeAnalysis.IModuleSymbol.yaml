@@ -9,14 +9,12 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
   startLine: 10
-summary: >+
-  Represents a module within an assembly. Every assembly contains one or more modules.
-
+summary: Represents a module within an assembly. Every assembly contains one or more modules.
 syntax:
   content:
     CSharp: public interface IModuleSymbol
@@ -32,16 +30,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 16
-  summary: >+
+  summary: >-
     Returns a NamespaceSymbol representing the global (root) namespace, with
 
     module extent, that can be used to browse all of the symbols defined in this module.
-
   syntax:
     content:
       CSharp: INamespaceSymbol GlobalNamespace
@@ -61,8 +58,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 16
@@ -77,14 +74,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 21
-  summary: >+
-    Given a namespace symbol, returns the corresponding module specific namespace symbol
-
+  summary: Given a namespace symbol, returns the corresponding module specific namespace symbol
   syntax:
     content:
       CSharp: INamespaceSymbol GetModuleNamespace(INamespaceSymbol namespaceSymbol);
@@ -107,18 +102,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 28
-  summary: >+
+  summary: >-
     Returns an array of assembly identities for assemblies referenced by this module.
 
     Items at the same position from ReferencedAssemblies and from ReferencedAssemblySymbols
 
     correspond to each other.
-
   syntax:
     content:
       CSharp: ImmutableArray<AssemblyIdentity> ReferencedAssemblies
@@ -138,8 +132,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 28
@@ -154,18 +148,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 35
-  summary: >+
+  summary: >-
     Returns an array of AssemblySymbol objects corresponding to assemblies referenced
 
     by this module. Items at the same position from ReferencedAssemblies and
 
     from ReferencedAssemblySymbols correspond to each other.
-
   syntax:
     content:
       CSharp: ImmutableArray<IAssemblySymbol> ReferencedAssemblySymbols
@@ -185,8 +178,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/IModuleSymbol.cs
     startLine: 35

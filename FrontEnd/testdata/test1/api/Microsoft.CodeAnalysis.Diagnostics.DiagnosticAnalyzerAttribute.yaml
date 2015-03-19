@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzerAttribute.cs
   startLine: 10
-summary: >+
-  Place this attribute onto a type to cause it to be considered a diagnostic analyzer.
-
+summary: Place this attribute onto a type to cause it to be considered a diagnostic analyzer.
 syntax:
   content:
     CSharp: public sealed class DiagnosticAnalyzerAttribute
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzerAttribute.cs
     startLine: 16
-  summary: >+
-    The source languages to which this analyzer applies.  See [Microsoft.CodeAnalysis.LanguageNames](#/api/Microsoft.CodeAnalysis.LanguageNames).
-
+  summary: The source languages to which this analyzer applies.  See [Microsoft.CodeAnalysis.LanguageNames](#/api/Microsoft.CodeAnalysis.LanguageNames).
   syntax:
     content:
       CSharp: public string[] Languages
@@ -66,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzerAttribute.cs
     startLine: 16
@@ -82,14 +78,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzerAttribute.cs
     startLine: 23
-  summary: >+
-    Attribute constructor used to specify automatic application of a diagnostic analyzer.
-
+  summary: Attribute constructor used to specify automatic application of a diagnostic analyzer.
   syntax:
     content:
       CSharp: public DiagnosticAnalyzerAttribute(string firstLanguage, params string[] additionalLanguages)

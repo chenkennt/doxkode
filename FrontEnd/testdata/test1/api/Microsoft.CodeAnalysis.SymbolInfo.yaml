@@ -9,8 +9,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
   startLine: 10
@@ -36,12 +36,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 22
-  summary: >+
+  summary: >-
     The symbol that was referred to by the syntax node, if any. Returns null if the given
 
     expression did not bind successfully to a single symbol. If null is returned, it may
@@ -49,7 +49,6 @@ items:
     still be that case that we have one or more "best guesses" as to what symbol was
 
     intended. These best guesses are available via the CandidateSymbols property.
-
   syntax:
     content:
       CSharp: public ISymbol Symbol
@@ -69,8 +68,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 22
@@ -85,12 +84,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 31
-  summary: >+
+  summary: >-
     If the expression did not successfully resolve to a symbol, but there were one or more
 
     symbols that may have been considered but discarded, this property returns those
@@ -100,7 +99,6 @@ items:
     available in the CandidateReason property. For example, if the symbol was inaccessible,
 
     ambiguous, or used in the wrong context.
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> CandidateSymbols
@@ -120,8 +118,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 33
@@ -136,18 +134,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 56
-  summary: >+
+  summary: >-
     If the expression did not successfully resolve to a symbol, but there were one or more
 
     symbols that may have been considered but discarded, this property describes why those
 
     symbol or symbols were not considered suitable.
-
   syntax:
     content:
       CSharp: public CandidateReason CandidateReason
@@ -167,8 +164,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 56
@@ -183,8 +180,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 91
@@ -210,8 +207,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 96
@@ -237,8 +234,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 103

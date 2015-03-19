@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
   startLine: 15
-summary: >+
-  Reference to metadata stored in the standard ECMA-335 metadata format.
-
+summary: Reference to metadata stored in the standard ECMA-335 metadata format.
 syntax:
   content:
     CSharp: public abstract class PortableExecutableReference
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 34
-  summary: >+
-    Display string used in error messages to identity the reference.
-
+  summary: Display string used in error messages to identity the reference.
   syntax:
     content:
       CSharp: public override string Display
@@ -66,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 36
@@ -82,14 +78,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 42
-  summary: >+
-    Path describing the location of the metadata, or null if the metadata have no location.
-
+  summary: Path describing the location of the metadata, or null if the metadata have no location.
   syntax:
     content:
       CSharp: public string FilePath
@@ -109,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 44
@@ -125,14 +119,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 78
-  summary: >+
-    Returns an instance of the reference with specified aliases.
-
+  summary: Returns an instance of the reference with specified aliases.
   syntax:
     content:
       CSharp: public new PortableExecutableReference WithAliases(IEnumerable<string> aliases)
@@ -156,14 +148,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 88
-  summary: >+
-    Returns an instance of the reference with specified aliases.
-
+  summary: Returns an instance of the reference with specified aliases.
   syntax:
     content:
       CSharp: public new PortableExecutableReference WithAliases(ImmutableArray<string> aliases)
@@ -187,14 +177,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 98
-  summary: >+
-    Returns an instance of the reference with specified interop types embedding.
-
+  summary: Returns an instance of the reference with specified interop types embedding.
   syntax:
     content:
       CSharp: public new PortableExecutableReference WithEmbedInteropTypes(bool value)
@@ -218,14 +206,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/PortableExecutableReference.cs
     startLine: 108
-  summary: >+
-    Returns an instance of the reference with specified properties, or this instance if properties haven't changed.
-
+  summary: Returns an instance of the reference with specified properties, or this instance if properties haven't changed.
   syntax:
     content:
       CSharp: public new PortableExecutableReference WithProperties(MetadataReferenceProperties properties)

@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
   startLine: 14
-summary: >+
-  Represents a diagnostic, such as a compiler error or a warning, along with the location where it occurred.
-
+summary: Represents a diagnostic, such as a compiler error or a warning, along with the location where it occurred.
 syntax:
   content:
     CSharp: public abstract partial class Diagnostic
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 31
-  summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance.
-
+  summary: Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance.
   syntax:
     content:
       CSharp: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location location, params object[] messageArgs)
@@ -80,14 +76,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 51
-  summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance.
-
+  summary: Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance.
   syntax:
     content:
       CSharp: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location location, IEnumerable<Location> additionalLocations, params object[] messageArgs)
@@ -112,9 +106,9 @@ items:
       description: >-
         An optional set of additional locations related to the diagnostic.
 
-            Typically, these are locations of other items referenced in the message.
+        Typically, these are locations of other items referenced in the message.
 
-            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api/Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
+        If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api/Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
     - id: messageArgs
       type:
         id: System.Array
@@ -135,14 +129,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 96
-  summary: >+
-    Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance which is localizable.
-
+  summary: Creates a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance which is localizable.
   syntax:
     content:
       CSharp: public static Diagnostic Create(string id, string category, LocalizableString message, DiagnosticSeverity severity, DiagnosticSeverity defaultSeverity, bool isEnabledByDefault, int warningLevel, LocalizableString title = null, LocalizableString description = null, string helpLink = null, Location location = null, IEnumerable<Location> additionalLocations = null, IEnumerable<string> customTags = null)
@@ -221,9 +213,9 @@ items:
       description: >-
         An optional set of additional locations related to the diagnostic.
 
-            Typically, these are locations of other items referenced in the message.
+        Typically, these are locations of other items referenced in the message.
 
-            If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api/Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
+        If null, [Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations](#/api/Microsoft.CodeAnalysis.Diagnostic) will return an empty list.
     - id: customTags
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
@@ -232,7 +224,7 @@ items:
       description: >-
         An optional set of custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api/Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 
-            If null, [Microsoft.CodeAnalysis.Diagnostic.CustomTags](#) will return an empty list.
+        If null, [Microsoft.CodeAnalysis.Diagnostic.CustomTags](#) will return an empty list.
     return:
       id: Diagnostic
       description: The [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) instance.
@@ -247,14 +239,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 148
-  summary: >+
-    Gets the diagnostic descriptor, which provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic).
-
+  summary: Gets the diagnostic descriptor, which provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic).
   syntax:
     content:
       CSharp: public abstract DiagnosticDescriptor Descriptor
@@ -274,8 +264,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 148
@@ -290,14 +280,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 153
-  summary: >+
-    Gets the diagnostic identifier. For diagnostics generated by the compiler, this will be a numeric code with a prefix such as "CS1001".
-
+  summary: Gets the diagnostic identifier. For diagnostics generated by the compiler, this will be a numeric code with a prefix such as "CS1001".
   syntax:
     content:
       CSharp: public abstract string Id
@@ -317,8 +305,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 153
@@ -333,14 +321,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 163
-  summary: >+
-    Get the culture specific text of the message.
-
+  summary: Get the culture specific text of the message.
   syntax:
     content:
       CSharp: public abstract string GetMessage(IFormatProvider formatProvider = null);
@@ -363,14 +349,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 171
-  summary: >+
-    Gets the default [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api/Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic's [Microsoft.CodeAnalysis.DiagnosticDescriptor](#/api/Microsoft.CodeAnalysis.DiagnosticDescriptor).
-
+  summary: Gets the default [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api/Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic's [Microsoft.CodeAnalysis.DiagnosticDescriptor](#/api/Microsoft.CodeAnalysis.DiagnosticDescriptor).
   syntax:
     content:
       CSharp: public virtual DiagnosticSeverity DefaultSeverity
@@ -390,8 +374,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 171
@@ -406,14 +390,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 180
-  summary: >+
-    Gets the effective [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api/Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic.
-
+  summary: Gets the effective [Microsoft.CodeAnalysis.DiagnosticSeverity](#/api/Microsoft.CodeAnalysis.DiagnosticSeverity) of the diagnostic.
   syntax:
     content:
       CSharp: public abstract DiagnosticSeverity Severity
@@ -433,8 +415,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 180
@@ -449,16 +431,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 186
-  summary: >+
+  summary: >-
     Gets the warning level. This is 0 for diagnostics with severity [Microsoft.CodeAnalysis.DiagnosticSeverity.Error](#/api/Microsoft.CodeAnalysis.DiagnosticSeverity),
 
     otherwise an integer between 1 and 4.
-
   syntax:
     content:
       CSharp: public abstract int WarningLevel
@@ -478,8 +459,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 186
@@ -494,14 +475,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 200
-  summary: >+
-    Returns true if this is a warning treated as an error; otherwise false.
-
+  summary: Returns true if this is a warning treated as an error; otherwise false.
   syntax:
     content:
       CSharp: public bool IsWarningAsError
@@ -521,8 +500,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 202
@@ -537,14 +516,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 212
-  summary: >+
-    Gets the primary location of the diagnostic, or [Microsoft.CodeAnalysis.Location.None](#/api/Microsoft.CodeAnalysis.Location) if no primary location.
-
+  summary: Gets the primary location of the diagnostic, or [Microsoft.CodeAnalysis.Location.None](#/api/Microsoft.CodeAnalysis.Location) if no primary location.
   syntax:
     content:
       CSharp: public abstract Location Location
@@ -564,8 +541,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 212
@@ -580,16 +557,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 218
-  summary: >+
+  summary: >-
     Gets an array of additional locations related to the diagnostic.
 
     Typically these are the locations of other items referenced in the message.
-
   syntax:
     content:
       CSharp: public abstract IReadOnlyList<Location> AdditionalLocations
@@ -609,8 +585,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 218
@@ -625,8 +601,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 230
@@ -647,8 +623,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 235
@@ -674,8 +650,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 237
@@ -696,8 +672,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Diagnostic/Diagnostic.cs
     startLine: 239

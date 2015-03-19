@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
   startLine: 13
-summary: >+
-  Represents state for a TextChanged event.
-
+summary: Represents state for a TextChanged event.
 syntax:
   content:
     CSharp: public class TextChangeEventArgs
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 21
-  summary: >+
-    Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api/Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
-
+  summary: Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api/Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
   syntax:
     content:
       CSharp: public TextChangeEventArgs(SourceText oldText, SourceText newText, IEnumerable<TextChangeRange> changes)
@@ -80,14 +76,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 39
-  summary: >+
-    Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api/Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
-
+  summary: Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api/Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
   syntax:
     content:
       CSharp: 'public TextChangeEventArgs(SourceText oldText, SourceText newText, params TextChangeRange[] changes): this (oldText, newText, (IEnumerable<TextChangeRange>)changes)'
@@ -121,14 +115,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 47
-  summary: >+
-    Gets the text before the change.
-
+  summary: Gets the text before the change.
   syntax:
     content:
       CSharp: public SourceText OldText
@@ -148,8 +140,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 47
@@ -164,14 +156,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 52
-  summary: >+
-    Gets the text after the change.
-
+  summary: Gets the text after the change.
   syntax:
     content:
       CSharp: public SourceText NewText
@@ -191,8 +181,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 52
@@ -207,14 +197,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 57
-  summary: >+
-    Gets the set of ranges for the change.
-
+  summary: Gets the set of ranges for the change.
   syntax:
     content:
       CSharp: public IReadOnlyList<TextChangeRange> Changes
@@ -234,8 +222,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/TextChangeEventArgs.cs
     startLine: 57

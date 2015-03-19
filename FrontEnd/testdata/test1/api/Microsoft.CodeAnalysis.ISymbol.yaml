@@ -9,16 +9,15 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
   startLine: 15
-summary: >+
+summary: >-
   Represents a symbol (namespace, class, method, parameter, etc.)
 
   exposed by the compiler.
-
 syntax:
   content:
     CSharp: public interface ISymbol
@@ -34,14 +33,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 21
-  summary: >+
-    Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api/Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
-
+  summary: Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api/Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
   syntax:
     content:
       CSharp: SymbolKind Kind
@@ -61,8 +58,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 21
@@ -77,14 +74,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 26
-  summary: >+
-    Gets the source language ("C#" or "Visual Basic").
-
+  summary: Gets the source language ("C#" or "Visual Basic").
   syntax:
     content:
       CSharp: string Language
@@ -104,8 +99,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 26
@@ -120,14 +115,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 31
-  summary: >+
-    Gets the symbol name. Returns the empty string if unnamed.
-
+  summary: Gets the symbol name. Returns the empty string if unnamed.
   syntax:
     content:
       CSharp: string Name
@@ -147,8 +140,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 31
@@ -163,12 +156,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 43
-  summary: >+
+  summary: >-
     Gets the name of a symbol as it appears in metadata. Most of the time, this
 
     is the same as the Name property, with the following exceptions:
@@ -184,7 +177,6 @@ items:
     the name property.
 
     3) The length of names is limited to not exceed metadata restrictions.
-
   syntax:
     content:
       CSharp: string MetadataName
@@ -204,8 +196,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 43
@@ -220,14 +212,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 48
-  summary: >+
-    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
-
+  summary: Gets the [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
   syntax:
     content:
       CSharp: ISymbol ContainingSymbol
@@ -247,8 +237,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 48
@@ -263,16 +253,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 54
-  summary: >+
+  summary: >-
     Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api/Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
 
     symbol is shared across multiple assemblies.
-
   syntax:
     content:
       CSharp: IAssemblySymbol ContainingAssembly
@@ -292,8 +281,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 54
@@ -308,16 +297,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 60
-  summary: >+
+  summary: >-
     Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api/Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
 
     symbol is shared across multiple modules.
-
   syntax:
     content:
       CSharp: IModuleSymbol ContainingModule
@@ -337,8 +325,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 60
@@ -353,16 +341,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 66
-  summary: >+
+  summary: >-
     Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](#/api/Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
 
     symbol is not contained within a type.
-
   syntax:
     content:
       CSharp: INamedTypeSymbol ContainingType
@@ -382,8 +369,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 66
@@ -398,16 +385,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 72
-  summary: >+
+  summary: >-
     Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](#/api/Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
 
     symbol isn't contained in a namespace.
-
   syntax:
     content:
       CSharp: INamespaceSymbol ContainingNamespace
@@ -427,8 +413,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 72
@@ -443,16 +429,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 78
-  summary: >+
+  summary: >-
     Gets a value indicating whether the symbol is the original definition. Returns false
 
     if the symbol is derived from another symbol, by type substitution for instance.
-
   syntax:
     content:
       CSharp: bool IsDefinition
@@ -472,8 +457,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 78
@@ -488,14 +473,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 83
-  summary: >+
-    Gets a value indicating whether the symbol is static.
-
+  summary: Gets a value indicating whether the symbol is static.
   syntax:
     content:
       CSharp: bool IsStatic
@@ -515,8 +498,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 83
@@ -531,14 +514,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 88
-  summary: >+
-    Gets a value indicating whether the symbol is virtual.
-
+  summary: Gets a value indicating whether the symbol is virtual.
   syntax:
     content:
       CSharp: bool IsVirtual
@@ -558,8 +539,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 88
@@ -574,14 +555,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 93
-  summary: >+
-    Gets a value indicating whether the symbol is an override of a base class symbol.
-
+  summary: Gets a value indicating whether the symbol is an override of a base class symbol.
   syntax:
     content:
       CSharp: bool IsOverride
@@ -601,8 +580,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 93
@@ -617,14 +596,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 98
-  summary: >+
-    Gets a value indicating whether the symbol is abstract.
-
+  summary: Gets a value indicating whether the symbol is abstract.
   syntax:
     content:
       CSharp: bool IsAbstract
@@ -644,8 +621,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 98
@@ -660,14 +637,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 103
-  summary: >+
-    Gets a value indicating whether the symbol is sealed.
-
+  summary: Gets a value indicating whether the symbol is sealed.
   syntax:
     content:
       CSharp: bool IsSealed
@@ -687,8 +662,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 103
@@ -703,14 +678,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 108
-  summary: >+
-    Gets a value indicating whether the symbol is defined externally.
-
+  summary: Gets a value indicating whether the symbol is defined externally.
   syntax:
     content:
       CSharp: bool IsExtern
@@ -730,8 +703,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 108
@@ -746,16 +719,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 128
-  summary: >+
+  summary: >-
     Returns true if this symbol was automatically created by the compiler, and does not have
 
     an explicit corresponding source code declaration.
-
   syntax:
     content:
       CSharp: bool IsImplicitlyDeclared
@@ -775,8 +747,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 128
@@ -791,14 +763,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 133
-  summary: >+
-    Returns true if this symbol can be referenced by its name in code.
-
+  summary: Returns true if this symbol can be referenced by its name in code.
   syntax:
     content:
       CSharp: bool CanBeReferencedByName
@@ -818,8 +788,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 133
@@ -834,18 +804,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 140
-  summary: >+
+  summary: >-
     Gets the locations where the symbol was originally defined, either in source or
 
     metadata. Some symbols (for example, partial classes) may be defined in more than one
 
     location.
-
   syntax:
     content:
       CSharp: ImmutableArray<Location> Locations
@@ -865,8 +834,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 140
@@ -881,12 +850,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 157
-  summary: >+
+  summary: >-
     Get the syntax node(s) where this symbol was declared in source. Some symbols (for example,
 
     partial classes) may be defined in more than one location. This property should return
@@ -904,7 +873,6 @@ items:
     NamespaceDeclarationSyntax for N1.N2. For the global namespace, the declaring syntax will
 
     be the CompilationUnitSyntax.
-
   syntax:
     content:
       CSharp: ImmutableArray<SyntaxReference> DeclaringSyntaxReferences
@@ -924,8 +892,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 157
@@ -940,16 +908,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 163
-  summary: >+
+  summary: >-
     Gets the attributes for the symbol. Returns an empty [System.Collections.Generic.IEnumerable`1](#)
 
     if there are no attributes.
-
   syntax:
     content:
       CSharp: ImmutableArray<AttributeData> GetAttributes();
@@ -967,16 +934,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 169
-  summary: >+
+  summary: >-
     Gets a [Microsoft.CodeAnalysis.Accessibility](#/api/Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
 
     Returns NotApplicable if no accessibility is declared.
-
   syntax:
     content:
       CSharp: Accessibility DeclaredAccessibility
@@ -996,8 +962,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 169
@@ -1012,18 +978,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 176
-  summary: >+
+  summary: >-
     Gets the [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
 
     If this symbol is derived from another symbol, by type substitution for instance,
 
     this gets the original symbol, as it was defined in source or metadata.
-
   syntax:
     content:
       CSharp: ISymbol OriginalDefinition
@@ -1043,8 +1008,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 176
@@ -1059,8 +1024,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 178
@@ -1086,8 +1051,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 179
@@ -1113,16 +1078,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 185
-  summary: >+
+  summary: >-
     Returns the Documentation Comment ID for the symbol, or null if the symbol doesn't
 
     support documentation comments.
-
   syntax:
     content:
       CSharp: string GetDocumentationCommentId();
@@ -1140,14 +1104,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 194
-  summary: >+
-    Gets the XML (as text) for the comment associated with the symbol.
-
+  summary: Gets the XML (as text) for the comment associated with the symbol.
   syntax:
     content:
       CSharp: string GetDocumentationCommentXml(CultureInfo preferredCulture = null, bool expandIncludes = false, CancellationToken cancellationToken = default (CancellationToken));
@@ -1184,14 +1146,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 201
-  summary: >+
-    Converts the symbol to a string representation.
-
+  summary: Converts the symbol to a string representation.
   syntax:
     content:
       CSharp: string ToDisplayString(SymbolDisplayFormat format = null);
@@ -1216,16 +1176,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 210
-  summary: >+
+  summary: >-
     Convert a symbol to an array of string parts, each of which has a kind. Useful for
 
     colorizing the display string.
-
   syntax:
     content:
       CSharp: ImmutableArray<SymbolDisplayPart> ToDisplayParts(SymbolDisplayFormat format = null);
@@ -1238,7 +1197,7 @@ items:
       description: >-
         Formatting rules - null implies
 
-            SymbolDisplayFormat.ErrorMessageFormat.
+        SymbolDisplayFormat.ErrorMessageFormat.
     return:
       id: ImmutableArray
       description: A read-only array of string parts.
@@ -1253,16 +1212,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 222
-  summary: >+
+  summary: >-
     Convert a symbol to a string that can be displayed to the user. May be tailored to a
 
     specific location in the source code.
-
   syntax:
     content:
       CSharp: string ToMinimalDisplayString(SemanticModel semanticModel, int position, SymbolDisplayFormat format = null);
@@ -1275,7 +1233,7 @@ items:
       description: >-
         Binding information (for determining names appropriate to
 
-            the context).
+        the context).
     - id: position
       type:
         id: System.Int32
@@ -1290,7 +1248,7 @@ items:
       description: >-
         Formatting rules - null implies
 
-            SymbolDisplayFormat.MinimallyQualifiedFormat.
+        SymbolDisplayFormat.MinimallyQualifiedFormat.
     return:
       id: String
       description: A formatted string that can be displayed to the user.
@@ -1305,16 +1263,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 237
-  summary: >+
+  summary: >-
     Convert a symbol to an array of string parts, each of which has a kind. May be tailored
 
     to a specific location in the source code. Useful for colorizing the display string.
-
   syntax:
     content:
       CSharp: ImmutableArray<SymbolDisplayPart> ToMinimalDisplayParts(SemanticModel semanticModel, int position, SymbolDisplayFormat format = null);
@@ -1327,7 +1284,7 @@ items:
       description: >-
         Binding information (for determining names appropriate to
 
-            the context).
+        the context).
     - id: position
       type:
         id: System.Int32
@@ -1342,7 +1299,7 @@ items:
       description: >-
         Formatting rules - null implies
 
-            SymbolDisplayFormat.MinimallyQualifiedFormat.
+        SymbolDisplayFormat.MinimallyQualifiedFormat.
     return:
       id: ImmutableArray
       description: A read-only array of string parts.
@@ -1357,12 +1314,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 261
-  summary: >+
+  summary: >-
     Indicates that this symbol uses metadata that cannot be supported by the language.
 
 
@@ -1396,7 +1353,6 @@ items:
     Property - type is unsupported
 
     Parameter - type is unsupported
-
   syntax:
     content:
       CSharp: bool HasUnsupportedMetadata
@@ -1416,8 +1372,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 261

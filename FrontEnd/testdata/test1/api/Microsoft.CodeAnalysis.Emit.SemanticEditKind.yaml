@@ -9,8 +9,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
   startLine: 7
@@ -39,14 +39,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 12
-  summary: >+
-    No change.
-
+  summary: No change.
   syntax:
     content:
       CSharp: None = 0
@@ -61,14 +59,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 17
-  summary: >+
-    Node value was updated.
-
+  summary: Node value was updated.
   syntax:
     content:
       CSharp: Update = 1
@@ -83,14 +79,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 22
-  summary: >+
-    Node was inserted.
-
+  summary: Node was inserted.
   syntax:
     content:
       CSharp: Insert = 2
@@ -105,14 +99,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/SemanticEdit.cs
     startLine: 27
-  summary: >+
-    Node was deleted.
-
+  summary: Node was deleted.
   syntax:
     content:
       CSharp: Delete = 3

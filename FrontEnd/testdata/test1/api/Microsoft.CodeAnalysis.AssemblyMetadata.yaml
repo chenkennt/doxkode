@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
   startLine: 17
-summary: >+
-  Represents an immutable snapshot of assembly CLI metadata.
-
+summary: Represents an immutable snapshot of assembly CLI metadata.
 syntax:
   content:
     CSharp: public sealed class AssemblyMetadata
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 106
-  summary: >+
-    Creates a single-module assembly.
-
+  summary: Creates a single-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata CreateFromImage(ImmutableArray<byte> peImage)
@@ -70,14 +66,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 119
-  summary: >+
-    Creates a single-module assembly.
-
+  summary: Creates a single-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata CreateFromImage(IEnumerable<byte> peImage)
@@ -101,14 +95,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 130
-  summary: >+
-    Creates a single-module assembly.
-
+  summary: Creates a single-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata CreateFromStream(Stream peStream, bool leaveOpen = false)
@@ -138,14 +130,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 141
-  summary: >+
-    Creates a single-module assembly.
-
+  summary: Creates a single-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata CreateFromStream(Stream peStream, PEStreamOptions options)
@@ -175,14 +165,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 154
-  summary: >+
-    Finds all modules of an assembly on a specified path and builds an instance of [Microsoft.CodeAnalysis.AssemblyMetadata](#/api/Microsoft.CodeAnalysis.AssemblyMetadata) that represents them.
-
+  summary: Finds all modules of an assembly on a specified path and builds an instance of [Microsoft.CodeAnalysis.AssemblyMetadata](#/api/Microsoft.CodeAnalysis.AssemblyMetadata) that represents them.
   syntax:
     content:
       CSharp: public static AssemblyMetadata CreateFromFile(string path)
@@ -206,14 +194,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 171
-  summary: >+
-    Creates a single-module assembly.
-
+  summary: Creates a single-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata Create(ModuleMetadata module)
@@ -237,14 +223,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 190
-  summary: >+
-    Creates a multi-module assembly.
-
+  summary: Creates a multi-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata Create(ImmutableArray<ModuleMetadata> modules)
@@ -268,14 +252,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 227
-  summary: >+
-    Creates a multi-module assembly.
-
+  summary: Creates a multi-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata Create(IEnumerable<ModuleMetadata> modules)
@@ -299,14 +281,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 240
-  summary: >+
-    Creates a multi-module assembly.
-
+  summary: Creates a multi-module assembly.
   syntax:
     content:
       CSharp: public static AssemblyMetadata Create(params ModuleMetadata[] modules)
@@ -330,14 +310,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 271
-  summary: >+
-    Modules comprising this assembly. The first module is the manifest module.
-
+  summary: Modules comprising this assembly. The first module is the manifest module.
   syntax:
     content:
       CSharp: public ImmutableArray<ModuleMetadata> GetModules()
@@ -355,14 +333,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 363
-  summary: >+
-    Disposes all modules contained in the assembly.
-
+  summary: Disposes all modules contained in the assembly.
   syntax:
     content:
       CSharp: public override void Dispose()
@@ -380,14 +356,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 425
-  summary: >+
-    Returns the metadata kind. [Microsoft.CodeAnalysis.MetadataImageKind](#/api/Microsoft.CodeAnalysis.MetadataImageKind)
-
+  summary: Returns the metadata kind. [Microsoft.CodeAnalysis.MetadataImageKind](#/api/Microsoft.CodeAnalysis.MetadataImageKind)
   syntax:
     content:
       CSharp: public override MetadataImageKind Kind
@@ -407,8 +381,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 427
@@ -423,14 +397,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyMetadata.cs
     startLine: 439
-  summary: >+
-    Creates a reference to the assembly metadata.
-
+  summary: Creates a reference to the assembly metadata.
   syntax:
     content:
       CSharp: public PortableExecutableReference GetReference(DocumentationProvider documentation = null, ImmutableArray<string> aliases = default (ImmutableArray<string>), bool embedInteropTypes = false, string filePath = null, string display = null)

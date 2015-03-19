@@ -9,14 +9,12 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
   startLine: 7
-summary: >+
-  Specifies the kinds of a piece of classified text (SymbolDisplayPart).
-
+summary: Specifies the kinds of a piece of classified text (SymbolDisplayPart).
 syntax:
   content:
     CSharp: public enum SymbolDisplayPartKind
@@ -42,14 +40,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 10
-  summary: >+
-    The name of an alias.
-
+  summary: The name of an alias.
   syntax:
     content:
       CSharp: AliasName = 0
@@ -64,14 +60,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 12
-  summary: >+
-    The name of an assembly.
-
+  summary: The name of an assembly.
   syntax:
     content:
       CSharp: AssemblyName = 1
@@ -86,14 +80,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 14
-  summary: >+
-    The name of a class.
-
+  summary: The name of a class.
   syntax:
     content:
       CSharp: ClassName = 2
@@ -108,14 +100,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 16
-  summary: >+
-    The name of a delegate.
-
+  summary: The name of a delegate.
   syntax:
     content:
       CSharp: DelegateName = 3
@@ -130,14 +120,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 18
-  summary: >+
-    The name of an enum.
-
+  summary: The name of an enum.
   syntax:
     content:
       CSharp: EnumName = 4
@@ -152,14 +140,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 21
-  summary: >+
-    The name of an error type.
-
+  summary: The name of an error type.
   syntax:
     content:
       CSharp: ErrorTypeName = 5
@@ -174,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 23
-  summary: >+
-    The name of an event.
-
+  summary: The name of an event.
   syntax:
     content:
       CSharp: EventName = 6
@@ -196,14 +180,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 25
-  summary: >+
-    The name of a field.
-
+  summary: The name of a field.
   syntax:
     content:
       CSharp: FieldName = 7
@@ -218,14 +200,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 27
-  summary: >+
-    The name of an interface.
-
+  summary: The name of an interface.
   syntax:
     content:
       CSharp: InterfaceName = 8
@@ -240,14 +220,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 29
-  summary: >+
-    A language keyword.
-
+  summary: A language keyword.
   syntax:
     content:
       CSharp: Keyword = 9
@@ -262,14 +240,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 31
-  summary: >+
-    The name of a label.
-
+  summary: The name of a label.
   syntax:
     content:
       CSharp: LabelName = 10
@@ -284,14 +260,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 33
-  summary: >+
-    A line-break (i.e. whitespace).
-
+  summary: A line-break (i.e. whitespace).
   syntax:
     content:
       CSharp: LineBreak = 11
@@ -306,14 +280,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 36
-  summary: >+
-    A numeric literal.
-
+  summary: A numeric literal.
   syntax:
     content:
       CSharp: NumericLiteral = 12
@@ -328,14 +300,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 39
-  summary: >+
-    A string literal.
-
+  summary: A string literal.
   syntax:
     content:
       CSharp: StringLiteral = 13
@@ -350,14 +320,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 41
-  summary: >+
-    The name of a local.
-
+  summary: The name of a local.
   syntax:
     content:
       CSharp: LocalName = 14
@@ -372,14 +340,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 43
-  summary: >+
-    The name of a method.
-
+  summary: The name of a method.
   syntax:
     content:
       CSharp: MethodName = 15
@@ -394,14 +360,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 45
-  summary: >+
-    The name of a module.
-
+  summary: The name of a module.
   syntax:
     content:
       CSharp: ModuleName = 16
@@ -416,14 +380,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 47
-  summary: >+
-    The name of a namespace.
-
+  summary: The name of a namespace.
   syntax:
     content:
       CSharp: NamespaceName = 17
@@ -438,14 +400,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 49
-  summary: >+
-    The symbol of an operator (e.g. "+").
-
+  summary: The symbol of an operator (e.g. "+").
   syntax:
     content:
       CSharp: Operator = 18
@@ -460,14 +420,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 51
-  summary: >+
-    The name of a parameter.
-
+  summary: The name of a parameter.
   syntax:
     content:
       CSharp: ParameterName = 19
@@ -482,14 +440,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 53
-  summary: >+
-    The name of a property.
-
+  summary: The name of a property.
   syntax:
     content:
       CSharp: PropertyName = 20
@@ -504,14 +460,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 55
-  summary: >+
-    A punctuation character (e.g. "(", ".", ",") other than an [Microsoft.CodeAnalysis.SymbolDisplayPartKind.Operator](#/api/Microsoft.CodeAnalysis.SymbolDisplayPartKind).
-
+  summary: A punctuation character (e.g. "(", ".", ",") other than an [Microsoft.CodeAnalysis.SymbolDisplayPartKind.Operator](#/api/Microsoft.CodeAnalysis.SymbolDisplayPartKind).
   syntax:
     content:
       CSharp: Punctuation = 21
@@ -526,14 +480,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 57
-  summary: >+
-    A single space character.
-
+  summary: A single space character.
   syntax:
     content:
       CSharp: Space = 22
@@ -548,14 +500,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 59
-  summary: >+
-    The name of a struct (structure in Visual Basic).
-
+  summary: The name of a struct (structure in Visual Basic).
   syntax:
     content:
       CSharp: StructName = 23
@@ -570,14 +520,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 61
-  summary: >+
-    A keyword-like part for anonymous types (not actually a keyword).
-
+  summary: A keyword-like part for anonymous types (not actually a keyword).
   syntax:
     content:
       CSharp: AnonymousTypeIndicator = 24
@@ -592,14 +540,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 64
-  summary: >+
-    An unclassified part.
-
+  summary: An unclassified part.
   syntax:
     content:
       CSharp: Text = 25
@@ -614,14 +560,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 66
-  summary: >+
-    The name of a type parameter.
-
+  summary: The name of a type parameter.
   syntax:
     content:
       CSharp: TypeParameterName = 26
@@ -636,14 +580,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayPartKind.cs
     startLine: 68
-  summary: >+
-    The name of a query range variable..
-
+  summary: The name of a query range variable..
   syntax:
     content:
       CSharp: RangeVariableName = 27

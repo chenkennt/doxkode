@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
   startLine: 12
-summary: >+
-  Information that describes how a method from the underlying Platform is to be invoked.
-
+summary: Information that describes how a method from the underlying Platform is to be invoked.
 syntax:
   content:
     CSharp: public sealed class DllImportData
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 28
-  summary: >+
-    Module name. Null if value specified in the attribute is not valid.
-
+  summary: Module name. Null if value specified in the attribute is not valid.
   syntax:
     content:
       CSharp: public string ModuleName
@@ -63,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 30
@@ -79,14 +75,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 36
-  summary: >+
-    Name of the native entry point or null if not specified (the effective name is the same as the name of the target method).
-
+  summary: Name of the native entry point or null if not specified (the effective name is the same as the name of the target method).
   syntax:
     content:
       CSharp: public string EntryPointName
@@ -106,8 +100,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 38
@@ -122,16 +116,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 50
-  summary: >+
+  summary: >-
     Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](#/api/Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
 
     to search an unmanaged DLL for entry-point names other than the one specified.
-
   syntax:
     content:
       CSharp: public bool ExactSpelling
@@ -151,8 +144,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 52
@@ -167,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 61
-  summary: >+
-    Indicates how to marshal string parameters and controls name mangling.
-
+  summary: Indicates how to marshal string parameters and controls name mangling.
   syntax:
     content:
       CSharp: public CharSet CharacterSet
@@ -194,8 +185,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 63
@@ -210,14 +201,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 87
-  summary: >+
-    Indicates whether the callee calls the SetLastError Win32 API function before returning from the attributed method.
-
+  summary: Indicates whether the callee calls the SetLastError Win32 API function before returning from the attributed method.
   syntax:
     content:
       CSharp: public bool SetLastError
@@ -237,8 +226,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 89
@@ -253,14 +242,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 98
-  summary: >+
-    Indicates the calling convention of an entry point.
-
+  summary: Indicates the calling convention of an entry point.
   syntax:
     content:
       CSharp: public CallingConvention CallingConvention
@@ -280,8 +267,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 100
@@ -296,16 +283,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 127
-  summary: >+
+  summary: >-
     Enables or disables best-fit mapping behavior when converting Unicode characters to ANSI characters.
 
     Null if not specified (the setting for the containing type or assembly should be used, [System.Runtime.InteropServices.BestFitMappingAttribute](#)).
-
   syntax:
     content:
       CSharp: public bool ? BestFitMapping
@@ -325,8 +311,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 129
@@ -341,16 +327,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 149
-  summary: >+
+  summary: >-
     Enables or disables the throwing of an exception on an unmappable Unicode character that is converted to an ANSI "?" character.
 
     Null if not specified.
-
   syntax:
     content:
       CSharp: public bool ? ThrowOnUnmappableCharacter
@@ -370,8 +355,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 151

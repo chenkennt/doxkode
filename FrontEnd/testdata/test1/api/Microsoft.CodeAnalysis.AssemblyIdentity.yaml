@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
   startLine: 18
-summary: >+
-  Represents an identity of an assembly as defined by CLI metadata specification.
-
+summary: Represents an identity of an assembly as defined by CLI metadata specification.
 syntax:
   content:
     CSharp: public sealed partial class AssemblyIdentity
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 68
-  summary: >+
-    Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
-
+  summary: Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
   syntax:
     content:
       CSharp: public AssemblyIdentity(string name, Version version = null, string cultureName = null, ImmutableArray<byte> publicKeyOrToken = default (ImmutableArray<byte>), bool hasPublicKey = false, bool isRetargetable = false, AssemblyContentType contentType = AssemblyContentType.Default)
@@ -101,14 +97,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 222
-  summary: >+
-    The simple name of the assembly.
-
+  summary: The simple name of the assembly.
   syntax:
     content:
       CSharp: public string Name
@@ -128,8 +122,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 222
@@ -144,14 +138,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 227
-  summary: >+
-    The version of the assembly.
-
+  summary: The version of the assembly.
   syntax:
     content:
       CSharp: public Version Version
@@ -171,8 +163,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 227
@@ -187,14 +179,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 232
-  summary: >+
-    The culture name of the assembly, or empty if the culture is neutral.
-
+  summary: The culture name of the assembly, or empty if the culture is neutral.
   syntax:
     content:
       CSharp: public string CultureName
@@ -214,8 +204,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 232
@@ -230,14 +220,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 237
-  summary: >+
-    The AssemblyNameFlags.
-
+  summary: The AssemblyNameFlags.
   syntax:
     content:
       CSharp: public AssemblyNameFlags Flags
@@ -257,8 +245,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 239
@@ -273,16 +261,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 250
-  summary: >+
+  summary: >-
     Specifies assembly binding model for the assembly definition or reference;
 
     that is how assembly references are matched to assembly definitions.
-
   syntax:
     content:
       CSharp: public AssemblyContentType ContentType
@@ -302,8 +289,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 252
@@ -318,14 +305,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 258
-  summary: >+
-    True if the assembly identity includes full public key.
-
+  summary: True if the assembly identity includes full public key.
   syntax:
     content:
       CSharp: public bool HasPublicKey
@@ -345,8 +330,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 260
@@ -361,14 +346,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 266
-  summary: >+
-    Full public key or empty.
-
+  summary: Full public key or empty.
   syntax:
     content:
       CSharp: public ImmutableArray<byte> PublicKey
@@ -388,8 +371,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 268
@@ -404,14 +387,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 274
-  summary: >+
-    Low 8 bytes of SHA1 hash of the public key, or empty.
-
+  summary: Low 8 bytes of SHA1 hash of the public key, or empty.
   syntax:
     content:
       CSharp: public ImmutableArray<byte> PublicKeyToken
@@ -431,8 +412,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 276
@@ -447,14 +428,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 290
-  summary: >+
-    True if the assembly identity has a strong name, ie. either a full public key or a token.
-
+  summary: True if the assembly identity has a strong name, ie. either a full public key or a token.
   syntax:
     content:
       CSharp: public bool IsStrongName
@@ -474,8 +453,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 292
@@ -490,14 +469,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 304
-  summary: >+
-    Gets the value which specifies if the assembly is retargetable.
-
+  summary: Gets the value which specifies if the assembly is retargetable.
   syntax:
     content:
       CSharp: public bool IsRetargetable
@@ -517,8 +494,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 306
@@ -532,14 +509,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 322
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.op_Inequality(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
   yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
   href: api/Microsoft.CodeAnalysis.AssemblyIdentity
@@ -550,14 +525,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 332
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Equals(Microsoft.CodeAnalysis.AssemblyIdentity)
   yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
   href: api/Microsoft.CodeAnalysis.AssemblyIdentity
@@ -569,14 +542,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 341
-  summary: >+
-    Determines whether the specified instance is equal to the current instance.
-
+  summary: Determines whether the specified instance is equal to the current instance.
   syntax:
     content:
       CSharp: public bool Equals(AssemblyIdentity obj)
@@ -600,14 +571,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 352
-  summary: >+
-    Determines whether the specified instance is equal to the current instance.
-
+  summary: Determines whether the specified instance is equal to the current instance.
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -631,14 +600,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 361
-  summary: >+
-    Returns the hash code for the current instance.
-
+  summary: Returns the hash code for the current instance.
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -656,14 +623,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 463
-  summary: >+
-    Retrieves assembly definition identity from given runtime assembly.
-
+  summary: Retrieves assembly definition identity from given runtime assembly.
   syntax:
     content:
       CSharp: public static AssemblyIdentity FromAssemblyDefinition(Assembly assembly)
@@ -688,14 +653,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 34
-  summary: >+
-    Returns the display name of the assembly identity.
-
+  summary: Returns the display name of the assembly identity.
   syntax:
     content:
       CSharp: public string GetDisplayName(bool fullKey = false)
@@ -720,14 +683,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 52
-  summary: >+
-    Returns the display name of the current instance.
-
+  summary: Returns the display name of the current instance.
   syntax:
     content:
       CSharp: public override string ToString()
@@ -745,8 +706,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 129
@@ -777,14 +738,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 157
-  summary: >+
-    Parses display name filling defaults for any basic properties that are missing.
-
+  summary: Parses display name filling defaults for any basic properties that are missing.
   syntax:
     content:
       CSharp: public static bool TryParseDisplayName(string displayName, out AssemblyIdentity identity, out AssemblyIdentityParts parts)
@@ -806,7 +765,10 @@ items:
         id: Microsoft.CodeAnalysis.AssemblyIdentityParts
         name: AssemblyIdentityParts
         href: api/Microsoft.CodeAnalysis.AssemblyIdentityParts
-      description: "Parts of the assembly identity that were specified in the display name, \r\n    or 0 if the parsing failed."
+      description: >-
+        Parts of the assembly identity that were specified in the display name,
+
+        or 0 if the parsing failed.
     return:
       id: Boolean
       description: True if display name parsed correctly.

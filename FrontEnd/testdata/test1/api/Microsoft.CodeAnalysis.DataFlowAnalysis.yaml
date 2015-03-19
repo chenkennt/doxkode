@@ -9,12 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
   startLine: 13
-summary: >+
+summary: >-
   Provides information about how data flows into and out of a region. This information is
 
   returned from a call to
@@ -24,7 +24,6 @@ summary: >+
   where you pass the first and last statements of the region as parameters.
 
   "Inside" means those statements or ones between them. "Outside" are any other statements of the same method.
-
 syntax:
   content:
     CSharp: public abstract class DataFlowAnalysis
@@ -44,18 +43,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 20
-  summary: >+
+  summary: >-
     The set of local variables that are declared within a region. Note
 
     that the region must be bounded by a method's body or a field's initializer, so
 
     parameter symbols are never included in the result.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> VariablesDeclared
@@ -75,8 +73,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 20
@@ -91,16 +89,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 26
-  summary: >+
+  summary: >-
     The set of local variables which are assigned a value outside a region
 
     that may be used inside the region.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> DataFlowsIn
@@ -120,8 +117,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 26
@@ -136,16 +133,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 32
-  summary: >+
+  summary: >-
     The set of local variables which are assigned a value inside a region
 
     that may be used outside the region.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> DataFlowsOut
@@ -165,8 +161,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 32
@@ -181,16 +177,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 38
-  summary: >+
+  summary: >-
     The set of local variables for which a value is always assigned inside
 
     a region.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> AlwaysAssigned
@@ -210,8 +205,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 38
@@ -226,14 +221,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 43
-  summary: >+
-    The set of local variables that are read inside a region.
-
+  summary: The set of local variables that are read inside a region.
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> ReadInside
@@ -253,8 +246,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 43
@@ -269,14 +262,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 48
-  summary: >+
-    The set of local variables that are written inside a region.
-
+  summary: The set of local variables that are written inside a region.
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> WrittenInside
@@ -296,8 +287,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 48
@@ -312,14 +303,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 53
-  summary: >+
-    The set of the local variables that are read outside a region.
-
+  summary: The set of the local variables that are read outside a region.
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> ReadOutside
@@ -339,8 +328,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 53
@@ -355,14 +344,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 58
-  summary: >+
-    The set of local variables that are written outside a region.
-
+  summary: The set of local variables that are written outside a region.
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> WrittenOutside
@@ -382,8 +369,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 58
@@ -398,16 +385,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 64
-  summary: >+
+  summary: >-
     The set of the local variables that have been referenced in anonymous
 
     functions within a region and therefore must be moved to a field of a frame class.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> Captured
@@ -427,8 +413,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 64
@@ -443,16 +429,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 70
-  summary: >+
+  summary: >-
     The set of non-constant local variables and parameters that have had their
 
     address (or the address of one of their fields) taken.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<ISymbol> UnsafeAddressTaken
@@ -472,8 +457,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 70
@@ -488,18 +473,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 77
-  summary: >+
+  summary: >-
     Returns true iff analysis was successful.  Analysis can fail if the region does not
 
     properly span a single expression, a single statement, or a contiguous series of
 
     statements within the enclosing block.
-
   syntax:
     content:
       CSharp: public abstract bool Succeeded
@@ -519,8 +503,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/DataFlowAnalysis.cs
     startLine: 77

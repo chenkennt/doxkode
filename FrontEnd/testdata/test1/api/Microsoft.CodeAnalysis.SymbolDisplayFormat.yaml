@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
   startLine: 7
-summary: >+
-  Describes the formatting rules that should be used when displaying symbols.
-
+summary: Describes the formatting rules that should be used when displaying symbols.
 syntax:
   content:
     CSharp: public class SymbolDisplayFormat
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 12
-  summary: >+
-    Formats a symbol description as in a C# compiler error message.
-
+  summary: Formats a symbol description as in a C# compiler error message.
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpShortErrorMessageFormat
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -55,14 +51,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 36
-  summary: >+
-    Formats a symbol description as in a C# compiler short error message.
-
+  summary: Formats a symbol description as in a C# compiler short error message.
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicErrorMessageFormat
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -74,14 +68,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 60
-  summary: >+
-    Formats a symbol description as in a Visual Basic compiler error message.
-
+  summary: Formats a symbol description as in a Visual Basic compiler error message.
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicShortErrorMessageFormat
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -93,14 +85,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 92
-  summary: >+
-    Formats a symbol description as in a Visual Basic compiler short error message.
-
+  summary: Formats a symbol description as in a Visual Basic compiler short error message.
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.FullyQualifiedFormat
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -112,14 +102,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 124
-  summary: >+
-    Formats the names of all types and namespaces in a fully qualified style (including the global alias).
-
+  summary: Formats the names of all types and namespaces in a fully qualified style (including the global alias).
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.MinimallyQualifiedFormat
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -131,14 +119,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 136
-  summary: >+
-    Formats a symbol description in a form that suits [Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)](#/api/Microsoft.CodeAnalysis.ISymbol).
-
+  summary: Formats a symbol description in a form that suits [Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)](#/api/Microsoft.CodeAnalysis.ISymbol).
 - id: Microsoft.CodeAnalysis.SymbolDisplayFormat.GlobalNamespaceStyle
   yaml: api/Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
@@ -150,14 +136,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 248
-  summary: >+
-    Determines how the global namespace is displayed.
-
+  summary: Determines how the global namespace is displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayGlobalNamespaceStyle GlobalNamespaceStyle
@@ -177,8 +161,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 248
@@ -193,14 +177,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 253
-  summary: >+
-    Determines how types are qualified (e.g. Nested vs Containing.Nested vs Namespace.Containing.Nested).
-
+  summary: Determines how types are qualified (e.g. Nested vs Containing.Nested vs Namespace.Containing.Nested).
   syntax:
     content:
       CSharp: public SymbolDisplayTypeQualificationStyle TypeQualificationStyle
@@ -220,8 +202,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 253
@@ -236,14 +218,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 258
-  summary: >+
-    Determines how generics (on types and methods) should be described (i.e. the level of detail).
-
+  summary: Determines how generics (on types and methods) should be described (i.e. the level of detail).
   syntax:
     content:
       CSharp: public SymbolDisplayGenericsOptions GenericsOptions
@@ -263,8 +243,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 258
@@ -279,14 +259,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 263
-  summary: >+
-    Determines how fields, properties, events, and methods are displayed.
-
+  summary: Determines how fields, properties, events, and methods are displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayMemberOptions MemberOptions
@@ -306,8 +284,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 263
@@ -322,14 +300,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 268
-  summary: >+
-    Determines how parameters (of methods, properties/indexers, and delegates) are displayed.
-
+  summary: Determines how parameters (of methods, properties/indexers, and delegates) are displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayParameterOptions ParameterOptions
@@ -349,8 +325,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 268
@@ -365,14 +341,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 273
-  summary: >+
-    Determines how delegates are displayed (e.g. name vs full signature).
-
+  summary: Determines how delegates are displayed (e.g. name vs full signature).
   syntax:
     content:
       CSharp: public SymbolDisplayDelegateStyle DelegateStyle
@@ -392,8 +366,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 273
@@ -408,14 +382,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 278
-  summary: >+
-    Determines how extension methods are displayed.
-
+  summary: Determines how extension methods are displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayExtensionMethodStyle ExtensionMethodStyle
@@ -435,8 +407,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 278
@@ -451,16 +423,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 284
-  summary: >+
+  summary: >-
     Determines how properties are displayed.
 
     For example, "Prop" vs "Prop { get; set; }" in C# or "Prop" vs. "ReadOnly Prop" in Visual Basic.
-
   syntax:
     content:
       CSharp: public SymbolDisplayPropertyStyle PropertyStyle
@@ -480,8 +451,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 284
@@ -496,14 +467,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 289
-  summary: >+
-    Determines how local variables are displayed.
-
+  summary: Determines how local variables are displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayLocalOptions LocalOptions
@@ -523,8 +492,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 289
@@ -539,14 +508,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 294
-  summary: >+
-    Determines which kind keywords should be included when displaying symbols.
-
+  summary: Determines which kind keywords should be included when displaying symbols.
   syntax:
     content:
       CSharp: public SymbolDisplayKindOptions KindOptions
@@ -566,8 +533,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 294
@@ -582,14 +549,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 299
-  summary: >+
-    Determines other characteristics of how symbols are displayed.
-
+  summary: Determines other characteristics of how symbols are displayed.
   syntax:
     content:
       CSharp: public SymbolDisplayMiscellaneousOptions MiscellaneousOptions
@@ -609,8 +574,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 299
@@ -625,14 +590,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 343
-  summary: >+
-    Constructs a new instance of [Microsoft.CodeAnalysis.SymbolDisplayFormat](#/api/Microsoft.CodeAnalysis.SymbolDisplayFormat) accepting a variety of optional parameters.
-
+  summary: Constructs a new instance of [Microsoft.CodeAnalysis.SymbolDisplayFormat](#/api/Microsoft.CodeAnalysis.SymbolDisplayFormat) accepting a variety of optional parameters.
   syntax:
     content:
       CSharp: 'public SymbolDisplayFormat(SymbolDisplayGlobalNamespaceStyle globalNamespaceStyle = default (SymbolDisplayGlobalNamespaceStyle), SymbolDisplayTypeQualificationStyle typeQualificationStyle = default (SymbolDisplayTypeQualificationStyle), SymbolDisplayGenericsOptions genericsOptions = default (SymbolDisplayGenericsOptions), SymbolDisplayMemberOptions memberOptions = default (SymbolDisplayMemberOptions), SymbolDisplayDelegateStyle delegateStyle = default (SymbolDisplayDelegateStyle), SymbolDisplayExtensionMethodStyle extensionMethodStyle = default (SymbolDisplayExtensionMethodStyle), SymbolDisplayParameterOptions parameterOptions = default (SymbolDisplayParameterOptions), SymbolDisplayPropertyStyle propertyStyle = default (SymbolDisplayPropertyStyle), SymbolDisplayLocalOptions localOptions = default (SymbolDisplayLocalOptions), SymbolDisplayKindOptions kindOptions = default (SymbolDisplayKindOptions), SymbolDisplayMiscellaneousOptions miscellaneousOptions = default (SymbolDisplayMiscellaneousOptions)): this (default (SymbolDisplayCompilerInternalOptions), globalNamespaceStyle, typeQualificationStyle, genericsOptions, memberOptions, parameterOptions, delegateStyle, extensionMethodStyle, propertyStyle, localOptions, kindOptions, miscellaneousOptions)'
@@ -684,7 +647,10 @@ items:
         id: Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle
         name: SymbolDisplayPropertyStyle
         href: api/Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle
-      description: "The settings that determine how properties are displayed. \r\n    For eaxmple, \"Prop\" vs \"Prop { get; set; }\" in C# or \"Prop\" vs. \"ReadOnly Prop\" in Visual Basic."
+      description: >-
+        The settings that determine how properties are displayed.
+
+        For eaxmple, "Prop" vs "Prop { get; set; }" in C# or "Prop" vs. "ReadOnly Prop" in Visual Basic.
     - id: localOptions
       type:
         id: Microsoft.CodeAnalysis.SymbolDisplayLocalOptions
@@ -714,14 +680,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 409
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithMiscellaneousOptions(SymbolDisplayMiscellaneousOptions options)
@@ -746,14 +710,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 433
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddMiscellaneousOptions(SymbolDisplayMiscellaneousOptions options)
@@ -778,14 +740,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 445
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithGenericsOptions(SymbolDisplayGenericsOptions options)
@@ -810,14 +770,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 468
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddGenericsOptions(SymbolDisplayGenericsOptions options)
@@ -842,14 +800,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 480
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithMemberOptions(SymbolDisplayMemberOptions options)
@@ -874,14 +830,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 505
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddMemberOptions(SymbolDisplayMemberOptions options)
@@ -906,14 +860,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 519
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions) stripped away from the original object.
-
+  summary: Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayMemberOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayMemberOptions) stripped away from the original object.
   syntax:
     content:
       CSharp: public SymbolDisplayFormat RemoveMemberOptions(SymbolDisplayMemberOptions options)
@@ -938,14 +890,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 533
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithKindOptions(SymbolDisplayKindOptions options)
@@ -970,14 +920,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 558
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddKindOptions(SymbolDisplayKindOptions options)
@@ -1002,14 +950,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 572
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions) stripped away from the original object.
-
+  summary: Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayKindOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayKindOptions) stripped away from the original object.
   syntax:
     content:
       CSharp: public SymbolDisplayFormat RemoveKindOptions(SymbolDisplayKindOptions options)
@@ -1034,14 +980,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 584
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithParameterOptions(SymbolDisplayParameterOptions options)
@@ -1066,14 +1010,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 609
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddParameterOptions(SymbolDisplayParameterOptions options)
@@ -1098,14 +1040,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 623
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions) stripped away from the original object.
-
+  summary: Creates a copy of the SymbolDisplayFormat but with a set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions) stripped away from the original object.
   syntax:
     content:
       CSharp: public SymbolDisplayFormat RemoveParameterOptions(SymbolDisplayParameterOptions options)
@@ -1130,14 +1070,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 635
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced [Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle](#/api/Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced [Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle](#/api/Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithGlobalNamespaceStyle(SymbolDisplayGlobalNamespaceStyle style)
@@ -1162,14 +1100,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 658
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayLocalOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayLocalOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with replaced set of [Microsoft.CodeAnalysis.SymbolDisplayLocalOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayLocalOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat WithLocalOptions(SymbolDisplayLocalOptions options)
@@ -1194,14 +1130,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SymbolDisplay/SymbolDisplayFormat.cs
     startLine: 683
-  summary: >+
-    Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
-
+  summary: Creates a copy of the SymbolDisplayFormat but with an additional set of [Microsoft.CodeAnalysis.SymbolDisplayParameterOptions](#/api/Microsoft.CodeAnalysis.SymbolDisplayParameterOptions).
   syntax:
     content:
       CSharp: public SymbolDisplayFormat AddLocalOptions(SymbolDisplayLocalOptions options)

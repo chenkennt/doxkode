@@ -9,8 +9,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
   startLine: 10
@@ -33,8 +33,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 16
@@ -57,8 +57,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 18
@@ -73,14 +73,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 28
-  summary: >+
-    Creates a new compilation by attaching diagnostic analyzers to an existing compilation.
-
+  summary: Creates a new compilation by attaching diagnostic analyzers to an existing compilation.
   syntax:
     content:
       CSharp: public CompilationWithAnalyzers(Compilation compilation, ImmutableArray<DiagnosticAnalyzer> analyzers, AnalyzerOptions options, CancellationToken cancellationToken)
@@ -120,14 +118,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 37
-  summary: >+
-    Returns diagnostics produced by diagnostic analyzers.
-
+  summary: Returns diagnostics produced by diagnostic analyzers.
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetAnalyzerDiagnosticsAsync()
@@ -145,14 +141,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 49
-  summary: >+
-    Returns diagnostics produced by compilation and by diagnostic analyzers.
-
+  summary: Returns diagnostics produced by compilation and by diagnostic analyzers.
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetAllDiagnosticsAsync()
@@ -170,12 +164,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 65
-  summary: >+
+  summary: >-
     Given a set of compiler or [Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer](#/api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer) generated , returns the effective diagnostics after applying the below filters:
 
     1) [Microsoft.CodeAnalysis.CompilationOptions.SpecificDiagnosticOptions](#/api/Microsoft.CodeAnalysis.CompilationOptions) specified for the given .
@@ -185,7 +179,6 @@ items:
     3) Diagnostic suppression through applied [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute](#).
 
     4) Pragma directives for the given .
-
   syntax:
     content:
       CSharp: public static IEnumerable<Diagnostic> GetEffectiveDiagnostics(IEnumerable<Diagnostic> diagnostics, Compilation compilation)
@@ -213,16 +206,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/DiagnosticAnalyzer/CompilationWithAnalyzers.cs
     startLine: 95
-  summary: >+
+  summary: >-
     Returns true if all the diagnostics that can be produced by this analyzer are suppressed through options.
 
     says whether the caller would like the exception thrown by the analyzers to be handled or not. If true - Handles ; False - Not handled.
-
   syntax:
     content:
       CSharp: public static bool IsDiagnosticAnalyzerSuppressed(DiagnosticAnalyzer analyzer, CompilationOptions options, Func<Exception, DiagnosticAnalyzer, bool> continueOnAnalyzerException)

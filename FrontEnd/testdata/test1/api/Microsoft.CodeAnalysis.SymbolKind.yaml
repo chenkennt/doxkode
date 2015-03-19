@@ -9,14 +9,12 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
   startLine: 7
-summary: >+
-  Specifies the possible kinds of symbols.
-
+summary: Specifies the possible kinds of symbols.
 syntax:
   content:
     CSharp: public enum SymbolKind
@@ -42,14 +40,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 12
-  summary: >+
-    Symbol is an alias.
-
+  summary: Symbol is an alias.
   syntax:
     content:
       CSharp: Alias = 0
@@ -64,14 +60,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 17
-  summary: >+
-    Symbol is an array type.
-
+  summary: Symbol is an array type.
   syntax:
     content:
       CSharp: ArrayType = 1
@@ -86,14 +80,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 22
-  summary: >+
-    Symbol is an assembly.
-
+  summary: Symbol is an assembly.
   syntax:
     content:
       CSharp: Assembly = 2
@@ -108,14 +100,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 27
-  summary: >+
-    Symbol is a dynamic type.
-
+  summary: Symbol is a dynamic type.
   syntax:
     content:
       CSharp: DynamicType = 3
@@ -130,14 +120,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 32
-  summary: >+
-    Symbol that represents an error
-
+  summary: Symbol that represents an error
   syntax:
     content:
       CSharp: ErrorType = 4
@@ -152,14 +140,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 37
-  summary: >+
-    Symbol is an Event.
-
+  summary: Symbol is an Event.
   syntax:
     content:
       CSharp: Event = 5
@@ -174,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 42
-  summary: >+
-    Symbol is a field.
-
+  summary: Symbol is a field.
   syntax:
     content:
       CSharp: Field = 6
@@ -196,14 +180,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 47
-  summary: >+
-    Symbol is a label.
-
+  summary: Symbol is a label.
   syntax:
     content:
       CSharp: Label = 7
@@ -218,14 +200,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 52
-  summary: >+
-    Symbol is a local.
-
+  summary: Symbol is a local.
   syntax:
     content:
       CSharp: Local = 8
@@ -240,14 +220,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 57
-  summary: >+
-    Symbol is a method.
-
+  summary: Symbol is a method.
   syntax:
     content:
       CSharp: Method = 9
@@ -262,14 +240,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 62
-  summary: >+
-    Symbol is a netmodule.
-
+  summary: Symbol is a netmodule.
   syntax:
     content:
       CSharp: NetModule = 10
@@ -284,14 +260,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 67
-  summary: >+
-    Symbol is a named type (e.g. class).
-
+  summary: Symbol is a named type (e.g. class).
   syntax:
     content:
       CSharp: NamedType = 11
@@ -306,14 +280,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 72
-  summary: >+
-    Symbol is a namespace.
-
+  summary: Symbol is a namespace.
   syntax:
     content:
       CSharp: Namespace = 12
@@ -328,14 +300,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 77
-  summary: >+
-    Symbol is a parameter.
-
+  summary: Symbol is a parameter.
   syntax:
     content:
       CSharp: Parameter = 13
@@ -350,14 +320,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 82
-  summary: >+
-    Symbol is a pointer type.
-
+  summary: Symbol is a pointer type.
   syntax:
     content:
       CSharp: PointerType = 14
@@ -372,14 +340,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 87
-  summary: >+
-    Symbol is a property.
-
+  summary: Symbol is a property.
   syntax:
     content:
       CSharp: Property = 15
@@ -394,14 +360,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 92
-  summary: >+
-    Symbol is a range variable of a query expression.
-
+  summary: Symbol is a range variable of a query expression.
   syntax:
     content:
       CSharp: RangeVariable = 16
@@ -416,14 +380,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 97
-  summary: >+
-    Symbol is a type parameter.
-
+  summary: Symbol is a type parameter.
   syntax:
     content:
       CSharp: TypeParameter = 17
@@ -438,14 +400,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 102
-  summary: >+
-    Symbol is a preprocessing/conditional compilation constant.
-
+  summary: Symbol is a preprocessing/conditional compilation constant.
   syntax:
     content:
       CSharp: Preprocessing = 18

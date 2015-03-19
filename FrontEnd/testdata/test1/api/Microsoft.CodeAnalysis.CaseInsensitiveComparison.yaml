@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
   startLine: 14
-summary: >+
-  Case-insensitive operations (mostly comparison) on unicode strings.
-
+summary: Case-insensitive operations (mostly comparison) on unicode strings.
 syntax:
   content:
     CSharp: public static class CaseInsensitiveComparison
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 185
-  summary: >+
-    Returns a StringComparer that compares strings according the VB identifier comparison rules.
-
+  summary: Returns a StringComparer that compares strings according the VB identifier comparison rules.
   syntax:
     content:
       CSharp: public static StringComparer Comparer
@@ -63,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 187
@@ -79,14 +75,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 196
-  summary: >+
-    Determines if two VB identifiers are equal according to the VB identifier comparison rules.
-
+  summary: Determines if two VB identifiers are equal according to the VB identifier comparison rules.
   syntax:
     content:
       CSharp: public static bool Equals(string left, string right)
@@ -117,14 +111,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 207
-  summary: >+
-    Determines if the string 'value' end with string 'possibleEnd'.
-
+  summary: Determines if the string 'value' end with string 'possibleEnd'.
   syntax:
     content:
       CSharp: public static bool EndsWith(string value, string possibleEnd)
@@ -152,14 +144,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 218
-  summary: >+
-    Compares two VB identifiers according to the VB identifier comparison rules.
-
+  summary: Compares two VB identifiers according to the VB identifier comparison rules.
   syntax:
     content:
       CSharp: public static int Compare(string left, string right)
@@ -190,14 +180,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 228
-  summary: >+
-    Gets a case-insensitive hash code for VB identifiers.
-
+  summary: Gets a case-insensitive hash code for VB identifiers.
   syntax:
     content:
       CSharp: public static int GetHashCode(string value)
@@ -222,14 +210,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 240
-  summary: >+
-    Convert a string to lower case in culture invariant way
-
+  summary: Convert a string to lower case in culture invariant way
   syntax:
     content:
       CSharp: public static string ToLower(string value)
@@ -252,14 +238,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/CaseInsensitiveComparison.cs
     startLine: 261
-  summary: >+
-    In-place convert string in StringBuilder to lower case in culture invariant way
-
+  summary: In-place convert string in StringBuilder to lower case in culture invariant way
   syntax:
     content:
       CSharp: public static void ToLower(StringBuilder builder)

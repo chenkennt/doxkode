@@ -9,14 +9,12 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
   startLine: 10
-summary: >+
-  Represents a type other than an array, a pointer, a type parameter.
-
+summary: Represents a type other than an array, a pointer, a type parameter.
 syntax:
   content:
     CSharp: public interface INamedTypeSymbol
@@ -32,16 +30,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 16
-  summary: >+
+  summary: >-
     Returns the arity of this type, or the number of type parameters it takes.
 
     A non-generic type has zero arity.
-
   syntax:
     content:
       CSharp: int Arity
@@ -61,8 +58,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 16
@@ -77,14 +74,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 21
-  summary: >+
-    True if this type or some containing type has type parameters.
-
+  summary: True if this type or some containing type has type parameters.
   syntax:
     content:
       CSharp: bool IsGenericType
@@ -104,8 +99,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 21
@@ -120,12 +115,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 30
-  summary: >+
+  summary: >-
     True if this is a reference to an unbound generic type. A generic type is
 
     considered unbound if all of the type argument lists in its fully qualified
@@ -135,7 +130,6 @@ items:
     returned as error types because they do not really have type arguments.  An unbound
 
     generic type yields null for its BaseType and an empty result for its Interfaces.
-
   syntax:
     content:
       CSharp: bool IsUnboundGenericType
@@ -155,8 +149,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 30
@@ -171,16 +165,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 36
-  summary: >+
+  summary: >-
     Returns true if the type is a Script class.
 
     It might be an interactive submission class or a Script class in a csx file.
-
   syntax:
     content:
       CSharp: bool IsScriptClass
@@ -200,8 +193,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 36
@@ -216,16 +209,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 42
-  summary: >+
+  summary: >-
     Returns true if the type is the implicit class that holds onto invalid global members (like methods or
 
     statements in a non script file).
-
   syntax:
     content:
       CSharp: bool IsImplicitClass
@@ -245,8 +237,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 42
@@ -261,14 +253,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 47
-  summary: >+
-    Returns collection of names of members declared within this type.
-
+  summary: Returns collection of names of members declared within this type.
   syntax:
     content:
       CSharp: IEnumerable<string> MemberNames
@@ -288,8 +278,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 47
@@ -304,16 +294,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 53
-  summary: >+
+  summary: >-
     Returns the type parameters that this type has. If this is a non-generic type,
 
     returns an empty ImmutableArray.
-
   syntax:
     content:
       CSharp: ImmutableArray<ITypeParameterSymbol> TypeParameters
@@ -333,8 +322,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 53
@@ -349,18 +338,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 60
-  summary: >+
+  summary: >-
     Returns the type arguments that have been substituted for the type parameters.
 
     If nothing has been substituted for a give type parameters,
 
     then the type parameter itself is consider the type argument.
-
   syntax:
     content:
       CSharp: ImmutableArray<ITypeSymbol> TypeArguments
@@ -380,8 +368,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 60
@@ -396,18 +384,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 67
-  summary: >+
+  summary: >-
     Get the original definition of this type symbol. If this symbol is derived from another
 
     symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
     source or metadata.
-
   syntax:
     content:
       CSharp: new INamedTypeSymbol OriginalDefinition
@@ -427,8 +414,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 67
@@ -443,12 +430,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 76
-  summary: >+
+  summary: >-
     For delegate types, gets the delegate's invoke method.  Returns null on
 
     all other kinds of types.  Note that is is possible to have an ill-formed
@@ -458,7 +445,6 @@ items:
     Such a type will be classified as a delegate but its DelegateInvokeMethod
 
     would be null.
-
   syntax:
     content:
       CSharp: IMethodSymbol DelegateInvokeMethod
@@ -478,8 +464,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 76
@@ -494,16 +480,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 82
-  summary: >+
+  summary: >-
     For enum types, gets the underlying type. Returns null on all other
 
     kinds of types.
-
   syntax:
     content:
       CSharp: INamedTypeSymbol EnumUnderlyingType
@@ -523,8 +508,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 82
@@ -539,18 +524,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 89
-  summary: >+
+  summary: >-
     Returns the type symbol that this type was constructed from. This type symbol
 
     has the same containing type (if any), but has type arguments that are the same
 
     as the type parameters (although its containing type might not).
-
   syntax:
     content:
       CSharp: INamedTypeSymbol ConstructedFrom
@@ -570,8 +554,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 89
@@ -586,14 +570,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 96
-  summary: >+
-    Returns a constructed type given its type arguments.
-
+  summary: Returns a constructed type given its type arguments.
   syntax:
     content:
       CSharp: INamedTypeSymbol Construct(params ITypeSymbol[] typeArguments);
@@ -606,7 +588,7 @@ items:
       description: >-
         The immediate type arguments to be replaced for type
 
-            parameters in the type.
+        parameters in the type.
     return:
       id: INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.ConstructUnboundGenericType
@@ -620,14 +602,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 101
-  summary: >+
-    Returns an unbound generic type of this named type.
-
+  summary: Returns an unbound generic type of this named type.
   syntax:
     content:
       CSharp: INamedTypeSymbol ConstructUnboundGenericType();
@@ -645,14 +625,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 106
-  summary: >+
-    Get the instance constructors for this type.
-
+  summary: Get the instance constructors for this type.
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> InstanceConstructors
@@ -672,8 +650,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 106
@@ -688,14 +666,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 111
-  summary: >+
-    Get the static constructors for this type.
-
+  summary: Get the static constructors for this type.
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> StaticConstructors
@@ -715,8 +691,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 111
@@ -731,14 +707,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 116
-  summary: >+
-    Get the both instance and static constructors for this type.
-
+  summary: Get the both instance and static constructors for this type.
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> Constructors
@@ -758,8 +732,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 116
@@ -774,12 +748,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 125
-  summary: >+
+  summary: >-
     For implicitly declared delegate types returns the EventSymbol that caused this
 
     delegate type to be generated.
@@ -789,7 +763,6 @@ items:
     Note, the set of possible associated symbols might be expanded in the future to
 
     reflect changes in the languages.
-
   syntax:
     content:
       CSharp: ISymbol AssociatedSymbol
@@ -809,8 +782,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 125
@@ -825,16 +798,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 131
-  summary: >+
+  summary: >-
     Determines if the symbol might contain extension methods.
 
     If false, the symbol does not contain extension methods.
-
   syntax:
     content:
       CSharp: bool MightContainExtensionMethods
@@ -854,8 +826,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 131
