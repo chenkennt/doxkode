@@ -9,14 +9,12 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
   startLine: 17
-summary: >+
-  Represents a token in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxToken](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxToken](#).
-
+summary: Represents a token in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxToken](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxToken](#).
 syntax:
   content:
     CSharp: public struct SyntaxToken
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 53
-  summary: >+
-    An integer representing the language specific kind of this token.
-
+  summary: An integer representing the language specific kind of this token.
   syntax:
     content:
       CSharp: public int RawKind
@@ -66,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 55
@@ -82,14 +78,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 61
-  summary: >+
-    The language name that this token is syntax of.
-
+  summary: The language name that this token is syntax of.
   syntax:
     content:
       CSharp: public string Language
@@ -109,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 63
@@ -125,14 +119,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 90
-  summary: >+
-    The node that contains this token in its Children collection.
-
+  summary: The node that contains this token in its Children collection.
   syntax:
     content:
       CSharp: public SyntaxNode Parent
@@ -152,8 +144,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 92
@@ -168,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 135
-  summary: >+
-    The absolute span of this token in characters, not including its leading and trailing trivia.
-
+  summary: The absolute span of this token in characters, not including its leading and trailing trivia.
   syntax:
     content:
       CSharp: public TextSpan Span
@@ -195,8 +185,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 137
@@ -211,14 +201,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 151
-  summary: >+
-    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api/Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxToken.Span](#/api/Microsoft.CodeAnalysis.SyntaxToken).
-
+  summary: Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api/Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxToken.Span](#/api/Microsoft.CodeAnalysis.SyntaxToken).
   syntax:
     content:
       CSharp: public int SpanStart
@@ -238,8 +226,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 153
@@ -254,14 +242,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 159
-  summary: >+
-    The absolute span of this token in characters, including its leading and trailing trivia.
-
+  summary: The absolute span of this token in characters, including its leading and trailing trivia.
   syntax:
     content:
       CSharp: public TextSpan FullSpan
@@ -281,8 +267,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 161
@@ -297,18 +283,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 169
-  summary: >+
+  summary: >-
     Determines whether this token represents a language construct that was actually parsed from source code.
 
     Missing tokens are typically generated by the parser in error scenarios to represent constructs that should
 
     have been present in the source code for the source code to compile successfully but were actually missing.
-
   syntax:
     content:
       CSharp: public bool IsMissing
@@ -328,8 +313,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 171
@@ -344,16 +329,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 178
-  summary: >+
+  summary: >-
     Returns the value of the token. For example, if the token represents an integer literal, then this property
 
     would return the actual integer.
-
   syntax:
     content:
       CSharp: public object Value
@@ -373,8 +357,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 180
@@ -389,16 +373,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 187
-  summary: >+
+  summary: >-
     Returns the text representation of the value of the token. For example, if the token represents an integer
 
     literal, then this property would return a string representing the integer.
-
   syntax:
     content:
       CSharp: public string ValueText
@@ -418,8 +401,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 189
@@ -434,8 +417,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 192
@@ -458,8 +441,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 194
@@ -474,14 +457,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 202
-  summary: >+
-    Returns the string representation of this token, not including its leading and trailing trivia.
-
+  summary: Returns the string representation of this token, not including its leading and trailing trivia.
   syntax:
     content:
       CSharp: public override string ToString()
@@ -500,14 +481,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 212
-  summary: >+
-    Returns the full string representation of this token including its leading and trailing trivia.
-
+  summary: Returns the full string representation of this token including its leading and trailing trivia.
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -526,14 +505,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 221
-  summary: >+
-    Writes the full text of this token to the specified TextWriter
-
+  summary: Writes the full text of this token to the specified TextWriter
   syntax:
     content:
       CSharp: public void WriteTo(System.IO.TextWriter writer)
@@ -556,14 +533,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 243
-  summary: >+
-    Determines whether this token has any leading trivia.
-
+  summary: Determines whether this token has any leading trivia.
   syntax:
     content:
       CSharp: public bool HasLeadingTrivia
@@ -583,8 +558,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 245
@@ -599,14 +574,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 251
-  summary: >+
-    Determines whether this token has any trailing trivia.
-
+  summary: Determines whether this token has any trailing trivia.
   syntax:
     content:
       CSharp: public bool HasTrailingTrivia
@@ -626,8 +599,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 253
@@ -642,14 +615,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 275
-  summary: >+
-    Determines whether this token or any of its descendant trivia have any diagnostics on them.
-
+  summary: Determines whether this token or any of its descendant trivia have any diagnostics on them.
   syntax:
     content:
       CSharp: public bool ContainsDiagnostics
@@ -669,8 +640,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 277
@@ -685,14 +656,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 283
-  summary: >+
-    Determines whether this token has any descendant preprocessor directives.
-
+  summary: Determines whether this token has any descendant preprocessor directives.
   syntax:
     content:
       CSharp: public bool ContainsDirectives
@@ -712,8 +681,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 285
@@ -728,14 +697,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 291
-  summary: >+
-    Determines whether this token is a descendant of a structured trivia.
-
+  summary: Determines whether this token is a descendant of a structured trivia.
   syntax:
     content:
       CSharp: public bool IsPartOfStructuredTrivia()
@@ -753,14 +720,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 299
-  summary: >+
-    Determines whether any of this token's trivia is structured.
-
+  summary: Determines whether any of this token's trivia is structured.
   syntax:
     content:
       CSharp: public bool HasStructuredTrivia
@@ -780,8 +745,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 301
@@ -796,14 +761,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 308
-  summary: >+
-    True if this token or its trivia has any annotations.
-
+  summary: True if this token or its trivia has any annotations.
   syntax:
     content:
       CSharp: public bool ContainsAnnotations
@@ -823,8 +786,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 310
@@ -839,14 +802,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 316
-  summary: >+
-    True if this token has annotations of the specified annotation kind.
-
+  summary: True if this token has annotations of the specified annotation kind.
   syntax:
     content:
       CSharp: public bool HasAnnotations(string annotationKind)
@@ -869,14 +830,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 324
-  summary: >+
-    True if this token has annotations of the specified annotation kinds.
-
+  summary: True if this token has annotations of the specified annotation kinds.
   syntax:
     content:
       CSharp: public bool HasAnnotations(params string[] annotationKinds)
@@ -899,14 +858,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 332
-  summary: >+
-    True if this token has the specified annotation.
-
+  summary: True if this token has the specified annotation.
   syntax:
     content:
       CSharp: public bool HasAnnotation(SyntaxAnnotation annotation)
@@ -929,14 +886,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 340
-  summary: >+
-    Gets all the annotations of the specified annotation kind.
-
+  summary: Gets all the annotations of the specified annotation kind.
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(string annotationKind)
@@ -959,14 +914,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 350
-  summary: >+
-    Gets all the annotations of the specified annotation kind.
-
+  summary: Gets all the annotations of the specified annotation kind.
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(params string[] annotationKinds)
@@ -989,14 +942,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 358
-  summary: >+
-    Gets all the annotations of the specified annotation kind.
-
+  summary: Gets all the annotations of the specified annotation kind.
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(IEnumerable<string> annotationKinds)
@@ -1019,16 +970,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 369
-  summary: >+
+  summary: >-
     Adds this annotation to a given syntax token, creating a new syntax token of the same type with the
 
     annotation on it.
-
   syntax:
     content:
       CSharp: public SyntaxToken WithAdditionalAnnotations(params SyntaxAnnotation[] annotations)
@@ -1051,16 +1001,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 378
-  summary: >+
+  summary: >-
     Adds this annotation to a given syntax token, creating a new syntax token of the same type with the
 
     annotation on it.
-
   syntax:
     content:
       CSharp: public SyntaxToken WithAdditionalAnnotations(IEnumerable<SyntaxAnnotation> annotations)
@@ -1083,14 +1032,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 399
-  summary: >+
-    Creates a new syntax token identical to this one without the specified annotations.
-
+  summary: Creates a new syntax token identical to this one without the specified annotations.
   syntax:
     content:
       CSharp: public SyntaxToken WithoutAnnotations(params SyntaxAnnotation[] annotations)
@@ -1113,14 +1060,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 407
-  summary: >+
-    Creates a new syntax token identical to this one without the specified annotations.
-
+  summary: Creates a new syntax token identical to this one without the specified annotations.
   syntax:
     content:
       CSharp: public SyntaxToken WithoutAnnotations(IEnumerable<SyntaxAnnotation> annotations)
@@ -1143,14 +1088,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 429
-  summary: >+
-    Creates a new syntax token identical to this one without annotations of the specified kind.
-
+  summary: Creates a new syntax token identical to this one without annotations of the specified kind.
   syntax:
     content:
       CSharp: public SyntaxToken WithoutAnnotations(string annotationKind)
@@ -1173,14 +1116,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 452
-  summary: >+
-    Copies all SyntaxAnnotations, if any, from this SyntaxToken instance and attaches them to a new instance based on .
-
+  summary: Copies all SyntaxAnnotations, if any, from this SyntaxToken instance and attaches them to a new instance based on .
   syntax:
     content:
       CSharp: public SyntaxToken CopyAnnotationsTo(SyntaxToken token)
@@ -1203,14 +1144,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 481
-  summary: >+
-    The list of trivia that appear before this token in the source code.
-
+  summary: The list of trivia that appear before this token in the source code.
   syntax:
     content:
       CSharp: public SyntaxTriviaList LeadingTrivia
@@ -1230,8 +1169,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 483
@@ -1246,16 +1185,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 495
-  summary: >+
+  summary: >-
     The list of trivia that appear after this token in the source code and are attached to this token or any of
 
     its descendants.
-
   syntax:
     content:
       CSharp: public SyntaxTriviaList TrailingTrivia
@@ -1275,8 +1213,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 497
@@ -1291,14 +1229,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 528
-  summary: >+
-    Creates a new tokne from this token with the leading and trailing trivia from the specified token.
-
+  summary: Creates a new tokne from this token with the leading and trailing trivia from the specified token.
   syntax:
     content:
       CSharp: public SyntaxToken WithTriviaFrom(SyntaxToken token)
@@ -1321,14 +1257,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 536
-  summary: >+
-    Creates a new token from this token with the leading trivia specified.
-
+  summary: Creates a new token from this token with the leading trivia specified.
   syntax:
     content:
       CSharp: public SyntaxToken WithLeadingTrivia(SyntaxTriviaList trivia)
@@ -1351,14 +1285,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 544
-  summary: >+
-    Creates a new token from this token with the leading trivia specified..
-
+  summary: Creates a new token from this token with the leading trivia specified..
   syntax:
     content:
       CSharp: public SyntaxToken WithLeadingTrivia(params SyntaxTrivia[] trivia)
@@ -1381,14 +1313,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 552
-  summary: >+
-    Creates a new token from this token with the leading trivia specified..
-
+  summary: Creates a new token from this token with the leading trivia specified..
   syntax:
     content:
       CSharp: public SyntaxToken WithLeadingTrivia(IEnumerable<SyntaxTrivia> trivia)
@@ -1411,14 +1341,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 564
-  summary: >+
-    Creates a new token from this token with the trailing trivia specified.
-
+  summary: Creates a new token from this token with the trailing trivia specified.
   syntax:
     content:
       CSharp: public SyntaxToken WithTrailingTrivia(SyntaxTriviaList trivia)
@@ -1441,14 +1369,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 572
-  summary: >+
-    Creates a new token from this token with the trailing trivia specified.
-
+  summary: Creates a new token from this token with the trailing trivia specified.
   syntax:
     content:
       CSharp: public SyntaxToken WithTrailingTrivia(params SyntaxTrivia[] trivia)
@@ -1471,14 +1397,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 580
-  summary: >+
-    Creates a new token from this token with the trailing trivia specified.
-
+  summary: Creates a new token from this token with the trailing trivia specified.
   syntax:
     content:
       CSharp: public SyntaxToken WithTrailingTrivia(IEnumerable<SyntaxTrivia> trivia)
@@ -1501,14 +1425,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 592
-  summary: >+
-    Gets a list of all the trivia (both leading and trailing) for this token.
-
+  summary: Gets a list of all the trivia (both leading and trailing) for this token.
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> GetAllTrivia()
@@ -1525,14 +1447,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 616
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are equal.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are equal.
 - id: Microsoft.CodeAnalysis.SyntaxToken.op_Inequality(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
   yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api/Microsoft.CodeAnalysis.SyntaxToken
@@ -1543,14 +1463,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 624
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
 - id: Microsoft.CodeAnalysis.SyntaxToken.Equals(Microsoft.CodeAnalysis.SyntaxToken)
   yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
   href: api/Microsoft.CodeAnalysis.SyntaxToken
@@ -1562,16 +1480,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 633
-  summary: >+
+  summary: >-
     Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
     [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
-
   syntax:
     content:
       CSharp: public bool Equals(SyntaxToken other)
@@ -1594,16 +1511,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 645
-  summary: >+
+  summary: >-
     Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
     [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
-
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -1626,14 +1542,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 653
-  summary: >+
-    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
-
+  summary: Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -1651,14 +1565,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 662
-  summary: >+
-    Gets the token that follows this token in the syntax tree.
-
+  summary: Gets the token that follows this token in the syntax tree.
   syntax:
     content:
       CSharp: public SyntaxToken GetNextToken(bool includeZeroWidth = false, bool includeSkipped = false, bool includeDirectives = false, bool includeDocumentationComments = false)
@@ -1697,14 +1609,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 693
-  summary: >+
-    Gets the token that precedes this token in the syntax tree.
-
+  summary: Gets the token that precedes this token in the syntax tree.
   syntax:
     content:
       CSharp: public SyntaxToken GetPreviousToken(bool includeZeroWidth = false, bool includeSkipped = false, bool includeDirectives = false, bool includeDocumentationComments = false)
@@ -1743,14 +1653,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 718
-  summary: >+
-    The SyntaxTree that contains this token.
-
+  summary: The SyntaxTree that contains this token.
   syntax:
     content:
       CSharp: public SyntaxTree SyntaxTree
@@ -1770,8 +1678,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 720
@@ -1786,14 +1694,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 730
-  summary: >+
-    Gets the location for this token.
-
+  summary: Gets the location for this token.
   syntax:
     content:
       CSharp: public Location GetLocation()
@@ -1811,18 +1717,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 742
-  summary: >+
+  summary: >-
     Gets a list of all the diagnostics associated with this token and any related trivia.
 
     This method does not filter diagnostics based on #pragmas and compiler options
 
     like nowarn, warnaserror etc.
-
   syntax:
     content:
       CSharp: public IEnumerable<Diagnostic> GetDiagnostics()
@@ -1840,14 +1745,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 752
-  summary: >+
-    Determines if this token is equivalent to the specified token.
-
+  summary: Determines if this token is equivalent to the specified token.
   syntax:
     content:
       CSharp: public bool IsEquivalentTo(SyntaxToken token)

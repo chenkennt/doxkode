@@ -9,14 +9,12 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
   startLine: 11
-summary: >+
-  Represents a namespace.
-
+summary: Represents a namespace.
 syntax:
   content:
     CSharp: public interface INamespaceSymbol
@@ -32,14 +30,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 16
-  summary: >+
-    Get all the members of this symbol.
-
+  summary: Get all the members of this symbol.
   syntax:
     content:
       CSharp: new IEnumerable<INamespaceOrTypeSymbol> GetMembers();
@@ -57,14 +53,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 21
-  summary: >+
-    Get all the members of this symbol that have a particular name.
-
+  summary: Get all the members of this symbol that have a particular name.
   syntax:
     content:
       CSharp: new IEnumerable<INamespaceOrTypeSymbol> GetMembers(string name);
@@ -87,14 +81,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 26
-  summary: >+
-    Get all the members of this symbol that are namespaces.
-
+  summary: Get all the members of this symbol that are namespaces.
   syntax:
     content:
       CSharp: IEnumerable<INamespaceSymbol> GetNamespaceMembers();
@@ -112,16 +104,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 32
-  summary: >+
+  summary: >-
     Returns whether this namespace is the unnamed, global namespace that is
 
     at the root of all namespaces.
-
   syntax:
     content:
       CSharp: bool IsGlobalNamespace
@@ -141,8 +132,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 32
@@ -157,12 +148,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 40
-  summary: >+
+  summary: >-
     The kind of namespace: Module, Assembly or Compilation.
 
     Module namespaces contain only members from the containing module that share the same namespace name.
@@ -170,7 +161,6 @@ items:
     Assembly namespaces contain members for all modules in the containing assembly that share the same namespace name.
 
     Compilation namespaces contain all members, from source or referenced metadata (assemblies and modules) that share the same namespace name.
-
   syntax:
     content:
       CSharp: NamespaceKind NamespaceKind
@@ -190,8 +180,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 40
@@ -206,14 +196,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 45
-  summary: >+
-    The containing compilation for compilation namespaces.
-
+  summary: The containing compilation for compilation namespaces.
   syntax:
     content:
       CSharp: Compilation ContainingCompilation
@@ -233,8 +221,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 45
@@ -249,12 +237,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 53
-  summary: >+
+  summary: >-
     If a namespace is an assembly or compilation namespace, it may be composed of multiple
 
     namespaces that are merged together. If so, ConstituentNamespaces returns
@@ -262,7 +250,6 @@ items:
     all the namespaces that were merged. If this namespace was not merged, returns
 
     an array containing only this namespace.
-
   syntax:
     content:
       CSharp: ImmutableArray<INamespaceSymbol> ConstituentNamespaces
@@ -282,8 +269,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 53

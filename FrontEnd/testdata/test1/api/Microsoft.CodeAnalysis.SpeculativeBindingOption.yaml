@@ -9,16 +9,15 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/SpeculativeBindingOption.cs
   startLine: 10
-summary: >+
+summary: >-
   Describes the kind of binding to be performed in one of the SemanticModel
 
   speculative binding methods.
-
 syntax:
   content:
     CSharp: public enum SpeculativeBindingOption
@@ -44,16 +43,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SpeculativeBindingOption.cs
     startLine: 16
-  summary: >+
+  summary: >-
     Binds the given expression using the normal expression binding rules
 
     that would occur during normal binding of expressions.
-
   syntax:
     content:
       CSharp: BindAsExpression = 0
@@ -68,16 +66,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SpeculativeBindingOption.cs
     startLine: 22
-  summary: >+
+  summary: >-
     Binds the given expression as a type or namespace only. If this option
 
     is selected, then the given expression must derive from TypeSyntax.
-
   syntax:
     content:
       CSharp: BindAsTypeOrNamespace = 1

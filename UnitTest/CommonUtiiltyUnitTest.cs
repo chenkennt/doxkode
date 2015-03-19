@@ -4,7 +4,7 @@ using DocAsCode.BuildMeta;
 using System.IO;
 using System.Threading.Tasks;
 using DocAsCode.Utility;
-using EntityModel.ViewModel;
+using DocAsCode.EntityModel;
 using System.Collections.Generic;
 
 namespace UnitTest
@@ -21,9 +21,7 @@ namespace UnitTest
             string input = @"
       <member name='T:TestClass1.Partial1'>
 
-          <summary>
-          Parital classes <see cref='T:System.AccessViolationException'/><see cref='T:System.AccessViolationException'/>can not cross assemblies, ```Classes in assemblies are by definition complete.```
-
+          <summary>Parital classes <see cref='T:System.AccessViolationException'/><see cref='T:System.AccessViolationException'/>can not cross assemblies, ```Classes in assemblies are by definition complete.```
           </summary>
           <returns>Task<see cref='T:System.AccessViolationException'/> returns</returns>
 
@@ -33,7 +31,7 @@ namespace UnitTest
      
            </member>";
             var summary = TripleSlashCommentParser.GetSummary(input, true);
-            Assert.AreEqual("Parital classes @T:System.AccessViolationException-@T:System.AccessViolationException-can not cross assemblies, ```Classes in assemblies are by definition complete.```\r\n", summary);
+            Assert.AreEqual("Parital classes @T:System.AccessViolationException-@T:System.AccessViolationException-can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
 
             var returns = TripleSlashCommentParser.GetReturns(input, true);
             Assert.AreEqual("Task@T:System.AccessViolationException- returns", returns);

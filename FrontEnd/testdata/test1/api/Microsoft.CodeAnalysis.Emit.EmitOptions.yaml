@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
   startLine: 10
-summary: >+
-  Represents compilation emit options.
-
+summary: Represents compilation emit options.
 syntax:
   content:
     CSharp: public sealed class EmitOptions
@@ -36,14 +34,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 17
-  summary: >+
-    True to emit an assembly excluding executable code such as method bodies.
-
+  summary: True to emit an assembly excluding executable code such as method bodies.
   syntax:
     content:
       CSharp: public bool EmitMetadataOnly
@@ -63,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 17
@@ -79,14 +75,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 22
-  summary: >+
-    Tolerate errors, producing a PE stream and a success result even in the presence of (some) errors.
-
+  summary: Tolerate errors, producing a PE stream and a success result even in the presence of (some) errors.
   syntax:
     content:
       CSharp: public bool TolerateErrors
@@ -106,8 +100,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 22
@@ -122,16 +116,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 31
-  summary: >+
+  summary: >-
     Unless set (private) members that don't affect the language semantics of the resulting assembly will be excluded
 
     when emitting with [Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly](#/api/Microsoft.CodeAnalysis.Emit.EmitOptions) on.
-
   syntax:
     content:
       CSharp: public bool IncludePrivateMembers
@@ -151,8 +144,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 31
@@ -167,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 36
-  summary: >+
-    Subsystem version
-
+  summary: Subsystem version
   syntax:
     content:
       CSharp: public SubsystemVersion SubsystemVersion
@@ -194,8 +185,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 36
@@ -210,14 +201,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 45
-  summary: >+
-    Specifies the size of sections in the output file.
-
+  summary: Specifies the size of sections in the output file.
   syntax:
     content:
       CSharp: public int FileAlignment
@@ -237,8 +226,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 45
@@ -253,14 +242,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 50
-  summary: >+
-    True to enable high entropy virtual address space for the output binary.
-
+  summary: True to enable high entropy virtual address space for the output binary.
   syntax:
     content:
       CSharp: public bool HighEntropyVirtualAddressSpace
@@ -280,8 +267,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 50
@@ -296,14 +283,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 55
-  summary: >+
-    Specifies the preferred base address at which to load the output DLL.
-
+  summary: Specifies the preferred base address at which to load the output DLL.
   syntax:
     content:
       CSharp: public ulong BaseAddress
@@ -323,8 +308,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 55
@@ -339,14 +324,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 60
-  summary: >+
-    Debug information format.
-
+  summary: Debug information format.
   syntax:
     content:
       CSharp: public DebugInformationFormat DebugInformationFormat
@@ -366,8 +349,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 60
@@ -382,14 +365,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 73
-  summary: >+
-    Assembly name override - file name and extension. If not specified the the compilation name is used.
-
+  summary: Assembly name override - file name and extension. If not specified the the compilation name is used.
   syntax:
     content:
       CSharp: public string OutputNameOverride
@@ -409,8 +390,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 73
@@ -425,14 +406,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 81
-  summary: >+
-    The name of the PDB file to be embedded in the PE image, or null to use the default.
-
+  summary: The name of the PDB file to be embedded in the PE image, or null to use the default.
   syntax:
     content:
       CSharp: public string PdbFilePath
@@ -452,8 +431,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 81
@@ -468,14 +447,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 86
-  summary: >+
-    Runtime metadata version.
-
+  summary: Runtime metadata version.
   syntax:
     content:
       CSharp: public string RuntimeMetadataVersion
@@ -495,8 +472,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 86
@@ -511,8 +488,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 88
@@ -586,8 +563,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 129
@@ -613,8 +590,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 134
@@ -640,8 +617,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 155
@@ -661,8 +638,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 170
@@ -676,8 +653,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 175
@@ -692,8 +669,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 223
@@ -719,8 +696,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 233
@@ -746,8 +723,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 243
@@ -773,8 +750,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 253
@@ -800,14 +777,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 267
-  summary: >+
-    Sets the byte alignment for portable executable file sections.
-
+  summary: Sets the byte alignment for portable executable file sections.
   syntax:
     content:
       CSharp: public EmitOptions WithFileAlignment(int value)
@@ -831,8 +806,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 277
@@ -858,8 +833,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 287
@@ -885,8 +860,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 297
@@ -912,8 +887,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 307
@@ -939,8 +914,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 317
@@ -966,8 +941,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 327

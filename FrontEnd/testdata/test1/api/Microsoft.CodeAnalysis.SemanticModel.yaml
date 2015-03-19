@@ -9,16 +9,15 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
   startLine: 31
-summary: >+
+summary: >-
   Allows asking semantic questions about a tree of syntax nodes in a Compilation. Typically,
 
   an instance is obtained by a call to GetBinding on a Compilation or Compilation.
-
 syntax:
   content:
     CSharp: public abstract class SemanticModel
@@ -38,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 36
-  summary: >+
-    Gets the source language ("C#" or "Visual Basic").
-
+  summary: Gets the source language ("C#" or "Visual Basic").
   syntax:
     content:
       CSharp: public abstract string Language
@@ -65,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 36
@@ -81,14 +78,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 41
-  summary: >+
-    The compilation this model was obtained from.
-
+  summary: The compilation this model was obtained from.
   syntax:
     content:
       CSharp: public Compilation Compilation
@@ -108,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 43
@@ -124,14 +119,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 54
-  summary: >+
-    The syntax tree this model was obtained from.
-
+  summary: The syntax tree this model was obtained from.
   syntax:
     content:
       CSharp: public SyntaxTree SyntaxTree
@@ -151,8 +144,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 56
@@ -167,14 +160,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 212
-  summary: >+
-    Returns true if this is a speculative semantic model created with any of the TryGetSpeculativeSemanticModel methods.
-
+  summary: Returns true if this is a speculative semantic model created with any of the TryGetSpeculativeSemanticModel methods.
   syntax:
     content:
       CSharp: public abstract bool IsSpeculativeSemanticModel
@@ -194,8 +185,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 214
@@ -210,16 +201,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 221
-  summary: >+
+  summary: >-
     If this is a speculative semantic model, returns the original position at which the speculative model was created.
 
     Otherwise, returns 0.
-
   syntax:
     content:
       CSharp: public abstract int OriginalPositionForSpeculation
@@ -239,8 +229,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 223
@@ -255,16 +245,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 230
-  summary: >+
+  summary: >-
     If this is a speculative semantic model, then returns its parent semantic model.
 
     Otherwise, returns null.
-
   syntax:
     content:
       CSharp: public SemanticModel ParentModel
@@ -284,8 +273,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 232
@@ -300,16 +289,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 291
-  summary: >+
+  summary: >-
     Get all of the syntax errors within the syntax tree associated with this
 
     object. Does not get errors involving declarations or compiling method bodies or initializers.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetSyntaxDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -322,7 +310,7 @@ items:
       description: >-
         Optional span within the syntax tree for which to get diagnostics.
 
-            If no argument is specified, then diagnostics for the entire tree are returned.
+        If no argument is specified, then diagnostics for the entire tree are returned.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -331,7 +319,7 @@ items:
       description: >-
         A cancellation token that can be used to cancel the
 
-            process of obtaining the diagnostics.
+        process of obtaining the diagnostics.
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetDeclarationDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
@@ -345,16 +333,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 305
-  summary: >+
+  summary: >-
     Get all of the declaration errors within the syntax tree associated with this
 
     object. Does not get errors involving incorrect syntax, compiling method bodies or initializers.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDeclarationDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -367,7 +354,7 @@ items:
       description: >-
         Optional span within the syntax tree for which to get diagnostics.
 
-            If no argument is specified, then diagnostics for the entire tree are returned.
+        If no argument is specified, then diagnostics for the entire tree are returned.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -376,7 +363,7 @@ items:
       description: >-
         A cancellation token that can be used to cancel the
 
-            process of obtaining the diagnostics.
+        process of obtaining the diagnostics.
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetMethodBodyDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
@@ -390,16 +377,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 319
-  summary: >+
+  summary: >-
     Get all of the method body and initializer errors within the syntax tree associated with this
 
     object. Does not get errors involving incorrect syntax or declarations.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetMethodBodyDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -412,7 +398,7 @@ items:
       description: >-
         Optional span within the syntax tree for which to get diagnostics.
 
-            If no argument is specified, then diagnostics for the entire tree are returned.
+        If no argument is specified, then diagnostics for the entire tree are returned.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -421,7 +407,7 @@ items:
       description: >-
         A cancellation token that can be used to cancel the
 
-            process of obtaining the diagnostics.
+        process of obtaining the diagnostics.
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
@@ -435,18 +421,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 336
-  summary: >+
+  summary: >-
     Get all the errors within the syntax tree associated with this object. Includes errors
 
     involving compiling method bodies or initializers, in addition to the errors returned by
 
     GetDeclarationDiagnostics.
-
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -459,7 +444,7 @@ items:
       description: >-
         Optional span within the syntax tree for which to get diagnostics.
 
-            If no argument is specified, then diagnostics for the entire tree are returned.
+        If no argument is specified, then diagnostics for the entire tree are returned.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -468,7 +453,7 @@ items:
       description: >-
         A cancellation token that can be used to cancel the
 
-            process of obtaining the diagnostics.
+        process of obtaining the diagnostics.
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)
@@ -482,16 +467,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 413
-  summary: >+
+  summary: >-
     Gets the available named symbols in the context of the specified location and optional container. Only
 
     symbols that are accessible and visible from the given location are returned.
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupSymbols(int position, INamespaceOrTypeSymbol container = null, string name = null, bool includeReducedExtensionMethods = false)
@@ -504,7 +488,7 @@ items:
       description: >-
         The character position for determining the enclosing declaration scope and
 
-            accessibility.
+        accessibility.
     - id: container
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
@@ -513,7 +497,7 @@ items:
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
-            scope around position is used.
+        scope around position is used.
     - id: name
       type:
         id: System.String
@@ -522,7 +506,7 @@ items:
       description: >-
         The name of the symbol to find. If null is specified then symbols
 
-            with any names are returned.
+        with any names are returned.
     - id: includeReducedExtensionMethods
       type:
         id: System.Boolean
@@ -543,12 +527,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 466
-  summary: >+
+  summary: >-
     Gets the available base type members in the context of the specified location.  Akin to
 
     calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](#/api/Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
@@ -594,7 +578,6 @@ items:
     Protected members of an instance of another type are only accessible if the instance is known
 
     to be "this" instance (as indicated by the "base" keyword).
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupBaseMembers(int position, string name = null)
@@ -607,7 +590,7 @@ items:
       description: >-
         The character position for determining the enclosing declaration scope and
 
-            accessibility.
+        accessibility.
     - id: name
       type:
         id: System.String
@@ -616,7 +599,7 @@ items:
       description: >-
         The name of the symbol to find. If null is specified then symbols
 
-            with any names are returned.
+        with any names are returned.
     return:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
@@ -631,12 +614,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 500
-  summary: >+
+  summary: >-
     Gets the available named static member symbols in the context of the specified location and optional container.
 
     Only members that are accessible and visible from the given location are returned.
@@ -644,7 +627,6 @@ items:
 
 
     Non-reduced extension methods are considered, since they are static methods.
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupStaticMembers(int position, INamespaceOrTypeSymbol container = null, string name = null)
@@ -657,7 +639,7 @@ items:
       description: >-
         The character position for determining the enclosing declaration scope and
 
-            accessibility.
+        accessibility.
     - id: container
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
@@ -666,7 +648,7 @@ items:
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
-            scope around position is used.
+        scope around position is used.
     - id: name
       type:
         id: System.String
@@ -675,7 +657,7 @@ items:
       description: >-
         The name of the symbol to find. If null is specified then symbols
 
-            with any names are returned.
+        with any names are returned.
     return:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
@@ -690,16 +672,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 534
-  summary: >+
+  summary: >-
     Gets the available named namespace and type symbols in the context of the specified location and optional container.
 
     Only members that are accessible and visible from the given location are returned.
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupNamespacesAndTypes(int position, INamespaceOrTypeSymbol container = null, string name = null)
@@ -712,7 +693,7 @@ items:
       description: >-
         The character position for determining the enclosing declaration scope and
 
-            accessibility.
+        accessibility.
     - id: container
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
@@ -721,7 +702,7 @@ items:
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
-            scope around position is used.
+        scope around position is used.
     - id: name
       type:
         id: System.String
@@ -730,7 +711,7 @@ items:
       description: >-
         The name of the symbol to find. If null is specified then symbols
 
-            with any names are returned.
+        with any names are returned.
     return:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
@@ -745,16 +726,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 564
-  summary: >+
+  summary: >-
     Gets the available named label symbols in the context of the specified location and optional container.
 
     Only members that are accessible and visible from the given location are returned.
-
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupLabels(int position, string name = null)
@@ -767,7 +747,7 @@ items:
       description: >-
         The character position for determining the enclosing declaration scope and
 
-            accessibility.
+        accessibility.
     - id: name
       type:
         id: System.String
@@ -776,7 +756,7 @@ items:
       description: >-
         The name of the symbol to find. If null is specified then symbols
 
-            with any names are returned.
+        with any names are returned.
     return:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
@@ -791,18 +771,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 695
-  summary: >+
+  summary: >-
     If the node provided has a constant value an Optional value will be returned with
 
     HasValue set to true and with Value set to the constant.  If the node does not have an
 
     constant value, an Optional will be returned with HasValue set to false.
-
   syntax:
     content:
       CSharp: public Optional<object> GetConstantValue(SyntaxNode node, CancellationToken cancellationToken = default (CancellationToken))
@@ -830,16 +809,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 728
-  summary: >+
+  summary: >-
     Given a position in the SyntaxTree for this SemanticModel returns the innermost Symbol
 
     that the position is considered inside of.
-
   syntax:
     content:
       CSharp: public ISymbol GetEnclosingSymbol(int position, CancellationToken cancellationToken = default (CancellationToken))
@@ -867,14 +845,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 754
-  summary: >+
-    Determines if the symbol is accessible from the specified location.
-
+  summary: Determines if the symbol is accessible from the specified location.
   syntax:
     content:
       CSharp: public bool IsAccessible(int position, ISymbol symbol)
@@ -887,9 +863,9 @@ items:
       description: >-
         A character position used to identify a declaration scope and
 
-            accessibility. This character position must be within the FullSpan of the Root syntax
+        accessibility. This character position must be within the FullSpan of the Root syntax
 
-            node in this SemanticModel.
+        node in this SemanticModel.
     - id: symbol
       type:
         id: Microsoft.CodeAnalysis.ISymbol
@@ -910,16 +886,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 783
-  summary: >+
+  summary: >-
     Field-like events can be used as fields in types that can access private
 
     members of the declaring type of the event.
-
   syntax:
     content:
       CSharp: public bool IsEventUsableAsField(int position, IEventSymbol eventSymbol)
@@ -947,16 +922,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 802
-  summary: >+
+  summary: >-
     If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](#/api/Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
 
     to it.
-
   syntax:
     content:
       CSharp: public PreprocessingSymbolInfo GetPreprocessingSymbolInfo(SyntaxNode nameSyntax)

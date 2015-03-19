@@ -9,16 +9,15 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Emit/EditAndContinue/EmitBaseline.cs
   startLine: 54
-summary: >+
+summary: >-
   Represents a module from a previous compilation. Used in Edit and Continue
 
   to emit the differences in a subsequent compilation.
-
 syntax:
   content:
     CSharp: public sealed class EmitBaseline
@@ -38,16 +37,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EditAndContinue/EmitBaseline.cs
     startLine: 83
-  summary: >+
+  summary: >-
     Creates an [Microsoft.CodeAnalysis.Emit.EmitBaseline](#/api/Microsoft.CodeAnalysis.Emit.EmitBaseline) from the metadata of the module before editing
 
     and from a function that maps from a method to an array of local names.
-
   syntax:
     content:
       CSharp: public static EmitBaseline CreateInitialBaseline(ModuleMetadata module, Func<MethodDefinitionHandle, EditAndContinueMethodDebugInformation> debugInformationProvider)
@@ -78,11 +76,9 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Emit/EditAndContinue/EmitBaseline.cs
     startLine: 135
-  summary: >+
-    The original metadata of the module.
-
+  summary: The original metadata of the module.

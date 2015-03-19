@@ -15,7 +15,7 @@ public class Program
 ```
 
 ---
-path: a
+id: Class1
 ---
 This is not valid
 

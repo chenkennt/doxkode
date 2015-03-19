@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
   startLine: 19
-summary: >+
-  Represents metadata image reference.
-
+summary: Represents metadata image reference.
 syntax:
   content:
     CSharp: public abstract class MetadataReference
@@ -36,8 +34,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 21
@@ -60,8 +58,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 21
@@ -76,14 +74,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 31
-  summary: >+
-    Path or name used in error messages to identity the reference.
-
+  summary: Path or name used in error messages to identity the reference.
   syntax:
     content:
       CSharp: public virtual string Display
@@ -103,8 +99,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 31
@@ -119,14 +115,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 46
-  summary: >+
-    Returns an instance of the reference with specified aliases.
-
+  summary: Returns an instance of the reference with specified aliases.
   syntax:
     content:
       CSharp: public MetadataReference WithAliases(IEnumerable<string> aliases)
@@ -150,14 +144,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 56
-  summary: >+
-    Returns an instance of the reference with specified interop types embedding.
-
+  summary: Returns an instance of the reference with specified interop types embedding.
   syntax:
     content:
       CSharp: public MetadataReference WithEmbedInteropTypes(bool value)
@@ -181,14 +173,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 66
-  summary: >+
-    Returns an instance of the reference with specified aliases.
-
+  summary: Returns an instance of the reference with specified aliases.
   syntax:
     content:
       CSharp: public MetadataReference WithAliases(ImmutableArray<string> aliases)
@@ -212,14 +202,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 76
-  summary: >+
-    Returns an instance of the reference with specified properties, or this instance if properties haven't changed.
-
+  summary: Returns an instance of the reference with specified properties, or this instance if properties haven't changed.
   syntax:
     content:
       CSharp: public MetadataReference WithProperties(MetadataReferenceProperties properties)
@@ -243,14 +231,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 115
-  summary: >+
-    Creates a reference to a single-module assembly or a standalone module stored in memory.
-
+  summary: Creates a reference to a single-module assembly or a standalone module stored in memory.
   syntax:
     content:
       CSharp: public static PortableExecutableReference CreateFromImage(ImmutableArray<byte> peImage, MetadataReferenceProperties properties = default (MetadataReferenceProperties), DocumentationProvider documentation = null, string filePath = null)
@@ -292,14 +278,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 149
-  summary: >+
-    Creates a reference to a single-module assembly or a standalone module stored in memory.
-
+  summary: Creates a reference to a single-module assembly or a standalone module stored in memory.
   syntax:
     content:
       CSharp: public static PortableExecutableReference CreateFromImage(IEnumerable<byte> peImage, MetadataReferenceProperties properties = default (MetadataReferenceProperties), DocumentationProvider documentation = null, string filePath = null)
@@ -341,16 +325,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 186
-  summary: >+
+  summary: >-
     Creates a reference to a single-module assembly or a stand-alone module from data in specified stream.
 
     Reads the content of the stream into memory and closes the stream upon return.
-
   syntax:
     content:
       CSharp: public static PortableExecutableReference CreateFromStream(Stream peStream, MetadataReferenceProperties properties = default (MetadataReferenceProperties), DocumentationProvider documentation = null, string filePath = null)
@@ -392,16 +375,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 224
-  summary: >+
+  summary: >-
     Creates a reference to an assembly or standalone module stored in a file.
 
     Reads the content of the file into memory.
-
   syntax:
     content:
       CSharp: public static PortableExecutableReference CreateFromFile(string path, MetadataReferenceProperties properties = default (MetadataReferenceProperties), DocumentationProvider documentation = null)
@@ -437,14 +419,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 251
-  summary: >+
-    Creates a reference to a loaded assembly.
-
+  summary: Creates a reference to a loaded assembly.
   syntax:
     content:
       CSharp: public static MetadataReference CreateFromAssembly(Assembly assembly)
@@ -468,14 +448,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReference.cs
     startLine: 272
-  summary: >+
-    Creates a reference to a loaded assembly.
-
+  summary: Creates a reference to a loaded assembly.
   syntax:
     content:
       CSharp: public static MetadataReference CreateFromAssembly(Assembly assembly, MetadataReferenceProperties properties, DocumentationProvider documentation = null)

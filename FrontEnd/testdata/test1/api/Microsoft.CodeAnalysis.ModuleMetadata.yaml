@@ -9,14 +9,12 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
   startLine: 17
-summary: >+
-  Represents an immutable snapshot of module CLI metadata.
-
+summary: Represents an immutable snapshot of module CLI metadata.
 syntax:
   content:
     CSharp: public sealed partial class ModuleMetadata
@@ -39,16 +37,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 50
-  summary: >+
+  summary: >-
     Create metadata module from a raw memory pointer to metadata directory of a PE image or .cormeta section of an object file.
 
     Only manifest modules are currently supported.
-
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromMetadata(IntPtr metadata, int size)
@@ -78,14 +75,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 79
-  summary: >+
-    Create metadata module from a raw memory pointer to a PE image or an object file.
-
+  summary: Create metadata module from a raw memory pointer to a PE image or an object file.
   syntax:
     content:
       CSharp: public static unsafe ModuleMetadata CreateFromImage(IntPtr peImage, int size)
@@ -115,14 +110,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 99
-  summary: >+
-    Create metadata module from a sequence of bytes.
-
+  summary: Create metadata module from a sequence of bytes.
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromImage(IEnumerable<byte> peImage)
@@ -146,14 +139,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 114
-  summary: >+
-    Create metadata module from a byte array.
-
+  summary: Create metadata module from a byte array.
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromImage(ImmutableArray<byte> peImage)
@@ -177,14 +168,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 134
-  summary: >+
-    Create metadata module from a stream.
-
+  summary: Create metadata module from a stream.
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromStream(Stream peStream, bool leaveOpen = false)
@@ -203,7 +192,7 @@ items:
       description: >-
         False to close the stream upon disposal of the metadata (the responsibility for disposal of the stream is transferred upon entry of the constructor
 
-            unless the arguments given are invalid).
+        unless the arguments given are invalid).
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
@@ -217,14 +206,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 157
-  summary: >+
-    Create metadata module from a stream.
-
+  summary: Create metadata module from a stream.
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromStream(Stream peStream, PEStreamOptions options)
@@ -243,9 +230,9 @@ items:
       description: >-
         Options specifying how sections of the PE image are read from the stream.
 
-            Unless [System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen](#) is specified, the responsibility for disposal of the stream is transferred upon entry of the constructor
+        Unless [System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen](#) is specified, the responsibility for disposal of the stream is transferred upon entry of the constructor
 
-            unless the arguments given are invalid.
+        unless the arguments given are invalid.
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromFile(System.String)
@@ -259,14 +246,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 186
-  summary: >+
-    Creates metadata module from a file containing a portable executable image.
-
+  summary: Creates metadata module from a file containing a portable executable image.
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromFile(string path)
@@ -290,14 +275,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 214
-  summary: >+
-    Frees memory and handles allocated for the module.
-
+  summary: Frees memory and handles allocated for the module.
   syntax:
     content:
       CSharp: public override void Dispose()
@@ -315,14 +298,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 247
-  summary: >+
-    Name of the module.
-
+  summary: Name of the module.
   syntax:
     content:
       CSharp: public string Name
@@ -342,8 +323,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 249
@@ -358,14 +339,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 257
-  summary: >+
-    Version of the module content.
-
+  summary: Version of the module content.
   syntax:
     content:
       CSharp: public Guid GetModuleVersionId()
@@ -383,14 +362,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 265
-  summary: >+
-    Returns the [Microsoft.CodeAnalysis.MetadataImageKind](#/api/Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
-
+  summary: Returns the [Microsoft.CodeAnalysis.MetadataImageKind](#/api/Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
   syntax:
     content:
       CSharp: public override MetadataImageKind Kind
@@ -410,8 +387,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 267
@@ -426,14 +403,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 275
-  summary: >+
-    Returns the file names of linked managed modules.
-
+  summary: Returns the file names of linked managed modules.
   syntax:
     content:
       CSharp: public ImmutableArray<string> GetModuleNames()
@@ -451,14 +426,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 297
-  summary: >+
-    Creates a reference to the module metadata.
-
+  summary: Creates a reference to the module metadata.
   syntax:
     content:
       CSharp: public PortableExecutableReference GetReference(DocumentationProvider documentation = null, string filePath = null, string display = null)

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel", "GenDoc\EntityModel\EntityModel.csproj", "{A4BE543D-2CF1-40AB-9889-E9E48CBF7DFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel", "EntityModel\EntityModel.csproj", "{A4BE543D-2CF1-40AB-9889-E9E48CBF7DFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "GenDoc\Utility\Utility.csproj", "{619EC13D-8939-4F23-B7DC-7A98964BB9A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{619EC13D-8939-4F23-B7DC-7A98964BB9A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocProjectVsix", "DocProjectVsix\DocProjectVsix\DocProjectVsix.csproj", "{3B3B48BC-84C8-4F2B-AEA9-DF6154E357A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMeta", "GenDoc\BuildMeta\BuildMeta.csproj", "{72F23021-B92B-4F4A-960E-F6D55CE114F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMeta", "BuildMeta\BuildMeta.csproj", "{72F23021-B92B-4F4A-960E-F6D55CE114F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{AA8AA0EE-C15B-4539-87DC-A2472E80EC2B}"
 EndProject

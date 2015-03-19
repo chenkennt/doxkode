@@ -9,8 +9,8 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
   startLine: 6
@@ -29,14 +29,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 11
-  summary: >+
-    An enumerated value that identifies whether this type is an array, pointer, enum, and so on.
-
+  summary: An enumerated value that identifies whether this type is an array, pointer, enum, and so on.
   syntax:
     content:
       CSharp: TypeKind TypeKind
@@ -56,8 +54,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 11
@@ -72,18 +70,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 18
-  summary: >+
+  summary: >-
     The declared base type of this type, or null. The object type, interface types,
 
     and pointer types do not have a base type. The base type of a type parameter
 
     is its effective base class.
-
   syntax:
     content:
       CSharp: INamedTypeSymbol BaseType
@@ -103,8 +100,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 18
@@ -119,18 +116,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 25
-  summary: >+
+  summary: >-
     Gets the set of interfaces that this type directly implements. This set does not include
 
     interfaces that are base interfaces of directly implemented interfaces. This does
 
     include the interfaces declared as constraints on type parameters.
-
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> Interfaces
@@ -150,8 +146,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 25
@@ -166,12 +162,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 38
-  summary: >+
+  summary: >-
     The list of all interfaces of which this type is a declared subtype, excluding this type
 
     itself. This includes all declared base interfaces, all declared base interfaces of base
@@ -189,7 +185,6 @@ items:
     subtype" because it does not take into account variance: AllInterfaces for
 
     IEnumerable<string> will not include IEnumerable<object>;
-
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> AllInterfaces
@@ -209,8 +204,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 38
@@ -225,18 +220,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 45
-  summary: >+
+  summary: >-
     True if this type is known to be a reference type. It is never the case that
 
     [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
     parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
-
   syntax:
     content:
       CSharp: bool IsReferenceType
@@ -256,8 +250,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 45
@@ -272,18 +266,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 52
-  summary: >+
+  summary: >-
     True if this type is known to be a value type. It is never the case that
 
     [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
     parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
-
   syntax:
     content:
       CSharp: bool IsValueType
@@ -303,8 +296,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 52
@@ -319,14 +312,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 57
-  summary: >+
-    Is this a symbol for an anonymous type (including anonymous VB delegate).
-
+  summary: Is this a symbol for an anonymous type (including anonymous VB delegate).
   syntax:
     content:
       CSharp: bool IsAnonymousType
@@ -346,8 +337,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 57
@@ -362,18 +353,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 64
-  summary: >+
+  summary: >-
     The original definition of this symbol. If this symbol is constructed from another
 
     symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](#/api/Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
 
     source or metadata.
-
   syntax:
     content:
       CSharp: new ITypeSymbol OriginalDefinition
@@ -393,8 +383,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 64
@@ -409,16 +399,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 70
-  summary: >+
+  summary: >-
     An enumerated value that identifies certain 'special' types such as [System.Object](#).
 
     Returns [Microsoft.CodeAnalysis.SpecialType.None](#/api/Microsoft.CodeAnalysis.SpecialType) if the type is not special.
-
   syntax:
     content:
       CSharp: SpecialType SpecialType
@@ -438,8 +427,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 70
@@ -454,12 +443,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 82
-  summary: >+
+  summary: >-
     Returns the corresponding symbol in this type or a base type that implements
 
     interfaceMember (either implicitly or explicitly), or null if no such symbol exists
@@ -469,7 +458,6 @@ items:
     interfaceMember, or this type doesn't supply a member that successfully implements
 
     interfaceMember).
-
   syntax:
     content:
       CSharp: ISymbol FindImplementationForInterfaceMember(ISymbol interfaceMember);

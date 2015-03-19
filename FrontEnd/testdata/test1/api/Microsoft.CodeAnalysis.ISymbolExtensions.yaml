@@ -9,8 +9,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/ISymbolExtensions.cs
   startLine: 11
@@ -33,16 +33,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ISymbolExtensions.cs
     startLine: 17
-  summary: >+
+  summary: >-
     Returns the constructed form of the ReducedFrom property,
 
     including the type arguments that were either inferred during reduction or supplied at the call site.
-
   syntax:
     content:
       CSharp: public static IMethodSymbol GetConstructedReducedFrom(this IMethodSymbol method)

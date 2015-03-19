@@ -9,14 +9,12 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
   startLine: 10
-summary: >+
-  Immutable span represented by a pair of line number and index within the line.
-
+summary: Immutable span represented by a pair of line number and index within the line.
 syntax:
   content:
     CSharp: public struct LinePositionSpan
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 21
-  summary: >+
-    Creates [Microsoft.CodeAnalysis.Text.LinePositionSpan](#/api/Microsoft.CodeAnalysis.Text.LinePositionSpan).
-
+  summary: Creates [Microsoft.CodeAnalysis.Text.LinePositionSpan](#/api/Microsoft.CodeAnalysis.Text.LinePositionSpan).
   syntax:
     content:
       CSharp: public LinePositionSpan(LinePosition start, LinePosition end)
@@ -74,14 +70,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 35
-  summary: >+
-    Gets the start position of the span.
-
+  summary: Gets the start position of the span.
   syntax:
     content:
       CSharp: public LinePosition Start
@@ -101,8 +95,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 37
@@ -117,14 +111,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 43
-  summary: >+
-    Gets the end position of the span.
-
+  summary: Gets the end position of the span.
   syntax:
     content:
       CSharp: public LinePosition End
@@ -144,8 +136,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 45
@@ -160,8 +152,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 48
@@ -187,8 +179,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 53
@@ -214,8 +206,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 59
@@ -235,8 +227,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 64
@@ -250,8 +242,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 69
@@ -266,14 +258,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePositionSpan.cs
     startLine: 78
-  summary: >+
-    Provides a string representation for [Microsoft.CodeAnalysis.Text.LinePositionSpan](#/api/Microsoft.CodeAnalysis.Text.LinePositionSpan).
-
+  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.LinePositionSpan](#/api/Microsoft.CodeAnalysis.Text.LinePositionSpan).
   syntax:
     content:
       CSharp: public override string ToString()

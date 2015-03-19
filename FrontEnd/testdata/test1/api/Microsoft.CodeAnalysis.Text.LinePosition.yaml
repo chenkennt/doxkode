@@ -9,14 +9,12 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Text/LinePosition.cs
   startLine: 10
-summary: >+
-  Immutable representation of a line number and position within a SourceText instance.
-
+summary: Immutable representation of a line number and position within a SourceText instance.
 syntax:
   content:
     CSharp: public struct LinePosition
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 15
-  summary: >+
-    A [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) that represents position 0 at line 0.
-
+  summary: A [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) that represents position 0 at line 0.
 - id: Microsoft.CodeAnalysis.Text.LinePosition.#ctor(System.Int32,System.Int32)
   yaml: api/Microsoft.CodeAnalysis.Text.LinePosition.yaml
   href: api/Microsoft.CodeAnalysis.Text.LinePosition
@@ -58,14 +54,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 30
-  summary: >+
-    Initializes a new instance of a [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) with the given line and character.
-
+  summary: Initializes a new instance of a [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) with the given line and character.
   syntax:
     content:
       CSharp: public LinePosition(int line, int character)
@@ -93,14 +87,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 64
-  summary: >+
-    The line number. The first line in a file is defined as line 0 (zero based line numbering).
-
+  summary: The line number. The first line in a file is defined as line 0 (zero based line numbering).
   syntax:
     content:
       CSharp: public int Line
@@ -120,8 +112,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 66
@@ -136,14 +128,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 72
-  summary: >+
-    The character position within the line.
-
+  summary: The character position within the line.
   syntax:
     content:
       CSharp: public int Character
@@ -163,8 +153,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 74
@@ -178,14 +168,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 80
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
 - id: Microsoft.CodeAnalysis.Text.LinePosition.op_Inequality(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   yaml: api/Microsoft.CodeAnalysis.Text.LinePosition.yaml
   href: api/Microsoft.CodeAnalysis.Text.LinePosition
@@ -196,14 +184,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 88
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are different.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are different.
 - id: Microsoft.CodeAnalysis.Text.LinePosition.Equals(Microsoft.CodeAnalysis.Text.LinePosition)
   yaml: api/Microsoft.CodeAnalysis.Text.LinePosition.yaml
   href: api/Microsoft.CodeAnalysis.Text.LinePosition
@@ -215,14 +201,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 97
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
   syntax:
     content:
       CSharp: public bool Equals(LinePosition other)
@@ -246,14 +230,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 106
-  summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
-
+  summary: Determines whether two [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition) are the same.
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -277,14 +259,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 114
-  summary: >+
-    Provides a hash function for [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition).
-
+  summary: Provides a hash function for [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition).
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -302,14 +282,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 123
-  summary: >+
-    Provides a string representation for [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition).
-
+  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.LinePosition](#/api/Microsoft.CodeAnalysis.Text.LinePosition).
   syntax:
     content:
       CSharp: public override string ToString()
@@ -327,8 +305,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 128
@@ -353,8 +331,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 134
@@ -368,8 +346,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 139
@@ -383,8 +361,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 144
@@ -398,8 +376,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Text/LinePosition.cs
     startLine: 149

@@ -9,8 +9,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
   startLine: 8
@@ -33,14 +33,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 27
-  summary: >+
-    Creates a new tree of nodes with the specified nodes, tokens and trivia replaced.
-
+  summary: Creates a new tree of nodes with the specified nodes, tokens and trivia replaced.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceSyntax<TRoot>(this TRoot root, IEnumerable<SyntaxNode> nodes, Func<SyntaxNode, SyntaxNode, SyntaxNode> computeReplacementNode, IEnumerable<SyntaxToken> tokens, Func<SyntaxToken, SyntaxToken, SyntaxToken> computeReplacementToken, IEnumerable<SyntaxTrivia> trivia, Func<SyntaxTrivia, SyntaxTrivia, SyntaxTrivia> computeReplacementTrivia)where TRoot : SyntaxNode'
@@ -65,9 +63,9 @@ items:
       description: >-
         A function that computes a replacement node for the
 
-            argument nodes. The first argument is the original node. The second argument is the same
+        argument nodes. The first argument is the original node. The second argument is the same
 
-            node potentially rewritten with replaced descendants.
+        node potentially rewritten with replaced descendants.
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
@@ -82,9 +80,9 @@ items:
       description: >-
         A function that computes a replacement token for
 
-            the argument tokens. The first argument is the original token. The second argument is
+        the argument tokens. The first argument is the original token. The second argument is
 
-            the same token potentially rewritten with replaced trivia.
+        the same token potentially rewritten with replaced trivia.
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
@@ -99,9 +97,9 @@ items:
       description: >-
         A function that computes replacement trivia for
 
-            the specified arguments. The first argument is the original trivia. The second argument is
+        the specified arguments. The first argument is the original trivia. The second argument is
 
-            the same trivia with potentially rewritten sub structure.
+        the same trivia with potentially rewritten sub structure.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNodes``2(``0,System.Collections.Generic.IEnumerable{``1},System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode})
@@ -115,14 +113,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 53
-  summary: >+
-    Creates a new tree of nodes with the specified old node replaced with a new node.
-
+  summary: Creates a new tree of nodes with the specified old node replaced with a new node.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceNodes<TRoot, TNode>(this TRoot root, IEnumerable<TNode> nodes, Func<TNode, TNode, SyntaxNode> computeReplacementNode)where TRoot : SyntaxNode where TNode : SyntaxNode'
@@ -147,9 +143,9 @@ items:
       description: >-
         A function that computes a replacement node for the
 
-            argument nodes. The first argument is the original node. The second argument is the same
+        argument nodes. The first argument is the original node. The second argument is the same
 
-            node potentially rewritten with replaced descendants.
+        node potentially rewritten with replaced descendants.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
@@ -163,14 +159,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 67
-  summary: >+
-    Creates a new tree of nodes with the specified old node replaced with a new node.
-
+  summary: Creates a new tree of nodes with the specified old node replaced with a new node.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceNode<TRoot>(this TRoot root, SyntaxNode oldNode, SyntaxNode newNode)where TRoot : SyntaxNode'
@@ -206,14 +200,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 80
-  summary: >+
-    Creates a new tree of nodes with specified old node replaced with a new nodes.
-
+  summary: Creates a new tree of nodes with specified old node replaced with a new nodes.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceNode<TRoot>(this TRoot root, SyntaxNode oldNode, IEnumerable<SyntaxNode> newNodes)where TRoot : SyntaxNode'
@@ -249,14 +241,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 93
-  summary: >+
-    Creates a new tree of nodes with new nodes inserted before the specified node.
-
+  summary: Creates a new tree of nodes with new nodes inserted before the specified node.
   syntax:
     content:
       CSharp: 'public static TRoot InsertNodesBefore<TRoot>(this TRoot root, SyntaxNode nodeInList, IEnumerable<SyntaxNode> newNodes)where TRoot : SyntaxNode'
@@ -292,14 +282,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 106
-  summary: >+
-    Creates a new tree of nodes with new nodes inserted after the specified node.
-
+  summary: Creates a new tree of nodes with new nodes inserted after the specified node.
   syntax:
     content:
       CSharp: 'public static TRoot InsertNodesAfter<TRoot>(this TRoot root, SyntaxNode nodeInList, IEnumerable<SyntaxNode> newNodes)where TRoot : SyntaxNode'
@@ -335,14 +323,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 119
-  summary: >+
-    Creates a new tree of nodes with the specified old token replaced with new tokens.
-
+  summary: Creates a new tree of nodes with the specified old token replaced with new tokens.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceToken<TRoot>(this TRoot root, SyntaxToken tokenInList, IEnumerable<SyntaxToken> newTokens)where TRoot : SyntaxNode'
@@ -378,14 +364,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 132
-  summary: >+
-    Creates a new tree of nodes with new tokens inserted before the specified token.
-
+  summary: Creates a new tree of nodes with new tokens inserted before the specified token.
   syntax:
     content:
       CSharp: 'public static TRoot InsertTokensBefore<TRoot>(this TRoot root, SyntaxToken tokenInList, IEnumerable<SyntaxToken> newTokens)where TRoot : SyntaxNode'
@@ -421,14 +405,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 145
-  summary: >+
-    Creates a new tree of nodes with new tokens inserted after the specified token.
-
+  summary: Creates a new tree of nodes with new tokens inserted after the specified token.
   syntax:
     content:
       CSharp: 'public static TRoot InsertTokensAfter<TRoot>(this TRoot root, SyntaxToken tokenInList, IEnumerable<SyntaxToken> newTokens)where TRoot : SyntaxNode'
@@ -464,14 +446,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 158
-  summary: >+
-    Creates a new tree of nodes with the specified old trivia replaced with new trivia.
-
+  summary: Creates a new tree of nodes with the specified old trivia replaced with new trivia.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceTrivia<TRoot>(this TRoot root, SyntaxTrivia oldTrivia, IEnumerable<SyntaxTrivia> newTrivia)where TRoot : SyntaxNode'
@@ -507,14 +487,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 171
-  summary: >+
-    Creates a new tree of nodes with new trivia inserted before the specified trivia.
-
+  summary: Creates a new tree of nodes with new trivia inserted before the specified trivia.
   syntax:
     content:
       CSharp: 'public static TRoot InsertTriviaBefore<TRoot>(this TRoot root, SyntaxTrivia trivia, IEnumerable<SyntaxTrivia> newTrivia)where TRoot : SyntaxNode'
@@ -550,14 +528,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 184
-  summary: >+
-    Creates a new tree of nodes with new trivia inserted after the specified trivia.
-
+  summary: Creates a new tree of nodes with new trivia inserted after the specified trivia.
   syntax:
     content:
       CSharp: 'public static TRoot InsertTriviaAfter<TRoot>(this TRoot root, SyntaxTrivia trivia, IEnumerable<SyntaxTrivia> newTrivia)where TRoot : SyntaxNode'
@@ -593,14 +569,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 199
-  summary: >+
-    Creates a new tree of nodes with the specified old node replaced with a new node.
-
+  summary: Creates a new tree of nodes with the specified old node replaced with a new node.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceTokens<TRoot>(this TRoot root, IEnumerable<SyntaxToken> tokens, Func<SyntaxToken, SyntaxToken, SyntaxToken> computeReplacementToken)where TRoot : SyntaxNode'
@@ -625,9 +599,9 @@ items:
       description: >-
         A function that computes a replacement token for
 
-            the argument tokens. The first argument is the original token. The second argument is
+        the argument tokens. The first argument is the original token. The second argument is
 
-            the same token potentially rewritten with replaced trivia.
+        the same token potentially rewritten with replaced trivia.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceToken``1(``0,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
@@ -641,14 +615,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 213
-  summary: >+
-    Creates a new tree of nodes with the specified old token replaced with a new token.
-
+  summary: Creates a new tree of nodes with the specified old token replaced with a new token.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceToken<TRoot>(this TRoot root, SyntaxToken oldToken, SyntaxToken newToken)where TRoot : SyntaxNode'
@@ -673,7 +645,7 @@ items:
       description: >-
         The new token to use in the new tree in place of the old
 
-            token.
+        token.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})
@@ -687,14 +659,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 228
-  summary: >+
-    Creates a new tree of nodes with the specified trivia replaced with new trivia.
-
+  summary: Creates a new tree of nodes with the specified trivia replaced with new trivia.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceTrivia<TRoot>(this TRoot root, IEnumerable<SyntaxTrivia> trivia, Func<SyntaxTrivia, SyntaxTrivia, SyntaxTrivia> computeReplacementTrivia)where TRoot : SyntaxNode'
@@ -719,9 +689,9 @@ items:
       description: >-
         A function that computes replacement trivia for
 
-            the specified arguments. The first argument is the original trivia. The second argument is
+        the specified arguments. The first argument is the original trivia. The second argument is
 
-            the same trivia with potentially rewritten sub structure.
+        the same trivia with potentially rewritten sub structure.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
@@ -735,14 +705,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 241
-  summary: >+
-    Creates a new tree of nodes with the specified trivia replaced with new trivia.
-
+  summary: Creates a new tree of nodes with the specified trivia replaced with new trivia.
   syntax:
     content:
       CSharp: 'public static TRoot ReplaceTrivia<TRoot>(this TRoot root, SyntaxTrivia trivia, SyntaxTrivia newTrivia)where TRoot : SyntaxNode'
@@ -778,14 +746,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 254
-  summary: >+
-    Creates a new tree of nodes with the specified node removed.
-
+  summary: Creates a new tree of nodes with the specified node removed.
   syntax:
     content:
       CSharp: 'public static TRoot RemoveNode<TRoot>(this TRoot root, SyntaxNode node, SyntaxRemoveOptions options)where TRoot : SyntaxNode'
@@ -821,14 +787,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 269
-  summary: >+
-    Creates a new tree of nodes with the specified nodes removed.
-
+  summary: Creates a new tree of nodes with the specified nodes removed.
   syntax:
     content:
       CSharp: 'public static TRoot RemoveNodes<TRoot>(this TRoot root, IEnumerable<SyntaxNode> nodes, SyntaxRemoveOptions options)where TRoot : SyntaxNode'
@@ -864,16 +828,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 289
-  summary: >+
+  summary: >-
     Creates a new syntax node with all whitespace and end of line trivia replaced with
 
     regularly formatted trivia.
-
   syntax:
     content:
       CSharp: 'public static TNode NormalizeWhitespace<TNode>(this TNode node, string indentation = DefaultIndentation, bool elasticTrivia = false)where TNode : SyntaxNode'
@@ -892,7 +855,7 @@ items:
       description: >-
         An optional sequence of whitespace characters that defines a
 
-            single level of indentation.
+        single level of indentation.
     - id: elasticTrivia
       type:
         id: System.Boolean
@@ -912,14 +875,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 298
-  summary: >+
-    Creates a new node from this node with both the leading and trailing trivia of the specified node.
-
+  summary: Creates a new node from this node with both the leading and trailing trivia of the specified node.
   syntax:
     content:
       CSharp: 'public static TSyntax WithTriviaFrom<TSyntax>(this TSyntax syntax, SyntaxNode node)where TSyntax : SyntaxNode'
@@ -947,14 +908,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 307
-  summary: >+
-    Creates a new node from this node without leading or trailing trivia.
-
+  summary: Creates a new node from this node without leading or trailing trivia.
   syntax:
     content:
       CSharp: 'public static TSyntax WithoutTrivia<TSyntax>(this TSyntax syntax)where TSyntax : SyntaxNode'
@@ -977,14 +936,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 316
-  summary: >+
-    Creates a new node from this node with the leading trivia replaced.
-
+  summary: Creates a new node from this node with the leading trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithLeadingTrivia<TSyntax>(this TSyntax node, SyntaxTriviaList trivia)where TSyntax : SyntaxNode'
@@ -1012,14 +969,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 328
-  summary: >+
-    Creates a new node from this node with the leading trivia replaced.
-
+  summary: Creates a new node from this node with the leading trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithLeadingTrivia<TSyntax>(this TSyntax node, IEnumerable<SyntaxTrivia> trivia)where TSyntax : SyntaxNode'
@@ -1047,14 +1002,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 340
-  summary: >+
-    Creates a new node from this node with the leading trivia removed.
-
+  summary: Creates a new node from this node with the leading trivia removed.
   syntax:
     content:
       CSharp: 'public static TSyntax WithoutLeadingTrivia<TSyntax>(this TSyntax node)where TSyntax : SyntaxNode'
@@ -1077,14 +1030,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 350
-  summary: >+
-    Creates a new node from this node with the leading trivia replaced.
-
+  summary: Creates a new node from this node with the leading trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithLeadingTrivia<TSyntax>(this TSyntax node, params SyntaxTrivia[] trivia)where TSyntax : SyntaxNode'
@@ -1112,14 +1063,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 360
-  summary: >+
-    Creates a new node from this node with the trailing trivia replaced.
-
+  summary: Creates a new node from this node with the trailing trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithTrailingTrivia<TSyntax>(this TSyntax node, SyntaxTriviaList trivia)where TSyntax : SyntaxNode'
@@ -1147,14 +1096,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 372
-  summary: >+
-    Creates a new node from this node with the trailing trivia replaced.
-
+  summary: Creates a new node from this node with the trailing trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithTrailingTrivia<TSyntax>(this TSyntax node, IEnumerable<SyntaxTrivia> trivia)where TSyntax : SyntaxNode'
@@ -1182,14 +1129,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 384
-  summary: >+
-    Creates a new node from this node with the trailing trivia removed.
-
+  summary: Creates a new node from this node with the trailing trivia removed.
   syntax:
     content:
       CSharp: 'public static TSyntax WithoutTrailingTrivia<TSyntax>(this TSyntax node)where TSyntax : SyntaxNode'
@@ -1212,14 +1157,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 394
-  summary: >+
-    Creates a new node from this node with the trailing trivia replaced.
-
+  summary: Creates a new node from this node with the trailing trivia replaced.
   syntax:
     content:
       CSharp: 'public static TSyntax WithTrailingTrivia<TSyntax>(this TSyntax node, params SyntaxTrivia[] trivia)where TSyntax : SyntaxNode'
@@ -1247,12 +1190,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 29
-  summary: >+
+  summary: >-
     Creates a new tree of nodes with the specified nodes being tracked.
 
 
@@ -1260,7 +1203,6 @@ items:
     Use GetCurrentNode on the subtree resulting from this operation, or any transformation of it,
 
     to get the current node corresponding to the original tracked node.
-
   syntax:
     content:
       CSharp: 'public static TRoot TrackNodes<TRoot>(this TRoot root, IEnumerable<SyntaxNode> nodes)where TRoot : SyntaxNode'
@@ -1290,12 +1232,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 59
-  summary: >+
+  summary: >-
     Creates a new tree of nodes with the specified nodes being tracked.
 
 
@@ -1303,7 +1245,6 @@ items:
     Use GetCurrentNode on the subtree resulting from this operation, or any transformation of it,
 
     to get the current node corresponding to the original tracked node.
-
   syntax:
     content:
       CSharp: 'public static TRoot TrackNodes<TRoot>(this TRoot root, params SyntaxNode[] nodes)where TRoot : SyntaxNode'
@@ -1333,16 +1274,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 71
-  summary: >+
+  summary: >-
     Gets the nodes within the subtree corresponding to the original tracked node.
 
     Use TrackNodes to start tracking nodes.
-
   syntax:
     content:
       CSharp: 'public static IEnumerable<TNode> GetCurrentNodes<TNode>(this SyntaxNode root, TNode node)where TNode : SyntaxNode'
@@ -1372,16 +1312,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 88
-  summary: >+
+  summary: >-
     Gets the node within the subtree corresponding to the original tracked node.
 
     Use TrackNodes to start tracking nodes.
-
   syntax:
     content:
       CSharp: 'public static TNode GetCurrentNode<TNode>(this SyntaxNode root, TNode node)where TNode : SyntaxNode'
@@ -1411,16 +1350,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 100
-  summary: >+
+  summary: >-
     Gets the nodes within the subtree corresponding to the original tracked nodes.
 
     Use TrackNodes to start tracking nodes.
-
   syntax:
     content:
       CSharp: 'public static IEnumerable<TNode> GetCurrentNodes<TNode>(this SyntaxNode root, IEnumerable<TNode> nodes)where TNode : SyntaxNode'

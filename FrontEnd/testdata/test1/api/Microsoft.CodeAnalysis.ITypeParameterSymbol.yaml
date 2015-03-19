@@ -9,14 +9,12 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
   startLine: 9
-summary: >+
-  Represents a type parameter in a generic type or generic method.
-
+summary: Represents a type parameter in a generic type or generic method.
 syntax:
   content:
     CSharp: public interface ITypeParameterSymbol
@@ -32,16 +30,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 15
-  summary: >+
+  summary: >-
     The ordinal position of the type parameter in the parameter list which declares
 
     it. The first type parameter has ordinal zero.
-
   syntax:
     content:
       CSharp: int Ordinal
@@ -61,8 +58,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 15
@@ -77,16 +74,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 21
-  summary: >+
+  summary: >-
     The variance annotation, if any, of the type parameter declaration. Type parameters may be
 
     declared as covariant (out), contravariant (in), or neither.
-
   syntax:
     content:
       CSharp: VarianceKind Variance
@@ -106,8 +102,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 21
@@ -122,14 +118,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 26
-  summary: >+
-    The type parameter kind of this type parameter.
-
+  summary: The type parameter kind of this type parameter.
   syntax:
     content:
       CSharp: TypeParameterKind TypeParameterKind
@@ -149,8 +143,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 26
@@ -165,14 +159,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 31
-  summary: >+
-    The method that declares the type parameter, or null.
-
+  summary: The method that declares the type parameter, or null.
   syntax:
     content:
       CSharp: IMethodSymbol DeclaringMethod
@@ -192,8 +184,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 31
@@ -208,14 +200,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 36
-  summary: >+
-    The type that declares the type parameter, or null.
-
+  summary: The type that declares the type parameter, or null.
   syntax:
     content:
       CSharp: INamedTypeSymbol DeclaringType
@@ -235,8 +225,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 36
@@ -251,14 +241,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 41
-  summary: >+
-    True if the reference type constraint (class) was specified for the type parameter.
-
+  summary: True if the reference type constraint (class) was specified for the type parameter.
   syntax:
     content:
       CSharp: bool HasReferenceTypeConstraint
@@ -278,8 +266,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 41
@@ -294,14 +282,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 46
-  summary: >+
-    True if the value type constraint (struct)was specified for the type parameter.
-
+  summary: True if the value type constraint (struct)was specified for the type parameter.
   syntax:
     content:
       CSharp: bool HasValueTypeConstraint
@@ -321,8 +307,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 46
@@ -337,14 +323,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 51
-  summary: >+
-    True if the parameterless constructor constraint (new()) was specified for the type parameter.
-
+  summary: True if the parameterless constructor constraint (new()) was specified for the type parameter.
   syntax:
     content:
       CSharp: bool HasConstructorConstraint
@@ -364,8 +348,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 51
@@ -380,14 +364,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 56
-  summary: >+
-    The types that were directly specified as constraints on the type parameter.
-
+  summary: The types that were directly specified as constraints on the type parameter.
   syntax:
     content:
       CSharp: ImmutableArray<ITypeSymbol> ConstraintTypes
@@ -407,8 +389,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 56
@@ -423,18 +405,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 63
-  summary: >+
+  summary: >-
     Get the original definition of this type symbol. If this symbol is derived from another
 
     symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
     source or metadata.
-
   syntax:
     content:
       CSharp: new ITypeParameterSymbol OriginalDefinition
@@ -454,8 +435,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 63
@@ -470,16 +451,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 69
-  summary: >+
+  summary: >-
     If this is a type parameter of a reduced extension method, gets the type parameter definition that
 
     this type parameter was reduced from. Otherwise, returns Nothing.
-
   syntax:
     content:
       CSharp: ITypeParameterSymbol ReducedFrom
@@ -499,8 +479,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 69

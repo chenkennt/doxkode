@@ -9,8 +9,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
   startLine: 12
@@ -39,8 +39,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 63
@@ -63,8 +63,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 65
@@ -79,8 +79,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 71
@@ -103,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 73
@@ -119,8 +119,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 79
@@ -134,8 +134,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 81
@@ -150,14 +150,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 111
-  summary: >+
-    Gets the separator at the given index in this list.
-
+  summary: Gets the separator at the given index in this list.
   syntax:
     content:
       CSharp: public SyntaxToken GetSeparator(int index)
@@ -181,14 +179,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 132
-  summary: >+
-    Returns the sequence of just the separator tokens.
-
+  summary: Returns the sequence of just the separator tokens.
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> GetSeparators()
@@ -206,14 +202,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 140
-  summary: >+
-    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
-
+  summary: The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
   syntax:
     content:
       CSharp: public TextSpan FullSpan
@@ -233,8 +227,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 142
@@ -249,14 +243,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 148
-  summary: >+
-    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
-
+  summary: The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
   syntax:
     content:
       CSharp: public TextSpan Span
@@ -276,8 +268,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 150
@@ -292,23 +284,25 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 161
-  summary: >+
+  summary: >-
     Returns the string representation of the nodes in this list including separators but not including
 
     the first node's leading trivia and the last node or token's trailing trivia.
-
   syntax:
     content:
       CSharp: public override string ToString()
     parameters: []
     return:
       id: String
-      description: "The string representation of the nodes in this list including separators but not including \r\n    the first node's leading trivia and the last node or token's trailing trivia."
+      description: >-
+        The string representation of the nodes in this list including separators but not including
+
+        the first node's leading trivia and the last node or token's trailing trivia.
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ToFullString
   yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
   href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
@@ -320,16 +314,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 174
-  summary: >+
+  summary: >-
     Returns the full string representation of the nodes in this list including separators,
 
     the first node's leading trivia, and the last node or token's trailing trivia.
-
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -339,7 +332,7 @@ items:
       description: >-
         The full string representation of the nodes in this list including separators including separators,
 
-            the first node's leading trivia, and the last node or token's trailing trivia.
+        the first node's leading trivia, and the last node or token's trailing trivia.
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.First
   yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
   href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
@@ -351,8 +344,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 179
@@ -373,8 +366,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 184
@@ -395,8 +388,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 196
@@ -417,8 +410,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 201
@@ -439,8 +432,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 213
@@ -466,8 +459,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 218
@@ -493,8 +486,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 231
@@ -520,8 +513,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 257
@@ -547,8 +540,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 270
@@ -574,8 +567,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 283
@@ -596,8 +589,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 288
@@ -617,8 +610,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 293
@@ -632,8 +625,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 298
@@ -648,8 +641,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 303
@@ -675,8 +668,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 308
@@ -702,8 +695,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 313
@@ -724,14 +717,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 322
-  summary: >+
-    Creates a new list with the specified node added to the end.
-
+  summary: Creates a new list with the specified node added to the end.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Add(TNode node)
@@ -755,14 +746,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 331
-  summary: >+
-    Creates a new list with the specified nodes added to the end.
-
+  summary: Creates a new list with the specified nodes added to the end.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> AddRange(IEnumerable<TNode> nodes)
@@ -786,14 +775,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 341
-  summary: >+
-    Creates a new list with the specified node inserted at the index.
-
+  summary: Creates a new list with the specified node inserted at the index.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Insert(int index, TNode node)
@@ -823,14 +810,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 356
-  summary: >+
-    Creates a new list with the specified nodes inserted at the index.
-
+  summary: Creates a new list with the specified nodes inserted at the index.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> InsertRange(int index, IEnumerable<TNode> nodes)
@@ -860,14 +845,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 426
-  summary: >+
-    Creates a new list with the element at the specified index removed.
-
+  summary: Creates a new list with the element at the specified index removed.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> RemoveAt(int index)
@@ -891,14 +874,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 440
-  summary: >+
-    Creates a new list with specified element removed.
-
+  summary: Creates a new list with specified element removed.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Remove(TNode node)
@@ -922,14 +903,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 472
-  summary: >+
-    Creates a new list with the specified element replaced by the new node.
-
+  summary: Creates a new list with the specified element replaced by the new node.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Replace(TNode nodeInList, TNode newNode)
@@ -959,14 +938,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 495
-  summary: >+
-    Creates a new list with the specified element replaced by the new nodes.
-
+  summary: Creates a new list with the specified element replaced by the new nodes.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> ReplaceRange(TNode nodeInList, IEnumerable<TNode> newNodes)
@@ -996,14 +973,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 534
-  summary: >+
-    Creates a new list with the specified separator token replaced with the new separator.
-
+  summary: Creates a new list with the specified separator token replaced with the new separator.
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> ReplaceSeparator(SyntaxToken separatorToken, SyntaxToken newSeparator)
@@ -1033,8 +1008,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 563

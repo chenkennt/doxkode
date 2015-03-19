@@ -9,12 +9,12 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
   startLine: 12
-summary: >+
+summary: >-
   Indicates the reasons why a candidate (or set of candidate) symbols were not considered
 
   correct in SemanticInfo. Higher values take precedence over lower values, so if, for
@@ -22,7 +22,6 @@ summary: >+
   example, there a symbol with a given name that was inaccessible, and other with the wrong
 
   arity, only the inaccessible one would be reported in the SemanticInfo.
-
 syntax:
   content:
     CSharp: public enum CandidateReason
@@ -48,14 +47,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 17
-  summary: >+
-    No CandidateSymbols.
-
+  summary: No CandidateSymbols.
   syntax:
     content:
       CSharp: None = 0
@@ -70,16 +67,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 23
-  summary: >+
+  summary: >-
     Only a type or namespace was valid in the given location, but the candidate symbols was
 
     of the wrong kind.
-
   syntax:
     content:
       CSharp: NotATypeOrNamespace = 1
@@ -94,16 +90,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 29
-  summary: >+
+  summary: >-
     Only an event was valid in the given location, but the candidate symbols was
 
     of the wrong kind.
-
   syntax:
     content:
       CSharp: NotAnEvent = 2
@@ -118,14 +113,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 34
-  summary: >+
-    The candidate symbol must be a WithEvents member, but it was not.
-
+  summary: The candidate symbol must be a WithEvents member, but it was not.
   syntax:
     content:
       CSharp: NotAWithEventsMember = 3
@@ -140,16 +133,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 40
-  summary: >+
+  summary: >-
     Only an attribute type was valid in the given location, but the candidate symbol was
 
     of the wrong kind.
-
   syntax:
     content:
       CSharp: NotAnAttributeType = 4
@@ -164,14 +156,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 45
-  summary: >+
-    The candidate symbol takes a different number of type parameters that was required.
-
+  summary: The candidate symbol takes a different number of type parameters that was required.
   syntax:
     content:
       CSharp: WrongArity = 5
@@ -186,16 +176,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 51
-  summary: >+
+  summary: >-
     The candidate symbol existed, but was not allowed to be created in a new expression.
 
     For example, interfaces, static classes, and unconstrained type parameters.
-
   syntax:
     content:
       CSharp: NotCreatable = 6
@@ -210,12 +199,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 60
-  summary: >+
+  summary: >-
     The candidate symbol existed, but was not allowed to be referenced. For example, the
 
     "get_XXX" method used to implement a property named "XXX" may not be directly
@@ -225,7 +214,6 @@ items:
     Also occurs if "this" is used in a context (static method or field initializer)
 
     where "this" is not available.
-
   syntax:
     content:
       CSharp: NotReferencable = 7
@@ -240,16 +228,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 66
-  summary: >+
+  summary: >-
     The candidate symbol had an accessibility modifier (private, protected, ...) that made
 
     it inaccessible.
-
   syntax:
     content:
       CSharp: Inaccessible = 8
@@ -264,16 +251,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 72
-  summary: >+
+  summary: >-
     The candidate symbol was in a place where a value was required, but was not a value
 
     (e.g., was a type or namespace).
-
   syntax:
     content:
       CSharp: NotAValue = 9
@@ -288,18 +274,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 79
-  summary: >+
+  summary: >-
     The candidate symbol was in a place where a variable (or sometimes, a property) was
 
     required, but was not allowed there because it isn't a symbol that can be assigned to.
 
     For example, the left hand side of an assignment, or a ref or out parameter.
-
   syntax:
     content:
       CSharp: NotAVariable = 10
@@ -314,16 +299,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 85
-  summary: >+
+  summary: >-
     The candidate symbol was used in a way that an invocable member (method, or variable of
 
     delegate type) was required, but the candidate symbol was not invocable.
-
   syntax:
     content:
       CSharp: NotInvocable = 11
@@ -338,16 +322,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 91
-  summary: >+
+  summary: >-
     The candidate symbol must be an instance variable, but was used as static, or the
 
     reverse.
-
   syntax:
     content:
       CSharp: StaticInstanceMismatch = 12
@@ -362,16 +345,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 97
-  summary: >+
+  summary: >-
     Overload resolution did not choose a method. The candidate symbols are the methods there
 
     were considered during overload resolution (which may or may not be applicable methods).
-
   syntax:
     content:
       CSharp: OverloadResolutionFailure = 13
@@ -386,18 +368,17 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 104
-  summary: >+
+  summary: >-
     Method could not be selected statically.
 
     The candidate symbols are the methods there were considered during overload resolution
 
     (which may or may not be applicable methods).
-
   syntax:
     content:
       CSharp: LateBound = 14
@@ -412,12 +393,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 112
-  summary: >+
+  summary: >-
     Multiple ambiguous symbols were available with the same name. This can occur if "using"
 
     statements bring multiple namespaces into scope, and the same type is available in
@@ -425,7 +406,6 @@ items:
     multiple. This can also occur if multiple properties of the same name are available in a
 
     multiple interface inheritance situation.
-
   syntax:
     content:
       CSharp: Ambiguous = 15
@@ -440,16 +420,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 118
-  summary: >+
+  summary: >-
     CandidateSymbols are members of a group of results. This is used when there isn't a problem,
 
     but there is more than one result, for example nameof(int.ToString).
-
   syntax:
     content:
       CSharp: MemberGroup = 16

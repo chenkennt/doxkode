@@ -9,14 +9,12 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/SourceCodeKind.cs
   startLine: 9
-summary: >+
-  Specifies the C# or VB source code kind.
-
+summary: Specifies the C# or VB source code kind.
 syntax:
   content:
     CSharp: public enum SourceCodeKind
@@ -42,14 +40,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SourceCodeKind.cs
     startLine: 14
-  summary: >+
-    No scripting. Used for .cs/.vb file parsing.
-
+  summary: No scripting. Used for .cs/.vb file parsing.
   syntax:
     content:
       CSharp: Regular = 0
@@ -64,14 +60,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SourceCodeKind.cs
     startLine: 19
-  summary: >+
-    Allows top-level statements and declarations. Used for .csx/.vbx file parsing.
-
+  summary: Allows top-level statements and declarations. Used for .csx/.vbx file parsing.
   syntax:
     content:
       CSharp: Script = 1
@@ -86,14 +80,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/SourceCodeKind.cs
     startLine: 24
-  summary: >+
-    Allows top-level expressions and optional semicolon.
-
+  summary: Allows top-level expressions and optional semicolon.
   syntax:
     content:
       CSharp: Interactive = 2

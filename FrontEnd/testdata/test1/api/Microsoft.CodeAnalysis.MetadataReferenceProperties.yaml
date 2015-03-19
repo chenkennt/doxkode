@@ -9,14 +9,12 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-    local: D:/Repo/RoslynGit/
+    repo: https://github.com/vicancy/roslyn
+    local: E:/Repo1/roslyn/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
   startLine: 14
-summary: >+
-  Information about a metadata reference.
-
+summary: Information about a metadata reference.
 syntax:
   content:
     CSharp: public struct MetadataReferenceProperties
@@ -39,14 +37,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 23
-  summary: >+
-    Default properties for a module reference.
-
+  summary: Default properties for a module reference.
 - id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Assembly
   yaml: api/Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
   href: api/Microsoft.CodeAnalysis.MetadataReferenceProperties
@@ -58,14 +54,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 28
-  summary: >+
-    Default properties for an assembly reference.
-
+  summary: Default properties for an assembly reference.
 - id: Microsoft.CodeAnalysis.MetadataReferenceProperties.#ctor(Microsoft.CodeAnalysis.MetadataImageKind,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   yaml: api/Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
   href: api/Microsoft.CodeAnalysis.MetadataReferenceProperties
@@ -77,14 +71,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 36
-  summary: >+
-    Initializes reference properties.
-
+  summary: Initializes reference properties.
   syntax:
     content:
       CSharp: public MetadataReferenceProperties(MetadataImageKind kind = MetadataImageKind.Assembly, ImmutableArray<string> aliases = default (ImmutableArray<string>), bool embedInteropTypes = false)
@@ -118,14 +110,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 78
-  summary: >+
-    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
-
+  summary: Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
   syntax:
     content:
       CSharp: public MetadataReferenceProperties WithAliases(IEnumerable<string> aliases)
@@ -148,14 +138,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 89
-  summary: >+
-    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
-
+  summary: Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with specified aliases.
   syntax:
     content:
       CSharp: public MetadataReferenceProperties WithAliases(ImmutableArray<string> aliases)
@@ -178,14 +166,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 98
-  summary: >+
-    Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) set to specified value.
-
+  summary: Returns [Microsoft.CodeAnalysis.MetadataReferenceProperties](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) with [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties) set to specified value.
   syntax:
     content:
       CSharp: public MetadataReferenceProperties WithEmbedInteropTypes(bool embedInteropTypes)
@@ -208,14 +194,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 106
-  summary: >+
-    The image kind (assembly or module) the reference refers to.
-
+  summary: The image kind (assembly or module) the reference refers to.
   syntax:
     content:
       CSharp: public MetadataImageKind Kind
@@ -235,8 +219,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 108
@@ -251,14 +235,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 117
-  summary: >+
-    Alias that represents a global declaration space.
-
+  summary: Alias that represents a global declaration space.
 - id: Microsoft.CodeAnalysis.MetadataReferenceProperties.Aliases
   yaml: api/Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
   href: api/Microsoft.CodeAnalysis.MetadataReferenceProperties
@@ -270,14 +252,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 125
-  summary: >+
-    Aliases for the metadata reference. Empty if the reference has no aliases.
-
+  summary: Aliases for the metadata reference. Empty if the reference has no aliases.
   syntax:
     content:
       CSharp: public ImmutableArray<string> Aliases
@@ -297,8 +277,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 127
@@ -313,14 +293,12 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 137
-  summary: >+
-    True if interop types defined in the referenced metadata should be embedded into the compilation referencing the metadata.
-
+  summary: True if interop types defined in the referenced metadata should be embedded into the compilation referencing the metadata.
   syntax:
     content:
       CSharp: public bool EmbedInteropTypes
@@ -340,8 +318,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 139
@@ -356,8 +334,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 142
@@ -383,8 +361,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 147
@@ -410,8 +388,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 154
@@ -431,8 +409,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 159
@@ -446,8 +424,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-      local: D:/Repo/RoslynGit/
+      repo: https://github.com/vicancy/roslyn
+      local: E:/Repo1/roslyn/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src/Compilers/Core/Portable/MetadataReference/MetadataReferenceProperties.cs
     startLine: 164
