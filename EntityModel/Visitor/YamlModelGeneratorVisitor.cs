@@ -3,184 +3,35 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using DocAsCode.Utility;
 
 namespace DocAsCode.EntityModel
 {
-    public class YamlModelGeneratorVisitor : SymbolVisitor<YamlItemViewModel>
+    public abstract class YamlModelGeneratorVisitor : SymbolVisitor<YamlItemViewModel>
     {
         private YamlItemViewModel parent = new YamlItemViewModel();
         private YamlItemViewModel currentNamespace = new YamlItemViewModel();
         private YamlItemViewModel currentAssembly = new YamlItemViewModel();
-        public YamlModelGeneratorVisitor(object context)
+        private SyntaxLanguage _language;
+        public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
         {
-
-        }
-
-        private void FeedComments(YamlItemViewModel item)
-        {
-            if (string.IsNullOrEmpty(item.RawComment)) return;
-            item.Summary = TripleSlashCommentParser.GetSummary(item.RawComment, true);
-        }
-
-        private string GetId(ISymbol symbol)
-        {
-            if (symbol == null)
-            {
-                return symbol.MetadataName;
-            }
-
-            string str = symbol.GetDocumentationCommentId();
-            if (string.IsNullOrEmpty(str))
-            {
-                return symbol.MetadataName;
-            }
-
-            return str.ToString().Substring(2);
-        }
-
-        private static SourceDetail GetLinkDetail(ISymbol symbol)
-        {
-            if (symbol == null)
-            {
-                return null;
-            }
-            string id = symbol.GetDocumentationCommentId();
-            if (string.IsNullOrEmpty(id))
-            {
-                var typeSymbol = symbol as ITypeSymbol;
-                if (typeSymbol != null)
-                {
-                    id = typeSymbol.BaseType.GetDocumentationCommentId();
-                }
-            }
-
-            string displayName = string.Empty;
-            if (!string.IsNullOrEmpty(id) && id.Length > 2)
-            {
-                displayName = id.Substring(2);
-                id = id.Substring(2);
-            }
-
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            if (symbol.IsExtern || syntaxRef == null)
-            {
-                // TODO: get external URL
-                return new SourceDetail { IsExternalPath = true, Name = id, DisplayName = displayName, Href = null };
-            }
-
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode != null)
-            {
-                return new SourceDetail
-                {
-                    Name = id,
-                    DisplayName = symbol.Name,
-                    IsExternalPath = false,
-                    Href = syntaxNode.SyntaxTree.FilePath,
-                };
-            }
-
-            return null;
-        }
-        private YamlItemParameterViewModel GetParameterDescription(ISymbol symbol, YamlItemViewModel item, bool isReturn)
-        {
-            SourceDetail id = null;
-            string raw = item.RawComment;
-            // TODO: GetDocumentationCommentXml for parameters seems not accurate
-            string name = symbol.Name;
-            var paraSymbol = symbol as IParameterSymbol;
-            if (paraSymbol != null)
-            {
-                // TODO: why BaseType?
-                id = GetLinkDetail(paraSymbol.Type);
-            }
-
-            // when would it be type symbol?
-            var typeSymbol = symbol as ITypeSymbol;
-            if (typeSymbol != null)
-            {
-                Debug.Assert(typeSymbol != null, "Should be TypeSymbol");
-
-                // TODO: check what name is
-                // name = DescriptionConstants.ReturnName;
-                id = GetLinkDetail(paraSymbol);
-            }
-
-            var propertySymbol = symbol as IPropertySymbol;
-            if (propertySymbol != null)
-            {
-                // TODO: check what name is
-                // name = DescriptionConstants.ReturnName;
-                id = GetLinkDetail(propertySymbol.Type);
-            }
-
-            string comment = isReturn ? TripleSlashCommentParser.GetReturns(raw, true) :
-                TripleSlashCommentParser.GetParam(raw, name, true);
-
-            return new YamlItemParameterViewModel() { Name = name, Type = id, Description = comment };
-        }
-
-        private static bool CanVisit(ISymbol symbol)
-        {
-            if (symbol.DeclaredAccessibility == Accessibility.NotApplicable)
-            {
-                return true;
-            }
-
-            if (symbol.DeclaredAccessibility != Accessibility.Public)
-            {
-                return false;
-            }
-
-            return true;
-        }
-
-        private static SourceDetail GetSourceDetail(ISymbol symbol)
-        {
-            if (symbol == null)
-            {
-                return null;
-            }
-
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            if (symbol.IsExtern || syntaxRef == null)
-            {
-                return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
-            }
-
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode != null)
-            {
-                var source = new SourceDetail
-                {
-                    StartLine = syntaxNode.SyntaxTree.GetLineSpan(syntaxNode.Span).StartLinePosition.Line,
-                    Path = syntaxNode.SyntaxTree.FilePath,
-                };
-
-                source.Remote = GitUtility.GetGitDetail(source.Path);
-                return source;
-            }
-
-            return null;
+            _language = language;
         }
 
         public override YamlItemViewModel DefaultVisit(ISymbol symbol)
         {
-            if (!CanVisit(symbol)) return null;
+            if (!VisitorHelper.CanVisit(symbol)) return null;
             var item = new YamlItemViewModel
             {
-                Name = GetId(symbol),
-                DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.MetadataName } },
+                Name = VisitorHelper.GetId(symbol),
+                DisplayNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.MetadataName } },
                 RawComment = symbol.GetDocumentationCommentXml(),
+                Language = _language,
             };
 
-            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, item.Name } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { _language, item.Name } };
             
-            item.Source = GetSourceDetail(symbol);
-            FeedComments(item);
+            item.Source = VisitorHelper.GetSourceDetail(symbol);
+            VisitorHelper.FeedComments(item);
             return item;
         }
 
@@ -231,6 +82,8 @@ namespace DocAsCode.EntityModel
             return item;
         }
 
+        public abstract string GetSyntaxContent(TypeKind typeKind, SyntaxNode syntaxNode);
+
         public override YamlItemViewModel VisitNamedType(INamedTypeSymbol symbol)
         {
             var item = DefaultVisit(symbol);
@@ -255,7 +108,7 @@ namespace DocAsCode.EntityModel
                 item.Inheritance = new List<SourceDetail>();
                 while (type != null)
                 {
-                    SourceDetail link = GetLinkDetail(type);
+                    SourceDetail link = VisitorHelper.GetLinkDetail(type);
 
                     item.Inheritance.Add(link);
                     type = type.BaseType;
@@ -263,8 +116,6 @@ namespace DocAsCode.EntityModel
 
                 item.Inheritance.Reverse();
             }
-            string syntaxStr = string.Empty;
-            int openBracketIndex = -1;
             Debug.Assert(parent != null && currentNamespace != null);
             if (currentNamespace != null)
             {
@@ -276,85 +127,9 @@ namespace DocAsCode.EntityModel
                 currentNamespace.Items.Add(item);
             }
 
-            switch (symbol.TypeKind)
-            {
-                case TypeKind.Class:
-                    {
-                        item.Type = MemberType.Class;
-                        var syntax = syntaxNode as ClassDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr
-                            = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
-                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        break;
-                    };
-                case TypeKind.Enum:
-                    {
-                        item.Type = MemberType.Enum;
-                        var syntax = syntaxNode as EnumDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr
-                            = syntax
-                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                .WithBaseList(null)
-                                .WithMembers(new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
-                                .NormalizeWhitespace()
-                                .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        break;
-                    };
-                case TypeKind.Interface:
-                    {
-                        item.Type = MemberType.Interface;
-                        var syntax = syntaxNode as InterfaceDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr =
-                            syntax
-                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                .WithBaseList(null)
-                                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                                .NormalizeWhitespace()
-                                .ToString();
+            item.Type = VisitorHelper.GetMemberTypeFromTypeKind(symbol.TypeKind);
+            string syntaxStr = GetSyntaxContent(symbol.TypeKind, syntaxNode);
 
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        break;
-                    };
-                case TypeKind.Struct:
-                    {
-                        item.Type = MemberType.Struct;
-                        var syntax = syntaxNode as StructDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                .WithBaseList(null)
-                                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                                .NormalizeWhitespace()
-                                .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        break;
-                    };
-                case TypeKind.Delegate:
-                    {
-                        item.Type = MemberType.Delegate;
-                        var syntax = syntaxNode as DelegateDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                .NormalizeWhitespace()
-                                .ToString();
-                        break;
-                    };
-            }
             if (item.Syntax == null)
             {
                 item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
@@ -362,16 +137,7 @@ namespace DocAsCode.EntityModel
 
             if (item.Syntax.Content == null)
             {
-                item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-            }
-
-            if (openBracketIndex > -1)
-            {
-                item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr.Substring(0, openBracketIndex).Trim());
-            }
-            else
-            {
-                item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr.Trim());
+                item.Syntax.Content = new Dictionary<SyntaxLanguage, string> { { _language, syntaxStr } };
             }
 
             var parentSaved = parent;
@@ -385,6 +151,7 @@ namespace DocAsCode.EntityModel
             parent = parentSaved;
             return item;
         }
+
         public override YamlItemViewModel VisitMethod(IMethodSymbol symbol)
         {
             var item = DefaultVisit(symbol);
@@ -438,17 +205,17 @@ namespace DocAsCode.EntityModel
 
                 foreach (var p in symbol.Parameters)
                 {
-                    item.Syntax.Parameters.Add(GetParameterDescription(p, item, false));
+                    item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(p, item, false));
                 }
 
-                item.Syntax.Return = GetParameterDescription(symbol.ReturnType, item, true);
+                item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
 
                 var syntaxStr = syntax.WithBody(null)
                         .NormalizeWhitespace()
                         .ToString()
                         .Trim();
                 
-                item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                item.Syntax.Content.Add(_language, syntaxStr);
                 return item;
             }
 
@@ -457,16 +224,16 @@ namespace DocAsCode.EntityModel
             if (constructorSyntax != null)
             {
                 item.Type = MemberType.Constructor;
-                string parentName = parent.DisplayNames[SyntaxLanguage.CSharp];
-                string name = item.DisplayQualifiedNames[SyntaxLanguage.CSharp];
+                string parentName = parent.DisplayNames[_language];
+                string name = item.DisplayQualifiedNames[_language];
                 int index = name.IndexOf("#ctor");
                 Debug.Assert(index > -1);
                 if (index > -1)
                 {
-                    item.DisplayQualifiedNames[SyntaxLanguage.CSharp] = name.Replace("#ctor", parentName);
+                    item.DisplayQualifiedNames[_language] = name.Replace("#ctor", parentName);
 
                     // Special handles for constructor's displayName as .ctor is internal
-                    item.DisplayNames[SyntaxLanguage.CSharp] = item.DisplayQualifiedNames[SyntaxLanguage.CSharp].Substring(index);
+                    item.DisplayNames[_language] = item.DisplayQualifiedNames[_language].Substring(index);
                 }
 
                 if (item.Syntax == null)
@@ -486,7 +253,7 @@ namespace DocAsCode.EntityModel
 
                 foreach (var p in symbol.Parameters)
                 {
-                    item.Syntax.Parameters.Add(GetParameterDescription(p, item, false));
+                    item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(p, item, false));
                 }
 
                 string syntaxStr = constructorSyntax.WithBody(null)
@@ -494,7 +261,7 @@ namespace DocAsCode.EntityModel
                         .ToString()
                         .Trim();
 
-                item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                item.Syntax.Content.Add(_language, syntaxStr);
                 return item;
             }
 
@@ -549,7 +316,7 @@ namespace DocAsCode.EntityModel
                             .NormalizeWhitespace()
                             .ToString()
                             .Trim();
-                    item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                    item.Syntax.Content.Add(_language, syntaxStr);
                     return item;
                 }
 
@@ -572,7 +339,7 @@ namespace DocAsCode.EntityModel
                             .NormalizeWhitespace()
                             .ToString()
                             .Trim();
-                    item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                    item.Syntax.Content.Add(_language, syntaxStr);
                     return item;
                 }
             }
@@ -628,7 +395,7 @@ namespace DocAsCode.EntityModel
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();
-                    item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                    item.Syntax.Content.Add(_language, syntaxStr);
                     return item;
                 }
             }
@@ -683,7 +450,7 @@ namespace DocAsCode.EntityModel
                     item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
                 }
 
-                item.Syntax.Parameters.Add(GetParameterDescription(symbol, item, false));
+                item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(symbol, item, false));
 
                 var syntaxStr = varSyntax
                         .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
@@ -691,7 +458,7 @@ namespace DocAsCode.EntityModel
                         .NormalizeWhitespace()
                         .ToString()
                         .Trim();
-                item.Syntax.Content.Add(SyntaxLanguage.CSharp, syntaxStr);
+                item.Syntax.Content.Add(_language, syntaxStr);
                 return item;
             }
 

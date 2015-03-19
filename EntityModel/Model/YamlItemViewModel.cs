@@ -20,6 +20,9 @@ namespace DocAsCode.EntityModel
         [YamlDotNet.Serialization.YamlMember(Alias = "href")]
         public string Href { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "language")]
+        public SyntaxLanguage Language { get; set; }
+
         [YamlDotNet.Serialization.YamlMember(Alias = "name")]
         public Dictionary<SyntaxLanguage, string> DisplayNames { get; set; }
 

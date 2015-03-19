@@ -139,6 +139,9 @@
     <Compile Include="Resolvers\ResolverContext.cs" />
     <Compile Include="Resolvers\IResolverPipeline.cs" />
     <Compile Include="Resolvers\BuildToc.cs" />
+    <Compile Include="Visitor\VisitorHelper.cs" />
+    <Compile Include="Visitor\CSYamlModelGeneratorVisitor.cs" />
+    <Compile Include="Visitor\VBYamlModelGeneratorVisitor.cs" />
     <Compile Include="Visitor\YamlModelGeneratorVisitor.cs" />
     <Compile Include="Resolvers\YamlMetadataResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

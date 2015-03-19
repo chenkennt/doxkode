@@ -9,6 +9,7 @@ using Microsoft.CodeAnalysis.MSBuild;
 using DocAsCode.Utility;
 using System.Threading.Tasks;
 using DocAsCode.EntityModel;
+using System.Diagnostics;
 
 namespace DocAsCode.BuildMeta
 {
@@ -169,7 +170,7 @@ namespace DocAsCode.BuildMeta
                     var solution = await workspace.OpenSolutionAsync(projectFile);
                     projects = solution.Projects.ToList();
                 }
-                else if (fileExtension == ".csproj")
+                else if (fileExtension == ".csproj" || fileExtension == ".vbproj")
                 {
                     var project = await workspace.OpenProjectAsync(projectFile);
                     projects.Add(project);
@@ -356,8 +357,23 @@ namespace DocAsCode.BuildMeta
 
             var compilation = await project.GetCompilationAsync();
             object visitorContext = new object();
+            YamlModelGeneratorVisitor visitor;
+            if (project.Language == "Visual Basic")
+            {
+                visitor = new VBYamlModelGeneratorVisitor(visitorContext);
+            }
+            else if (project.Language == "C#")
+            {
+                visitor = new CSYamlModelGeneratorVisitor(visitorContext);
+            }
+            else
+            {
+                Debug.Assert(false, "Language not supported: " + project.Language);
+                ParseResult.WriteToConsole(ResultLevel.Error, "Language not supported: " + project.Language);
+                return null;
+            }
 
-            YamlItemViewModel item = compilation.Assembly.Accept(new YamlModelGeneratorVisitor(visitorContext));
+            YamlItemViewModel item = compilation.Assembly.Accept(visitor);
             return item;
         }
 
