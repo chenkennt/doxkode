@@ -1,23 +1,12 @@
 ﻿using System;
-using System.Linq;
-using System.IO;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Globalization;
-using System.Collections.Generic;
-using EntityModel;
-using Newtonsoft.Json.Converters;
-using System.Collections;
 using YamlDotNet.Serialization;
-using System.Xml;
-using System.Xml.XPath;
-using System.Diagnostics;
 
 /// <summary>
 /// The utility class for docascode project
 /// </summary>
-namespace DocAsCode.Utility
+namespace DocAsCode.EntityModel
 {
     /// <summary>
     /// The converter to transform strings delimited by comma into string arrays

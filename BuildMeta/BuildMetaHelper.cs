@@ -13,11 +13,10 @@ using Newtonsoft.Json;
 using System.Collections;
 using DocAsCode.Utility;
 using System.ComponentModel;
-using EntityModel;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Diagnostics;
-using EntityModel.ViewModel;
+using DocAsCode.EntityModel;
 using YamlDotNet.Serialization;
 
 namespace DocAsCode.BuildMeta

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EntityModel
+namespace DocAsCode.EntityModel
 {
     public enum ResultLevel
     {

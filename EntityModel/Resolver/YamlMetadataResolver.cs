@@ -1,21 +1,12 @@
-﻿using EntityModel;
-using EntityModel.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DocAsCode.Utility;
-
-namespace EntityModel
+namespace DocAsCode.EntityModel
 {
-    public class ResolverContext
-    {
-        public string ApiFolder { get; set; }
-    }
-
     public static class YamlMetadataResolver
     {
         // Order matters

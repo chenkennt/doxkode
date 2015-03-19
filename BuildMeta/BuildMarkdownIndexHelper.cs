@@ -1,13 +1,11 @@
-﻿using DocAsCode.Utility;
-using EntityModel;
-using EntityModel.ViewModel;
+﻿using DocAsCode.EntityModel;
+using DocAsCode.Utility;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using DocAsCode.Utility;
 
 namespace DocAsCode.BuildMeta
 {

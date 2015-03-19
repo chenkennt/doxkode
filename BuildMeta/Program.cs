@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using DocAsCode.Utility;
-using EntityModel;
+using DocAsCode.EntityModel;
 
 namespace DocAsCode.BuildMeta
 {

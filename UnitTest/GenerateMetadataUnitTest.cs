@@ -4,6 +4,7 @@ using DocAsCode.BuildMeta;
 using System.IO;
 using System.Threading.Tasks;
 using DocAsCode.Utility;
+using DocAsCode.EntityModel;
 
 namespace UnitTest
 {
@@ -24,10 +25,8 @@ namespace UnitTest
             string fileList = "filelist.list";
             File.WriteAllText(fileList, slnPath);
             string outputList = "output.list";
-            string outputDirectory = "output";
-            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            Console.WriteLine(Path.GetFullPath(outputDirectory));
-            Assert.IsTrue(Directory.Exists(outputDirectory));
+            var result = await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
+            Assert.AreEqual(ResultLevel.Success, result.ResultLevel);
         }
 
         [TestMethod]

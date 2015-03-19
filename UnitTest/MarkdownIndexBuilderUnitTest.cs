@@ -4,7 +4,7 @@ using DocAsCode.BuildMeta;
 using System.IO;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using EntityModel;
+using DocAsCode.EntityModel;
 
 namespace UnitTest
 {
