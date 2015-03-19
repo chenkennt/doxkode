@@ -10,13 +10,10 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:/Repo/docascode/
-    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
-  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
+    sha1: ab9c49cee5ab903ed95b3cf875a3e00c779a63cb
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-19 16_05_27/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 112
-summary: >+
-  This is a class in inner namespace
-
+summary: This is a class in inner namespace
 syntax:
   content:
     CSharp: public class ClassInInnerNamespace

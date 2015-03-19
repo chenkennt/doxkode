@@ -13,13 +13,13 @@ namespace DocAsCode.EntityModel
         {
         }
 
-        public override string GetSyntaxContent(TypeKind typeKind, SyntaxNode syntaxNode)
+        public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;
             int openBracketIndex = -1;
             switch (typeKind)
             {
-                case TypeKind.Class:
+                case MemberType.Class:
                     {
                         var syntax = syntaxNode as ClassStatementSyntax;
                         Debug.Assert(syntax != null);
@@ -39,7 +39,7 @@ namespace DocAsCode.EntityModel
                         }
                         break;
                     };
-                case TypeKind.Enum:
+                case MemberType.Enum:
                     {
                         var syntax = syntaxNode as EnumStatementSyntax;
                         Debug.Assert(syntax != null);
@@ -59,7 +59,7 @@ namespace DocAsCode.EntityModel
                         }
                         break;
                     };
-                case TypeKind.Interface:
+                case MemberType.Interface:
                     {
                         var syntax = syntaxNode as InterfaceStatementSyntax;
                         Debug.Assert(syntax != null);
@@ -80,7 +80,7 @@ namespace DocAsCode.EntityModel
                         }
                         break;
                     };
-                case TypeKind.Struct:
+                case MemberType.Struct:
                     {
                         var syntax = syntaxNode as StructureStatementSyntax;
                         Debug.Assert(syntax != null);
@@ -99,7 +99,7 @@ namespace DocAsCode.EntityModel
                         }
                         break;
                     };
-                case TypeKind.Delegate:
+                case MemberType.Delegate:
                     {
                         var syntax = syntaxNode as DelegateStatementSyntax;
                         Debug.Assert(syntax != null);
@@ -116,6 +116,28 @@ namespace DocAsCode.EntityModel
                         {
                             syntaxStr = syntaxStr.Trim();
                         }
+                        break;
+                    };
+                case MemberType.Method:
+                    {
+                        var syntax = syntaxNode as MethodBlockSyntax;
+                        Debug.Assert(syntax != null);
+                        if (syntax == null) break;
+                        syntaxStr = syntax.WithSubOrFunctionStatement(null)
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim();
+                        break;
+                    };
+                case MemberType.Constructor:
+                    {
+                        var syntax = syntaxNode as ConstructorBlockSyntax;
+                        Debug.Assert(syntax != null);
+                        if (syntax == null) break;
+                        syntaxStr = syntax.WithBlockStatement(null)
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim();
                         break;
                     };
             }

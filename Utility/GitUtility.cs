@@ -15,7 +15,8 @@ namespace DocAsCode.Utility
         [YamlDotNet.Serialization.YamlMember(Alias = "repo")]
         public string RemoteRepositoryUrl { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "local")]
+        [YamlDotNet.Serialization.YamlIgnore]
+        //[YamlDotNet.Serialization.YamlMember(Alias = "local")]
         public string LocalWorkingDirectory { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "sha1")]

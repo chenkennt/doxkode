@@ -10,14 +10,6 @@ TestClass1.Partial1.Property2:
   Name: TestClass1.Partial1.Property2
   YamlPath: api/TestClass1.Partial1.yaml
   Href: api/TestClass1.Partial1
-TestClass1.Partial1.get_Property2:
-  Name: TestClass1.Partial1.get_Property2
-  YamlPath: api/TestClass1.Partial1.yaml
-  Href: api/TestClass1.Partial1
-TestClass1.Partial1.set_Property2(System.String):
-  Name: TestClass1.Partial1.set_Property2(System.String)
-  YamlPath: api/TestClass1.Partial1.yaml
-  Href: api/TestClass1.Partial1
 TestClass1.Class1:
   Name: TestClass1.Class1
   YamlPath: api/TestClass1.Class1.yaml
@@ -66,22 +58,6 @@ TestClass1.Class1.ADelegate:
   Name: TestClass1.Class1.ADelegate
   YamlPath: api/TestClass1.Class1.ADelegate.yaml
   Href: api/TestClass1.Class1.ADelegate
-TestClass1.Class1.ADelegate.#ctor(System.Object,System.IntPtr):
-  Name: TestClass1.Class1.ADelegate.#ctor(System.Object,System.IntPtr)
-  YamlPath: api/TestClass1.Class1.ADelegate.yaml
-  Href: api/TestClass1.Class1.ADelegate
-TestClass1.Class1.ADelegate.Invoke:
-  Name: TestClass1.Class1.ADelegate.Invoke
-  YamlPath: api/TestClass1.Class1.ADelegate.yaml
-  Href: api/TestClass1.Class1.ADelegate
-TestClass1.Class1.ADelegate.BeginInvoke(System.AsyncCallback,System.Object):
-  Name: TestClass1.Class1.ADelegate.BeginInvoke(System.AsyncCallback,System.Object)
-  YamlPath: api/TestClass1.Class1.ADelegate.yaml
-  Href: api/TestClass1.Class1.ADelegate
-TestClass1.Class1.ADelegate.EndInvoke(System.IAsyncResult):
-  Name: TestClass1.Class1.ADelegate.EndInvoke(System.IAsyncResult)
-  YamlPath: api/TestClass1.Class1.ADelegate.yaml
-  Href: api/TestClass1.Class1.ADelegate
 TestClass1.Base:
   Name: TestClass1.Base
   YamlPath: api/TestClass1.Base.yaml
@@ -92,14 +68,6 @@ TestClass1.Base.BaseClassForTestClass1:
   Href: api/TestClass1.Base.BaseClassForTestClass1
 TestClass1.Base.BaseClassForTestClass1.Property1:
   Name: TestClass1.Base.BaseClassForTestClass1.Property1
-  YamlPath: api/TestClass1.Base.BaseClassForTestClass1.yaml
-  Href: api/TestClass1.Base.BaseClassForTestClass1
-TestClass1.Base.BaseClassForTestClass1.get_Property1:
-  Name: TestClass1.Base.BaseClassForTestClass1.get_Property1
-  YamlPath: api/TestClass1.Base.BaseClassForTestClass1.yaml
-  Href: api/TestClass1.Base.BaseClassForTestClass1
-TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String):
-  Name: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   YamlPath: api/TestClass1.Base.BaseClassForTestClass1.yaml
   Href: api/TestClass1.Base.BaseClassForTestClass1
 TestClass1.TestClass1:

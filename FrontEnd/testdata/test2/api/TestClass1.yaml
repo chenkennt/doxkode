@@ -10,55 +10,42 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:/Repo/docascode/
-    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
-  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
+    sha1: ab9c49cee5ab903ed95b3cf875a3e00c779a63cb
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-19 16_05_27/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 7
 items:
 - id: TestClass1.Partial1
   yaml: api/TestClass1.Partial1.yaml
   href: api/TestClass1.Partial1
   type: Class
-  summary: >+
-    Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
-
+  summary: Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
 - id: TestClass1.Class1
   yaml: api/TestClass1.Class1.yaml
   href: api/TestClass1.Class1
   type: Class
-  summary: "This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/api/TestClass1.Partial1) \n\n"
+  summary: 'This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/api/TestClass1.Partial1) '
 - id: TestClass1.Class1.Class1InnerClass
   yaml: api/TestClass1.Class1.Class1InnerClass.yaml
   href: api/TestClass1.Class1.Class1InnerClass
   type: Class
-  summary: >+
-    This is a *Class1*'s inner class
-
+  summary: This is a *Class1*'s inner class
 - id: TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
   yaml: api/TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass.yaml
   href: api/TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
   type: Class
-  summary: >+
-    This is a *Class1*'s inner class's inner class
-
+  summary: This is a *Class1*'s inner class's inner class
 - id: TestClass1.Class1.Class1InnerClass.TestEnum
   yaml: api/TestClass1.Class1.Class1InnerClass.TestEnum.yaml
   href: api/TestClass1.Class1.Class1InnerClass.TestEnum
   type: Enum
-  summary: >+
-    This is the TestEnum for inner class
-
+  summary: This is the TestEnum for inner class
 - id: TestClass1.Class1.TestStruct
   yaml: api/TestClass1.Class1.TestStruct.yaml
   href: api/TestClass1.Class1.TestStruct
   type: Struct
-  summary: >+
-    This is a Struct
-
+  summary: This is a Struct
 - id: TestClass1.Class1.ADelegate
   yaml: api/TestClass1.Class1.ADelegate.yaml
   href: api/TestClass1.Class1.ADelegate
   type: Delegate
-  summary: >+
-    This is a Delegate
-
+  summary: This is a Delegate

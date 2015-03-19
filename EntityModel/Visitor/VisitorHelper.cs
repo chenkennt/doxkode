@@ -16,6 +16,11 @@ namespace DocAsCode.EntityModel
                 return true;
             }
 
+            if (symbol.IsImplicitlyDeclared)
+            {
+                return false;
+            }
+
             if (symbol.DeclaredAccessibility != Accessibility.Public)
             {
                 return false;

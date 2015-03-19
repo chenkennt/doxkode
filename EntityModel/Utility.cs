@@ -200,6 +200,7 @@ namespace DocAsCode.EntityModel
 
         public static string ResolveCrefLink(string xml, string nodeSelector)
         {
+            if (string.IsNullOrEmpty(xml) || string.IsNullOrEmpty(nodeSelector)) return xml;
             try
             {
                 XmlDocument doc = new XmlDocument();
@@ -252,6 +253,7 @@ namespace DocAsCode.EntityModel
 
         public static string GetSingleNode(string xml, string selector, bool normalize, Func<Exception, string> errorHandler)
         {
+            if (string.IsNullOrEmpty(xml) || string.IsNullOrEmpty(selector)) return xml;
             try
             {
                 using (StringReader reader = new StringReader(xml))

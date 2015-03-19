@@ -17,6 +17,8 @@ namespace DocAsCode.EntityModel
             _language = language;
         }
 
+        public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
+
         public override YamlItemViewModel DefaultVisit(ISymbol symbol)
         {
             if (!VisitorHelper.CanVisit(symbol)) return null;
@@ -82,8 +84,6 @@ namespace DocAsCode.EntityModel
             return item;
         }
 
-        public abstract string GetSyntaxContent(TypeKind typeKind, SyntaxNode syntaxNode);
-
         public override YamlItemViewModel VisitNamedType(INamedTypeSymbol symbol)
         {
             var item = DefaultVisit(symbol);
@@ -128,7 +128,9 @@ namespace DocAsCode.EntityModel
             }
 
             item.Type = VisitorHelper.GetMemberTypeFromTypeKind(symbol.TypeKind);
-            string syntaxStr = GetSyntaxContent(symbol.TypeKind, syntaxNode);
+            string syntaxStr = GetSyntaxContent(item.Type, syntaxNode);
+            Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
+            if (string.IsNullOrEmpty(syntaxStr)) return null;
 
             if (item.Syntax == null)
             {
@@ -137,8 +139,10 @@ namespace DocAsCode.EntityModel
 
             if (item.Syntax.Content == null)
             {
-                item.Syntax.Content = new Dictionary<SyntaxLanguage, string> { { _language, syntaxStr } };
+                item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
             }
+
+            item.Syntax.Content.Add(_language, syntaxStr);
 
             var parentSaved = parent;
             parent = item;
@@ -154,76 +158,31 @@ namespace DocAsCode.EntityModel
 
         public override YamlItemViewModel VisitMethod(IMethodSymbol symbol)
         {
-            var item = DefaultVisit(symbol);
+            var item = AddYamlItem(symbol);
             if (item == null) return null;
 
-            // e.g. default .ctor
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            // Debug.Assert(syntaxRef != null); Could be default constructor
-            if (syntaxRef == null)
+            if (item.Syntax == null)
             {
-                return null;
+                item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
             }
 
-            Debug.Assert(parent != null && currentNamespace != null);
-            if (parent != null)
-            {
-                if (parent.Items == null)
-                {
-                    parent.Items = new List<YamlItemViewModel>();
-                }
+            item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
 
-                parent.Items.Add(item);
+            if (item.Syntax.Parameters == null)
+            {
+                item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
             }
 
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode == null)
+            foreach (var i in symbol.Parameters)
             {
-                return null;
-            }
-            var syntax = syntaxNode as MethodDeclarationSyntax;
+                var param = VisitorHelper.GetParameterDescription(i, item, false);
+                Debug.Assert(param.Type != null);
 
-            if (syntax != null)
-            {
-                item.Type = MemberType.Method;
-
-                if (item.Syntax == null)
-                {
-                    item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                }
-
-                if (item.Syntax.Content == null)
-                {
-                    item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                }
-
-                if (item.Syntax.Parameters == null)
-                {
-                    item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
-                }
-
-                foreach (var p in symbol.Parameters)
-                {
-                    item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(p, item, false));
-                }
-
-                item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
-
-                var syntaxStr = syntax.WithBody(null)
-                        .NormalizeWhitespace()
-                        .ToString()
-                        .Trim();
-                
-                item.Syntax.Content.Add(_language, syntaxStr);
-                return item;
+                item.Syntax.Parameters.Add(param);
             }
 
-            var constructorSyntax = syntaxNode as ConstructorDeclarationSyntax;
-
-            if (constructorSyntax != null)
+            if (item.Type == MemberType.Constructor)
             {
-                item.Type = MemberType.Constructor;
                 string parentName = parent.DisplayNames[_language];
                 string name = item.DisplayQualifiedNames[_language];
                 int index = name.IndexOf("#ctor");
@@ -235,187 +194,131 @@ namespace DocAsCode.EntityModel
                     // Special handles for constructor's displayName as .ctor is internal
                     item.DisplayNames[_language] = item.DisplayQualifiedNames[_language].Substring(index);
                 }
-
-                if (item.Syntax == null)
-                {
-                    item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                }
-
-                if (item.Syntax.Content == null)
-                {
-                    item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                }
-
-                if (item.Syntax.Parameters == null)
-                {
-                    item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
-                }
-
-                foreach (var p in symbol.Parameters)
-                {
-                    item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(p, item, false));
-                }
-
-                string syntaxStr = constructorSyntax.WithBody(null)
-                        .NormalizeWhitespace()
-                        .ToString()
-                        .Trim();
-
-                item.Syntax.Content.Add(_language, syntaxStr);
-                return item;
             }
 
-            return null;
+            return item;
         }
+
         public override YamlItemViewModel VisitField(IFieldSymbol symbol)
         {
-            var item = DefaultVisit(symbol);
-            if (item == null) return null;
-            item.Type = MemberType.Field;
-
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
-            if (syntaxRef == null)
-            {
-                return null;
-            }
-
-            Debug.Assert(parent != null && currentNamespace != null);
-            if (parent != null)
-            {
-                if (parent.Items == null)
-                {
-                    parent.Items = new List<YamlItemViewModel>();
-                }
-
-                parent.Items.Add(item);
-            }
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode == null)
-            {
-                return null;
-            }
-            if (syntaxNode is VariableDeclarationSyntax || syntaxNode is MemberDeclarationSyntax)
-            {
-                var varSyntax = syntaxNode as VariableDeclaratorSyntax;
-                if (varSyntax != null)
-                {
-                    if (item.Syntax == null)
-                    {
-                        item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                    }
-
-                    if (item.Syntax.Content == null)
-                    {
-                        item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                    }
-
-                    var syntaxStr = varSyntax
-                            .WithInitializer(null)
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
-                    item.Syntax.Content.Add(_language, syntaxStr);
-                    return item;
-                }
-
-                // For Enum's member
-                var memberSyntax = syntaxNode as MemberDeclarationSyntax;
-
-                if (memberSyntax != null)
-                {
-                    if (item.Syntax == null)
-                    {
-                        item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                    }
-
-                    if (item.Syntax.Content == null)
-                    {
-                        item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                    }
-
-                    var syntaxStr = memberSyntax
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
-                    item.Syntax.Content.Add(_language, syntaxStr);
-                    return item;
-                }
-            }
-
-            return null;
+            return AddYamlItem(symbol);
         }
 
         public override YamlItemViewModel VisitEvent(IEventSymbol symbol)
         {
-            var item = DefaultVisit(symbol);
-            if (item == null) return null;
-            item.Type = MemberType.Event;
-
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
-            if (syntaxRef == null)
-            {
-                return null;
-            }
-            Debug.Assert(parent != null && currentNamespace != null);
-            if (parent != null)
-            {
-                if (parent.Items == null)
-                {
-                    parent.Items = new List<YamlItemViewModel>();
-                }
-
-                parent.Items.Add(item);
-            }
-
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode == null)
-            {
-                return null;
-            }
-            if (syntaxNode is VariableDeclaratorSyntax)
-            {
-                var varSyntax = syntaxNode as VariableDeclaratorSyntax;
-                if (varSyntax != null)
-                {
-                    if (item.Syntax == null)
-                    {
-                        item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                    }
-
-                    if (item.Syntax.Content == null)
-                    {
-                        item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                    }
-
-                    var syntaxStr = varSyntax
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                    item.Syntax.Content.Add(_language, syntaxStr);
-                    return item;
-                }
-            }
-
-            return null;
-
+            return AddYamlItem(symbol);
         }
 
         public override YamlItemViewModel VisitProperty(IPropertySymbol symbol)
         {
+            var item = AddYamlItem(symbol);
+            if (item == null) return null;
+
+            if (item.Syntax == null)
+            {
+                item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
+            }
+
+            if (item.Syntax.Parameters == null)
+            {
+                item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
+            }
+
+            var param = VisitorHelper.GetParameterDescription(symbol, item, false);
+            Debug.Assert(param.Type != null);
+
+            item.Syntax.Parameters.Add(param);
+
+            return item;
+        }
+
+        private MemberType GetMemberTypeFromSymbol(ISymbol symbol)
+        {
+            switch (symbol.Kind)
+            {
+                case SymbolKind.Event:
+                    return MemberType.Event;
+                case SymbolKind.Field:
+                    return MemberType.Field;
+                case SymbolKind.Property:
+                    return MemberType.Property;
+                case SymbolKind.Method:
+                    {
+                        var methodSymbol = symbol as IMethodSymbol;
+                        Debug.Assert(methodSymbol != null);
+                        if (methodSymbol == null) return MemberType.Default;
+                        switch (methodSymbol.MethodKind)
+                        {
+                            case MethodKind.AnonymousFunction:
+                            case MethodKind.Conversion:
+                            case MethodKind.DelegateInvoke:
+                            case MethodKind.Destructor:
+                            case MethodKind.EventAdd:
+                            case MethodKind.EventRaise:
+                            case MethodKind.EventRemove:
+                            case MethodKind.ExplicitInterfaceImplementation:
+                            case MethodKind.UserDefinedOperator:
+                            case MethodKind.Ordinary:
+                            case MethodKind.ReducedExtension:
+                            case MethodKind.BuiltinOperator:
+                            case MethodKind.DeclareMethod:
+                                return MemberType.Method;
+                            case MethodKind.Constructor:
+                            case MethodKind.StaticConstructor:
+                                return MemberType.Constructor;
+                            // Property's get and set, ignore
+                            case MethodKind.PropertyGet:
+                            case MethodKind.PropertySet:
+                            default:
+                                return MemberType.Default;
+                        }
+                    }
+                default:
+                    return MemberType.Default;
+            }
+        }
+
+        private YamlItemViewModel AddYamlItem(ISymbol symbol)
+        {
             var item = DefaultVisit(symbol);
             if (item == null) return null;
-            item.Type = MemberType.Property;
+            item.Type = GetMemberTypeFromSymbol(symbol);
+            if (item.Type == MemberType.Default)
+            {
+                ParseResult.WriteToConsole(ResultLevel.Info, "{0} symbol does not have membertype and is ignored", symbol.ToDisplayString());
+                return null;
+            }
 
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
+            Debug.Assert(syntaxRef != null || item.Type == MemberType.Constructor);
             if (syntaxRef == null)
             {
                 return null;
             }
+
+            var syntaxNode = syntaxRef.GetSyntax();
+            Debug.Assert(syntaxNode != null);
+            if (syntaxNode == null)
+            {
+                return null;
+            }
+
+            if (item.Syntax == null)
+            {
+                item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
+            }
+
+            if (item.Syntax.Content == null)
+            {
+                item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
+            }
+
+            string syntaxStr = GetSyntaxContent(item.Type, syntaxNode);
+
+            Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
+            if (string.IsNullOrEmpty(syntaxStr)) return null;
+
+            item.Syntax.Content.Add(_language, syntaxStr);
             Debug.Assert(parent != null && currentNamespace != null);
             if (parent != null)
             {
@@ -427,42 +330,7 @@ namespace DocAsCode.EntityModel
                 parent.Items.Add(item);
             }
 
-            var syntaxNode = syntaxRef.GetSyntax();
-            Debug.Assert(syntaxNode != null);
-            if (syntaxNode == null)
-            {
-                return null;
-            }
-            var varSyntax = syntaxNode as PropertyDeclarationSyntax;
-            if (varSyntax != null)
-            {
-                if (item.Syntax == null)
-                {
-                    item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
-                }
-
-                if (item.Syntax.Parameters == null)
-                {
-                    item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
-                }
-                if (item.Syntax.Content == null)
-                {
-                    item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
-                }
-
-                item.Syntax.Parameters.Add(VisitorHelper.GetParameterDescription(symbol, item, false));
-
-                var syntaxStr = varSyntax
-                        .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                        .WithAccessorList(null)
-                        .NormalizeWhitespace()
-                        .ToString()
-                        .Trim();
-                item.Syntax.Content.Add(_language, syntaxStr);
-                return item;
-            }
-
-            return null;
+            return item;
         }
     }
 }
