@@ -124,6 +124,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Model\MarkdownIndex.cs" />
     <Compile Include="Model\SyntaxLanguage.cs" />
     <Compile Include="Model\MemberType.cs" />
     <Compile Include="Model\ParseResult.cs" />
