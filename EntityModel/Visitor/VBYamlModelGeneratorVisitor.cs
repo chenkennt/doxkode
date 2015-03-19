@@ -120,11 +120,10 @@ namespace DocAsCode.EntityModel
                     };
                 case MemberType.Method:
                     {
-                        var syntax = syntaxNode as MethodBlockSyntax;
+                        var syntax = syntaxNode as MethodStatementSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        syntaxStr = syntax.WithSubOrFunctionStatement(null)
-                            .NormalizeWhitespace()
+                        syntaxStr = syntax
                             .ToString()
                             .Trim();
                         break;
@@ -138,6 +137,50 @@ namespace DocAsCode.EntityModel
                             .NormalizeWhitespace()
                             .ToString()
                             .Trim();
+                        break;
+                    };
+                case MemberType.Field:
+                    {
+                        var syntax = syntaxNode as FieldDeclarationSyntax;
+                        // TODO: Why is it ModifiedIdentifierSyntax?
+                        Debug.Assert(syntaxNode is ModifiedIdentifierSyntax || syntax != null);
+                        if (syntax != null)
+                        {
+                            syntaxStr = syntax
+                            .ToString()
+                            .Trim();
+                        }
+                        else
+                        {
+                            var identifier = syntaxNode as ModifiedIdentifierSyntax;
+                            if (identifier != null)
+                            {
+                                syntaxStr = identifier.Parent.Parent.ToString().Trim();
+                            }
+                        }
+
+                        break;
+                    };
+                case MemberType.Event:
+                    {
+                        var syntax = syntaxNode as VariableDeclaratorSyntax;
+                        Debug.Assert(syntax != null);
+                        if (syntax == null) break;
+                        syntaxStr = syntax
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim();
+                        break;
+                    };
+                case MemberType.Property:
+                    {
+                        var syntax = syntaxNode as PropertyStatementSyntax;
+                        Debug.Assert(syntax != null);
+                        if (syntax == null) break;
+                        syntaxStr = syntax
+                                    .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                    .ToString()
+                                    .Trim();
                         break;
                     };
             }
