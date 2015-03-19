@@ -36,6 +36,7 @@ module.exports = function(grunt) {
         'app/js/docs.js',
     ],
     ownCssFiles: [
+        'app/bower_components/highlightjs/styles/vs.css',
         'app/css/default.css',
         'app/css/docs.css',
         'app/css/prettify-theme.css',
