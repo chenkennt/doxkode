@@ -82,9 +82,9 @@
                                         <div class="methodsyntax-section" ng-if="item.syntax">
                                             <div class="declaration">
                                                 <h4>Declaration </h4>
-                                                <declaration ng-if="item.syntax.content.CSharp" ng-model="item.syntax.content.CSharp">
+                                                <declaration ng-if="item.syntax.content.CSharp" ng-model="item.syntax.content.CSharp" ng-language="csharp">
                                                 </declaration>
-                                                <declaration ng-if="!item.syntax.content.CSharp && item.syntax.content.VB" ng-model="item.syntax.content.VB">
+                                                <declaration ng-if="!item.syntax.content.CSharp && item.syntax.content.VB"  ng-language="vb" ng-model="item.syntax.content.VB">
                                                 </declaration>
                                             </div>
                                             <div class="parameters" ng-if="item.syntax.parameters && item.type == 'Property'" >

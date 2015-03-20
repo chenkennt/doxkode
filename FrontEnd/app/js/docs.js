@@ -117,7 +117,8 @@ angular.module('directives', [])
         restrict: 'E',
         link: function(scope, element, attrs) {
             scope.$watch(attrs.ngModel, function(value, oldValue) {
-                element.html('<code class="lang-csharp"></code>');
+                var language = attrs.ngLanguage;
+                element.html('<code class="lang-' + 'language' +'"></code>');
                 var code = element.children("code");
                 code.text(value);
                 hljs.highlightBlock(code[0]);
