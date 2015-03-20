@@ -134,10 +134,10 @@ namespace DocAsCode.EntityModel
                         }
                         else
                         {
-                            var delegateSyntax = syntaxNode as DelegateDeclarationSyntax;
-                            Debug.Assert(delegateSyntax != null);
-                            if (delegateSyntax == null) break;
-                            syntaxStr = delegateSyntax
+                            Debug.Assert(syntaxNode is DelegateDeclarationSyntax 
+                                || syntaxNode is OperatorDeclarationSyntax 
+                                || syntaxNode is ConversionOperatorDeclarationSyntax);
+                            syntaxStr = syntaxNode
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();

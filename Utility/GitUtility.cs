@@ -19,12 +19,16 @@ namespace DocAsCode.Utility
         //[YamlDotNet.Serialization.YamlMember(Alias = "local")]
         public string LocalWorkingDirectory { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "sha1")]
-        public string LatestSha1 { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "description")]
+        public string Description { get; set; }
     }
     public static class GitUtility
     {
-        
+        /// <summary>
+        /// TODO: only get GitDetail on Project level?
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static GitDetail GetGitDetail(string path)
         {
             GitDetail detail = null;
@@ -50,7 +54,8 @@ namespace DocAsCode.Utility
                 {
                     detail.RemoteBranch = detail.RemoteBranch.Substring(hrefHeadIndex + 11);
                 }
-                detail.LatestSha1 = repo.Commits.FirstOrDefault().Sha;
+
+                detail.Description = repo.Describe(repo.Lookup<Commit>(repo.Head.Tip.Sha));
             }
             catch (Exception e)
             {

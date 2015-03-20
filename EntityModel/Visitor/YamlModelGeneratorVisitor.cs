@@ -285,7 +285,7 @@ namespace DocAsCode.EntityModel
             item.Type = GetMemberTypeFromSymbol(symbol);
             if (item.Type == MemberType.Default)
             {
-                ParseResult.WriteToConsole(ResultLevel.Info, "{0} symbol does not have membertype and is ignored", symbol.ToDisplayString());
+                // If Default, then it is PropertyGet or PropertySet, ignore
                 return null;
             }
 
