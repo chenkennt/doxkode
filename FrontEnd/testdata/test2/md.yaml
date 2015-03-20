@@ -7,10 +7,10 @@ TestClass1.Partial1:
   remote: &o0
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    sha1: ab9c49cee5ab903ed95b3cf875a3e00c779a63cb
+    sha1: ebae5313d62cc16ff23e48452397ba1fbe89766b
 TestClass1:
   id: TestClass1
-  path: TestResults/Deploy_lianwei 2015-03-19 16_05_27/Out/Assets/Markdown/About.md
+  path: TestResults/Deploy_lianwei 2015-03-20 13_16_12/Out/Assets/Markdown/About.md
   href: md/Assets_Markdown_About.md
   startLine: 376
   endLine: 695

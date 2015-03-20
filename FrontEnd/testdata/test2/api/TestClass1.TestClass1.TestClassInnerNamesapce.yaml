@@ -10,8 +10,8 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    sha1: ab9c49cee5ab903ed95b3cf875a3e00c779a63cb
-  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-19 16_05_27/Out/Assets/TestClass1/TestClass1/Class1.cs
+    sha1: ebae5313d62cc16ff23e48452397ba1fbe89766b
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-20 13_16_12/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 107
 items:
 - id: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace

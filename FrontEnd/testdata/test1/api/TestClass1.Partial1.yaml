@@ -1,80 +1,49 @@
 id: TestClass1.Partial1
-yaml: api\TestClass1.Partial1.yaml
-href: api\TestClass1.Partial1
+yaml: api/TestClass1.Partial1.yaml
+href: api/TestClass1.Partial1
 name:
   CSharp: Partial1
 qualifiedName:
-  CSharp: Partial1
+  CSharp: TestClass1.Partial1
 type: Class
 source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:\Repo\docascode2\
-    sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-  path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
-  startLine: 19
+    sha1: ebae5313d62cc16ff23e48452397ba1fbe89766b
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-20 13_16_12/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 12
+summary: Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
 syntax:
   content:
     CSharp: public partial class Partial1
 inheritance:
-- id: T:System.Object
-  href: mscorlib
+- id: System.Object
+  name: System.Object
   isExternal: true
 items:
-- id: TestClass1.Partial1.Property1
-  yaml: api\TestClass1.Partial1.yaml
-  href: api\TestClass1.Partial1
+- id: TestClass1.Partial1.Property2
+  yaml: api/TestClass1.Partial1.yaml
+  href: api/TestClass1.Partial1
   name:
-    CSharp: Property1
+    CSharp: Property2
   qualifiedName:
-    CSharp: Property1
+    CSharp: TestClass1.Partial1.Property2
   type: Property
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
-    startLine: 25
+      sha1: ebae5313d62cc16ff23e48452397ba1fbe89766b
+    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-20 13_16_12/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 17
   summary: This is the property from *partial* class
   syntax:
     content:
-      CSharp: public string Property1
+      CSharp: public string Property2 { get; set; }
     parameters:
-    - id: Property1
+    - id: Property2
       type:
-        id: T:System.String
-        href: mscorlib
+        id: System.String
+        name: System.String
         isExternal: true
-- id: TestClass1.Partial1.get_Property1
-  yaml: api\TestClass1.Partial1.yaml
-  href: api\TestClass1.Partial1
-  name:
-    CSharp: get_Property1
-  qualifiedName:
-    CSharp: get_Property1
-  source:
-    remote:
-      branch: Refactor
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
-    startLine: 25
-- id: TestClass1.Partial1.set_Property1(System.String)
-  yaml: api\TestClass1.Partial1.yaml
-  href: api\TestClass1.Partial1
-  name:
-    CSharp: set_Property1
-  qualifiedName:
-    CSharp: set_Property1
-  source:
-    remote:
-      branch: Refactor
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
-    startLine: 25

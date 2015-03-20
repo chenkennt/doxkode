@@ -1,16 +1,12 @@
 id: Microsoft
 yaml: api/Microsoft.yaml
 href: api/Microsoft
+language: VB
 name:
-  CSharp: Microsoft
+  VB: Microsoft
 qualifiedName:
-  CSharp: Microsoft
+  VB: Microsoft
 type: Namespace
 source:
-  remote:
-    branch: master
-    repo: https://github.com/vicancy/roslyn
-    local: E:/Repo1/roslyn/
-    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src/Compilers/Core/Portable/Binding/AbstractLookupSymbolsInfo.cs
-  startLine: 8
+  path: VBTestClass1
+  isExternal: true

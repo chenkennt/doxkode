@@ -95,3 +95,52 @@ items:
     name:
       CSharp: Class2
     type: Class
+- id: VBTestClass1
+  yaml: api/VBTestClass1.yaml
+  href: api/VBTestClass1
+  name:
+    VB: VBTestClass1
+  type: Namespace
+  items:
+  - id: VBTestClass1.Class1
+    yaml: api/VBTestClass1.Class1.yaml
+    href: api/VBTestClass1.Class1
+    name:
+      VB: Class1
+    type: Class
+  - id: VBTestClass1.BaseClass1
+    yaml: api/VBTestClass1.BaseClass1.yaml
+    href: api/VBTestClass1.BaseClass1
+    name:
+      VB: BaseClass1
+    type: Class
+- id: VBTestClass1.My
+  yaml: api/VBTestClass1.My.yaml
+  href: api/VBTestClass1.My
+  name:
+    VB: My
+  type: Namespace
+- id: VBTestClass1.My.Resources
+  yaml: api/VBTestClass1.My.Resources.yaml
+  href: api/VBTestClass1.My.Resources
+  name:
+    VB: Resources
+  type: Namespace
+- id: My
+  yaml: api/My.yaml
+  href: api/My
+  name:
+    VB: My
+  type: Namespace
+- id: Microsoft
+  yaml: api/Microsoft.yaml
+  href: api/Microsoft
+  name:
+    VB: Microsoft
+  type: Namespace
+- id: Microsoft.VisualBasic
+  yaml: api/Microsoft.VisualBasic.yaml
+  href: api/Microsoft.VisualBasic
+  name:
+    VB: VisualBasic
+  type: Namespace

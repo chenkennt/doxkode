@@ -98,3 +98,55 @@ TestClass2.Class2.#ctor(System.String):
   Name: TestClass2.Class2.#ctor(System.String)
   YamlPath: api/TestClass2.Class2.yaml
   Href: api/TestClass2.Class2
+VBTestClass1:
+  Name: VBTestClass1
+  YamlPath: api/VBTestClass1.yaml
+  Href: api/VBTestClass1
+VBTestClass1.Class1:
+  Name: VBTestClass1.Class1
+  YamlPath: api/VBTestClass1.Class1.yaml
+  Href: api/VBTestClass1.Class1
+VBTestClass1.Class1.ValueClass:
+  Name: VBTestClass1.Class1.ValueClass
+  YamlPath: api/VBTestClass1.Class1.yaml
+  Href: api/VBTestClass1.Class1
+VBTestClass1.Class1.Keyword:
+  Name: VBTestClass1.Class1.Keyword
+  YamlPath: api/VBTestClass1.Class1.yaml
+  Href: api/VBTestClass1.Class1
+VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  YamlPath: api/VBTestClass1.Class1.yaml
+  Href: api/VBTestClass1.Class1
+VBTestClass1.Class1.Value(System.String):
+  Name: VBTestClass1.Class1.Value(System.String)
+  YamlPath: api/VBTestClass1.Class1.yaml
+  Href: api/VBTestClass1.Class1
+VBTestClass1.BaseClass1:
+  Name: VBTestClass1.BaseClass1
+  YamlPath: api/VBTestClass1.BaseClass1.yaml
+  Href: api/VBTestClass1.BaseClass1
+VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  YamlPath: api/VBTestClass1.BaseClass1.yaml
+  Href: api/VBTestClass1.BaseClass1
+VBTestClass1.My:
+  Name: VBTestClass1.My
+  YamlPath: api/VBTestClass1.My.yaml
+  Href: api/VBTestClass1.My
+VBTestClass1.My.Resources:
+  Name: VBTestClass1.My.Resources
+  YamlPath: api/VBTestClass1.My.Resources.yaml
+  Href: api/VBTestClass1.My.Resources
+My:
+  Name: My
+  YamlPath: api/My.yaml
+  Href: api/My
+Microsoft:
+  Name: Microsoft
+  YamlPath: api/Microsoft.yaml
+  Href: api/Microsoft
+Microsoft.VisualBasic:
+  Name: Microsoft.VisualBasic
+  YamlPath: api/Microsoft.VisualBasic.yaml
+  Href: api/Microsoft.VisualBasic
