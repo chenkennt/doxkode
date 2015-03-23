@@ -37,11 +37,12 @@ module.exports = function(grunt) {
     ],
     ownCssFiles: [
         'app/bower_components/highlightjs/styles/vs.css',
-        'app/css/default.css',
-        'app/css/docs.css',
-        'app/css/prettify-theme.css',
-        'app/css/csplay.css',
-        'app/css/animations.css',
+        // 'app/css/default.css',
+        // 'app/css/docs.css',
+        // 'app/css/prettify-theme.css',
+        // 'app/css/csplay.css',
+        // 'app/css/animations.css',
+        'tmp/main.css',
         // 'app/css/open-sans.css'
     ],
     // REMEMBER:
@@ -106,9 +107,9 @@ module.exports = function(grunt) {
         "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.2/custom/bootstrap.min.css",
     ],
     cdnJsFiles: [
-        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
-        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
-        "https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
+        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
         "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
         "//cdnjs.cloudflare.com/ajax/libs/js-yaml/3.2.7/js-yaml.min.js",
         "//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js",
@@ -156,6 +157,36 @@ module.exports = function(grunt) {
         },*/
         js: {
             src: ['app/js/*.js', 'app/js/**/*.js', '!app/js/marked.js']
+        }
+    },
+    watch: {
+        files: [
+            'Gruntfile.js',
+            'js/*.js',
+            'js/**/*.js',
+            'tmpl/*.tmpl',
+            'index.tmpl'
+        ],
+        tasks: ['test' ]
+    },
+    connect: {
+      test: {
+        options: {
+          port: 8000,
+          hostname: '0.0.0.0',
+          base: './test1/debug',
+          keepalive: true
+        }
+      }
+    },
+    less: {
+        dev: {
+            options: {
+                compress: false,
+            },
+            files: {
+                'tmp/main.css': 'app/css/*.less',
+            },
         }
     },
     concat: {
@@ -319,13 +350,14 @@ module.exports = function(grunt) {
         grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
-    grunt.registerTask('debuginline', [ 'assembleTemplates', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple']);
-    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
-    grunt.registerTask('releaseinline', [ 'assembleTemplates', 'concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
+    grunt.registerTask('debug', [ 'assembleTemplates', 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
+    grunt.registerTask('debuginline', [ 'assembleTemplates','less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
+    grunt.registerTask('release', [ 'assembleTemplates','less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
+    grunt.registerTask('releaseinline', [ 'assembleTemplates', 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
+    grunt.registerTask('server', [ 'debug', 'copy:test_roslyn', 'connect:test' ]);
 };
