@@ -162,10 +162,14 @@ module.exports = function(grunt) {
     watch: {
         files: [
             'Gruntfile.js',
-            'js/*.js',
-            'js/**/*.js',
-            'tmpl/*.tmpl',
-            'index.tmpl'
+            'app/js/*.js',
+            'app/css/*.css',
+            'app/css/**/*.css',
+            'app/css/*.css',
+            'app/css/*.less',
+            'app/css/**/*.less',
+            'app/template/*.tmpl',
+            'app/index.tmpl'
         ],
         tasks: ['test' ]
     },
