@@ -39,6 +39,20 @@ function tryCode(enable, code) {
   }
 }
 
+function cleanArray(actual){
+  var newArray = new Array();
+  for(var i = 0; i<actual.length; i++){
+      if (actual[i]){
+        newArray.push(actual[i]);
+    }
+  }
+  return newArray;
+}
+
+// TO BE IMPLEMENTED
+function getTocFromMd(mdContent){
+  var html = marked(mdContent);
+}
 
 angular.module('docsApp', [
   'ngRoute',
@@ -64,14 +78,7 @@ angular.module('directives', [])
         marked.setOptions({
             gfm:true,
             pedantic:false,
-            sanitize:true,
-            // callback for code highlighter
-            // highlight:function (code, lang) {
-            //     if (lang != undefined)
-            //         return window.prettyPrintOne(code, lang).value;
-
-            //     return window.prettyPrintOne(code).value;
-            // }
+            sanitize:true
         });
 
         var toHtml = function (markdown) {
@@ -80,9 +87,6 @@ angular.module('directives', [])
 
             return marked(markdown);
         };
-
-        // hljs.tabReplace = '    ';
-
         return {
             toHtml:toHtml
         };
@@ -174,11 +178,18 @@ angular.module('DocsController', [])
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
-  $scope.navClass = function(navItem) {
+  $scope.tocClass = function(navItem) {
     return {
       active: navItem.href && this.currentPage,
       current: this.currentPage === navItem.href,
       'nav-index-section': navItem.type === 'section'
+    };
+  };
+
+  $scope.navClass = function(navItem) {
+    return {
+      active: navItem.href && this.currentPage,
+      current: this.currentPage.indexOf(navItem.href) > -1,
     };
   };
 
@@ -215,9 +226,22 @@ angular.module('DocsController', [])
     return getRemoteUrl(this.model.source, this.model.source.startLine + 1);
   };
 
-   $scope.ImproveThisDoc = function(){
-      return $scope.partialModel.mdContent;
-    };
+  $scope.ImproveThisDoc = function(){
+    return $scope.partialModel.mdContent;
+  };
+
+  $scope.GetTocHref = function(relativeUrl){
+    if (!$scope.toc) return '#' + relativeUrl;
+    var tocPath = $scope.toc.path;
+    if (tocPath){
+      var index = tocPath.indexOf('toc.yaml');
+      if (index === -1) index = tocPath.indexOf('toc.md');
+      if (index === -1) return '#' + relativeUrl;
+      return '#' + tocPath.substring(0, index) + relativeUrl;
+    }
+
+    return '#' + relativeUrl;
+  }
 
   $scope.$on('$includeContentLoaded', function() {
     var pagePath = $scope.currentPage ? $scope.currentPage.path : $location.path();
@@ -250,13 +274,53 @@ angular.module('DocsController', [])
     return deferred.promise;
   }
 
+  // MOVE Load TOC to inside PATH CHange watch
+  (function getNavbarAndToc(){
+    var currentPath = $location.path();
+    // load navigation bar, should be toc.yaml in root path
+    // TODO: support toc.md => extract <h><a> from marked(toc.md)
+    var navBarPath = "toc.yaml";
+    asyncFetchIndex(navBarPath, function(result){
+      $scope.navbar = jsyaml.load(result);
+    });
+    // If is not home page load it's own toc
+    // Check if toc.yaml exists from itself and way up
+    // api/a/b => 1. check if api/a/b/toc.yaml exists 2. if 1 fails, check if api/a/toc.yaml exists 3. if 2 fails, check if api/toc.yaml exists
+    if (currentPath){
+      var pathParts = cleanArray(currentPath.split('/'));
+      var tocPaths = new Array();
+      while (pathParts.length > 0){
+        tocPaths.push(pathParts.join('/') + '/toc.yaml');
+        pathParts.pop();
+      }
+
+      // toc: {path: toc.yaml, content: {}}
+      tocPaths.forEach(function(i){
+        // If path's length is shorter than current one, override it with current one
+        if (!$scope.toc || $scope.toc.path.length < i.length){
+          asyncFetchIndex(i, function(result){
+            if (!$scope.toc || $scope.toc.path.length < i.length){
+              $scope.toc = {path: i};
+              $scope.toc.content = jsyaml.load(result);
+              $scope.currentArea = $scope.toc.content;
+            }
+          });
+        }
+      });
+    }
+  })();
+
 // var getIndex = asyncFetchIndex('index.yaml', function(result){
 //   NG_PAGES = jsyaml.load(result);
 // });
+// var getNavbar =  asyncFetchIndex('toc.yaml', function(result){
+//   $scope.navbar = jsyaml.load(result);
+// });
 
-var getToc = asyncFetchIndex('toc.yaml', function(result){
-  $scope.currentArea = jsyaml.load(result);
-});
+
+// var getToc = asyncFetchIndex($location.path()'toc.yaml', function(result){
+//   $scope.currentArea = jsyaml.load(result);
+// });
 
 var getMdIndex = asyncFetchIndex('md.yaml', function(result){
   $scope.mdIndex = jsyaml.load(result);

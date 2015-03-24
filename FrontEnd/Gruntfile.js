@@ -356,7 +356,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('debug', [ 'assembleTemplates', 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
     grunt.registerTask('debuginline', [ 'assembleTemplates','less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
+    grunt.registerTask('test', [ 'debug', 'release', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
     grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
     grunt.registerTask('release', [ 'assembleTemplates','less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'assembleTemplates', 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
