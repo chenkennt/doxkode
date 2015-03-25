@@ -260,6 +260,10 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
                 var toc = {path: pathInfo.tocPath, content: content};
                 tocCache.put(pathInfo.tocPath, toc);
                 $scope.toc = toc;
+                // If the requested content path is not specified, pick the first item in toc.yaml as the default one
+                if (!pathInfo.contentPath && toc.content.count > 0) {
+                  $location.url(toc.path + '!' + toc.content[0].href)
+                }
               }, function(){
                 tocCache.put(pathInfo.tocPath, {path: pathInfo.tocPath});
               });
@@ -318,11 +322,15 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
           $scope.partialPath = path;
         }
       }else{
-        $scope.breadcrumb = [];
-        $scope.partialPath = 'template/error404.tmpl';
+        if ($scope.navbar && $scope.navbar.count > 0){
+          $location.url($scope.navbar[0].href);
+        }else{
+          $scope.breadcrumb = [];
+          $scope.partialPath = 'template/error404.tmpl';
+        }
       }
 
-      var pathParts = currentPage.split('/');
+      var pathParts = path.split('/');
       var breadcrumb = $scope.breadcrumb = [];
       var breadcrumbPath = '';
       angular.forEach(pathParts, function(part) {

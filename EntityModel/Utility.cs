@@ -329,13 +329,11 @@ namespace DocAsCode.EntityModel
         }
         public static YamlItemViewModel ShrinkToSimpleToc(this YamlItemViewModel item)
         {
-
             YamlItemViewModel shrinkedItem = new YamlItemViewModel();
             shrinkedItem.Name = item.Name;
-            shrinkedItem.Href = item.Href;
-            shrinkedItem.Type = item.Type;
-            shrinkedItem.YamlPath = item.YamlPath;
             shrinkedItem.DisplayNames = item.DisplayNames;
+
+            shrinkedItem.Href = item.YamlPath;
             shrinkedItem.Items = null;
 
             if (item.Items == null)
