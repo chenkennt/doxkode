@@ -338,6 +338,10 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         breadcrumb.push({ name: part, url: breadcrumbPath });
         breadcrumbPath += '/';
       });
+    }else{
+      if ($scope.navbar && $scope.navbar.length > 0){
+        $location.url($scope.navbar[0].href);
+      }
     }
   });
 
@@ -369,6 +373,12 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
     }
   });
 
+  // listen for toc change
+  $scope.$watch(function modelWatch() {return $scope.navbar; }, function modelWatchAction(navbar) {
+    if (!$location.path() && navbar && navbar.count > 0){
+      $location.url(navbar[0].href);
+    }
+  });
   /**********************************
    Initialize
    ***********************************/
@@ -378,10 +388,10 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
   $scope.loading = 0;
 
 
-  var INDEX_PATH = /^(\/|\/index[^\.]*.html)$/;
+ /* var INDEX_PATH = /^(\/|\/index[^\.]*.html)$/;
   if (!$location.path() || INDEX_PATH.test($location.path())) {
     $location.path('/api').replace();
-  }
+  }*/
 
 }]);
 
