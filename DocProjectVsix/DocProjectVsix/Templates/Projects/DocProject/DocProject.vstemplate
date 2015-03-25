@@ -23,6 +23,12 @@
         web.config
       </ProjectItem>
       <ProjectItem>
+        project.json
+      </ProjectItem>
+      <ProjectItem>
+        Startup.cs
+      </ProjectItem>
+      <ProjectItem>
         js\docascode.js
       </ProjectItem>
       <ProjectItem>

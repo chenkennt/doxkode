@@ -29,6 +29,8 @@
     <Content Include="template/namespace.tmpl" />
     <Content Include="index.html" />
     <Content Include="web.config" />
+    <Content Include="project.json" />
+    <Content Include="Startup.cs" />
   </ItemGroup>
   <Import Project="Targets\Microsoft.DocProject.targets" />
 </Project>
