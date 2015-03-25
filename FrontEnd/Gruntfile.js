@@ -343,23 +343,12 @@ module.exports = function(grunt) {
         createIndex(grunt, 'debug', 'ref');
     });
 
-    grunt.registerTask('assembleTemplates', 'Adds a script tag with id to each template', function() {
-        var templateString = '';
-        grunt.file.recurse('templates/', function(abspath, rootdir, subdir, filename){
-            var intro = '<script type="text/html" id="/' + rootdir.replace('/','') + '/' + subdir.replace('/','') + '/' + filename.replace('.html','') + '">\n';
-            var content = grunt.file.read(abspath);
-            var outro = '</script>\n';
-            templateString += intro + content + outro;
-        });
-        grunt.file.write('tmp/templates.html', templateString);
-    });
-
-    grunt.registerTask('debug', [ 'assembleTemplates', 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
-    grunt.registerTask('debuginline', [ 'assembleTemplates','less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('debug', [ 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
+    grunt.registerTask('debuginline', [ 'less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
     grunt.registerTask('test', [ 'debug', 'release', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
     grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
-    grunt.registerTask('release', [ 'assembleTemplates','less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
-    grunt.registerTask('releaseinline', [ 'assembleTemplates', 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
+    grunt.registerTask('release', [ 'less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
+    grunt.registerTask('releaseinline', [ 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
