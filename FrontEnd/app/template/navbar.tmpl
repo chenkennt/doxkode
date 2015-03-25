@@ -1,8 +1,5 @@
 <ul class="nav navbar-nav">
   <li class="divider-vertical"></li>
-  <li><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
-  <li class="divider-vertical"></li>
-
   <li ng-repeat="navGroup in model track by navGroup.id">
     <a ng-href="#{{navGroup.href}}" ng-class="navClass(navGroup)" class="icon-book icon-white ">{{ navGroup.id }}</a>
   </li>

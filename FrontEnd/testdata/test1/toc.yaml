@@ -1,3 +1,5 @@
+- id: Home
+  href: index.md
 - id: About
   href: About.md
 - id: Api
