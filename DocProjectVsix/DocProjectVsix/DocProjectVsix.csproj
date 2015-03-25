@@ -178,6 +178,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <VSCTCompile Include="DocProject.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
     </VSCTCompile>
     <ZipItem Include="Templates\Items\Markdown\Class.md">
       <RootPath>Templates\Items\Markdown</RootPath>
@@ -220,6 +221,12 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\js\docascode.js">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\Startup.cs">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\project.json">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <VSIXSourceItem Include="$(OutputPath)\ProjectTemplates\DocProject.zip">
