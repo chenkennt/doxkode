@@ -307,10 +307,6 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         breadcrumb.push({ name: part, url: breadcrumbPath });
         breadcrumbPath += '/';
       });
-    } else {
-      // $scope.currentArea = 'api';
-      // $scope.breadcrumb = [];
-      // $scope.partialPath = 'Error404.html';
     }
   });
 
@@ -330,6 +326,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
       }
   });
 
+  // listen for toc change
   $scope.$watch(function modelWatch() {return $scope.toc; }, function modelWatchAction(path) {
     if ($scope.toc && $scope.toc.content){
       docService.getDefaultItem($scope.toc.content,
