@@ -1,3 +1,3 @@
 ﻿---
-Class: $safeitemrootname$
+id: $safeitemrootname$
 ---
