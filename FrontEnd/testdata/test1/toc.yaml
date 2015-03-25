@@ -1,2 +1,4 @@
+- id: About
+  href: about.md
 - id: API
   href: api

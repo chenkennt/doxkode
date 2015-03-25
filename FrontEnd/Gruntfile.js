@@ -33,7 +33,6 @@ module.exports = function(grunt) {
         'app/js/pages-data.js',
         'app/js/versions-data.js',
         'app/js/csplay.js',
-        'app/js/cache.js',
         'app/js/service.js',
         'app/js/docs.js',
     ],

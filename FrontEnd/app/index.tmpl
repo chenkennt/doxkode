@@ -233,7 +233,7 @@
     </header>
 
     <section role="main" class="container main-body">
-      <div class="main-grid main-body-grid">
+      <div class="main-grid main-body-grid" ng-if="contentType==='api'">
         <div class="grid-left">
           <div class="side-navigation" ng-if="toc">
             <div id="tocLoading" ng-show="tocLoading">Loading...</div>
