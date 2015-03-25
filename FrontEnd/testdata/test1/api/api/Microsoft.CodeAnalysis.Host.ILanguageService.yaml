@@ -1,0 +1,18 @@
+id: Microsoft.CodeAnalysis.Host.ILanguageService
+yaml: api/Microsoft.CodeAnalysis.Host.ILanguageService.yaml
+href: api/Microsoft.CodeAnalysis.Host.ILanguageService
+name:
+  CSharp: ILanguageService
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Host.ILanguageService
+type: Interface
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/ILanguageService.cs
+  startLine: 9
+summary: Empty interface just to mark language services.
+syntax:
+  content:
+    CSharp: public interface ILanguageService

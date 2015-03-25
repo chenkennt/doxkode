@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Rename.ConflictEngine
+yaml: api/Microsoft.CodeAnalysis.Rename.ConflictEngine.yaml
+href: api/Microsoft.CodeAnalysis.Rename.ConflictEngine
+name:
+  CSharp: ConflictEngine
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Rename.ConflictEngine
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/ConflictEngine/Annotations/RenameActionAnnotation.cs
+  startLine: 5

@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.SemanticModelWorkspaceService
+yaml: api/Microsoft.CodeAnalysis.SemanticModelWorkspaceService.yaml
+href: api/Microsoft.CodeAnalysis.SemanticModelWorkspaceService
+name:
+  CSharp: SemanticModelWorkspaceService
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.SemanticModelWorkspaceService
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/SemanticModelWorkspaceService/ISemanticModelService.cs
+  startLine: 6

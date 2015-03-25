@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Text
+yaml: api/Microsoft.CodeAnalysis.Text.yaml
+href: api/Microsoft.CodeAnalysis.Text
+name:
+  CSharp: Text
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Text
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/TextExtensions.cs
+  startLine: 6

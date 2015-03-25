@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.LanguageServices
+yaml: api/Microsoft.CodeAnalysis.LanguageServices.yaml
+href: api/Microsoft.CodeAnalysis.LanguageServices
+name:
+  CSharp: LanguageServices
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.LanguageServices
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/LanguageServices/SemanticsFactsService/ForEachSymbols.cs
+  startLine: 2

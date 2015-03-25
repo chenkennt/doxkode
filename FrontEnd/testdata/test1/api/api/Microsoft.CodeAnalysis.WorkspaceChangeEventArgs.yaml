@@ -1,0 +1,185 @@
+id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+name:
+  CSharp: WorkspaceChangeEventArgs
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+  startLine: 7
+syntax:
+  content:
+    CSharp: public class WorkspaceChangeEventArgs
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.EventArgs
+  name: System.EventArgs
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.Kind
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: Kind
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.Kind
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 9
+  syntax:
+    content:
+      CSharp: public WorkspaceChangeKind Kind { get; private set; }
+    parameters:
+    - id: Kind
+      type:
+        id: Microsoft.CodeAnalysis.WorkspaceChangeKind
+        name: WorkspaceChangeKind
+        href: api/Microsoft.CodeAnalysis.WorkspaceChangeKind
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.OldSolution
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: OldSolution
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.OldSolution
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 10
+  syntax:
+    content:
+      CSharp: public Solution OldSolution { get; private set; }
+    parameters:
+    - id: OldSolution
+      type:
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.NewSolution
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: NewSolution
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.NewSolution
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 11
+  syntax:
+    content:
+      CSharp: public Solution NewSolution { get; private set; }
+    parameters:
+    - id: NewSolution
+      type:
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.ProjectId
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: ProjectId
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.ProjectId
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 12
+  syntax:
+    content:
+      CSharp: public ProjectId ProjectId { get; private set; }
+    parameters:
+    - id: ProjectId
+      type:
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.DocumentId
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: DocumentId
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.DocumentId
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 13
+  syntax:
+    content:
+      CSharp: public DocumentId DocumentId { get; private set; }
+    parameters:
+    - id: DocumentId
+      type:
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId
+- id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.#ctor(Microsoft.CodeAnalysis.WorkspaceChangeKind,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.DocumentId)
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  name:
+    CSharp: WorkspaceChangeEventArgs(Microsoft.CodeAnalysis.WorkspaceChangeKind,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.DocumentId)
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.WorkspaceChangeEventArgs(Microsoft.CodeAnalysis.WorkspaceChangeKind,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.DocumentId)
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    startLine: 15
+  syntax:
+    content:
+      CSharp: public WorkspaceChangeEventArgs(WorkspaceChangeKind kind, Solution oldSolution, Solution newSolution, ProjectId projectId = null, DocumentId documentId = null)
+    parameters:
+    - id: kind
+      type:
+        id: Microsoft.CodeAnalysis.WorkspaceChangeKind
+        name: WorkspaceChangeKind
+        href: api/Microsoft.CodeAnalysis.WorkspaceChangeKind
+    - id: oldSolution
+      type:
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution
+    - id: newSolution
+      type:
+        id: Microsoft.CodeAnalysis.Solution
+        name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution
+    - id: projectId
+      type:
+        id: Microsoft.CodeAnalysis.ProjectId
+        name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId
+    - id: documentId
+      type:
+        id: Microsoft.CodeAnalysis.DocumentId
+        name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId
+    return:
+      id: Void

@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Formatting.Rules
+yaml: api/Microsoft.CodeAnalysis.Formatting.Rules.yaml
+href: api/Microsoft.CodeAnalysis.Formatting.Rules
+name:
+  CSharp: Rules
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Formatting.Rules
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Rules/AbstractFormattingRule.cs
+  startLine: 5

@@ -1,0 +1,77 @@
+id: TestClass2.Class2
+yaml: api/TestClass2.Class2.yaml
+href: api/TestClass2.Class2
+name:
+  CSharp: Class2
+qualifiedName:
+  CSharp: TestClass2.Class2
+type: Class
+source:
+  remote:
+    branch: Refactor
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    local: D:/Repo/docascode/
+    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 11
+summary: >+
+  This is a *Class1* [TestClass1.Class1](#/api/TestClass1.Class1)  in [System.OperatingSystem](#) **TestClass1**
+
+syntax:
+  content:
+    CSharp: public class Class2
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: TestClass2.Class2.#ctor(System.Int32)
+  yaml: api/TestClass2.Class2.yaml
+  href: api/TestClass2.Class2
+  name:
+    CSharp: Class2(System.Int32)
+  qualifiedName:
+    CSharp: TestClass2.Class2.Class2(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      branch: Refactor
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      local: D:/Repo/docascode/
+      sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+    path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 13
+  syntax:
+    content:
+      CSharp: public Class2(int i)
+    parameters:
+    - id: i
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+- id: TestClass2.Class2.#ctor(System.String)
+  yaml: api/TestClass2.Class2.yaml
+  href: api/TestClass2.Class2
+  name:
+    CSharp: Class2(System.String)
+  qualifiedName:
+    CSharp: TestClass2.Class2.Class2(System.String)
+  type: Constructor
+  source:
+    remote:
+      branch: Refactor
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      local: D:/Repo/docascode/
+      sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+    path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 18
+  syntax:
+    content:
+      CSharp: public Class2(string k)
+    parameters:
+    - id: k
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true

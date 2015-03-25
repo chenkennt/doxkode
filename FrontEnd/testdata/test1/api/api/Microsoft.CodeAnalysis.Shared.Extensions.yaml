@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Shared.Extensions
+yaml: api/Microsoft.CodeAnalysis.Shared.Extensions.yaml
+href: api/Microsoft.CodeAnalysis.Shared.Extensions
+name:
+  CSharp: Extensions
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Shared.Extensions
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Shared/Extensions/TextDocumentExtensions.cs
+  startLine: 5

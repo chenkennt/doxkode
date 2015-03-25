@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Internal
+yaml: api/Microsoft.CodeAnalysis.Internal.yaml
+href: api/Microsoft.CodeAnalysis.Internal
+name:
+  CSharp: Internal
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Internal
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Log/AggregateLogger.cs
+  startLine: 8

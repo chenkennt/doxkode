@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Diagnostics
+yaml: api/Microsoft.CodeAnalysis.Diagnostics.yaml
+href: api/Microsoft.CodeAnalysis.Diagnostics
+name:
+  CSharp: Diagnostics
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Diagnostics
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/AdditionalTextDocument.cs
+  startLine: 8

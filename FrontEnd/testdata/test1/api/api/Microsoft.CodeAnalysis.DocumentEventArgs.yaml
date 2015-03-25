@@ -1,0 +1,73 @@
+id: Microsoft.CodeAnalysis.DocumentEventArgs
+yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
+href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+name:
+  CSharp: DocumentEventArgs
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.DocumentEventArgs
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+  startLine: 6
+syntax:
+  content:
+    CSharp: public class DocumentEventArgs
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.EventArgs
+  name: System.EventArgs
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.DocumentEventArgs.Document
+  yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+  name:
+    CSharp: Document
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.DocumentEventArgs.Document
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+    startLine: 8
+  syntax:
+    content:
+      CSharp: public Document Document { get; private set; }
+    parameters:
+    - id: Document
+      type:
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api/Microsoft.CodeAnalysis.Document
+- id: Microsoft.CodeAnalysis.DocumentEventArgs.#ctor(Microsoft.CodeAnalysis.Document)
+  yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+  name:
+    CSharp: DocumentEventArgs(Microsoft.CodeAnalysis.Document)
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.DocumentEventArgs.DocumentEventArgs(Microsoft.CodeAnalysis.Document)
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+    startLine: 10
+  syntax:
+    content:
+      CSharp: public DocumentEventArgs(Document document)
+    parameters:
+    - id: document
+      type:
+        id: Microsoft.CodeAnalysis.Document
+        name: Document
+        href: api/Microsoft.CodeAnalysis.Document
+    return:
+      id: Void

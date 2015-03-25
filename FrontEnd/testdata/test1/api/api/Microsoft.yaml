@@ -1,0 +1,14 @@
+id: Microsoft
+yaml: api/Microsoft.yaml
+href: api/Microsoft
+name:
+  CSharp: Microsoft
+qualifiedName:
+  CSharp: Microsoft
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Compilers/Core/Portable/Collections/ImmutableArrayExtensions.cs
+  startLine: 10

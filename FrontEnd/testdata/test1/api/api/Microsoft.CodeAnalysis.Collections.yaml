@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Collections
+yaml: api/Microsoft.CodeAnalysis.Collections.yaml
+href: api/Microsoft.CodeAnalysis.Collections
+name:
+  CSharp: Collections
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Collections
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Compilers/Core/SharedCollections/PooledDictionary.cs
+  startLine: 6

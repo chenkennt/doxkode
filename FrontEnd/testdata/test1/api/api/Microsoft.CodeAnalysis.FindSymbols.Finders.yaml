@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.FindSymbols.Finders
+yaml: api/Microsoft.CodeAnalysis.FindSymbols.Finders.yaml
+href: api/Microsoft.CodeAnalysis.FindSymbols.Finders
+name:
+  CSharp: Finders
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.FindSymbols.Finders
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/FindReferences/Finders/AbstractMemberScopedReferenceFinder.cs
+  startLine: 12

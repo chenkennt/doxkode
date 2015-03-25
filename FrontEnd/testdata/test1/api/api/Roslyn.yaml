@@ -1,0 +1,14 @@
+id: Roslyn
+yaml: api/Roslyn.yaml
+href: api/Roslyn
+name:
+  CSharp: Roslyn
+qualifiedName:
+  CSharp: Roslyn
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Compilers/Core/Portable/InternalUtilities/BitArithmeticUtilities.cs
+  startLine: 4

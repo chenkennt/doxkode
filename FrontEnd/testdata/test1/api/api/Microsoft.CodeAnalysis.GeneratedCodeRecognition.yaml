@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.GeneratedCodeRecognition
+yaml: api/Microsoft.CodeAnalysis.GeneratedCodeRecognition.yaml
+href: api/Microsoft.CodeAnalysis.GeneratedCodeRecognition
+name:
+  CSharp: GeneratedCodeRecognition
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.GeneratedCodeRecognition
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/GeneratedCodeRecognition/GeneratedCodeRecognitionServiceFactory.cs
+  startLine: 8

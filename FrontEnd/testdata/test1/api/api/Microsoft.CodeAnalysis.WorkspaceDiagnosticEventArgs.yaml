@@ -1,0 +1,73 @@
+id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
+href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+name:
+  CSharp: WorkspaceDiagnosticEventArgs
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+  startLine: 7
+syntax:
+  content:
+    CSharp: public class WorkspaceDiagnosticEventArgs
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.EventArgs
+  name: System.EventArgs
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.Diagnostic
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+  name:
+    CSharp: Diagnostic
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.Diagnostic
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    startLine: 9
+  syntax:
+    content:
+      CSharp: public WorkspaceDiagnostic Diagnostic { get; private set; }
+    parameters:
+    - id: Diagnostic
+      type:
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
+        name: WorkspaceDiagnostic
+        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+- id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
+  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+  name:
+    CSharp: WorkspaceDiagnosticEventArgs(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.WorkspaceDiagnosticEventArgs(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    startLine: 11
+  syntax:
+    content:
+      CSharp: public WorkspaceDiagnosticEventArgs(WorkspaceDiagnostic diagnostic)
+    parameters:
+    - id: diagnostic
+      type:
+        id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
+        name: WorkspaceDiagnostic
+        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+    return:
+      id: Void

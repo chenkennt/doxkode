@@ -1,0 +1,56 @@
+id: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
+yaml: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.yaml
+href: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
+name:
+  CSharp: RecommendationOptions
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+  startLine: 6
+syntax:
+  content:
+    CSharp: public static class RecommendationOptions
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.HideAdvancedMembers
+  yaml: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
+  name:
+    CSharp: HideAdvancedMembers
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.HideAdvancedMembers
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+    startLine: 10
+  syntax:
+    content:
+      CSharp: HideAdvancedMembers
+- id: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.FilterOutOfScopeLocals
+  yaml: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
+  name:
+    CSharp: FilterOutOfScopeLocals
+  qualifiedName:
+    CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.FilterOutOfScopeLocals
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+    startLine: 12
+  syntax:
+    content:
+      CSharp: FilterOutOfScopeLocals

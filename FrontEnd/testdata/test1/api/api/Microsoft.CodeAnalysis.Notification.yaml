@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Notification
+yaml: api/Microsoft.CodeAnalysis.Notification.yaml
+href: api/Microsoft.CodeAnalysis.Notification
+name:
+  CSharp: Notification
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Notification
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Notification/AbstractGlobalOperationNotificationService.cs
+  startLine: 4

@@ -1,0 +1,77 @@
+id: TestClass1.Class1.Class1InnerClass.TestEnum
+yaml: api/TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+href: api/TestClass1.Class1.Class1InnerClass.TestEnum
+name:
+  CSharp: TestEnum
+qualifiedName:
+  CSharp: TestClass1.Class1.Class1InnerClass.TestEnum
+type: Enum
+source:
+  remote:
+    branch: Refactor
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    local: D:/Repo/docascode/
+    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 40
+summary: >+
+  This is the TestEnum for inner class
+
+syntax:
+  content:
+    CSharp: public enum TestEnum
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.ValueType
+  name: System.ValueType
+  isExternal: true
+- id: System.Enum
+  name: System.Enum
+  isExternal: true
+items:
+- id: TestClass1.Class1.Class1InnerClass.TestEnum.A
+  yaml: api/TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  href: api/TestClass1.Class1.Class1InnerClass.TestEnum
+  name:
+    CSharp: A
+  qualifiedName:
+    CSharp: TestClass1.Class1.Class1InnerClass.TestEnum.A
+  type: Field
+  source:
+    remote:
+      branch: Refactor
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      local: D:/Repo/docascode/
+      sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+    path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 45
+  summary: >+
+    This is Enum A
+
+  syntax:
+    content:
+      CSharp: A
+- id: TestClass1.Class1.Class1InnerClass.TestEnum.B
+  yaml: api/TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  href: api/TestClass1.Class1.Class1InnerClass.TestEnum
+  name:
+    CSharp: B
+  qualifiedName:
+    CSharp: TestClass1.Class1.Class1InnerClass.TestEnum.B
+  type: Field
+  source:
+    remote:
+      branch: Refactor
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      local: D:/Repo/docascode/
+      sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+    path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 50
+  summary: >+
+    This is Enum B
+
+  syntax:
+    content:
+      CSharp: B

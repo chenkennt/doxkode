@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Classification.Classifiers
+yaml: api/Microsoft.CodeAnalysis.Classification.Classifiers.yaml
+href: api/Microsoft.CodeAnalysis.Classification.Classifiers
+name:
+  CSharp: Classifiers
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Classification.Classifiers
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/Classifiers/ISyntaxClassifier.cs
+  startLine: 6

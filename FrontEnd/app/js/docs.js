@@ -208,7 +208,7 @@ angular.module('DocsController', [])
     if (!$scope.toc) return '#' + relativeUrl;
     var tocPath = $scope.toc.path;
     if (tocPath){
-      return '#' + tocPath + '/' + relativeUrl;
+      return '#' + tocPath + '!' + relativeUrl;
     }
 
     return '#' + relativeUrl;
@@ -240,9 +240,8 @@ angular.module('DocsController', [])
     });
   })();
 
+// #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
 $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
-    $scope.toc = undefined;
-    $scope.partialPath = undefined;
     path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
 
     var currentPage = $scope.currentPage = path;//NG_PAGES[path];
@@ -250,76 +249,77 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
     // TODO: check if it is inside NG_PAGES
     // If current page exists in NG_PAGES
     if (currentPage ) {
-    // If is not home page load it's own toc
-    // Check if toc.yaml exists from itself and way up
-    // api/a/b => 1. check if api/a/b/toc.yaml exists 2. if 1 fails, check if api/a/toc.yaml exists 3. if 2 fails, check if api/toc.yaml exists
-      var pathParts = cleanArray(currentPage.split('/'));
-      var tocPaths = new Array();
-      while (pathParts.length > 0){
-        tocPaths.push(pathParts.join('/'));
-        pathParts.pop();
+      var pathInfo = docService.getPathInfo(currentPage);
+      if (pathInfo.tocPath){
+        var temp = tocCache.get(pathInfo.tocPath);
+        if (temp){
+          if (temp.content) $scope.toc = temp;
+        }else{
+          docService.asyncFetchIndex(pathInfo.tocFilePath, function(result){
+                var content = jsyaml.load(result);
+                var toc = {path: pathInfo.tocPath, content: content};
+                tocCache.put(pathInfo.tocPath, toc);
+                $scope.toc = toc;
+              }, function(){
+                tocCache.put(pathInfo.tocPath, {path: pathInfo.tocPath});
+              });
+        }
+      }else{
+        // hide toc
+        $scope.toc = undefined;
       }
 
-      // toc: {path: toc.yaml, content: {}}
-      // If fetched, add to cache: if 404: set toc.path while content is null; if not set, toc is null
-      tocPaths.forEach(function(i){
-        // If path's length is shorter than current one, override it with current one
-        if (!$scope.toc || $scope.toc.path.length < i.length){
-          var temp = tocCache.get(i);
-          if (temp){
-            // 404 toc path is also saved to temp to avoid duplicate fetch
-            if (temp.content) $scope.toc = temp;
-          }else{
-            docService.asyncFetchIndex(i + '/toc.yaml', function(result){
-              var content = jsyaml.load(result);
-              var toc = {path: i, content: content};
-              tocCache.put(i, toc);
-              if (!$scope.toc || $scope.toc.path.length < i.length){
-                $scope.toc = toc;
+      path = pathInfo.contentPath;
+      if (path){
+        if ($scope.toc) path = $scope.toc.path + '/' + path;
+        // If end with .md
+        if ((/\.md$/g).test(path)){
+          $scope.contentType = 'md';
+          $scope.partialModel = {};
+          $scope.title = path;
+          $scope.partialPath = path;
+        }else if ((/\.yaml$/g).test(path)){
+          $scope.contentType = 'yaml';
+          // if is yaml
+          var promise = docService.asyncFetchIndex(path, function(result){
+              $scope.partialModel = jsyaml.load(result);
+              $scope.title = $scope.partialModel.id;
+            if ($scope.partialModel.type.toLowerCase() == 'namespace'){
+              $scope.itemtypes = NG_ITEMTYPES.namespace;
+              for(var i in $scope.partialModel.items){
+                var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+                if (itemtype){
+                  itemtype.show = true;
+                }
               }
-            }, function(){
-              tocCache.put(i, {path: i});
-            });
+              $scope.partialPath = 'template' + '/namespace.tmpl';
+            }
+            else {
+              $scope.itemtypes = NG_ITEMTYPES.class;
+              for(var i in $scope.itemtypes){
+                $scope.itemtypes[i].show = false;
+              }
+              for(var i in $scope.partialModel.items){
+                var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+                if (itemtype){
+                  itemtype.show = true;
+                }
+              }
+              $scope.partialPath = 'template' + '/class.tmpl';
+            }
+          },
+          function(){
+            $scope.breadcrumb = [];
+            $scope.partialPath = 'template/error404.tmpl';
           }
+          );
+        }else{
+          // If not md or yaml, simply try load the path
+          $scope.partialPath = path;
         }
-      });
-
-      // If end with .md
-      if ((/\.md$/g).test(path)){
-        $scope.contentType = 'md';
-        $scope.partialModel = {};
-        $scope.title = path;
-        $scope.partialPath = path;
       }else{
-        $scope.contentType = 'yaml';
-        // if is yaml
-        var promise = docService.asyncFetchIndex(path + ".yaml", function(result){
-            $scope.partialModel = jsyaml.load(result);
-            $scope.title = $scope.partialModel.id;
-          if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-            $scope.itemtypes = NG_ITEMTYPES.namespace;
-            for(var i in $scope.partialModel.items){
-              var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-              if (itemtype){
-                itemtype.show = true;
-              }
-            }
-            $scope.partialPath = 'template' + '/namespace.tmpl';
-          }
-          else {
-            $scope.itemtypes = NG_ITEMTYPES.class;
-            for(var i in $scope.itemtypes){
-              $scope.itemtypes[i].show = false;
-            }
-            for(var i in $scope.partialModel.items){
-              var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-              if (itemtype){
-                itemtype.show = true;
-              }
-            }
-            $scope.partialPath = 'template' + '/class.tmpl';
-          }
-        });
+        $scope.breadcrumb = [];
+        $scope.partialPath = 'template/error404.tmpl';
       }
 
       var pathParts = currentPage.split('/');
@@ -350,12 +350,12 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
   });
 
   // listen for toc change
-  $scope.$watch(function modelWatch() {return $scope.toc; }, function modelWatchAction(path) {
-    if ($scope.toc && $scope.toc.content){
-      docService.getDefaultItem($scope.toc.content,
+  $scope.$watch(function modelWatch() {return $scope.toc; }, function modelWatchAction(toc) {
+    if (toc && toc.content){
+      docService.getDefaultItem(toc.content,
         function(defaultItem){
           if (defaultItem && defaultItem.href){
-             $location.url(defaultItem.href);
+             $location.url(toc.path + '!' + defaultItem.href);
           }
         });
     }

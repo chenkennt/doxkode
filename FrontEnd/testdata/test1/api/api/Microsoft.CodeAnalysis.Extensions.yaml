@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.Extensions
+yaml: api/Microsoft.CodeAnalysis.Extensions.yaml
+href: api/Microsoft.CodeAnalysis.Extensions
+name:
+  CSharp: Extensions
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.Extensions
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/ExtensionManager/AbstractExtensionManager.cs
+  startLine: 5

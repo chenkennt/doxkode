@@ -1,0 +1,14 @@
+id: Microsoft.CodeAnalysis.CodeGeneration
+yaml: api/Microsoft.CodeAnalysis.CodeGeneration.yaml
+href: api/Microsoft.CodeAnalysis.CodeGeneration
+name:
+  CSharp: CodeGeneration
+qualifiedName:
+  CSharp: Microsoft.CodeAnalysis.CodeGeneration
+type: Namespace
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeGeneration/AbstractCodeGenerationService.cs
+  startLine: 14

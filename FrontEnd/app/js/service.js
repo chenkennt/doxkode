@@ -33,6 +33,26 @@ function docServiceFunction($q, $http) {
     }
   };
 
+  this.getPathInfo = function(currentPath){
+    if (!currentPath) return undefined;
+    // seperate toc and content with !
+    var index = currentPath.indexOf('!');
+    if (index < 0){
+      // If it ends with .md/.yaml, render it without toc
+      if ((/(\.yaml$)|(\.md$)/g).test(currentPath)){
+        return {contentPath: currentPath};
+      }else{
+        return {tocPath: currentPath, tocFilePath: currentPath + '/toc.yaml'};
+      }
+    }
+
+    return {
+      tocPath: currentPath.substring(0, index),
+      tocFilePath: currentPath.substring(0, index) + '/toc.yaml',
+      contentPath: currentPath.substring(index+1, currentPath.length)
+    };
+  }
+
   this.asyncFetchIndex = function(path, success, fail) {
     var deferred = $q.defer();
 
