@@ -59,7 +59,8 @@ namespace DocAsCode.Utility
             }
             catch (Exception e)
             {
-                Console.Error.WriteLine(e.Message);
+                // SWALLOW exception?
+                // Console.Error.WriteLine(e.Message);
             }
 
             return detail;

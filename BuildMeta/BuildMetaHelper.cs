@@ -416,10 +416,11 @@ namespace DocAsCode.BuildMeta
             var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers, apiFolder);
             // 1. generate toc.yaml
             viewModel.TocYamlViewModel.YamlPath = tocFileName;
+            viewModel.TocYamlListViewModel = viewModel.TocYamlViewModel.Items;
             string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
-                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
+                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlListViewModel);
             }
 
             // 2. generate api.yaml

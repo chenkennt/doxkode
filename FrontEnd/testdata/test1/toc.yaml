@@ -1,9 +1,2 @@
-- id: Microsoft.CodeAnalysis
-  href: Microsoft.CodeAnalysis
-  name:
-    CSharp: CodeAnalysis
-  type: Namespace
-  items:
-  - id: Microsoft.CodeAnalysis.CaseInsensitiveComparison
-    yaml: api/Microsoft.CodeAnalysis.CaseInsensitiveComparison.yaml
-    href: api/Microsoft.CodeAnalysis.CaseInsensitiveComparison
+- id: API
+  href: api

@@ -132,16 +132,7 @@ namespace DocAsCode.EntityModel
                                 .ToString()
                                 .Trim();
                         }
-                        else
-                        {
-                            Debug.Assert(syntaxNode is DelegateDeclarationSyntax 
-                                || syntaxNode is OperatorDeclarationSyntax 
-                                || syntaxNode is ConversionOperatorDeclarationSyntax);
-                            syntaxStr = syntaxNode
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                        }
+
                         break;
                     };
                 case MemberType.Constructor:
@@ -154,16 +145,7 @@ namespace DocAsCode.EntityModel
                             .ToString()
                             .Trim();
                         }
-                        else
-                        {
-                            var delegateSyntax = syntaxNode as DelegateDeclarationSyntax;
-                            Debug.Assert(delegateSyntax != null);
-                            if (delegateSyntax == null) break;
-                            syntaxStr = delegateSyntax
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                        }
+
                         break;
                     };
                 case MemberType.Field:
@@ -177,29 +159,11 @@ namespace DocAsCode.EntityModel
                             .ToString()
                             .Trim();
                         }
-                        else
-                        {
-                            var memberSyntax = syntaxNode as MemberDeclarationSyntax;
-                            Debug.Assert(memberSyntax != null);
-                            if (memberSyntax == null) break;
-
-                            syntaxStr = memberSyntax
-                                    .NormalizeWhitespace()
-                                    .ToString()
-                                    .Trim();
-                        }
 
                         break;
                     };
                 case MemberType.Event:
                     {
-                        var syntax = syntaxNode as VariableDeclaratorSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
                         break;
                     };
                 case MemberType.Property:
@@ -215,6 +179,7 @@ namespace DocAsCode.EntityModel
                     };
             }
 
+            if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.NormalizeWhitespace().ToString().Trim();
             return syntaxStr;
         }
     }

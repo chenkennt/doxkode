@@ -168,23 +168,17 @@ angular.module('directives', [])
 }]);
 
 angular.module('DocsController', [])
-
+.service('docService', docServiceFunction)
 .controller('DocsController', [
           '$scope', '$http', '$q','$rootScope', '$location', '$window', '$cookies', 'openPlunkr',
-              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES',
+              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService',
   function($scope, $http, $q, $rootScope, $location, $window, $cookies, openPlunkr,
-              NG_PAGES, NG_VERSION, NG_ITEMTYPES) {
+              NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService) {
   $scope.openPlunkr = openPlunkr;
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
-  $scope.tocClass = function(navItem) {
-    return {
-      active: navItem.href && this.currentPage,
-      current: this.currentPage === navItem.href,
-      'nav-index-section': navItem.type === 'section'
-    };
-  };
+  $scope.tocClass = docService.tocClassApi;
 
   $scope.navClass = function(navItem) {
     return {
