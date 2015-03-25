@@ -8,7 +8,8 @@
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
     <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
     <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
-    <TocFilePath>$(OutputPath)/toc.yaml</TocFilePath>
+    <ApiFolderPath>$(OutputPath)/api/</ApiFolderPath>
+    <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
     <MarkdownIndexFilePath>$(OutputPath)/md.yaml</MarkdownIndexFilePath>
   </PropertyGroup>
   <Target Name="Build">
@@ -112,7 +113,7 @@
   <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(IntermediateOutputPath)/obj.list => merge metadata file in $(IntermediateOutputPath) and output the yaml metadata in $(OutputPath) -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(OutputPath)&quot; /target:merge" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(ApiFolderPath)&quot; /target:merge" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -134,7 +135,7 @@
 
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(OutputPath), @(MarkdownFiles) => Markdown Index File -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(OutputPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>

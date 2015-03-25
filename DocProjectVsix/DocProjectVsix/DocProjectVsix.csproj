@@ -188,6 +188,28 @@
     <ZipItem Include="Templates\Items\Markdown\Markdown.vstemplate">
       <RootPath>Templates\Items\Markdown</RootPath>
     </ZipItem>
+    
+    <ZipProject Include="Templates\Projects\DocProject\api\NOTE.md">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\articles\about.md">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\articles\index.md">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\toc.yaml">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\error404.tmpl">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\navbar.tmpl">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\toc.tmpl">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
