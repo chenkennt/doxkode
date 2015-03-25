@@ -233,16 +233,17 @@
     </header>
 
     <section role="main" class="container main-body">
-      <div class="main-grid main-body-grid" ng-if="contentType==='api'">
-        <div class="grid-left">
-          <div class="side-navigation" ng-if="toc">
+      <div class="main-grid main-body-grid">
+        <div class="grid-left" ng-if="toc">
+          <div class="side-navigation">
             <div id="tocLoading" ng-show="tocLoading">Loading...</div>
             <div ng-hide="tocLoading" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
           </div>
         </div>
         <div class="grid-right">
           <div id="loading" ng-show="loading">Loading...</div>
-          <div ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+          <div ng-if="contentType === 'md'" marked ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+          <div ng-if="contentType!== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
         </div>
       </div>
     </section>

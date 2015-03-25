@@ -69,7 +69,8 @@ angular.module('docsApp', [
   'tutorials',
   'versions',
   'bootstrap',
-  'ui.bootstrap.dropdown'
+  'ui.bootstrap.dropdown',
+  'hc.marked'
 ]);
 
 angular.module('directives', [])
@@ -240,7 +241,8 @@ angular.module('DocsController', [])
   })();
 
 $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
-
+    $scope.toc = undefined;
+    $scope.partialPath = undefined;
     path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
 
     var currentPage = $scope.currentPage = path;//NG_PAGES[path];
@@ -282,34 +284,43 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         }
       });
 
-      // if is yaml
-      var promise = docService.asyncFetchIndex(path + ".yaml", function(result){
-          $scope.partialModel = jsyaml.load(result);
-          $scope.title = $scope.partialModel.id;
-        if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-          $scope.itemtypes = NG_ITEMTYPES.namespace;
-          for(var i in $scope.partialModel.items){
-            var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-            if (itemtype){
-              itemtype.show = true;
+      // If end with .md
+      if ((/\.md$/g).test(path)){
+        $scope.contentType = 'md';
+        $scope.partialModel = {};
+        $scope.title = path;
+        $scope.partialPath = path;
+      }else{
+        $scope.contentType = 'yaml';
+        // if is yaml
+        var promise = docService.asyncFetchIndex(path + ".yaml", function(result){
+            $scope.partialModel = jsyaml.load(result);
+            $scope.title = $scope.partialModel.id;
+          if ($scope.partialModel.type.toLowerCase() == 'namespace'){
+            $scope.itemtypes = NG_ITEMTYPES.namespace;
+            for(var i in $scope.partialModel.items){
+              var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+              if (itemtype){
+                itemtype.show = true;
+              }
             }
+            $scope.partialPath = 'template' + '/namespace.tmpl';
           }
-          $scope.partialPath = 'template' + '/namespace.tmpl';
-        }
-        else {
-          $scope.itemtypes = NG_ITEMTYPES.class;
-          for(var i in $scope.itemtypes){
-            $scope.itemtypes[i].show = false;
-          }
-          for(var i in $scope.partialModel.items){
-            var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-            if (itemtype){
-              itemtype.show = true;
+          else {
+            $scope.itemtypes = NG_ITEMTYPES.class;
+            for(var i in $scope.itemtypes){
+              $scope.itemtypes[i].show = false;
             }
+            for(var i in $scope.partialModel.items){
+              var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+              if (itemtype){
+                itemtype.show = true;
+              }
+            }
+            $scope.partialPath = 'template' + '/class.tmpl';
           }
-          $scope.partialPath = 'template' + '/class.tmpl';
-        }
-      });
+        });
+      }
 
       var pathParts = currentPage.split('/');
       var breadcrumb = $scope.breadcrumb = [];

@@ -29,6 +29,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
+        'app/bower_components/marked/lib/marked.js',
+        'app/bower_components/angular-marked/angular-marked.js',
         'app/js/bootstrap.js',
         'app/js/pages-data.js',
         'app/js/versions-data.js',
