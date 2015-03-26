@@ -220,6 +220,7 @@
               </select>
             </div>
           </div>
+          <!-- Temp disable it: what to show for conceptual?
           <div class="grid-right">
             <ul class="nav-breadcrumb">
               <li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list">
@@ -227,7 +228,7 @@
                 <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </section>
     </header>
@@ -243,7 +244,7 @@
         <div class="grid-right">
           <div id="loading" ng-show="loading">Loading...</div>
           <div ng-if="contentType === 'md'" marked ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
-          <div ng-if="contentType!== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+          <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
         </div>
       </div>
     </section>

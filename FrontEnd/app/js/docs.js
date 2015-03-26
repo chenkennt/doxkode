@@ -173,11 +173,14 @@ angular.module('DocsController', [])
 .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
     return $cacheFactory('toc-cache');
   }])
+.factory('mdIndexCache', ['$cacheFactory', function($cacheFactory) {
+    return $cacheFactory('mdIndex-cache');
+  }])
 .controller('DocsController', [
           '$scope', '$http', '$q','$rootScope', '$location', '$window', '$cookies', 'openPlunkr',
-              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache',
+              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache',
   function($scope, $http, $q, $rootScope, $location, $window, $cookies, openPlunkr,
-              NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache) {
+              NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache) {
   $scope.openPlunkr = openPlunkr;
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
@@ -233,13 +236,6 @@ angular.module('DocsController', [])
     });
   })();
 
-  // TODO: move path to app.config?
-  (function getMdIndex(){
-    docService.asyncFetchIndex('md.yaml', function(result){
-      $scope.mdIndex = jsyaml.load(result);
-    });
-  })();
-
 // #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
 $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
     path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
@@ -286,6 +282,22 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         }else if ((/\.yaml$/g).test(path)){
           $scope.contentType = 'yaml';
           // if is yaml
+
+          // 1. try get md.yaml from the same path as toc, or current path if toc is not there
+          var mdPath = pathInfo.tocPath? pathInfo.tocPath + '/' + 'md.yaml' : 'md.yaml';
+
+          // TODO: move path to app.config?
+          var temp = mdIndexCache.get(mdPath);
+          if (temp){
+            if (temp) $scope.mdIndex = temp;
+          }else{
+            docService.asyncFetchIndex(mdPath, function(result){
+              temp = jsyaml.load(result);
+              mdIndexCache.put(mdPath, temp);
+              $scope.mdIndex = temp;
+            });
+          }
+
           var promise = docService.asyncFetchIndex(path, function(result){
               $scope.partialModel = jsyaml.load(result);
               $scope.title = $scope.partialModel.id;
@@ -331,13 +343,16 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         }
       }
 
-      var pathParts = path ? path.split('/') : pathInfo.tocPath.split('/');
+      var pathParts = pathInfo.tocPath? pathInfo.tocPath.split('/'): [];
+      if (pathInfo.contentPath) pathParts.push('!' + pathInfo.contentPath);
       var breadcrumb = $scope.breadcrumb = [];
       var breadcrumbPath = '';
       angular.forEach(pathParts, function(part) {
-        breadcrumbPath += part;
-        breadcrumb.push({ name: part, url: breadcrumbPath });
-        breadcrumbPath += '/';
+        if (part){
+          breadcrumbPath += part;
+          breadcrumb.push({ name: part, url: breadcrumbPath });
+          breadcrumbPath += '/';
+        }
       });
     }else{
       if ($scope.navbar && $scope.navbar.length > 0){
