@@ -232,7 +232,7 @@ angular.module('DocsController', [])
       // Load first item as the default page
       docService.getDefaultItem($scope.navbar,
         function(defaultItem) {
-         if (defaultItem.href) $location.url(defaultItem.href);
+         if (!$location.path() && defaultItem.href) $location.url(defaultItem.href);
         });
     });
   })();
@@ -386,8 +386,10 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
     if (toc && toc.content){
       docService.getDefaultItem(toc.content,
         function(defaultItem){
-          if (defaultItem && defaultItem.href){
-             $location.url(toc.path + '!' + defaultItem.href);
+          if (!$location.path()){
+            if (defaultItem && defaultItem.href){
+               $location.url(toc.path + '!' + defaultItem.href);
+            }
           }
         });
     }
