@@ -11,6 +11,7 @@
     <ApiFolderPath>$(OutputPath)/api/</ApiFolderPath>
     <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
     <MarkdownIndexFilePath>$(OutputPath)/md.yaml</MarkdownIndexFilePath>
+    <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
   </PropertyGroup>
   <Target Name="Build">
     <CallTarget Targets="Validation" />
@@ -163,9 +164,10 @@
 
   <Target Name="PreviewWebsite">
     <ItemGroup>
-      <OutputHomepage Include="$(OutputPath)\index.html" />
+      <OutputHomepage Include="$(OutputPath)" />
     </ItemGroup>
-    <Message Text ="Opening %(OutputHomepage.File)" />
-    <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" Condition="Exists(%(OutputHomepage.File))" />
+    <Message Text ="Opening %(OutputHomepage.FullPath)" />
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="&quot;$(ProgramFiles)/IIS Express/iisexpress&quot; /path:&quot;%(OutputHomepage.FullPath)&quot; /port:$(PreviewPort) /systray:false"/>
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="start http://localhost:$(PreviewPort)"/>
   </Target>
 </Project>

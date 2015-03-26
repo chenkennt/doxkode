@@ -162,7 +162,11 @@ namespace DocAsCode.BuildMeta
 
             if (lastSection != null)
             {
-                lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
+                if (lastSection.Remote != null && !string.IsNullOrEmpty(lastSection.Remote.LocalWorkingDirectory))
+                {
+                    lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
+                }
+
                 sections.Add(lastSection);
             }
 
