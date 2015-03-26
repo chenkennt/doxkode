@@ -172,7 +172,8 @@ module.exports = function(grunt) {
             'app/css/*.less',
             'app/css/**/*.less',
             'app/template/*.tmpl',
-            'app/index.tmpl'
+            'app/index.tmpl',
+            'testdata/**/*.*',
         ],
         tasks: ['test' ]
     },
