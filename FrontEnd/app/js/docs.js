@@ -272,7 +272,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
 
       path = pathInfo.contentPath;
       if (path){
-        if ($scope.toc) path = $scope.toc.path + '/' + path;
+        if (pathInfo.tocPath) path = pathInfo.tocPath + '/' + path;
         // If end with .md
         if ((/\.md$/g).test(path)){
           $scope.contentType = 'md';
