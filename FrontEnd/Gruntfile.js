@@ -173,7 +173,7 @@ module.exports = function(grunt) {
             'app/css/**/*.less',
             'app/template/*.tmpl',
             'app/index.tmpl',
-            'testdata/**/*.*',
+            'sample/data/**/*.*',
         ],
         tasks: ['test' ]
     },
@@ -182,7 +182,7 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           hostname: '0.0.0.0',
-          base: './test1/debug',
+          base: './sample/host/debug',
           keepalive: true
         }
       }
@@ -247,7 +247,7 @@ module.exports = function(grunt) {
         release: ['release/'],
        // Unable to clean folder outside current directory:
        // vsix: ['../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/'],
-        test: ['test1/', 'test2/']
+        test: ['sample/host/']
     },
     copy: {
         /*main: {
@@ -296,20 +296,12 @@ module.exports = function(grunt) {
 
           ]
         },
-        test_roslyn: {
+        test: {
           files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: 'test1/debug' },
-            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test1/debug' },
-            {expand: true, src: ['**'], cwd: 'release/', dest: 'test1/release' },
-            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test1/release' },
-          ]
-        },
-        test_simple: {
-          files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: 'test2/debug' },
-            {expand: true, src: ['**'], cwd: 'testdata/test2/', dest: 'test2/debug' },
-            {expand: true, src: ['**'], cwd: 'release/', dest: 'test2/release' },
-            {expand: true, src: ['**'], cwd: 'testdata/test2/', dest: 'test2/release' },
+            {expand: true, src: ['**'], cwd: 'debug/', dest: 'sample/host/debug' },
+            {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/debug' },
+            {expand: true, src: ['**'], cwd: 'release/', dest: 'sample/host/release' },
+            {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/release' },
           ]
         },
         vsix: {
@@ -349,12 +341,12 @@ module.exports = function(grunt) {
 
     grunt.registerTask('debug', [ 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
     grunt.registerTask('debuginline', [ 'less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
+    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);
     grunt.registerTask('release', [ 'less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
-    grunt.registerTask('server', [ 'debug', 'copy:test_roslyn', 'connect:test' ]);
+    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
 };

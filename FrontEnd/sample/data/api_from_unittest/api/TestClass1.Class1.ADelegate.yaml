@@ -1,0 +1,29 @@
+id: TestClass1.Class1.ADelegate
+yaml: api/TestClass1.Class1.ADelegate.yaml
+href: api/TestClass1.Class1.ADelegate
+name:
+  CSharp: ADelegate
+qualifiedName:
+  CSharp: TestClass1.Class1.ADelegate
+type: Delegate
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 65
+summary: This is a Delegate
+syntax:
+  content:
+    CSharp: public delegate void ADelegate();
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.Delegate
+  name: System.Delegate
+  isExternal: true
+- id: System.MulticastDelegate
+  name: System.MulticastDelegate
+  isExternal: true

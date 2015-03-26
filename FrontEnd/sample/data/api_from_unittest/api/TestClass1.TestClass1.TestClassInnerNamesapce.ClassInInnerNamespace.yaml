@@ -1,0 +1,23 @@
+id: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+yaml: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
+href: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+name:
+  CSharp: ClassInInnerNamespace
+qualifiedName:
+  CSharp: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+type: Class
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 112
+summary: This is a class in inner namespace
+syntax:
+  content:
+    CSharp: public class ClassInInnerNamespace
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

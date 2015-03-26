@@ -1,0 +1,48 @@
+id: TestClass1.Base.BaseClassForTestClass1
+yaml: api/TestClass1.Base.BaseClassForTestClass1.yaml
+href: api/TestClass1.Base.BaseClassForTestClass1
+name:
+  CSharp: BaseClassForTestClass1
+qualifiedName:
+  CSharp: TestClass1.Base.BaseClassForTestClass1
+type: Class
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+  startLine: 8
+syntax:
+  content:
+    CSharp: public class BaseClassForTestClass1
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: TestClass1.Base.BaseClassForTestClass1.Property1
+  yaml: api/TestClass1.Base.BaseClassForTestClass1.yaml
+  href: api/TestClass1.Base.BaseClassForTestClass1
+  name:
+    CSharp: Property1
+  qualifiedName:
+    CSharp: TestClass1.Base.BaseClassForTestClass1.Property1
+  type: Property
+  source:
+    remote:
+      branch: Conceptual
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-31-gcc2f573
+    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    startLine: 13
+  summary: This is the property from *base* class
+  syntax:
+    content:
+      CSharp: public string Property1 { get; set; }
+    parameters:
+    - id: Property1
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true

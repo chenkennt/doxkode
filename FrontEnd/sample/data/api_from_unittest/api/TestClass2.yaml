@@ -1,0 +1,21 @@
+id: TestClass2
+yaml: api/TestClass2.yaml
+href: api/TestClass2
+name:
+  CSharp: TestClass2
+qualifiedName:
+  CSharp: TestClass2
+type: Namespace
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 6
+items:
+- id: TestClass2.Class2
+  yaml: api/TestClass2.Class2.yaml
+  href: api/TestClass2.Class2
+  type: Class
+  summary: This is a *Class1* [TestClass1.Class1](#/api/TestClass1.Class1)  in [System.OperatingSystem](#) **TestClass1**

@@ -1,0 +1,49 @@
+id: TestClass1.Partial1
+yaml: api/TestClass1.Partial1.yaml
+href: api/TestClass1.Partial1
+name:
+  CSharp: Partial1
+qualifiedName:
+  CSharp: TestClass1.Partial1
+type: Class
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 12
+summary: Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
+syntax:
+  content:
+    CSharp: public partial class Partial1
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: TestClass1.Partial1.Property2
+  yaml: api/TestClass1.Partial1.yaml
+  href: api/TestClass1.Partial1
+  name:
+    CSharp: Property2
+  qualifiedName:
+    CSharp: TestClass1.Partial1.Property2
+  type: Property
+  source:
+    remote:
+      branch: Conceptual
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-31-gcc2f573
+    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 17
+  summary: This is the property from *partial* class
+  syntax:
+    content:
+      CSharp: public string Property2 { get; set; }
+    parameters:
+    - id: Property2
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
