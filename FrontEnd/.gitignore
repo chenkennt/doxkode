@@ -1,7 +1,6 @@
 logs/*
 **/dist/*
-test1/*
-test2/*
+test*
 debug/*
 release/*
 !.gitkeep
