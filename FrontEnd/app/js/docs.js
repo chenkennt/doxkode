@@ -335,8 +335,8 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
           $scope.partialPath = path;
         }
       }else{
-        if ($scope.navbar && $scope.navbar.count > 0){
-          $location.url($scope.navbar[0].href);
+        if ($scope.toc && $scope.toc.content && $scope.toc.content.length > 0){
+          $location.url($scope.toc.path + '!' + $scope.toc.content[0].href);
         }else{
           $scope.breadcrumb = [];
           $scope.partialPath = 'template/error404.tmpl';
