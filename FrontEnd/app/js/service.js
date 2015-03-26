@@ -7,6 +7,13 @@ function docServiceFunction($q, $http) {
     };
   };
 
+  this.gridClassApi =  function(toc) {
+    return {
+      'grid-right': toc,
+      grid: !toc
+    };
+  };
+
   this.navClassApi = function(navItem) {
     var navPath = undefined;
     if (this.pathInfo){

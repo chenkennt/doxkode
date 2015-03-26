@@ -186,6 +186,7 @@ angular.module('DocsController', [])
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
   $scope.tocClass = docService.tocClassApi;
+  $scope.gridClass = docService.gridClassApi;
 
   $scope.navClass = docService.navClassApi;
 
@@ -303,6 +304,9 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
               $scope.title = $scope.partialModel.id;
             if ($scope.partialModel.type.toLowerCase() == 'namespace'){
               $scope.itemtypes = NG_ITEMTYPES.namespace;
+              for(var i in $scope.itemtypes){
+                $scope.itemtypes[i].show = false;
+              }
               for(var i in $scope.partialModel.items){
                 var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
                 if (itemtype){

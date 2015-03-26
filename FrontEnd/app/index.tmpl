@@ -241,7 +241,7 @@
             <div ng-hide="tocLoading" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
           </div>
         </div>
-        <div class="grid-right">
+        <div ng-class="gridClass(toc)">
           <div id="loading" ng-show="loading">Loading...</div>
           <div ng-if="contentType === 'md'" marked ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
           <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>

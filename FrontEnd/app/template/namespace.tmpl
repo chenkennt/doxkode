@@ -22,8 +22,8 @@
             </div>
             <section id="article-body">
                 <div class="section" ng-repeat="itemtype in itemtypes" >
-                  <h3 class="section-name" ng-show="itemtype.show">{{itemtype.description}}</h3>
-                  <table ng-show="itemtype.show">
+                  <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
+                  <table ng-if="itemtype.show">
                       <tr ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
                           <td>
                               <a href="#{{item.href}}">
