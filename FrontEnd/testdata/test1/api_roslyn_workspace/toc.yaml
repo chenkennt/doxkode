@@ -1,7 +1,3 @@
-- id: Microsoft
-  href: api/Microsoft.yaml
-  name:
-    CSharp: Microsoft
 - id: Microsoft.CodeAnalysis
   href: api/Microsoft.CodeAnalysis.yaml
   name:
@@ -135,14 +131,6 @@
     href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
     name:
       CSharp: WorkspaceRegistration
-- id: Microsoft.CodeAnalysis.ErrorReporting
-  href: api/Microsoft.CodeAnalysis.ErrorReporting.yaml
-  name:
-    CSharp: ErrorReporting
-- id: Microsoft.CodeAnalysis.CaseCorrection
-  href: api/Microsoft.CodeAnalysis.CaseCorrection.yaml
-  name:
-    CSharp: CaseCorrection
 - id: Microsoft.CodeAnalysis.Classification
   href: api/Microsoft.CodeAnalysis.Classification.yaml
   name:
@@ -160,10 +148,6 @@
     href: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
     name:
       CSharp: Classifier
-- id: Microsoft.CodeAnalysis.Classification.Classifiers
-  href: api/Microsoft.CodeAnalysis.Classification.Classifiers.yaml
-  name:
-    CSharp: Classifiers
 - id: Microsoft.CodeAnalysis.CodeActions
   href: api/Microsoft.CodeAnalysis.CodeActions.yaml
   name:
@@ -205,14 +189,6 @@
     href: api/Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
     name:
       CSharp: OpenDocumentOperation
-- id: Microsoft.CodeAnalysis.CodeCleanup
-  href: api/Microsoft.CodeAnalysis.CodeCleanup.yaml
-  name:
-    CSharp: CodeCleanup
-- id: Microsoft.CodeAnalysis.CodeCleanup.Providers
-  href: api/Microsoft.CodeAnalysis.CodeCleanup.Providers.yaml
-  name:
-    CSharp: Providers
 - id: Microsoft.CodeAnalysis.CodeFixes
   href: api/Microsoft.CodeAnalysis.CodeFixes.yaml
   name:
@@ -246,10 +222,6 @@
     href: api/Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.yaml
     name:
       CSharp: ExportCodeFixProviderAttribute
-- id: Microsoft.CodeAnalysis.CodeGeneration
-  href: api/Microsoft.CodeAnalysis.CodeGeneration.yaml
-  name:
-    CSharp: CodeGeneration
 - id: Microsoft.CodeAnalysis.Editing
   href: api/Microsoft.CodeAnalysis.Editing.yaml
   name:
@@ -370,42 +342,6 @@
     href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
     name:
       CSharp: SymbolFinder
-- id: Microsoft.CodeAnalysis.FindSymbols.Finders
-  href: api/Microsoft.CodeAnalysis.FindSymbols.Finders.yaml
-  name:
-    CSharp: Finders
-- id: Microsoft.CodeAnalysis.Internal
-  href: api/Microsoft.CodeAnalysis.Internal.yaml
-  name:
-    CSharp: Internal
-- id: Microsoft.CodeAnalysis.Internal.Log
-  href: api/Microsoft.CodeAnalysis.Internal.Log.yaml
-  name:
-    CSharp: Log
-- id: Microsoft.CodeAnalysis.Serialization
-  href: api/Microsoft.CodeAnalysis.Serialization.yaml
-  name:
-    CSharp: Serialization
-- id: Microsoft.CodeAnalysis.Shared
-  href: api/Microsoft.CodeAnalysis.Shared.yaml
-  name:
-    CSharp: Shared
-- id: Microsoft.CodeAnalysis.Shared.Extensions
-  href: api/Microsoft.CodeAnalysis.Shared.Extensions.yaml
-  name:
-    CSharp: Extensions
-- id: Microsoft.CodeAnalysis.Shared.Extensions.ContextQuery
-  href: api/Microsoft.CodeAnalysis.Shared.Extensions.ContextQuery.yaml
-  name:
-    CSharp: ContextQuery
-- id: Microsoft.CodeAnalysis.Shared.Utilities
-  href: api/Microsoft.CodeAnalysis.Shared.Utilities.yaml
-  name:
-    CSharp: Utilities
-- id: Microsoft.CodeAnalysis.Shared.Collections
-  href: api/Microsoft.CodeAnalysis.Shared.Collections.yaml
-  name:
-    CSharp: Collections
 - id: Microsoft.CodeAnalysis.Simplification
   href: api/Microsoft.CodeAnalysis.Simplification.yaml
   name:
@@ -419,10 +355,6 @@
     href: api/Microsoft.CodeAnalysis.Simplification.Simplifier.yaml
     name:
       CSharp: Simplifier
-- id: Microsoft.CodeAnalysis.Versions
-  href: api/Microsoft.CodeAnalysis.Versions.yaml
-  name:
-    CSharp: Versions
 - id: Microsoft.CodeAnalysis.Host
   href: api/Microsoft.CodeAnalysis.Host.yaml
   name:
@@ -513,10 +445,6 @@
     href: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
     name:
       CSharp: IWorkspaceServiceFactory
-- id: Microsoft.CodeAnalysis.Extensions
-  href: api/Microsoft.CodeAnalysis.Extensions.yaml
-  name:
-    CSharp: Extensions
 - id: Microsoft.CodeAnalysis.Formatting
   href: api/Microsoft.CodeAnalysis.Formatting.yaml
   name:
@@ -534,22 +462,6 @@
     href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
     name:
       CSharp: IndentStyle
-- id: Microsoft.CodeAnalysis.Formatting.Rules
-  href: api/Microsoft.CodeAnalysis.Formatting.Rules.yaml
-  name:
-    CSharp: Rules
-- id: Microsoft.CodeAnalysis.GeneratedCodeRecognition
-  href: api/Microsoft.CodeAnalysis.GeneratedCodeRecognition.yaml
-  name:
-    CSharp: GeneratedCodeRecognition
-- id: Microsoft.CodeAnalysis.LanguageServices
-  href: api/Microsoft.CodeAnalysis.LanguageServices.yaml
-  name:
-    CSharp: LanguageServices
-- id: Microsoft.CodeAnalysis.Notification
-  href: api/Microsoft.CodeAnalysis.Notification.yaml
-  name:
-    CSharp: Notification
 - id: Microsoft.CodeAnalysis.Options
   href: api/Microsoft.CodeAnalysis.Options.yaml
   name:
@@ -575,10 +487,6 @@
     href: api/Microsoft.CodeAnalysis.Options.PerLanguageOption`1.yaml
     name:
       CSharp: PerLanguageOption`1
-- id: Microsoft.CodeAnalysis.Options.Providers
-  href: api/Microsoft.CodeAnalysis.Options.Providers.yaml
-  name:
-    CSharp: Providers
 - id: Microsoft.CodeAnalysis.Recommendations
   href: api/Microsoft.CodeAnalysis.Recommendations.yaml
   name:
@@ -609,39 +517,3 @@
     href: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
     name:
       CSharp: Renamer
-- id: Microsoft.CodeAnalysis.Rename.ConflictEngine
-  href: api/Microsoft.CodeAnalysis.Rename.ConflictEngine.yaml
-  name:
-    CSharp: ConflictEngine
-- id: Microsoft.CodeAnalysis.SemanticModelWorkspaceService
-  href: api/Microsoft.CodeAnalysis.SemanticModelWorkspaceService.yaml
-  name:
-    CSharp: SemanticModelWorkspaceService
-- id: Microsoft.CodeAnalysis.Diagnostics
-  href: api/Microsoft.CodeAnalysis.Diagnostics.yaml
-  name:
-    CSharp: Diagnostics
-- id: Microsoft.CodeAnalysis.Text
-  href: api/Microsoft.CodeAnalysis.Text.yaml
-  name:
-    CSharp: Text
-- id: Microsoft.CodeAnalysis.Collections
-  href: api/Microsoft.CodeAnalysis.Collections.yaml
-  name:
-    CSharp: Collections
-- id: Roslyn
-  href: api/Roslyn.yaml
-  name:
-    CSharp: Roslyn
-- id: Roslyn.Utilities
-  href: api/Roslyn.Utilities.yaml
-  name:
-    CSharp: Utilities
-- id: Roslyn.Collections
-  href: api/Roslyn.Collections.yaml
-  name:
-    CSharp: Collections
-- id: Roslyn.Collections.Immutable
-  href: api/Roslyn.Collections.Immutable.yaml
-  name:
-    CSharp: Immutable

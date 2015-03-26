@@ -1,6 +1,6 @@
 <ul class="nav-list naked-list">
   <li ng-repeat="navGroup in model track by navGroup.id" class="nav-index-group">
-    <a ng-if="navGroup.items" ng-href="{{GetTocHref(navGroup.href)}}" ng-class="tocClass(navGroup)" class="nav-index-group-heading">{{ navGroup.id }}</a>
+    <a ng-href="{{GetTocHref(navGroup.href)}}" ng-class="tocClass(navGroup)" class="nav-index-group-heading">{{ navGroup.id }}</a>
     <ul class="aside-nav">
       <li ng-repeat="navItem in navGroup.items" ng-class="tocClass(navItem)" class="nav-index-listing">
         <a ng-if="navItem.extra.href" ng-class="tocClass(navItem.extra)" ng-href="{{GetTocHref(navItem.extra.href)}}">

@@ -360,6 +360,46 @@ namespace DocAsCode.EntityModel
             return shrinkedItem;
         }
 
+        /// <summary>
+        /// Only when Namespace is not empty, return it
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        public static YamlItemViewModel ShrinkToSimpleTocWithNamespaceNotEmpty(this YamlItemViewModel item)
+        {
+            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            shrinkedItem.Name = item.Name;
+            shrinkedItem.DisplayNames = item.DisplayNames;
+
+            shrinkedItem.Href = item.YamlPath;
+            shrinkedItem.Items = null;
+
+            if (item.Type == MemberType.Toc || item.Type == MemberType.Namespace)
+            {
+                if (item.Items != null)
+                {
+                    foreach (var i in item.Items)
+                    {
+                        if (shrinkedItem.Items == null)
+                        {
+                            shrinkedItem.Items = new List<YamlItemViewModel>();
+                        }
+
+                        if (i.IsInvalid) continue;
+                        var shrinkedI = i.ShrinkToSimpleTocWithNamespaceNotEmpty();
+                        if (shrinkedI != null) shrinkedItem.Items.Add(shrinkedI);
+                    }
+                }
+            }
+
+            if (item.Type == MemberType.Namespace)
+            {
+                if (shrinkedItem.Items == null || shrinkedItem.Items.Count == 0) return null;
+            }
+
+            return shrinkedItem;
+        }
+
         public static YamlItemViewModel ShrinkChildren(this YamlItemViewModel item)
         {
             if (item.Items == null)
