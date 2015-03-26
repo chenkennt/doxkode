@@ -247,7 +247,7 @@ module.exports = function(grunt) {
         release: ['release/'],
        // Unable to clean folder outside current directory:
        // vsix: ['../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/'],
-        test: ['sample/host/']
+        test: ['sample/host/**']
     },
     copy: {
         /*main: {

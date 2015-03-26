@@ -1,7 +1,5 @@
 logs/*
 **/dist/*
-test1/*
-test2/*
 sample/host/*
 debug/*
 release/*
