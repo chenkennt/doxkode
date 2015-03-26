@@ -1,0 +1,16 @@
+id: VBTestClass1.My.Resources
+yaml: api/VBTestClass1.My.Resources.yaml
+href: api/VBTestClass1.My.Resources
+language: VB
+name:
+  VB: Resources
+qualifiedName:
+  VB: VBTestClass1.My.Resources
+type: Namespace
+source:
+  remote:
+    branch: Conceptual
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-31-gcc2f573
+  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/VBTestClass1/My Project/Resources.Designer.vb
+  startLine: 14

@@ -39,9 +39,9 @@
 
   <Target Name="CopyWebsiteFiles">
     <ItemGroup>
-      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
-      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
-      <WebsiteFiles  Include="@(Compile)"  Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config' or '%(Extension)' == '.md' or '%(Extension)' == '.yaml'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config' or '%(Extension)' == '.md' or '%(Extension)' == '.yaml'" />
+      <WebsiteFiles  Include="@(Compile)"  Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config' or '%(Extension)' == '.md' or '%(Extension)' == '.yaml'" />
       <!--
       <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
       <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />

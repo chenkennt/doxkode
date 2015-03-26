@@ -1,6 +1,8 @@
-- id: Home
-  href: index.md
+﻿- id: Home
+  href: articles/index.md
 - id: About
-  href: About.md
-- id: Api
-  href: api
+  href: articles/about.md
+- id: Roslyn Workspace Api Documentation
+  href: api_roslyn_workspace
+- id: API generated from TestCase
+  href: api_from_unittest

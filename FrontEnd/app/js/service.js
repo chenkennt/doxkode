@@ -1,16 +1,21 @@
 function docServiceFunction($q, $http) {
   this.tocClassApi =  function(navItem) {
     return {
-      active: navItem.href && this.currentPage,
-      current: this.currentPage === navItem.href,
+      active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
+      current: this.pathInfo.contentPath === navItem.href,
       'nav-index-section': navItem.type === 'section'
     };
   };
 
   this.navClassApi = function(navItem) {
+    var navPath = undefined;
+    if (this.pathInfo){
+      navPath = this.pathInfo.tocPath || this.pathInfo.contentPath;
+    }
+
     return {
-      active: navItem.href && this.currentPage,
-      current: this.currentPage.indexOf(navItem.href) > -1,
+      active: navItem.href && navPath,
+      current: navPath === navItem.href,
     };
   };
 

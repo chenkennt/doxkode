@@ -1,0 +1,12 @@
+id: Microsoft.VisualBasic
+yaml: api/Microsoft.VisualBasic.yaml
+href: api/Microsoft.VisualBasic
+language: VB
+name:
+  VB: VisualBasic
+qualifiedName:
+  VB: Microsoft.VisualBasic
+type: Namespace
+source:
+  path: VBTestClass1
+  isExternal: true

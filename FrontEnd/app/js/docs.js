@@ -215,7 +215,7 @@ angular.module('DocsController', [])
   };
 
   $scope.$on('$includeContentLoaded', function() {
-    var pagePath = $scope.currentPage ? $scope.currentPage.path : $location.path();
+    // Add post actions when ng-include updated
   });
 
   (function getNavbar(){
@@ -250,6 +250,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
     // If current page exists in NG_PAGES
     if (currentPage ) {
       var pathInfo = docService.getPathInfo(currentPage);
+      $scope.pathInfo = pathInfo;
       if (pathInfo.tocPath){
         var temp = tocCache.get(pathInfo.tocPath);
         if (temp){
@@ -330,7 +331,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
         }
       }
 
-      var pathParts = path.split('/');
+      var pathParts = path ? path.split('/') : pathInfo.tocPath.split('/');
       var breadcrumb = $scope.breadcrumb = [];
       var breadcrumbPath = '';
       angular.forEach(pathParts, function(part) {

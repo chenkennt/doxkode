@@ -35,6 +35,7 @@ namespace DocAsCode.BuildMeta
                 var directory = Path.GetDirectoryName(f);
                 if (string.IsNullOrWhiteSpace(directory)) directory = Directory.GetCurrentDirectory();
                 var searchPattern = Path.GetFileName(f);
+                if (!Directory.Exists(directory)) return files;
                 var fileNames = Directory.GetFiles(directory, searchPattern, SearchOption.TopDirectoryOnly);
                 foreach(var item in fileNames)
                 {
@@ -451,6 +452,7 @@ namespace DocAsCode.BuildMeta
 
             // Read index
             string indexFilePath = Path.Combine(workingDirectory, indexFileName);
+            if (!File.Exists(indexFilePath)) return null;
             using (StreamReader sr = new StreamReader(indexFilePath))
             {
                 indexViewModel = YamlUtility.Deserializer.Deserialize<Dictionary<string, IndexYamlItemViewModel>>(sr);

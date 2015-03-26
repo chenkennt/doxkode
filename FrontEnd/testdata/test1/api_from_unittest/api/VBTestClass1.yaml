@@ -1,0 +1,22 @@
+id: VBTestClass1
+yaml: api/VBTestClass1.yaml
+href: api/VBTestClass1
+language: VB
+name:
+  VB: VBTestClass1
+qualifiedName:
+  VB: VBTestClass1
+type: Namespace
+source:
+  path: C:\Users\lianwei\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb
+items:
+- id: VBTestClass1.Class1
+  yaml: api/VBTestClass1.Class1.yaml
+  href: api/VBTestClass1.Class1
+  type: Class
+  summary: This is summary from vb class...
+- id: VBTestClass1.BaseClass1
+  yaml: api/VBTestClass1.BaseClass1.yaml
+  href: api/VBTestClass1.BaseClass1
+  type: Class
+  summary: This is the BaseClass

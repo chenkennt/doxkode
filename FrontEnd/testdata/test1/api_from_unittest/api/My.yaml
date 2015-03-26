@@ -1,0 +1,12 @@
+id: My
+yaml: api/My.yaml
+href: api/My
+language: VB
+name:
+  VB: My
+qualifiedName:
+  VB: My
+type: Namespace
+source:
+  path: VBTestClass1
+  isExternal: true
