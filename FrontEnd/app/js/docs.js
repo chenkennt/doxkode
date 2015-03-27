@@ -147,6 +147,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
               } else {
                 docService.asyncFetchIndex(mdPath, function(result) {
                   tempMdIndex = jsyaml.load(result);
+                  // This is the md file path
                   mdIndexCache.put(mdPath, tempMdIndex);
                   $scope.mdIndex = tempMdIndex;
                 });
@@ -208,6 +209,8 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
           if (mdPath) {
             if (mdPath.href) {
               $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
+              var tocPath = docService.getPathInfo($location.path()).tocPath;
+              if (tocPath) mdPath.href = tocPath + '/' + mdPath.href;
               var getMdIndex = docService.asyncFetchIndex(mdPath.href,
                 function(result) {
                   var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
