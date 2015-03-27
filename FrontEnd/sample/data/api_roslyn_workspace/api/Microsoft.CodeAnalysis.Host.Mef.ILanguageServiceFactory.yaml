@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
-yaml: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
-href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
+href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
 name:
   CSharp: ILanguageServiceFactory
 qualifiedName:
@@ -9,22 +8,21 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
   startLine: 11
 summary: >-
-  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](#/api/Microsoft.CodeAnalysis.Host.ILanguageService).
+  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](#/).
 
 
 
-  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](#/api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](#/api/Microsoft.CodeAnalysis.Host.ILanguageService) instances that use other services.
+  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](#/) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](#/) instances that use other services.
 syntax:
   content:
     CSharp: public interface ILanguageServiceFactory
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.CreateLanguageService(Microsoft.CodeAnalysis.Host.HostLanguageServices)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
   name:
     CSharp: CreateLanguageService
   qualifiedName:
@@ -33,10 +31,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
     startLine: 17
-  summary: Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](#/api/Microsoft.CodeAnalysis.Host.ILanguageService) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](#/) instance.
   syntax:
     content:
       CSharp: ILanguageService CreateLanguageService(HostLanguageServices languageServices);
@@ -45,7 +43,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostLanguageServices
         name: HostLanguageServices
-        href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
-      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/api/Microsoft.CodeAnalysis.Host.HostLanguageServices) that can be used to access other services.
+      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/) that can be used to access other services.
     return:
       id: ILanguageService

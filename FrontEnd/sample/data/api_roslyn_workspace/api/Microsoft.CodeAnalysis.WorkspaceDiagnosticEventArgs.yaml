@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
-yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
-href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
 name:
   CSharp: WorkspaceDiagnosticEventArgs
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
   startLine: 7
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.Diagnostic
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
   name:
     CSharp: Diagnostic
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
     startLine: 9
   syntax:
     content:
@@ -45,10 +43,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
         name: WorkspaceDiagnostic
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
   name:
     CSharp: WorkspaceDiagnosticEventArgs(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
   qualifiedName:
@@ -57,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
     startLine: 11
   syntax:
     content:
@@ -68,6 +64,5 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
         name: WorkspaceDiagnostic
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
     return:
       id: Void

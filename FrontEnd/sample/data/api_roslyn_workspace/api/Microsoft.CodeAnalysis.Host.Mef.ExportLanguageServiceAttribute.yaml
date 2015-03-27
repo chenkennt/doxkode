@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
-yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
-href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
 name:
   CSharp: ExportLanguageServiceAttribute
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
   startLine: 10
-summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.ILanguageService](#/api/Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
+summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.ILanguageService](#/) implementation for inclusion in a MEF-based workspace.
 syntax:
   content:
     CSharp: public class ExportLanguageServiceAttribute
@@ -28,8 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.ServiceType
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
   name:
     CSharp: ServiceType
   qualifiedName:
@@ -38,8 +36,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
     startLine: 17
   summary: The assembly qualified name of the service's type.
   syntax:
@@ -52,8 +50,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.Language
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
   name:
     CSharp: Language
   qualifiedName:
@@ -62,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
     startLine: 22
   summary: The language that the service is target for; LanguageNames.CSharp, etc.
   syntax:
@@ -76,8 +73,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.Layer
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
   name:
     CSharp: Layer
   qualifiedName:
@@ -86,8 +82,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
     startLine: 27
   summary: The layer that the service is specified for; ServiceLayer.Default, etc.
   syntax:
@@ -100,8 +96,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.#ctor(System.Type,System.String,System.String)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportLanguageServiceAttribute.yaml
   name:
     CSharp: ExportLanguageServiceAttribute(System.Type,System.String,System.String)
   qualifiedName:
@@ -110,10 +105,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportLanguageServiceAttribute.cs
     startLine: 35
-  summary: Declares a [Microsoft.CodeAnalysis.Host.ILanguageService](#/api/Microsoft.CodeAnalysis.Host.ILanguageService) implementation for inclusion in a MEF-based workspace.
+  summary: Declares a [Microsoft.CodeAnalysis.Host.ILanguageService](#/) implementation for inclusion in a MEF-based workspace.
   syntax:
     content:
       CSharp: 'public ExportLanguageServiceAttribute(Type type, string language, string layer = ServiceLayer.Default): base (typeof (ILanguageService))'
@@ -123,7 +118,7 @@ items:
         id: System.Type
         name: System.Type
         isExternal: true
-      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/api/Microsoft.CodeAnalysis.Host.HostLanguageServices).
+      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/).
     - id: language
       type:
         id: System.String

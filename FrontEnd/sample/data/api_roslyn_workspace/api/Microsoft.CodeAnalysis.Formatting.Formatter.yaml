@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Formatting.Formatter
-yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
 name:
   CSharp: Formatter
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
   startLine: 20
 summary: Formats whitespace in documents or syntax trees.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.Annotation
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: Annotation
   qualifiedName:
@@ -32,16 +30,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 25
   summary: The annotation used to mark portions of a syntax tree to be formatted.
   syntax:
     content:
       CSharp: Annotation
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.FormatAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: FormatAsync
   qualifiedName:
@@ -50,8 +47,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 81
   summary: Formats the whitespace in a document.
   syntax:
@@ -62,13 +59,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
       description: The document to format.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the document's workspace will be used.
     - id: cancellationToken
       type:
@@ -80,8 +75,7 @@ items:
       id: Task
       description: The formatted document.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.FormatAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: FormatAsync
   qualifiedName:
@@ -90,8 +84,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 100
   summary: Formats the whitespace in an area of a document corresponding to a text span.
   syntax:
@@ -102,7 +96,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
       description: The document to format.
     - id: span
       type:
@@ -114,7 +107,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the document's workspace will be used.
     - id: cancellationToken
       type:
@@ -126,8 +118,7 @@ items:
       id: Task
       description: The formatted document.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.FormatAsync(Microsoft.CodeAnalysis.Document,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextSpan},Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: FormatAsync
   qualifiedName:
@@ -136,8 +127,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 119
   summary: Formats the whitespace in areas of a document corresponding to multiple non-overlapping spans.
   syntax:
@@ -148,7 +139,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
       description: The document to format.
     - id: spans
       type:
@@ -160,7 +150,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the document's workspace will be used.
     - id: cancellationToken
       type:
@@ -172,8 +161,7 @@ items:
       id: Task
       description: The formatted document.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.FormatAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: FormatAsync
   qualifiedName:
@@ -182,8 +170,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 148
   summary: Formats the whitespace in areas of a document corresponding to annotated nodes.
   syntax:
@@ -194,7 +182,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
       description: The document to format.
     - id: annotation
       type:
@@ -206,7 +193,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the document's workspace will be used.
     - id: cancellationToken
       type:
@@ -218,8 +204,7 @@ items:
       id: Task
       description: The formatted document.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.Format(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: Format
   qualifiedName:
@@ -228,8 +213,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 178
   summary: Formats the whitespace in areas of a syntax tree corresponding to annotated nodes.
   syntax:
@@ -252,13 +237,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
       description: A workspace used to give the formatting context.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the workspace will be used.
     - id: cancellationToken
       type:
@@ -270,8 +253,7 @@ items:
       id: SyntaxNode
       description: The formatted tree's root node.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.Format(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: Format
   qualifiedName:
@@ -280,8 +262,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 215
   summary: Formats the whitespace of a syntax tree.
   syntax:
@@ -298,13 +280,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
       description: A workspace used to give the formatting context.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the workspace will be used.
     - id: cancellationToken
       type:
@@ -316,8 +296,7 @@ items:
       id: SyntaxNode
       description: The formatted tree's root node.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.Format(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: Format
   qualifiedName:
@@ -326,8 +305,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 244
   summary: Formats the whitespace in areas of a syntax tree identified by a span.
   syntax:
@@ -350,13 +329,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
       description: A workspace used to give the formatting context.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the workspace will be used.
     - id: cancellationToken
       type:
@@ -368,8 +345,7 @@ items:
       id: SyntaxNode
       description: The formatted tree's root node.
 - id: Microsoft.CodeAnalysis.Formatting.Formatter.Format(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextSpan},Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.Formatter
+  href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml
   name:
     CSharp: Format
   qualifiedName:
@@ -378,8 +354,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/Formatter.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/Formatter.cs
     startLine: 268
   summary: Formats the whitespace in areas of a syntax tree identified by multiple non-overlapping spans.
   syntax:
@@ -402,13 +378,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
       description: A workspace used to give the formatting context.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
       description: An optional set of formatting options. If these options are not supplied the current set of options from the workspace will be used.
     - id: cancellationToken
       type:

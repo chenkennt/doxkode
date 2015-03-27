@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
-yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
 name:
   CSharp: SyntaxGenerator
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
   startLine: 20
 summary: >-
   A language agnostic factory for creating syntax nodes.
@@ -27,8 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultRemoveOptions
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultRemoveOptions
   qualifiedName:
@@ -37,15 +35,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 22
   syntax:
     content:
       CSharp: DefaultRemoveOptions
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Workspace,System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGenerator
   qualifiedName:
@@ -54,10 +51,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 27
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the specified language.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/) for the specified language.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Workspace workspace, string language)
@@ -66,7 +63,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
     - id: language
       type:
         id: System.String
@@ -75,8 +71,7 @@ items:
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Document)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGenerator
   qualifiedName:
@@ -85,10 +80,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 35
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator) for the language corresponding to the document.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/) for the language corresponding to the document.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Document document)
@@ -97,12 +92,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclaration
   qualifiedName:
@@ -111,8 +104,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 45
   summary: Returns the node if it is a declaration, the immediate enclosing declaration if one exists, or null.
   syntax:
@@ -127,8 +120,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationKind)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclaration
   qualifiedName:
@@ -137,8 +129,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 65
   summary: Returns the enclosing declaration of the specified kind or null.
   syntax:
@@ -154,12 +146,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationKind
         name: DeclarationKind
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -168,8 +158,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 85
   summary: Creates a field declaration.
   syntax:
@@ -195,7 +185,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: initializer
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -204,8 +193,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -214,8 +202,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 95
   summary: Creates a field declaration matching an existing field symbol.
   syntax:
@@ -230,8 +218,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -240,8 +227,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 104
   summary: Creates a field declaration matching an existing field symbol.
   syntax:
@@ -261,8 +248,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MethodDeclaration
   qualifiedName:
@@ -271,8 +257,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 117
   summary: Creates a method declaration.
   syntax:
@@ -308,7 +294,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -317,8 +302,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MethodDeclaration
   qualifiedName:
@@ -327,8 +311,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 129
   summary: Creates a method declaration matching an existing method symbol.
   syntax:
@@ -348,8 +332,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.RefKind)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ParameterDeclaration
   qualifiedName:
@@ -358,8 +341,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 150
   summary: Creates a parameter declaration.
   syntax:
@@ -389,8 +372,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(Microsoft.CodeAnalysis.IParameterSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ParameterDeclaration
   qualifiedName:
@@ -399,8 +381,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 159
   summary: Creates a parameter declaration matching an existing parameter symbol.
   syntax:
@@ -420,8 +402,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: PropertyDeclaration
   qualifiedName:
@@ -430,8 +411,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 171
   summary: Creates a property declaration.
   syntax:
@@ -457,7 +438,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -471,8 +451,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: PropertyDeclaration
   qualifiedName:
@@ -481,8 +460,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 182
   summary: Creates a property declaration using an existing property symbol as a signature.
   syntax:
@@ -507,8 +486,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IndexerDeclaration
   qualifiedName:
@@ -517,8 +495,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 199
   summary: Creates an indexer declaration.
   syntax:
@@ -544,7 +522,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -558,8 +535,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IndexerDeclaration
   qualifiedName:
@@ -568,8 +544,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 210
   summary: Creates an indexer declaration matching an existing indexer symbol.
   syntax:
@@ -594,8 +570,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EventDeclaration
   qualifiedName:
@@ -604,8 +579,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 227
   summary: Creates an event declaration.
   syntax:
@@ -631,12 +606,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(Microsoft.CodeAnalysis.IEventSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EventDeclaration
   qualifiedName:
@@ -645,8 +618,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 236
   summary: Creates an event declaration from an existing event symbol
   syntax:
@@ -661,8 +634,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CustomEventDeclaration
   qualifiedName:
@@ -671,8 +643,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 248
   summary: Creates a custom event declaration.
   syntax:
@@ -698,7 +670,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -717,8 +688,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(Microsoft.CodeAnalysis.IEventSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CustomEventDeclaration
   qualifiedName:
@@ -727,8 +697,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 260
   summary: Creates a custom event declaration from an existing event symbol.
   syntax:
@@ -753,8 +723,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConstructorDeclaration
   qualifiedName:
@@ -763,8 +732,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 281
   summary: Creates a constructor declaration.
   syntax:
@@ -790,7 +759,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: baseConstructorArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -804,8 +772,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConstructorDeclaration
   qualifiedName:
@@ -814,8 +781,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 292
   summary: Create a constructor declaration using
   syntax:
@@ -840,8 +807,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPublicInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AsPublicInterfaceImplementation
   qualifiedName:
@@ -850,8 +816,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 310
   summary: >-
     Converts method, property and indexer declarations into public interface implementations.
@@ -874,8 +840,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPrivateInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AsPrivateInterfaceImplementation
   qualifiedName:
@@ -884,8 +849,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 316
   summary: >-
     Converts method, property and indexer declarations into private interface implementations.
@@ -908,8 +873,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ClassDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ClassDeclaration
   qualifiedName:
@@ -918,8 +882,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 321
   summary: Creates a class declaration.
   syntax:
@@ -945,7 +909,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: baseType
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -964,8 +927,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.StructDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: StructDeclaration
   qualifiedName:
@@ -974,8 +936,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 333
   summary: Creates a struct declaration.
   syntax:
@@ -1001,7 +963,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1015,8 +976,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InterfaceDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InterfaceDeclaration
   qualifiedName:
@@ -1025,8 +985,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 344
   summary: Creates a interface declaration.
   syntax:
@@ -1061,8 +1021,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumDeclaration(System.String,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EnumDeclaration
   qualifiedName:
@@ -1071,8 +1030,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 354
   summary: Creates an enum declaration.
   syntax:
@@ -1093,7 +1052,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1102,8 +1060,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumMember(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EnumMember
   qualifiedName:
@@ -1112,8 +1069,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 363
   summary: Creates an enum member
   syntax:
@@ -1133,8 +1090,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DelegateDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DelegateDeclaration
   qualifiedName:
@@ -1143,8 +1099,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 368
   summary: Creates a delegate declaration.
   syntax:
@@ -1180,12 +1136,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Declaration(Microsoft.CodeAnalysis.ISymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Declaration
   qualifiedName:
@@ -1194,8 +1148,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 379
   summary: Creates a declaration matching an existing symbol.
   syntax:
@@ -1210,8 +1164,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeParameters
   qualifiedName:
@@ -1220,8 +1173,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 509
   summary: Converts a declaration (method, class, etc) into a declaration with type parameters.
   syntax:
@@ -1241,8 +1194,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.String[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeParameters
   qualifiedName:
@@ -1251,8 +1203,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 514
   summary: Converts a declaration (method, class, etc) into a declaration with type parameters.
   syntax:
@@ -1272,8 +1224,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1282,8 +1233,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 522
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1304,7 +1255,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
-        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1313,8 +1263,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1323,8 +1272,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 527
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1345,7 +1294,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
-        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
     - id: types
       type:
         id: System.Array
@@ -1354,8 +1302,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1364,8 +1311,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 535
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1390,8 +1337,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1400,8 +1346,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 545
   summary: Creates a namespace declaration.
   syntax:
@@ -1423,8 +1369,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1433,8 +1378,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 552
   summary: Creates a namespace declaration.
   syntax:
@@ -1456,8 +1401,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1466,8 +1410,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 562
   summary: Creates a namespace declaration.
   syntax:
@@ -1489,8 +1433,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1499,8 +1442,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 572
   summary: Creates a namespace declaration.
   syntax:
@@ -1522,8 +1465,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -1532,8 +1474,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 581
   summary: Creates a compilation unit declaration
   syntax:
@@ -1549,8 +1491,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -1559,8 +1500,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 587
   summary: Creates a compilation unit declaration
   syntax:
@@ -1576,8 +1517,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceImportDeclaration
   qualifiedName:
@@ -1586,8 +1526,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 596
   summary: Creates a namespace import declaration.
   syntax:
@@ -1603,8 +1543,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceImportDeclaration
   qualifiedName:
@@ -1613,8 +1552,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 602
   summary: Creates a namespace import declaration.
   syntax:
@@ -1630,8 +1569,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1640,8 +1578,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 610
   summary: Creates an attribute.
   syntax:
@@ -1661,8 +1599,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1671,8 +1608,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 615
   summary: Creates an attribute.
   syntax:
@@ -1692,8 +1629,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1702,8 +1638,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 623
   summary: Creates an attribute.
   syntax:
@@ -1723,8 +1659,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.AttributeData)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1733,8 +1668,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 631
   summary: Creates an attribute matching existing attribute data.
   syntax:
@@ -1749,8 +1684,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AttributeArgument
   qualifiedName:
@@ -1759,8 +1693,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 648
   summary: Creates an attribute argument.
   syntax:
@@ -1780,8 +1714,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AttributeArgument
   qualifiedName:
@@ -1790,8 +1723,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 653
   summary: Creates an attribute argument.
   syntax:
@@ -1806,8 +1739,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveAllAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveAllAttributes
   qualifiedName:
@@ -1816,8 +1748,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 661
   summary: Removes all attributes from the declaration, including return attributes.
   syntax:
@@ -1832,8 +1764,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAttributes
   qualifiedName:
@@ -1842,8 +1773,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 669
   summary: Gets the attributes of a declaration, not including the return attributes.
   syntax:
@@ -1858,8 +1789,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributes
   qualifiedName:
@@ -1868,8 +1798,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 674
   summary: Creates a new instance of the declaration with the attributes inserted.
   syntax:
@@ -1894,8 +1824,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributes
   qualifiedName:
@@ -1904,8 +1833,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 679
   summary: Creates a new instance of the declaration with the attributes inserted.
   syntax:
@@ -1930,8 +1859,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributes
   qualifiedName:
@@ -1940,8 +1868,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 687
   summary: Creates a new instance of a declaration with the specified attributes added.
   syntax:
@@ -1961,8 +1889,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributes
   qualifiedName:
@@ -1971,8 +1898,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 695
   summary: Creates a new instance of a declaration with the specified attributes added.
   syntax:
@@ -1992,8 +1919,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetReturnAttributes
   qualifiedName:
@@ -2002,8 +1928,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 703
   summary: Gets the return attributes from the declaration.
   syntax:
@@ -2018,8 +1944,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertReturnAttributes
   qualifiedName:
@@ -2028,8 +1953,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 708
   summary: Creates a new instance of a method declaration with return attributes inserted.
   syntax:
@@ -2054,8 +1979,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertReturnAttributes
   qualifiedName:
@@ -2064,8 +1988,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 713
   summary: Creates a new instance of a method declaration with return attributes inserted.
   syntax:
@@ -2090,8 +2014,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddReturnAttributes
   qualifiedName:
@@ -2100,8 +2023,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 721
   summary: Creates a new instance of a method declaration with return attributes added.
   syntax:
@@ -2121,8 +2044,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddReturnAttributes
   qualifiedName:
@@ -2131,8 +2053,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 729
   summary: Creates a new instance of a method declaration node with return attributes added.
   syntax:
@@ -2152,8 +2074,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAttributeArguments
   qualifiedName:
@@ -2162,8 +2083,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 737
   summary: Gets the attribute arguments for the attribute declaration.
   syntax:
@@ -2178,8 +2099,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributeArguments
   qualifiedName:
@@ -2188,8 +2108,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 742
   summary: Creates a new instance of the attribute with the arguments inserted.
   syntax:
@@ -2214,8 +2134,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributeArguments
   qualifiedName:
@@ -2224,8 +2143,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 747
   summary: Creates a new instance of the attribute with the arguments added.
   syntax:
@@ -2245,8 +2164,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetNamespaceImports
   qualifiedName:
@@ -2255,8 +2173,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 755
   summary: Gets the namespace imports that are part of the declaration.
   syntax:
@@ -2271,8 +2189,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNamespaceImports
   qualifiedName:
@@ -2281,8 +2198,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 760
   summary: Creates a new instance of the declaration with the namespace imports inserted.
   syntax:
@@ -2307,8 +2224,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNamespaceImports
   qualifiedName:
@@ -2317,8 +2233,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 765
   summary: Creates a new instance of the declaration with the namespace imports inserted.
   syntax:
@@ -2343,8 +2259,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddNamespaceImports
   qualifiedName:
@@ -2353,8 +2268,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 773
   summary: Creates a new instance of the declaration with the namespace imports added.
   syntax:
@@ -2374,8 +2289,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddNamespaceImports
   qualifiedName:
@@ -2384,8 +2298,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 781
   summary: Creates a new instance of the declaration with the namespace imports added.
   syntax:
@@ -2405,8 +2319,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetMembers(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -2415,8 +2328,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 789
   summary: Gets the current members of the declaration.
   syntax:
@@ -2431,8 +2344,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertMembers
   qualifiedName:
@@ -2441,8 +2353,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 794
   summary: Creates a new instance of the declaration with the members inserted.
   syntax:
@@ -2467,8 +2379,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertMembers
   qualifiedName:
@@ -2477,8 +2388,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 799
   summary: Creates a new instance of the declaration with the members inserted.
   syntax:
@@ -2503,8 +2414,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddMembers
   qualifiedName:
@@ -2513,8 +2423,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 807
   summary: Creates a new instance of the declaration with the members added to the end.
   syntax:
@@ -2534,8 +2444,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddMembers
   qualifiedName:
@@ -2544,8 +2453,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 815
   summary: Creates a new instance of the declaration with the members added to the end.
   syntax:
@@ -2565,8 +2474,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAccessibility(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAccessibility
   qualifiedName:
@@ -2575,8 +2483,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 823
   summary: Gets the accessibility of the declaration.
   syntax:
@@ -2591,8 +2499,7 @@ items:
     return:
       id: Accessibility
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithAccessibility(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithAccessibility
   qualifiedName:
@@ -2601,8 +2508,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 828
   summary: Changes the accessibility of the declaration.
   syntax:
@@ -2622,8 +2529,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetModifiers(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetModifiers
   qualifiedName:
@@ -2632,10 +2538,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 833
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationModifiers GetModifiers(SyntaxNode declaration);
@@ -2648,8 +2554,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithModifiers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithModifiers
   qualifiedName:
@@ -2658,10 +2563,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 838
-  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers) for the declaration.
+  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/) for the declaration.
   syntax:
     content:
       CSharp: public abstract SyntaxNode WithModifiers(SyntaxNode declaration, DeclarationModifiers modifiers);
@@ -2675,12 +2580,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclarationKind(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclarationKind
   qualifiedName:
@@ -2689,10 +2592,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 843
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](#/api/Microsoft.CodeAnalysis.Editing.DeclarationKind) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](#/) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationKind GetDeclarationKind(SyntaxNode declaration);
@@ -2705,8 +2608,7 @@ items:
     return:
       id: DeclarationKind
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetName(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetName
   qualifiedName:
@@ -2715,8 +2617,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 848
   summary: Gets the name of the declaration.
   syntax:
@@ -2731,8 +2633,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithName(Microsoft.CodeAnalysis.SyntaxNode,System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithName
   qualifiedName:
@@ -2741,8 +2642,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 853
   summary: Changes the name of the declaration.
   syntax:
@@ -2762,8 +2663,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetType(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetType
   qualifiedName:
@@ -2772,8 +2672,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 858
   summary: Gets the type of the declaration.
   syntax:
@@ -2788,8 +2688,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithType
   qualifiedName:
@@ -2798,8 +2697,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 863
   summary: Changes the type of the declaration.
   syntax:
@@ -2819,8 +2718,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetParameters(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetParameters
   qualifiedName:
@@ -2829,8 +2727,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 868
   summary: Gets the list of parameters for the declaration.
   syntax:
@@ -2845,8 +2743,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertParameters
   qualifiedName:
@@ -2855,8 +2752,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 873
   summary: Inserts the parameters at the specified index into the declaration.
   syntax:
@@ -2881,8 +2778,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddParameters
   qualifiedName:
@@ -2891,8 +2787,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 878
   summary: Adds the parameters to the declaration.
   syntax:
@@ -2912,8 +2808,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetExpression
   qualifiedName:
@@ -2922,8 +2817,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 886
   summary: Gets the expression associated with the declaration.
   syntax:
@@ -2938,8 +2833,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithExpression
   qualifiedName:
@@ -2948,8 +2842,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 891
   summary: Changes the expression associated with the declaration.
   syntax:
@@ -2969,8 +2863,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetStatements
   qualifiedName:
@@ -2979,8 +2872,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 896
   summary: Gets the statements for the body of the declaration.
   syntax:
@@ -2995,8 +2888,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithStatements
   qualifiedName:
@@ -3005,8 +2897,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 901
   summary: Changes the statements for the body of the declaration.
   syntax:
@@ -3026,8 +2918,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGetAccessorStatements
   qualifiedName:
@@ -3036,8 +2927,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 906
   summary: Gets the statements for the body of the get-accessor of the declaration.
   syntax:
@@ -3052,8 +2943,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithGetAccessorStatements
   qualifiedName:
@@ -3062,8 +2952,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 911
   summary: Changes the statements for the body of the get-accessor of the declaration.
   syntax:
@@ -3083,8 +2973,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetSetAccessorStatements
   qualifiedName:
@@ -3093,8 +2982,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 916
   summary: Gets the statements for the body of the set-accessor of the declaration.
   syntax:
@@ -3109,8 +2998,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithSetAccessorStatements
   qualifiedName:
@@ -3119,8 +3007,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 921
   summary: Changes the statements for the body of the set-accessor of the declaration.
   syntax:
@@ -3140,8 +3028,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetBaseAndInterfaceTypes(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetBaseAndInterfaceTypes
   qualifiedName:
@@ -3150,8 +3037,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 926
   summary: Gets a list of the base and interface types for the declaration.
   syntax:
@@ -3166,8 +3053,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddBaseType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddBaseType
   qualifiedName:
@@ -3176,8 +3062,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 931
   summary: Adds a base type to the declaration
   syntax:
@@ -3197,8 +3083,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddInterfaceType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddInterfaceType
   qualifiedName:
@@ -3207,8 +3092,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 936
   summary: Adds an interface type to the declaration
   syntax:
@@ -3228,8 +3113,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -3238,8 +3122,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 944
   summary: Replaces the node in the root's tree with the new node.
   syntax:
@@ -3264,8 +3148,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNodesBefore
   qualifiedName:
@@ -3274,8 +3157,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 959
   summary: Inserts the new node before the specified declaration.
   syntax:
@@ -3300,8 +3183,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesAfter(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNodesAfter
   qualifiedName:
@@ -3310,8 +3192,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 967
   summary: Inserts the new node before the specified declaration.
   syntax:
@@ -3336,8 +3218,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveNode
   qualifiedName:
@@ -3346,8 +3227,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 975
   summary: Removes the node from the sub tree starting at the root.
   syntax:
@@ -3367,8 +3248,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNodes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveNodes
   qualifiedName:
@@ -3377,8 +3257,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 983
   summary: Removes all the declarations from the sub tree starting at the root.
   syntax:
@@ -3398,8 +3278,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExpressionStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ExpressionStatement
   qualifiedName:
@@ -3408,8 +3287,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1099
   summary: >-
     Creates statement that allows an expression to execute in a statement context.
@@ -3428,8 +3307,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReturnStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReturnStatement
   qualifiedName:
@@ -3438,8 +3316,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1105
   summary: Creates a statement that can be used to return a value from a method body.
   syntax:
@@ -3455,8 +3333,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThrowStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ThrowStatement
   qualifiedName:
@@ -3465,8 +3342,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1111
   summary: Creates a statement that can be used to throw and exception.
   syntax:
@@ -3482,8 +3359,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3492,8 +3368,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1116
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3523,8 +3399,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.ITypeSymbol,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3533,8 +3408,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1121
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3564,8 +3439,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3574,8 +3448,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1129
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3595,8 +3469,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IfStatement
   qualifiedName:
@@ -3605,8 +3478,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1140
   summary: Creates an if-statement
   syntax:
@@ -3634,8 +3507,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IfStatement
   qualifiedName:
@@ -3644,8 +3516,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1148
   summary: Creates an if statement
   syntax:
@@ -3673,8 +3545,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchStatement
   qualifiedName:
@@ -3683,8 +3554,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1156
   summary: Creates a switch statement that branches to individual sections based on the value of the specified expression.
   syntax:
@@ -3704,8 +3575,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchStatement
   qualifiedName:
@@ -3714,8 +3584,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1161
   summary: Creates a switch statement that branches to individual sections based on the value of the specified expression.
   syntax:
@@ -3735,8 +3605,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchSection
   qualifiedName:
@@ -3745,8 +3614,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1169
   summary: Creates a section for a switch statement.
   syntax:
@@ -3766,8 +3635,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchSection
   qualifiedName:
@@ -3776,8 +3644,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1174
   summary: Creates a single-case section a switch statement.
   syntax:
@@ -3797,8 +3665,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultSwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultSwitchSection
   qualifiedName:
@@ -3807,8 +3674,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1182
   summary: Creates a default section for a switch statement.
   syntax:
@@ -3823,8 +3690,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExitSwitchStatement
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ExitSwitchStatement
   qualifiedName:
@@ -3833,8 +3699,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1187
   summary: Create a statement that exits a switch statement and continues after it.
   syntax:
@@ -3844,8 +3710,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3854,8 +3719,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1192
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3885,8 +3750,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3895,8 +3759,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1197
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3921,8 +3785,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3931,8 +3794,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1205
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3952,8 +3815,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCatchStatement
   qualifiedName:
@@ -3962,8 +3824,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1210
   summary: Creates a try-catch or try-catch-finally statement.
   syntax:
@@ -3988,8 +3850,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCatchStatement
   qualifiedName:
@@ -3998,8 +3859,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1215
   summary: Creates a try-catch or try-catch-finally statement.
   syntax:
@@ -4019,8 +3880,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryFinallyStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryFinallyStatement
   qualifiedName:
@@ -4029,8 +3889,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1223
   summary: Creates a try-finally statement.
   syntax:
@@ -4050,8 +3910,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.SyntaxNode,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CatchClause
   qualifiedName:
@@ -4060,8 +3919,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1231
   summary: Creates a catch-clause.
   syntax:
@@ -4086,8 +3945,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.ITypeSymbol,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CatchClause
   qualifiedName:
@@ -4096,8 +3954,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1236
   summary: Creates a catch-clause.
   syntax:
@@ -4122,8 +3980,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WhileStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WhileStatement
   qualifiedName:
@@ -4132,8 +3989,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1244
   summary: Creates a while-loop statement
   syntax:
@@ -4153,8 +4010,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultExpression
   qualifiedName:
@@ -4163,8 +4019,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1253
   summary: >-
     An expression that represents the default value of a type.
@@ -4182,8 +4038,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.ITypeSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultExpression
   qualifiedName:
@@ -4192,8 +4047,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1254
   syntax:
     content:
@@ -4207,8 +4062,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThisExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ThisExpression
   qualifiedName:
@@ -4217,8 +4071,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1259
   summary: Creates an expression that denotes the containing method's this-parameter.
   syntax:
@@ -4228,8 +4082,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BaseExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BaseExpression
   qualifiedName:
@@ -4238,8 +4091,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1264
   summary: Creates an expression that denotes the containing method's base-parameter.
   syntax:
@@ -4249,8 +4102,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LiteralExpression(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LiteralExpression
   qualifiedName:
@@ -4259,8 +4111,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1269
   summary: Creates a literal expression. This is typically numeric primitives, strings or chars.
   syntax:
@@ -4275,8 +4127,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FalseLiteralExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FalseLiteralExpression
   qualifiedName:
@@ -4285,8 +4136,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1274
   summary: Creates an expression that denotes the boolean false literal.
   syntax:
@@ -4296,8 +4147,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TrueLiteralExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TrueLiteralExpression
   qualifiedName:
@@ -4306,8 +4156,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1282
   summary: Creates an expression that denotes the boolean true literal.
   syntax:
@@ -4317,8 +4167,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullLiteralExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NullLiteralExpression
   qualifiedName:
@@ -4327,8 +4176,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1290
   summary: Creates an expression that denotes the null literal.
   syntax:
@@ -4338,8 +4187,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IdentifierName(System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IdentifierName
   qualifiedName:
@@ -4348,8 +4196,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1300
   summary: Creates an expression that denotes a simple identifier name.
   syntax:
@@ -4364,8 +4212,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4374,8 +4221,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1305
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4395,8 +4242,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ITypeSymbol})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4405,8 +4251,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1310
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4426,8 +4272,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4436,8 +4281,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1318
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4457,8 +4302,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.ITypeSymbol[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4467,8 +4311,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1326
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4488,8 +4332,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeArguments
   qualifiedName:
@@ -4498,8 +4341,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1335
   summary: >-
     Converts an expression that ends in a name into an expression that ends in a generic name.
@@ -4522,8 +4365,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeArguments
   qualifiedName:
@@ -4532,8 +4374,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1341
   summary: >-
     Converts an expression that ends in a name into an expression that ends in a generic name.
@@ -4556,8 +4398,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.QualifiedName(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: QualifiedName
   qualifiedName:
@@ -4566,8 +4407,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1351
   summary: >-
     Creates a name expression that denotes a qualified name.
@@ -4592,8 +4433,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DottedName(System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DottedName
   qualifiedName:
@@ -4602,8 +4442,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1356
   summary: Creates a name expression from a dotted name string.
   syntax:
@@ -4618,8 +4458,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.ITypeSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TypeExpression
   qualifiedName:
@@ -4628,8 +4467,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1386
   summary: Creates an expression that denotes a type.
   syntax:
@@ -4644,8 +4483,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.SpecialType)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TypeExpression
   qualifiedName:
@@ -4654,8 +4492,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1391
   summary: Creates an expression that denotes a special type name.
   syntax:
@@ -4670,8 +4508,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ArrayTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ArrayTypeExpression
   qualifiedName:
@@ -4680,8 +4517,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1396
   summary: Creates an expression that denotes an array type.
   syntax:
@@ -4696,8 +4533,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullableTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NullableTypeExpression
   qualifiedName:
@@ -4706,8 +4542,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1401
   summary: Creates an expression that denotes a nullable type.
   syntax:
@@ -4722,8 +4558,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AssignmentStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AssignmentStatement
   qualifiedName:
@@ -4732,8 +4567,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1406
   summary: Creates an expression that denotes an assignment from the right argument to left argument.
   syntax:
@@ -4753,8 +4588,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueEqualsExpression
   qualifiedName:
@@ -4763,8 +4597,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1411
   summary: Creates an expression that denotes a value-type equality test operation.
   syntax:
@@ -4784,8 +4618,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReferenceEqualsExpression
   qualifiedName:
@@ -4794,8 +4627,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1416
   summary: Creates an expression that denotes a reference-type equality test operation.
   syntax:
@@ -4815,8 +4648,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueNotEqualsExpression
   qualifiedName:
@@ -4825,8 +4657,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1421
   summary: Creates an expression that denotes a value-type inequality test operation.
   syntax:
@@ -4846,8 +4678,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReferenceNotEqualsExpression
   qualifiedName:
@@ -4856,8 +4687,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1426
   summary: Creates an expression that denotes a reference-type inequality test operation.
   syntax:
@@ -4877,8 +4708,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LessThanExpression
   qualifiedName:
@@ -4887,8 +4717,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1431
   summary: Creates an expression that denotes a less-than test operation.
   syntax:
@@ -4908,8 +4738,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LessThanOrEqualExpression
   qualifiedName:
@@ -4918,8 +4747,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1436
   summary: Creates an expression that denotes a less-than-or-equal test operation.
   syntax:
@@ -4939,8 +4768,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GreaterThanExpression
   qualifiedName:
@@ -4949,8 +4777,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1441
   summary: Creates an expression that denotes a greater-than test operation.
   syntax:
@@ -4970,8 +4798,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GreaterThanOrEqualExpression
   qualifiedName:
@@ -4980,8 +4807,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1446
   summary: Creates an expression that denotes a greater-than-or-equal test operation.
   syntax:
@@ -5001,8 +4828,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NegateExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NegateExpression
   qualifiedName:
@@ -5011,8 +4837,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1451
   summary: Creates an expression that denotes a unary negation operation.
   syntax:
@@ -5027,8 +4853,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddExpression
   qualifiedName:
@@ -5037,8 +4862,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1456
   summary: Creates an expression that denotes an addition operation.
   syntax:
@@ -5058,8 +4883,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SubtractExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SubtractExpression
   qualifiedName:
@@ -5068,8 +4892,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1461
   summary: Creates an expression that denotes an subtraction operation.
   syntax:
@@ -5089,8 +4913,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MultiplyExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MultiplyExpression
   qualifiedName:
@@ -5099,8 +4922,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1466
   summary: Creates an expression that denotes a multiplication operation.
   syntax:
@@ -5120,8 +4943,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DivideExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DivideExpression
   qualifiedName:
@@ -5130,8 +4952,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1471
   summary: Creates an expression that denotes a division operation.
   syntax:
@@ -5151,8 +4973,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ModuloExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ModuloExpression
   qualifiedName:
@@ -5161,8 +4982,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1476
   summary: Creates an expression that denotes a modulo operation.
   syntax:
@@ -5182,8 +5003,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseAndExpression
   qualifiedName:
@@ -5192,8 +5012,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1481
   summary: Creates an expression that denotes a bitwise-and operation.
   syntax:
@@ -5213,8 +5033,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseOrExpression
   qualifiedName:
@@ -5223,8 +5042,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1486
   summary: Creates an expression that denotes a bitwise-or operation.
   syntax:
@@ -5244,8 +5063,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseNotExpression
   qualifiedName:
@@ -5254,8 +5072,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1491
   summary: Creates an expression that denotes a bitwise-not operation
   syntax:
@@ -5270,8 +5088,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalAndExpression
   qualifiedName:
@@ -5280,8 +5097,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1496
   summary: Creates an expression that denotes a logical-and operation.
   syntax:
@@ -5301,8 +5118,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalOrExpression
   qualifiedName:
@@ -5311,8 +5127,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1501
   summary: Creates an expression that denotes a logical-or operation.
   syntax:
@@ -5332,8 +5148,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalNotExpression
   qualifiedName:
@@ -5342,8 +5157,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1506
   summary: Creates an expression that denotes a logical not operation.
   syntax:
@@ -5358,8 +5173,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConditionalExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConditionalExpression
   qualifiedName:
@@ -5368,8 +5182,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1511
   summary: Creates an expression that denotes a conditional evaluation operation.
   syntax:
@@ -5394,8 +5208,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CoalesceExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CoalesceExpression
   qualifiedName:
@@ -5404,8 +5217,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1516
   summary: Creates an expression that denotes a coalesce operation.
   syntax:
@@ -5425,8 +5238,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MemberAccessExpression
   qualifiedName:
@@ -5435,8 +5247,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1521
   summary: Creates a member access expression.
   syntax:
@@ -5456,8 +5268,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.String)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MemberAccessExpression
   qualifiedName:
@@ -5466,8 +5277,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1526
   summary: Creates a member access expression.
   syntax:
@@ -5487,8 +5298,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5497,8 +5307,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1534
   summary: Creates an object creation expression.
   syntax:
@@ -5518,8 +5328,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5528,8 +5337,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1539
   summary: Creates an object creation expression.
   syntax:
@@ -5549,8 +5358,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5559,8 +5367,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1547
   summary: Creates an object creation expression.
   syntax:
@@ -5580,8 +5388,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5590,8 +5397,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1555
   summary: Creates an object creation expression.
   syntax:
@@ -5611,8 +5418,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InvocationExpression
   qualifiedName:
@@ -5621,8 +5427,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1563
   summary: Creates a invocation expression.
   syntax:
@@ -5642,8 +5448,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InvocationExpression
   qualifiedName:
@@ -5652,8 +5457,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1568
   summary: Creates a invocation expression
   syntax:
@@ -5673,8 +5478,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(System.String,Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5683,8 +5487,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1576
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5709,8 +5513,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5719,8 +5522,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1581
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5740,8 +5543,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5750,8 +5552,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1589
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5766,8 +5568,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ElementAccessExpression
   qualifiedName:
@@ -5776,8 +5577,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1597
   summary: Creates an expression that access an element of an array or indexer.
   syntax:
@@ -5797,8 +5598,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ElementAccessExpression
   qualifiedName:
@@ -5807,8 +5607,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1602
   summary: Creates an expression that access an element of an array or indexer.
   syntax:
@@ -5828,8 +5628,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IsTypeExpression
   qualifiedName:
@@ -5838,8 +5637,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1610
   summary: Creates an expression that denotes an is-type-check operation.
   syntax:
@@ -5859,8 +5658,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IsTypeExpression
   qualifiedName:
@@ -5869,8 +5667,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1615
   summary: Creates an expression that denotes an is-type-check operation.
   syntax:
@@ -5890,8 +5688,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCastExpression
   qualifiedName:
@@ -5900,8 +5697,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1623
   summary: Creates an expression that denotes an try-cast operation.
   syntax:
@@ -5921,8 +5718,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCastExpression
   qualifiedName:
@@ -5931,8 +5727,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1628
   summary: Creates an expression that denotes an try-cast operation.
   syntax:
@@ -5952,8 +5748,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CastExpression
   qualifiedName:
@@ -5962,8 +5757,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1636
   summary: Creates an expression that denotes a type cast operation.
   syntax:
@@ -5983,8 +5778,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CastExpression
   qualifiedName:
@@ -5993,8 +5787,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1641
   summary: Creates an expression that denotes a type cast operation.
   syntax:
@@ -6014,8 +5808,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConvertExpression
   qualifiedName:
@@ -6024,8 +5817,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1649
   summary: Creates an expression that denotes a type conversion operation.
   syntax:
@@ -6045,8 +5838,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConvertExpression
   qualifiedName:
@@ -6055,8 +5847,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1654
   summary: Creates an expression that denotes a type conversion operation.
   syntax:
@@ -6076,8 +5868,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6086,8 +5877,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1662
   summary: Creates an expression that declares a value returning lambda expression.
   syntax:
@@ -6107,8 +5898,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6117,8 +5907,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1667
   summary: Creates an expression that declares a void returning lambda expression
   syntax:
@@ -6138,8 +5928,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6148,8 +5937,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1672
   summary: Creates an expression that declares a value returning lambda expression.
   syntax:
@@ -6169,8 +5958,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6179,8 +5967,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1677
   summary: Creates an expression that declares a void returning lambda expression.
   syntax:
@@ -6200,8 +5988,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6210,8 +5997,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1682
   summary: Creates an expression that declares a single parameter value returning lambda expression.
   syntax:
@@ -6231,8 +6018,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6241,8 +6027,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1690
   summary: Creates an expression that declares a single parameter void returning lambda expression.
   syntax:
@@ -6262,8 +6048,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6272,8 +6057,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1698
   summary: Creates an expression that declares a single parameter value returning lambda expression.
   syntax:
@@ -6293,8 +6078,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6303,8 +6087,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1706
   summary: Creates an expression that declares a single parameter void returning lambda expression.
   syntax:
@@ -6324,8 +6108,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6334,8 +6117,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1714
   summary: Creates an expression that declares a zero parameter value returning lambda expression.
   syntax:
@@ -6350,8 +6133,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6360,8 +6142,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1722
   summary: Creates an expression that declares a zero parameter void returning lambda expression.
   syntax:
@@ -6376,8 +6158,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -6386,8 +6167,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1730
   summary: Creates an expression that declares a zero parameter value returning lambda expression.
   syntax:
@@ -6402,8 +6183,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -6412,8 +6192,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1738
   summary: Creates an expression that declares a zero parameter void returning lambda expression.
   syntax:
@@ -6428,8 +6208,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LambdaParameter
   qualifiedName:
@@ -6438,8 +6217,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1746
   summary: Creates a lambda parameter.
   syntax:
@@ -6459,8 +6238,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.ITypeSymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator
+  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LambdaParameter
   qualifiedName:
@@ -6469,8 +6247,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1751
   summary: Creates a lambda parameter.
   syntax:

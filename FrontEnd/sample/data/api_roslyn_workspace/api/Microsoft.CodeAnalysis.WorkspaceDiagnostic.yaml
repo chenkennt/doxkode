@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
-yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
-href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
 name:
   CSharp: WorkspaceDiagnostic
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
   startLine: 6
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.Kind
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
     startLine: 9
   syntax:
     content:
@@ -42,10 +40,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
         name: WorkspaceDiagnosticKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.Message
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
   name:
     CSharp: Message
   qualifiedName:
@@ -54,8 +50,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
     startLine: 10
   syntax:
     content:
@@ -67,8 +63,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String)
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
   name:
     CSharp: WorkspaceDiagnostic(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String)
   qualifiedName:
@@ -77,8 +72,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
     startLine: 12
   syntax:
     content:
@@ -88,7 +83,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
         name: WorkspaceDiagnosticKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
     - id: message
       type:
         id: System.String
@@ -97,8 +91,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic.ToString
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -107,8 +100,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnostic.cs
     startLine: 18
   syntax:
     content:

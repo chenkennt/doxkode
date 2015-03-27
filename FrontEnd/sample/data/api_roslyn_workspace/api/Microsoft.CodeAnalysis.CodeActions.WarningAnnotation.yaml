@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeActions.WarningAnnotation
-yaml: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
-href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation
+href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
 name:
   CSharp: WarningAnnotation
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
   startLine: 9
 summary: Apply this annotation to a SyntaxNode to indicate that a warning message should be presented to the user.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.Kind
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -32,15 +30,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
     startLine: 11
   syntax:
     content:
       CSharp: Kind
 - id: Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.Create(System.String)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -49,8 +46,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
     startLine: 13
   syntax:
     content:
@@ -64,8 +61,7 @@ items:
     return:
       id: SyntaxAnnotation
 - id: Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.GetDescription(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.WarningAnnotation.yaml
   name:
     CSharp: GetDescription
   qualifiedName:
@@ -74,8 +70,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/WarningAnnotation.cs
     startLine: 18
   syntax:
     content:

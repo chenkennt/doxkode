@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
-yaml: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
-href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
+href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
 name:
   CSharp: MetadataFilter
 qualifiedName:
@@ -9,8 +8,8 @@ type: Delegate
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
   startLine: 94
 syntax:
   content:

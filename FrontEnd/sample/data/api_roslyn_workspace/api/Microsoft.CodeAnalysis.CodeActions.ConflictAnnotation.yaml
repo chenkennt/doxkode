@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
-yaml: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
-href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
+href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
 name:
   CSharp: ConflictAnnotation
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
   startLine: 9
 summary: Apply this annotation to a SyntaxNode to indicate a conflict may exist that requires user understanding and acknowledgement before taking action.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.Kind
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -32,15 +30,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 11
   syntax:
     content:
       CSharp: Kind
 - id: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.Create(System.String)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -49,8 +46,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 13
   syntax:
     content:
@@ -64,8 +61,7 @@ items:
     return:
       id: SyntaxAnnotation
 - id: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.GetDescription(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
   name:
     CSharp: GetDescription
   qualifiedName:
@@ -74,8 +70,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 18
   syntax:
     content:

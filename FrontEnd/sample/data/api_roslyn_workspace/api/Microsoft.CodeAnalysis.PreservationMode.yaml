@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.PreservationMode
-yaml: api/Microsoft.CodeAnalysis.PreservationMode.yaml
-href: api/Microsoft.CodeAnalysis.PreservationMode
+href: api/Microsoft.CodeAnalysis.PreservationMode.yaml
 name:
   CSharp: PreservationMode
 qualifiedName:
@@ -9,8 +8,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
   startLine: 9
 summary: The mode in which value is preserved.
 syntax:
@@ -28,8 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.PreservationMode.PreserveValue
-  yaml: api/Microsoft.CodeAnalysis.PreservationMode.yaml
-  href: api/Microsoft.CodeAnalysis.PreservationMode
+  href: api/Microsoft.CodeAnalysis.PreservationMode.yaml
   name:
     CSharp: PreserveValue
   qualifiedName:
@@ -38,16 +36,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
     startLine: 14
   summary: The value is guaranteed to have the same contents across multiple accesses.
   syntax:
     content:
       CSharp: PreserveValue = 0
 - id: Microsoft.CodeAnalysis.PreservationMode.PreserveIdentity
-  yaml: api/Microsoft.CodeAnalysis.PreservationMode.yaml
-  href: api/Microsoft.CodeAnalysis.PreservationMode
+  href: api/Microsoft.CodeAnalysis.PreservationMode.yaml
   name:
     CSharp: PreserveIdentity
   qualifiedName:
@@ -56,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
     startLine: 19
   summary: The value is guaranteed to the same instance across multiple accesses.
   syntax:

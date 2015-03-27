@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
-yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
-href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
 name:
   CSharp: ITemporaryStreamStorage
 qualifiedName:
@@ -9,16 +8,15 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
   startLine: 21
 syntax:
   content:
     CSharp: public interface ITemporaryStreamStorage
 items:
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.ReadStream(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
   name:
     CSharp: ReadStream
   qualifiedName:
@@ -27,8 +25,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 23
   syntax:
     content:
@@ -42,8 +40,7 @@ items:
     return:
       id: Stream
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.ReadStreamAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -52,8 +49,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 24
   syntax:
     content:
@@ -67,8 +64,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.WriteStream(System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
   name:
     CSharp: WriteStream
   qualifiedName:
@@ -77,8 +73,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 25
   syntax:
     content:
@@ -97,8 +93,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.WriteStreamAsync(System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -107,8 +102,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 26
   syntax:
     content:

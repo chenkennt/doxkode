@@ -1,6 +1,5 @@
 id: TestClass1.Class1
-yaml: api/TestClass1.Class1.yaml
-href: api/TestClass1.Class1
+href: api/TestClass1.Class1.yaml
 name:
   CSharp: Class1
 qualifiedName:
@@ -8,12 +7,12 @@ qualifiedName:
 type: Class
 source:
   remote:
-    branch: Conceptual
+    branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-31-gcc2f573
-  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-52-gcaedae8
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 23
-summary: 'This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/api/TestClass1.Partial1) '
+summary: 'This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/) '
 syntax:
   content:
     CSharp: public class Class1
@@ -23,11 +22,9 @@ inheritance:
   isExternal: true
 - id: TestClass1.Base.BaseClassForTestClass1
   name: BaseClassForTestClass1
-  href: api/TestClass1.Base.BaseClassForTestClass1
 items:
 - id: TestClass1.Class1.Test1(System.Int32)
-  yaml: api/TestClass1.Class1.yaml
-  href: api/TestClass1.Class1
+  href: api/TestClass1.Class1.yaml
   name:
     CSharp: Test1
   qualifiedName:
@@ -35,10 +32,10 @@ items:
   type: Method
   source:
     remote:
-      branch: Conceptual
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-31-gcc2f573
-    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+      description: v0.3-52-gcaedae8
+    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 72
   summary: This is a *test* with no return
   syntax:
@@ -50,12 +47,11 @@ items:
         id: System.Int32
         name: System.Int32
         isExternal: true
-      description: 'K please refer to[TestClass1.Partial1](#/api/TestClass1.Partial1) '
+      description: 'K please refer to[TestClass1.Partial1](#/) '
     return:
       id: Void
 - id: TestClass1.Class1.Test1_3(TestClass1.Base.BaseClassForTestClass1)
-  yaml: api/TestClass1.Class1.yaml
-  href: api/TestClass1.Class1
+  href: api/TestClass1.Class1.yaml
   name:
     CSharp: Test1_3
   qualifiedName:
@@ -63,10 +59,10 @@ items:
   type: Method
   source:
     remote:
-      branch: Conceptual
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-31-gcc2f573
-    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+      description: v0.3-52-gcaedae8
+    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 82
   summary: This is a *test* with return and [System.AccessViolationException](#) should fail compilation
   syntax:
@@ -77,12 +73,10 @@ items:
       type:
         id: TestClass1.Base.BaseClassForTestClass1
         name: BaseClassForTestClass1
-        href: api/TestClass1.Base.BaseClassForTestClass1
     return:
       id: Tuple
 - id: TestClass1.Class1.Test3
-  yaml: api/TestClass1.Class1.yaml
-  href: api/TestClass1.Class1
+  href: api/TestClass1.Class1.yaml
   name:
     CSharp: Test3
   qualifiedName:
@@ -90,10 +84,10 @@ items:
   type: Method
   source:
     remote:
-      branch: Conceptual
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-31-gcc2f573
-    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+      description: v0.3-52-gcaedae8
+    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 91
   summary: This is an async *test*
   syntax:
@@ -104,8 +98,7 @@ items:
       id: Task
       description: Task
 - id: TestClass1.Class1.Test4``1(``0,``0@)
-  yaml: api/TestClass1.Class1.yaml
-  href: api/TestClass1.Class1
+  href: api/TestClass1.Class1.yaml
   name:
     CSharp: Test4
   qualifiedName:
@@ -113,10 +106,10 @@ items:
   type: Method
   source:
     remote:
-      branch: Conceptual
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-31-gcc2f573
-    path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+      description: v0.3-52-gcaedae8
+    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 101
   summary: This is a generic *test*
   syntax:

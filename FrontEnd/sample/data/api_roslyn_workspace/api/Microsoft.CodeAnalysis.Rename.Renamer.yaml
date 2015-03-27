@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Rename.Renamer
-yaml: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
-href: api/Microsoft.CodeAnalysis.Rename.Renamer
+href: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
 name:
   CSharp: Renamer
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/Renamer.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/Renamer.cs
   startLine: 9
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Rename.Renamer.RenameSymbolAsync(Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ISymbol,System.String,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.Renamer
+  href: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
   name:
     CSharp: RenameSymbolAsync
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/Renamer.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/Renamer.cs
     startLine: 11
   syntax:
     content:
@@ -42,7 +40,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: symbol
       type:
         id: Microsoft.CodeAnalysis.ISymbol
@@ -57,7 +54,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

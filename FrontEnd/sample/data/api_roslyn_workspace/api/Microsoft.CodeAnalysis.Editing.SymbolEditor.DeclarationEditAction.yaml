@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
-yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction.yaml
-href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
+href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction.yaml
 name:
   CSharp: DeclarationEditAction
 qualifiedName:
@@ -9,8 +8,8 @@ type: Delegate
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
   startLine: 215
 summary: An action that make changes to a declaration node within a [Microsoft.CodeAnalysis.SyntaxTree](#).
 syntax:

@@ -1,6 +1,5 @@
 id: Microsoft.VisualBasic
-yaml: api/Microsoft.VisualBasic.yaml
-href: api/Microsoft.VisualBasic
+href: api/Microsoft.VisualBasic.yaml
 language: VB
 name:
   VB: VisualBasic

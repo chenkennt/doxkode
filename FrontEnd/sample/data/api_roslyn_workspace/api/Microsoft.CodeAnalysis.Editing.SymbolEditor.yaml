@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SymbolEditor
-yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
 name:
   CSharp: SymbolEditor
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
   startLine: 16
 summary: An editor for making changes to symbol source declarations.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.Create(Microsoft.CodeAnalysis.Solution)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -32,10 +30,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 30
-  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api/Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/) instance.
   syntax:
     content:
       CSharp: public static SymbolEditor Create(Solution solution)
@@ -44,12 +42,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     return:
       id: SymbolEditor
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.Create(Microsoft.CodeAnalysis.Document)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -58,10 +54,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 43
-  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api/Microsoft.CodeAnalysis.Editing.SymbolEditor) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/) instance.
   syntax:
     content:
       CSharp: public static SymbolEditor Create(Document document)
@@ -70,12 +66,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     return:
       id: SymbolEditor
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.OriginalSolution
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: OriginalSolution
   qualifiedName:
@@ -84,8 +78,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 56
   summary: The original solution.
   syntax:
@@ -103,10 +97,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.ChangedSolution
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: ChangedSolution
   qualifiedName:
@@ -115,8 +107,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 64
   summary: The solution with the edits applied.
   syntax:
@@ -134,10 +126,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.GetChangedDocuments
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: GetChangedDocuments
   qualifiedName:
@@ -146,10 +136,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 72
-  summary: The documents changed since the [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/api/Microsoft.CodeAnalysis.Editing.SymbolEditor) was constructed.
+  summary: The documents changed since the [Microsoft.CodeAnalysis.Editing.SymbolEditor](#/) was constructed.
   syntax:
     content:
       CSharp: public IEnumerable<Document> GetChangedDocuments()
@@ -157,8 +147,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.GetCurrentSymbolAsync(Microsoft.CodeAnalysis.ISymbol,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: GetCurrentSymbolAsync
   qualifiedName:
@@ -167,8 +156,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 101
   summary: Gets the current symbol for a source symbol.
   syntax:
@@ -188,8 +177,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.GetCurrentDeclarationsAsync(Microsoft.CodeAnalysis.ISymbol,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: GetCurrentDeclarationsAsync
   qualifiedName:
@@ -198,8 +186,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 183
   summary: Gets the current declarations for the specified symbol.
   syntax:
@@ -219,8 +207,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -229,8 +216,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 234
   summary: >-
     Enables editting the definition of one of the symbol's declarations.
@@ -250,7 +237,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
         name: AsyncDeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -262,8 +248,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -272,8 +257,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 260
   summary: >-
     Enables editting the definition of one of the symbol's declarations.
@@ -293,7 +278,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
         name: DeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -305,8 +289,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -315,8 +298,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 323
   summary: >-
     Enables editting the definition of one of the symbol's declarations.
@@ -342,7 +325,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
         name: AsyncDeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -354,8 +336,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -364,8 +345,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 355
   summary: >-
     Enables editting the definition of one of the symbol's declarations.
@@ -391,7 +372,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
         name: DeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -403,8 +383,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -413,8 +392,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 405
   summary: >-
     Enables editting the symbol's declaration where the member is also declared.
@@ -440,7 +419,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
         name: AsyncDeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -452,8 +430,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditOneDeclarationAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditOneDeclarationAsync
   qualifiedName:
@@ -462,8 +439,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 438
   summary: >-
     Enables editting the symbol's declaration where the member is also declared.
@@ -489,7 +466,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
         name: DeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -501,8 +477,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditAllDeclarationsAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditAllDeclarationsAsync
   qualifiedName:
@@ -511,8 +486,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 463
   summary: >-
     Enables editting all the symbol's declarations.
@@ -532,7 +507,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
         name: AsyncDeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:
@@ -544,8 +518,7 @@ items:
       id: Task
       description: The new symbol including the changes.
 - id: Microsoft.CodeAnalysis.Editing.SymbolEditor.EditAllDeclarationsAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor
+  href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
   name:
     CSharp: EditAllDeclarationsAsync
   qualifiedName:
@@ -554,8 +527,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
     startLine: 521
   summary: >-
     Enables editting all the symbol's declarations.
@@ -575,7 +548,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
         name: DeclarationEditAction
-        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.DeclarationEditAction
       description: The action that makes edits to the declaration.
     - id: cancellationToken
       type:

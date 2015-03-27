@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectId
-yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-href: api/Microsoft.CodeAnalysis.ProjectId
+href: api/Microsoft.CodeAnalysis.ProjectId.yaml
 name:
   CSharp: ProjectId
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
   startLine: 14
-summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](#/api/Microsoft.CodeAnalysis.Project) across versions.
+summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](#/) across versions.
 syntax:
   content:
     CSharp: public class ProjectId
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ProjectId.Id
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 22
   summary: The system generated unique id.
   syntax:
@@ -46,8 +44,7 @@ items:
         name: System.Guid
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectId.CreateNewId(System.String)
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: CreateNewId
   qualifiedName:
@@ -56,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 40
   summary: Create a new ProjectId instance.
   syntax:
@@ -73,8 +70,7 @@ items:
     return:
       id: ProjectId
 - id: Microsoft.CodeAnalysis.ProjectId.ToString
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -83,8 +79,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 55
   syntax:
     content:
@@ -93,8 +89,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.ProjectId.Equals(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -103,8 +98,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 60
   syntax:
     content:
@@ -118,8 +113,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.Equals(Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -128,8 +122,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 65
   syntax:
     content:
@@ -139,12 +133,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.op_Equality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -153,8 +145,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 72
   syntax:
     content:
@@ -171,17 +163,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.op_Inequality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -190,8 +179,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 77
   syntax:
     content:
@@ -208,17 +197,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.GetHashCode
-  yaml: api/Microsoft.CodeAnalysis.ProjectId.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectId
+  href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -227,8 +213,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 82
   syntax:
     content:

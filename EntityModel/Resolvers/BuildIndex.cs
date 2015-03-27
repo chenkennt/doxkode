@@ -18,11 +18,11 @@ namespace DocAsCode.EntityModel
                         IndexYamlItemViewModel item;
                         if (yaml.IndexYamlViewModel.TryGetValue(member.Name, out item))
                         {
-                            ParseResult.WriteToConsole(ResultLevel.Error, "{0} already exists in {1}, the duplicate one {2} will be ignored", member.Name, item.YamlPath, member.YamlPath);
+                            ParseResult.WriteToConsole(ResultLevel.Error, "{0} already exists in {1}, the duplicate one {2} will be ignored", member.Name, item.YamlPath, member.Href);
                         }
                         else
                         {
-                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
+                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.Href});
                         }
                     }
 

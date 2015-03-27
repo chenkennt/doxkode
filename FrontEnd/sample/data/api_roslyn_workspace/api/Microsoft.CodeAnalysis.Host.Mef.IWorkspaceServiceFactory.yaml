@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory
-yaml: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
-href: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory
+href: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
 name:
   CSharp: IWorkspaceServiceFactory
 qualifiedName:
@@ -9,22 +8,21 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/IWorkspaceServiceFactory.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/IWorkspaceServiceFactory.cs
   startLine: 9
 summary: >-
-  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api/Microsoft.CodeAnalysis.Host.IWorkspaceService).
+  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/).
 
 
 
-  Implement a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](#/api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory) when you want to provide [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api/Microsoft.CodeAnalysis.Host.IWorkspaceService) instances that use other services.
+  Implement a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](#/) when you want to provide [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/) instances that use other services.
 syntax:
   content:
     CSharp: public interface IWorkspaceServiceFactory
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.CreateService(Microsoft.CodeAnalysis.Host.HostWorkspaceServices)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory
+  href: api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml
   name:
     CSharp: CreateService
   qualifiedName:
@@ -33,10 +31,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/IWorkspaceServiceFactory.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/IWorkspaceServiceFactory.cs
     startLine: 15
-  summary: Creates a new [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api/Microsoft.CodeAnalysis.Host.IWorkspaceService) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/) instance.
   syntax:
     content:
       CSharp: IWorkspaceService CreateService(HostWorkspaceServices workspaceServices);
@@ -45,7 +43,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
         name: HostWorkspaceServices
-        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices
-      description: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that can be used to access other services.
+      description: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/) that can be used to access other services.
     return:
       id: IWorkspaceService

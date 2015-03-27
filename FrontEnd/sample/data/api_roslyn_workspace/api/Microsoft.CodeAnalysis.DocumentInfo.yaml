@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.DocumentInfo
-yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-href: api/Microsoft.CodeAnalysis.DocumentInfo
+href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
 name:
   CSharp: DocumentInfo
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
   startLine: 13
 summary: A class that represents all the arguments necessary to create a new document instance.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DocumentInfo.Id
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 18
   summary: The Id of the document.
   syntax:
@@ -44,10 +42,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.DocumentInfo.Name
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -56,8 +52,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 23
   summary: The name of the document.
   syntax:
@@ -70,8 +66,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.Folders
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Folders
   qualifiedName:
@@ -80,8 +75,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 28
   summary: The names of the logical nested folders the document is contained in.
   syntax:
@@ -94,8 +89,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.SourceCodeKind
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: SourceCodeKind
   qualifiedName:
@@ -104,8 +98,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 33
   summary: The kind of the source code.
   syntax:
@@ -118,8 +112,7 @@ items:
         name: SourceCodeKind
         href: Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.DocumentInfo.FilePath
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -128,8 +121,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 38
   summary: The file path of the document.
   syntax:
@@ -142,8 +135,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.TextLoader
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: TextLoader
   qualifiedName:
@@ -152,8 +144,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 43
   summary: A loader that can retrieve the document text.
   syntax:
@@ -164,10 +156,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader
 - id: Microsoft.CodeAnalysis.DocumentInfo.IsGenerated
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: IsGenerated
   qualifiedName:
@@ -176,8 +166,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 48
   summary: True if the document is a side effect of the build.
   syntax:
@@ -190,8 +180,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.Create(Microsoft.CodeAnalysis.DocumentId,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SourceCodeKind,Microsoft.CodeAnalysis.TextLoader,System.String,System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -200,8 +189,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 80
   syntax:
     content:
@@ -211,7 +200,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     - id: name
       type:
         id: System.String
@@ -231,7 +219,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader
     - id: filePath
       type:
         id: System.String
@@ -245,8 +232,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithId(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithId
   qualifiedName:
@@ -255,8 +241,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 120
   syntax:
     content:
@@ -266,12 +252,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithName(System.String)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithName
   qualifiedName:
@@ -280,8 +264,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 125
   syntax:
     content:
@@ -295,8 +279,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFolders(System.Collections.Generic.IEnumerable{System.String})
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithFolders
   qualifiedName:
@@ -305,8 +288,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 130
   syntax:
     content:
@@ -320,8 +303,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithSourceCodeKind(Microsoft.CodeAnalysis.SourceCodeKind)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithSourceCodeKind
   qualifiedName:
@@ -330,8 +312,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 135
   syntax:
     content:
@@ -345,8 +327,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithTextLoader(Microsoft.CodeAnalysis.TextLoader)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithTextLoader
   qualifiedName:
@@ -355,8 +336,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 140
   syntax:
     content:
@@ -366,12 +347,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFilePath(System.String)
-  yaml: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentInfo
+  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithFilePath
   qualifiedName:
@@ -380,8 +359,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 145
   syntax:
     content:

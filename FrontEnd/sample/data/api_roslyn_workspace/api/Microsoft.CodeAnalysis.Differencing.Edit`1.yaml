@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.Edit`1
-yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
 name:
   CSharp: Edit`1
 qualifiedName:
@@ -9,8 +8,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
   startLine: 12
 summary: Represents an edit operation on a tree or a sequence of nodes.
 syntax:
@@ -25,8 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Kind
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -35,8 +33,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 35
   syntax:
     content:
@@ -46,10 +44,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Differencing.EditKind
         name: EditKind
-        href: api/Microsoft.CodeAnalysis.Differencing.EditKind
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.OldNode
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: OldNode
   qualifiedName:
@@ -58,8 +54,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 47
   summary: >-
     Insert:
@@ -87,8 +83,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.NewNode
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: NewNode
   qualifiedName:
@@ -97,8 +92,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 59
   summary: >-
     Insert:
@@ -126,8 +121,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Equals(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -136,8 +130,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 61
   syntax:
     content:
@@ -151,8 +145,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Equals(Microsoft.CodeAnalysis.Differencing.Edit{`0})
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -161,8 +154,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 66
   syntax:
     content:
@@ -172,12 +165,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Differencing.Edit`1
         name: Edit
-        href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.GetHashCode
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -186,8 +177,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Edit.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Edit.cs
     startLine: 73
   syntax:
     content:

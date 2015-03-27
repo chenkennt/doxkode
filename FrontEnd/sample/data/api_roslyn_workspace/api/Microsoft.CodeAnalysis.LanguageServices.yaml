@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.LanguageServices
-yaml: api/Microsoft.CodeAnalysis.LanguageServices.yaml
-href: api/Microsoft.CodeAnalysis.LanguageServices
+href: api/Microsoft.CodeAnalysis.LanguageServices.yaml
 name:
   CSharp: LanguageServices
 qualifiedName:
@@ -9,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/LanguageServices/SemanticsFactsService/ForEachSymbols.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/LanguageServices/SemanticsFactsService/ForEachSymbols.cs
   startLine: 2

@@ -6,6 +6,7 @@ angular.module('docsApp', [
   'ngCookies',
   'ngSanitize',
   'ngAnimate',
+  'docConstants',
   'docUtility',
   'docCtrl',
   'versionsData',
@@ -59,13 +60,9 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       };
 
       $scope.GetTocHref = function(relativeUrl) {
+        if (!relativeUrl) return relativeUrl;
         if (!$scope.toc) return '#' + relativeUrl;
-        var tocPath = $scope.toc.path;
-        if (tocPath) {
-          return '#' + tocPath + '!' + relativeUrl;
-        }
-
-        return '#' + relativeUrl;
+        return '#' + docService.getContentUrlWithTocAndContentUrl($scope.toc.path, relativeUrl);
       };
 
       $scope.$on('$includeContentLoaded', function() {
@@ -128,9 +125,8 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             $scope.toc = undefined;
           }
 
-          path = pathInfo.contentPath;
+          path = docService.getContentFilePath(pathInfo);
           if (path) {
-            if (pathInfo.tocPath) path = pathInfo.tocPath + '/' + path;
             // If end with .md
             if ((/\.md$/g).test(path)) {
               $scope.contentType = 'md';
@@ -156,15 +152,20 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
                 });
               }
 
-              var promise = docService.asyncFetchIndex(path, function(result) {
-                  $scope.partialModel = jsyaml.load(result);
-                  $scope.title = $scope.partialModel.id;
-                  if ($scope.partialModel.type.toLowerCase() === 'namespace') {
-                    $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, $scope.partialModel.items);
-                    $scope.partialPath = 'template' + '/namespace.tmpl';
+              docService.asyncFetchIndex(path, function(result) {
+                  var model = $scope.partialModel = jsyaml.load(result);
+                  if (model instanceof Array) {
+                    // toc list
+                    $scope.partialPath = 'template' + '/tocpage.tmpl';
                   } else {
-                    $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.class, $scope.partialModel.items);
-                    $scope.partialPath = 'template' + '/class.tmpl';
+                  $scope.title = model.id;
+                    if (model.type.toLowerCase() === 'namespace') {
+                      $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, model.items);
+                      $scope.partialPath = 'template' + '/namespace.tmpl';
+                    } else {
+                      $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.class, model.items);
+                      $scope.partialPath = 'template' + '/class.tmpl';
+                    }
                   }
                 },
                 function() {
@@ -175,13 +176,6 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             } else {
               // If not md or yaml, simply try load the path
               $scope.partialPath = path;
-            }
-          } else {
-            if ($scope.toc && $scope.toc.content && $scope.toc.content.length > 0) {
-              $location.url($scope.toc.path + '!' + $scope.toc.content[0].href);
-            } else {
-              $scope.breadcrumb = [];
-              $scope.partialPath = 'template/error404.tmpl';
             }
           }
 
@@ -225,20 +219,21 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       });
 
       // listen for toc change
-      $scope.$watch(function modelWatch() {
-        return $scope.toc;
-      }, function modelWatchAction(toc) {
-        if (toc && toc.content) {
-          docService.getDefaultItem(toc.content,
-            function(defaultItem) {
-              if (!$location.path()) {
-                if (defaultItem && defaultItem.href) {
-                  $location.url(toc.path + '!' + defaultItem.href);
-                }
-              }
-            });
-        }
-      });
+      // $scope.$watch(function modelWatch() {
+      //   return $scope.toc;
+      // }, function modelWatchAction(toc) {
+      //   if (toc && toc.content) {
+      //     var info = docService.getPathInfo($location.path());
+      //     if (!info.contentPath) {
+      //       docService.getDefaultItem(toc.content,
+      //         function(defaultItem) {
+      //           if (defaultItem && defaultItem.href) {
+      //             $location.url(docService.getContentUrlWithTocAndContentUrl(toc.path, defaultItem.href));
+      //           }
+      //         });
+      //     }
+      //   }
+      // });
 
       // listen for toc change
       $scope.$watch(function modelWatch() {

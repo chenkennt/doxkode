@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeActions.PreviewOperation
-yaml: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
-href: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation
+href: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
 name:
   CSharp: PreviewOperation
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/PreviewOperation.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/PreviewOperation.cs
   startLine: 9
 summary: Represents a preview operation for generating a custom user preview for the operation.
 syntax:
@@ -22,11 +21,9 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
   name: CodeActionOperation
-  href: api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.PreviewOperation.GetPreview
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
   name:
     CSharp: GetPreview
   qualifiedName:
@@ -35,13 +32,13 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/PreviewOperation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/PreviewOperation.cs
     startLine: 15
   summary: >-
     Gets a custom preview control for the operation.
 
-    If preview is null and [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is non-null, then [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) is used to generate the preview.
+    If preview is null and [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/) is non-null, then [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title](#/) is used to generate the preview.
   syntax:
     content:
       CSharp: public abstract object GetPreview();

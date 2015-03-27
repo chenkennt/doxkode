@@ -1,6 +1,5 @@
 id: TestClass1.TestClass1.TestClassInnerNamesapce
-yaml: api/TestClass1.TestClass1.TestClassInnerNamesapce.yaml
-href: api/TestClass1.TestClass1.TestClassInnerNamesapce
+href: api/TestClass1.TestClass1.TestClassInnerNamesapce.yaml
 name:
   CSharp: TestClassInnerNamesapce
 qualifiedName:
@@ -8,14 +7,13 @@ qualifiedName:
 type: Namespace
 source:
   remote:
-    branch: Conceptual
+    branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-31-gcc2f573
-  path: D:/Repo/docascode/TestResults/Deploy_lianwei 2015-03-26 10_01_09/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-52-gcaedae8
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 107
 items:
 - id: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
-  yaml: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
-  href: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+  href: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
   type: Class
   summary: This is a class in inner namespace

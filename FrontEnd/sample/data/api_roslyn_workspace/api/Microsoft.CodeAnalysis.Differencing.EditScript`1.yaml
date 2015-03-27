@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.EditScript`1
-yaml: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
-href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1
+href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
 name:
   CSharp: EditScript`1
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
   startLine: 13
 summary: Represents a sequence of tree edits.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.EditScript`1.Edits
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1
+  href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
   name:
     CSharp: Edits
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
     startLine: 29
   syntax:
     content:
@@ -52,8 +50,7 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Differencing.Edit{`0}}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Differencing.EditScript`1.Match
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1
+  href: api/Microsoft.CodeAnalysis.Differencing.EditScript`1.yaml
   name:
     CSharp: Match
   qualifiedName:
@@ -62,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
     startLine: 34
   syntax:
     content:

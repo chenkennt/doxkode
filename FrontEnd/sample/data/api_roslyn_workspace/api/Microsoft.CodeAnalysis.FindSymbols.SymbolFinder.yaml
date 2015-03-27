@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
-yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
 name:
   CSharp: SymbolFinder
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
   startLine: 14
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSymbolAtPosition(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSymbolAtPosition
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
     startLine: 23
   summary: Finds the symbol that is associated with a position in the text of a document.
   syntax:
@@ -55,7 +53,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
       description: A workspace to provide context.
     - id: cancellationToken
       type:
@@ -66,8 +63,7 @@ items:
     return:
       id: ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSymbolAtPositionAsync(Microsoft.CodeAnalysis.Document,System.Int32,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSymbolAtPositionAsync
   qualifiedName:
@@ -76,8 +72,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
     startLine: 54
   syntax:
     content:
@@ -87,7 +83,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     - id: position
       type:
         id: System.Int32
@@ -101,8 +96,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDefinitionAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDefinitionAsync
   qualifiedName:
@@ -111,8 +105,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
     startLine: 67
   summary: >-
     Finds the definition symbol declared in source code for a corresponding reference symbol.
@@ -131,7 +125,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -140,8 +133,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSimilarSymbols``1(``0,Microsoft.CodeAnalysis.Compilation,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSimilarSymbols
   qualifiedName:
@@ -150,8 +142,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder.cs
     startLine: 153
   summary: >-
     Finds symbols in the given compilation that are similar to the specified symbol.
@@ -192,8 +184,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.String,System.Boolean,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindDeclarationsAsync
   qualifiedName:
@@ -202,8 +193,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 18
   summary: Find the declared symbols from either source, referenced projects or metadata assemblies with the specified name.
   syntax:
@@ -214,7 +205,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -233,8 +223,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.String,System.Boolean,Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindDeclarationsAsync
   qualifiedName:
@@ -243,8 +232,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 26
   summary: Find the declared symbols from either source, referenced projects or metadata assemblies with the specified name.
   syntax:
@@ -255,7 +244,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -279,8 +267,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Solution,System.String,System.Boolean,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -289,8 +276,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 168
   summary: Find the symbols for declarations made in source with the specified name.
   syntax:
@@ -301,7 +288,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: name
       type:
         id: System.String
@@ -320,8 +306,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Solution,System.String,System.Boolean,Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -330,8 +315,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 176
   summary: Find the symbols for declarations made in source with the specified name.
   syntax:
@@ -342,7 +327,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: name
       type:
         id: System.String
@@ -366,8 +350,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.String,System.Boolean,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -376,8 +359,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 216
   summary: Find the symbols for declarations made in source with the specified name.
   syntax:
@@ -388,7 +371,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -407,8 +389,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.String,System.Boolean,Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -417,8 +398,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 224
   summary: Find the symbols for declarations made in source with the specified name.
   syntax:
@@ -429,7 +410,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -453,8 +433,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Solution,System.Func{System.String,System.Boolean},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -463,8 +442,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 259
   summary: Find the symbols for declarations made in source with a matching name.
   syntax:
@@ -475,7 +454,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
@@ -489,8 +467,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Solution,System.Func{System.String,System.Boolean},Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -499,8 +476,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 267
   summary: Find the symbols for declarations made in source with a matching name.
   syntax:
@@ -511,7 +488,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
@@ -530,8 +506,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.Func{System.String,System.Boolean},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -540,8 +515,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 296
   summary: Find the symbols for declarations made in source with a matching name.
   syntax:
@@ -552,7 +527,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
@@ -566,8 +540,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindSourceDeclarationsAsync(Microsoft.CodeAnalysis.Project,System.Func{System.String,System.Boolean},Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindSourceDeclarationsAsync
   qualifiedName:
@@ -576,8 +549,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Declarations.cs
     startLine: 304
   summary: Find the symbols for declarations made in source with a matching name.
   syntax:
@@ -588,7 +561,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
@@ -607,8 +579,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindOverridesAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindOverridesAsync
   qualifiedName:
@@ -617,8 +588,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
     startLine: 21
   summary: Find symbols for members that override the specified member symbol.
   syntax:
@@ -634,7 +605,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
@@ -648,8 +618,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindImplementedInterfaceMembersAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindImplementedInterfaceMembersAsync
   qualifiedName:
@@ -658,8 +627,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
     startLine: 64
   summary: Find symbols for declarations that implement members of the specified interface symbol
   syntax:
@@ -675,7 +644,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
@@ -689,8 +657,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindImplementationsAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindImplementationsAsync
   qualifiedName:
@@ -699,8 +666,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
     startLine: 134
   summary: Finds the symbols that implement an interface or interface member.
   syntax:
@@ -716,7 +683,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: projects
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Project}
@@ -730,8 +696,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindCallersAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindCallersAsync
   qualifiedName:
@@ -740,8 +705,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
     startLine: 190
   summary: Finds all the callers of a specified symbol.
   syntax:
@@ -757,7 +722,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -766,8 +730,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindCallersAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindCallersAsync
   qualifiedName:
@@ -776,8 +739,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_Hierarchy.cs
     startLine: 198
   summary: Finds all the callers of a specified symbol.
   syntax:
@@ -793,7 +756,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: documents
       type:
         id: System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document}
@@ -807,8 +769,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindReferencesAsync
   qualifiedName:
@@ -817,8 +778,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
     startLine: 20
   summary: Finds all references to a symbol throughout a solution
   syntax:
@@ -835,7 +796,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: cancellationToken
       type:
@@ -846,8 +806,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindReferencesAsync
   qualifiedName:
@@ -856,8 +815,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
     startLine: 35
   summary: Finds all references to a symbol throughout a solution
   syntax:
@@ -874,7 +833,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: documents
       type:
@@ -891,8 +849,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.FindReferencesAsync(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress,System.Collections.Immutable.IImmutableSet{Microsoft.CodeAnalysis.Document},System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   name:
     CSharp: FindReferencesAsync
   qualifiedName:
@@ -901,8 +858,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolFinder_References.cs
     startLine: 53
   summary: Finds all references to a symbol throughout a solution
   syntax:
@@ -919,13 +876,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
       description: The solution to find references within.
     - id: progress
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
         name: IFindReferencesProgress
-        href: api/Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
       description: >-
         An optional progress object that will receive progress
 

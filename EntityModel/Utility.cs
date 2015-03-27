@@ -321,10 +321,9 @@ namespace DocAsCode.EntityModel
         {
             YamlItemViewModel shrinkedItem = new YamlItemViewModel();
             shrinkedItem.Name = item.Name;
-            shrinkedItem.Href = item.Href;
             shrinkedItem.Summary = item.Summary;
             shrinkedItem.Type = item.Type;
-            shrinkedItem.YamlPath = item.YamlPath;
+            shrinkedItem.Href = item.Href;
             return shrinkedItem;
         }
         public static YamlItemViewModel ShrinkToSimpleToc(this YamlItemViewModel item)
@@ -333,7 +332,7 @@ namespace DocAsCode.EntityModel
             shrinkedItem.Name = item.Name;
             shrinkedItem.DisplayNames = item.DisplayNames;
 
-            shrinkedItem.Href = item.YamlPath;
+            shrinkedItem.Href = item.Href;
             shrinkedItem.Items = null;
 
             if (item.Items == null)
@@ -371,7 +370,7 @@ namespace DocAsCode.EntityModel
             shrinkedItem.Name = item.Name;
             shrinkedItem.DisplayNames = item.DisplayNames;
 
-            shrinkedItem.Href = item.YamlPath;
+            shrinkedItem.Href = item.Href;
             shrinkedItem.Items = null;
 
             if (item.Type == MemberType.Toc || item.Type == MemberType.Namespace)

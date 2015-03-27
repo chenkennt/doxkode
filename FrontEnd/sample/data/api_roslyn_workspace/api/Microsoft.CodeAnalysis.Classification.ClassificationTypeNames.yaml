@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
-yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
 name:
   CSharp: ClassificationTypeNames
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
   startLine: 4
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Comment
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Comment
   qualifiedName:
@@ -31,15 +29,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 6
   syntax:
     content:
       CSharp: Comment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ExcludedCode
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ExcludedCode
   qualifiedName:
@@ -48,15 +45,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 7
   syntax:
     content:
       CSharp: ExcludedCode
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Identifier
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Identifier
   qualifiedName:
@@ -65,15 +61,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 8
   syntax:
     content:
       CSharp: Identifier
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Keyword
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Keyword
   qualifiedName:
@@ -82,15 +77,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 9
   syntax:
     content:
       CSharp: Keyword
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.NumericLiteral
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: NumericLiteral
   qualifiedName:
@@ -99,15 +93,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 10
   syntax:
     content:
       CSharp: NumericLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Operator
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Operator
   qualifiedName:
@@ -116,15 +109,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 11
   syntax:
     content:
       CSharp: Operator
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.PreprocessorKeyword
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: PreprocessorKeyword
   qualifiedName:
@@ -133,15 +125,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 12
   syntax:
     content:
       CSharp: PreprocessorKeyword
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.StringLiteral
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: StringLiteral
   qualifiedName:
@@ -150,15 +141,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 13
   syntax:
     content:
       CSharp: StringLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.WhiteSpace
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: WhiteSpace
   qualifiedName:
@@ -167,15 +157,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 14
   syntax:
     content:
       CSharp: WhiteSpace
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Text
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Text
   qualifiedName:
@@ -184,15 +173,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 15
   syntax:
     content:
       CSharp: Text
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.PreprocessorText
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: PreprocessorText
   qualifiedName:
@@ -201,15 +189,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 17
   syntax:
     content:
       CSharp: PreprocessorText
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Punctuation
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Punctuation
   qualifiedName:
@@ -218,15 +205,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 18
   syntax:
     content:
       CSharp: Punctuation
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.VerbatimStringLiteral
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: VerbatimStringLiteral
   qualifiedName:
@@ -235,15 +221,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 19
   syntax:
     content:
       CSharp: VerbatimStringLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ClassName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ClassName
   qualifiedName:
@@ -252,15 +237,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 21
   syntax:
     content:
       CSharp: ClassName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.DelegateName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: DelegateName
   qualifiedName:
@@ -269,15 +253,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 22
   syntax:
     content:
       CSharp: DelegateName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.EnumName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: EnumName
   qualifiedName:
@@ -286,15 +269,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 23
   syntax:
     content:
       CSharp: EnumName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.InterfaceName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: InterfaceName
   qualifiedName:
@@ -303,15 +285,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 24
   syntax:
     content:
       CSharp: InterfaceName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ModuleName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ModuleName
   qualifiedName:
@@ -320,15 +301,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 25
   syntax:
     content:
       CSharp: ModuleName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.StructName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: StructName
   qualifiedName:
@@ -337,15 +317,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 26
   syntax:
     content:
       CSharp: StructName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.TypeParameterName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: TypeParameterName
   qualifiedName:
@@ -354,15 +333,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 27
   syntax:
     content:
       CSharp: TypeParameterName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeName
   qualifiedName:
@@ -371,15 +349,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 29
   syntax:
     content:
       CSharp: XmlDocCommentAttributeName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeQuotes
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeQuotes
   qualifiedName:
@@ -388,15 +365,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 30
   syntax:
     content:
       CSharp: XmlDocCommentAttributeQuotes
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeValue
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeValue
   qualifiedName:
@@ -405,15 +381,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 31
   syntax:
     content:
       CSharp: XmlDocCommentAttributeValue
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentCDataSection
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentCDataSection
   qualifiedName:
@@ -422,15 +397,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 32
   syntax:
     content:
       CSharp: XmlDocCommentCDataSection
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentComment
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentComment
   qualifiedName:
@@ -439,15 +413,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 33
   syntax:
     content:
       CSharp: XmlDocCommentComment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentDelimiter
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentDelimiter
   qualifiedName:
@@ -456,15 +429,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 34
   syntax:
     content:
       CSharp: XmlDocCommentDelimiter
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentEntityReference
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentEntityReference
   qualifiedName:
@@ -473,15 +445,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 35
   syntax:
     content:
       CSharp: XmlDocCommentEntityReference
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentName
   qualifiedName:
@@ -490,15 +461,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 36
   syntax:
     content:
       CSharp: XmlDocCommentName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentProcessingInstruction
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentProcessingInstruction
   qualifiedName:
@@ -507,15 +477,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 37
   syntax:
     content:
       CSharp: XmlDocCommentProcessingInstruction
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentText
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentText
   qualifiedName:
@@ -524,15 +493,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 38
   syntax:
     content:
       CSharp: XmlDocCommentText
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeName
   qualifiedName:
@@ -541,15 +509,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 40
   syntax:
     content:
       CSharp: XmlLiteralAttributeName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeQuotes
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeQuotes
   qualifiedName:
@@ -558,15 +525,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 41
   syntax:
     content:
       CSharp: XmlLiteralAttributeQuotes
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeValue
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeValue
   qualifiedName:
@@ -575,15 +541,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 42
   syntax:
     content:
       CSharp: XmlLiteralAttributeValue
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralCDataSection
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralCDataSection
   qualifiedName:
@@ -592,15 +557,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 43
   syntax:
     content:
       CSharp: XmlLiteralCDataSection
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralComment
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralComment
   qualifiedName:
@@ -609,15 +573,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 44
   syntax:
     content:
       CSharp: XmlLiteralComment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralDelimiter
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralDelimiter
   qualifiedName:
@@ -626,15 +589,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 45
   syntax:
     content:
       CSharp: XmlLiteralDelimiter
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralEmbeddedExpression
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralEmbeddedExpression
   qualifiedName:
@@ -643,15 +605,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 46
   syntax:
     content:
       CSharp: XmlLiteralEmbeddedExpression
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralEntityReference
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralEntityReference
   qualifiedName:
@@ -660,15 +621,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 47
   syntax:
     content:
       CSharp: XmlLiteralEntityReference
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralName
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralName
   qualifiedName:
@@ -677,15 +637,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 48
   syntax:
     content:
       CSharp: XmlLiteralName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralProcessingInstruction
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralProcessingInstruction
   qualifiedName:
@@ -694,15 +653,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 49
   syntax:
     content:
       CSharp: XmlLiteralProcessingInstruction
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralText
-  yaml: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
+  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralText
   qualifiedName:
@@ -711,8 +669,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
     startLine: 50
   syntax:
     content:

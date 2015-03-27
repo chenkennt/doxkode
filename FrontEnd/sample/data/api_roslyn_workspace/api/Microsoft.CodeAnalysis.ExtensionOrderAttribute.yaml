@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ExtensionOrderAttribute
-yaml: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
-href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute
+href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
 name:
   CSharp: ExtensionOrderAttribute
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
   startLine: 7
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ExtensionOrderAttribute.#ctor
-  yaml: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute
+  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
   name:
     CSharp: ExtensionOrderAttribute
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 11
   syntax:
     content:
@@ -44,8 +42,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ExtensionOrderAttribute.After
-  yaml: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute
+  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
   name:
     CSharp: After
   qualifiedName:
@@ -54,8 +51,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 15
   syntax:
     content:
@@ -67,8 +64,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.ExtensionOrderAttribute.Before
-  yaml: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute
+  href: api/Microsoft.CodeAnalysis.ExtensionOrderAttribute.yaml
   name:
     CSharp: Before
   qualifiedName:
@@ -77,8 +73,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 17
   syntax:
     content:

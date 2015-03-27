@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectDependencyGraph
-yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
 name:
   CSharp: ProjectDependencyGraph
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
   startLine: 16
-summary: A [Microsoft.CodeAnalysis.ProjectDependencyGraph](#/api/Microsoft.CodeAnalysis.ProjectDependencyGraph) models the dependencies between projects in a solution.
+summary: A [Microsoft.CodeAnalysis.ProjectDependencyGraph](#/) models the dependencies between projects in a solution.
 syntax:
   content:
     CSharp: public class ProjectDependencyGraph
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetProjectsThatThisProjectDirectlyDependsOn(Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetProjectsThatThisProjectDirectlyDependsOn
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 48
   summary: Gets the list of projects (topologically sorted) that this project directly depends on.
   syntax:
@@ -44,12 +42,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: IImmutableSet
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetProjectsThatDirectlyDependOnThisProject(Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetProjectsThatDirectlyDependOnThisProject
   qualifiedName:
@@ -58,8 +54,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 69
   summary: Gets the list of projects (topologically sorted) that directly depend on this project.
   syntax:
@@ -70,12 +66,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: IImmutableSet
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetProjectsThatThisProjectTransitivelyDependsOn(Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetProjectsThatThisProjectTransitivelyDependsOn
   qualifiedName:
@@ -84,8 +78,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 136
   summary: Gets the list of projects that directly or transitively this project depends on
   syntax:
@@ -96,12 +90,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: IImmutableSet
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetProjectsThatTransitivelyDependOnThisProject(Microsoft.CodeAnalysis.ProjectId)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetProjectsThatTransitivelyDependOnThisProject
   qualifiedName:
@@ -110,8 +102,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 192
   summary: Gets the list of projects that directly or transitively depend on this project.
   syntax:
@@ -122,12 +114,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetTopologicallySortedProjects(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetTopologicallySortedProjects
   qualifiedName:
@@ -136,8 +126,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 251
   summary: >-
     Returns all the projects for the solution in a topologically sorted order with respect
@@ -157,8 +147,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph.GetDependencySets(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph
+  href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   name:
     CSharp: GetDependencySets
   qualifiedName:
@@ -167,8 +156,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDependencyGraph.cs
     startLine: 308
   summary: >-
     Returns a sequence of sets, where each set contains items with shared interdependency,

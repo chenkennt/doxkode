@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.SolutionId
-yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-href: api/Microsoft.CodeAnalysis.SolutionId
+href: api/Microsoft.CodeAnalysis.SolutionId.yaml
 name:
   CSharp: SolutionId
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
   startLine: 13
 summary: An identifier that can be used to refer to the same Solution across versions.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SolutionId.Id
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 19
   summary: The unique id of the solution.
   syntax:
@@ -46,8 +44,7 @@ items:
         name: System.Guid
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionId.CreateNewId(System.String)
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: CreateNewId
   qualifiedName:
@@ -56,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 33
   summary: Create a new Solution Id
   syntax:
@@ -73,8 +70,7 @@ items:
     return:
       id: SolutionId
 - id: Microsoft.CodeAnalysis.SolutionId.Equals(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -83,8 +79,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 45
   syntax:
     content:
@@ -98,8 +94,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.Equals(Microsoft.CodeAnalysis.SolutionId)
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -108,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 50
   syntax:
     content:
@@ -119,12 +114,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.op_Equality(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.SolutionId)
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -133,8 +126,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 57
   syntax:
     content:
@@ -151,17 +144,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     - id: right
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.op_Inequality(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.SolutionId)
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -170,8 +160,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 62
   syntax:
     content:
@@ -188,17 +178,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     - id: right
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.GetHashCode
-  yaml: api/Microsoft.CodeAnalysis.SolutionId.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionId
+  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -207,8 +194,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
     startLine: 67
   syntax:
     content:

@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
-yaml: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
-href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
+href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
 name:
   CSharp: ApplyChangesOperation
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
   startLine: 11
-summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](#/api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation) for applying solution changes to a workspace.
+summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](#/) for applying solution changes to a workspace.
 syntax:
   content:
     CSharp: public sealed class ApplyChangesOperation
@@ -22,11 +21,9 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
   name: CodeActionOperation
-  href: api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.#ctor(Microsoft.CodeAnalysis.Solution)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   name:
     CSharp: ApplyChangesOperation(Microsoft.CodeAnalysis.Solution)
   qualifiedName:
@@ -35,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 15
   syntax:
     content:
@@ -46,12 +43,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.ChangedSolution
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   name:
     CSharp: ChangedSolution
   qualifiedName:
@@ -60,8 +55,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 25
   syntax:
     content:
@@ -78,10 +73,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
-  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   name:
     CSharp: Apply
   qualifiedName:
@@ -90,8 +83,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 30
   syntax:
     content:
@@ -101,7 +94,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

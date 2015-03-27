@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeCleanup.Providers
-yaml: api/Microsoft.CodeAnalysis.CodeCleanup.Providers.yaml
-href: api/Microsoft.CodeAnalysis.CodeCleanup.Providers
+href: api/Microsoft.CodeAnalysis.CodeCleanup.Providers.yaml
 name:
   CSharp: Providers
 qualifiedName:
@@ -9,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeCleanup/Providers/ExportCodeCleanupProvider.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeCleanup/Providers/ExportCodeCleanupProvider.cs
   startLine: 6

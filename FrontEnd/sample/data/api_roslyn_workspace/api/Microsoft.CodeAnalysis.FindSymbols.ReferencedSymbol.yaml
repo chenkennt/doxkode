@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
-yaml: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
-href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
+href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
 name:
   CSharp: ReferencedSymbol
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
   startLine: 17
 summary: >-
   Represents a single result of the call to the synchronous
@@ -33,8 +32,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Definition
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
+  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
   name:
     CSharp: Definition
   qualifiedName:
@@ -43,8 +41,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
     startLine: 23
   summary: The symbol definition that these are references to.
   syntax:
@@ -57,8 +55,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Locations
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
+  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
   name:
     CSharp: Locations
   qualifiedName:
@@ -67,8 +64,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
     startLine: 28
   summary: The set of reference locations in the solution.
   syntax:

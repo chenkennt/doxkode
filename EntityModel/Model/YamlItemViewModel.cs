@@ -14,9 +14,6 @@ namespace DocAsCode.EntityModel
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "yaml")]
-        public string YamlPath { get; set; }
-
         [YamlDotNet.Serialization.YamlMember(Alias = "href")]
         public string Href { get; set; }
 

@@ -416,9 +416,9 @@ namespace DocAsCode.BuildMeta
         {
             var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers, apiFolder);
             // 1. generate toc.yaml
-            viewModel.TocYamlViewModel.YamlPath = tocFileName;
+            viewModel.TocYamlViewModel.Href = tocFileName;
             viewModel.TocYamlListViewModel = viewModel.TocYamlViewModel.Items;
-            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
+            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.Href);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
                 YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlListViewModel);
@@ -434,7 +434,7 @@ namespace DocAsCode.BuildMeta
             // 3. generate each item's yaml
             foreach (var item in viewModel.MemberYamlViewModelList)
             {
-                string itemFilepath = Path.Combine(folder, item.YamlPath);
+                string itemFilepath = Path.Combine(folder, item.Href);
                 Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
                 using (StreamWriter sw = new StreamWriter(itemFilepath))
                 {

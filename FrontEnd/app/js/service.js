@@ -1,4 +1,4 @@
-function docServiceFunction($q, $http) {
+function docServiceFunction($q, $http, docConstants) {
   this.tocClassApi = function(navItem) {
     return {
       active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
@@ -57,9 +57,9 @@ function docServiceFunction($q, $http) {
   };
 
   this.getPathInfo = function(currentPath) {
-    if (!currentPath) return undefined;
+    if (!currentPath) return currentPath;
     // seperate toc and content with !
-    var index = currentPath.indexOf('!');
+    var index = currentPath.indexOf(docConstants.TocAndFileUrlSeperator);
     if (index < 0) {
       // If it ends with .md/.yaml, render it without toc
       if ((/(\.yaml$)|(\.md$)/g).test(currentPath)) {
@@ -69,16 +69,36 @@ function docServiceFunction($q, $http) {
       } else {
         return {
           tocPath: currentPath,
-          tocFilePath: currentPath + '/toc.yaml'
+          tocFilePath: currentPath + '/' + docConstants.TocFile
         };
       }
     }
 
     return {
       tocPath: currentPath.substring(0, index),
-      tocFilePath: currentPath.substring(0, index) + '/toc.yaml',
+      tocFilePath: currentPath.substring(0, index) + '/' + docConstants.TocFile,
       contentPath: currentPath.substring(index + 1, currentPath.length)
     };
+  };
+
+  this.getContentFilePath = function(pathInfo) {
+    if (!pathInfo) return pathInfo;
+    var path = pathInfo.tocPath ? pathInfo.tocPath + '/' : '';
+    path += pathInfo.contentPath ? pathInfo.contentPath : docConstants.TocFile;
+    return path;
+  };
+
+  this.getContentUrl = function(pathInfo) {
+    if (!pathInfo) return pathInfo;
+    var path = pathInfo.tocPath ? pathInfo.tocPath + docConstants.TocAndFileUrlSeperator : '';
+    path += pathInfo.contentPath ? pathInfo.contentPath : docConstants.TocFile;
+    return path;
+  };
+
+  this.getContentUrlWithTocAndContentUrl = function(tocPath, contentPath) {
+    var path = tocPath ? tocPath + docConstants.TocAndFileUrlSeperator : '';
+    path += contentPath ? contentPath : docConstants.TocFile;
+    return path;
   };
 
   this.asyncFetchIndex = function(path, success, fail) {
@@ -116,5 +136,5 @@ function docServiceFunction($q, $http) {
   };
 }
 
-angular.module('docInitService', [])
-  .service('docService', ['$q', '$http', docServiceFunction]);
+angular.module('docInitService', ['docConstants'])
+  .service('docService', ['$q', '$http', 'docConstants', docServiceFunction]);

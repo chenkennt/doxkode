@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
-yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
 name:
   CSharp: WorkspaceChangeEventArgs
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
   startLine: 7
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.Kind
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 9
   syntax:
     content:
@@ -45,10 +43,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceChangeKind
         name: WorkspaceChangeKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceChangeKind
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.OldSolution
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: OldSolution
   qualifiedName:
@@ -57,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 10
   syntax:
     content:
@@ -68,10 +64,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.NewSolution
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: NewSolution
   qualifiedName:
@@ -80,8 +74,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 11
   syntax:
     content:
@@ -91,10 +85,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.ProjectId
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -103,8 +95,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 12
   syntax:
     content:
@@ -114,10 +106,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.DocumentId
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: DocumentId
   qualifiedName:
@@ -126,8 +116,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 13
   syntax:
     content:
@@ -137,10 +127,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.#ctor(Microsoft.CodeAnalysis.WorkspaceChangeKind,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
+  href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   name:
     CSharp: WorkspaceChangeEventArgs(Microsoft.CodeAnalysis.WorkspaceChangeKind,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.Solution,Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.DocumentId)
   qualifiedName:
@@ -149,8 +137,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeEventArgs.cs
     startLine: 15
   syntax:
     content:
@@ -160,26 +148,21 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceChangeKind
         name: WorkspaceChangeKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceChangeKind
     - id: oldSolution
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: newSolution
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
     - id: projectId
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     - id: documentId
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void

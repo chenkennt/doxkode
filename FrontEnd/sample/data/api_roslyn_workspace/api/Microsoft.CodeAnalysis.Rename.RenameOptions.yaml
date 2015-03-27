@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Rename.RenameOptions
-yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
 name:
   CSharp: RenameOptions
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
   startLine: 6
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameOverloads
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
   name:
     CSharp: RenameOverloads
   qualifiedName:
@@ -31,15 +29,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 10
   syntax:
     content:
       CSharp: RenameOverloads
 - id: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameInStrings
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
   name:
     CSharp: RenameInStrings
   qualifiedName:
@@ -48,15 +45,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 11
   syntax:
     content:
       CSharp: RenameInStrings
 - id: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameInComments
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
   name:
     CSharp: RenameInComments
   qualifiedName:
@@ -65,15 +61,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 12
   syntax:
     content:
       CSharp: RenameInComments
 - id: Microsoft.CodeAnalysis.Rename.RenameOptions.PreviewChanges
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
   name:
     CSharp: PreviewChanges
   qualifiedName:
@@ -82,8 +77,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 13
   syntax:
     content:

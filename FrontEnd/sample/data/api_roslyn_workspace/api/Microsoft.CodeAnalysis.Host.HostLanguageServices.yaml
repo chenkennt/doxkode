@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.HostLanguageServices
-yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
 name:
   CSharp: HostLanguageServices
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
   startLine: 9
 summary: Per language services provided by the host environment.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.WorkspaceServices
-  yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: WorkspaceServices
   qualifiedName:
@@ -32,10 +30,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 14
-  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices) that originated this language service.
+  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/) that originated this language service.
   syntax:
     content:
       CSharp: public abstract HostWorkspaceServices WorkspaceServices { get; }
@@ -44,10 +42,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
         name: HostWorkspaceServices
-        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.Language
-  yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: Language
   qualifiedName:
@@ -56,8 +52,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 19
   summary: The name of the language
   syntax:
@@ -70,8 +66,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetService``1
-  yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: GetService
   qualifiedName:
@@ -80,8 +75,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 25
   summary: >-
     Gets a language specific service provided by the host identified by the service type.
@@ -94,8 +89,7 @@ items:
     return:
       id: TLanguageService
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetRequiredService``1
-  yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: GetRequiredService
   qualifiedName:
@@ -104,8 +98,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 31
   summary: >-
     Gets a language specific service provided by the host identified by the service type.
@@ -118,8 +112,7 @@ items:
     return:
       id: TLanguageService
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.CompilationFactory
-  yaml: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
+  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: CompilationFactory
   qualifiedName:
@@ -128,8 +121,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 47
   summary: A factory for creating compilations instances.
   syntax:
@@ -147,4 +140,3 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
         name: ICompilationFactoryService
-        href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService

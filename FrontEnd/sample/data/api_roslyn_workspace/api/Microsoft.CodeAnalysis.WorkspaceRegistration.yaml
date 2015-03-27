@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceRegistration
-yaml: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
-href: api/Microsoft.CodeAnalysis.WorkspaceRegistration
+href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
 name:
   CSharp: WorkspaceRegistration
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
   startLine: 6
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceRegistration.Workspace
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration
+  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
   name:
     CSharp: Workspace
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
     startLine: 14
   syntax:
     content:
@@ -42,10 +40,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
 - id: Microsoft.CodeAnalysis.WorkspaceRegistration.WorkspaceChanged
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration
+  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
   name:
     CSharp: WorkspaceChanged
   qualifiedName:
@@ -54,8 +50,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
     startLine: 15
   syntax:
     content:

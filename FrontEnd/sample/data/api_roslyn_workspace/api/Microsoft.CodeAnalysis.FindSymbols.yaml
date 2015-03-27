@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols
-yaml: api/Microsoft.CodeAnalysis.FindSymbols.yaml
-href: api/Microsoft.CodeAnalysis.FindSymbols
+href: api/Microsoft.CodeAnalysis.FindSymbols.yaml
 name:
   CSharp: FindSymbols
 qualifiedName:
@@ -9,21 +8,19 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/DeclaredSymbolInfo.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/DeclaredSymbolInfo.cs
   startLine: 7
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress
+  href: api/Microsoft.CodeAnalysis.FindSymbols.IFindReferencesProgress.yaml
   type: Interface
   summary: >-
     Reports the progress of the FindReferences operation.  Note: these methods may be called on
 
     any thread.
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
+  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
   type: Class
   summary: >-
     Represents a single result of the call to the synchronous
@@ -38,13 +35,11 @@ items:
 
     example, a method which implements an interface method).
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
+  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   type: Struct
   summary: Information about a reference to a symbol.
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   type: Struct
   summary: >-
     Contains information about a call from one symbol to another.  The symbol making the call is
@@ -61,6 +56,5 @@ items:
 
     implements will be considered 'indirect'.
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolFinder.yaml
   type: Class

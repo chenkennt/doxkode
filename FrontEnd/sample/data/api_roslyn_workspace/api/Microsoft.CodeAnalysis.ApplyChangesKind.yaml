@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ApplyChangesKind
-yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
 name:
   CSharp: ApplyChangesKind
 qualifiedName:
@@ -9,8 +8,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
   startLine: 6
 syntax:
   content:
@@ -27,8 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddProject
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddProject
   qualifiedName:
@@ -37,15 +35,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 8
   syntax:
     content:
       CSharp: AddProject = 0
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveProject
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveProject
   qualifiedName:
@@ -54,15 +51,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 9
   syntax:
     content:
       CSharp: RemoveProject = 1
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddProjectReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddProjectReference
   qualifiedName:
@@ -71,15 +67,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 10
   syntax:
     content:
       CSharp: AddProjectReference = 2
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveProjectReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveProjectReference
   qualifiedName:
@@ -88,15 +83,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 11
   syntax:
     content:
       CSharp: RemoveProjectReference = 3
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddMetadataReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddMetadataReference
   qualifiedName:
@@ -105,15 +99,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 12
   syntax:
     content:
       CSharp: AddMetadataReference = 4
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveMetadataReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveMetadataReference
   qualifiedName:
@@ -122,15 +115,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 13
   syntax:
     content:
       CSharp: RemoveMetadataReference = 5
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -139,15 +131,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 14
   syntax:
     content:
       CSharp: AddDocument = 6
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveDocument
   qualifiedName:
@@ -156,15 +147,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 15
   syntax:
     content:
       CSharp: RemoveDocument = 7
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeDocument
   qualifiedName:
@@ -173,15 +163,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 16
   syntax:
     content:
       CSharp: ChangeDocument = 8
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddAnalyzerReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddAnalyzerReference
   qualifiedName:
@@ -190,15 +179,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 17
   syntax:
     content:
       CSharp: AddAnalyzerReference = 9
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveAnalyzerReference
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveAnalyzerReference
   qualifiedName:
@@ -207,15 +195,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 18
   syntax:
     content:
       CSharp: RemoveAnalyzerReference = 10
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddAdditionalDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -224,15 +211,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 19
   syntax:
     content:
       CSharp: AddAdditionalDocument = 11
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveAdditionalDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveAdditionalDocument
   qualifiedName:
@@ -241,15 +227,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 20
   syntax:
     content:
       CSharp: RemoveAdditionalDocument = 12
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeAdditionalDocument
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeAdditionalDocument
   qualifiedName:
@@ -258,15 +243,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 21
   syntax:
     content:
       CSharp: ChangeAdditionalDocument = 13
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeCompilationOptions
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeCompilationOptions
   qualifiedName:
@@ -275,15 +259,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 22
   syntax:
     content:
       CSharp: ChangeCompilationOptions = 14
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeParseOptions
-  yaml: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind
+  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeParseOptions
   qualifiedName:
@@ -292,8 +275,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
     startLine: 23
   syntax:
     content:

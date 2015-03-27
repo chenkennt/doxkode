@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ErrorReporting
-yaml: api/Microsoft.CodeAnalysis.ErrorReporting.yaml
-href: api/Microsoft.CodeAnalysis.ErrorReporting
+href: api/Microsoft.CodeAnalysis.ErrorReporting.yaml
 name:
   CSharp: ErrorReporting
 qualifiedName:
@@ -9,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Compilers/Core/Portable/InternalUtilities/FatalError.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Compilers/Core/Portable/InternalUtilities/FatalError.cs
   startLine: 8

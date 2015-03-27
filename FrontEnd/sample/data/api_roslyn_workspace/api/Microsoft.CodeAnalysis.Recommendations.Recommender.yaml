@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Recommendations.Recommender
-yaml: api/Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
-href: api/Microsoft.CodeAnalysis.Recommendations.Recommender
+href: api/Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
 name:
   CSharp: Recommender
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
   startLine: 10
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Recommendations.Recommender.GetRecommendedSymbolsAtPosition(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
-  href: api/Microsoft.CodeAnalysis.Recommendations.Recommender
+  href: api/Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
   name:
     CSharp: GetRecommendedSymbolsAtPosition
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
     startLine: 12
   syntax:
     content:
@@ -52,12 +50,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

@@ -40,10 +40,6 @@
     href: api/TestClass1.Base.BaseClassForTestClass1.yaml
     name:
       CSharp: BaseClassForTestClass1
-- id: TestClass1.TestClass1
-  href: api/TestClass1.TestClass1.yaml
-  name:
-    CSharp: TestClass1
 - id: TestClass1.TestClass1.TestClassInnerNamesapce
   href: api/TestClass1.TestClass1.TestClassInnerNamesapce.yaml
   name:
@@ -75,23 +71,3 @@
     href: api/VBTestClass1.BaseClass1.yaml
     name:
       VB: BaseClass1
-- id: VBTestClass1.My
-  href: api/VBTestClass1.My.yaml
-  name:
-    VB: My
-- id: VBTestClass1.My.Resources
-  href: api/VBTestClass1.My.Resources.yaml
-  name:
-    VB: Resources
-- id: My
-  href: api/My.yaml
-  name:
-    VB: My
-- id: Microsoft
-  href: api/Microsoft.yaml
-  name:
-    VB: Microsoft
-- id: Microsoft.VisualBasic
-  href: api/Microsoft.VisualBasic.yaml
-  name:
-    VB: VisualBasic

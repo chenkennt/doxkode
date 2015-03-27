@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.IPersistentStorage
-yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
 name:
   CSharp: IPersistentStorage
 qualifiedName:
@@ -9,16 +8,15 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
   startLine: 9
 syntax:
   content:
     CSharp: public interface IPersistentStorage
 items:
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(System.String,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -27,8 +25,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 11
   syntax:
     content:
@@ -47,8 +45,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(Microsoft.CodeAnalysis.Project,System.String,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -57,8 +54,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 12
   syntax:
     content:
@@ -68,7 +65,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -82,8 +78,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(Microsoft.CodeAnalysis.Document,System.String,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -92,8 +87,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 13
   syntax:
     content:
@@ -103,7 +98,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     - id: name
       type:
         id: System.String
@@ -117,8 +111,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(System.String,System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -127,8 +120,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 15
   syntax:
     content:
@@ -152,8 +145,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(Microsoft.CodeAnalysis.Project,System.String,System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -162,8 +154,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 16
   syntax:
     content:
@@ -173,7 +165,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     - id: name
       type:
         id: System.String
@@ -192,8 +183,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(Microsoft.CodeAnalysis.Document,System.String,System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage
+  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -202,8 +192,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
     startLine: 17
   syntax:
     content:
@@ -213,7 +203,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     - id: name
       type:
         id: System.String

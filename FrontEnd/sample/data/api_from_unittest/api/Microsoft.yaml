@@ -1,6 +1,5 @@
 id: Microsoft
-yaml: api/Microsoft.yaml
-href: api/Microsoft
+href: api/Microsoft.yaml
 language: VB
 name:
   VB: Microsoft

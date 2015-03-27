@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Rename.RenameEntityKind
-yaml: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
-href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind
+href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
 name:
   CSharp: RenameEntityKind
 qualifiedName:
@@ -9,8 +8,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
   startLine: 10
 syntax:
   content:
@@ -27,8 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Rename.RenameEntityKind.BaseSymbol
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind
+  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
   name:
     CSharp: BaseSymbol
   qualifiedName:
@@ -37,16 +35,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
     startLine: 15
   summary: mentions that the result is for the base symbol of the rename
   syntax:
     content:
       CSharp: BaseSymbol = 0
 - id: Microsoft.CodeAnalysis.Rename.RenameEntityKind.OverloadedSymbols
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind
+  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
   name:
     CSharp: OverloadedSymbols
   qualifiedName:
@@ -55,8 +52,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
     startLine: 20
   summary: mentions that the result is for the overloaded symbols of the rename
   syntax:

@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Options.IOption
-yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-href: api/Microsoft.CodeAnalysis.Options.IOption
+href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
 name:
   CSharp: IOption
 qualifiedName:
@@ -9,16 +8,15 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
   startLine: 6
 syntax:
   content:
     CSharp: public interface IOption
 items:
 - id: Microsoft.CodeAnalysis.Options.IOption.Feature
-  yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-  href: api/Microsoft.CodeAnalysis.Options.IOption
+  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Feature
   qualifiedName:
@@ -27,8 +25,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
     startLine: 8
   syntax:
     content:
@@ -40,8 +38,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.Name
-  yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-  href: api/Microsoft.CodeAnalysis.Options.IOption
+  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -50,8 +47,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
     startLine: 9
   syntax:
     content:
@@ -63,8 +60,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.Type
-  yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-  href: api/Microsoft.CodeAnalysis.Options.IOption
+  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Type
   qualifiedName:
@@ -73,8 +69,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
     startLine: 10
   syntax:
     content:
@@ -86,8 +82,7 @@ items:
         name: System.Type
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.DefaultValue
-  yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-  href: api/Microsoft.CodeAnalysis.Options.IOption
+  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: DefaultValue
   qualifiedName:
@@ -96,8 +91,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
     startLine: 11
   syntax:
     content:
@@ -109,8 +104,7 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.IsPerLanguage
-  yaml: api/Microsoft.CodeAnalysis.Options.IOption.yaml
-  href: api/Microsoft.CodeAnalysis.Options.IOption
+  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: IsPerLanguage
   qualifiedName:
@@ -119,8 +113,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/IOption.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/IOption.cs
     startLine: 12
   syntax:
     content:

@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
-yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
 name:
   CSharp: DeclarationModifiers
 qualifiedName:
@@ -9,8 +8,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
   startLine: 7
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.From(Microsoft.CodeAnalysis.ISymbol)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: From
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 45
   syntax:
     content:
@@ -49,8 +47,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsStatic
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsStatic
   qualifiedName:
@@ -59,8 +56,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 62
   syntax:
     content:
@@ -79,8 +76,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAbstract
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsAbstract
   qualifiedName:
@@ -89,8 +85,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 67
   syntax:
     content:
@@ -109,8 +105,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsNew
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsNew
   qualifiedName:
@@ -119,8 +114,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 72
   syntax:
     content:
@@ -139,8 +134,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsUnsafe
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsUnsafe
   qualifiedName:
@@ -149,8 +143,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 77
   syntax:
     content:
@@ -169,8 +163,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsReadOnly
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsReadOnly
   qualifiedName:
@@ -179,8 +172,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 82
   syntax:
     content:
@@ -199,8 +192,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsVirtual
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsVirtual
   qualifiedName:
@@ -209,8 +201,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 87
   syntax:
     content:
@@ -229,8 +221,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsOverride
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsOverride
   qualifiedName:
@@ -239,8 +230,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 92
   syntax:
     content:
@@ -259,8 +250,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsSealed
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsSealed
   qualifiedName:
@@ -269,8 +259,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 97
   syntax:
     content:
@@ -289,8 +279,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsConst
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsConst
   qualifiedName:
@@ -299,8 +288,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 102
   syntax:
     content:
@@ -319,8 +308,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsWithEvents
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsWithEvents
   qualifiedName:
@@ -329,8 +317,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 107
   syntax:
     content:
@@ -349,8 +337,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsPartial
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsPartial
   qualifiedName:
@@ -359,8 +346,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 112
   syntax:
     content:
@@ -379,8 +366,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAsync
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsAsync
   qualifiedName:
@@ -389,8 +375,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 117
   syntax:
     content:
@@ -409,8 +395,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsStatic(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsStatic
   qualifiedName:
@@ -419,8 +404,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 122
   syntax:
     content:
@@ -434,8 +419,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsAbstract(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsAbstract
   qualifiedName:
@@ -444,8 +428,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 127
   syntax:
     content:
@@ -459,8 +443,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsNew(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsNew
   qualifiedName:
@@ -469,8 +452,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 132
   syntax:
     content:
@@ -484,8 +467,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsUnsafe(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsUnsafe
   qualifiedName:
@@ -494,8 +476,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 137
   syntax:
     content:
@@ -509,8 +491,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsReadOnly(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsReadOnly
   qualifiedName:
@@ -519,8 +500,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 142
   syntax:
     content:
@@ -534,8 +515,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsVirtual(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsVirtual
   qualifiedName:
@@ -544,8 +524,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 147
   syntax:
     content:
@@ -559,8 +539,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsOverride(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsOverride
   qualifiedName:
@@ -569,8 +548,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 152
   syntax:
     content:
@@ -584,8 +563,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsSealed(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsSealed
   qualifiedName:
@@ -594,8 +572,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 157
   syntax:
     content:
@@ -609,8 +587,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsConst(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsConst
   qualifiedName:
@@ -619,8 +596,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 162
   syntax:
     content:
@@ -634,8 +611,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithWithEvents(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithWithEvents
   qualifiedName:
@@ -644,8 +620,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 167
   syntax:
     content:
@@ -659,8 +635,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithPartial(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithPartial
   qualifiedName:
@@ -669,8 +644,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 172
   syntax:
     content:
@@ -684,8 +659,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithAsync(System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithAsync
   qualifiedName:
@@ -694,8 +668,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 177
   syntax:
     content:
@@ -709,8 +683,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.None
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -719,15 +692,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 205
   syntax:
     content:
       CSharp: None
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Static
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Static
   qualifiedName:
@@ -736,15 +708,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 207
   syntax:
     content:
       CSharp: Static
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Abstract
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Abstract
   qualifiedName:
@@ -753,15 +724,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 208
   syntax:
     content:
       CSharp: Abstract
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.New
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: New
   qualifiedName:
@@ -770,15 +740,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 209
   syntax:
     content:
       CSharp: New
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Unsafe
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Unsafe
   qualifiedName:
@@ -787,15 +756,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 210
   syntax:
     content:
       CSharp: Unsafe
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ReadOnly
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: ReadOnly
   qualifiedName:
@@ -804,15 +772,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 211
   syntax:
     content:
       CSharp: ReadOnly
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Virtual
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Virtual
   qualifiedName:
@@ -821,15 +788,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 212
   syntax:
     content:
       CSharp: Virtual
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Override
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Override
   qualifiedName:
@@ -838,15 +804,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 213
   syntax:
     content:
       CSharp: Override
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Sealed
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Sealed
   qualifiedName:
@@ -855,15 +820,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 214
   syntax:
     content:
       CSharp: Sealed
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Const
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Const
   qualifiedName:
@@ -872,15 +836,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 215
   syntax:
     content:
       CSharp: Const
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithEvents
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithEvents
   qualifiedName:
@@ -889,15 +852,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 216
   syntax:
     content:
       CSharp: WithEvents
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Partial
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Partial
   qualifiedName:
@@ -906,15 +868,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 217
   syntax:
     content:
       CSharp: Partial
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Async
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Async
   qualifiedName:
@@ -923,15 +884,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 218
   syntax:
     content:
       CSharp: Async
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseOr(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_BitwiseOr
   qualifiedName:
@@ -940,8 +900,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 220
   syntax:
     content:
@@ -958,17 +918,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseAnd(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_BitwiseAnd
   qualifiedName:
@@ -977,8 +934,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 225
   syntax:
     content:
@@ -995,17 +952,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Addition(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Addition
   qualifiedName:
@@ -1014,8 +968,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 230
   syntax:
     content:
@@ -1032,17 +986,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Subtraction(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Subtraction
   qualifiedName:
@@ -1051,8 +1002,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 235
   syntax:
     content:
@@ -1069,17 +1020,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -1088,8 +1036,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 240
   syntax:
     content:
@@ -1099,12 +1047,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -1113,8 +1059,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 245
   syntax:
     content:
@@ -1128,8 +1074,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.GetHashCode
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -1138,8 +1083,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 250
   syntax:
     content:
@@ -1148,8 +1093,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Equality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -1158,8 +1102,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 255
   syntax:
     content:
@@ -1176,17 +1120,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Inequality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -1195,8 +1136,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 260
   syntax:
     content:
@@ -1213,17 +1154,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ToString
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -1232,8 +1170,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 265
   syntax:
     content:

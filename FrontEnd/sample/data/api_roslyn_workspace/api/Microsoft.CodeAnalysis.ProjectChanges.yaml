@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectChanges
-yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-href: api/Microsoft.CodeAnalysis.ProjectChanges
+href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
 name:
   CSharp: ProjectChanges
 qualifiedName:
@@ -9,8 +8,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
   startLine: 9
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ProjectChanges.ProjectId
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 20
   syntax:
     content:
@@ -52,10 +50,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.ProjectChanges.OldProject
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: OldProject
   qualifiedName:
@@ -64,8 +60,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 25
   syntax:
     content:
@@ -82,10 +78,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.ProjectChanges.NewProject
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: NewProject
   qualifiedName:
@@ -94,8 +88,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 30
   syntax:
     content:
@@ -112,10 +106,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedProjectReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedProjectReferences
   qualifiedName:
@@ -124,8 +116,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 35
   syntax:
     content:
@@ -134,8 +126,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedProjectReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedProjectReferences
   qualifiedName:
@@ -144,8 +135,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 47
   syntax:
     content:
@@ -154,8 +145,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedMetadataReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedMetadataReferences
   qualifiedName:
@@ -164,8 +154,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 59
   syntax:
     content:
@@ -174,8 +164,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedMetadataReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedMetadataReferences
   qualifiedName:
@@ -184,8 +173,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 71
   syntax:
     content:
@@ -194,8 +183,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedAnalyzerReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedAnalyzerReferences
   qualifiedName:
@@ -204,8 +192,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 83
   syntax:
     content:
@@ -214,8 +202,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedAnalyzerReferences
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedAnalyzerReferences
   qualifiedName:
@@ -224,8 +211,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 95
   syntax:
     content:
@@ -234,8 +221,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedDocuments
   qualifiedName:
@@ -244,8 +230,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 107
   syntax:
     content:
@@ -254,8 +240,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedAdditionalDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedAdditionalDocuments
   qualifiedName:
@@ -264,8 +249,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 118
   syntax:
     content:
@@ -274,8 +259,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetChangedDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetChangedDocuments
   qualifiedName:
@@ -284,8 +268,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 129
   syntax:
     content:
@@ -294,8 +278,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetChangedAdditionalDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetChangedAdditionalDocuments
   qualifiedName:
@@ -304,8 +287,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 143
   syntax:
     content:
@@ -314,8 +297,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedDocuments
   qualifiedName:
@@ -324,8 +306,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 157
   syntax:
     content:
@@ -334,8 +316,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedAdditionalDocuments
-  yaml: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectChanges
+  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedAdditionalDocuments
   qualifiedName:
@@ -344,8 +325,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
     startLine: 168
   syntax:
     content:

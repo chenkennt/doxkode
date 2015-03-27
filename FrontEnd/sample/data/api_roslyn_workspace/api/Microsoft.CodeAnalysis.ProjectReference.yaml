@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectReference
-yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-href: api/Microsoft.CodeAnalysis.ProjectReference
+href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
 name:
   CSharp: ProjectReference
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
   startLine: 11
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ProjectReference.#ctor(Microsoft.CodeAnalysis.ProjectId,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: ProjectReference(Microsoft.CodeAnalysis.ProjectId,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 18
   syntax:
     content:
@@ -42,7 +40,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
@@ -56,8 +53,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ProjectReference.ProjectId
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -66,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 27
   syntax:
     content:
@@ -77,10 +73,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.ProjectReference.Aliases
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: Aliases
   qualifiedName:
@@ -89,8 +83,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 32
   summary: Aliases for the reference. Empty if the reference has no aliases.
   syntax:
@@ -103,8 +97,7 @@ items:
         name: System.Collections.Immutable.ImmutableArray{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectReference.EmbedInteropTypes
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: EmbedInteropTypes
   qualifiedName:
@@ -113,8 +106,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 37
   summary: True if interop types defined in the referenced project should be embedded into the referencing project.
   syntax:
@@ -127,8 +120,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ProjectReference.Equals(System.Object)
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -137,8 +129,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 39
   syntax:
     content:
@@ -152,8 +144,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.Equals(Microsoft.CodeAnalysis.ProjectReference)
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -162,8 +153,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 44
   syntax:
     content:
@@ -173,12 +164,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.op_Equality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -187,8 +176,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 57
   syntax:
     content:
@@ -205,17 +194,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.op_Inequality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -224,8 +210,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 62
   syntax:
     content:
@@ -242,17 +228,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.GetHashCode
-  yaml: api/Microsoft.CodeAnalysis.ProjectReference.yaml
-  href: api/Microsoft.CodeAnalysis.ProjectReference
+  href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -261,8 +244,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 67
   syntax:
     content:

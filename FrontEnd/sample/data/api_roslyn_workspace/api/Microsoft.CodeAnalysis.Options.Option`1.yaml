@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Options.Option`1
-yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-href: api/Microsoft.CodeAnalysis.Options.Option`1
+href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
 name:
   CSharp: Option`1
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
   startLine: 9
 summary: An global option. An instance of this class can be used to access an option value from an OptionSet.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Options.Option`1.Feature
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Feature
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 14
   summary: Feature this option is associated with.
   syntax:
@@ -46,8 +44,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.Name
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -56,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 19
   summary: The name of the option.
   syntax:
@@ -70,8 +67,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.Type
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Type
   qualifiedName:
@@ -80,8 +76,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 24
   summary: The type of the option value.
   syntax:
@@ -101,8 +97,7 @@ items:
         name: System.Type
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.DefaultValue
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: DefaultValue
   qualifiedName:
@@ -111,8 +106,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 32
   summary: The default value of the option.
   syntax:
@@ -125,8 +120,7 @@ items:
         name: T
         href: T
 - id: Microsoft.CodeAnalysis.Options.Option`1.#ctor(System.String,System.String,`0)
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Option`1(System.String,System.String,`0)
   qualifiedName:
@@ -135,8 +129,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 34
   syntax:
     content:
@@ -160,8 +154,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Options.Option`1.ToString
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -170,8 +163,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 66
   syntax:
     content:
@@ -180,8 +173,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Options.Option`1.op_Implicit(Microsoft.CodeAnalysis.Options.Option{`0})~Microsoft.CodeAnalysis.Options.OptionKey
-  yaml: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
-  href: api/Microsoft.CodeAnalysis.Options.Option`1
+  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: op_Implicit
   qualifiedName:
@@ -190,8 +182,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Options/Option`1.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 71
   syntax:
     content:
@@ -208,6 +200,5 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.Option`1
         name: Option
-        href: api/Microsoft.CodeAnalysis.Options.Option`1
     return:
       id: OptionKey

@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.SolutionInfo
-yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-href: api/Microsoft.CodeAnalysis.SolutionInfo
+href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
 name:
   CSharp: SolutionInfo
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
   startLine: 16
 summary: A class that represents all the arguments necessary to create a new solution instance.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SolutionInfo.Id
-  yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionInfo
+  href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 21
   summary: The unique Id of the solution.
   syntax:
@@ -44,10 +42,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
 - id: Microsoft.CodeAnalysis.SolutionInfo.Version
-  yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionInfo
+  href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
     CSharp: Version
   qualifiedName:
@@ -56,8 +52,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 26
   summary: The version of the solution.
   syntax:
@@ -68,10 +64,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp
 - id: Microsoft.CodeAnalysis.SolutionInfo.FilePath
-  yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionInfo
+  href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -80,8 +74,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 31
   summary: The path to the solution file, or null if there is no solution file.
   syntax:
@@ -94,8 +88,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionInfo.Projects
-  yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionInfo
+  href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
     CSharp: Projects
   qualifiedName:
@@ -104,8 +97,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 36
   summary: A list of projects initially associated with the solution.
   syntax:
@@ -118,8 +111,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectInfo}
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionInfo.Create(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.VersionStamp,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
-  yaml: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
-  href: api/Microsoft.CodeAnalysis.SolutionInfo
+  href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -128,8 +120,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 53
   summary: Create a new instance of a SolutionInfo.
   syntax:
@@ -140,12 +132,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId
     - id: version
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp
     - id: filePath
       type:
         id: System.String

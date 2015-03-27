@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Project
-yaml: api/Microsoft.CodeAnalysis.Project.yaml
-href: api/Microsoft.CodeAnalysis.Project
+href: api/Microsoft.CodeAnalysis.Project.yaml
 name:
   CSharp: Project
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
   startLine: 20
-summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](#/api/Microsoft.CodeAnalysis.Project).
+summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](#/).
 syntax:
   content:
     CSharp: public partial class Project
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Project.Solution
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Solution
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 45
   summary: The solution this project is part of.
   syntax:
@@ -57,10 +55,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution
 - id: Microsoft.CodeAnalysis.Project.Id
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -69,11 +65,11 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 57
   summary: >-
-    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](#/api/Microsoft.CodeAnalysis.Project) instances may share the same ID. However, only
+    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](#/) instances may share the same ID. However, only
 
     one project may have this ID in any given solution.
   syntax:
@@ -97,10 +93,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId
 - id: Microsoft.CodeAnalysis.Project.FilePath
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -109,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 68
   summary: The path to the project file or null if there is no project file.
   syntax:
@@ -136,8 +130,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.OutputFilePath
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: OutputFilePath
   qualifiedName:
@@ -146,8 +139,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 79
   summary: The path to the output file, or null if it is not known.
   syntax:
@@ -173,8 +166,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.SupportsCompilation
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: SupportsCompilation
   qualifiedName:
@@ -183,13 +175,13 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 93
   summary: >-
-    true if this [Microsoft.CodeAnalysis.Project](#/api/Microsoft.CodeAnalysis.Project) supports providing data through the
+    true if this [Microsoft.CodeAnalysis.Project](#/) supports providing data through the
 
-    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](#/api/Microsoft.CodeAnalysis.Project) method.
+    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](#/) method.
 
 
 
@@ -217,8 +209,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.LanguageServices
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: LanguageServices
   qualifiedName:
@@ -227,8 +218,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 104
   summary: The language services from the host environment associated with this project's language.
   syntax:
@@ -246,10 +237,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostLanguageServices
         name: HostLanguageServices
-        href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices
 - id: Microsoft.CodeAnalysis.Project.Language
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Language
   qualifiedName:
@@ -258,8 +247,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 112
   summary: The language associated with the project.
   syntax:
@@ -285,8 +274,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AssemblyName
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AssemblyName
   qualifiedName:
@@ -295,8 +283,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 123
   summary: The name of the assembly this project represents.
   syntax:
@@ -322,8 +310,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.Name
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -332,8 +319,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 134
   summary: The name of the project. This may be different than the assembly name.
   syntax:
@@ -359,8 +346,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.MetadataReferences
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: MetadataReferences
   qualifiedName:
@@ -369,8 +355,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 145
   summary: The list of all other metadata sources (assemblies) that this project references.
   syntax:
@@ -396,8 +382,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.MetadataReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.ProjectReferences
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ProjectReferences
   qualifiedName:
@@ -406,8 +391,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 156
   summary: The list of all other projects within the same solution that this project references.
   syntax:
@@ -433,8 +418,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AllProjectReferences
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AllProjectReferences
   qualifiedName:
@@ -443,8 +427,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 168
   summary: >-
     The list of all other projects that this project references, including projects that
@@ -473,8 +457,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AnalyzerReferences
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AnalyzerReferences
   qualifiedName:
@@ -483,8 +466,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 179
   summary: The list of all the diagnostic analyzer references for this project.
   syntax:
@@ -510,8 +493,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AnalyzerOptions
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AnalyzerOptions
   qualifiedName:
@@ -520,8 +502,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 190
   summary: The options used by analyzers for this project.
   syntax:
@@ -547,8 +529,7 @@ items:
         name: AnalyzerOptions
         href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Project.CompilationOptions
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: CompilationOptions
   qualifiedName:
@@ -557,8 +538,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 201
   summary: The options used when building the compilation for this project.
   syntax:
@@ -584,8 +565,7 @@ items:
         name: CompilationOptions
         href: Microsoft.CodeAnalysis.CompilationOptions
 - id: Microsoft.CodeAnalysis.Project.ParseOptions
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ParseOptions
   qualifiedName:
@@ -594,8 +574,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 212
   summary: The options used when parsing documents for this project.
   syntax:
@@ -621,8 +601,7 @@ items:
         name: ParseOptions
         href: Microsoft.CodeAnalysis.ParseOptions
 - id: Microsoft.CodeAnalysis.Project.IsSubmission
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: IsSubmission
   qualifiedName:
@@ -631,8 +610,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 223
   summary: Returns true if this is a submission project.
   syntax:
@@ -658,8 +637,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.HasDocuments
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: HasDocuments
   qualifiedName:
@@ -668,8 +646,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 234
   summary: True if the project has any documents.
   syntax:
@@ -695,8 +673,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.DocumentIds
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: DocumentIds
   qualifiedName:
@@ -705,8 +682,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 245
   summary: All the document IDs associated with this project.
   syntax:
@@ -732,8 +709,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AdditionalDocumentIds
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AdditionalDocumentIds
   qualifiedName:
@@ -742,8 +718,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 256
   summary: All the additional document IDs associated with this project.
   syntax:
@@ -769,8 +745,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.Documents
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Documents
   qualifiedName:
@@ -779,8 +754,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 267
   summary: All the documents associated with this project.
   syntax:
@@ -806,8 +781,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Document}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AdditionalDocuments
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AdditionalDocuments
   qualifiedName:
@@ -816,8 +790,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 275
   syntax:
     content:
@@ -842,8 +816,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.TextDocument}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.ContainsDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ContainsDocument
   qualifiedName:
@@ -852,8 +825,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 286
   summary: True if the project contains a document with the specified ID.
   syntax:
@@ -864,12 +837,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.ContainsAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ContainsAdditionalDocument
   qualifiedName:
@@ -878,8 +849,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 294
   summary: True if the project contains an additional document with the specified ID.
   syntax:
@@ -890,12 +861,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetDocumentId(Microsoft.CodeAnalysis.SyntaxTree)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocumentId
   qualifiedName:
@@ -904,8 +873,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 302
   summary: Get the documentId in this project with the specified syntax tree.
   syntax:
@@ -920,8 +889,7 @@ items:
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.SyntaxTree)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocument
   qualifiedName:
@@ -930,8 +898,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 310
   summary: Get the document in this project with the specified syntax tree.
   syntax:
@@ -946,8 +914,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocument
   qualifiedName:
@@ -956,8 +923,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 318
   summary: Get the document in this project with the specified document Id.
   syntax:
@@ -968,12 +935,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetAdditionalDocument
   qualifiedName:
@@ -982,8 +947,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 331
   summary: Get the additional document in this project with the specified document Id.
   syntax:
@@ -994,12 +959,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.TryGetCompilation(Microsoft.CodeAnalysis.Compilation@)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: TryGetCompilation
   qualifiedName:
@@ -1008,8 +971,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 376
   summary: Get the [Microsoft.CodeAnalysis.Compilation](#) for this project if it is available.
   syntax:
@@ -1024,8 +987,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetCompilationAsync
   qualifiedName:
@@ -1034,8 +996,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 384
   summary: Get the [Microsoft.CodeAnalysis.Compilation](#) for this project asynchronously.
   syntax:
@@ -1050,8 +1012,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetChanges(Microsoft.CodeAnalysis.Project)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetChanges
   qualifiedName:
@@ -1060,8 +1021,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 392
   summary: Gets an object that lists the added, changed and removed documents between this project and the specified project.
   syntax:
@@ -1072,12 +1033,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project
     return:
       id: ProjectChanges
 - id: Microsoft.CodeAnalysis.Project.Version
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Version
   qualifiedName:
@@ -1086,8 +1045,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 413
   summary: The project version. This equates to the version of the project file.
   syntax:
@@ -1111,10 +1070,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp
 - id: Microsoft.CodeAnalysis.Project.GetLatestDocumentVersionAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetLatestDocumentVersionAsync
   qualifiedName:
@@ -1123,8 +1080,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 424
   summary: The version of the most recently modified document.
   syntax:
@@ -1139,8 +1096,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetDependentVersionAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDependentVersionAsync
   qualifiedName:
@@ -1149,8 +1105,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 432
   summary: The most recent version of the project, its documents and all dependent projects and documents.
   syntax:
@@ -1165,8 +1121,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetDependentSemanticVersionAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDependentSemanticVersionAsync
   qualifiedName:
@@ -1175,8 +1130,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 441
   summary: >-
     The semantic version of this project including the semantics of referenced projects.
@@ -1194,8 +1149,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetSemanticVersionAsync(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetSemanticVersionAsync
   qualifiedName:
@@ -1204,8 +1158,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 450
   summary: >-
     The semantic version of this project not including the semantics of referenced projects.
@@ -1223,8 +1177,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.WithAssemblyName(System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithAssemblyName
   qualifiedName:
@@ -1233,8 +1186,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 460
   summary: Creates a new instance of this project updated to have the new assembly name.
   syntax:
@@ -1249,8 +1202,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithCompilationOptions(Microsoft.CodeAnalysis.CompilationOptions)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithCompilationOptions
   qualifiedName:
@@ -1259,8 +1211,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 468
   summary: Creates a new instance of this project updated to have the specified compilation options.
   syntax:
@@ -1275,8 +1227,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithParseOptions(Microsoft.CodeAnalysis.ParseOptions)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithParseOptions
   qualifiedName:
@@ -1285,8 +1236,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 476
   summary: Creates a new instance of this project updated to have the specified parse options.
   syntax:
@@ -1301,8 +1252,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReference(Microsoft.CodeAnalysis.ProjectReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddProjectReference
   qualifiedName:
@@ -1311,8 +1261,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 485
   summary: >-
     Creates a new instance of this project updated to include the specified project reference
@@ -1326,12 +1276,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddProjectReferences
   qualifiedName:
@@ -1340,8 +1288,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 494
   summary: >-
     Creates a new instance of this project updated to include the specified project references
@@ -1359,8 +1307,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveProjectReference(Microsoft.CodeAnalysis.ProjectReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveProjectReference
   qualifiedName:
@@ -1369,8 +1316,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 502
   summary: Creates a new instance of this project updated to no longer include the specified project reference.
   syntax:
@@ -1381,12 +1328,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithProjectReferences
   qualifiedName:
@@ -1395,8 +1340,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 511
   summary: >-
     Creates a new instance of this project updated to replace existing project references
@@ -1414,8 +1359,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddMetadataReference(Microsoft.CodeAnalysis.MetadataReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddMetadataReference
   qualifiedName:
@@ -1424,8 +1368,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 520
   summary: >-
     Creates a new instance of this project updated to include the specified metadata reference
@@ -1443,8 +1387,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddMetadataReferences
   qualifiedName:
@@ -1453,8 +1396,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 529
   summary: >-
     Creates a new instance of this project updated to include the specified metadata references
@@ -1472,8 +1415,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveMetadataReference(Microsoft.CodeAnalysis.MetadataReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveMetadataReference
   qualifiedName:
@@ -1482,8 +1424,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 537
   summary: Creates a new instance of this project updated to no longer include the specified metadata reference.
   syntax:
@@ -1498,8 +1440,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithMetadataReferences
   qualifiedName:
@@ -1508,8 +1449,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 546
   summary: >-
     Creates a new instance of this project updated to replace existing metadata reference
@@ -1527,8 +1468,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddAnalyzerReference(Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAnalyzerReference
   qualifiedName:
@@ -1537,8 +1477,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 555
   summary: >-
     Creates a new instance of this project updated to include the specified analyzer reference
@@ -1556,8 +1496,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAnalyzerReferences
   qualifiedName:
@@ -1566,8 +1505,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 564
   summary: >-
     Creates a new instance of this project updated to include the specified analyzer references
@@ -1585,8 +1524,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveAnalyzerReference(Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveAnalyzerReference
   qualifiedName:
@@ -1595,8 +1533,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 572
   summary: Creates a new instance of this project updated to no longer include the specified analyzer reference.
   syntax:
@@ -1611,8 +1549,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithAnalyzerReferences
   qualifiedName:
@@ -1621,8 +1558,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 581
   summary: >-
     Creates a new instance of this project updated to replace existing analyzer references
@@ -1640,8 +1577,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String},System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1650,8 +1586,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 589
   summary: Creates a new document in a new instance of this project.
   syntax:
@@ -1681,8 +1617,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{System.String},System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1691,8 +1626,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 601
   summary: Creates a new document in a new instance of this project.
   syntax:
@@ -1722,8 +1657,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1732,8 +1666,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 610
   summary: Creates a new document in a new instance of this project.
   syntax:
@@ -1763,8 +1697,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddAdditionalDocument(System.String,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{System.String},System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -1773,8 +1706,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 619
   summary: Creates a new additional document in a new instance of this project.
   syntax:
@@ -1804,8 +1737,7 @@ items:
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.AddAdditionalDocument(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -1814,8 +1746,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 628
   summary: Creates a new additional document in a new instance of this project.
   syntax:
@@ -1845,8 +1777,7 @@ items:
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.RemoveDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveDocument
   qualifiedName:
@@ -1855,8 +1786,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 637
   summary: Creates a new instance of this project updated to no longer include the specified document.
   syntax:
@@ -1867,12 +1798,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.Project.yaml
-  href: api/Microsoft.CodeAnalysis.Project
+  href: api/Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveAdditionalDocument
   qualifiedName:
@@ -1881,8 +1810,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 645
   summary: Creates a new instance of this project updated to no longer include the specified additional document.
   syntax:
@@ -1893,6 +1822,5 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Project

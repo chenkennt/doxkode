@@ -1,6 +1,5 @@
 id: My
-yaml: api/My.yaml
-href: api/My
+href: api/My.yaml
 language: VB
 name:
   VB: My

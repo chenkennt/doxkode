@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
-yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
 name:
   CSharp: SymbolCallerInfo
 qualifiedName:
@@ -9,8 +8,8 @@ type: Struct
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
   startLine: 24
 summary: >-
   Contains information about a call from one symbol to another.  The symbol making the call is
@@ -38,8 +37,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CallingSymbol
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: CallingSymbol
   qualifiedName:
@@ -48,8 +46,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 29
   summary: The symbol that is calling the symbol being called.
   syntax:
@@ -62,8 +60,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.Locations
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: Locations
   qualifiedName:
@@ -72,8 +69,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 34
   summary: The locations inside the calling symbol where the called symbol is referenced.
   syntax:
@@ -86,8 +83,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CalledSymbol
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: CalledSymbol
   qualifiedName:
@@ -96,8 +92,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 39
   summary: The symbol being called.
   syntax:
@@ -110,8 +106,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.IsDirect
-  yaml: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
+  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: IsDirect
   qualifiedName:
@@ -120,8 +115,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 47
   summary: >-
     True if the CallingSymbol is directly calling CalledSymbol.  False if it is calling a

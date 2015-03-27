@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Rename
-yaml: api/Microsoft.CodeAnalysis.Rename.yaml
-href: api/Microsoft.CodeAnalysis.Rename
+href: api/Microsoft.CodeAnalysis.Rename.yaml
 name:
   CSharp: Rename
 qualifiedName:
@@ -9,19 +8,16 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Rename/ConflictEngine/Annotations/RenameActionAnnotation.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/ConflictEngine/Annotations/RenameActionAnnotation.cs
   startLine: 5
 items:
 - id: Microsoft.CodeAnalysis.Rename.RenameEntityKind
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind
+  href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml
   type: Enum
 - id: Microsoft.CodeAnalysis.Rename.RenameOptions
-  yaml: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions
+  href: api/Microsoft.CodeAnalysis.Rename.RenameOptions.yaml
   type: Class
 - id: Microsoft.CodeAnalysis.Rename.Renamer
-  yaml: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
-  href: api/Microsoft.CodeAnalysis.Rename.Renamer
+  href: api/Microsoft.CodeAnalysis.Rename.Renamer.yaml
   type: Class

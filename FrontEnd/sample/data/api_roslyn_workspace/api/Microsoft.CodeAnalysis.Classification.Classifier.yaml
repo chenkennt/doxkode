@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Classification.Classifier
-yaml: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
-href: api/Microsoft.CodeAnalysis.Classification.Classifier
+href: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
 name:
   CSharp: Classifier
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/Classifier.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/Classifier.cs
   startLine: 15
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Classification.Classifier.GetClassifiedSpansAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.Classifier
+  href: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
   name:
     CSharp: GetClassifiedSpansAsync
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/Classifier.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/Classifier.cs
     startLine: 17
   syntax:
     content:
@@ -42,7 +40,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     - id: textSpan
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
@@ -56,8 +53,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Classification.Classifier.GetClassifiedSpans(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
-  href: api/Microsoft.CodeAnalysis.Classification.Classifier
+  href: api/Microsoft.CodeAnalysis.Classification.Classifier.yaml
   name:
     CSharp: GetClassifiedSpans
   qualifiedName:
@@ -66,8 +62,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Classification/Classifier.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/Classifier.cs
     startLine: 26
   syntax:
     content:
@@ -87,7 +83,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

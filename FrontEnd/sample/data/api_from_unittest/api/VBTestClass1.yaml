@@ -1,6 +1,5 @@
 id: VBTestClass1
-yaml: api/VBTestClass1.yaml
-href: api/VBTestClass1
+href: api/VBTestClass1.yaml
 language: VB
 name:
   VB: VBTestClass1
@@ -8,15 +7,17 @@ qualifiedName:
   VB: VBTestClass1
 type: Namespace
 source:
-  path: C:\Users\lianwei\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-52-gcaedae8
+  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/My Project/AssemblyInfo.vb
 items:
 - id: VBTestClass1.Class1
-  yaml: api/VBTestClass1.Class1.yaml
-  href: api/VBTestClass1.Class1
+  href: api/VBTestClass1.Class1.yaml
   type: Class
   summary: This is summary from vb class...
 - id: VBTestClass1.BaseClass1
-  yaml: api/VBTestClass1.BaseClass1.yaml
-  href: api/VBTestClass1.BaseClass1
+  href: api/VBTestClass1.BaseClass1.yaml
   type: Class
   summary: This is the BaseClass

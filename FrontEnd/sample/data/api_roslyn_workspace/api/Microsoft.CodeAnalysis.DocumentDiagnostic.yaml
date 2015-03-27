@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.DocumentDiagnostic
-yaml: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
-href: api/Microsoft.CodeAnalysis.DocumentDiagnostic
+href: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
 name:
   CSharp: DocumentDiagnostic
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
   startLine: 4
 syntax:
   content:
@@ -21,11 +20,9 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
   name: WorkspaceDiagnostic
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic
 items:
 - id: Microsoft.CodeAnalysis.DocumentDiagnostic.DocumentId
-  yaml: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentDiagnostic
+  href: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
   name:
     CSharp: DocumentId
   qualifiedName:
@@ -34,8 +31,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
     startLine: 6
   syntax:
     content:
@@ -45,10 +42,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
 - id: Microsoft.CodeAnalysis.DocumentDiagnostic.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.DocumentId)
-  yaml: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentDiagnostic
+  href: api/Microsoft.CodeAnalysis.DocumentDiagnostic.yaml
   name:
     CSharp: DocumentDiagnostic(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.DocumentId)
   qualifiedName:
@@ -57,8 +52,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentDiagnostic.cs
     startLine: 8
   syntax:
     content:
@@ -68,7 +63,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
         name: WorkspaceDiagnosticKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
     - id: message
       type:
         id: System.String
@@ -78,6 +72,5 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId
     return:
       id: Void

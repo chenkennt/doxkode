@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.DeclarationKind
-yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
 name:
   CSharp: DeclarationKind
 qualifiedName:
@@ -9,8 +8,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
   startLine: 7
 syntax:
   content:
@@ -27,8 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.None
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -37,15 +35,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 9
   syntax:
     content:
       CSharp: None
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.CompilationUnit
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -54,15 +51,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 10
   syntax:
     content:
       CSharp: CompilationUnit
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Class
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Class
   qualifiedName:
@@ -71,15 +67,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 11
   syntax:
     content:
       CSharp: Class
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Struct
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Struct
   qualifiedName:
@@ -88,15 +83,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 12
   syntax:
     content:
       CSharp: Struct
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Interface
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Interface
   qualifiedName:
@@ -105,15 +99,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 13
   syntax:
     content:
       CSharp: Interface
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Enum
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Enum
   qualifiedName:
@@ -122,15 +115,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 14
   syntax:
     content:
       CSharp: Enum
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Delegate
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Delegate
   qualifiedName:
@@ -139,15 +131,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 15
   syntax:
     content:
       CSharp: Delegate
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Method
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Method
   qualifiedName:
@@ -156,15 +147,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 16
   syntax:
     content:
       CSharp: Method
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Operator
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Operator
   qualifiedName:
@@ -173,15 +163,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 17
   syntax:
     content:
       CSharp: Operator
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.ConversionOperator
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: ConversionOperator
   qualifiedName:
@@ -190,15 +179,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 18
   syntax:
     content:
       CSharp: ConversionOperator
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Constructor
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Constructor
   qualifiedName:
@@ -207,15 +195,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 19
   syntax:
     content:
       CSharp: Constructor
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Destructor
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Destructor
   qualifiedName:
@@ -224,15 +211,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 20
   syntax:
     content:
       CSharp: Destructor
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Field
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Field
   qualifiedName:
@@ -241,15 +227,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 21
   syntax:
     content:
       CSharp: Field
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Property
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Property
   qualifiedName:
@@ -258,15 +243,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 22
   syntax:
     content:
       CSharp: Property
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Indexer
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Indexer
   qualifiedName:
@@ -275,15 +259,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 23
   syntax:
     content:
       CSharp: Indexer
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.EnumMember
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: EnumMember
   qualifiedName:
@@ -292,15 +275,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 24
   syntax:
     content:
       CSharp: EnumMember
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Event
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Event
   qualifiedName:
@@ -309,15 +291,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 25
   syntax:
     content:
       CSharp: Event
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.CustomEvent
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: CustomEvent
   qualifiedName:
@@ -326,15 +307,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 26
   syntax:
     content:
       CSharp: CustomEvent
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Namespace
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Namespace
   qualifiedName:
@@ -343,15 +323,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 27
   syntax:
     content:
       CSharp: Namespace
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.NamespaceImport
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: NamespaceImport
   qualifiedName:
@@ -360,15 +339,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 28
   syntax:
     content:
       CSharp: NamespaceImport
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Parameter
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Parameter
   qualifiedName:
@@ -377,15 +355,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 29
   syntax:
     content:
       CSharp: Parameter
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Variable
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Variable
   qualifiedName:
@@ -394,15 +371,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 30
   syntax:
     content:
       CSharp: Variable
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Attribute
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -411,15 +387,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 31
   syntax:
     content:
       CSharp: Attribute
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.LambdaExpression
-  yaml: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind
+  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: LambdaExpression
   qualifiedName:
@@ -428,8 +403,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 32
   syntax:
     content:

@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Diagnostics
-yaml: api/Microsoft.CodeAnalysis.Diagnostics.yaml
-href: api/Microsoft.CodeAnalysis.Diagnostics
+href: api/Microsoft.CodeAnalysis.Diagnostics.yaml
 name:
   CSharp: Diagnostics
 qualifiedName:
@@ -9,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/AdditionalTextDocument.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/AdditionalTextDocument.cs
   startLine: 8

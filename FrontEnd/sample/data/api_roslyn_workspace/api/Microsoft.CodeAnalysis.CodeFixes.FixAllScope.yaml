@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope
-yaml: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
-href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
 name:
   CSharp: FixAllScope
 qualifiedName:
@@ -9,10 +8,10 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
   startLine: 9
-summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider).
+summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
 syntax:
   content:
     CSharp: public enum FixAllScope
@@ -28,8 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document
-  yaml: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
   name:
     CSharp: Document
   qualifiedName:
@@ -38,15 +36,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 11
   syntax:
     content:
       CSharp: Document
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project
-  yaml: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
   name:
     CSharp: Project
   qualifiedName:
@@ -55,15 +52,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 12
   syntax:
     content:
       CSharp: Project
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution
-  yaml: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
   name:
     CSharp: Solution
   qualifiedName:
@@ -72,15 +68,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 13
   syntax:
     content:
       CSharp: Solution
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Custom
-  yaml: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope
+  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
   name:
     CSharp: Custom
   qualifiedName:
@@ -89,8 +84,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 14
   syntax:
     content:

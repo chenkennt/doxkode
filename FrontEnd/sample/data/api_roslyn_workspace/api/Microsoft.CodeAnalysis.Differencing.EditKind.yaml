@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.EditKind
-yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
 name:
   CSharp: EditKind
 qualifiedName:
@@ -9,8 +8,8 @@ type: Enum
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
   startLine: 4
 syntax:
   content:
@@ -27,8 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.None
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -37,16 +35,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 9
   summary: No change.
   syntax:
     content:
       CSharp: None = 0
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Update
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Update
   qualifiedName:
@@ -55,16 +52,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 14
   summary: Node value was updated.
   syntax:
     content:
       CSharp: Update = 1
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Insert
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Insert
   qualifiedName:
@@ -73,16 +69,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 19
   summary: Node was inserted.
   syntax:
     content:
       CSharp: Insert = 2
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Delete
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Delete
   qualifiedName:
@@ -91,16 +86,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 24
   summary: Node was deleted.
   syntax:
     content:
       CSharp: Delete = 3
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Move
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Move
   qualifiedName:
@@ -109,16 +103,15 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 29
   summary: Node changed parent.
   syntax:
     content:
       CSharp: Move = 4
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Reorder
-  yaml: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind
+  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Reorder
   qualifiedName:
@@ -127,8 +120,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 34
   summary: Node changed position within its parent. The parent nodes of the old node and the new node are matching.
   syntax:

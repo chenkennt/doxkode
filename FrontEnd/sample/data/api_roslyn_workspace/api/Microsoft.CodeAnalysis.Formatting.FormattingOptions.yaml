@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Formatting.FormattingOptions
-yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
 name:
   CSharp: FormattingOptions
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
   startLine: 6
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.UseTabs
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: UseTabs
   qualifiedName:
@@ -31,15 +29,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 12
   syntax:
     content:
       CSharp: UseTabs
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.TabSize
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: TabSize
   qualifiedName:
@@ -48,15 +45,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 14
   syntax:
     content:
       CSharp: TabSize
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentationSize
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: IndentationSize
   qualifiedName:
@@ -65,15 +61,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 16
   syntax:
     content:
       CSharp: IndentationSize
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.SmartIndent
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: SmartIndent
   qualifiedName:
@@ -82,15 +77,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 18
   syntax:
     content:
       CSharp: SmartIndent
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.UseTabOnlyForIndentation
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: UseTabOnlyForIndentation
   qualifiedName:
@@ -99,15 +93,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 20
   syntax:
     content:
       CSharp: UseTabOnlyForIndentation
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.NewLine
-  yaml: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions
+  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.yaml
   name:
     CSharp: NewLine
   qualifiedName:
@@ -116,8 +109,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 22
   syntax:
     content:

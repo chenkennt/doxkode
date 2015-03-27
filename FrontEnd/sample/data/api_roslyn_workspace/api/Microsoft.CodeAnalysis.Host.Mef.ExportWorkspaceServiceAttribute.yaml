@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
-yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
-href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
 name:
   CSharp: ExportWorkspaceServiceAttribute
 qualifiedName:
@@ -9,10 +8,10 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
   startLine: 10
-summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api/Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
+summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/) implementation for inclusion in a MEF-based workspace.
 syntax:
   content:
     CSharp: public class ExportWorkspaceServiceAttribute
@@ -28,8 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.ServiceType
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
   name:
     CSharp: ServiceType
   qualifiedName:
@@ -38,8 +36,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
     startLine: 17
   summary: The assembly qualified name of the service's type.
   syntax:
@@ -52,8 +50,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.Layer
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
   name:
     CSharp: Layer
   qualifiedName:
@@ -62,8 +59,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
     startLine: 22
   summary: The layer that the service is specified for; ServiceLayer.Default, etc.
   syntax:
@@ -76,8 +73,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.#ctor(System.Type,System.String)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute
+  href: api/Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceAttribute.yaml
   name:
     CSharp: ExportWorkspaceServiceAttribute(System.Type,System.String)
   qualifiedName:
@@ -86,10 +82,10 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceAttribute.cs
     startLine: 29
-  summary: Declares a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/api/Microsoft.CodeAnalysis.Host.IWorkspaceService) implementation for inclusion in a MEF-based workspace.
+  summary: Declares a [Microsoft.CodeAnalysis.Host.IWorkspaceService](#/) implementation for inclusion in a MEF-based workspace.
   syntax:
     content:
       CSharp: 'public ExportWorkspaceServiceAttribute(Type serviceType, string layer = ServiceLayer.Default): base (typeof (IWorkspaceService))'
@@ -99,12 +95,12 @@ items:
         id: System.Type
         name: System.Type
         isExternal: true
-      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices).
+      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/).
     - id: layer
       type:
         id: System.String
         name: System.String
         isExternal: true
-      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](#/api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer), etc.
+      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](#/), etc.
     return:
       id: Void

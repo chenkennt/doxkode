@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.Match`1
-yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
 name:
   CSharp: Match`1
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
   startLine: 12
 syntax:
   content:
@@ -21,8 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.Comparer
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: Comparer
   qualifiedName:
@@ -31,8 +29,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 316
   syntax:
     content:
@@ -57,8 +55,7 @@ items:
         name: TreeComparer
         href: Microsoft.CodeAnalysis.Differencing.TreeComparer{`0}
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.OldRoot
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: OldRoot
   qualifiedName:
@@ -67,8 +64,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 324
   syntax:
     content:
@@ -93,8 +90,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.NewRoot
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: NewRoot
   qualifiedName:
@@ -103,8 +99,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 332
   syntax:
     content:
@@ -129,8 +125,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.Matches
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: Matches
   qualifiedName:
@@ -139,8 +134,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 340
   syntax:
     content:
@@ -165,8 +160,7 @@ items:
         name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`0}}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.TryGetNewNode(`0,`0@)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: TryGetNewNode
   qualifiedName:
@@ -175,8 +169,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 348
   syntax:
     content:
@@ -195,8 +189,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.TryGetOldNode(`0,`0@)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: TryGetOldNode
   qualifiedName:
@@ -205,8 +198,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 353
   syntax:
     content:
@@ -225,8 +218,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.GetTreeEdits
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: GetTreeEdits
   qualifiedName:
@@ -235,13 +227,13 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 362
   summary: >-
-    Returns an edit script (a sequence of edits) that transform [Microsoft.CodeAnalysis.Differencing.Match`1.OldRoot](#/api/Microsoft.CodeAnalysis.Differencing.Match`1) subtree
+    Returns an edit script (a sequence of edits) that transform [Microsoft.CodeAnalysis.Differencing.Match`1.OldRoot](#/) subtree
 
-    to [Microsoft.CodeAnalysis.Differencing.Match`1.NewRoot](#/api/Microsoft.CodeAnalysis.Differencing.Match`1) subtree.
+    to [Microsoft.CodeAnalysis.Differencing.Match`1.NewRoot](#/) subtree.
   syntax:
     content:
       CSharp: public EditScript<TNode> GetTreeEdits()
@@ -249,8 +241,7 @@ items:
     return:
       id: EditScript
 - id: Microsoft.CodeAnalysis.Differencing.Match`1.GetSequenceEdits(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEnumerable{`0})
-  yaml: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.Match`1
+  href: api/Microsoft.CodeAnalysis.Differencing.Match`1.yaml
   name:
     CSharp: GetSequenceEdits
   qualifiedName:
@@ -259,8 +250,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/Match.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/Match.cs
     startLine: 372
   summary: >-
     Returns an edit script (a sequence of edits) that transform a sequence of nodes

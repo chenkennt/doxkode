@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.DocumentEventArgs
-yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
-href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+href: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
 name:
   CSharp: DocumentEventArgs
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
   startLine: 6
 syntax:
   content:
@@ -24,8 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DocumentEventArgs.Document
-  yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+  href: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
   name:
     CSharp: Document
   qualifiedName:
@@ -34,8 +32,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
     startLine: 8
   syntax:
     content:
@@ -45,10 +43,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
 - id: Microsoft.CodeAnalysis.DocumentEventArgs.#ctor(Microsoft.CodeAnalysis.Document)
-  yaml: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
-  href: api/Microsoft.CodeAnalysis.DocumentEventArgs
+  href: api/Microsoft.CodeAnalysis.DocumentEventArgs.yaml
   name:
     CSharp: DocumentEventArgs(Microsoft.CodeAnalysis.Document)
   qualifiedName:
@@ -57,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/DocumentEventArgs.cs
     startLine: 10
   syntax:
     content:
@@ -68,6 +64,5 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document
     return:
       id: Void

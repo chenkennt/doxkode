@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.TreeComparer`1
-yaml: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
-href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1
+href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
 name:
   CSharp: TreeComparer`1
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
   startLine: 21
 summary: Implements a tree differencing algorithm.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ComputeEditScript(`0,`0)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1
+  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
   name:
     CSharp: ComputeEditScript
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 30
   summary: Returns an edit script that transforms  to .
   syntax:
@@ -53,8 +51,7 @@ items:
     return:
       id: EditScript
 - id: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ComputeMatch(`0,`0,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`0}})
-  yaml: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1
+  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
   name:
     CSharp: ComputeMatch
   qualifiedName:
@@ -63,8 +60,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 38
   summary: Returns a match map of  descendants to  descendants.
   syntax:
@@ -89,8 +86,7 @@ items:
     return:
       id: Match
 - id: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.GetDistance(`0,`0)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1
+  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
   name:
     CSharp: GetDistance
   qualifiedName:
@@ -99,8 +95,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 52
   summary: Calculates the distance [0..1] of two nodes.
   syntax:
@@ -120,8 +116,7 @@ items:
     return:
       id: Double
 - id: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ValuesEqual(`0,`0)
-  yaml: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
-  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1
+  href: api/Microsoft.CodeAnalysis.Differencing.TreeComparer`1.yaml
   name:
     CSharp: ValuesEqual
   qualifiedName:
@@ -130,8 +125,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 61
   summary: Returns true if the specified nodes have equal values.
   syntax:

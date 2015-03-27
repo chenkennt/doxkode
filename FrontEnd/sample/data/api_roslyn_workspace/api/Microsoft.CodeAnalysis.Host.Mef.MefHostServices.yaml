@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices
-yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
 name:
   CSharp: MefHostServices
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
   startLine: 14
 syntax:
   content:
@@ -21,11 +20,9 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostServices
   name: HostServices
-  href: api/Microsoft.CodeAnalysis.Host.HostServices
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.#ctor(System.Composition.CompositionContext)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   name:
     CSharp: MefHostServices(System.Composition.CompositionContext)
   qualifiedName:
@@ -34,8 +31,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
     startLine: 18
   syntax:
     content:
@@ -49,8 +46,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.Create(System.Composition.CompositionContext)
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -59,8 +55,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
     startLine: 23
   syntax:
     content:
@@ -74,8 +70,7 @@ items:
     return:
       id: MefHostServices
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.Create(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -84,8 +79,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
     startLine: 33
   syntax:
     content:
@@ -99,8 +94,7 @@ items:
     return:
       id: MefHostServices
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.DefaultHost
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   name:
     CSharp: DefaultHost
   qualifiedName:
@@ -109,8 +103,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
     startLine: 71
   syntax:
     content:
@@ -145,10 +139,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices
         name: MefHostServices
-        href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
 - id: Microsoft.CodeAnalysis.Host.Mef.MefHostServices.DefaultAssemblies
-  yaml: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
-  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices
+  href: api/Microsoft.CodeAnalysis.Host.Mef.MefHostServices.yaml
   name:
     CSharp: DefaultAssemblies
   qualifiedName:
@@ -157,8 +149,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/MefHostServices.cs
     startLine: 86
   syntax:
     content:

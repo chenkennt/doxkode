@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.TextAndVersion
-yaml: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
-href: api/Microsoft.CodeAnalysis.TextAndVersion
+href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
 name:
   CSharp: TextAndVersion
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
   startLine: 15
 summary: A class that represents both a source text and its version stamp.
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.TextAndVersion.Text
-  yaml: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
-  href: api/Microsoft.CodeAnalysis.TextAndVersion
+  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Text
   qualifiedName:
@@ -32,8 +30,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 20
   summary: The source text.
   syntax:
@@ -46,8 +44,7 @@ items:
         name: SourceText
         href: Microsoft.CodeAnalysis.Text.SourceText
 - id: Microsoft.CodeAnalysis.TextAndVersion.Version
-  yaml: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
-  href: api/Microsoft.CodeAnalysis.TextAndVersion
+  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Version
   qualifiedName:
@@ -56,8 +53,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 25
   summary: The version of the source text
   syntax:
@@ -68,10 +65,8 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp
 - id: Microsoft.CodeAnalysis.TextAndVersion.FilePath
-  yaml: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
-  href: api/Microsoft.CodeAnalysis.TextAndVersion
+  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -80,8 +75,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 30
   summary: An optional file path that identifies the origin of the source text
   syntax:
@@ -94,8 +89,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.TextAndVersion.Create(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.VersionStamp,System.String)
-  yaml: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
-  href: api/Microsoft.CodeAnalysis.TextAndVersion
+  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -104,8 +98,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 46
   summary: Create a new TextAndVersion instance.
   syntax:
@@ -122,7 +116,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp
       description: The version
     - id: filePath
       type:

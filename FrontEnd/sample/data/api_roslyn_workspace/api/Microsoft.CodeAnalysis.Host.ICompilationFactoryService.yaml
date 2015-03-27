@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
-yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
 name:
   CSharp: ICompilationFactoryService
 qualifiedName:
@@ -9,16 +8,15 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
   startLine: 6
 syntax:
   content:
     CSharp: public interface ICompilationFactoryService
 items:
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions)
-  yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: CreateCompilation
   qualifiedName:
@@ -27,8 +25,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 8
   syntax:
     content:
@@ -47,8 +45,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateSubmissionCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions,System.Type)
-  yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: CreateSubmissionCompilation
   qualifiedName:
@@ -57,8 +54,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 9
   syntax:
     content:
@@ -82,8 +79,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetCompilationFromCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
-  yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: GetCompilationFromCompilationReference
   qualifiedName:
@@ -92,8 +88,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 10
   syntax:
     content:
@@ -107,8 +103,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.IsCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
-  yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: IsCompilationReference
   qualifiedName:
@@ -117,8 +112,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 11
   syntax:
     content:
@@ -132,8 +127,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetDefaultCompilationOptions
-  yaml: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService
+  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: GetDefaultCompilationOptions
   qualifiedName:
@@ -142,8 +136,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 12
   syntax:
     content:

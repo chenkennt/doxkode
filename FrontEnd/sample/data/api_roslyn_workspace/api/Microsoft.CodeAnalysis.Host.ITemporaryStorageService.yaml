@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
-yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
-href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
 name:
   CSharp: ITemporaryStorageService
 qualifiedName:
@@ -9,8 +8,8 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
   startLine: 9
 summary: This service allows you to access temporary storage.
 syntax:
@@ -18,8 +17,7 @@ syntax:
     CSharp: public interface ITemporaryStorageService
 items:
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService.CreateTemporaryStreamStorage(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
   name:
     CSharp: CreateTemporaryStreamStorage
   qualifiedName:
@@ -28,8 +26,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
     startLine: 11
   syntax:
     content:
@@ -43,8 +41,7 @@ items:
     return:
       id: ITemporaryStreamStorage
 - id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService.CreateTemporaryTextStorage(System.Threading.CancellationToken)
-  yaml: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
-  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService
+  href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
   name:
     CSharp: CreateTemporaryTextStorage
   qualifiedName:
@@ -53,8 +50,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
     startLine: 12
   syntax:
     content:

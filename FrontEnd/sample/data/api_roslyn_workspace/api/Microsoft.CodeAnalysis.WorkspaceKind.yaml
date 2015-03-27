@@ -1,6 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceKind
-yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-href: api/Microsoft.CodeAnalysis.WorkspaceKind
+href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
 name:
   CSharp: WorkspaceKind
 qualifiedName:
@@ -9,8 +8,8 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
-  path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    repo: https://github.com/vicancy/roslyn
+  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
   startLine: 9
 summary: Known workspace kinds
 syntax:
@@ -22,8 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceKind.Host
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: Host
   qualifiedName:
@@ -32,15 +30,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 11
   syntax:
     content:
       CSharp: Host
 - id: Microsoft.CodeAnalysis.WorkspaceKind.Debugger
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: Debugger
   qualifiedName:
@@ -49,15 +46,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 12
   syntax:
     content:
       CSharp: Debugger
 - id: Microsoft.CodeAnalysis.WorkspaceKind.Interactive
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: Interactive
   qualifiedName:
@@ -66,15 +62,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 13
   syntax:
     content:
       CSharp: Interactive
 - id: Microsoft.CodeAnalysis.WorkspaceKind.MetadataAsSource
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: MetadataAsSource
   qualifiedName:
@@ -83,15 +78,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 14
   syntax:
     content:
       CSharp: MetadataAsSource
 - id: Microsoft.CodeAnalysis.WorkspaceKind.MiscellaneousFiles
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: MiscellaneousFiles
   qualifiedName:
@@ -100,15 +94,14 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 15
   syntax:
     content:
       CSharp: MiscellaneousFiles
 - id: Microsoft.CodeAnalysis.WorkspaceKind.Preview
-  yaml: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
-  href: api/Microsoft.CodeAnalysis.WorkspaceKind
+  href: api/Microsoft.CodeAnalysis.WorkspaceKind.yaml
   name:
     CSharp: Preview
   qualifiedName:
@@ -117,8 +110,8 @@ items:
   source:
     remote:
       branch: master
-      repo: https://github.com/dotnet/roslyn.git
-    path: D:/Repo/RoslynGit/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+      repo: https://github.com/vicancy/roslyn
+    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 16
   syntax:
     content:

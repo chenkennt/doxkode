@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         //'app/js/search-worker.js',
         'app/bower_components/marked/lib/marked.js',
         'app/bower_components/angular-marked/angular-marked.js',
+        'app/js/constants.js',
         'app/js/util.js',
         'app/js/directives.js',
         'app/js/bootstrap.js',
