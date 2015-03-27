@@ -7,6 +7,8 @@ using DocAsCode.Utility;
 
 namespace DocAsCode.EntityModel
 {
+    using Microsoft.CodeAnalysis.CSharp;
+
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
         public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
@@ -168,18 +170,37 @@ namespace DocAsCode.EntityModel
                     };
                 case MemberType.Property:
                     {
+                        Debug.Assert(syntaxNode is PropertyDeclarationSyntax || syntaxNode is IndexerDeclarationSyntax);
+
                         var syntax = syntaxNode as PropertyDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                                    .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                    .ToString()
-                                    .Trim();
+                        if (syntax != null)
+                        {
+                            var accessorList = syntax.AccessorList.Accessors;
+                            var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null));
+                            SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
+                            syntaxList.AddRange(simplifiedAccessorList);
+                            var simplifiedSyntax = syntax.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            syntaxStr = simplifiedSyntax.ToString().Trim();
+                        }
+                        else
+                        {
+                            var syntaxIndexer = syntaxNode as IndexerDeclarationSyntax;
+                            if (syntaxIndexer != null)
+                            {
+                                var accessorList = syntaxIndexer.AccessorList.Accessors;
+                                var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null));
+                                SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
+                                syntaxList.AddRange(simplifiedAccessorList);
+                                var simplifiedSyntax = syntaxIndexer.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                                syntaxStr = simplifiedSyntax.ToString().Trim();
+                            }
+                        }
+
                         break;
                     };
             }
 
-            if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.NormalizeWhitespace().ToString().Trim();
+            if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.ToString().Trim();
             return syntaxStr;
         }
     }

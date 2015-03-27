@@ -62,7 +62,7 @@
             if (string.IsNullOrEmpty(id))
             {
                 var typeSymbol = symbol as ITypeSymbol;
-                if (typeSymbol != null)
+                if (typeSymbol?.BaseType != null)
                 {
                     id = typeSymbol.BaseType.GetDocumentationCommentId();
                 }
@@ -142,7 +142,7 @@
                 return null;
             }
 
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            var syntaxRef = symbol.DeclaringSyntaxReferences.LastOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
                 return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
@@ -159,7 +159,7 @@
                 };
 
                 source.Remote = GitUtility.GetGitDetail(source.Path);
-                source.Path = source.Path.FormatPath(UriKind.Relative, source.Remote.LocalWorkingDirectory);
+                if (source.Remote != null) source.Path = source.Path.FormatPath(UriKind.Relative, source.Remote.LocalWorkingDirectory);
                 return source;
             }
 

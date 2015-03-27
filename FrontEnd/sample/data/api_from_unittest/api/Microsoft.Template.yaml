@@ -1,0 +1,18 @@
+id: Microsoft.Template
+href: api/Microsoft.Template.yaml
+name:
+  CSharp: Template
+qualifiedName:
+  CSharp: Microsoft.Template
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 269
+items:
+- id: Microsoft.Template.TemplateInterface`3
+  href: api/Microsoft.Template.TemplateInterface`3.yaml
+  type: Interface

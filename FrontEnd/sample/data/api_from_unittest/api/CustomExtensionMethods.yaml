@@ -1,0 +1,18 @@
+id: CustomExtensionMethods
+href: api/CustomExtensionMethods.yaml
+name:
+  CSharp: CustomExtensionMethods
+qualifiedName:
+  CSharp: CustomExtensionMethods
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+  startLine: 866
+items:
+- id: CustomExtensionMethods.stringExtension
+  href: api/CustomExtensionMethods.stringExtension.yaml
+  type: Class

@@ -10,8 +10,8 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-52-gcaedae8
-  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/My Project/AssemblyInfo.vb
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/My Project/AssemblyInfo.vb
 items:
 - id: VBTestClass1.Class1
   href: api/VBTestClass1.Class1.yaml

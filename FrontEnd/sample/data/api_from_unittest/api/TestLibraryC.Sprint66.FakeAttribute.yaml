@@ -1,0 +1,21 @@
+id: TestLibraryC.Sprint66.FakeAttribute
+href: api/TestLibraryC.Sprint66.FakeAttribute.yaml
+name:
+  CSharp: FakeAttribute
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.FakeAttribute
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 351
+items:
+- id: TestLibraryC.Sprint66.FakeAttribute.Language
+  href: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+  type: Enum
+- id: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute
+  href: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+  type: Class

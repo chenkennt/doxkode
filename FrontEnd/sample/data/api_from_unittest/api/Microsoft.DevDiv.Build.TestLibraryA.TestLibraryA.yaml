@@ -1,0 +1,21 @@
+id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+name:
+  CSharp: TestLibraryA
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 7
+syntax:
+  content:
+    CSharp: public partial class TestLibraryA
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

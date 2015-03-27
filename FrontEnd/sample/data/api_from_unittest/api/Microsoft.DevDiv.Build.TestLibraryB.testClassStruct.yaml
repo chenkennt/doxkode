@@ -1,0 +1,21 @@
+id: Microsoft.DevDiv.Build.TestLibraryB.testClassStruct
+href: api/Microsoft.DevDiv.Build.TestLibraryB.testClassStruct.yaml
+name:
+  CSharp: testClassStruct
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB.testClassStruct
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 67
+syntax:
+  content:
+    CSharp: public class testClassStruct
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

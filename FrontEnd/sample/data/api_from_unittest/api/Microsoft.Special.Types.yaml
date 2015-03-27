@@ -1,0 +1,18 @@
+id: Microsoft.Special.Types
+href: api/Microsoft.Special.Types.yaml
+name:
+  CSharp: Types
+qualifiedName:
+  CSharp: Microsoft.Special.Types
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 37
+items:
+- id: Microsoft.Special.Types.typeClass
+  href: api/Microsoft.Special.Types.typeClass.yaml
+  type: Class

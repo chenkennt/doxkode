@@ -1,0 +1,19 @@
+id: Microsoft.DevDev.Build.PropertyOverload
+href: api/Microsoft.DevDev.Build.PropertyOverload.yaml
+name:
+  CSharp: PropertyOverload
+qualifiedName:
+  CSharp: Microsoft.DevDev.Build.PropertyOverload
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+  startLine: 5
+items:
+- id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+  href: api/Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+  type: Class
+  summary: Class to test property

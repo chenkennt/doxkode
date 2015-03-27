@@ -1,0 +1,27 @@
+id: TestLibraryC.Sprint66.ClassWithExtensions.ListT`1
+href: api/TestLibraryC.Sprint66.ClassWithExtensions.ListT`1.yaml
+name:
+  CSharp: ListT`1
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.ClassWithExtensions.ListT`1
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 866
+syntax:
+  content:
+    CSharp: >-
+      public class ListT<T>
+
+          where T : new ()
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.Collections.Generic.List{`0}
+  name: System.Collections.Generic.List{`0}
+  isExternal: true

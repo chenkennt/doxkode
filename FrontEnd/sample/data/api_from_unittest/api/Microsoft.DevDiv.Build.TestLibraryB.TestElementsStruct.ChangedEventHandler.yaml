@@ -1,0 +1,27 @@
+id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
+href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+name:
+  CSharp: ChangedEventHandler
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
+type: Delegate
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 149
+syntax:
+  content:
+    CSharp: public delegate void ChangedEventHandler(object sender, EventArgs e);
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.Delegate
+  name: System.Delegate
+  isExternal: true
+- id: System.MulticastDelegate
+  name: System.MulticastDelegate
+  isExternal: true

@@ -1,0 +1,27 @@
+id: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate
+href: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate.yaml
+name:
+  CSharp: LongPointerDelegate
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate
+type: Delegate
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 342
+syntax:
+  content:
+    CSharp: public unsafe delegate long *LongPointerDelegate(int a);
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.Delegate
+  name: System.Delegate
+  isExternal: true
+- id: System.MulticastDelegate
+  name: System.MulticastDelegate
+  isExternal: true

@@ -1,63 +1,581 @@
-- id: TestClass1
-  href: api/TestClass1.yaml
+- id: Microsoft.DevDev.Build.PropertyOverload
+  href: api/Microsoft.DevDev.Build.PropertyOverload.yaml
   name:
-    CSharp: TestClass1
+    CSharp: PropertyOverload
   items:
-  - id: TestClass1.Partial1
-    href: api/TestClass1.Partial1.yaml
+  - id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+    href: api/Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
     name:
-      CSharp: Partial1
-  - id: TestClass1.Class1
-    href: api/TestClass1.Class1.yaml
-    name:
-      CSharp: Class1
-  - id: TestClass1.Class1.Class1InnerClass
-    href: api/TestClass1.Class1.Class1InnerClass.yaml
-    name:
-      CSharp: Class1InnerClass
-  - id: TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
-    href: api/TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass.yaml
-    name:
-      CSharp: Class1InnerClassesInnerClass
-  - id: TestClass1.Class1.Class1InnerClass.TestEnum
-    href: api/TestClass1.Class1.Class1InnerClass.TestEnum.yaml
-    name:
-      CSharp: TestEnum
-  - id: TestClass1.Class1.TestStruct
-    href: api/TestClass1.Class1.TestStruct.yaml
-    name:
-      CSharp: TestStruct
-  - id: TestClass1.Class1.ADelegate
-    href: api/TestClass1.Class1.ADelegate.yaml
-    name:
-      CSharp: ADelegate
-- id: TestClass1.Base
-  href: api/TestClass1.Base.yaml
+      CSharp: TestProperty
+- id: Microsoft.DevDiv.Build.TestLibraryA
+  href: api/Microsoft.DevDiv.Build.TestLibraryA.yaml
   name:
-    CSharp: Base
+    CSharp: TestLibraryA
   items:
-  - id: TestClass1.Base.BaseClassForTestClass1
-    href: api/TestClass1.Base.BaseClassForTestClass1.yaml
+  - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+    href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
     name:
-      CSharp: BaseClassForTestClass1
-- id: TestClass1.TestClass1.TestClassInnerNamesapce
-  href: api/TestClass1.TestClass1.TestClassInnerNamesapce.yaml
+      CSharp: TestLibraryA
+  - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+    href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+    name:
+      CSharp: ColorType
+- id: CustomExtensionMethods
+  href: api/CustomExtensionMethods.yaml
   name:
-    CSharp: TestClassInnerNamesapce
+    CSharp: CustomExtensionMethods
   items:
-  - id: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
-    href: api/TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
+  - id: CustomExtensionMethods.stringExtension
+    href: api/CustomExtensionMethods.stringExtension.yaml
     name:
-      CSharp: ClassInInnerNamespace
-- id: TestClass2
-  href: api/TestClass2.yaml
+      CSharp: stringExtension
+- id: Microsoft.DevDiv.Build.TestLibraryB
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.yaml
   name:
-    CSharp: TestClass2
+    CSharp: TestLibraryB
   items:
-  - id: TestClass2.Class2
-    href: api/TestClass2.Class2.yaml
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
     name:
-      CSharp: Class2
+      CSharp: TestLibraryB
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+    name:
+      CSharp: TestLibraryBInterfaceBase
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
+    name:
+      CSharp: TestLibraryB2
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+    name:
+      CSharp: TestPublicStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.testClassStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.testClassStruct.yaml
+    name:
+      CSharp: testClassStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
+    name:
+      CSharp: TestSerializableStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
+    name:
+      CSharp: TestAutoStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
+    name:
+      CSharp: TestSequentialStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
+    name:
+      CSharp: TestExplicitStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+    name:
+      CSharp: TestTemplatesImplementsList`4
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+    name:
+      CSharp: TestElementsStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+    name:
+      CSharp: ChangedEventHandler
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
+    name:
+      CSharp: TestContainerStruct
+  - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct
+    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
+    name:
+      CSharp: TestSubStruct
+- id: Microsoft.DevDiv.Build.TestLibraryB2
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.yaml
+  name:
+    CSharp: TestLibraryB2
+  items:
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+    name:
+      CSharp: ISurfaceA
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+    name:
+      CSharp: ISurfaceB
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+    name:
+      CSharp: ISurfaceC
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+    name:
+      CSharp: ISurfaceD
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+    name:
+      CSharp: OuterClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+    name:
+      CSharp: InnerClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+    name:
+      CSharp: InnerClassReturn
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+    name:
+      CSharp: Abstract
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+    name:
+      CSharp: Derived
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+    name:
+      CSharp: ContainersRefTypeDelegate
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+    name:
+      CSharp: delegateFunc`4
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+    name:
+      CSharp: delegateFunc`2
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+    name:
+      CSharp: delegateFunc
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+    name:
+      CSharp: CaseSensitiveClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+    name:
+      CSharp: boolClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+    name:
+      CSharp: BoolClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+    name:
+      CSharp: PrivateCtorSealedClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+    name:
+      CSharp: PrivateCtorClass
+  - id: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+    name:
+      CSharp: ProtectedCtorClass
+- id: TestNestedDel
+  href: api/TestNestedDel.yaml
+  name:
+    CSharp: TestNestedDel
+  items:
+  - id: TestNestedDel.Class1`2
+    href: api/TestNestedDel.Class1`2.yaml
+    name:
+      CSharp: Class1`2
+  - id: TestNestedDel.Class1`2.InnerDelegate
+    href: api/TestNestedDel.Class1`2.InnerDelegate.yaml
+    name:
+      CSharp: InnerDelegate
+  - id: TestNestedDel.Class2`2
+    href: api/TestNestedDel.Class2`2.yaml
+    name:
+      CSharp: Class2`2
+  - id: TestNestedDel.Class2`2.Class3`2
+    href: api/TestNestedDel.Class2`2.Class3`2.yaml
+    name:
+      CSharp: Class3`2
+  - id: TestNestedDel.Class2`2.Class3`2.InnerDelegate
+    href: api/TestNestedDel.Class2`2.Class3`2.InnerDelegate.yaml
+    name:
+      CSharp: InnerDelegate
+  - id: TestNestedDel.Class3`2
+    href: api/TestNestedDel.Class3`2.yaml
+    name:
+      CSharp: Class3`2
+  - id: TestNestedDel.Class3`2.Class4`2
+    href: api/TestNestedDel.Class3`2.Class4`2.yaml
+    name:
+      CSharp: Class4`2
+  - id: TestNestedDel.Class3`2.Class4`2.InnerDelegate
+    href: api/TestNestedDel.Class3`2.Class4`2.InnerDelegate.yaml
+    name:
+      CSharp: InnerDelegate
+- id: Microsoft.Special.Types
+  href: api/Microsoft.Special.Types.yaml
+  name:
+    CSharp: Types
+  items:
+  - id: Microsoft.Special.Types.typeClass
+    href: api/Microsoft.Special.Types.typeClass.yaml
+    name:
+      CSharp: typeClass
+- id: Microsoft.Special.EmptyClass
+  href: api/Microsoft.Special.EmptyClass.yaml
+  name:
+    CSharp: EmptyClass
+  items:
+  - id: Microsoft.Special.EmptyClass.EmptyClass
+    href: api/Microsoft.Special.EmptyClass.EmptyClass.yaml
+    name:
+      CSharp: EmptyClass
+- id: Microsoft.Special.Operators
+  href: api/Microsoft.Special.Operators.yaml
+  name:
+    CSharp: Operators
+  items:
+  - id: Microsoft.Special.Operators.OperatorClass
+    href: api/Microsoft.Special.Operators.OperatorClass.yaml
+    name:
+      CSharp: OperatorClass
+  - id: Microsoft.Special.Operators.OperatorClass`2
+    href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+    name:
+      CSharp: OperatorClass`2
+  - id: Microsoft.Special.Operators.OperatorStruct
+    href: api/Microsoft.Special.Operators.OperatorStruct.yaml
+    name:
+      CSharp: OperatorStruct
+  - id: Microsoft.Special.Operators.OperatorStruct`2
+    href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+    name:
+      CSharp: OperatorStruct`2
+- id: Microsoft.Template
+  href: api/Microsoft.Template.yaml
+  name:
+    CSharp: Template
+  items:
+  - id: Microsoft.Template.TemplateInterface`3
+    href: api/Microsoft.Template.TemplateInterface`3.yaml
+    name:
+      CSharp: TemplateInterface`3
+- id: TestLibraryC
+  href: api/TestLibraryC.yaml
+  name:
+    CSharp: TestLibraryC
+  items:
+  - id: TestLibraryC.TestLibraryC
+    href: api/TestLibraryC.TestLibraryC.yaml
+    name:
+      CSharp: TestLibraryC
+- id: TestLibraryC.Sprint66.BasicMethod
+  href: api/TestLibraryC.Sprint66.BasicMethod.yaml
+  name:
+    CSharp: BasicMethod
+  items:
+  - id: TestLibraryC.Sprint66.BasicMethod.INormalAdvance`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.INormalAdvance`1.yaml
+    name:
+      CSharp: INormalAdvance`1
+  - id: TestLibraryC.Sprint66.BasicMethod.NormalAdvance`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.NormalAdvance`1.yaml
+    name:
+      CSharp: NormalAdvance`1
+  - id: TestLibraryC.Sprint66.BasicMethod.INormalBasic
+    href: api/TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
+    name:
+      CSharp: INormalBasic
+  - id: TestLibraryC.Sprint66.BasicMethod.NormalBasic
+    href: api/TestLibraryC.Sprint66.BasicMethod.NormalBasic.yaml
+    name:
+      CSharp: NormalBasic
+  - id: TestLibraryC.Sprint66.BasicMethod.INormalTemplate`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.INormalTemplate`1.yaml
+    name:
+      CSharp: INormalTemplate`1
+  - id: TestLibraryC.Sprint66.BasicMethod.NormalTemplate`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.NormalTemplate`1.yaml
+    name:
+      CSharp: NormalTemplate`1
+  - id: TestLibraryC.Sprint66.BasicMethod.IBasic`2
+    href: api/TestLibraryC.Sprint66.BasicMethod.IBasic`2.yaml
+    name:
+      CSharp: IBasic`2
+  - id: TestLibraryC.Sprint66.BasicMethod.IInBasic`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.IInBasic`1.yaml
+    name:
+      CSharp: IInBasic`1
+  - id: TestLibraryC.Sprint66.BasicMethod.IOutBasic`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.IOutBasic`1.yaml
+    name:
+      CSharp: IOutBasic`1
+  - id: TestLibraryC.Sprint66.BasicMethod.IStrictInBasic`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.IStrictInBasic`1.yaml
+    name:
+      CSharp: IStrictInBasic`1
+  - id: TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic`1.yaml
+    name:
+      CSharp: IStrictOutBasic`1
+  - id: TestLibraryC.Sprint66.BasicMethod.OutBasic`1
+    href: api/TestLibraryC.Sprint66.BasicMethod.OutBasic`1.yaml
+    name:
+      CSharp: OutBasic`1
+  - id: TestLibraryC.Sprint66.BasicMethod.UnsafePointer
+    href: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+    name:
+      CSharp: UnsafePointer
+  - id: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerParaDelegate
+    href: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerParaDelegate.yaml
+    name:
+      CSharp: IntPointerParaDelegate
+  - id: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate
+    href: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate.yaml
+    name:
+      CSharp: LongPointerDelegate
+- id: TestLibraryC.Sprint66.FakeAttribute
+  href: api/TestLibraryC.Sprint66.FakeAttribute.yaml
+  name:
+    CSharp: FakeAttribute
+  items:
+  - id: TestLibraryC.Sprint66.FakeAttribute.Language
+    href: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+    name:
+      CSharp: Language
+  - id: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute
+    href: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+    name:
+      CSharp: ExtensionHelperAttribute
+- id: TestLibraryC.Sprint66.ExtensionMethods
+  href: api/TestLibraryC.Sprint66.ExtensionMethods.yaml
+  name:
+    CSharp: ExtensionMethods
+  items:
+  - id: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+    name:
+      CSharp: stringExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.intExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.intExtensions.yaml
+    name:
+      CSharp: intExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+    name:
+      CSharp: DictionaryExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IListExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.yaml
+    name:
+      CSharp: IListExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+    name:
+      CSharp: ListExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+    name:
+      CSharp: IEnumerableExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+    name:
+      CSharp: INormalAdvanceExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.yaml
+    name:
+      CSharp: NormalAdvanceExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+    name:
+      CSharp: INormalBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
+    name:
+      CSharp: NormalBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
+    name:
+      CSharp: INormalTemplateExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
+    name:
+      CSharp: NormalTemplateExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+    name:
+      CSharp: IBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+    name:
+      CSharp: IInBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
+    name:
+      CSharp: IOutBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
+    name:
+      CSharp: IStrictInBasicExtensions
+  - id: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions
+    href: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
+    name:
+      CSharp: IStrictOutBasicExtensions
+- id: TestLibraryC.Sprint66.ClassWithExtensions
+  href: api/TestLibraryC.Sprint66.ClassWithExtensions.yaml
+  name:
+    CSharp: ClassWithExtensions
+  items:
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalTemplateDerived`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalTemplateDerived`1.yaml
+    name:
+      CSharp: NormalTemplateDerived`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived.yaml
+    name:
+      CSharp: NormalBasicDerived
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceDerived
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceDerived.yaml
+    name:
+      CSharp: NormalAdvanceDerived
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceOne
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceOne.yaml
+    name:
+      CSharp: NormalAdvanceOne
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceTwo
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceTwo.yaml
+    name:
+      CSharp: NormalAdvanceTwo
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceThree
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceThree.yaml
+    name:
+      CSharp: NormalAdvanceThree
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicOne
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicOne.yaml
+    name:
+      CSharp: NormalBasicOne
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2.yaml
+    name:
+      CSharp: InBasicOneIn`2
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.InBasicTwoIn`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicTwoIn`1.yaml
+    name:
+      CSharp: InBasicTwoIn`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.InBasicThreeIn
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicThreeIn.yaml
+    name:
+      CSharp: InBasicThreeIn
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.OutBasicTwoOut`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.OutBasicTwoOut`1.yaml
+    name:
+      CSharp: OutBasicTwoOut`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.BasicOne
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicOne.yaml
+    name:
+      CSharp: BasicOne
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.BasicTwo
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicTwo.yaml
+    name:
+      CSharp: BasicTwo
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.BasicThree`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicThree`1.yaml
+    name:
+      CSharp: BasicThree`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.BasicFour`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicFour`1.yaml
+    name:
+      CSharp: BasicFour`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicA`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicA`1.yaml
+    name:
+      CSharp: StrictInBasicA`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicB
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicB.yaml
+    name:
+      CSharp: StrictInBasicB
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicC
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicC.yaml
+    name:
+      CSharp: StrictInBasicC
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicA`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicA`1.yaml
+    name:
+      CSharp: StrictOutBasicA`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicB`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicB`1.yaml
+    name:
+      CSharp: StrictOutBasicB`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicC`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicC`1.yaml
+    name:
+      CSharp: StrictOutBasicC`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.ListListString
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.ListListString.yaml
+    name:
+      CSharp: ListListString
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.ListListU`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.ListListU`1.yaml
+    name:
+      CSharp: ListListU`1
+  - id: TestLibraryC.Sprint66.ClassWithExtensions.ListT`1
+    href: api/TestLibraryC.Sprint66.ClassWithExtensions.ListT`1.yaml
+    name:
+      CSharp: ListT`1
+- id: TestLibraryC.Sprint66.EII
+  href: api/TestLibraryC.Sprint66.EII.yaml
+  name:
+    CSharp: EII
+  items:
+  - id: TestLibraryC.Sprint66.EII.MixedAnimal
+    href: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+    name:
+      CSharp: MixedAnimal
+  - id: TestLibraryC.Sprint66.EII.Monster`1
+    href: api/TestLibraryC.Sprint66.EII.Monster`1.yaml
+    name:
+      CSharp: Monster`1
+  - id: TestLibraryC.Sprint66.EII.TOMCAT
+    href: api/TestLibraryC.Sprint66.EII.TOMCAT.yaml
+    name:
+      CSharp: TOMCAT
+  - id: TestLibraryC.Sprint66.EII.Monkey
+    href: api/TestLibraryC.Sprint66.EII.Monkey.yaml
+    name:
+      CSharp: Monkey
+  - id: TestLibraryC.Sprint66.EII.Pig
+    href: api/TestLibraryC.Sprint66.EII.Pig.yaml
+    name:
+      CSharp: Pig
+  - id: TestLibraryC.Sprint66.EII.Dog`2
+    href: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+    name:
+      CSharp: Dog`2
+  - id: TestLibraryC.Sprint66.EII.Cat
+    href: api/TestLibraryC.Sprint66.EII.Cat.yaml
+    name:
+      CSharp: Cat
+  - id: TestLibraryC.Sprint66.EII.Animal
+    href: api/TestLibraryC.Sprint66.EII.Animal.yaml
+    name:
+      CSharp: Animal
+- id: TestLibraryC.Sprint66.EnumMethod
+  href: api/TestLibraryC.Sprint66.EnumMethod.yaml
+  name:
+    CSharp: EnumMethod
+  items:
+  - id: TestLibraryC.Sprint66.EnumMethod.Grades
+    href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+    name:
+      CSharp: Grades
+  - id: TestLibraryC.Sprint66.EnumMethod.Extensions
+    href: api/TestLibraryC.Sprint66.EnumMethod.Extensions.yaml
+    name:
+      CSharp: Extensions
+- id: TestParameters
+  href: api/TestParameters.yaml
+  name:
+    CSharp: TestParameters
+  items:
+  - id: TestParameters.ParametersWithInOutAttribute
+    href: api/TestParameters.ParametersWithInOutAttribute.yaml
+    name:
+      CSharp: ParametersWithInOutAttribute
 - id: VBTestClass1
   href: api/VBTestClass1.yaml
   name:

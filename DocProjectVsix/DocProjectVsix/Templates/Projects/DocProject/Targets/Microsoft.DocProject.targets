@@ -22,7 +22,7 @@
     <CallTarget Targets="IndexMarkdown" />
     <CallTarget Targets="CopyWebsiteFiles" />
 
-    <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
+    <!--<CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />-->
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
   </Target>
   <Target Name="Validation">

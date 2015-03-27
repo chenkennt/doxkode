@@ -1,0 +1,129 @@
+id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
+href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+name:
+  CSharp: TestLibraryB
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
+type: Class
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 15
+syntax:
+  content:
+    CSharp: public class TestLibraryB
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  name:
+    CSharp: ParamC
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 21
+  syntax:
+    content:
+      CSharp: >-
+        public long ParamC
+
+        {}
+    parameters:
+    - id: ParamC
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  name:
+    CSharp: AddMethod
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 30
+  syntax:
+    content:
+      CSharp: public void AddMethod()
+    parameters: []
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  name:
+    CSharp: eventHandler
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 36
+  syntax:
+    content:
+      CSharp: >-
+        public event EventHandler<EventInfoArgs> eventHandler
+
+                {
+
+                    add { }
+
+                    remove { }
+
+                }
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  name:
+    CSharp: add_eventHandler
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 38
+  syntax:
+    content:
+      CSharp: add { }
+    parameters:
+    - id: value
+      type:
+        id: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        name: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  name:
+    CSharp: remove_eventHandler
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 39
+  syntax:
+    content:
+      CSharp: remove { }
+    parameters:
+    - id: value
+      type:
+        id: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        name: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        isExternal: true
+    return:
+      id: Void

@@ -1,0 +1,39 @@
+id: TestLibraryC.Sprint66.EII
+href: api/TestLibraryC.Sprint66.EII.yaml
+name:
+  CSharp: EII
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.EII
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 882
+items:
+- id: TestLibraryC.Sprint66.EII.MixedAnimal
+  href: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+  type: Class
+- id: TestLibraryC.Sprint66.EII.Monster`1
+  href: api/TestLibraryC.Sprint66.EII.Monster`1.yaml
+  type: Class
+- id: TestLibraryC.Sprint66.EII.TOMCAT
+  href: api/TestLibraryC.Sprint66.EII.TOMCAT.yaml
+  type: Class
+- id: TestLibraryC.Sprint66.EII.Monkey
+  href: api/TestLibraryC.Sprint66.EII.Monkey.yaml
+  type: Class
+- id: TestLibraryC.Sprint66.EII.Pig
+  href: api/TestLibraryC.Sprint66.EII.Pig.yaml
+  type: Class
+- id: TestLibraryC.Sprint66.EII.Dog`2
+  href: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+  type: Interface
+- id: TestLibraryC.Sprint66.EII.Cat
+  href: api/TestLibraryC.Sprint66.EII.Cat.yaml
+  type: Interface
+- id: TestLibraryC.Sprint66.EII.Animal
+  href: api/TestLibraryC.Sprint66.EII.Animal.yaml
+  type: Interface

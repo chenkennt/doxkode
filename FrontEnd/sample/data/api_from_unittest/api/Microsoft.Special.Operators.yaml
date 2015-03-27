@@ -1,0 +1,27 @@
+id: Microsoft.Special.Operators
+href: api/Microsoft.Special.Operators.yaml
+name:
+  CSharp: Operators
+qualifiedName:
+  CSharp: Microsoft.Special.Operators
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 158
+items:
+- id: Microsoft.Special.Operators.OperatorClass
+  href: api/Microsoft.Special.Operators.OperatorClass.yaml
+  type: Class
+- id: Microsoft.Special.Operators.OperatorClass`2
+  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  type: Class
+- id: Microsoft.Special.Operators.OperatorStruct
+  href: api/Microsoft.Special.Operators.OperatorStruct.yaml
+  type: Struct
+- id: Microsoft.Special.Operators.OperatorStruct`2
+  href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+  type: Struct

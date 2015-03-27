@@ -1,0 +1,23 @@
+id: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived
+href: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived.yaml
+name:
+  CSharp: NormalBasicDerived
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 639
+syntax:
+  content:
+    CSharp: public class NormalBasicDerived
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: TestLibraryC.Sprint66.BasicMethod.NormalBasic
+  name: NormalBasic

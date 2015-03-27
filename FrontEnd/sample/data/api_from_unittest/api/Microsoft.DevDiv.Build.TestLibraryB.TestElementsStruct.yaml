@@ -1,0 +1,163 @@
+id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
+href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+name:
+  CSharp: TestElementsStruct
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
+type: Struct
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 114
+syntax:
+  content:
+    CSharp: public struct TestElementsStruct
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.ValueType
+  name: System.ValueType
+  isExternal: true
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32)
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: TestAdd
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 117
+  syntax:
+    content:
+      CSharp: public int TestAdd(int a, int b)
+    parameters:
+    - id: a
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: b
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Int32
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: testStr
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 123
+  syntax:
+    content:
+      CSharp: testStr
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: Hours
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 127
+  syntax:
+    content:
+      CSharp: >-
+        public double Hours
+
+        {}
+    parameters:
+    - id: Hours
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: GetMessage
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 136
+  syntax:
+    content:
+      CSharp: >-
+        [return: MarshalAs(UnmanagedType.LPWStr)]
+
+        public String GetMessage()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: val
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 142
+  syntax:
+    content:
+      CSharp: >-
+        public int val
+
+        {}
+    parameters:
+    - id: val
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: Changed
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 150
+  syntax:
+    content:
+      CSharp: Changed
+- id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent
+  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  name:
+    CSharp: setEvent
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 152
+  syntax:
+    content:
+      CSharp: public void setEvent()
+    parameters: []
+    return:
+      id: Void

@@ -1,0 +1,17 @@
+id: TestLibraryC.Sprint66.BasicMethod.INormalBasic
+href: api/TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
+name:
+  CSharp: INormalBasic
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.BasicMethod.INormalBasic
+type: Interface
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 288
+syntax:
+  content:
+    CSharp: public interface INormalBasic

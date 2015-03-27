@@ -1,0 +1,27 @@
+id: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
+href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+name:
+  CSharp: TestTemplatesImplementsList`4
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
+type: Struct
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 105
+syntax:
+  content:
+    CSharp: >-
+      public struct TestTemplatesImplementsList<K, T, L, M>
+
+              where K : class, IComparable where T : struct where L : TestLibraryB, IEnumerable<long> where M : new ()
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.ValueType
+  name: System.ValueType
+  isExternal: true

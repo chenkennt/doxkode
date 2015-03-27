@@ -1,0 +1,21 @@
+id: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+href: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+name:
+  CSharp: ProtectedCtorClass
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 426
+syntax:
+  content:
+    CSharp: public class ProtectedCtorClass //has ctor for this class in preivew
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

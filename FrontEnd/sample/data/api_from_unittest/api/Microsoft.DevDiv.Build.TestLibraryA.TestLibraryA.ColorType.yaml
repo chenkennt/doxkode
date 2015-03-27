@@ -1,0 +1,56 @@
+id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+name:
+  CSharp: ColorType
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+type: Enum
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 9
+syntax:
+  content:
+    CSharp: public enum ColorType
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.ValueType
+  name: System.ValueType
+  isExternal: true
+- id: System.Enum
+  name: System.Enum
+  isExternal: true
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
+  href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  name:
+    CSharp: Red
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 9
+  syntax:
+    content:
+      CSharp: Red
+- id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
+  href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  name:
+    CSharp: Blue
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 9
+  syntax:
+    content:
+      CSharp: Blue

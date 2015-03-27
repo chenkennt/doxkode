@@ -1,0 +1,72 @@
+id: Microsoft.DevDiv.Build.TestLibraryB2
+href: api/Microsoft.DevDiv.Build.TestLibraryB2.yaml
+name:
+  CSharp: TestLibraryB2
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB2
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 168
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  type: Interface
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  type: Interface
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  type: Interface
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  type: Interface
+- id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.Derived
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+  type: Delegate
+- id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+  type: Delegate
+- id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+  type: Delegate
+- id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+  type: Delegate
+- id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+  type: Class
+- id: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+  type: Class

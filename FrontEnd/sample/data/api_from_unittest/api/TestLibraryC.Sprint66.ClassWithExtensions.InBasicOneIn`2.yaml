@@ -1,0 +1,24 @@
+id: TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2
+href: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2.yaml
+name:
+  CSharp: InBasicOneIn`2
+qualifiedName:
+  CSharp: TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 699
+syntax:
+  content:
+    CSharp: >-
+      public class InBasicOneIn<T, K>
+
+          where T : IInBasic<K> //T is more derived than IBasic2<K> because it derived from IBasic2<K>
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

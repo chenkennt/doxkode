@@ -1,0 +1,21 @@
+id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+name:
+  CSharp: BoolClass
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 413
+syntax:
+  content:
+    CSharp: public class BoolClass
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

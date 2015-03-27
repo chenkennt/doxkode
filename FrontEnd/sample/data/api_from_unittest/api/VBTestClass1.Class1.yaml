@@ -7,11 +7,11 @@ qualifiedName:
   VB: VBTestClass1.Class1
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-52-gcaedae8
-  path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-56-g1e2321c
+  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 3
 summary: This is summary from vb class...
 syntax:
@@ -33,11 +33,8 @@ items:
     VB: VBTestClass1.Class1.ValueClass
   type: Field
   source:
-    remote:
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-52-gcaedae8
-    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 11
   summary: This is a *Value* type
   syntax:
@@ -52,11 +49,8 @@ items:
     VB: VBTestClass1.Class1.Keyword
   type: Property
   source:
-    remote:
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-52-gcaedae8
-    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 13
   syntax:
     content:
@@ -76,11 +70,8 @@ items:
     VB: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
   type: Method
   source:
-    remote:
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-52-gcaedae8
-    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 23
   summary: What is **Sub**?
   syntax:
@@ -103,11 +94,8 @@ items:
     VB: VBTestClass1.Class1.Value(System.String)
   type: Method
   source:
-    remote:
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-52-gcaedae8
-    path: E:/Repo1/docascode/TestResults/Deploy_lianwei 2015-03-27 15_01_51/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 34
   summary: This is a *Function*
   syntax:
