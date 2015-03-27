@@ -142,6 +142,11 @@ module.exports = function(grunt) {
             eqnull: true,
             browser: true,
             globals: {
+                ace: true,
+                $: true,
+                csplay: true,
+                angular: true,
+                jsyaml: true,
                 jQuery: true,
                 marked: true,
                 google: true,
@@ -175,7 +180,7 @@ module.exports = function(grunt) {
             'app/index.tmpl',
             'sample/data/**/*.*',
         ],
-        tasks: ['test' ]
+        tasks: ['jshint']
     },
     connect: {
       test: {

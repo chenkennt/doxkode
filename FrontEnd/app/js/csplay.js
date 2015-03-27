@@ -1,12 +1,13 @@
 window.csplay = {
     play: function (player, compileServiceBaseUrl) {
-        if (typeof compileServiceBaseUrl == "undefined") {
+        'use strict';
+        if (typeof compileServiceBaseUrl === "undefined") {
             compileServiceBaseUrl = "";
         }
-        if (compileServiceBaseUrl.substr(-1, 1) != "/") {
+        if (compileServiceBaseUrl.substr(-1, 1) !== "/") {
             compileServiceBaseUrl += "/";
         }
-        if (typeof player == "string") {
+        if (typeof player === "string") {
             player = document.getElementById(player);
         }
         // Create editor, split bar and output
@@ -60,23 +61,23 @@ window.csplay = {
                     contentType: "text/plain",
                     success: function (data, status, xhr) {
                         bottom.html(data).removeClass("error");
-                        if (typeof callback.success == "function") {
+                        if (typeof callback.success === "function") {
                             callback.success(data, status, xhr);
                         }
                     },
                     error: function (xhr, status, message) {
-                        if (typeof xhr.responseJSON.error_message == "string") {
+                        if (typeof xhr.responseJSON.error_message === "string") {
                             bottom.text(xhr.responseJSON.error_message).addClass("error");
                         }
                         else {
                             bottom.text(xhr.responseText).addClass("error");
                         }
-                        if (typeof callback.error == "function") {
+                        if (typeof callback.error === "function") {
                             callback.error(xhr, status, message);
                         }
                     },
                     complete: function (xhr, status) {
-                        if (typeof callback.complete == "function") {
+                        if (typeof callback.complete === "function") {
                             callback.complete(xhr, status);
                         }
                     }
@@ -86,6 +87,6 @@ window.csplay = {
                 bottom.html("");
             },
             editor: editor
-        }
+        };
     }
-}
+};

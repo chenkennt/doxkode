@@ -1,6 +1,7 @@
 var player;
 
 function createPlayer() {
+  'use strict';
   var player = csplay.play("player", "http://dotnetsandbox.azurewebsites.net" /* hardcode for now */);
   player.editor.setTheme("ace/theme/ambiance");
   player.editor.setFontSize(16);
@@ -16,14 +17,16 @@ function createPlayer() {
     });
   });
   $("#close").click(function () {
-    tryCode(false);
+    angular.element("#console").css("margin-left", "100%");
+    if (player) player.editor.setReadOnly(true);
   });
   return player;
 }
 
 function tryCode(enable, code) {
+  'use strict';
   if (enable) {
-    if (typeof player == "undefined") {
+    if (typeof player === "undefined") {
       player = createPlayer();
     }
     player.editor.setValue(code, -1);
@@ -34,13 +37,14 @@ function tryCode(enable, code) {
   else {
     angular.element("#console").css("margin-left", "100%");
   }
-  if (typeof player != "undefined") {
+  if (typeof player !== "undefined") {
     player.editor.setReadOnly(!enable);
   }
 }
 
 function cleanArray(actual){
-  var newArray = new Array();
+  'use strict';
+  var newArray = [];
   for(var i = 0; i<actual.length; i++){
       if (actual[i]){
         newArray.push(actual[i]);
@@ -75,7 +79,8 @@ angular.module('docsApp', [
 
 angular.module('directives', [])
 .directive('markdown', function() {
-    var md = function () {
+    'use strict';
+    var md = (function () {
         marked.setOptions({
             gfm:true,
             pedantic:false,
@@ -83,7 +88,7 @@ angular.module('directives', [])
         });
 
         var toHtml = function (markdown) {
-            if (markdown == undefined)
+            if (!markdown)
                 return '';
 
             return marked(markdown);
@@ -91,7 +96,7 @@ angular.module('directives', [])
         return {
             toHtml:toHtml
         };
-    }();
+    }());
     return {
         restrict: 'E',
         link: function(scope, element, attrs) {
@@ -181,6 +186,7 @@ angular.module('DocsController', [])
               'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache',
   function($scope, $http, $q, $rootScope, $location, $window, $cookies, openPlunkr,
               NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache) {
+  'use strict';
   $scope.openPlunkr = openPlunkr;
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
@@ -192,12 +198,12 @@ angular.module('DocsController', [])
 
   $scope.getNumber = function(num) {
       return new Array(num + 1);
-  }
+  };
 
   $scope.GetDetail = function(e){
     console.log(e.target);
     var display = e.target.nextElementSibling.style.display;
-    e.target.nextElementSibling.style.display = (display == 'block')? 'none':'block';
+    e.target.nextElementSibling.style.display = (display === 'block')? 'none':'block';
   };
 
   $scope.ViewSource = function(){
@@ -238,7 +244,7 @@ angular.module('DocsController', [])
   })();
 
 // #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
-$scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
+  $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
     path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
 
     var currentPage = $scope.currentPage = path;//NG_PAGES[path];
@@ -260,7 +266,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
                 $scope.toc = toc;
                 // If the requested content path is not specified, pick the first item in toc.yaml as the default one
                 if (!pathInfo.contentPath && toc.content.count > 0) {
-                  $location.url(toc.path + '!' + toc.content[0].href)
+                  $location.url(toc.path + '!' + toc.content[0].href);
                 }
               }, function(){
                 tocCache.put(pathInfo.tocPath, {path: pathInfo.tocPath});
@@ -288,44 +294,26 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
           var mdPath = pathInfo.tocPath? pathInfo.tocPath + '/' + 'md.yaml' : 'md.yaml';
 
           // TODO: move path to app.config?
-          var temp = mdIndexCache.get(mdPath);
-          if (temp){
-            if (temp) $scope.mdIndex = temp;
+          var tempMdIndex = mdIndexCache.get(mdPath);
+          if (tempMdIndex){
+            if (tempMdIndex) $scope.mdIndex = tempMdIndex;
           }else{
             docService.asyncFetchIndex(mdPath, function(result){
-              temp = jsyaml.load(result);
-              mdIndexCache.put(mdPath, temp);
-              $scope.mdIndex = temp;
+              tempMdIndex = jsyaml.load(result);
+              mdIndexCache.put(mdPath, tempMdIndex);
+              $scope.mdIndex = tempMdIndex;
             });
           }
 
           var promise = docService.asyncFetchIndex(path, function(result){
               $scope.partialModel = jsyaml.load(result);
               $scope.title = $scope.partialModel.id;
-            if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-              $scope.itemtypes = NG_ITEMTYPES.namespace;
-              for(var i in $scope.itemtypes){
-                $scope.itemtypes[i].show = false;
-              }
-              for(var i in $scope.partialModel.items){
-                var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-                if (itemtype){
-                  itemtype.show = true;
-                }
-              }
+            if ($scope.partialModel.type.toLowerCase() === 'namespace'){
+              $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, $scope.partialModel.items);
               $scope.partialPath = 'template' + '/namespace.tmpl';
             }
             else {
-              $scope.itemtypes = NG_ITEMTYPES.class;
-              for(var i in $scope.itemtypes){
-                $scope.itemtypes[i].show = false;
-              }
-              for(var i in $scope.partialModel.items){
-                var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-                if (itemtype){
-                  itemtype.show = true;
-                }
-              }
+              $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.class, $scope.partialModel.items);
               $scope.partialPath = 'template' + '/class.tmpl';
             }
           },
@@ -420,6 +408,7 @@ $scope.$watch(function docsPathWatch() {return $location.path(); }, function doc
 angular.module('errors', ['ngSanitize'])
 
 .filter('errorLink', ['$sanitize', function ($sanitize) {
+  'use strict';
   var LINKY_URL_REGEXP = /((ftp|https?):\/\/|(mailto:)?[A-Za-z0-9._%+-]+@)\S*[^\s\.\;\,\(\)\{\}<>]/g,
       MAILTO_REGEXP = /^mailto:/,
       STACK_TRACE_REGEXP = /:\d+:\d+$/;
@@ -453,6 +442,7 @@ angular.module('errors', ['ngSanitize'])
 
 
 .directive('errorDisplay', ['$location', 'errorLinkFilter', function ($location, errorLinkFilter) {
+  'use strict';
   var interpolate = function (formatString) {
     var formatArgs = arguments;
     return formatString.replace(/\{\d+\}/g, function (match) {
@@ -483,6 +473,7 @@ angular.module('errors', ['ngSanitize'])
 angular.module('examples', [])
 
 .factory('formPostData', ['$document', function($document) {
+  'use strict';
   return function(url, newWindow, fields) {
     /**
      * If the form posts to target="_blank", pop-up blockers can cause it not to work.
@@ -506,6 +497,7 @@ angular.module('examples', [])
 
 
 .factory('openPlunkr', ['formPostData', '$http', '$q', function(formPostData, $http, $q) {
+  'use strict';
   return function(exampleFolder, clickEvent) {
 
     var exampleName = 'AngularJS Example';
@@ -534,7 +526,7 @@ angular.module('examples', [])
               // The manifests provide the production index file but Plunkr wants
               // a straight index.html
               if (filename === "index-production.html") {
-                filename = "index.html"
+                filename = "index.html";
               }
 
               return {
@@ -565,6 +557,7 @@ angular.module('examples', [])
 angular.module('tutorials', [])
 
 .directive('docTutorialNav', function() {
+  'use strict';
   var pages = [
     '',
     'step_00', 'step_01', 'step_02', 'step_03', 'step_04',
@@ -611,11 +604,11 @@ angular.module('tutorials', [])
       '</p>'
   };
 });
-"use strict";
 
 angular.module('versions', [])
 
 .controller('DocsVersionsCtrl', ['$scope', '$location', '$window', 'NG_VERSIONS', function($scope, $location, $window, NG_VERSIONS) {
+  'use strict';
   $scope.docs_version  = NG_VERSIONS[0];
   $scope.docs_versions = NG_VERSIONS;
 

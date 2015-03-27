@@ -1,8 +1,7 @@
-'use strict';
-
 var directive = {};
 
 directive.runnableExample = ['$templateCache', '$document', function($templateCache, $document) {
+  'use strict';
   var exampleClassNameSelector = '.runnable-example-file';
   var doc = $document[0];
   var tpl =
@@ -47,7 +46,7 @@ directive.runnableExample = ['$templateCache', '$document', function($templateCa
           });
           scope.setTab(0);
         }
-      }
+      };
     }
   };
 }];
@@ -55,16 +54,17 @@ directive.runnableExample = ['$templateCache', '$document', function($templateCa
 directive.dropdownToggle =
           ['$document', '$location', '$window',
   function ($document,   $location,   $window) {
+    'use strict';
     var openElement = null, close;
     return {
       restrict: 'C',
       link: function(scope, element, attrs) {
         scope.$watch(function dropdownTogglePathWatch(){return $location.path();}, function dropdownTogglePathWatchAction() {
-          close && close();
+          if (close) close();
         });
 
         element.parent().on('click', function(event) {
-          close && close();
+          if (close) close();
         });
 
         element.on('click', function(event) {
@@ -99,6 +99,7 @@ directive.dropdownToggle =
   }];
 
 directive.syntax = function() {
+  'use strict';
   return {
     restrict: 'A',
     link: function(scope, element, attrs) {
@@ -146,6 +147,7 @@ directive.syntax = function() {
 }
 
 directive.tabbable = function() {
+  'use strict';
   return {
     restrict: 'C',
     compile: function(element) {
@@ -240,6 +242,7 @@ directive.tabbable = function() {
 };
 
 directive.table = function() {
+  'use strict';
   return {
     restrict: 'E',
     link: function(scope, element, attrs) {
@@ -251,6 +254,7 @@ directive.table = function() {
 };
 
 var popoverElement = function() {
+  'use strict';
   var object = {
     init : function() {
       this.element = angular.element(
@@ -355,6 +359,7 @@ var popoverElement = function() {
 };
 
 directive.popover = ['popoverElement', function(popover) {
+  'use strict';
   return {
     restrict: 'A',
     priority : 500,
@@ -378,6 +383,7 @@ directive.popover = ['popoverElement', function(popover) {
 }];
 
 directive.tabPane = function() {
+  'use strict';
   return {
     require: '^tabbable',
     restrict: 'C',
@@ -388,6 +394,7 @@ directive.tabPane = function() {
 };
 
 directive.foldout = ['$http', '$animate','$window', function($http, $animate, $window) {
+  'use strict';
   return {
     restrict: 'A',
     priority : 500,

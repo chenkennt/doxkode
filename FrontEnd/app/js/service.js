@@ -15,7 +15,7 @@ function docServiceFunction($q, $http) {
   };
 
   this.navClassApi = function(navItem) {
-    var navPath = undefined;
+    var navPath;
     if (this.pathInfo){
       navPath = this.pathInfo.tocPath || this.pathInfo.contentPath;
     }
@@ -29,7 +29,7 @@ function docServiceFunction($q, $http) {
   this.getRemoteUrl = function(item, startLine){
     if (item && item.remote && item.remote.repo){
       var repo = item.remote.repo;
-      if (repo.substr(-4) == '.git') {
+      if (repo.substr(-4) === '.git') {
         repo = repo.substr(0, repo.length-4);
       }
       var linenum = startLine? startLine:item.startLine;
@@ -44,6 +44,17 @@ function docServiceFunction($q, $http) {
       return "#";
     }
   };
+
+  this.setItemTypeVisiblity = function(itemTypes, items){
+    for(var prop in itemTypes){
+      itemTypes[prop].show = false;
+    }
+    if (!items) return itemTypes;
+    items.forEach(function(e){
+      if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
+    });
+    return itemTypes;
+  }
 
   this.getPathInfo = function(currentPath){
     if (!currentPath) return undefined;
@@ -63,7 +74,7 @@ function docServiceFunction($q, $http) {
       tocFilePath: currentPath.substring(0, index) + '/toc.yaml',
       contentPath: currentPath.substring(index+1, currentPath.length)
     };
-  }
+  };
 
   this.asyncFetchIndex = function(path, success, fail) {
     var deferred = $q.defer();
@@ -75,7 +86,7 @@ function docServiceFunction($q, $http) {
             headers: {
             'Content-Type': 'text/plain'
             }
-        }
+        };
     $http.get(req.url, req)
         .success(
             function(result){
