@@ -343,14 +343,13 @@ module.exports = function(grunt) {
     grunt.registerTask('index_debug_ref', 'Generate docascode-debug.html, ref all scripts unminified', function() {
         createIndex(grunt, 'debug', 'ref');
     });
-
-    grunt.registerTask('debug', [ 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
-    grunt.registerTask('debuginline', [ 'less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('build', ['less:dev', 'jshint']);
+    grunt.registerTask('debug', [ 'build', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
+    grunt.registerTask('debuginline', [ 'build', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
+    grunt.registerTask('releaseinline', [ 'build','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);
-    grunt.registerTask('release', [ 'less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
-    grunt.registerTask('releaseinline', [ 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
-    grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
     grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
