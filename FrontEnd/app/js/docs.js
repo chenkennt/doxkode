@@ -1,22 +1,13 @@
 var player;
 
-function cleanArray(actual){
-  'use strict';
-  var newArray = [];
-  for(var i = 0; i<actual.length; i++){
-      if (actual[i]){
-        newArray.push(actual[i]);
-    }
-  }
-  return newArray;
-}
 
 angular.module('docsApp', [
   'ngRoute',
   'ngCookies',
   'ngSanitize',
   'ngAnimate',
-  'DocsController',
+  'docUtility',
+  'docCtrl',
   'versionsData',
   'pagesData',
   'itemTypes',
@@ -28,7 +19,7 @@ angular.module('docsApp', [
   'hc.marked'
 ]);
 
-angular.module('DocsController', ['docInitService'])
+angular.module('docCtrl', ['docInitService', 'docUtility'])
 .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
     return $cacheFactory('toc-cache');
   }])
@@ -37,9 +28,9 @@ angular.module('DocsController', ['docInitService'])
   }])
 .controller('DocsController', [
           '$scope', '$http', '$q','$rootScope', '$location', '$window', '$cookies',
-              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache',
+              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache', 'docUtility',
   function($scope, $http, $q, $rootScope, $location, $window, $cookies,
-              NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache) {
+              NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache, docUtility) {
   'use strict';
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
