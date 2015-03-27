@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 595
 syntax:
   content:
@@ -29,14 +29,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 597
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("5f6fd6a2-26dc-4ac2-a773-e2f134953592")]
-
-        public static void OutBasicA<T>(this IOutBasic<IOutBasic<T>> outb)
+      CSharp: '[ExtensionHelper("5f6fd6a2-26dc-4ac2-a773-e2f134953592")] public static void OutBasicA<T>(this IOutBasic<IOutBasic<T>> outb)'
     parameters:
     - id: outb
       type:
@@ -54,14 +51,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 600
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("217d690f-c204-49ad-90c2-a124f48e6155")]
-
-        public static void OutBasicB(this IOutBasic<IStrictOutBasic<IOutBasic<object>>> outisoutb)
+      CSharp: '[ExtensionHelper("217d690f-c204-49ad-90c2-a124f48e6155")] public static void OutBasicB(this IOutBasic<IStrictOutBasic<IOutBasic<object>>> outisoutb)'
     parameters:
     - id: outisoutb
       type:

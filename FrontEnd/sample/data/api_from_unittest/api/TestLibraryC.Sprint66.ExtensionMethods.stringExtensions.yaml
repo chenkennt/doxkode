@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 375
 syntax:
   content:
@@ -29,15 +29,12 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 380
   summary: basic class extension scenario
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("e190c30b-8ae7-42ff-a848-3e096473ae18")]
-
-        public static int MethodA(this string str)
+      CSharp: '[ExtensionHelper("e190c30b-8ae7-42ff-a848-3e096473ae18")] public static int MethodA(this string str)'
     parameters:
     - id: str
       type:
@@ -55,15 +52,12 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 386
   summary: overload extension scenario
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("cb0adee8-5231-41b1-b556-bc0a33b95231")]
-
-        public static DateTime MethodA(this string str, DateTime time)
+      CSharp: '[ExtensionHelper("cb0adee8-5231-41b1-b556-bc0a33b95231")] public static DateTime MethodA(this string str, DateTime time)'
     parameters:
     - id: str
       type:
@@ -86,15 +80,12 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 392
   summary: complex type parameter extension scenario
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("df070ea0-702c-4a70-b388-549af733b16e")]
-
-        public static void MethodB(this string str, List<string> a)
+      CSharp: '[ExtensionHelper("df070ea0-702c-4a70-b388-549af733b16e")] public static void MethodB(this string str, List<string> a)'
     parameters:
     - id: str
       type:

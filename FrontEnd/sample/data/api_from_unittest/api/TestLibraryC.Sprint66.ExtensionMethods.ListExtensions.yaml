@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 444
 syntax:
   content:
@@ -29,15 +29,12 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 449
   summary: template class extension method, which should be overloaded with the one in class IListExtensions
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("b1b23cdd-d441-4099-9a65-1ca46fa30cf5")]
-
-        public static bool AsParallel<TK>(this List<TK> list, bool result)
+      CSharp: '[ExtensionHelper("b1b23cdd-d441-4099-9a65-1ca46fa30cf5")] public static bool AsParallel<TK>(this List<TK> list, bool result)'
     parameters:
     - id: list
       type:
@@ -60,14 +57,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 455
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("3e958a3a-ca54-43d5-a450-bdc27fa6e14b")]
-
-        public static bool Find<T, V>(this List<T> list, T a, V b)
+      CSharp: '[ExtensionHelper("3e958a3a-ca54-43d5-a450-bdc27fa6e14b")] public static bool Find<T, V>(this List<T> list, T a, V b)'
     parameters:
     - id: list
       type:
@@ -95,14 +89,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 461
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("906ebaeb-68f9-41b3-b9d1-d4eb4927c113")]
-
-        public static bool Find<T, V>(this List<T> list, V a, T b)
+      CSharp: '[ExtensionHelper("906ebaeb-68f9-41b3-b9d1-d4eb4927c113")] public static bool Find<T, V>(this List<T> list, V a, T b)'
     parameters:
     - id: list
       type:
@@ -130,16 +121,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 467
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("9bb77d78-4039-40a0-821a-a7dcd90e1839")]
-
-        public static bool Find<T, K, L>(this List<T> list, T a, K b, L c)//where T: struct
-
-        where K : struct
+      CSharp: '[ExtensionHelper("9bb77d78-4039-40a0-821a-a7dcd90e1839")] public static bool Find<T, K, L>(this List<T> list, T a, K b, L c)//where T: struct where K : struct'
     parameters:
     - id: list
       type:
@@ -172,16 +158,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 478
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("fe6b5ed2-fd3c-422d-ad19-aae6f9bb876e")]
-
-        public static bool Find<T, K, L>(this List<T> list, L a, K b, T c)//where T: class
-
-        where K : class
+      CSharp: '[ExtensionHelper("fe6b5ed2-fd3c-422d-ad19-aae6f9bb876e")] public static bool Find<T, K, L>(this List<T> list, L a, K b, T c)//where T: class where K : class'
     parameters:
     - id: list
       type:
@@ -214,14 +195,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 486
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("71d17bdb-ec13-42ce-824a-9499670520c9")]
-
-        public static void ExHiddenMethod<T>(this List<List<T>> list)
+      CSharp: '[ExtensionHelper("71d17bdb-ec13-42ce-824a-9499670520c9")] public static void ExHiddenMethod<T>(this List<List<T>> list)'
     parameters:
     - id: list
       type:
@@ -239,14 +217,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 489
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("53345562-37a7-47ab-b6cb-613d05acccf0")]
-
-        public static bool ExOverloadMethod<T>(this List<List<T>> list)
+      CSharp: '[ExtensionHelper("53345562-37a7-47ab-b6cb-613d05acccf0")] public static bool ExOverloadMethod<T>(this List<List<T>> list)'
     parameters:
     - id: list
       type:

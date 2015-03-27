@@ -129,6 +129,7 @@
     <Compile Include="Model\MemberType.cs" />
     <Compile Include="Model\ParseResult.cs" />
     <Compile Include="Model\LayoutItem.cs" />
+    <Compile Include="Resolvers\NormalizeSyntax.cs" />
     <Compile Include="Resolvers\ResolveGitPath.cs" />
     <Compile Include="Resolvers\ResolveLink.cs" />
     <Compile Include="Resolvers\ResolvePath.cs" />

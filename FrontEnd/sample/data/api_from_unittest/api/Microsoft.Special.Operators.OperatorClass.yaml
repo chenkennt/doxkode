@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 160
 syntax:
   content:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 162
   syntax:
     content:
@@ -55,7 +55,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 163
   syntax:
     content:
@@ -81,7 +81,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 164
   syntax:
     content:
@@ -107,7 +107,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 165
   syntax:
     content:
@@ -133,7 +133,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 166
   syntax:
     content:
@@ -159,7 +159,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 167
   syntax:
     content:
@@ -185,7 +185,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 168
   syntax:
     content:
@@ -211,7 +211,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 169
   syntax:
     content:
@@ -232,7 +232,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 170
   syntax:
     content:
@@ -253,7 +253,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 171
   syntax:
     content:
@@ -278,7 +278,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 172
   syntax:
     content:
@@ -303,11 +303,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 173
   syntax:
     content:
-      CSharp: public static bool operator >(OperatorClass lsr, OperatorClass rsr) { return lsr > rsr; }
+      CSharp: public static bool operator>(OperatorClass lsr, OperatorClass rsr) { return lsr > rsr; }
     parameters:
     - id: lsr
       type:
@@ -328,7 +328,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 174
   syntax:
     content:
@@ -353,7 +353,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 175
   syntax:
     content:
@@ -378,7 +378,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 176
   syntax:
     content:
@@ -403,14 +403,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 177
   syntax:
     content:
-      CSharp: >-
-        public string this[string index]
-
-        {}
+      CSharp: public string this[string index] { get; set; }
     parameters:
     - id: this[]
       type:
@@ -426,7 +423,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 182
   syntax:
     content:
@@ -448,7 +445,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 183
   syntax:
     content:
@@ -465,7 +462,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 184
   syntax:
     content:
@@ -487,7 +484,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 185
   syntax:
     content:
@@ -509,7 +506,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 186
   syntax:
     content:
@@ -530,7 +527,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 187
   syntax:
     content:

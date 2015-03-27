@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 505
 syntax:
   content:
@@ -29,14 +29,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 507
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("971BE40A-6E57-4ED4-BADC-EFC1B7317BD0")]
-
-        public static bool AddOverloadMethod(this INormalAdvance<string> ina, int a)
+      CSharp: '[ExtensionHelper("971BE40A-6E57-4ED4-BADC-EFC1B7317BD0")] public static bool AddOverloadMethod(this INormalAdvance<string> ina, int a)'
     parameters:
     - id: ina
       type:
@@ -59,14 +56,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 510
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("E7CDCABF-F408-4C1F-AE90-DF498C613B82")]
-
-        public static double IndependentMethod(this INormalAdvance<int> ina, double a)
+      CSharp: '[ExtensionHelper("E7CDCABF-F408-4C1F-AE90-DF498C613B82")] public static double IndependentMethod(this INormalAdvance<int> ina, double a)'
     parameters:
     - id: ina
       type:
@@ -89,14 +83,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 513
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("BC4F8484-F03F-4DF3-9A37-968B9A38220F")]
-
-        public static long AddOverloadMethod<T>(this INormalAdvance<T> ina, T b, long c)
+      CSharp: '[ExtensionHelper("BC4F8484-F03F-4DF3-9A37-968B9A38220F")] public static long AddOverloadMethod<T>(this INormalAdvance<T> ina, T b, long c)'
     parameters:
     - id: ina
       type:
@@ -124,14 +115,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 516
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("6DB9B8CD-56FF-4870-86AB-2629189C0CA7")]
-
-        public static long AddOverloadMethod<U>(this INormalAdvance<U> ina, U b, U c)
+      CSharp: '[ExtensionHelper("6DB9B8CD-56FF-4870-86AB-2629189C0CA7")] public static long AddOverloadMethod<U>(this INormalAdvance<U> ina, U b, U c)'
     parameters:
     - id: ina
       type:

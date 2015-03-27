@@ -7,11 +7,7 @@ qualifiedName:
   VB: VBTestClass1
 type: Namespace
 source:
-  remote:
-    branch: develop
-    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/VBTestClass1/My Project/AssemblyInfo.vb
+  path: C:\Users\lianwei\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb
 items:
 - id: VBTestClass1.Class1
   href: api/VBTestClass1.Class1.yaml

@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 577
 syntax:
   content:
@@ -29,14 +29,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 579
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("026c86f0-e95a-4034-8326-5a88a90dc934")]
-
-        public static void InBasicA<T>(this IInBasic<IInBasic<T>> inb)
+      CSharp: '[ExtensionHelper("026c86f0-e95a-4034-8326-5a88a90dc934")] public static void InBasicA<T>(this IInBasic<IInBasic<T>> inb)'
     parameters:
     - id: inb
       type:
@@ -54,14 +51,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 582
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("a5cf6682-41c9-47e3-9289-553988973186")]
-
-        public static void InBasicB(this IInBasic<string> in1b)
+      CSharp: '[ExtensionHelper("a5cf6682-41c9-47e3-9289-553988973186")] public static void InBasicB(this IInBasic<string> in1b)'
     parameters:
     - id: in1b
       type:
@@ -79,14 +73,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 585
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("ed64bdb4-ffd8-436b-8c1a-3986ab217a3f")]
-
-        public static void InBasicC(this IInBasic<IInBasic<object>> in2b)
+      CSharp: '[ExtensionHelper("ed64bdb4-ffd8-436b-8c1a-3986ab217a3f")] public static void InBasicC(this IInBasic<IInBasic<object>> in2b)'
     parameters:
     - id: in2b
       type:
@@ -104,14 +95,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 588
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("96aaa84a-9298-489c-a66e-87c9c450de35")]
-
-        public static void InBasicD(this IInBasic<IInBasic<IInBasic<string>>> in3b)
+      CSharp: '[ExtensionHelper("96aaa84a-9298-489c-a66e-87c9c450de35")] public static void InBasicD(this IInBasic<IInBasic<IInBasic<string>>> in3b)'
     parameters:
     - id: in3b
       type:
@@ -129,14 +117,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 591
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("dbf6df2f-c219-46fd-8ca0-90572de2ba5a")]
-
-        public static void InBasicE(this IInBasic<IStrictInBasic<IInBasic<string>>> inisinb)
+      CSharp: '[ExtensionHelper("dbf6df2f-c219-46fd-8ca0-90572de2ba5a")] public static void InBasicE(this IInBasic<IStrictInBasic<IInBasic<string>>> inisinb)'
     parameters:
     - id: inisinb
       type:

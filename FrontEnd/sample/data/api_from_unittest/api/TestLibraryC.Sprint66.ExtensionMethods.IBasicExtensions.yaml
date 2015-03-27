@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 562
 syntax:
   content:
@@ -29,14 +29,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 564
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("ff9945ae-b010-4910-88e1-615e2b8a1d31")]
-
-        public static void BasicA<T, K>(this IBasic<T, K> ib)
+      CSharp: '[ExtensionHelper("ff9945ae-b010-4910-88e1-615e2b8a1d31")] public static void BasicA<T, K>(this IBasic<T, K> ib)'
     parameters:
     - id: ib
       type:
@@ -54,14 +51,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 567
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("5eb53587-70da-4fd5-9bd5-092d69633e3e")]
-
-        public static void BasicB(this IBasic<string, object> ib)
+      CSharp: '[ExtensionHelper("5eb53587-70da-4fd5-9bd5-092d69633e3e")] public static void BasicB(this IBasic<string, object> ib)'
     parameters:
     - id: ib
       type:
@@ -79,14 +73,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 570
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("3d27178a-e990-4811-a9f1-8287bbf1664b")]
-
-        public static void BasicC<T>(this IBasic<T, object> ib)
+      CSharp: '[ExtensionHelper("3d27178a-e990-4811-a9f1-8287bbf1664b")] public static void BasicC<T>(this IBasic<T, object> ib)'
     parameters:
     - id: ib
       type:
@@ -104,14 +95,11 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 573
   syntax:
     content:
-      CSharp: >-
-        [ExtensionHelper("6ac63edb-ef08-41cc-948f-bbf4e045dbaf")]
-
-        public static void BasicD<T>(this IBasic<object, string> ib)
+      CSharp: '[ExtensionHelper("6ac63edb-ef08-41cc-948f-bbf4e045dbaf")] public static void BasicD<T>(this IBasic<object, string> ib)'
     parameters:
     - id: ib
       type:

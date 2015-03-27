@@ -9,15 +9,12 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 1002
 syntax:
   content:
-    CSharp: >-
-      public interface Dog<K, U>
-
-          where K : class where U : struct
+    CSharp: 'public interface Dog<K, U> where K : class where U : struct'
 items:
 - id: TestLibraryC.Sprint66.EII.Dog`2.eatEvent
   href: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
@@ -28,7 +25,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1007
   syntax:
     content:
@@ -42,11 +39,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1009
   syntax:
     content:
-      CSharp: new string Name {}
+      CSharp: new string Name { get; }
     parameters:
     - id: Name
       type:
@@ -62,11 +59,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1010
   syntax:
     content:
-      CSharp: bool IsAlive {}
+      CSharp: bool IsAlive { get; }
     parameters:
     - id: IsAlive
       type:
@@ -82,11 +79,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1011
   syntax:
     content:
-      CSharp: bool HasBone {}
+      CSharp: bool HasBone { get; }
     parameters:
     - id: HasBone
       type:
@@ -102,11 +99,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1012
   syntax:
     content:
-      CSharp: string nickName {}
+      CSharp: string nickName { get; set; }
     parameters:
     - id: nickName
       type:
@@ -122,11 +119,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1013
   syntax:
     content:
-      CSharp: new string this[int a] {}
+      CSharp: new string this[int a] { get; }
     parameters:
     - id: this[]
       type:
@@ -142,7 +139,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1015
   syntax:
     content:
@@ -164,7 +161,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1016
   syntax:
     content:
@@ -181,7 +178,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1017
   syntax:
     content:
@@ -198,7 +195,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1018
   syntax:
     content:

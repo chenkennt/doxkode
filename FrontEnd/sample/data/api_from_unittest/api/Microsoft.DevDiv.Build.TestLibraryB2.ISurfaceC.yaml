@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 204
 syntax:
   content:
@@ -25,7 +25,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 206
   syntax:
     content:
@@ -42,7 +42,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 208
   syntax:
     content:
@@ -59,7 +59,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 210
   syntax:
     content:
@@ -81,7 +81,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 211
   syntax:
     content:
@@ -108,7 +108,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 213
   syntax:
     content:
@@ -125,7 +125,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 215
   syntax:
     content:
@@ -152,11 +152,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 217
   syntax:
     content:
-      CSharp: double PropertyC {}
+      CSharp: double PropertyC { get; set; }
     parameters:
     - id: PropertyC
       type:
@@ -172,11 +172,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 219
   syntax:
     content:
-      CSharp: new double Property {}
+      CSharp: new double Property { get; set; }
     parameters:
     - id: Property
       type:
@@ -192,11 +192,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 221
   syntax:
     content:
-      CSharp: double this[string a, double b] {}
+      CSharp: double this[string a, double b] { get; set; }
     parameters:
     - id: this[]
       type:
@@ -212,11 +212,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 223
   syntax:
     content:
-      CSharp: new double this[string a] {}
+      CSharp: new double this[string a] { get; set; }
     parameters:
     - id: this[]
       type:
@@ -232,11 +232,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 225
   syntax:
     content:
-      CSharp: double this[string a, object b, params object[] c] {}
+      CSharp: double this[string a, object b, params object[] c] { get; set; }
     parameters:
     - id: this[]
       type:

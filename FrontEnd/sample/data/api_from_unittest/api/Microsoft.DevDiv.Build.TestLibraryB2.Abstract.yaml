@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-56-g1e2321c
-  path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-59-g5d13630
+  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 269
 syntax:
   content:
@@ -29,14 +29,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 271
   syntax:
     content:
-      CSharp: >-
-        [ComVisible(true)]
-
-                public abstract int AbstractProperty {}
+      CSharp: '[ComVisible(true)] public abstract int AbstractProperty { get; set; }'
     parameters:
     - id: AbstractProperty
       type:
@@ -52,11 +49,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 274
   syntax:
     content:
-      CSharp: public abstract Dictionary<List<string>, List<long>> AbstractProperty2 {}
+      CSharp: public abstract Dictionary<List<string>, List<long>> AbstractProperty2 { get; set; }
     parameters:
     - id: AbstractProperty2
       type:
@@ -72,11 +69,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 276
   syntax:
     content:
-      CSharp: public virtual List<double> VirtualProperty {}
+      CSharp: public virtual List<double> VirtualProperty { get; set; }
     parameters:
     - id: VirtualProperty
       type:
@@ -92,11 +89,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 278
   syntax:
     content:
-      CSharp: public virtual int VirtualIntProperty {}
+      CSharp: public virtual int VirtualIntProperty { get; set; }
     parameters:
     - id: VirtualIntProperty
       type:
@@ -112,11 +109,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 280
   syntax:
     content:
-      CSharp: public virtual long VirtualLongProperty {}
+      CSharp: public virtual long VirtualLongProperty { get; set; }
     parameters:
     - id: VirtualLongProperty
       type:
@@ -132,11 +129,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 282
   syntax:
     content:
-      CSharp: public ushort PrivateGetProperty {}
+      CSharp: public ushort PrivateGetProperty { private get; set; }
     parameters:
     - id: PrivateGetProperty
       type:
@@ -152,11 +149,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 284
   syntax:
     content:
-      CSharp: public ulong PrivateSetProperty {}
+      CSharp: public ulong PrivateSetProperty { get; private set; }
     parameters:
     - id: PrivateSetProperty
       type:
@@ -172,14 +169,11 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 286
   syntax:
     content:
-      CSharp: >-
-        public int PublicIntProperty
-
-        {}
+      CSharp: public int PublicIntProperty { get; private set; }
     parameters:
     - id: PublicIntProperty
       type:
@@ -195,7 +189,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 300
   syntax:
     content:
@@ -217,7 +211,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 302
   syntax:
     content:
@@ -244,7 +238,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 304
   syntax:
     content:
@@ -276,7 +270,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 306
   syntax:
     content:
@@ -313,7 +307,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 18_05_21/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 308
   syntax:
     content:

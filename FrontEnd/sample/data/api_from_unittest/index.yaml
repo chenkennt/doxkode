@@ -1,0 +1,1389 @@
+Microsoft:
+  Name: Microsoft
+  YamlPath: api/Microsoft.yaml
+Microsoft.DevDev:
+  Name: Microsoft.DevDev
+  YamlPath: api/Microsoft.DevDev.yaml
+Microsoft.DevDev.Build:
+  Name: Microsoft.DevDev.Build
+  YamlPath: api/Microsoft.DevDev.Build.yaml
+Microsoft.DevDev.Build.PropertyOverload:
+  Name: Microsoft.DevDev.Build.PropertyOverload
+  YamlPath: api/Microsoft.DevDev.Build.PropertyOverload.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty:
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+  YamlPath: api/Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.Int32):
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.Int32)
+  YamlPath: api/Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.String):
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.String)
+  YamlPath: api/Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDiv:
+  Name: Microsoft.DevDiv
+  YamlPath: api/Microsoft.DevDiv.yaml
+Microsoft.DevDiv.Build:
+  Name: Microsoft.DevDiv.Build
+  YamlPath: api/Microsoft.DevDiv.Build.yaml
+Microsoft.DevDiv.Build.TestLibraryA:
+  Name: Microsoft.DevDiv.Build.TestLibraryA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+CustomExtensionMethods:
+  Name: CustomExtensionMethods
+  YamlPath: api/CustomExtensionMethods.yaml
+CustomExtensionMethods.stringExtension:
+  Name: CustomExtensionMethods.stringExtension
+  YamlPath: api/CustomExtensionMethods.stringExtension.yaml
+CustomExtensionMethods.stringExtension.WordCount(System.String):
+  Name: CustomExtensionMethods.stringExtension.WordCount(System.String)
+  YamlPath: api/CustomExtensionMethods.stringExtension.yaml
+Microsoft.DevDiv.Build.TestLibraryB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+? Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+? Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MultiplyMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MultiplyMethod
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MinusMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MinusMethod
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.testClassStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.testClassStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.testClassStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[]):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[])
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[]):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[])
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.FooD:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.FooD
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.PropertyB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.otherEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.otherEventHandler
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.a:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.a
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.#ctor
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+? Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
+: Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.#ctor
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+? Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc(Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass,Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass)
+: Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc(Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass,Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass)
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitivefunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitivefunc
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolProperty
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolField:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolField
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolField:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolField
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+  YamlPath: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+TestNestedDel:
+  Name: TestNestedDel
+  YamlPath: api/TestNestedDel.yaml
+TestNestedDel.Class1`2:
+  Name: TestNestedDel.Class1`2
+  YamlPath: api/TestNestedDel.Class1`2.yaml
+TestNestedDel.Class1`2.M(`0,TestNestedDel.Class1{`0,`1}.InnerDelegate):
+  Name: TestNestedDel.Class1`2.M(`0,TestNestedDel.Class1{`0,`1}.InnerDelegate)
+  YamlPath: api/TestNestedDel.Class1`2.yaml
+TestNestedDel.Class1`2.InnerDelegate:
+  Name: TestNestedDel.Class1`2.InnerDelegate
+  YamlPath: api/TestNestedDel.Class1`2.InnerDelegate.yaml
+TestNestedDel.Class2`2:
+  Name: TestNestedDel.Class2`2
+  YamlPath: api/TestNestedDel.Class2`2.yaml
+TestNestedDel.Class2`2.Class3`2:
+  Name: TestNestedDel.Class2`2.Class3`2
+  YamlPath: api/TestNestedDel.Class2`2.Class3`2.yaml
+TestNestedDel.Class2`2.Class3`2.M(`0,TestNestedDel.Class2{`0,`1}.Class3{`2,`3}.InnerDelegate):
+  Name: TestNestedDel.Class2`2.Class3`2.M(`0,TestNestedDel.Class2{`0,`1}.Class3{`2,`3}.InnerDelegate)
+  YamlPath: api/TestNestedDel.Class2`2.Class3`2.yaml
+TestNestedDel.Class2`2.Class3`2.InnerDelegate:
+  Name: TestNestedDel.Class2`2.Class3`2.InnerDelegate
+  YamlPath: api/TestNestedDel.Class2`2.Class3`2.InnerDelegate.yaml
+TestNestedDel.Class3`2:
+  Name: TestNestedDel.Class3`2
+  YamlPath: api/TestNestedDel.Class3`2.yaml
+TestNestedDel.Class3`2.Class4`2:
+  Name: TestNestedDel.Class3`2.Class4`2
+  YamlPath: api/TestNestedDel.Class3`2.Class4`2.yaml
+TestNestedDel.Class3`2.Class4`2.M(`2,TestNestedDel.Class3{`0,`1}.Class4{`2,`3}.InnerDelegate):
+  Name: TestNestedDel.Class3`2.Class4`2.M(`2,TestNestedDel.Class3{`0,`1}.Class4{`2,`3}.InnerDelegate)
+  YamlPath: api/TestNestedDel.Class3`2.Class4`2.yaml
+TestNestedDel.Class3`2.Class4`2.InnerDelegate:
+  Name: TestNestedDel.Class3`2.Class4`2.InnerDelegate
+  YamlPath: api/TestNestedDel.Class3`2.Class4`2.InnerDelegate.yaml
+Microsoft.Special:
+  Name: Microsoft.Special
+  YamlPath: api/Microsoft.Special.yaml
+Microsoft.Special.Types:
+  Name: Microsoft.Special.Types
+  YamlPath: api/Microsoft.Special.Types.yaml
+Microsoft.Special.Types.typeClass:
+  Name: Microsoft.Special.Types.typeClass
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcArray1:
+  Name: Microsoft.Special.Types.typeClass.funcArray1
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcArray2:
+  Name: Microsoft.Special.Types.typeClass.funcArray2
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcRef(System.String@):
+  Name: Microsoft.Special.Types.typeClass.funcRef(System.String@)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcPointer(System.Int32*):
+  Name: Microsoft.Special.Types.typeClass.funcPointer(System.Int32*)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.iVolatile:
+  Name: Microsoft.Special.Types.typeClass.iVolatile
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcClassTypeDecorator(System.Int32,System.String):
+  Name: Microsoft.Special.Types.typeClass.funcClassTypeDecorator(System.Int32,System.String)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcParamRef``1(``0):
+  Name: Microsoft.Special.Types.typeClass.funcParamRef``1(``0)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcGenericInstantiation(System.Collections.Generic.IEnumerable{System.String}):
+  Name: Microsoft.Special.Types.typeClass.funcGenericInstantiation(System.Collections.Generic.IEnumerable{System.String})
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcCLRType(Microsoft.Special.Types.typeClass):
+  Name: Microsoft.Special.Types.typeClass.funcCLRType(Microsoft.Special.Types.typeClass)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcCLRTypeRef(System.DateTime):
+  Name: Microsoft.Special.Types.typeClass.funcCLRTypeRef(System.DateTime)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcSimpleType(System.String):
+  Name: Microsoft.Special.Types.typeClass.funcSimpleType(System.String)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.Types.typeClass.funcTypedByRefType(System.TypedReference):
+  Name: Microsoft.Special.Types.typeClass.funcTypedByRefType(System.TypedReference)
+  YamlPath: api/Microsoft.Special.Types.typeClass.yaml
+Microsoft.Special.EmptyClass:
+  Name: Microsoft.Special.EmptyClass
+  YamlPath: api/Microsoft.Special.EmptyClass.yaml
+Microsoft.Special.EmptyClass.EmptyClass:
+  Name: Microsoft.Special.EmptyClass.EmptyClass
+  YamlPath: api/Microsoft.Special.EmptyClass.EmptyClass.yaml
+Microsoft.Special.Operators:
+  Name: Microsoft.Special.Operators
+  YamlPath: api/Microsoft.Special.Operators.yaml
+Microsoft.Special.Operators.OperatorClass:
+  Name: Microsoft.Special.Operators.OperatorClass
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Addition(Microsoft.Special.Operators.OperatorClass,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Addition(Microsoft.Special.Operators.OperatorClass,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Int64):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Int64)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Subtraction(Microsoft.Special.Operators.OperatorClass,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Modulus(Microsoft.Special.Operators.OperatorClass,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Modulus(Microsoft.Special.Operators.OperatorClass,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Multiply(Microsoft.Special.Operators.OperatorClass,System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Multiply(Microsoft.Special.Operators.OperatorClass,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Division(Microsoft.Special.Operators.OperatorClass,System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Division(Microsoft.Special.Operators.OperatorClass,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Increment(Microsoft.Special.Operators.OperatorClass):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Increment(Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Decrement(Microsoft.Special.Operators.OperatorClass):
+  Name: Microsoft.Special.Operators.OperatorClass.op_Decrement(Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_Equality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_Equality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_Inequality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_Inequality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_GreaterThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_GreaterThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_LessThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_LessThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+? Microsoft.Special.Operators.OperatorClass.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+: Name: Microsoft.Special.Operators.OperatorClass.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.Item(System.String):
+  Name: Microsoft.Special.Operators.OperatorClass.Item(System.String)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.Equals(System.Object):
+  Name: Microsoft.Special.Operators.OperatorClass.Equals(System.Object)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.GetHashCode:
+  Name: Microsoft.Special.Operators.OperatorClass.GetHashCode
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Implicit(System.Byte)~Microsoft.Special.Operators.OperatorClass:
+  Name: Microsoft.Special.Operators.OperatorClass.op_Implicit(System.Byte)~Microsoft.Special.Operators.OperatorClass
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Implicit(System.Int32)~Microsoft.Special.Operators.OperatorClass:
+  Name: Microsoft.Special.Operators.OperatorClass.op_Implicit(System.Int32)~Microsoft.Special.Operators.OperatorClass
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Explicit(Microsoft.Special.Operators.OperatorClass)~System.Int64:
+  Name: Microsoft.Special.Operators.OperatorClass.op_Explicit(Microsoft.Special.Operators.OperatorClass)~System.Int64
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass.op_Explicit(Microsoft.Special.Operators.OperatorClass)~System.Int32:
+  Name: Microsoft.Special.Operators.OperatorClass.op_Explicit(Microsoft.Special.Operators.OperatorClass)~System.Int32
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass.yaml
+Microsoft.Special.Operators.OperatorClass`2:
+  Name: Microsoft.Special.Operators.OperatorClass`2
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Addition(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Addition(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int64):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int64)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Modulus(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Modulus(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Multiply(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Multiply(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Division(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Division(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Increment(Microsoft.Special.Operators.OperatorClass{`0,`1}):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Increment(Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.op_Decrement(Microsoft.Special.Operators.OperatorClass{`0,`1}):
+  Name: Microsoft.Special.Operators.OperatorClass`2.op_Decrement(Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_Equality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_Equality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_Inequality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_Inequality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_GreaterThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_GreaterThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_LessThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_LessThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+? Microsoft.Special.Operators.OperatorClass`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorClass`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.Item(System.String):
+  Name: Microsoft.Special.Operators.OperatorClass`2.Item(System.String)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.Equals(System.Object):
+  Name: Microsoft.Special.Operators.OperatorClass`2.Equals(System.Object)
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorClass`2.GetHashCode:
+  Name: Microsoft.Special.Operators.OperatorClass`2.GetHashCode
+  YamlPath: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+Microsoft.Special.Operators.OperatorStruct:
+  Name: Microsoft.Special.Operators.OperatorStruct
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Addition(Microsoft.Special.Operators.OperatorStruct,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Addition(Microsoft.Special.Operators.OperatorStruct,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Int64):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Int64)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Subtraction(Microsoft.Special.Operators.OperatorStruct,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Modulus(Microsoft.Special.Operators.OperatorStruct,System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Modulus(Microsoft.Special.Operators.OperatorStruct,System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Multiply(Microsoft.Special.Operators.OperatorStruct,System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Multiply(Microsoft.Special.Operators.OperatorStruct,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Division(Microsoft.Special.Operators.OperatorStruct,System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Division(Microsoft.Special.Operators.OperatorStruct,System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Increment(Microsoft.Special.Operators.OperatorStruct):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Increment(Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.op_Decrement(Microsoft.Special.Operators.OperatorStruct):
+  Name: Microsoft.Special.Operators.OperatorStruct.op_Decrement(Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_Equality(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_Equality(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_Inequality(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_Inequality(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_GreaterThan(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_GreaterThan(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_LessThan(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_LessThan(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+? Microsoft.Special.Operators.OperatorStruct.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+: Name: Microsoft.Special.Operators.OperatorStruct.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorStruct,Microsoft.Special.Operators.OperatorStruct)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.Item(System.String):
+  Name: Microsoft.Special.Operators.OperatorStruct.Item(System.String)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.Equals(System.Object):
+  Name: Microsoft.Special.Operators.OperatorStruct.Equals(System.Object)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct.GetHashCode:
+  Name: Microsoft.Special.Operators.OperatorStruct.GetHashCode
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct.yaml
+Microsoft.Special.Operators.OperatorStruct`2:
+  Name: Microsoft.Special.Operators.OperatorStruct`2
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Addition(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Addition(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int64):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int64)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Subtraction(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Modulus(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Modulus(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Int32)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Multiply(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Multiply(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Division(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Division(Microsoft.Special.Operators.OperatorStruct{`0,`1},System.Double)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Increment(Microsoft.Special.Operators.OperatorStruct{`0,`1}):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Increment(Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.op_Decrement(Microsoft.Special.Operators.OperatorStruct{`0,`1}):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.op_Decrement(Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_Equality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_Equality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_Inequality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_Inequality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_LessThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_LessThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+? Microsoft.Special.Operators.OperatorStruct`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+: Name: Microsoft.Special.Operators.OperatorStruct`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.Item(System.String):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.Item(System.String)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.Equals(System.Object):
+  Name: Microsoft.Special.Operators.OperatorStruct`2.Equals(System.Object)
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Special.Operators.OperatorStruct`2.GetHashCode:
+  Name: Microsoft.Special.Operators.OperatorStruct`2.GetHashCode
+  YamlPath: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
+Microsoft.Template:
+  Name: Microsoft.Template
+  YamlPath: api/Microsoft.Template.yaml
+Microsoft.Template.TemplateInterface`3:
+  Name: Microsoft.Template.TemplateInterface`3
+  YamlPath: api/Microsoft.Template.TemplateInterface`3.yaml
+Microsoft.Template.TemplateInterface`3.Add(`0,System.Int32@):
+  Name: Microsoft.Template.TemplateInterface`3.Add(`0,System.Int32@)
+  YamlPath: api/Microsoft.Template.TemplateInterface`3.yaml
+Microsoft.Template.TemplateInterface`3.Add(`0,`1):
+  Name: Microsoft.Template.TemplateInterface`3.Add(`0,`1)
+  YamlPath: api/Microsoft.Template.TemplateInterface`3.yaml
+TestLibraryC:
+  Name: TestLibraryC
+  YamlPath: api/TestLibraryC.yaml
+TestLibraryC.TestLibraryC:
+  Name: TestLibraryC.TestLibraryC
+  YamlPath: api/TestLibraryC.TestLibraryC.yaml
+TestLibraryC.TestLibraryC.MultiplyMethod:
+  Name: TestLibraryC.TestLibraryC.MultiplyMethod
+  YamlPath: api/TestLibraryC.TestLibraryC.yaml
+TestLibraryC.TestLibraryC.MinusMethod:
+  Name: TestLibraryC.TestLibraryC.MinusMethod
+  YamlPath: api/TestLibraryC.TestLibraryC.yaml
+TestLibraryC.Sprint66:
+  Name: TestLibraryC.Sprint66
+  YamlPath: api/TestLibraryC.Sprint66.yaml
+TestLibraryC.Sprint66.BasicMethod:
+  Name: TestLibraryC.Sprint66.BasicMethod
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.yaml
+TestLibraryC.Sprint66.BasicMethod.INormalAdvance`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.INormalAdvance`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.INormalAdvance`1.yaml
+TestLibraryC.Sprint66.BasicMethod.NormalAdvance`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.NormalAdvance`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.NormalAdvance`1.yaml
+TestLibraryC.Sprint66.BasicMethod.INormalBasic:
+  Name: TestLibraryC.Sprint66.BasicMethod.INormalBasic
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
+TestLibraryC.Sprint66.BasicMethod.NormalBasic:
+  Name: TestLibraryC.Sprint66.BasicMethod.NormalBasic
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.NormalBasic.yaml
+TestLibraryC.Sprint66.BasicMethod.INormalTemplate`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.INormalTemplate`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.INormalTemplate`1.yaml
+TestLibraryC.Sprint66.BasicMethod.NormalTemplate`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.NormalTemplate`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.NormalTemplate`1.yaml
+TestLibraryC.Sprint66.BasicMethod.IBasic`2:
+  Name: TestLibraryC.Sprint66.BasicMethod.IBasic`2
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.IBasic`2.yaml
+TestLibraryC.Sprint66.BasicMethod.IInBasic`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.IInBasic`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.IInBasic`1.yaml
+TestLibraryC.Sprint66.BasicMethod.IOutBasic`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.IOutBasic`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.IOutBasic`1.yaml
+TestLibraryC.Sprint66.BasicMethod.IStrictInBasic`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.IStrictInBasic`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.IStrictInBasic`1.yaml
+TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic`1.yaml
+TestLibraryC.Sprint66.BasicMethod.OutBasic`1:
+  Name: TestLibraryC.Sprint66.BasicMethod.OutBasic`1
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.OutBasic`1.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.#ctor(System.Int32*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.#ctor(System.Int32*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerProperty:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerProperty
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.Item(System.Int64*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.Item(System.Int64*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerMethod(System.Int32*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerMethod(System.Int32*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.VoidPointerMethod(System.Int32):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.VoidPointerMethod(System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerMethod(System.Int64*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerMethod(System.Int64*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.DoubleFiled:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.DoubleFiled
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Addition(TestLibraryC.Sprint66.BasicMethod.UnsafePointer,System.Int32*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Addition(TestLibraryC.Sprint66.BasicMethod.UnsafePointer,System.Int32*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Subtraction(TestLibraryC.Sprint66.BasicMethod.UnsafePointer,System.Int32*):
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Subtraction(TestLibraryC.Sprint66.BasicMethod.UnsafePointer,System.Int32*)
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Implicit(System.Int32*)~TestLibraryC.Sprint66.BasicMethod.UnsafePointer:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Implicit(System.Int32*)~TestLibraryC.Sprint66.BasicMethod.UnsafePointer
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Explicit(TestLibraryC.Sprint66.BasicMethod.UnsafePointer)~System.String:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.op_Explicit(TestLibraryC.Sprint66.BasicMethod.UnsafePointer)~System.String
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerParaDelegate:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerParaDelegate
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.IntPointerParaDelegate.yaml
+TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate:
+  Name: TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate
+  YamlPath: api/TestLibraryC.Sprint66.BasicMethod.UnsafePointer.LongPointerDelegate.yaml
+TestLibraryC.Sprint66.FakeAttribute:
+  Name: TestLibraryC.Sprint66.FakeAttribute
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.yaml
+TestLibraryC.Sprint66.FakeAttribute.Language:
+  Name: TestLibraryC.Sprint66.FakeAttribute.Language
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+TestLibraryC.Sprint66.FakeAttribute.Language.CSharp:
+  Name: TestLibraryC.Sprint66.FakeAttribute.Language.CSharp
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+TestLibraryC.Sprint66.FakeAttribute.Language.VisualBasic:
+  Name: TestLibraryC.Sprint66.FakeAttribute.Language.VisualBasic
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute:
+  Name: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.methodId:
+  Name: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.methodId
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.#ctor(System.String):
+  Name: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.#ctor(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+TestLibraryC.Sprint66.ExtensionMethods:
+  Name: TestLibraryC.Sprint66.ExtensionMethods
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.yaml
+TestLibraryC.Sprint66.ExtensionMethods.stringExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodA(System.String):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodA(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodA(System.String,System.DateTime):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodA(System.String,System.DateTime)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodB(System.String,System.Collections.Generic.List{System.String}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.MethodB(System.String,System.Collections.Generic.List{System.String})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.intExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.intExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.intExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.intExtensions.TryParse(System.Int32,System.String,System.Int32@):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.intExtensions.TryParse(System.Int32,System.String,System.Int32@)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.intExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.All``2(System.Collections.Generic.Dictionary{``0,``1},System.Int32):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.All``2(System.Collections.Generic.Dictionary{``0,``1},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.All``2(System.Collections.Generic.Dictionary{``0,``1},System.Collections.Generic.List{System.String})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.All``2(System.Collections.Generic.Dictionary{``0,``1},System.Collections.Generic.List{System.String})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.AsParallel``2(System.Collections.Generic.Dictionary{``0,``1}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.AsParallel``2(System.Collections.Generic.Dictionary{``0,``1})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.AsParallelSpecial(System.Collections.Generic.Dictionary{System.Int32,System.Int32})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.AsParallelSpecial(System.Collections.Generic.Dictionary{System.Int32,System.Int32})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IListExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IListExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.AsParallel``1(System.Collections.Generic.IList{``0}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.AsParallel``1(System.Collections.Generic.IList{``0})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.AsParallel``1(System.Collections.Generic.List{``0},System.Boolean):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.AsParallel``1(System.Collections.Generic.List{``0},System.Boolean)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``0,``1):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``0,``1)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``1,``0):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``1,``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``0,``1,``2):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``0,``1,``2)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``2,``1,``0):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``2,``1,``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExHiddenMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExHiddenMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExOverloadMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExOverloadMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExHiddenMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExHiddenMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExOverloadMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}},``0)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExOverloadMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}},``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.IEnumerableMethodA(System.Collections.Generic.IEnumerable{System.String})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.IEnumerableMethodA(System.Collections.Generic.IEnumerable{System.String})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.String},System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.String},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.IndependentMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.Int32},System.Double)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.IndependentMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.Int32},System.Double)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,System.Int64)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,System.Int64)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,``0)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalAdvance{``0},System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalAdvance{``0},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalBasic,``0)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalBasic,``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.HiddenMethod(TestLibraryC.Sprint66.BasicMethod.INormalBasic,System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.HiddenMethod(TestLibraryC.Sprint66.BasicMethod.INormalBasic,System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.AddOverloadMethod(TestLibraryC.Sprint66.BasicMethod.NormalBasic,System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.AddOverloadMethod(TestLibraryC.Sprint66.BasicMethod.NormalBasic,System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.HiddenMethod(TestLibraryC.Sprint66.BasicMethod.NormalBasic,System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.HiddenMethod(TestLibraryC.Sprint66.BasicMethod.NormalBasic,System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalTemplate{``0},``0)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalTemplate{``0},``0)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.HiddenMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalTemplate{``0},System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.HiddenMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalTemplate{``0},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalTemplate{``0},System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalTemplate{``0},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.HiddenMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalTemplate{``0},System.Int32)
+: Name: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.HiddenMethod``1(TestLibraryC.Sprint66.BasicMethod.NormalTemplate{``0},System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicA``2(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,``1}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicA``2(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,``1})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicB(TestLibraryC.Sprint66.BasicMethod.IBasic{System.String,System.Object})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicB(TestLibraryC.Sprint66.BasicMethod.IBasic{System.String,System.Object})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicC``1(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,System.Object}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicC``1(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,System.Object})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicD``1(TestLibraryC.Sprint66.BasicMethod.IBasic{System.Object,System.String})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicD``1(TestLibraryC.Sprint66.BasicMethod.IBasic{System.Object,System.String})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicA``1(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicA``1(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicB(TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}):
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicB(TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicC(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.Object}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicC(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.Object}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicD(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicD(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicE(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicE(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.OutBasicA``1(TestLibraryC.Sprint66.BasicMethod.IOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.OutBasicA``1(TestLibraryC.Sprint66.BasicMethod.IOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.OutBasicB(TestLibraryC.Sprint66.BasicMethod.IOutBasic{TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{System.Object}}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.OutBasicB(TestLibraryC.Sprint66.BasicMethod.IOutBasic{TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{System.Object}}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.StrictInBasicA``1(TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.StrictInBasicA``1(TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.StrictInBasicB(TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.StrictInBasicB(TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
+TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions:
+  Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.StrictOutBasicA``1(TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{``0}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.StrictOutBasicA``1(TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{``0}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
+? TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.StrictOutBasicB(TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{System.Object}})
+: Name: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.StrictOutBasicB(TestLibraryC.Sprint66.BasicMethod.IStrictOutBasic{TestLibraryC.Sprint66.BasicMethod.IOutBasic{System.Object}})
+  YamlPath: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
+TestLibraryC.Sprint66.ClassWithExtensions:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalTemplateDerived`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalTemplateDerived`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalTemplateDerived`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicDerived.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceDerived:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceDerived
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceDerived.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceOne:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceOne
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceOne.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceTwo:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceTwo
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceTwo.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceThree:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceThree
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalAdvanceThree.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicOne:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicOne
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.NormalBasicOne.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicOneIn`2.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.InBasicTwoIn`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.InBasicTwoIn`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicTwoIn`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.InBasicThreeIn:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.InBasicThreeIn
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.InBasicThreeIn.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.OutBasicTwoOut`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.OutBasicTwoOut`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.OutBasicTwoOut`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.BasicOne:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.BasicOne
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicOne.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.BasicTwo:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.BasicTwo
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicTwo.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.BasicThree`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.BasicThree`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicThree`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.BasicFour`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.BasicFour`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.BasicFour`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicA`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicA`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicA`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicB:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicB
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicB.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicC:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicC
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictInBasicC.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicA`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicA`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicA`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicB`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicB`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicB`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicC`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicC`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.StrictOutBasicC`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.ListListString:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.ListListString
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.ListListString.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.ListListU`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.ListListU`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.ListListU`1.yaml
+TestLibraryC.Sprint66.ClassWithExtensions.ListT`1:
+  Name: TestLibraryC.Sprint66.ClassWithExtensions.ListT`1
+  YamlPath: api/TestLibraryC.Sprint66.ClassWithExtensions.ListT`1.yaml
+TestLibraryC.Sprint66.EII:
+  Name: TestLibraryC.Sprint66.EII
+  YamlPath: api/TestLibraryC.Sprint66.EII.yaml
+TestLibraryC.Sprint66.EII.MixedAnimal:
+  Name: TestLibraryC.Sprint66.EII.MixedAnimal
+  YamlPath: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+TestLibraryC.Sprint66.EII.MixedAnimal.#ctor:
+  Name: TestLibraryC.Sprint66.EII.MixedAnimal.#ctor
+  YamlPath: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+TestLibraryC.Sprint66.EII.MixedAnimal.MixedAnimalCount:
+  Name: TestLibraryC.Sprint66.EII.MixedAnimal.MixedAnimalCount
+  YamlPath: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+TestLibraryC.Sprint66.EII.MixedAnimal.ForEvent:
+  Name: TestLibraryC.Sprint66.EII.MixedAnimal.ForEvent
+  YamlPath: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+TestLibraryC.Sprint66.EII.MixedAnimal.event1:
+  Name: TestLibraryC.Sprint66.EII.MixedAnimal.event1
+  YamlPath: api/TestLibraryC.Sprint66.EII.MixedAnimal.yaml
+TestLibraryC.Sprint66.EII.Monster`1:
+  Name: TestLibraryC.Sprint66.EII.Monster`1
+  YamlPath: api/TestLibraryC.Sprint66.EII.Monster`1.yaml
+TestLibraryC.Sprint66.EII.TOMCAT:
+  Name: TestLibraryC.Sprint66.EII.TOMCAT
+  YamlPath: api/TestLibraryC.Sprint66.EII.TOMCAT.yaml
+TestLibraryC.Sprint66.EII.TOMCAT.ForTOMCATEvent:
+  Name: TestLibraryC.Sprint66.EII.TOMCAT.ForTOMCATEvent
+  YamlPath: api/TestLibraryC.Sprint66.EII.TOMCAT.yaml
+TestLibraryC.Sprint66.EII.TOMCAT.eventTom:
+  Name: TestLibraryC.Sprint66.EII.TOMCAT.eventTom
+  YamlPath: api/TestLibraryC.Sprint66.EII.TOMCAT.yaml
+TestLibraryC.Sprint66.EII.Monkey:
+  Name: TestLibraryC.Sprint66.EII.Monkey
+  YamlPath: api/TestLibraryC.Sprint66.EII.Monkey.yaml
+TestLibraryC.Sprint66.EII.Pig:
+  Name: TestLibraryC.Sprint66.EII.Pig
+  YamlPath: api/TestLibraryC.Sprint66.EII.Pig.yaml
+TestLibraryC.Sprint66.EII.Pig.HasTail:
+  Name: TestLibraryC.Sprint66.EII.Pig.HasTail
+  YamlPath: api/TestLibraryC.Sprint66.EII.Pig.yaml
+TestLibraryC.Sprint66.EII.Pig.FeetNumber:
+  Name: TestLibraryC.Sprint66.EII.Pig.FeetNumber
+  YamlPath: api/TestLibraryC.Sprint66.EII.Pig.yaml
+TestLibraryC.Sprint66.EII.Pig.Item(System.Int32):
+  Name: TestLibraryC.Sprint66.EII.Pig.Item(System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Pig.yaml
+TestLibraryC.Sprint66.EII.Dog`2:
+  Name: TestLibraryC.Sprint66.EII.Dog`2
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.eatEvent:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.eatEvent
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Name:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Name
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.IsAlive:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.IsAlive
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.HasBone:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.HasBone
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.nickName:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.nickName
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Item(System.Int32):
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Item(System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Bite(System.String):
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Bite(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Jump:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Jump
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Sleep:
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Sleep
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Dog`2.Swim``1(``0):
+  Name: TestLibraryC.Sprint66.EII.Dog`2.Swim``1(``0)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Dog`2.yaml
+TestLibraryC.Sprint66.EII.Cat:
+  Name: TestLibraryC.Sprint66.EII.Cat
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.eatEvent:
+  Name: TestLibraryC.Sprint66.EII.Cat.eatEvent
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.Name:
+  Name: TestLibraryC.Sprint66.EII.Cat.Name
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.IsAlive:
+  Name: TestLibraryC.Sprint66.EII.Cat.IsAlive
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.HasFish:
+  Name: TestLibraryC.Sprint66.EII.Cat.HasFish
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.NickName:
+  Name: TestLibraryC.Sprint66.EII.Cat.NickName
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.Item(System.Int32):
+  Name: TestLibraryC.Sprint66.EII.Cat.Item(System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.Bite(System.String):
+  Name: TestLibraryC.Sprint66.EII.Cat.Bite(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.Jump:
+  Name: TestLibraryC.Sprint66.EII.Cat.Jump
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.sleep:
+  Name: TestLibraryC.Sprint66.EII.Cat.sleep
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Cat.Swim``1(``0):
+  Name: TestLibraryC.Sprint66.EII.Cat.Swim``1(``0)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Cat.yaml
+TestLibraryC.Sprint66.EII.Animal:
+  Name: TestLibraryC.Sprint66.EII.Animal
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Name:
+  Name: TestLibraryC.Sprint66.EII.Animal.Name
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.HasTail:
+  Name: TestLibraryC.Sprint66.EII.Animal.HasTail
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.FeetNumber:
+  Name: TestLibraryC.Sprint66.EII.Animal.FeetNumber
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Item(System.Int32):
+  Name: TestLibraryC.Sprint66.EII.Animal.Item(System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Item(System.Int32,System.Int32):
+  Name: TestLibraryC.Sprint66.EII.Animal.Item(System.Int32,System.Int32)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Item(System.String):
+  Name: TestLibraryC.Sprint66.EII.Animal.Item(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Eat:
+  Name: TestLibraryC.Sprint66.EII.Animal.Eat
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EII.Animal.Eat(System.String):
+  Name: TestLibraryC.Sprint66.EII.Animal.Eat(System.String)
+  YamlPath: api/TestLibraryC.Sprint66.EII.Animal.yaml
+TestLibraryC.Sprint66.EnumMethod:
+  Name: TestLibraryC.Sprint66.EnumMethod
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades.F:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades.F
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades.D:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades.D
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades.C:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades.C
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades.B:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades.B
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Grades.A:
+  Name: TestLibraryC.Sprint66.EnumMethod.Grades.A
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+TestLibraryC.Sprint66.EnumMethod.Extensions:
+  Name: TestLibraryC.Sprint66.EnumMethod.Extensions
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Extensions.yaml
+TestLibraryC.Sprint66.EnumMethod.Extensions.minPassing:
+  Name: TestLibraryC.Sprint66.EnumMethod.Extensions.minPassing
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Extensions.yaml
+TestLibraryC.Sprint66.EnumMethod.Extensions.Passing(TestLibraryC.Sprint66.EnumMethod.Grades):
+  Name: TestLibraryC.Sprint66.EnumMethod.Extensions.Passing(TestLibraryC.Sprint66.EnumMethod.Grades)
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Extensions.yaml
+? TestLibraryC.Sprint66.EnumMethod.Extensions.Passing(TestLibraryC.Sprint66.EnumMethod.Grades,TestLibraryC.Sprint66.EnumMethod.Grades)
+: Name: TestLibraryC.Sprint66.EnumMethod.Extensions.Passing(TestLibraryC.Sprint66.EnumMethod.Grades,TestLibraryC.Sprint66.EnumMethod.Grades)
+  YamlPath: api/TestLibraryC.Sprint66.EnumMethod.Extensions.yaml
+TestParameters:
+  Name: TestParameters
+  YamlPath: api/TestParameters.yaml
+TestParameters.ParametersWithInOutAttribute:
+  Name: TestParameters.ParametersWithInOutAttribute
+  YamlPath: api/TestParameters.ParametersWithInOutAttribute.yaml
+TestParameters.ParametersWithInOutAttribute.FooOutKeyword(System.Int32@):
+  Name: TestParameters.ParametersWithInOutAttribute.FooOutKeyword(System.Int32@)
+  YamlPath: api/TestParameters.ParametersWithInOutAttribute.yaml
+TestParameters.ParametersWithInOutAttribute.FooOutAttribute(System.String):
+  Name: TestParameters.ParametersWithInOutAttribute.FooOutAttribute(System.String)
+  YamlPath: api/TestParameters.ParametersWithInOutAttribute.yaml
+TestParameters.ParametersWithInOutAttribute.FooInAttribute(System.Int32):
+  Name: TestParameters.ParametersWithInOutAttribute.FooInAttribute(System.Int32)
+  YamlPath: api/TestParameters.ParametersWithInOutAttribute.yaml
+TestParameters.ParametersWithInOutAttribute.FooInOutAttribute(System.Double):
+  Name: TestParameters.ParametersWithInOutAttribute.FooInOutAttribute(System.Double)
+  YamlPath: api/TestParameters.ParametersWithInOutAttribute.yaml
+InvisibleNamespace:
+  Name: InvisibleNamespace
+  YamlPath: api/InvisibleNamespace.yaml
+VBTestClass1:
+  Name: VBTestClass1
+  YamlPath: api/VBTestClass1.yaml
+VBTestClass1.Class1:
+  Name: VBTestClass1.Class1
+  YamlPath: api/VBTestClass1.Class1.yaml
+VBTestClass1.Class1.ValueClass:
+  Name: VBTestClass1.Class1.ValueClass
+  YamlPath: api/VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Keyword:
+  Name: VBTestClass1.Class1.Keyword
+  YamlPath: api/VBTestClass1.Class1.yaml
+VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  YamlPath: api/VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Value(System.String):
+  Name: VBTestClass1.Class1.Value(System.String)
+  YamlPath: api/VBTestClass1.Class1.yaml
+VBTestClass1.BaseClass1:
+  Name: VBTestClass1.BaseClass1
+  YamlPath: api/VBTestClass1.BaseClass1.yaml
+VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  YamlPath: api/VBTestClass1.BaseClass1.yaml
+VBTestClass1.My:
+  Name: VBTestClass1.My
+  YamlPath: api/VBTestClass1.My.yaml
+VBTestClass1.My.Resources:
+  Name: VBTestClass1.My.Resources
+  YamlPath: api/VBTestClass1.My.Resources.yaml
+My:
+  Name: My
+  YamlPath: api/My.yaml
+Microsoft.VisualBasic:
+  Name: Microsoft.VisualBasic
+  YamlPath: api/Microsoft.VisualBasic.yaml
