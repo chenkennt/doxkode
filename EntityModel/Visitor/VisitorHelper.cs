@@ -1,12 +1,13 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using DocAsCode.Utility;
-
-namespace DocAsCode.EntityModel
+﻿namespace DocAsCode.EntityModel
 {
+    using System;
+    using System.Diagnostics;
+    using System.Linq;
+
+    using DocAsCode.Utility;
+
+    using Microsoft.CodeAnalysis;
+
     public static class VisitorHelper
     {
         public static bool CanVisit(ISymbol symbol)
@@ -158,6 +159,7 @@ namespace DocAsCode.EntityModel
                 };
 
                 source.Remote = GitUtility.GetGitDetail(source.Path);
+                source.Path = source.Path.FormatPath(UriKind.Relative, source.Remote.LocalWorkingDirectory);
                 return source;
             }
 

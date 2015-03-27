@@ -1,26 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LibGit2Sharp;
-
-namespace DocAsCode.Utility
+﻿namespace DocAsCode.Utility
 {
+    using System;
+
+    using LibGit2Sharp;
+
+    using YamlDotNet.Serialization;
+
     public class GitDetail
     {
-        [YamlDotNet.Serialization.YamlMember(Alias = "branch")]
+        [YamlMember(Alias = "branch")]
         public string RemoteBranch { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "repo")]
+        [YamlMember(Alias = "repo")]
         public string RemoteRepositoryUrl { get; set; }
 
-        [YamlDotNet.Serialization.YamlIgnore]
+        [YamlIgnore]
         //[YamlDotNet.Serialization.YamlMember(Alias = "local")]
         public string LocalWorkingDirectory { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "description")]
+        [YamlMember(Alias = "description")]
         public string Description { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (this.GetType() != obj.GetType()) return false;
+
+            return Equals(this.ToString(), obj.ToString());
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return string.Format("branch: {0}, url: {1}, local: {2}, desc: {3}", RemoteBranch, RemoteRepositoryUrl, LocalWorkingDirectory, Description);
+        }
     }
     public static class GitUtility
     {
