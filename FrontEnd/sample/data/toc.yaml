@@ -2,6 +2,8 @@
   href: articles/index.md
 - id: About
   href: articles/about.md
+- id: Article With TOC
+  href: articles/withtoc
 - id: Roslyn Workspace Api Documentation
   href: api_roslyn_workspace
 - id: API generated from TestCase
