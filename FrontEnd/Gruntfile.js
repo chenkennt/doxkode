@@ -230,6 +230,9 @@ module.exports = function(grunt) {
         dest: 'tmp/<%= pkg.name %>.js'
       }
     },
+    exists: {
+        src: '<%= ownJsFiles %>',
+    },
     cssmin: {
       target: {
           src:  ['<%= ownCssFiles %>'],
@@ -348,7 +351,20 @@ module.exports = function(grunt) {
     grunt.registerTask('index_debug_ref', 'Generate docascode-debug.html, ref all scripts unminified', function() {
         createIndex(grunt, 'debug', 'ref');
     });
-    grunt.registerTask('build', ['less:dev', 'jshint']);
+
+    var fs = require('fs');
+    var path = require('path');
+    grunt.registerMultiTask('exists', 'File Existence', function() {
+        grunt.util._.each(this.data, function(file) {
+            if (!fs.existsSync(file)) {
+                grunt.fatal("Required file [" + file + "] doesn't exist.");
+            } else {
+                grunt.log.ok("Verified that required file [" + file + "] exists.");
+            }
+        });
+    });
+
+    grunt.registerTask('build', ['exists:src', 'less:dev', 'jshint']);
     grunt.registerTask('debug', [ 'build', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
     grunt.registerTask('debuginline', [ 'build', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
     grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
