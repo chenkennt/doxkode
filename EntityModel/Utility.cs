@@ -55,7 +55,7 @@ namespace DocAsCode.EntityModel
         public static string ResolveToMarkdownLink(Dictionary<string, IndexYamlItemViewModel> dict, string input)
         {
             return LinkParser.ResolveText(dict, input, s =>
-                 string.Format("[{0}](#/{1})", s.Name, s.Href), s => string.Format("[{0}](#)", s)
+                 string.Format("[{0}]({1})", s.Name, s.Href), s => string.Format("[{0}](#)", s)
                 );
         }
 

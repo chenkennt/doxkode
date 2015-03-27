@@ -22,7 +22,7 @@ namespace DocAsCode.EntityModel
                         }
                         else
                         {
-                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.Href});
+                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, Href = member.Href, YamlPath = member.Href});
                         }
                     }
 
