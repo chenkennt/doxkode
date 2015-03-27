@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Compilers/Core/Portable/InternalUtilities/BitArithmeticUtilities.cs
-  startLine: 4
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Compilers/Core/SharedCollections/ObjectPool`1.cs
+  startLine: 20

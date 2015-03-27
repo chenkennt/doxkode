@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
   startLine: 9
 summary: Represents a single operation of a multi-operation code action.
 syntax:
@@ -28,22 +28,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Title
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
     startLine: 14
   summary: A short title describing of the effect of the operation.
   syntax:
     content:
-      CSharp: >-
-        public virtual string Title
-
-                {
-
-                    get { return null; }
-
-                }
+      CSharp: public virtual string Title { get; }
     parameters:
     - id: Title
       type:
@@ -58,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/CodeActionOperation.cs
     startLine: 23
   summary: >-
     Called by the host environment to apply the effect of the operation.
@@ -75,6 +64,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

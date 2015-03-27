@@ -8,8 +8,8 @@ type: Interface
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/ILanguageService.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/ILanguageService.cs
   startLine: 9
 summary: Empty interface just to mark language services.
 syntax:

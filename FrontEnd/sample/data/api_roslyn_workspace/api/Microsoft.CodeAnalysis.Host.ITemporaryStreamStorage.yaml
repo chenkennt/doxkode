@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage
 type: Interface
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
   startLine: 21
 syntax:
   content:
@@ -23,10 +23,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.ReadStream(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 23
   syntax:
     content:
@@ -47,10 +45,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.ReadStreamAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 24
   syntax:
     content:
@@ -71,10 +67,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.WriteStream(System.IO.Stream,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 25
   syntax:
     content:
@@ -100,10 +94,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStreamStorage.WriteStreamAsync(System.IO.Stream,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 26
   syntax:
     content:

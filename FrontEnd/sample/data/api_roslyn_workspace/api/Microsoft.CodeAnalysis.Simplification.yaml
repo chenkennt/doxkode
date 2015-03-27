@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOptionProvider.cs
-  startLine: 8
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Simplification/SymbolAnnotation.cs
+  startLine: 5
 items:
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions
   href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml

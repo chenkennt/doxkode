@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.AdhocWorkspace
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
   startLine: 16
 summary: >-
   A workspace that allows full manipulation of projects and documents,
@@ -24,6 +24,7 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace
   name: Workspace
+  href: api/Microsoft.CodeAnalysis.Workspace.yaml
 items:
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor(Microsoft.CodeAnalysis.Host.HostServices,System.String)
   href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
@@ -33,10 +34,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AdhocWorkspace(Microsoft.CodeAnalysis.Host.HostServices,System.String)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 18
   syntax:
     content:
@@ -46,6 +45,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostServices
         name: HostServices
+        href: api/Microsoft.CodeAnalysis.Host.HostServices.yaml
     - id: workspaceKind
       type:
         id: System.String
@@ -61,10 +61,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AdhocWorkspace
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 23
   syntax:
     content:
@@ -80,10 +78,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 28
   syntax:
     content:
@@ -93,6 +89,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ApplyChangesKind
         name: ApplyChangesKind
+        href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CanOpenDocuments
@@ -103,29 +100,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.CanOpenDocuments
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 34
   syntax:
     content:
-      CSharp: >-
-        public override bool CanOpenDocuments
-
-                {
-
-                    get
-
-                    {
-
-                        // enables simulation of having documents open.
-
-                        return true;
-
-                    }
-
-                }
+      CSharp: public override bool CanOpenDocuments { get; }
     parameters:
     - id: CanOpenDocuments
       type:
@@ -140,10 +120,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.ClearSolution
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 46
   summary: Clears all projects and documents from the workspace.
   syntax:
@@ -160,10 +138,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddSolution(Microsoft.CodeAnalysis.SolutionInfo)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 54
   summary: Adds an entire solution to the workspace, replacing any existing solution.
   syntax:
@@ -174,6 +150,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionInfo
         name: SolutionInfo
+        href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
     return:
       id: Solution
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(System.String,System.String)
@@ -184,10 +161,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(System.String,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 69
   summary: Adds a project to the workspace. All previous projects remain intact.
   syntax:
@@ -214,10 +189,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(Microsoft.CodeAnalysis.ProjectInfo)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 78
   summary: Adds a project to the workspace. All previous projects remain intact.
   syntax:
@@ -228,6 +201,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectInfo
         name: ProjectInfo
+        href: api/Microsoft.CodeAnalysis.ProjectInfo.yaml
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProjects(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
@@ -238,10 +212,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddProjects(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 94
   summary: Adds multiple projects to the workspace at once. All existing projects remain intact.
   syntax:
@@ -263,10 +235,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.ProjectId,System.String,Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 110
   summary: Adds a document to the workspace.
   syntax:
@@ -277,6 +247,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     - id: name
       type:
         id: System.String
@@ -297,10 +268,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.DocumentInfo)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 136
   summary: Adds a document to the workspace.
   syntax:
@@ -311,6 +280,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentInfo
         name: DocumentInfo
+        href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
@@ -321,10 +291,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 151
   summary: Puts the specified document into the open state.
   syntax:
@@ -335,6 +303,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -350,10 +319,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.CloseDocument(Microsoft.CodeAnalysis.DocumentId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 164
   summary: Puts the specified document into the closed state.
   syntax:
@@ -364,6 +331,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
@@ -374,10 +342,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 179
   summary: Puts the specified additional document into the open state.
   syntax:
@@ -388,6 +354,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -403,10 +370,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.AdhocWorkspace.CloseAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
     startLine: 192
   summary: Puts the specified additional document into the closed state
   syntax:
@@ -417,5 +382,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void

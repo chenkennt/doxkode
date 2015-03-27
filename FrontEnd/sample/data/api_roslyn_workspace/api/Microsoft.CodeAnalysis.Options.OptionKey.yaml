@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Options.OptionKey
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Options/OptionKey.cs
   startLine: 7
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.Option
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 9
   syntax:
     content:
@@ -46,10 +44,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.Language
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 10
   syntax:
     content:
@@ -62,10 +58,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.OptionKey(Microsoft.CodeAnalysis.Options.IOption,System.String)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 12
   syntax:
     content:
@@ -75,6 +69,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.IOption
         name: IOption
+        href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
     - id: language
       type:
         id: System.String
@@ -90,10 +85,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 32
   syntax:
     content:
@@ -114,10 +107,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.Equals(Microsoft.CodeAnalysis.Options.OptionKey)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 42
   syntax:
     content:
@@ -127,6 +118,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Options.OptionKey.GetHashCode
@@ -137,10 +129,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 47
   syntax:
     content:
@@ -156,30 +146,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.op_Equality(Microsoft.CodeAnalysis.Options.OptionKey,Microsoft.CodeAnalysis.Options.OptionKey)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 59
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(OptionKey left, OptionKey right)
-
-                {
-
-                    return left.Equals(right);
-
-                }
+      CSharp: public static bool operator ==(OptionKey left, OptionKey right) { return left.Equals(right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Options.OptionKey.op_Inequality(Microsoft.CodeAnalysis.Options.OptionKey,Microsoft.CodeAnalysis.Options.OptionKey)
@@ -190,29 +173,22 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionKey.op_Inequality(Microsoft.CodeAnalysis.Options.OptionKey,Microsoft.CodeAnalysis.Options.OptionKey)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionKey.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionKey.cs
     startLine: 64
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(OptionKey left, OptionKey right)
-
-                {
-
-                    return !left.Equals(right);
-
-                }
+      CSharp: public static bool operator !=(OptionKey left, OptionKey right) { return !left.Equals(right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     return:
       id: Boolean

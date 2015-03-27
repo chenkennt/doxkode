@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
   startLine: 10
-summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](#/) implementation for inclusion in a MEF-based workspace.
+summary: Use this attribute to declare a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml) implementation for inclusion in a MEF-based workspace.
 syntax:
   content:
     CSharp: public class ExportWorkspaceServiceFactoryAttribute
@@ -34,10 +34,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute.ServiceType
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
     startLine: 17
   summary: The assembly qualified name of the service's type.
   syntax:
@@ -57,10 +55,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute.Layer
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
     startLine: 22
   summary: The layer that the service is specified for; ServiceLayer.Default, etc.
   syntax:
@@ -80,12 +76,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.Mef.ExportWorkspaceServiceFactoryAttribute.ExportWorkspaceServiceFactoryAttribute(System.Type,System.String)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ExportWorkspaceServiceFactoryAttribute.cs
     startLine: 29
-  summary: Declares a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](#/) implementation for inclusion in a MEF-based workspace.
+  summary: Declares a [Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory](api/Microsoft.CodeAnalysis.Host.Mef.IWorkspaceServiceFactory.yaml) implementation for inclusion in a MEF-based workspace.
   syntax:
     content:
       CSharp: 'public ExportWorkspaceServiceFactoryAttribute(Type serviceType, string layer = ServiceLayer.Default): base (typeof (IWorkspaceServiceFactory))'
@@ -95,12 +89,12 @@ items:
         id: System.Type
         name: System.Type
         isExternal: true
-      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/).
+      description: The type that will be used to retrieve the service from a [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml).
     - id: layer
       type:
         id: System.String
         name: System.String
         isExternal: true
-      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](#/), etc.
+      description: The layer that the service is specified for; [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml), etc.
     return:
       id: Void

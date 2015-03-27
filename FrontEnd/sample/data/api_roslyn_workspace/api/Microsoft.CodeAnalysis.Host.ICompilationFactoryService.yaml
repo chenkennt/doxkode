@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
 type: Interface
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
   startLine: 6
 syntax:
   content:
@@ -23,10 +23,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 8
   syntax:
     content:
@@ -52,10 +50,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateSubmissionCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions,System.Type)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 9
   syntax:
     content:
@@ -86,10 +82,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetCompilationFromCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 10
   syntax:
     content:
@@ -110,10 +104,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.IsCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 11
   syntax:
     content:
@@ -134,10 +126,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetDefaultCompilationOptions
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
     startLine: 12
   syntax:
     content:

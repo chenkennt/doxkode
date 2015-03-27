@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
   startLine: 12
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetAccessibility(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 14
   syntax:
     content:
@@ -40,6 +38,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -60,10 +59,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetModifiers(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 19
   syntax:
     content:
@@ -73,6 +70,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -82,6 +80,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetName(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.String)
@@ -92,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetName(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 24
   syntax:
     content:
@@ -105,6 +102,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -125,10 +123,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 29
   syntax:
     content:
@@ -138,6 +134,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -158,10 +155,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetTypeParameters(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 34
   syntax:
     content:
@@ -171,6 +166,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -191,10 +187,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetTypeConstraint(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 39
   syntax:
     content:
@@ -204,6 +198,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -218,6 +213,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
+        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -233,10 +229,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetExpression(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 44
   syntax:
     content:
@@ -246,6 +240,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -266,10 +261,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 49
   syntax:
     content:
@@ -279,6 +272,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -299,10 +293,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetGetAccessorStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 54
   syntax:
     content:
@@ -312,6 +304,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -332,10 +325,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetSetAccessorStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 59
   syntax:
     content:
@@ -345,6 +336,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -365,10 +357,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddParameter(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 64
   syntax:
     content:
@@ -378,6 +368,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -398,10 +389,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddAttribute(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 69
   syntax:
     content:
@@ -411,6 +400,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -431,10 +421,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddReturnAttribute(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 74
   syntax:
     content:
@@ -444,6 +432,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -464,10 +453,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddAttributeArgument(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 79
   syntax:
     content:
@@ -477,6 +464,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: attributeDeclaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -497,10 +485,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddMember(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 84
   syntax:
     content:
@@ -510,6 +496,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -530,10 +517,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.InsertMembers(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 89
   syntax:
     content:
@@ -543,6 +528,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -568,10 +554,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddInterfaceType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 94
   syntax:
     content:
@@ -581,6 +565,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -601,10 +586,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddBaseType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
     startLine: 99
   syntax:
     content:
@@ -614,6 +597,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode

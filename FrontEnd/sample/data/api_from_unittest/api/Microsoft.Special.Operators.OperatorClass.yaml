@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-59-g5d13630
-  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-61-g7be86a7
+  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 160
 syntax:
   content:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 162
   syntax:
     content:
@@ -39,6 +39,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -55,7 +56,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 163
   syntax:
     content:
@@ -65,6 +66,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -81,7 +83,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 164
   syntax:
     content:
@@ -91,6 +93,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: System.Int64
@@ -107,7 +110,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 165
   syntax:
     content:
@@ -117,6 +120,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: System.Double
@@ -133,7 +137,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 166
   syntax:
     content:
@@ -143,6 +147,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: a
       type:
         id: System.Int32
@@ -159,7 +164,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 167
   syntax:
     content:
@@ -169,6 +174,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: a
       type:
         id: System.Double
@@ -185,7 +191,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 168
   syntax:
     content:
@@ -195,6 +201,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: a
       type:
         id: System.Double
@@ -211,7 +218,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 169
   syntax:
     content:
@@ -221,6 +228,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: OperatorClass
 - id: Microsoft.Special.Operators.OperatorClass.op_Decrement(Microsoft.Special.Operators.OperatorClass)
@@ -232,7 +240,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 170
   syntax:
     content:
@@ -242,6 +250,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: OperatorClass
 - id: Microsoft.Special.Operators.OperatorClass.op_Equality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -253,7 +262,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 171
   syntax:
     content:
@@ -263,10 +272,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.op_Inequality(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -278,7 +289,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 172
   syntax:
     content:
@@ -288,10 +299,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.op_GreaterThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -303,7 +316,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 173
   syntax:
     content:
@@ -313,10 +326,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -328,7 +343,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 174
   syntax:
     content:
@@ -338,10 +353,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.op_LessThan(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -353,7 +370,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 175
   syntax:
     content:
@@ -363,10 +380,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass,Microsoft.Special.Operators.OperatorClass)
@@ -378,7 +397,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 176
   syntax:
     content:
@@ -388,10 +407,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass.Item(System.String)
@@ -403,7 +424,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 177
   syntax:
     content:
@@ -423,7 +444,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 182
   syntax:
     content:
@@ -445,7 +466,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 183
   syntax:
     content:
@@ -462,7 +483,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 184
   syntax:
     content:
@@ -484,7 +505,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 185
   syntax:
     content:
@@ -506,7 +527,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 186
   syntax:
     content:
@@ -516,6 +537,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Int64
 - id: Microsoft.Special.Operators.OperatorClass.op_Explicit(Microsoft.Special.Operators.OperatorClass)~System.Int32
@@ -527,7 +549,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 187
   syntax:
     content:
@@ -537,5 +559,6 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass
         name: OperatorClass
+        href: api/Microsoft.Special.Operators.OperatorClass.yaml
     return:
       id: Int32

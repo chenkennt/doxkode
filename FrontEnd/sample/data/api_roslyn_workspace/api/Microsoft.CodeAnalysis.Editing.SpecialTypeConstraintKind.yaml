@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
   startLine: 6
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.None
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
     startLine: 9
   syntax:
     content:
@@ -49,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.ReferenceType
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
     startLine: 14
   summary: Has the reference type constraint (i.e. 'class' constraint in C#)
   syntax:
@@ -66,10 +62,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.ValueType
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
     startLine: 19
   summary: Has the value type constraint (i.e. 'struct' constraint in C#)
   syntax:
@@ -83,10 +77,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.Constructor
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/TypeConstraintKind.cs
     startLine: 24
   summary: Has the constructor constraint (i.e. 'new' constraint in C#)
   syntax:

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
   startLine: 8
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.ClassificationType
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 10
   syntax:
     content:
@@ -52,10 +50,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.TextSpan
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 11
   syntax:
     content:
@@ -74,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.ClassifiedSpan(System.String,Microsoft.CodeAnalysis.Text.TextSpan)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 13
   syntax:
     content:
@@ -103,10 +97,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.ClassifiedSpan(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 18
   syntax:
     content:
@@ -132,10 +124,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 25
   syntax:
     content:
@@ -151,10 +141,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 30
   syntax:
     content:
@@ -175,10 +163,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Classification.ClassifiedSpan.Equals(Microsoft.CodeAnalysis.Classification.ClassifiedSpan)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Classification/ClassifiedSpan.cs
     startLine: 36
   syntax:
     content:
@@ -188,5 +174,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Classification.ClassifiedSpan
         name: ClassifiedSpan
+        href: api/Microsoft.CodeAnalysis.Classification.ClassifiedSpan.yaml
     return:
       id: Boolean

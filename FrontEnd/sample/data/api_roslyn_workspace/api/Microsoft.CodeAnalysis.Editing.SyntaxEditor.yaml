@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
   startLine: 14
 summary: An editor for making changes to a syntax tree.
 syntax:
@@ -28,12 +28,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.SyntaxEditor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Workspace)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 23
-  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](#/) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) instance.
   syntax:
     content:
       CSharp: public SyntaxEditor(SyntaxNode root, Workspace workspace)
@@ -47,6 +45,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.OriginalRoot
@@ -57,22 +56,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.OriginalRoot
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 43
-  summary: The [Microsoft.CodeAnalysis.SyntaxNode](#) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](#/) was constructed.
+  summary: The [Microsoft.CodeAnalysis.SyntaxNode](#) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) was constructed.
   syntax:
     content:
-      CSharp: >-
-        public SyntaxNode OriginalRoot
-
-                {
-
-                    get { return _root; }
-
-                }
+      CSharp: public SyntaxNode OriginalRoot { get; }
     parameters:
     - id: OriginalRoot
       type:
@@ -87,27 +77,19 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.Generator
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 51
-  summary: A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](#)'s.
+  summary: A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](#)'s.
   syntax:
     content:
-      CSharp: >-
-        public SyntaxGenerator Generator
-
-                {
-
-                    get { return _generator; }
-
-                }
+      CSharp: public SyntaxGenerator Generator { get; }
     parameters:
     - id: Generator
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
         name: SyntaxGenerator
+        href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.GetChangedRoot
   href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
@@ -116,10 +98,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.GetChangedRoot
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 59
   summary: Returns the changed root node.
   syntax:
@@ -136,10 +116,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.TrackNode(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 75
   summary: Makes sure the node is tracked, even if it is not changed.
   syntax:
@@ -161,10 +139,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 85
   summary: Remove the node from the tree.
   syntax:
@@ -187,10 +163,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 97
   summary: Replace the specified node with a node produced by the function.
   syntax:
@@ -222,10 +196,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 108
   summary: Replace the specified node with a different node.
   syntax:
@@ -254,10 +226,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertBefore(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 119
   summary: Insert the new nodes before the specified node already existing in the tree.
   syntax:
@@ -286,10 +256,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 130
   summary: Insert the new node before the specified node already existing in the tree.
   syntax:
@@ -318,10 +286,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertAfter(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 141
   summary: Insert the new nodes after the specified node already existing in the tree.
   syntax:
@@ -350,10 +316,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertAfter(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 152
   summary: Insert the new node after the specified node already existing in the tree.
   syntax:

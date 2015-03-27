@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-59-g5d13630
-  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-61-g7be86a7
+  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 242
 syntax:
   content:
@@ -32,7 +32,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 244
   syntax:
     content:
@@ -42,6 +42,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -58,7 +59,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 245
   syntax:
     content:
@@ -68,6 +69,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -84,7 +86,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 246
   syntax:
     content:
@@ -94,6 +96,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: System.Int64
@@ -110,7 +113,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 247
   syntax:
     content:
@@ -120,6 +123,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: System.Double
@@ -136,7 +140,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 248
   syntax:
     content:
@@ -146,6 +150,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: a
       type:
         id: System.Int32
@@ -162,7 +167,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 249
   syntax:
     content:
@@ -172,6 +177,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: a
       type:
         id: System.Double
@@ -188,7 +194,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 250
   syntax:
     content:
@@ -198,6 +204,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: a
       type:
         id: System.Double
@@ -214,7 +221,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 251
   syntax:
     content:
@@ -224,6 +231,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: OperatorStruct
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_Decrement(Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -235,7 +243,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 252
   syntax:
     content:
@@ -245,6 +253,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: OperatorStruct
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_Equality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -256,7 +265,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 253
   syntax:
     content:
@@ -266,10 +275,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_Inequality(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -281,7 +292,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 254
   syntax:
     content:
@@ -291,10 +302,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -306,7 +319,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 255
   syntax:
     content:
@@ -316,10 +329,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -331,7 +346,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 256
   syntax:
     content:
@@ -341,10 +356,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_LessThan(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -356,7 +373,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 257
   syntax:
     content:
@@ -366,10 +383,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorStruct{`0,`1},Microsoft.Special.Operators.OperatorStruct{`0,`1})
@@ -381,7 +400,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 258
   syntax:
     content:
@@ -391,10 +410,12 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorStruct`2
         name: OperatorStruct
+        href: api/Microsoft.Special.Operators.OperatorStruct`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorStruct`2.Item(System.String)
@@ -406,7 +427,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 259
   syntax:
     content:
@@ -426,7 +447,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 264
   syntax:
     content:
@@ -448,7 +469,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 265
   syntax:
     content:

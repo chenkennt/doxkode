@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
   startLine: 10
-summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/) implementation so that it can be discovered by the host.
+summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) implementation so that it can be discovered by the host.
 syntax:
   content:
     CSharp: public sealed class ExportCodeFixProviderAttribute
@@ -34,12 +34,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.Name
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
     startLine: 17
-  summary: Optional name of the [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/).
+  summary: Optional name of the [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml).
   syntax:
     content:
       CSharp: public string Name { get; set; }
@@ -57,10 +55,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.Languages
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
     startLine: 22
   summary: The source languages this provider can provide fixes for.  See [Microsoft.CodeAnalysis.LanguageNames](#).
   syntax:
@@ -80,10 +76,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.ExportCodeFixProviderAttribute(System.String,System.String[])
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
     startLine: 29
   summary: Attribute constructor used to specify automatic application of a code fix provider.
   syntax:

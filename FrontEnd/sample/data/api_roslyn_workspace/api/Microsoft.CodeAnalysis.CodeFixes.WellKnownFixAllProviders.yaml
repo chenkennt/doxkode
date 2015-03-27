@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/WellKnownFixAllProviders.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/WellKnownFixAllProviders.cs
   startLine: 9
-summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
+summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 syntax:
   content:
     CSharp: public static class WellKnownFixAllProviders
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.BatchFixer
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/WellKnownFixAllProviders.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/WellKnownFixAllProviders.cs
     startLine: 23
   summary: >-
     Default batch fix all provider.
@@ -42,7 +40,7 @@ items:
 
     This fixer supports fixes for the following fix all scopes:
 
-    [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](#/), [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](#/) and [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](#/).
+    [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml), [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml) and [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml).
   syntax:
     content:
       CSharp: BatchFixer

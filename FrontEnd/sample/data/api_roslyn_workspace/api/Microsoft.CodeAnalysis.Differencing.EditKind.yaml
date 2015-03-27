@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Differencing.EditKind
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
   startLine: 4
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.None
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 9
   summary: No change.
   syntax:
@@ -50,10 +48,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.Update
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 14
   summary: Node value was updated.
   syntax:
@@ -67,10 +63,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.Insert
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 19
   summary: Node was inserted.
   syntax:
@@ -84,10 +78,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.Delete
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 24
   summary: Node was deleted.
   syntax:
@@ -101,10 +93,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.Move
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 29
   summary: Node changed parent.
   syntax:
@@ -118,10 +108,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditKind.Reorder
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
     startLine: 34
   summary: Node changed position within its parent. The parent nodes of the old node and the new node are matching.
   syntax:

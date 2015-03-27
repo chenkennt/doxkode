@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.ExtensionOrderAttribute
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
   startLine: 7
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ExtensionOrderAttribute.ExtensionOrderAttribute
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 11
   syntax:
     content:
@@ -49,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ExtensionOrderAttribute.After
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 15
   syntax:
     content:
@@ -71,10 +67,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ExtensionOrderAttribute.Before
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/ExtensionOrderAttribute.cs
     startLine: 17
   syntax:
     content:

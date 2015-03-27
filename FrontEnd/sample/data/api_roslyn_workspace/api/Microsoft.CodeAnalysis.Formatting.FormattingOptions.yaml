@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
   startLine: 6
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.UseTabs
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 12
   syntax:
     content:
@@ -43,10 +41,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.TabSize
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 14
   syntax:
     content:
@@ -59,10 +55,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentationSize
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 16
   syntax:
     content:
@@ -75,10 +69,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.SmartIndent
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 18
   syntax:
     content:
@@ -91,10 +83,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.UseTabOnlyForIndentation
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 20
   syntax:
     content:
@@ -107,10 +97,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.NewLine
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 22
   syntax:
     content:

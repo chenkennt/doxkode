@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Rename.RenameOptions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Rename/RenameOptions.cs
   startLine: 6
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameOverloads
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 10
   syntax:
     content:
@@ -43,10 +41,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameInStrings
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 11
   syntax:
     content:
@@ -59,10 +55,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameOptions.RenameInComments
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 12
   syntax:
     content:
@@ -75,10 +69,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameOptions.PreviewChanges
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameOptions.cs
     startLine: 13
   syntax:
     content:

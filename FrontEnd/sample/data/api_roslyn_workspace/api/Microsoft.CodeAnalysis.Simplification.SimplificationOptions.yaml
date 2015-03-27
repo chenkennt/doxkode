@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
   startLine: 9
 summary: This Object contains the options that needs to be drilled down to the Simplification Engine
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferAliasToQualification
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 18
   summary: >-
     This option tells the simplification engine if the Qualified Name should be replaced by Alias
@@ -48,10 +46,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferOmittingModuleNamesInQualification
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 24
   summary: >-
     This option influences the name reduction of members of a module in VB. If set to true, the
@@ -68,10 +64,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferImplicitTypeInference
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 29
   summary: This option says that if we should simplify the Generic Name which has the type argument inferred
   syntax:
@@ -85,10 +79,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferImplicitTypeInLocalDeclaration
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 34
   summary: This option says if we should simplify the Explicit Type in Local Declarations
   syntax:
@@ -102,10 +94,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.AllowSimplificationToGenericType
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 39
   summary: This option says if we should simplify to NonGeneric Name rather than GenericName
   syntax:
@@ -119,10 +109,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.AllowSimplificationToBaseType
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 44
   summary: This option says if we should simplify from Derived types to Base types in Static Member Accesses
   syntax:
@@ -136,10 +124,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.QualifyMemberAccessWithThisOrMe
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 49
   summary: This option says if we should simplify away the this. or Me. in member access expression
   syntax:
@@ -153,10 +139,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferIntrinsicPredefinedTypeKeywordInDeclaration
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 54
   summary: This option says if we should prefer keyword for Intrinsic Predefined Types in Declarations
   syntax:
@@ -170,10 +154,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferIntrinsicPredefinedTypeKeywordInMemberAccess
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
     startLine: 59
   summary: This option says if we should prefer keyword for Intrinsic Predefined Types in Member Access Expression
   syntax:

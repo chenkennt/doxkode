@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
   startLine: 6
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.SolutionChanged
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 11
   summary: The current solution changed for an unspecified reason.
   syntax:
@@ -50,10 +48,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.SolutionAdded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 16
   summary: A solution was added to the workspace.
   syntax:
@@ -67,10 +63,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.SolutionRemoved
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 21
   summary: The current solution was removed from the workspace.
   syntax:
@@ -84,10 +78,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.SolutionCleared
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 26
   summary: The current solution was cleared of all projects and documents.
   syntax:
@@ -101,10 +93,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.SolutionReloaded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 31
   summary: The current solution was reloaded.
   syntax:
@@ -118,10 +108,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.ProjectAdded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 36
   summary: A project was added to the current solution.
   syntax:
@@ -135,10 +123,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.ProjectRemoved
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 41
   summary: A project was removed from the current solution.
   syntax:
@@ -152,10 +138,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.ProjectChanged
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 46
   summary: A project in the current solution was changed.
   syntax:
@@ -169,10 +153,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.ProjectReloaded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 51
   summary: A project in the current solution was reloaded.
   syntax:
@@ -186,10 +168,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.DocumentAdded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 56
   summary: A document was added to the current solution.
   syntax:
@@ -203,10 +183,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.DocumentRemoved
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 61
   summary: A document was removed from the current solution.
   syntax:
@@ -220,10 +198,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.DocumentReloaded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 66
   summary: A document in the current solution was reloaded.
   syntax:
@@ -237,10 +213,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.DocumentChanged
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 71
   summary: A document in the current solution was changed.
   syntax:
@@ -254,10 +228,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.AdditionalDocumentAdded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 76
   summary: An additional document was added to the current solution.
   syntax:
@@ -271,10 +243,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.AdditionalDocumentRemoved
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 81
   summary: An additional document was removed from the current solution.
   syntax:
@@ -288,10 +258,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.AdditionalDocumentReloaded
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 86
   summary: An additional document in the current solution was reloaded.
   syntax:
@@ -305,10 +273,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceChangeKind.AdditionalDocumentChanged
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceChangeKind.cs
     startLine: 91
   summary: An additional document in the current solution was changed.
   syntax:

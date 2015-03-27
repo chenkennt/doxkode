@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Options.OptionSet
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Options/OptionSet.cs
   startLine: 7
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.GetOption``1(Microsoft.CodeAnalysis.Options.Option{``0})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 29
   summary: Gets the value of the option.
   syntax:
@@ -52,10 +50,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.GetOption``1(Microsoft.CodeAnalysis.Options.PerLanguageOption{``0},System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 37
   summary: Gets the value of the option.
   syntax:
@@ -82,10 +78,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.GetOption(Microsoft.CodeAnalysis.Options.OptionKey)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 45
   summary: Gets the value of the option.
   syntax:
@@ -96,6 +90,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     return:
       id: Object
 - id: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption``1(Microsoft.CodeAnalysis.Options.Option{``0},``0)
@@ -106,12 +101,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption``1(Microsoft.CodeAnalysis.Options.Option{``0},``0)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 64
-  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/) that contains the changed value.
+  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api/Microsoft.CodeAnalysis.Options.OptionSet.yaml) that contains the changed value.
   syntax:
     content:
       CSharp: public OptionSet WithChangedOption<T>(Option<T> option, T value)
@@ -136,12 +129,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption``1(Microsoft.CodeAnalysis.Options.PerLanguageOption{``0},System.String,``0)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 72
-  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/) that contains the changed value.
+  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api/Microsoft.CodeAnalysis.Options.OptionSet.yaml) that contains the changed value.
   syntax:
     content:
       CSharp: public OptionSet WithChangedOption<T>(PerLanguageOption<T> option, string language, T value)
@@ -171,12 +162,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.OptionSet.WithChangedOption(Microsoft.CodeAnalysis.Options.OptionKey,System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/OptionSet.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/OptionSet.cs
     startLine: 80
-  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](#/) that contains the changed value.
+  summary: Creates a new [Microsoft.CodeAnalysis.Options.OptionSet](api/Microsoft.CodeAnalysis.Options.OptionSet.yaml) that contains the changed value.
   syntax:
     content:
       CSharp: public OptionSet WithChangedOption(OptionKey optionAndLanguage, object value)
@@ -185,6 +174,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionKey
         name: OptionKey
+        href: api/Microsoft.CodeAnalysis.Options.OptionKey.yaml
     - id: value
       type:
         id: System.Object

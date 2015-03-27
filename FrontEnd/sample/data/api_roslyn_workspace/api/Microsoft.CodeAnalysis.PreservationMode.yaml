@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.PreservationMode
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
   startLine: 9
 summary: The mode in which value is preserved.
 syntax:
@@ -34,10 +34,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.PreservationMode.PreserveValue
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
     startLine: 14
   summary: The value is guaranteed to have the same contents across multiple accesses.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.PreservationMode.PreserveIdentity
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/PreservationMode.cs
     startLine: 19
   summary: The value is guaranteed to the same instance across multiple accesses.
   syntax:

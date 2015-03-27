@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/PreviewOperation.cs
-  startLine: 4
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
+  startLine: 5
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.PreviewOperation
   href: api/Microsoft.CodeAnalysis.CodeActions.PreviewOperation.yaml
@@ -19,11 +19,11 @@ items:
 - id: Microsoft.CodeAnalysis.CodeActions.CodeAction
   href: api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
   type: Class
-  summary: An action produced by a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/) or a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](#/).
+  summary: An action produced by a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) or a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml).
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionWithOptions
   href: api/Microsoft.CodeAnalysis.CodeActions.CodeActionWithOptions.yaml
   type: Class
-  summary: A [Microsoft.CodeAnalysis.CodeActions.CodeAction](#/) that can vary with user specified options.
+  summary: A [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that can vary with user specified options.
 - id: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
   href: api/Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.yaml
   type: Class
@@ -43,7 +43,7 @@ items:
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
   href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   type: Class
-  summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](#/) for applying solution changes to a workspace.
+  summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.yaml) for applying solution changes to a workspace.
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation
   href: api/Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
   type: Class

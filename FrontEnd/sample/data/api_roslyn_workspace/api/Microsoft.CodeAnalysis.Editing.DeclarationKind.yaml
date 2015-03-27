@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
   startLine: 7
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.None
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 9
   syntax:
     content:
@@ -49,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.CompilationUnit
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 10
   syntax:
     content:
@@ -65,10 +61,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Class
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 11
   syntax:
     content:
@@ -81,10 +75,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Struct
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 12
   syntax:
     content:
@@ -97,10 +89,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Interface
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 13
   syntax:
     content:
@@ -113,10 +103,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Enum
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 14
   syntax:
     content:
@@ -129,10 +117,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Delegate
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 15
   syntax:
     content:
@@ -145,10 +131,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Method
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 16
   syntax:
     content:
@@ -161,10 +145,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Operator
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 17
   syntax:
     content:
@@ -177,10 +159,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.ConversionOperator
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 18
   syntax:
     content:
@@ -193,10 +173,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Constructor
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 19
   syntax:
     content:
@@ -209,10 +187,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Destructor
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 20
   syntax:
     content:
@@ -225,10 +201,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Field
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 21
   syntax:
     content:
@@ -241,10 +215,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Property
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 22
   syntax:
     content:
@@ -257,10 +229,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Indexer
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 23
   syntax:
     content:
@@ -273,10 +243,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.EnumMember
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 24
   syntax:
     content:
@@ -289,10 +257,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Event
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 25
   syntax:
     content:
@@ -305,10 +271,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.CustomEvent
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 26
   syntax:
     content:
@@ -321,10 +285,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Namespace
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 27
   syntax:
     content:
@@ -337,10 +299,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.NamespaceImport
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 28
   syntax:
     content:
@@ -353,10 +313,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Parameter
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 29
   syntax:
     content:
@@ -369,10 +327,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Variable
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 30
   syntax:
     content:
@@ -385,10 +341,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.Attribute
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 31
   syntax:
     content:
@@ -401,10 +355,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationKind.LambdaExpression
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
     startLine: 32
   syntax:
     content:

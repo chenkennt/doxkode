@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.WorkspaceRegistration
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
   startLine: 6
 syntax:
   content:
@@ -27,19 +27,18 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceRegistration.Workspace
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
     startLine: 14
   syntax:
     content:
-      CSharp: public Workspace Workspace { get { return _registeredWorkspace; } }
+      CSharp: public Workspace Workspace { get; }
     parameters:
     - id: Workspace
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
 - id: Microsoft.CodeAnalysis.WorkspaceRegistration.WorkspaceChanged
   href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
   name:
@@ -48,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceRegistration.WorkspaceChanged
   type: Event
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
     startLine: 15
   syntax:
     content:

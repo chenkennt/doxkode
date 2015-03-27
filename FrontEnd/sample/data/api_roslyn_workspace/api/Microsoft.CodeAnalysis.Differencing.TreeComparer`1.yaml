@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Differencing.TreeComparer`1
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
   startLine: 21
 summary: Implements a tree differencing algorithm.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ComputeEditScript(`0,`0)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 30
   summary: Returns an edit script that transforms  to .
   syntax:
@@ -58,10 +56,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ComputeMatch(`0,`0,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`0}})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 38
   summary: Returns a match map of  descendants to  descendants.
   syntax:
@@ -93,10 +89,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.GetDistance(`0,`0)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 52
   summary: Calculates the distance [0..1] of two nodes.
   syntax:
@@ -123,10 +117,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.TreeComparer`1.ValuesEqual(`0,`0)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
     startLine: 61
   summary: Returns true if the specified nodes have equal values.
   syntax:

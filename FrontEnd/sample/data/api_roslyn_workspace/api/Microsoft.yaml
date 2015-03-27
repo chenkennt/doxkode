@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Compilers/Core/Portable/Collections/ImmutableArrayExtensions.cs
-  startLine: 10
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Compilers/Core/SharedCollections/PooledHashSet.cs
+  startLine: 6

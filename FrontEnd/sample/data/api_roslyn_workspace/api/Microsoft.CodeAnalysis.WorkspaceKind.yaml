@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.WorkspaceKind
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
   startLine: 9
 summary: Known workspace kinds
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.Host
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 11
   syntax:
     content:
@@ -44,10 +42,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.Debugger
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 12
   syntax:
     content:
@@ -60,10 +56,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.Interactive
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 13
   syntax:
     content:
@@ -76,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.MetadataAsSource
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 14
   syntax:
     content:
@@ -92,10 +84,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.MiscellaneousFiles
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 15
   syntax:
     content:
@@ -108,10 +98,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceKind.Preview
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceKind.cs
     startLine: 16
   syntax:
     content:

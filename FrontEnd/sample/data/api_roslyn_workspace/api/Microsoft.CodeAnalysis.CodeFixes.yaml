@@ -8,41 +8,41 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
-  startLine: 11
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeFixes/ExportCodeFixProviderAttribute.cs
+  startLine: 5
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext
   href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   type: Struct
-  summary: Context for code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/).
+  summary: Context for code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml).
 - id: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders
   href: api/Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml
   type: Class
-  summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
+  summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext
   href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   type: Class
-  summary: Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
+  summary: Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope
   href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
   type: Enum
-  summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
+  summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider
   href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
   type: Class
   summary: >-
     Implement this abstract type to provide fix all/multiple occurrences code fixes for source code problems.
 
-    Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](#/).
+    Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](api/Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml).
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
   href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml
   type: Class
   summary: >-
     Implement this type to provide fixes for source code problems.
 
-    Remember to use [Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute](#/) so the host environment can offer your fixes in a UI.
+    Remember to use [Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute](api/Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.yaml) so the host environment can offer your fixes in a UI.
 - id: Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute
   href: api/Microsoft.CodeAnalysis.CodeFixes.ExportCodeFixProviderAttribute.yaml
   type: Class
-  summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](#/) implementation so that it can be discovered by the host.
+  summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) implementation so that it can be discovered by the host.

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
   startLine: 20
 summary: >-
   A language agnostic factory for creating syntax nodes.
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultRemoveOptions
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 22
   syntax:
     content:
@@ -49,12 +47,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Workspace,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 27
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/) for the specified language.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the specified language.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Workspace workspace, string language)
@@ -63,6 +59,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: language
       type:
         id: System.String
@@ -78,12 +75,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Document)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 35
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](#/) for the language corresponding to the document.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the language corresponding to the document.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Document document)
@@ -92,6 +87,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
+        href: api/Microsoft.CodeAnalysis.Document.yaml
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
@@ -102,10 +98,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 45
   summary: Returns the node if it is a declaration, the immediate enclosing declaration if one exists, or null.
   syntax:
@@ -127,10 +121,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationKind)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 65
   summary: Returns the enclosing declaration of the specified kind or null.
   syntax:
@@ -146,6 +138,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationKind
         name: DeclarationKind
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode)
@@ -156,10 +149,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 85
   summary: Creates a field declaration.
   syntax:
@@ -185,6 +176,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: initializer
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -200,10 +192,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 95
   summary: Creates a field declaration matching an existing field symbol.
   syntax:
@@ -225,10 +215,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 104
   summary: Creates a field declaration matching an existing field symbol.
   syntax:
@@ -255,10 +243,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 117
   summary: Creates a method declaration.
   syntax:
@@ -294,6 +280,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -309,10 +296,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 129
   summary: Creates a method declaration matching an existing method symbol.
   syntax:
@@ -339,10 +324,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.RefKind)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 150
   summary: Creates a parameter declaration.
   syntax:
@@ -379,10 +362,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(Microsoft.CodeAnalysis.IParameterSymbol,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 159
   summary: Creates a parameter declaration matching an existing parameter symbol.
   syntax:
@@ -409,10 +390,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 171
   summary: Creates a property declaration.
   syntax:
@@ -438,6 +417,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -458,10 +438,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 182
   summary: Creates a property declaration using an existing property symbol as a signature.
   syntax:
@@ -493,10 +471,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 199
   summary: Creates an indexer declaration.
   syntax:
@@ -522,6 +498,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -542,10 +519,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 210
   summary: Creates an indexer declaration matching an existing indexer symbol.
   syntax:
@@ -577,10 +552,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 227
   summary: Creates an event declaration.
   syntax:
@@ -606,6 +579,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(Microsoft.CodeAnalysis.IEventSymbol)
@@ -616,10 +590,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(Microsoft.CodeAnalysis.IEventSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 236
   summary: Creates an event declaration from an existing event symbol
   syntax:
@@ -641,10 +613,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 248
   summary: Creates a custom event declaration.
   syntax:
@@ -670,6 +640,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -695,10 +666,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(Microsoft.CodeAnalysis.IEventSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 260
   summary: Creates a custom event declaration from an existing event symbol.
   syntax:
@@ -730,10 +699,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 281
   summary: Creates a constructor declaration.
   syntax:
@@ -759,6 +726,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: baseConstructorArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -779,10 +747,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 292
   summary: Create a constructor declaration using
   syntax:
@@ -814,10 +780,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPublicInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 310
   summary: >-
     Converts method, property and indexer declarations into public interface implementations.
@@ -847,10 +811,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPrivateInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 316
   summary: >-
     Converts method, property and indexer declarations into private interface implementations.
@@ -880,10 +842,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ClassDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 321
   summary: Creates a class declaration.
   syntax:
@@ -909,6 +869,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: baseType
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -934,10 +895,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.StructDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 333
   summary: Creates a struct declaration.
   syntax:
@@ -963,6 +922,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -983,10 +943,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InterfaceDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 344
   summary: Creates a interface declaration.
   syntax:
@@ -1028,10 +986,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumDeclaration(System.String,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 354
   summary: Creates an enum declaration.
   syntax:
@@ -1052,6 +1008,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1067,10 +1024,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumMember(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 363
   summary: Creates an enum member
   syntax:
@@ -1097,10 +1052,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DelegateDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 368
   summary: Creates a delegate declaration.
   syntax:
@@ -1136,6 +1089,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Declaration(Microsoft.CodeAnalysis.ISymbol)
@@ -1146,10 +1100,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Declaration(Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 379
   summary: Creates a declaration matching an existing symbol.
   syntax:
@@ -1171,10 +1123,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 509
   summary: Converts a declaration (method, class, etc) into a declaration with type parameters.
   syntax:
@@ -1201,10 +1151,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.String[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 514
   summary: Converts a declaration (method, class, etc) into a declaration with type parameters.
   syntax:
@@ -1231,10 +1179,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 522
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1255,6 +1201,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
+        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1270,10 +1217,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 527
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1294,6 +1239,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
+        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Array
@@ -1309,10 +1255,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 535
   summary: Adds a type constraint to a type parameter of a declaration.
   syntax:
@@ -1344,10 +1288,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 545
   summary: Creates a namespace declaration.
   syntax:
@@ -1376,10 +1318,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 552
   summary: Creates a namespace declaration.
   syntax:
@@ -1408,10 +1348,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 562
   summary: Creates a namespace declaration.
   syntax:
@@ -1440,10 +1378,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 572
   summary: Creates a namespace declaration.
   syntax:
@@ -1472,10 +1408,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 581
   summary: Creates a compilation unit declaration
   syntax:
@@ -1498,10 +1432,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 587
   summary: Creates a compilation unit declaration
   syntax:
@@ -1524,10 +1456,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 596
   summary: Creates a namespace import declaration.
   syntax:
@@ -1550,10 +1480,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 602
   summary: Creates a namespace import declaration.
   syntax:
@@ -1576,10 +1504,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 610
   summary: Creates an attribute.
   syntax:
@@ -1606,10 +1532,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 615
   summary: Creates an attribute.
   syntax:
@@ -1636,10 +1560,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 623
   summary: Creates an attribute.
   syntax:
@@ -1666,10 +1588,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.AttributeData)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 631
   summary: Creates an attribute matching existing attribute data.
   syntax:
@@ -1691,10 +1611,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 648
   summary: Creates an attribute argument.
   syntax:
@@ -1721,10 +1639,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 653
   summary: Creates an attribute argument.
   syntax:
@@ -1746,10 +1662,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveAllAttributes(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 661
   summary: Removes all attributes from the declaration, including return attributes.
   syntax:
@@ -1771,10 +1685,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributes(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 669
   summary: Gets the attributes of a declaration, not including the return attributes.
   syntax:
@@ -1796,10 +1708,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 674
   summary: Creates a new instance of the declaration with the attributes inserted.
   syntax:
@@ -1831,10 +1741,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 679
   summary: Creates a new instance of the declaration with the attributes inserted.
   syntax:
@@ -1866,10 +1774,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 687
   summary: Creates a new instance of a declaration with the specified attributes added.
   syntax:
@@ -1896,10 +1802,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 695
   summary: Creates a new instance of a declaration with the specified attributes added.
   syntax:
@@ -1926,10 +1830,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 703
   summary: Gets the return attributes from the declaration.
   syntax:
@@ -1951,10 +1853,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 708
   summary: Creates a new instance of a method declaration with return attributes inserted.
   syntax:
@@ -1986,10 +1886,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 713
   summary: Creates a new instance of a method declaration with return attributes inserted.
   syntax:
@@ -2021,10 +1919,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 721
   summary: Creates a new instance of a method declaration with return attributes added.
   syntax:
@@ -2051,10 +1947,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 729
   summary: Creates a new instance of a method declaration node with return attributes added.
   syntax:
@@ -2081,10 +1975,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 737
   summary: Gets the attribute arguments for the attribute declaration.
   syntax:
@@ -2106,10 +1998,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 742
   summary: Creates a new instance of the attribute with the arguments inserted.
   syntax:
@@ -2141,10 +2031,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 747
   summary: Creates a new instance of the attribute with the arguments added.
   syntax:
@@ -2171,10 +2059,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 755
   summary: Gets the namespace imports that are part of the declaration.
   syntax:
@@ -2196,10 +2082,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 760
   summary: Creates a new instance of the declaration with the namespace imports inserted.
   syntax:
@@ -2231,10 +2115,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 765
   summary: Creates a new instance of the declaration with the namespace imports inserted.
   syntax:
@@ -2266,10 +2148,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 773
   summary: Creates a new instance of the declaration with the namespace imports added.
   syntax:
@@ -2296,10 +2176,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 781
   summary: Creates a new instance of the declaration with the namespace imports added.
   syntax:
@@ -2326,10 +2204,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetMembers(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 789
   summary: Gets the current members of the declaration.
   syntax:
@@ -2351,10 +2227,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 794
   summary: Creates a new instance of the declaration with the members inserted.
   syntax:
@@ -2386,10 +2260,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 799
   summary: Creates a new instance of the declaration with the members inserted.
   syntax:
@@ -2421,10 +2293,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 807
   summary: Creates a new instance of the declaration with the members added to the end.
   syntax:
@@ -2451,10 +2321,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 815
   summary: Creates a new instance of the declaration with the members added to the end.
   syntax:
@@ -2481,10 +2349,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAccessibility(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 823
   summary: Gets the accessibility of the declaration.
   syntax:
@@ -2506,10 +2372,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithAccessibility(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 828
   summary: Changes the accessibility of the declaration.
   syntax:
@@ -2536,12 +2400,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetModifiers(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 833
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationModifiers GetModifiers(SyntaxNode declaration);
@@ -2561,12 +2423,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithModifiers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 838
-  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](#/) for the declaration.
+  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract SyntaxNode WithModifiers(SyntaxNode declaration, DeclarationModifiers modifiers);
@@ -2580,6 +2440,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclarationKind(Microsoft.CodeAnalysis.SyntaxNode)
@@ -2590,12 +2451,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclarationKind(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 843
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](#/) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationKind GetDeclarationKind(SyntaxNode declaration);
@@ -2615,10 +2474,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetName(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 848
   summary: Gets the name of the declaration.
   syntax:
@@ -2640,10 +2497,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithName(Microsoft.CodeAnalysis.SyntaxNode,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 853
   summary: Changes the name of the declaration.
   syntax:
@@ -2670,10 +2525,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetType(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 858
   summary: Gets the type of the declaration.
   syntax:
@@ -2695,10 +2548,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 863
   summary: Changes the type of the declaration.
   syntax:
@@ -2725,10 +2576,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetParameters(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 868
   summary: Gets the list of parameters for the declaration.
   syntax:
@@ -2750,10 +2599,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 873
   summary: Inserts the parameters at the specified index into the declaration.
   syntax:
@@ -2785,10 +2632,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 878
   summary: Adds the parameters to the declaration.
   syntax:
@@ -2815,10 +2660,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 886
   summary: Gets the expression associated with the declaration.
   syntax:
@@ -2840,10 +2683,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 891
   summary: Changes the expression associated with the declaration.
   syntax:
@@ -2870,10 +2711,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetStatements(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 896
   summary: Gets the statements for the body of the declaration.
   syntax:
@@ -2895,10 +2734,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 901
   summary: Changes the statements for the body of the declaration.
   syntax:
@@ -2925,10 +2762,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 906
   summary: Gets the statements for the body of the get-accessor of the declaration.
   syntax:
@@ -2950,10 +2785,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 911
   summary: Changes the statements for the body of the get-accessor of the declaration.
   syntax:
@@ -2980,10 +2813,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 916
   summary: Gets the statements for the body of the set-accessor of the declaration.
   syntax:
@@ -3005,10 +2836,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 921
   summary: Changes the statements for the body of the set-accessor of the declaration.
   syntax:
@@ -3035,10 +2864,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetBaseAndInterfaceTypes(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 926
   summary: Gets a list of the base and interface types for the declaration.
   syntax:
@@ -3060,10 +2887,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddBaseType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 931
   summary: Adds a base type to the declaration
   syntax:
@@ -3090,10 +2915,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddInterfaceType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 936
   summary: Adds an interface type to the declaration
   syntax:
@@ -3120,10 +2943,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 944
   summary: Replaces the node in the root's tree with the new node.
   syntax:
@@ -3155,10 +2976,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 959
   summary: Inserts the new node before the specified declaration.
   syntax:
@@ -3190,10 +3009,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesAfter(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 967
   summary: Inserts the new node before the specified declaration.
   syntax:
@@ -3225,10 +3042,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 975
   summary: Removes the node from the sub tree starting at the root.
   syntax:
@@ -3255,10 +3070,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNodes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 983
   summary: Removes all the declarations from the sub tree starting at the root.
   syntax:
@@ -3285,10 +3098,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExpressionStatement(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1099
   summary: >-
     Creates statement that allows an expression to execute in a statement context.
@@ -3314,10 +3125,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReturnStatement(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1105
   summary: Creates a statement that can be used to return a value from a method body.
   syntax:
@@ -3340,10 +3149,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThrowStatement(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1111
   summary: Creates a statement that can be used to throw and exception.
   syntax:
@@ -3366,10 +3173,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1116
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3406,10 +3211,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.ITypeSymbol,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1121
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3446,10 +3249,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1129
   summary: Creates a statement that declares a single local variable.
   syntax:
@@ -3476,10 +3277,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1140
   summary: Creates an if-statement
   syntax:
@@ -3514,10 +3313,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1148
   summary: Creates an if statement
   syntax:
@@ -3552,10 +3349,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1156
   summary: Creates a switch statement that branches to individual sections based on the value of the specified expression.
   syntax:
@@ -3582,10 +3377,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1161
   summary: Creates a switch statement that branches to individual sections based on the value of the specified expression.
   syntax:
@@ -3612,10 +3405,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1169
   summary: Creates a section for a switch statement.
   syntax:
@@ -3642,10 +3433,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1174
   summary: Creates a single-case section a switch statement.
   syntax:
@@ -3672,10 +3461,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultSwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1182
   summary: Creates a default section for a switch statement.
   syntax:
@@ -3697,10 +3484,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExitSwitchStatement
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1187
   summary: Create a statement that exits a switch statement and continues after it.
   syntax:
@@ -3717,10 +3502,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1192
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3757,10 +3540,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1197
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3792,10 +3573,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1205
   summary: Creates a statement that represents a using-block pattern.
   syntax:
@@ -3822,10 +3601,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1210
   summary: Creates a try-catch or try-catch-finally statement.
   syntax:
@@ -3857,10 +3634,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1215
   summary: Creates a try-catch or try-catch-finally statement.
   syntax:
@@ -3887,10 +3662,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryFinallyStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1223
   summary: Creates a try-finally statement.
   syntax:
@@ -3917,10 +3690,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.SyntaxNode,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1231
   summary: Creates a catch-clause.
   syntax:
@@ -3952,10 +3723,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.ITypeSymbol,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1236
   summary: Creates a catch-clause.
   syntax:
@@ -3987,10 +3756,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WhileStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1244
   summary: Creates a while-loop statement
   syntax:
@@ -4017,10 +3784,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1253
   summary: >-
     An expression that represents the default value of a type.
@@ -4045,10 +3810,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1254
   syntax:
     content:
@@ -4069,10 +3832,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThisExpression
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1259
   summary: Creates an expression that denotes the containing method's this-parameter.
   syntax:
@@ -4089,10 +3850,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BaseExpression
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1264
   summary: Creates an expression that denotes the containing method's base-parameter.
   syntax:
@@ -4109,10 +3868,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LiteralExpression(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1269
   summary: Creates a literal expression. This is typically numeric primitives, strings or chars.
   syntax:
@@ -4134,10 +3891,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FalseLiteralExpression
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1274
   summary: Creates an expression that denotes the boolean false literal.
   syntax:
@@ -4154,10 +3909,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TrueLiteralExpression
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1282
   summary: Creates an expression that denotes the boolean true literal.
   syntax:
@@ -4174,10 +3927,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullLiteralExpression
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1290
   summary: Creates an expression that denotes the null literal.
   syntax:
@@ -4194,10 +3945,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IdentifierName(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1300
   summary: Creates an expression that denotes a simple identifier name.
   syntax:
@@ -4219,10 +3968,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1305
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4249,10 +3996,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ITypeSymbol})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1310
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4279,10 +4024,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1318
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4309,10 +4052,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.ITypeSymbol[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1326
   summary: Creates an expression that denotes a generic identifier name.
   syntax:
@@ -4339,10 +4080,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1335
   summary: >-
     Converts an expression that ends in a name into an expression that ends in a generic name.
@@ -4372,10 +4111,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1341
   summary: >-
     Converts an expression that ends in a name into an expression that ends in a generic name.
@@ -4405,10 +4142,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.QualifiedName(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1351
   summary: >-
     Creates a name expression that denotes a qualified name.
@@ -4440,10 +4175,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DottedName(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1356
   summary: Creates a name expression from a dotted name string.
   syntax:
@@ -4465,10 +4198,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1386
   summary: Creates an expression that denotes a type.
   syntax:
@@ -4490,10 +4221,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.SpecialType)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1391
   summary: Creates an expression that denotes a special type name.
   syntax:
@@ -4515,10 +4244,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ArrayTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1396
   summary: Creates an expression that denotes an array type.
   syntax:
@@ -4540,10 +4267,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullableTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1401
   summary: Creates an expression that denotes a nullable type.
   syntax:
@@ -4565,10 +4290,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AssignmentStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1406
   summary: Creates an expression that denotes an assignment from the right argument to left argument.
   syntax:
@@ -4595,10 +4318,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1411
   summary: Creates an expression that denotes a value-type equality test operation.
   syntax:
@@ -4625,10 +4346,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1416
   summary: Creates an expression that denotes a reference-type equality test operation.
   syntax:
@@ -4655,10 +4374,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1421
   summary: Creates an expression that denotes a value-type inequality test operation.
   syntax:
@@ -4685,10 +4402,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1426
   summary: Creates an expression that denotes a reference-type inequality test operation.
   syntax:
@@ -4715,10 +4430,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1431
   summary: Creates an expression that denotes a less-than test operation.
   syntax:
@@ -4745,10 +4458,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1436
   summary: Creates an expression that denotes a less-than-or-equal test operation.
   syntax:
@@ -4775,10 +4486,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1441
   summary: Creates an expression that denotes a greater-than test operation.
   syntax:
@@ -4805,10 +4514,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1446
   summary: Creates an expression that denotes a greater-than-or-equal test operation.
   syntax:
@@ -4835,10 +4542,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NegateExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1451
   summary: Creates an expression that denotes a unary negation operation.
   syntax:
@@ -4860,10 +4565,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1456
   summary: Creates an expression that denotes an addition operation.
   syntax:
@@ -4890,10 +4593,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SubtractExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1461
   summary: Creates an expression that denotes an subtraction operation.
   syntax:
@@ -4920,10 +4621,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MultiplyExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1466
   summary: Creates an expression that denotes a multiplication operation.
   syntax:
@@ -4950,10 +4649,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DivideExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1471
   summary: Creates an expression that denotes a division operation.
   syntax:
@@ -4980,10 +4677,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ModuloExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1476
   summary: Creates an expression that denotes a modulo operation.
   syntax:
@@ -5010,10 +4705,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1481
   summary: Creates an expression that denotes a bitwise-and operation.
   syntax:
@@ -5040,10 +4733,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1486
   summary: Creates an expression that denotes a bitwise-or operation.
   syntax:
@@ -5070,10 +4761,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1491
   summary: Creates an expression that denotes a bitwise-not operation
   syntax:
@@ -5095,10 +4784,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1496
   summary: Creates an expression that denotes a logical-and operation.
   syntax:
@@ -5125,10 +4812,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1501
   summary: Creates an expression that denotes a logical-or operation.
   syntax:
@@ -5155,10 +4840,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1506
   summary: Creates an expression that denotes a logical not operation.
   syntax:
@@ -5180,10 +4863,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConditionalExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1511
   summary: Creates an expression that denotes a conditional evaluation operation.
   syntax:
@@ -5215,10 +4896,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CoalesceExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1516
   summary: Creates an expression that denotes a coalesce operation.
   syntax:
@@ -5245,10 +4924,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1521
   summary: Creates a member access expression.
   syntax:
@@ -5275,10 +4952,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1526
   summary: Creates a member access expression.
   syntax:
@@ -5305,10 +4980,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1534
   summary: Creates an object creation expression.
   syntax:
@@ -5335,10 +5008,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1539
   summary: Creates an object creation expression.
   syntax:
@@ -5365,10 +5036,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1547
   summary: Creates an object creation expression.
   syntax:
@@ -5395,10 +5064,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1555
   summary: Creates an object creation expression.
   syntax:
@@ -5425,10 +5092,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1563
   summary: Creates a invocation expression.
   syntax:
@@ -5455,10 +5120,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1568
   summary: Creates a invocation expression
   syntax:
@@ -5485,10 +5148,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(System.String,Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1576
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5520,10 +5181,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1581
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5550,10 +5209,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1589
   summary: Creates a node that is an argument to an invocation.
   syntax:
@@ -5575,10 +5232,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1597
   summary: Creates an expression that access an element of an array or indexer.
   syntax:
@@ -5605,10 +5260,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1602
   summary: Creates an expression that access an element of an array or indexer.
   syntax:
@@ -5635,10 +5288,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1610
   summary: Creates an expression that denotes an is-type-check operation.
   syntax:
@@ -5665,10 +5316,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1615
   summary: Creates an expression that denotes an is-type-check operation.
   syntax:
@@ -5695,10 +5344,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1623
   summary: Creates an expression that denotes an try-cast operation.
   syntax:
@@ -5725,10 +5372,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1628
   summary: Creates an expression that denotes an try-cast operation.
   syntax:
@@ -5755,10 +5400,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1636
   summary: Creates an expression that denotes a type cast operation.
   syntax:
@@ -5785,10 +5428,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1641
   summary: Creates an expression that denotes a type cast operation.
   syntax:
@@ -5815,10 +5456,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1649
   summary: Creates an expression that denotes a type conversion operation.
   syntax:
@@ -5845,10 +5484,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1654
   summary: Creates an expression that denotes a type conversion operation.
   syntax:
@@ -5875,10 +5512,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1662
   summary: Creates an expression that declares a value returning lambda expression.
   syntax:
@@ -5905,10 +5540,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1667
   summary: Creates an expression that declares a void returning lambda expression
   syntax:
@@ -5935,10 +5568,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1672
   summary: Creates an expression that declares a value returning lambda expression.
   syntax:
@@ -5965,10 +5596,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1677
   summary: Creates an expression that declares a void returning lambda expression.
   syntax:
@@ -5995,10 +5624,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1682
   summary: Creates an expression that declares a single parameter value returning lambda expression.
   syntax:
@@ -6025,10 +5652,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1690
   summary: Creates an expression that declares a single parameter void returning lambda expression.
   syntax:
@@ -6055,10 +5680,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1698
   summary: Creates an expression that declares a single parameter value returning lambda expression.
   syntax:
@@ -6085,10 +5708,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1706
   summary: Creates an expression that declares a single parameter void returning lambda expression.
   syntax:
@@ -6115,10 +5736,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1714
   summary: Creates an expression that declares a zero parameter value returning lambda expression.
   syntax:
@@ -6140,10 +5759,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1722
   summary: Creates an expression that declares a zero parameter void returning lambda expression.
   syntax:
@@ -6165,10 +5782,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1730
   summary: Creates an expression that declares a zero parameter value returning lambda expression.
   syntax:
@@ -6190,10 +5805,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1738
   summary: Creates an expression that declares a zero parameter void returning lambda expression.
   syntax:
@@ -6215,10 +5828,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1746
   summary: Creates a lambda parameter.
   syntax:
@@ -6245,10 +5856,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 1751
   summary: Creates a lambda parameter.
   syntax:

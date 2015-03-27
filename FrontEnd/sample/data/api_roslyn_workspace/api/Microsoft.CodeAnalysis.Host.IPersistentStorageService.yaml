@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.IPersistentStorageService
 type: Interface
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorageService.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorageService.cs
   startLine: 7
 summary: This service allows you to persist information relative to solution, projects and documents.
 syntax:
@@ -24,10 +24,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.IPersistentStorageService.GetStorage(Microsoft.CodeAnalysis.Solution)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorageService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorageService.cs
     startLine: 9
   syntax:
     content:
@@ -37,5 +35,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution.yaml
     return:
       id: IPersistentStorage

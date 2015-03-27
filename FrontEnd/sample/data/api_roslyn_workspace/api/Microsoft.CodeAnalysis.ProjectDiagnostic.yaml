@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.ProjectDiagnostic
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
   startLine: 4
 syntax:
   content:
@@ -20,6 +20,7 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
   name: WorkspaceDiagnostic
+  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
 items:
 - id: Microsoft.CodeAnalysis.ProjectDiagnostic.ProjectId
   href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
@@ -29,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectDiagnostic.ProjectId
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
     startLine: 6
   syntax:
     content:
@@ -42,6 +41,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.ProjectDiagnostic.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.ProjectId)
   href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
   name:
@@ -50,10 +50,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectDiagnostic.ProjectDiagnostic(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.ProjectId)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
     startLine: 8
   syntax:
     content:
@@ -63,6 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
         name: WorkspaceDiagnosticKind
+        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
     - id: message
       type:
         id: System.String
@@ -72,5 +71,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: Void

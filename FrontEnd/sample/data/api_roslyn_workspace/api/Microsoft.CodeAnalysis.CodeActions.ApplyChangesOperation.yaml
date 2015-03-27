@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
   startLine: 11
-summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](#/) for applying solution changes to a workspace.
+summary: A [Microsoft.CodeAnalysis.CodeActions.CodeActionOperation](api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.yaml) for applying solution changes to a workspace.
 syntax:
   content:
     CSharp: public sealed class ApplyChangesOperation
@@ -21,6 +21,7 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
   name: CodeActionOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.yaml
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.#ctor(Microsoft.CodeAnalysis.Solution)
   href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
@@ -30,10 +31,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.ApplyChangesOperation(Microsoft.CodeAnalysis.Solution)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 15
   syntax:
     content:
@@ -43,6 +42,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.ChangedSolution
@@ -53,26 +53,18 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.ChangedSolution
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 25
   syntax:
     content:
-      CSharp: >-
-        public Solution ChangedSolution
-
-                {
-
-                    get { return _changedSolution; }
-
-                }
+      CSharp: public Solution ChangedSolution { get; }
     parameters:
     - id: ChangedSolution
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
   href: api/Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.yaml
   name:
@@ -81,10 +73,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ApplyChangesOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/ApplyChangesOperation.cs
     startLine: 30
   syntax:
     content:
@@ -94,6 +84,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

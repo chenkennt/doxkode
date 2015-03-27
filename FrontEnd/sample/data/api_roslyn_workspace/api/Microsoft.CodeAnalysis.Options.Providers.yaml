@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Providers/ExportOptionProviderAttribute.cs
-  startLine: 5
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Options/Providers/OptionSerializerMetadata.cs
+  startLine: 7

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.VersionStamp
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
   startLine: 11
 summary: VersionStamp should be only used to compare versions returned by same API.
 syntax:
@@ -31,10 +31,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.Create
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 61
   summary: Creates a new instance of a VersionStamp.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.Create(System.DateTime)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 69
   summary: Creates a new instance of a version stamp based on the specified DateTime.
   syntax:
@@ -76,10 +72,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion(Microsoft.CodeAnalysis.VersionStamp)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 78
   summary: >-
     compare two different versions and return either one of the versions if there is no collision, otherwise, create a new version
@@ -93,6 +87,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion
@@ -103,10 +98,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 119
   summary: >-
     Gets a new VersionStamp that is guaranteed to be newer than its base one
@@ -126,10 +119,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.ToString
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 133
   summary: Returns the serialized text form of the VersionStamp.
   syntax:
@@ -146,10 +137,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 139
   syntax:
     content:
@@ -165,10 +154,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 144
   syntax:
     content:
@@ -189,10 +176,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.Equals(Microsoft.CodeAnalysis.VersionStamp)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 154
   syntax:
     content:
@@ -202,6 +187,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.op_Equality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
@@ -212,30 +198,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.op_Equality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 164
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(VersionStamp left, VersionStamp right)
-
-                {
-
-                    return left.Equals(right);
-
-                }
+      CSharp: public static bool operator ==(VersionStamp left, VersionStamp right) { return left.Equals(right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.op_Inequality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
@@ -246,30 +225,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.op_Inequality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 169
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(VersionStamp left, VersionStamp right)
-
-                {
-
-                    return !left.Equals(right);
-
-                }
+      CSharp: public static bool operator !=(VersionStamp left, VersionStamp right) { return !left.Equals(right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.Default
@@ -280,10 +252,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.VersionStamp.Default
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
     startLine: 235
   syntax:
     content:

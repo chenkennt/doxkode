@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
 type: Interface
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
   startLine: 9
 summary: This service allows you to access temporary storage.
 syntax:
@@ -24,10 +24,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStorageService.CreateTemporaryStreamStorage(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
     startLine: 11
   syntax:
     content:
@@ -48,10 +46,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryStorageService.CreateTemporaryTextStorage(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorageService.cs
     startLine: 12
   syntax:
     content:

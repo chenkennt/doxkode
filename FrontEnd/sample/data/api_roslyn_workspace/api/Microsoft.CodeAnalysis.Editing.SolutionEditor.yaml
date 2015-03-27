@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SolutionEditor
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
   startLine: 14
 summary: An editor for making changes to multiple documents in a solution.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SolutionEditor.SolutionEditor(Microsoft.CodeAnalysis.Solution)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 19
   syntax:
     content:
@@ -41,6 +39,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.OriginalSolution
@@ -51,27 +50,19 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SolutionEditor.OriginalSolution
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 28
-  summary: The [Microsoft.CodeAnalysis.Solution](#/) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](#/) was constructed.
+  summary: The [Microsoft.CodeAnalysis.Solution](api/Microsoft.CodeAnalysis.Solution.yaml) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml) was constructed.
   syntax:
     content:
-      CSharp: >-
-        public Solution OriginalSolution
-
-                {
-
-                    get { return _solution; }
-
-                }
+      CSharp: public Solution OriginalSolution { get; }
     parameters:
     - id: OriginalSolution
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
+        href: api/Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.GetDocumentEditorAsync(Microsoft.CodeAnalysis.DocumentId,System.Threading.CancellationToken)
   href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   name:
@@ -80,12 +71,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SolutionEditor.GetDocumentEditorAsync(Microsoft.CodeAnalysis.DocumentId,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 36
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](#/) for the corresponding [Microsoft.CodeAnalysis.DocumentId](#/).
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](api/Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml) for the corresponding [Microsoft.CodeAnalysis.DocumentId](api/Microsoft.CodeAnalysis.DocumentId.yaml).
   syntax:
     content:
       CSharp: public async Task<DocumentEditor> GetDocumentEditorAsync(DocumentId id, CancellationToken cancellationToken = default (CancellationToken))
@@ -94,6 +83,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -109,12 +99,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SolutionEditor.GetChangedSolution
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 51
-  summary: Returns the changed [Microsoft.CodeAnalysis.Solution](#/).
+  summary: Returns the changed [Microsoft.CodeAnalysis.Solution](api/Microsoft.CodeAnalysis.Solution.yaml).
   syntax:
     content:
       CSharp: public Solution GetChangedSolution()

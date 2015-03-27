@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.TextLoader
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
   startLine: 12
 summary: A class that represents access to a source text and its version from a storage location.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextLoader.LoadTextAndVersionAsync(Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.DocumentId,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
     startLine: 17
   summary: Load a text and a version of the document in the workspace.
   syntax:
@@ -42,10 +40,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: documentId
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -61,10 +61,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.TextAndVersion)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
     startLine: 22
   summary: Creates a new TextLoader from an already existing source text and version.
   syntax:
@@ -75,6 +73,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextAndVersion
         name: TextAndVersion
+        href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
     return:
       id: TextLoader
 - id: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.Text.SourceTextContainer,Microsoft.CodeAnalysis.VersionStamp,System.String)
@@ -85,10 +84,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.Text.SourceTextContainer,Microsoft.CodeAnalysis.VersionStamp,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
     startLine: 38
   summary: >-
     Creates a TextLoader from a SourceTextContainer and version.
@@ -111,6 +108,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: filePath
       type:
         id: System.String

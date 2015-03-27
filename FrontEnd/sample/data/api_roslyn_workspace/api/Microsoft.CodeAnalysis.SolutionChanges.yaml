@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.SolutionChanges
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
   startLine: 8
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionChanges.GetAddedProjects
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
     startLine: 19
   syntax:
     content:
@@ -49,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionChanges.GetProjectChanges
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
     startLine: 30
   syntax:
     content:
@@ -68,10 +64,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionChanges.GetRemovedProjects
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
     startLine: 46
   syntax:
     content:

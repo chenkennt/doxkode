@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Document
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
   startLine: 20
 summary: >-
   Represents a source code document that is part of a project.
@@ -24,6 +24,7 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.TextDocument
   name: TextDocument
+  href: api/Microsoft.CodeAnalysis.TextDocument.yaml
 items:
 - id: Microsoft.CodeAnalysis.Document.SourceCodeKind
   href: api/Microsoft.CodeAnalysis.Document.yaml
@@ -33,28 +34,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.SourceCodeKind
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 53
   summary: The kind of source code this document contains.
   syntax:
     content:
-      CSharp: >-
-        public SourceCodeKind SourceCodeKind
-
-                {
-
-                    get
-
-                    {
-
-                        return _state.SourceCodeKind;
-
-                    }
-
-                }
+      CSharp: public SourceCodeKind SourceCodeKind { get; }
     parameters:
     - id: SourceCodeKind
       type:
@@ -69,10 +55,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.TryGetSyntaxTree(Microsoft.CodeAnalysis.SyntaxTree@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 65
   summary: >-
     Get the current syntax tree for the document if the text is already loaded and the tree is already parsed.
@@ -97,10 +81,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.TryGetSyntaxVersion(Microsoft.CodeAnalysis.VersionStamp@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 92
   summary: >-
     Get the current syntax tree version for the document if the text is already loaded and the tree is already parsed.
@@ -114,6 +96,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Document.GetSyntaxVersionAsync(System.Threading.CancellationToken)
@@ -124,10 +107,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetSyntaxVersionAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 118
   summary: Gets the version of the syntax tree. This is generally the newer of the text version and the project's version.
   syntax:
@@ -149,35 +130,20 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.SupportsSyntaxTree
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 132
   summary: >-
     true if this Document supports providing data through the
 
-    [Microsoft.CodeAnalysis.Document.GetSyntaxTreeAsync(System.Threading.CancellationToken)](#/) and [Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)](#/) methods.
+    [Microsoft.CodeAnalysis.Document.GetSyntaxTreeAsync(System.Threading.CancellationToken)](api/Microsoft.CodeAnalysis.Document.yaml) and [Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)](api/Microsoft.CodeAnalysis.Document.yaml) methods.
 
 
 
     If false then these methods will return null instead.
   syntax:
     content:
-      CSharp: >-
-        public bool SupportsSyntaxTree
-
-                {
-
-                    get
-
-                    {
-
-                        return this.Project.LanguageServices.SyntaxTreeFactory != null;
-
-                    }
-
-                }
+      CSharp: public bool SupportsSyntaxTree { get; }
     parameters:
     - id: SupportsSyntaxTree
       type:
@@ -192,35 +158,20 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.SupportsSemanticModel
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 146
   summary: >-
     true if this Document supports providing data through the
 
-    [Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)](#/) method.
+    [Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)](api/Microsoft.CodeAnalysis.Document.yaml) method.
 
 
 
     If false then this method will return null instead.
   syntax:
     content:
-      CSharp: >-
-        public bool SupportsSemanticModel
-
-                {
-
-                    get
-
-                    {
-
-                        return this.SupportsSyntaxTree && this.Project.SupportsCompilation;
-
-                    }
-
-                }
+      CSharp: public bool SupportsSemanticModel { get; }
     parameters:
     - id: SupportsSemanticModel
       type:
@@ -235,10 +186,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetSyntaxTreeAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 157
   summary: Gets the [Microsoft.CodeAnalysis.SyntaxTree](#) for this document asynchronously.
   syntax:
@@ -260,10 +209,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.TryGetSyntaxRoot(Microsoft.CodeAnalysis.SyntaxNode@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 203
   summary: Gets the root node of the current syntax tree if it is available.
   syntax:
@@ -285,10 +232,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetSyntaxRootAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 213
   summary: Gets the root node of the syntax tree asynchronously.
   syntax:
@@ -310,10 +255,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.TryGetSemanticModel(Microsoft.CodeAnalysis.SemanticModel@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 227
   summary: Gets the current semantic model for this document if the model is already computed.
   syntax:
@@ -335,10 +278,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetSemanticModelAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 236
   summary: Gets the semantic model for this document asynchronously.
   syntax:
@@ -360,10 +301,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.WithSourceCodeKind(Microsoft.CodeAnalysis.SourceCodeKind)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 285
   summary: Creates a new instance of this document updated to have the source code kind specified.
   syntax:
@@ -385,10 +324,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.WithText(Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 293
   summary: Creates a new instance of this document updated to have the text specified.
   syntax:
@@ -410,10 +347,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.WithSyntaxRoot(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 301
   summary: Creates a new instance of this document updated to have a syntax tree rooted by the specified syntax node.
   syntax:
@@ -435,10 +370,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetTextChangesAsync(Microsoft.CodeAnalysis.Document,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 310
   summary: >-
     Get the text changes between this document and a prior version of the same document.
@@ -452,6 +385,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
+        href: api/Microsoft.CodeAnalysis.Document.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -467,17 +401,15 @@ items:
     CSharp: Microsoft.CodeAnalysis.Document.GetLinkedDocumentIds
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/Document.cs
     startLine: 379
   summary: >-
-    Gets the list of [Microsoft.CodeAnalysis.DocumentId](#/)s that are linked to this
+    Gets the list of [Microsoft.CodeAnalysis.DocumentId](api/Microsoft.CodeAnalysis.DocumentId.yaml)s that are linked to this
 
-    [Microsoft.CodeAnalysis.Document](#/). [Microsoft.CodeAnalysis.Document](#/)s are considered to be linked if they
+    [Microsoft.CodeAnalysis.Document](api/Microsoft.CodeAnalysis.Document.yaml). [Microsoft.CodeAnalysis.Document](api/Microsoft.CodeAnalysis.Document.yaml)s are considered to be linked if they
 
-    share the same [Microsoft.CodeAnalysis.TextDocument.FilePath](#/). This [Microsoft.CodeAnalysis.DocumentId](#/) is excluded from the
+    share the same [Microsoft.CodeAnalysis.TextDocument.FilePath](api/Microsoft.CodeAnalysis.TextDocument.yaml). This [Microsoft.CodeAnalysis.DocumentId](api/Microsoft.CodeAnalysis.DocumentId.yaml) is excluded from the
 
     result.
   syntax:

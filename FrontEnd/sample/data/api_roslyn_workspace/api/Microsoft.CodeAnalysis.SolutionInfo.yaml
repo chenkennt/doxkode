@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.SolutionInfo
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
   startLine: 16
 summary: A class that represents all the arguments necessary to create a new solution instance.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionInfo.Id
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 21
   summary: The unique Id of the solution.
   syntax:
@@ -42,6 +40,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
+        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
 - id: Microsoft.CodeAnalysis.SolutionInfo.Version
   href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
@@ -50,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionInfo.Version
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 26
   summary: The version of the solution.
   syntax:
@@ -64,6 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
 - id: Microsoft.CodeAnalysis.SolutionInfo.FilePath
   href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
   name:
@@ -72,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionInfo.FilePath
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 31
   summary: The path to the solution file, or null if there is no solution file.
   syntax:
@@ -95,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionInfo.Projects
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 36
   summary: A list of projects initially associated with the solution.
   syntax:
@@ -118,10 +112,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.SolutionInfo.Create(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.VersionStamp,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionInfo.cs
     startLine: 53
   summary: Create a new instance of a SolutionInfo.
   syntax:
@@ -132,10 +124,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
+        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
     - id: version
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: filePath
       type:
         id: System.String

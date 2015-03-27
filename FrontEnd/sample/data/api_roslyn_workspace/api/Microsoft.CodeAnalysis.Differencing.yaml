@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/LongestCommonImmutableArraySubsequence.cs
-  startLine: 6
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Differencing/TreeComparer.cs
+  startLine: 8
 items:
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1
   href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml

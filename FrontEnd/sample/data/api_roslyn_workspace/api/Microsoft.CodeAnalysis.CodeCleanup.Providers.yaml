@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeCleanup/Providers/ExportCodeCleanupProvider.cs
-  startLine: 6
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeCleanup/Providers/SimplificationCodeCleanupProvider.cs
+  startLine: 8

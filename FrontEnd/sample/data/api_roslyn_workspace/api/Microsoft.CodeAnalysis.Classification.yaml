@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Classification/AbstractClassificationService.cs
-  startLine: 12
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Classification/IClassificationService.cs
+  startLine: 10
 items:
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
   href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml

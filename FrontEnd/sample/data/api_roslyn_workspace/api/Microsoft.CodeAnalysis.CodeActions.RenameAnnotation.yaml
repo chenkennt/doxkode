@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeActions.RenameAnnotation
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
   startLine: 9
 summary: Apply this annotation to an appropriate SyntaxNode to request that it should be renamed by the user after the action.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.RenameAnnotation.Kind
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
     startLine: 11
   syntax:
     content:
@@ -44,10 +42,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.RenameAnnotation.Create
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Annotations/RenameAnnotation.cs
     startLine: 13
   syntax:
     content:

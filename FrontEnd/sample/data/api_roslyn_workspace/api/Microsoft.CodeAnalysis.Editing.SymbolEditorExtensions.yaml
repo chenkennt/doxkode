@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.SymbolEditorExtensions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
   startLine: 12
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SymbolEditorExtensions.GetBaseOrInterfaceDeclarationReferenceAsync(Microsoft.CodeAnalysis.Editing.SymbolEditor,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ITypeSymbol,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
     startLine: 17
   summary: Gets the reference to the declaration of the base or interface type as part of the symbol's declaration.
   syntax:
@@ -41,6 +39,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor
         name: SymbolEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
     - id: symbol
       type:
         id: Microsoft.CodeAnalysis.ISymbol
@@ -66,10 +65,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SymbolEditorExtensions.SetBaseTypeAsync(Microsoft.CodeAnalysis.Editing.SymbolEditor,Microsoft.CodeAnalysis.INamedTypeSymbol,System.Func{Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode},System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
     startLine: 55
   summary: Changes the base type of the symbol.
   syntax:
@@ -80,6 +77,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor
         name: SymbolEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
     - id: symbol
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -105,10 +103,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.SymbolEditorExtensions.SetBaseTypeAsync(Microsoft.CodeAnalysis.Editing.SymbolEditor,Microsoft.CodeAnalysis.INamedTypeSymbol,Microsoft.CodeAnalysis.ITypeSymbol,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/SymbolEditorExtensions.cs
     startLine: 91
   summary: Changes the base type of the symbol.
   syntax:
@@ -119,6 +115,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SymbolEditor
         name: SymbolEditor
+        href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.yaml
     - id: symbol
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol

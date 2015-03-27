@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Recommendations.Recommender
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Recommendations/Recommender.cs
   startLine: 10
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Recommendations.Recommender.GetRecommendedSymbolsAtPosition(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.Options.OptionSet,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/Recommender.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Recommendations/Recommender.cs
     startLine: 12
   syntax:
     content:
@@ -50,10 +48,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
+        href: api/Microsoft.CodeAnalysis.Options.OptionSet.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

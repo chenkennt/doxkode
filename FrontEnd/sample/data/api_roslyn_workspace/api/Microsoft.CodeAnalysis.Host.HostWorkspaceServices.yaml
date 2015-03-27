@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
   startLine: 12
 summary: Per workspace services provided by the host environment.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.HostServices
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 18
   summary: The host services this workspace services originated from.
   syntax:
@@ -42,6 +40,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostServices
         name: HostServices
+        href: api/Microsoft.CodeAnalysis.Host.HostServices.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.Workspace
   href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
@@ -50,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.Workspace
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 23
   summary: The workspace corresponding to this workspace services instantiation
   syntax:
@@ -64,6 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetService``1
   href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
@@ -72,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetService``1
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 29
   summary: >-
     Gets a workspace specific service provided by the host identified by the service type.
@@ -95,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetRequiredService``1
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 35
   summary: >-
     Gets a workspace specific service provided by the host identified by the service type.
@@ -118,27 +112,19 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.PersistentStorage
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 49
   summary: A service for storing information across that can be retrieved in a separate process.
   syntax:
     content:
-      CSharp: >-
-        public virtual IPersistentStorageService PersistentStorage
-
-                {
-
-                    get { return this.GetRequiredService<IPersistentStorageService>(); }
-
-                }
+      CSharp: public virtual IPersistentStorageService PersistentStorage { get; }
     parameters:
     - id: PersistentStorage
       type:
         id: Microsoft.CodeAnalysis.Host.IPersistentStorageService
         name: IPersistentStorageService
+        href: api/Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.TemporaryStorage
   href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
@@ -147,27 +133,19 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.TemporaryStorage
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 57
   summary: A service for storing information in a temporary location that only lasts for the duration of the process.
   syntax:
     content:
-      CSharp: >-
-        public virtual ITemporaryStorageService TemporaryStorage
-
-                {
-
-                    get { return this.GetRequiredService<ITemporaryStorageService>(); }
-
-                }
+      CSharp: public virtual ITemporaryStorageService TemporaryStorage { get; }
     parameters:
     - id: TemporaryStorage
       type:
         id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
         name: ITemporaryStorageService
+        href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.SupportedLanguages
   href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
@@ -176,22 +154,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.SupportedLanguages
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 73
   summary: A list of language names for supported language services.
   syntax:
     content:
-      CSharp: >-
-        public virtual IEnumerable<string> SupportedLanguages
-
-                {
-
-                    get { return SpecializedCollections.EmptyEnumerable<string>(); }
-
-                }
+      CSharp: public virtual IEnumerable<string> SupportedLanguages { get; }
     parameters:
     - id: SupportedLanguages
       type:
@@ -206,10 +175,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.IsSupported(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 81
   summary: Returns true if the language is supported.
   syntax:
@@ -231,12 +198,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetLanguageServices(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 89
-  summary: Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](#/) for the language name.
+  summary: Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml) for the language name.
   syntax:
     content:
       CSharp: public virtual HostLanguageServices GetLanguageServices(string languageName)
@@ -256,10 +221,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.FindLanguageServices``1(Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 99
   summary: Finds all language services of the corresponding type across all supported languages that match the filter criteria.
   syntax:
@@ -270,5 +233,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
         name: MetadataFilter
+        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
     return:
       id: IEnumerable

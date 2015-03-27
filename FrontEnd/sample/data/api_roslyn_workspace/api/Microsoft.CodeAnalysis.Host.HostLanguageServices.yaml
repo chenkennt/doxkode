@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
   startLine: 9
 summary: Per language services provided by the host environment.
 syntax:
@@ -28,12 +28,10 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices.WorkspaceServices
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 14
-  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](#/) that originated this language service.
+  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml) that originated this language service.
   syntax:
     content:
       CSharp: public abstract HostWorkspaceServices WorkspaceServices { get; }
@@ -42,6 +40,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
         name: HostWorkspaceServices
+        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.Language
   href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
@@ -50,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices.Language
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 19
   summary: The name of the language
   syntax:
@@ -73,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetService``1
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 25
   summary: >-
     Gets a language specific service provided by the host identified by the service type.
@@ -96,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetRequiredService``1
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 31
   summary: >-
     Gets a language specific service provided by the host identified by the service type.
@@ -119,24 +112,16 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.HostLanguageServices.CompilationFactory
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 47
   summary: A factory for creating compilations instances.
   syntax:
     content:
-      CSharp: >-
-        public virtual ICompilationFactoryService CompilationFactory
-
-                {
-
-                    get { return this.GetService<ICompilationFactoryService>(); }
-
-                }
+      CSharp: public virtual ICompilationFactoryService CompilationFactory { get; }
     parameters:
     - id: CompilationFactory
       type:
         id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
         name: ICompilationFactoryService
+        href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml

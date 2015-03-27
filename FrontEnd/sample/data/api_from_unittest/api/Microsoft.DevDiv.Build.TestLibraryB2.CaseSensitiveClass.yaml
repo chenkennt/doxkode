@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-59-g5d13630
-  path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-61-g7be86a7
+  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 393
 syntax:
   content:
@@ -29,7 +29,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 395
   syntax:
     content:
@@ -46,7 +46,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 397
   syntax:
     content:
@@ -56,10 +56,12 @@ items:
       type:
         id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
         name: boolClass
+        href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
     - id: BoolArg
       type:
         id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
         name: BoolClass
+        href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
     return:
       id: Void
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc
@@ -71,7 +73,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 399
   syntax:
     content:
@@ -88,7 +90,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 401
   syntax:
     content:
@@ -105,7 +107,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 403
   syntax:
     content:
@@ -115,6 +117,7 @@ items:
       type:
         id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
         name: boolClass
+        href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolProperty
   href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
   name:
@@ -124,7 +127,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 405
   syntax:
     content:
@@ -134,6 +137,7 @@ items:
       type:
         id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
         name: BoolClass
+        href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolField
   href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
   name:
@@ -143,7 +147,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 407
   syntax:
     content:
@@ -157,7 +161,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 22_22_50/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 409
   syntax:
     content:

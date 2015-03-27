@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
   startLine: 28
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.None
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 30
   syntax:
     content:
@@ -49,10 +47,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.Block
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 31
   syntax:
     content:
@@ -65,10 +61,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.Smart
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
     startLine: 32
   syntax:
     content:

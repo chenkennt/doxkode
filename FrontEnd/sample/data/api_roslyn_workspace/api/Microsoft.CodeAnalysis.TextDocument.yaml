@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.TextDocument
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
   startLine: 10
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.Project
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 22
   summary: The project this document belongs to.
   syntax:
@@ -41,6 +39,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
+        href: api/Microsoft.CodeAnalysis.Project.yaml
 - id: Microsoft.CodeAnalysis.TextDocument.Id
   href: api/Microsoft.CodeAnalysis.TextDocument.yaml
   name:
@@ -49,10 +48,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.Id
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 41
   summary: >-
     The document's identifier. Many document instances may share the same ID, but only one
@@ -60,19 +57,13 @@ items:
     document in a solution may have that ID.
   syntax:
     content:
-      CSharp: >-
-        public DocumentId Id
-
-                {
-
-                    get { return this.GetDocumentState().Id; }
-
-                }
+      CSharp: public DocumentId Id { get; }
     parameters:
     - id: Id
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
 - id: Microsoft.CodeAnalysis.TextDocument.FilePath
   href: api/Microsoft.CodeAnalysis.TextDocument.yaml
   name:
@@ -81,22 +72,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.FilePath
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 49
   summary: The path to the document file or null if there is no document file.
   syntax:
     content:
-      CSharp: >-
-        public string FilePath
-
-                {
-
-                    get { return this.GetDocumentState().FilePath; }
-
-                }
+      CSharp: public string FilePath { get; }
     parameters:
     - id: FilePath
       type:
@@ -111,28 +93,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.Name
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 57
   summary: The name of the document.
   syntax:
     content:
-      CSharp: >-
-        public string Name
-
-                {
-
-                    get
-
-                    {
-
-                        return this.GetDocumentState().Name;
-
-                    }
-
-                }
+      CSharp: public string Name { get; }
     parameters:
     - id: Name
       type:
@@ -147,28 +114,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.Folders
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 68
   summary: The sequence of logical folders the document is contained in.
   syntax:
     content:
-      CSharp: >-
-        public IReadOnlyList<string> Folders
-
-                {
-
-                    get
-
-                    {
-
-                        return this.GetDocumentState().Folders;
-
-                    }
-
-                }
+      CSharp: public IReadOnlyList<string> Folders { get; }
     parameters:
     - id: Folders
       type:
@@ -183,10 +135,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.TryGetText(Microsoft.CodeAnalysis.Text.SourceText@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 79
   summary: Get the current text for the document if it is already loaded and available.
   syntax:
@@ -208,10 +158,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.TryGetTextVersion(Microsoft.CodeAnalysis.VersionStamp@)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 87
   summary: Gets the version of the document's text if it is already loaded and available.
   syntax:
@@ -222,6 +170,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TextDocument.GetTextAsync(System.Threading.CancellationToken)
@@ -232,10 +181,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.GetTextAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 95
   summary: Gets the current text for the document asynchronously.
   syntax:
@@ -257,10 +204,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextDocument.GetTextVersionAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextDocument.cs
     startLine: 103
   summary: Gets the version of the document's text.
   syntax:

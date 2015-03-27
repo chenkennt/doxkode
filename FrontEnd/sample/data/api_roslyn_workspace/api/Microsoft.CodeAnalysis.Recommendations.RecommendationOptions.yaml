@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
   startLine: 6
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.HideAdvancedMembers
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
     startLine: 10
   syntax:
     content:
@@ -43,10 +41,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.FilterOutOfScopeLocals
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Recommendations/RecommendationOptions.cs
     startLine: 12
   syntax:
     content:

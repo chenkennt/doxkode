@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.ProjectReference
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
   startLine: 11
 syntax:
   content:
@@ -27,10 +27,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.ProjectReference(Microsoft.CodeAnalysis.ProjectId,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 18
   syntax:
     content:
@@ -40,6 +38,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
@@ -60,19 +59,18 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.ProjectId
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 27
   syntax:
     content:
-      CSharp: public ProjectId ProjectId { get { return _projectId; } }
+      CSharp: public ProjectId ProjectId { get; }
     parameters:
     - id: ProjectId
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.ProjectReference.Aliases
   href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
   name:
@@ -81,15 +79,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.Aliases
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 32
   summary: Aliases for the reference. Empty if the reference has no aliases.
   syntax:
     content:
-      CSharp: public ImmutableArray<string> Aliases { get { return _aliases; } }
+      CSharp: public ImmutableArray<string> Aliases { get; }
     parameters:
     - id: Aliases
       type:
@@ -104,15 +100,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.EmbedInteropTypes
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 37
   summary: True if interop types defined in the referenced project should be embedded into the referencing project.
   syntax:
     content:
-      CSharp: public bool EmbedInteropTypes { get { return _embedInteropTypes; } }
+      CSharp: public bool EmbedInteropTypes { get; }
     parameters:
     - id: EmbedInteropTypes
       type:
@@ -127,10 +121,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 39
   syntax:
     content:
@@ -151,10 +143,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.Equals(Microsoft.CodeAnalysis.ProjectReference)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 44
   syntax:
     content:
@@ -164,6 +154,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
+        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.op_Equality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
@@ -174,30 +165,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.op_Equality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 57
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(ProjectReference left, ProjectReference right)
-
-                {
-
-                    return EqualityComparer<ProjectReference>.Default.Equals(left, right);
-
-                }
+      CSharp: public static bool operator ==(ProjectReference left, ProjectReference right) { return EqualityComparer<ProjectReference>.Default.Equals(left, right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
+        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
+        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.op_Inequality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
@@ -208,30 +192,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.op_Inequality(Microsoft.CodeAnalysis.ProjectReference,Microsoft.CodeAnalysis.ProjectReference)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 62
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(ProjectReference left, ProjectReference right)
-
-                {
-
-                    return !(left == right);
-
-                }
+      CSharp: public static bool operator !=(ProjectReference left, ProjectReference right) { return !(left == right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
+        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
+        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectReference.GetHashCode
@@ -242,10 +219,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectReference.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectReference.cs
     startLine: 67
   syntax:
     content:

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
   startLine: 7
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.From(Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 45
   syntax:
     content:
@@ -54,21 +52,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsStatic
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 62
   syntax:
     content:
-      CSharp: >-
-        public bool IsStatic
-
-                {
-
-                    get { return (_modifiers & Modifiers.Static) != 0; }
-
-                }
+      CSharp: public bool IsStatic { get; }
     parameters:
     - id: IsStatic
       type:
@@ -83,21 +72,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAbstract
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 67
   syntax:
     content:
-      CSharp: >-
-        public bool IsAbstract
-
-                {
-
-                    get { return (_modifiers & Modifiers.Abstract) != 0; }
-
-                }
+      CSharp: public bool IsAbstract { get; }
     parameters:
     - id: IsAbstract
       type:
@@ -112,21 +92,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsNew
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 72
   syntax:
     content:
-      CSharp: >-
-        public bool IsNew
-
-                {
-
-                    get { return (_modifiers & Modifiers.New) != 0; }
-
-                }
+      CSharp: public bool IsNew { get; }
     parameters:
     - id: IsNew
       type:
@@ -141,21 +112,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsUnsafe
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 77
   syntax:
     content:
-      CSharp: >-
-        public bool IsUnsafe
-
-                {
-
-                    get { return (_modifiers & Modifiers.Unsafe) != 0; }
-
-                }
+      CSharp: public bool IsUnsafe { get; }
     parameters:
     - id: IsUnsafe
       type:
@@ -170,21 +132,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsReadOnly
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 82
   syntax:
     content:
-      CSharp: >-
-        public bool IsReadOnly
-
-                {
-
-                    get { return (_modifiers & Modifiers.ReadOnly) != 0; }
-
-                }
+      CSharp: public bool IsReadOnly { get; }
     parameters:
     - id: IsReadOnly
       type:
@@ -199,21 +152,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsVirtual
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 87
   syntax:
     content:
-      CSharp: >-
-        public bool IsVirtual
-
-                {
-
-                    get { return (_modifiers & Modifiers.Virtual) != 0; }
-
-                }
+      CSharp: public bool IsVirtual { get; }
     parameters:
     - id: IsVirtual
       type:
@@ -228,21 +172,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsOverride
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 92
   syntax:
     content:
-      CSharp: >-
-        public bool IsOverride
-
-                {
-
-                    get { return (_modifiers & Modifiers.Override) != 0; }
-
-                }
+      CSharp: public bool IsOverride { get; }
     parameters:
     - id: IsOverride
       type:
@@ -257,21 +192,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsSealed
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 97
   syntax:
     content:
-      CSharp: >-
-        public bool IsSealed
-
-                {
-
-                    get { return (_modifiers & Modifiers.Sealed) != 0; }
-
-                }
+      CSharp: public bool IsSealed { get; }
     parameters:
     - id: IsSealed
       type:
@@ -286,21 +212,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsConst
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 102
   syntax:
     content:
-      CSharp: >-
-        public bool IsConst
-
-                {
-
-                    get { return (_modifiers & Modifiers.Const) != 0; }
-
-                }
+      CSharp: public bool IsConst { get; }
     parameters:
     - id: IsConst
       type:
@@ -315,21 +232,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsWithEvents
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 107
   syntax:
     content:
-      CSharp: >-
-        public bool IsWithEvents
-
-                {
-
-                    get { return (_modifiers & Modifiers.WithEvents) != 0; }
-
-                }
+      CSharp: public bool IsWithEvents { get; }
     parameters:
     - id: IsWithEvents
       type:
@@ -344,21 +252,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsPartial
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 112
   syntax:
     content:
-      CSharp: >-
-        public bool IsPartial
-
-                {
-
-                    get { return (_modifiers & Modifiers.Partial) != 0; }
-
-                }
+      CSharp: public bool IsPartial { get; }
     parameters:
     - id: IsPartial
       type:
@@ -373,21 +272,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAsync
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 117
   syntax:
     content:
-      CSharp: >-
-        public bool IsAsync
-
-                {
-
-                    get { return (_modifiers & Modifiers.Async) != 0; }
-
-                }
+      CSharp: public bool IsAsync { get; }
     parameters:
     - id: IsAsync
       type:
@@ -402,10 +292,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsStatic(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 122
   syntax:
     content:
@@ -426,10 +314,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsAbstract(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 127
   syntax:
     content:
@@ -450,10 +336,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsNew(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 132
   syntax:
     content:
@@ -474,10 +358,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsUnsafe(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 137
   syntax:
     content:
@@ -498,10 +380,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsReadOnly(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 142
   syntax:
     content:
@@ -522,10 +402,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsVirtual(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 147
   syntax:
     content:
@@ -546,10 +424,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsOverride(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 152
   syntax:
     content:
@@ -570,10 +446,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsSealed(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 157
   syntax:
     content:
@@ -594,10 +468,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsConst(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 162
   syntax:
     content:
@@ -618,10 +490,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithWithEvents(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 167
   syntax:
     content:
@@ -642,10 +512,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithPartial(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 172
   syntax:
     content:
@@ -666,10 +534,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithAsync(System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 177
   syntax:
     content:
@@ -690,10 +556,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.None
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 205
   syntax:
     content:
@@ -706,10 +570,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Static
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 207
   syntax:
     content:
@@ -722,10 +584,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Abstract
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 208
   syntax:
     content:
@@ -738,10 +598,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.New
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 209
   syntax:
     content:
@@ -754,10 +612,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Unsafe
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 210
   syntax:
     content:
@@ -770,10 +626,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ReadOnly
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 211
   syntax:
     content:
@@ -786,10 +640,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Virtual
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 212
   syntax:
     content:
@@ -802,10 +654,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Override
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 213
   syntax:
     content:
@@ -818,10 +668,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Sealed
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 214
   syntax:
     content:
@@ -834,10 +682,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Const
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 215
   syntax:
     content:
@@ -850,10 +696,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithEvents
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 216
   syntax:
     content:
@@ -866,10 +710,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Partial
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 217
   syntax:
     content:
@@ -882,10 +724,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Async
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 218
   syntax:
     content:
@@ -898,30 +738,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseOr(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 220
   syntax:
     content:
-      CSharp: >-
-        public static DeclarationModifiers operator |(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return new DeclarationModifiers(left._modifiers | right._modifiers);
-
-                }
+      CSharp: public static DeclarationModifiers operator |(DeclarationModifiers left, DeclarationModifiers right) { return new DeclarationModifiers(left._modifiers | right._modifiers); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseAnd(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -932,30 +765,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseAnd(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 225
   syntax:
     content:
-      CSharp: >-
-        public static DeclarationModifiers operator &(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return new DeclarationModifiers(left._modifiers & right._modifiers);
-
-                }
+      CSharp: public static DeclarationModifiers operator &(DeclarationModifiers left, DeclarationModifiers right) { return new DeclarationModifiers(left._modifiers & right._modifiers); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Addition(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -966,30 +792,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Addition(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 230
   syntax:
     content:
-      CSharp: >-
-        public static DeclarationModifiers operator +(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return new DeclarationModifiers(left._modifiers | right._modifiers);
-
-                }
+      CSharp: public static DeclarationModifiers operator +(DeclarationModifiers left, DeclarationModifiers right) { return new DeclarationModifiers(left._modifiers | right._modifiers); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Subtraction(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -1000,30 +819,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Subtraction(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 235
   syntax:
     content:
-      CSharp: >-
-        public static DeclarationModifiers operator -(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return new DeclarationModifiers(left._modifiers & ~right._modifiers);
-
-                }
+      CSharp: public static DeclarationModifiers operator -(DeclarationModifiers left, DeclarationModifiers right) { return new DeclarationModifiers(left._modifiers & ~right._modifiers); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -1034,10 +846,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 240
   syntax:
     content:
@@ -1047,6 +857,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(System.Object)
@@ -1057,10 +868,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 245
   syntax:
     content:
@@ -1081,10 +890,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 250
   syntax:
     content:
@@ -1100,30 +907,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Equality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 255
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return left._modifiers == right._modifiers;
-
-                }
+      CSharp: public static bool operator ==(DeclarationModifiers left, DeclarationModifiers right) { return left._modifiers == right._modifiers; }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Inequality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
@@ -1134,30 +934,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Inequality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 260
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(DeclarationModifiers left, DeclarationModifiers right)
-
-                {
-
-                    return left._modifiers != right._modifiers;
-
-                }
+      CSharp: public static bool operator !=(DeclarationModifiers left, DeclarationModifiers right) { return left._modifiers != right._modifiers; }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
+        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ToString
@@ -1168,10 +961,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ToString
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
     startLine: 265
   syntax:
     content:

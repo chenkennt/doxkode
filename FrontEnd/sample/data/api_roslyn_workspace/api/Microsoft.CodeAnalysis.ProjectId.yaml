@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.ProjectId
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
   startLine: 14
-summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](#/) across versions.
+summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](api/Microsoft.CodeAnalysis.Project.yaml) across versions.
 syntax:
   content:
     CSharp: public class ProjectId
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.Id
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 22
   summary: The system generated unique id.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.CreateNewId(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 40
   summary: Create a new ProjectId instance.
   syntax:
@@ -77,10 +73,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.ToString
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 55
   syntax:
     content:
@@ -96,10 +90,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 60
   syntax:
     content:
@@ -120,10 +112,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.Equals(Microsoft.CodeAnalysis.ProjectId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 65
   syntax:
     content:
@@ -133,6 +123,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.op_Equality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
@@ -143,30 +134,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.op_Equality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 72
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(ProjectId left, ProjectId right)
-
-                {
-
-                    return EqualityComparer<ProjectId>.Default.Equals(left, right);
-
-                }
+      CSharp: public static bool operator ==(ProjectId left, ProjectId right) { return EqualityComparer<ProjectId>.Default.Equals(left, right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.op_Inequality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
@@ -177,30 +161,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.op_Inequality(Microsoft.CodeAnalysis.ProjectId,Microsoft.CodeAnalysis.ProjectId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 77
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(ProjectId left, ProjectId right)
-
-                {
-
-                    return !(left == right);
-
-                }
+      CSharp: public static bool operator !=(ProjectId left, ProjectId right) { return !(left == right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
+        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ProjectId.GetHashCode
@@ -211,10 +188,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.ProjectId.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectId.cs
     startLine: 82
   syntax:
     content:

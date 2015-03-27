@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Options.Option`1
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Options/Option`1.cs
   startLine: 9
 summary: An global option. An instance of this class can be used to access an option value from an OptionSet.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.Feature
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 14
   summary: Feature this option is associated with.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.Name
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 19
   summary: The name of the option.
   syntax:
@@ -74,22 +70,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.Type
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 24
   summary: The type of the option value.
   syntax:
     content:
-      CSharp: >-
-        public Type Type
-
-                {
-
-                    get { return typeof(T); }
-
-                }
+      CSharp: public Type Type { get; }
     parameters:
     - id: Type
       type:
@@ -104,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.DefaultValue
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 32
   summary: The default value of the option.
   syntax:
@@ -127,10 +112,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.Option`1(System.String,System.String,`0)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 34
   syntax:
     content:
@@ -161,10 +144,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.ToString
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 66
   syntax:
     content:
@@ -180,25 +161,17 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.Option`1.op_Implicit(Microsoft.CodeAnalysis.Options.Option{`0})~Microsoft.CodeAnalysis.Options.OptionKey
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/Option`1.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/Option`1.cs
     startLine: 71
   syntax:
     content:
-      CSharp: >-
-        public static implicit operator OptionKey(Option<T> option)
-
-                {
-
-                    return new OptionKey(option);
-
-                }
+      CSharp: public static implicit operator OptionKey(Option<T> option) { return new OptionKey(option); }
     parameters:
     - id: option
       type:
         id: Microsoft.CodeAnalysis.Options.Option`1
         name: Option
+        href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
     return:
       id: OptionKey

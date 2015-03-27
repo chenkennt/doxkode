@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
   startLine: 24
 summary: >-
   Contains information about a call from one symbol to another.  The symbol making the call is
@@ -44,10 +44,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CallingSymbol
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 29
   summary: The symbol that is calling the symbol being called.
   syntax:
@@ -67,10 +65,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.Locations
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 34
   summary: The locations inside the calling symbol where the called symbol is referenced.
   syntax:
@@ -90,10 +86,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CalledSymbol
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 39
   summary: The symbol being called.
   syntax:
@@ -113,10 +107,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.IsDirect
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
     startLine: 47
   summary: >-
     True if the CallingSymbol is directly calling CalledSymbol.  False if it is calling a

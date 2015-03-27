@@ -6,12 +6,12 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeFixes.FixAllScope
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
   startLine: 9
-summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](#/).
+summary: Indicates scope for "Fix all occurrences" code fixes provided by each [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 syntax:
   content:
     CSharp: public enum FixAllScope
@@ -34,10 +34,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 11
   syntax:
     content:
@@ -50,10 +48,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 12
   syntax:
     content:
@@ -66,10 +62,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 13
   syntax:
     content:
@@ -82,10 +76,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Custom
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllScope.cs
     startLine: 14
   syntax:
     content:

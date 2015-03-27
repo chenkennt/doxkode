@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/ConflictEngine/Annotations/RenameActionAnnotation.cs
-  startLine: 5
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Rename/RenameUtilities.cs
+  startLine: 12
 items:
 - id: Microsoft.CodeAnalysis.Rename.RenameEntityKind
   href: api/Microsoft.CodeAnalysis.Rename.RenameEntityKind.yaml

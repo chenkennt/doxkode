@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
   startLine: 10
 summary: An option that can be specified once per language.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.Feature
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 15
   summary: Feature this option is associated with.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.Name
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 20
   summary: The name of the option.
   syntax:
@@ -74,22 +70,13 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.Type
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 25
   summary: The type of the option value.
   syntax:
     content:
-      CSharp: >-
-        public Type Type
-
-                {
-
-                    get { return typeof(T); }
-
-                }
+      CSharp: public Type Type { get; }
     parameters:
     - id: Type
       type:
@@ -104,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.DefaultValue
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 33
   summary: The default option value.
   syntax:
@@ -127,10 +112,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.PerLanguageOption`1(System.String,System.String,`0)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 35
   syntax:
     content:
@@ -161,10 +144,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Options.PerLanguageOption`1.ToString
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Options/PerLanguageOption.cs
     startLine: 67
   syntax:
     content:

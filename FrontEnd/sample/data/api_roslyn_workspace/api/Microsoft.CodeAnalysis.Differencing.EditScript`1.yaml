@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Differencing.EditScript`1
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Differencing/EditScript.cs
   startLine: 13
 summary: Represents a sequence of tree edits.
 syntax:
@@ -28,21 +28,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditScript`1.Edits
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditScript.cs
     startLine: 29
   syntax:
     content:
-      CSharp: >-
-        public ImmutableArray<Edit<TNode>> Edits
-
-                {
-
-                    get { return _edits; }
-
-                }
+      CSharp: public ImmutableArray<Edit<TNode>> Edits { get; }
     parameters:
     - id: Edits
       type:
@@ -57,21 +48,12 @@ items:
     CSharp: Microsoft.CodeAnalysis.Differencing.EditScript`1.Match
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Differencing/EditScript.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Differencing/EditScript.cs
     startLine: 34
   syntax:
     content:
-      CSharp: >-
-        public Match<TNode> Match
-
-                {
-
-                    get { return _match; }
-
-                }
+      CSharp: public Match<TNode> Match { get; }
     parameters:
     - id: Match
       type:

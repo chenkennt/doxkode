@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Formatting/AbstractSyntaxFormattingService.cs
-  startLine: 14
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Formatting/TriviaEngine/TriviaList.cs
+  startLine: 8
 items:
 - id: Microsoft.CodeAnalysis.Formatting.Formatter
   href: api/Microsoft.CodeAnalysis.Formatting.Formatter.yaml

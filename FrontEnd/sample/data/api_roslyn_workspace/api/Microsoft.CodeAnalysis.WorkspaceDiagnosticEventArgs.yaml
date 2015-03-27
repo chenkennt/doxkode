@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
   startLine: 7
 syntax:
   content:
@@ -30,10 +30,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.Diagnostic
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
     startLine: 9
   syntax:
     content:
@@ -43,6 +41,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
         name: WorkspaceDiagnostic
+        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
   href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.yaml
   name:
@@ -51,10 +50,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs.WorkspaceDiagnosticEventArgs(Microsoft.CodeAnalysis.WorkspaceDiagnostic)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticEventArgs.cs
     startLine: 11
   syntax:
     content:
@@ -64,5 +61,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
         name: WorkspaceDiagnostic
+        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
     return:
       id: Void

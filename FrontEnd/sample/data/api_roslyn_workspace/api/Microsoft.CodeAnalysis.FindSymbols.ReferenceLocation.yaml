@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
 type: Struct
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
   startLine: 12
 summary: Information about a reference to a symbol.
 syntax:
@@ -31,10 +31,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Document
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 18
   summary: The document that the reference was found in.
   syntax:
@@ -45,6 +43,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
+        href: api/Microsoft.CodeAnalysis.Document.yaml
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Alias
   href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
@@ -53,10 +52,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Alias
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 23
   summary: If the symbol was bound through an alias, then this is the alias that was used.
   syntax:
@@ -76,10 +73,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Location
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 28
   summary: The actual source location for a given symbol.
   syntax:
@@ -99,10 +94,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.IsImplicit
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 36
   summary: >-
     Indicates if this is an implicit reference to the definition.  i.e. the definition wasn't
@@ -129,10 +122,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.CandidateReason
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 38
   syntax:
     content:
@@ -151,10 +142,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.IsCandidateLocation
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 56
   summary: >-
     Indicates if this was not an exact reference to a location, but was instead a possible
@@ -166,20 +155,7 @@ items:
     actual "Foo()" method existed.
   syntax:
     content:
-      CSharp: >-
-        public bool IsCandidateLocation
-
-                {
-
-                    get
-
-                    {
-
-                        return this.CandidateReason != CandidateReason.None;
-
-                    }
-
-                }
+      CSharp: public bool IsCandidateLocation { get; }
     parameters:
     - id: IsCandidateLocation
       type:
@@ -194,30 +170,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.op_Equality(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 64
   syntax:
     content:
-      CSharp: >-
-        public static bool operator ==(ReferenceLocation left, ReferenceLocation right)
-
-                {
-
-                    return left.Equals(right);
-
-                }
+      CSharp: public static bool operator ==(ReferenceLocation left, ReferenceLocation right) { return left.Equals(right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.op_Inequality(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
@@ -228,30 +197,23 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.op_Inequality(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 69
   syntax:
     content:
-      CSharp: >-
-        public static bool operator !=(ReferenceLocation left, ReferenceLocation right)
-
-                {
-
-                    return !(left == right);
-
-                }
+      CSharp: public static bool operator !=(ReferenceLocation left, ReferenceLocation right) { return !(left == right); }
     parameters:
     - id: left
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Equals(System.Object)
@@ -262,10 +224,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Equals(System.Object)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 74
   syntax:
     content:
@@ -286,10 +246,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Equals(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 80
   syntax:
     content:
@@ -299,6 +257,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.GetHashCode
@@ -309,10 +268,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.GetHashCode
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 90
   syntax:
     content:
@@ -328,10 +285,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.CompareTo(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
     startLine: 99
   syntax:
     content:
@@ -341,5 +296,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
+        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Int32

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
   startLine: 10
 summary: A code action operation for requesting a document be opened in the host environment.
 syntax:
@@ -21,6 +21,7 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.CodeActions.CodeActionOperation
   name: CodeActionOperation
+  href: api/Microsoft.CodeAnalysis.CodeActions.CodeActionOperation.yaml
 items:
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.#ctor(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
   href: api/Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
@@ -30,10 +31,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.OpenDocumentOperation(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
   type: Constructor
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
     startLine: 15
   syntax:
     content:
@@ -43,6 +42,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activateIfAlreadyOpen
       type:
         id: System.Boolean
@@ -58,26 +58,18 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.DocumentId
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
     startLine: 26
   syntax:
     content:
-      CSharp: >-
-        public DocumentId DocumentId
-
-                {
-
-                    get { return _documentId; }
-
-                }
+      CSharp: public DocumentId DocumentId { get; }
     parameters:
     - id: DocumentId
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
 - id: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
   href: api/Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.yaml
   name:
@@ -86,10 +78,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.OpenDocumentOperation.Apply(Microsoft.CodeAnalysis.Workspace,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Operations/OpenDocumentOperation.cs
     startLine: 31
   syntax:
     content:
@@ -99,6 +89,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
+        href: api/Microsoft.CodeAnalysis.Workspace.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken

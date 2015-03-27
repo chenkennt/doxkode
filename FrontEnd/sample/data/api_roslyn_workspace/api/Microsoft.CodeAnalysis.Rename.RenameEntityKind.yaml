@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Rename.RenameEntityKind
 type: Enum
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
   startLine: 10
 syntax:
   content:
@@ -33,10 +33,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameEntityKind.BaseSymbol
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
     startLine: 15
   summary: mentions that the result is for the base symbol of the rename
   syntax:
@@ -50,10 +48,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Rename.RenameEntityKind.OverloadedSymbols
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Rename/RenameEntityKind.cs
     startLine: 20
   summary: mentions that the result is for the overloaded symbols of the rename
   syntax:

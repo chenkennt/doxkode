@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.TextAndVersion
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
   startLine: 15
 summary: A class that represents both a source text and its version stamp.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextAndVersion.Text
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 20
   summary: The source text.
   syntax:
@@ -51,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextAndVersion.Version
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 25
   summary: The version of the source text
   syntax:
@@ -65,6 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
 - id: Microsoft.CodeAnalysis.TextAndVersion.FilePath
   href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
@@ -73,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextAndVersion.FilePath
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 30
   summary: An optional file path that identifies the origin of the source text
   syntax:
@@ -96,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.TextAndVersion.Create(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.VersionStamp,System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
     startLine: 46
   summary: Create a new TextAndVersion instance.
   syntax:
@@ -116,6 +109,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
+        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
       description: The version
     - id: filePath
       type:

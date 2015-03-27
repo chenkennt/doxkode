@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage
 type: Interface
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
   startLine: 13
 summary: TemporaryStorage can be used to read and write text to a temporary storage location.
 syntax:
@@ -24,10 +24,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage.ReadText(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 15
   syntax:
     content:
@@ -48,10 +46,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage.ReadTextAsync(System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 16
   syntax:
     content:
@@ -72,10 +68,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage.WriteText(Microsoft.CodeAnalysis.Text.SourceText,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 17
   syntax:
     content:
@@ -101,10 +95,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.Host.ITemporaryTextStorage.WriteTextAsync(Microsoft.CodeAnalysis.Text.SourceText,System.Threading.CancellationToken)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Host/TemporaryStorage/ITemporaryStorage.cs
     startLine: 18
   syntax:
     content:

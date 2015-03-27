@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Host/Caching/ICachedObjectOwner.cs
-  startLine: 1
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Host/Mef/WorkspaceServiceMetadata.cs
+  startLine: 7
 items:
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
   href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml

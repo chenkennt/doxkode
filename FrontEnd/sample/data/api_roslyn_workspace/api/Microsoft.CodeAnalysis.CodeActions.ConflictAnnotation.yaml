@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
   startLine: 9
 summary: Apply this annotation to a SyntaxNode to indicate a conflict may exist that requires user understanding and acknowledgement before taking action.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.Kind
   type: Field
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 11
   syntax:
     content:
@@ -44,10 +42,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.Create(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 13
   syntax:
     content:
@@ -68,10 +64,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.CodeActions.ConflictAnnotation.GetDescription(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/CodeActions/Annotations/ConflictAnnotation.cs
     startLine: 18
   syntax:
     content:

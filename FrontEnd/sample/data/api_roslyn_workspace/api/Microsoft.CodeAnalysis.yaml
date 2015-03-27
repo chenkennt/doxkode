@@ -8,9 +8,9 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Compilers/Core/Portable/Collections/ImmutableArrayExtensions.cs
-  startLine: 10
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Compilers/Core/SharedCollections/PooledHashSet.cs
+  startLine: 6
 items:
 - id: Microsoft.CodeAnalysis.AdhocWorkspace
   href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
@@ -42,7 +42,7 @@ items:
   href: api/Microsoft.CodeAnalysis.DocumentId.yaml
   type: Class
   summary: >-
-    An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](#/) across versions of the
+    An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](api/Microsoft.CodeAnalysis.Document.yaml) across versions of the
 
     workspace.
 - id: Microsoft.CodeAnalysis.DocumentInfo
@@ -56,21 +56,21 @@ items:
 - id: Microsoft.CodeAnalysis.Project
   href: api/Microsoft.CodeAnalysis.Project.yaml
   type: Class
-  summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](#/).
+  summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](api/Microsoft.CodeAnalysis.Project.yaml).
 - id: Microsoft.CodeAnalysis.ProjectChanges
   href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
   type: Struct
 - id: Microsoft.CodeAnalysis.ProjectDependencyGraph
   href: api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml
   type: Class
-  summary: A [Microsoft.CodeAnalysis.ProjectDependencyGraph](#/) models the dependencies between projects in a solution.
+  summary: A [Microsoft.CodeAnalysis.ProjectDependencyGraph](api/Microsoft.CodeAnalysis.ProjectDependencyGraph.yaml) models the dependencies between projects in a solution.
 - id: Microsoft.CodeAnalysis.ProjectDiagnostic
   href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
   type: Class
 - id: Microsoft.CodeAnalysis.ProjectId
   href: api/Microsoft.CodeAnalysis.ProjectId.yaml
   type: Class
-  summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](#/) across versions.
+  summary: An identifier that can be used to refer to the same [Microsoft.CodeAnalysis.Project](api/Microsoft.CodeAnalysis.Project.yaml) across versions.
 - id: Microsoft.CodeAnalysis.ProjectInfo
   href: api/Microsoft.CodeAnalysis.ProjectInfo.yaml
   type: Class
@@ -120,7 +120,7 @@ items:
 
     as the workspace is updated either from live interactions in the environment or via call to the
 
-    workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](#/) method.
+    workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api/Microsoft.CodeAnalysis.Workspace.yaml) method.
 - id: Microsoft.CodeAnalysis.WorkspaceChangeEventArgs
   href: api/Microsoft.CodeAnalysis.WorkspaceChangeEventArgs.yaml
   type: Class

@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.DocumentInfo
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
   startLine: 13
 summary: A class that represents all the arguments necessary to create a new document instance.
 syntax:
@@ -28,10 +28,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.Id
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 18
   summary: The Id of the document.
   syntax:
@@ -42,6 +40,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
 - id: Microsoft.CodeAnalysis.DocumentInfo.Name
   href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
@@ -50,10 +49,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.Name
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 23
   summary: The name of the document.
   syntax:
@@ -73,10 +70,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.Folders
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 28
   summary: The names of the logical nested folders the document is contained in.
   syntax:
@@ -96,10 +91,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.SourceCodeKind
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 33
   summary: The kind of the source code.
   syntax:
@@ -119,10 +112,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.FilePath
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 38
   summary: The file path of the document.
   syntax:
@@ -142,10 +133,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.TextLoader
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 43
   summary: A loader that can retrieve the document text.
   syntax:
@@ -156,6 +145,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
+        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
 - id: Microsoft.CodeAnalysis.DocumentInfo.IsGenerated
   href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
@@ -164,10 +154,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.IsGenerated
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 48
   summary: True if the document is a side effect of the build.
   syntax:
@@ -187,10 +175,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.Create(Microsoft.CodeAnalysis.DocumentId,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SourceCodeKind,Microsoft.CodeAnalysis.TextLoader,System.String,System.Boolean)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 80
   syntax:
     content:
@@ -200,6 +186,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     - id: name
       type:
         id: System.String
@@ -219,6 +206,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
+        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
     - id: filePath
       type:
         id: System.String
@@ -239,10 +227,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithId(Microsoft.CodeAnalysis.DocumentId)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 120
   syntax:
     content:
@@ -252,6 +238,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
+        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithName(System.String)
@@ -262,10 +249,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithName(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 125
   syntax:
     content:
@@ -286,10 +271,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithFolders(System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 130
   syntax:
     content:
@@ -310,10 +293,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithSourceCodeKind(Microsoft.CodeAnalysis.SourceCodeKind)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 135
   syntax:
     content:
@@ -334,10 +315,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithTextLoader(Microsoft.CodeAnalysis.TextLoader)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 140
   syntax:
     content:
@@ -347,6 +326,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
+        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFilePath(System.String)
@@ -357,10 +337,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.DocumentInfo.WithFilePath(System.String)
   type: Method
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
     startLine: 145
   syntax:
     content:

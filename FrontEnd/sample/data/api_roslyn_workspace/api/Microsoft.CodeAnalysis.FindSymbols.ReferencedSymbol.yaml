@@ -6,10 +6,10 @@ qualifiedName:
   CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
 type: Class
 source:
-  remote:
+  remote: &o0
     branch: master
-    repo: https://github.com/vicancy/roslyn
-  path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+    repo: https://github.com/dotnet/roslyn.git
+  path: src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
   startLine: 17
 summary: >-
   Represents a single result of the call to the synchronous
@@ -39,10 +39,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Definition
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
     startLine: 23
   summary: The symbol definition that these are references to.
   syntax:
@@ -62,10 +60,8 @@ items:
     CSharp: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Locations
   type: Property
   source:
-    remote:
-      branch: master
-      repo: https://github.com/vicancy/roslyn
-    path: E:/Repo1/roslyn/src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
+    remote: *o0
+    path: src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
     startLine: 28
   summary: The set of reference locations in the solution.
   syntax:
