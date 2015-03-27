@@ -2,10 +2,10 @@ angular.module('versions', [])
 
 .controller('DocsVersionsCtrl', ['$scope', '$location', '$window', 'NG_VERSIONS', function($scope, $location, $window, NG_VERSIONS) {
   'use strict';
-  $scope.docs_version  = NG_VERSIONS[0];
+  $scope.docs_version = NG_VERSIONS[0];
   $scope.docs_versions = NG_VERSIONS;
 
-  for(var i=0, minor = NaN; i < NG_VERSIONS.length; i++) {
+  for (var i = 0, minor = NaN; i < NG_VERSIONS.length; i++) {
     var version = NG_VERSIONS[i];
     // NaN will give false here
     if (minor <= version.minor) {

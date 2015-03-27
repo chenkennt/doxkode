@@ -7,35 +7,36 @@ directive.runnableExample = ['$templateCache', '$document', function($templateCa
   var tpl =
     '<nav class="runnable-example-tabs" ng-if="tabs">' +
     '  <a ng-class="{active:$index==activeTabIndex}"' +
-         'ng-repeat="tab in tabs track by $index" ' +
-         'href="" ' +
-         'class="btn"' +
-         'ng-click="setTab($index)">' +
+    'ng-repeat="tab in tabs track by $index" ' +
+    'href="" ' +
+    'class="btn"' +
+    'ng-click="setTab($index)">' +
     '    {{ tab }}' +
     '  </a>' +
     '</nav>';
 
   return {
     restrict: 'C',
-    scope : true,
-    controller : ['$scope', function($scope) {
+    scope: true,
+    controller: ['$scope', function($scope) {
       $scope.setTab = function(index) {
         var tab = $scope.tabs[index];
         $scope.activeTabIndex = index;
         $scope.$broadcast('tabChange', index, tab);
       };
     }],
-    compile : function(element) {
+    compile: function(element) {
       element.html(tpl + element.html());
       return function(scope, element) {
         var node = element[0];
         var examples = node.querySelectorAll(exampleClassNameSelector);
-        var tabs = [], now = Date.now();
+        var tabs = [],
+          now = Date.now();
         angular.forEach(examples, function(child, index) {
           tabs.push(child.getAttribute('name'));
         });
 
-        if(tabs.length > 0) {
+        if (tabs.length > 0) {
           scope.tabs = tabs;
           scope.$on('tabChange', function(e, index, title) {
             angular.forEach(examples, function(child) {
@@ -52,51 +53,55 @@ directive.runnableExample = ['$templateCache', '$document', function($templateCa
 }];
 
 directive.dropdownToggle =
-          ['$document', '$location', '$window',
-  function ($document,   $location,   $window) {
-    'use strict';
-    var openElement = null, close;
-    return {
-      restrict: 'C',
-      link: function(scope, element, attrs) {
-        scope.$watch(function dropdownTogglePathWatch(){return $location.path();}, function dropdownTogglePathWatchAction() {
-          if (close) close();
-        });
+  ['$document', '$location', '$window',
+    function($document, $location, $window) {
+      'use strict';
+      var openElement = null,
+        close;
+      return {
+        restrict: 'C',
+        link: function(scope, element, attrs) {
+          scope.$watch(function dropdownTogglePathWatch() {
+            return $location.path();
+          }, function dropdownTogglePathWatchAction() {
+            if (close) close();
+          });
 
-        element.parent().on('click', function(event) {
-          if (close) close();
-        });
+          element.parent().on('click', function(event) {
+            if (close) close();
+          });
 
-        element.on('click', function(event) {
-          event.preventDefault();
-          event.stopPropagation();
+          element.on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
 
-          var iWasOpen = false;
+            var iWasOpen = false;
 
-          if (openElement) {
-            iWasOpen = openElement === element;
-            close();
-          }
+            if (openElement) {
+              iWasOpen = openElement === element;
+              close();
+            }
 
-          if (!iWasOpen){
-            element.parent().addClass('open');
-            openElement = element;
+            if (!iWasOpen) {
+              element.parent().addClass('open');
+              openElement = element;
 
-            close = function (event) {
-              if (event) event.preventDefault();
-              if (event) event.stopPropagation();
-              $document.off('click', close);
-              element.parent().removeClass('open');
-              close = null;
-              openElement = null;
-            };
+              close = function(event) {
+                if (event) event.preventDefault();
+                if (event) event.stopPropagation();
+                $document.off('click', close);
+                element.parent().removeClass('open');
+                close = null;
+                openElement = null;
+              };
 
-            $document.on('click', close);
-          }
-        });
-      }
-    };
-  }];
+              $document.on('click', close);
+            }
+          });
+        }
+      };
+    }
+  ];
 
 directive.syntax = function() {
   'use strict';
@@ -105,32 +110,32 @@ directive.syntax = function() {
     link: function(scope, element, attrs) {
       function makeLink(type, text, link, icon) {
         return '<a href="' + link + '" class="btn syntax-' + type + '" target="_blank" rel="nofollow">' +
-                '<span class="' + icon + '"></span> ' + text +
-               '</a>';
+          '<span class="' + icon + '"></span> ' + text +
+          '</a>';
       }
 
       var html = '';
       var types = {
-        'github' : {
-          text : 'View on Github',
-          key : 'syntaxGithub',
-          icon : 'icon-github'
+        'github': {
+          text: 'View on Github',
+          key: 'syntaxGithub',
+          icon: 'icon-github'
         },
-        'plunkr' : {
-          text : 'View on Plunkr',
-          key : 'syntaxPlunkr',
-          icon : 'icon-arrow-down'
+        'plunkr': {
+          text: 'View on Plunkr',
+          key: 'syntaxPlunkr',
+          icon: 'icon-arrow-down'
         },
-        'jsfiddle' : {
-          text : 'View on JSFiddle',
-          key : 'syntaxFiddle',
-          icon : 'icon-cloud'
+        'jsfiddle': {
+          text: 'View on JSFiddle',
+          key: 'syntaxFiddle',
+          icon: 'icon-cloud'
         }
       };
-      for(var type in types) {
+      for (var type in types) {
         var data = types[type];
         var link = attrs[data.key];
-        if(link) {
+        if (link) {
           html += makeLink(type, data.text, link, data.icon);
         }
       }
@@ -152,28 +157,28 @@ directive.tabbable = function() {
     restrict: 'C',
     compile: function(element) {
       var navTabs = angular.element('<ul class="nav nav-tabs"></ul>'),
-          tabContent = angular.element('<div class="tab-content"></div>');
+        tabContent = angular.element('<div class="tab-content"></div>');
 
       tabContent.append(element.contents());
       element.append(navTabs).append(tabContent);
     },
     controller: ['$scope', '$element', function($scope, $element) {
       var navTabs = $element.contents().eq(0),
-          ngModel = $element.controller('ngModel') || {},
-          tabs = [],
-          selectedTab;
+        ngModel = $element.controller('ngModel') || {},
+        tabs = [],
+        selectedTab;
 
       ngModel.$render = function() {
         var $viewValue = this.$viewValue;
 
         if (selectedTab ? (selectedTab.value !== $viewValue) : $viewValue) {
-          if(selectedTab) {
+          if (selectedTab) {
             selectedTab.paneElement.removeClass('active');
             selectedTab.tabElement.removeClass('active');
             selectedTab = null;
           }
-          if($viewValue) {
-            for(var i = 0, ii = tabs.length; i < ii; i++) {
+          if ($viewValue) {
+            for (var i = 0, ii = tabs.length; i < ii; i++) {
               if ($viewValue === tabs[i].value) {
                 selectedTab = tabs[i];
                 break;
@@ -190,12 +195,12 @@ directive.tabbable = function() {
 
       this.addPane = function(element, attr) {
         var li = angular.element('<li><a href></a></li>'),
-            a = li.find('a'),
-            tab = {
-              paneElement: element,
-              paneAttrs: attr,
-              tabElement: li
-            };
+          a = li.find('a'),
+          tab = {
+            paneElement: element,
+            paneAttrs: attr,
+            tabElement: li
+          };
 
         tabs.push(tab);
 
@@ -210,7 +215,10 @@ directive.tabbable = function() {
         }
 
         attr.$observe('value', update)();
-        attr.$observe('title', function(){ update(); a.text(tab.title); })();
+        attr.$observe('title', function() {
+          update();
+          a.text(tab.title);
+        })();
 
         navTabs.append(li);
         li.on('click', function(event) {
@@ -230,7 +238,7 @@ directive.tabbable = function() {
 
         return function() {
           tab.tabElement.remove();
-          for(var i = 0, ii = tabs.length; i < ii; i++ ) {
+          for (var i = 0, ii = tabs.length; i < ii; i++) {
             if (tab === tabs[i]) {
               tabs.splice(i, 1);
             }
@@ -256,25 +264,25 @@ directive.table = function() {
 var popoverElement = function() {
   'use strict';
   var object = {
-    init : function() {
+    init: function() {
       this.element = angular.element(
         '<div class="popover popover-incode top">' +
-          '<div class="arrow"></div>' +
-          '<div class="popover-inner">' +
-            '<div class="popover-title"><code></code></div>' +
-            '<div class="popover-content"></div>' +
-          '</div>' +
+        '<div class="arrow"></div>' +
+        '<div class="popover-inner">' +
+        '<div class="popover-title"><code></code></div>' +
+        '<div class="popover-content"></div>' +
+        '</div>' +
         '</div>'
       );
       this.node = this.element[0];
       this.element.css({
-        'display':'block',
-        'position':'absolute'
+        'display': 'block',
+        'position': 'absolute'
       });
       angular.element(document.body).append(this.element);
 
       var inner = this.element.children()[1];
-      this.titleElement   = angular.element(inner.childNodes[0].firstChild);
+      this.titleElement = angular.element(inner.childNodes[0].firstChild);
       this.contentElement = angular.element(inner.childNodes[1]);
 
       //stop the click on the tooltip
@@ -284,50 +292,50 @@ var popoverElement = function() {
       });
 
       var self = this;
-      angular.element(document.body).on('click',function(event) {
-        if(self.visible()) self.hide();
+      angular.element(document.body).on('click', function(event) {
+        if (self.visible()) self.hide();
       });
     },
 
-    show : function(x,y) {
+    show: function(x, y) {
       this.element.addClass('visible');
       this.position(x || 0, y || 0);
     },
 
-    hide : function() {
+    hide: function() {
       this.element.removeClass('visible');
-      this.position(-9999,-9999);
+      this.position(-9999, -9999);
     },
 
-    visible : function() {
+    visible: function() {
       return this.position().y >= 0;
     },
 
-    isSituatedAt : function(element) {
+    isSituatedAt: function(element) {
       return this.besideElement ? element[0] === this.besideElement[0] : false;
     },
 
-    title : function(value) {
+    title: function(value) {
       return this.titleElement.html(value);
     },
 
-    content : function(value) {
-      if(value && value.length > 0) {
+    content: function(value) {
+      if (value && value.length > 0) {
         value = marked(value);
       }
       return this.contentElement.html(value);
     },
 
-    positionArrow : function(position) {
+    positionArrow: function(position) {
       this.node.className = 'popover ' + position;
     },
 
-    positionAway : function() {
+    positionAway: function() {
       this.besideElement = null;
       this.hide();
     },
 
-    positionBeside : function(element) {
+    positionBeside: function(element) {
       this.besideElement = element;
 
       var elm = element[0];
@@ -335,18 +343,17 @@ var popoverElement = function() {
       var y = elm.offsetTop;
       x -= 30;
       y -= this.node.offsetHeight + 10;
-      this.show(x,y);
+      this.show(x, y);
     },
 
-    position : function(x,y) {
-      if(x != null && y != null) {
-        this.element.css('left',x + 'px');
+    position: function(x, y) {
+      if (x != null && y != null) {
+        this.element.css('left', x + 'px');
         this.element.css('top', y + 'px');
-      }
-      else {
+      } else {
         return {
-          x : this.node.offsetLeft,
-          y : this.node.offsetTop
+          x: this.node.offsetLeft,
+          y: this.node.offsetTop
         };
       }
     }
@@ -362,17 +369,16 @@ directive.popover = ['popoverElement', function(popover) {
   'use strict';
   return {
     restrict: 'A',
-    priority : 500,
+    priority: 500,
     link: function(scope, element, attrs) {
-      element.on('click',function(event) {
+      element.on('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        if(popover.isSituatedAt(element) && popover.visible()) {
+        if (popover.isSituatedAt(element) && popover.visible()) {
           popover.title('');
           popover.content('');
           popover.positionAway();
-        }
-        else {
+        } else {
           popover.title(attrs.title);
           popover.content(attrs.content);
           popover.positionBeside(element);
@@ -393,43 +399,44 @@ directive.tabPane = function() {
   };
 };
 
-directive.foldout = ['$http', '$animate','$window', function($http, $animate, $window) {
+directive.foldout = ['$http', '$animate', '$window', function($http, $animate, $window) {
   'use strict';
   return {
     restrict: 'A',
-    priority : 500,
+    priority: 500,
     link: function(scope, element, attrs) {
       var container, loading, url = attrs.url;
-      if(/\/build\//.test($window.location.href)) {
+      if (/\/build\//.test($window.location.href)) {
         url = '/build/docs' + url;
       }
-      element.on('click',function() {
+      element.on('click', function() {
         scope.$apply(function() {
-          if(!container) {
-            if(loading) return;
+          if (!container) {
+            if (loading) return;
 
             loading = true;
             var par = element.parent();
             container = angular.element('<div class="foldout">loading...</div>');
             $animate.enter(container, null, par);
 
-            $http.get(url, { cache : true }).success(function(html) {
+            $http.get(url, {
+              cache: true
+            }).success(function(html) {
               loading = false;
 
               html = '<div class="foldout-inner">' +
-                      '<div calss="foldout-arrow"></div>' +
-                      html +
-                     '</div>';
+                '<div calss="foldout-arrow"></div>' +
+                html +
+                '</div>';
               container.html(html);
 
               //avoid showing the element if the user has already closed it
-              if(container.css('display') === 'block') {
-                container.css('display','none');
+              if (container.css('display') === 'block') {
+                container.css('display', 'none');
                 $animate.addClass(container, 'ng-hide');
               }
             });
-          }
-          else {
+          } else {
             if (container.hasClass('ng-hide')) $animate.removeClass(container, 'ng-hide');
             else $animate.addClass(container, 'ng-hide');
           }

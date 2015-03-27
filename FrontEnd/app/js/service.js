@@ -1,6 +1,5 @@
-
 function docServiceFunction($q, $http) {
-  this.tocClassApi =  function(navItem) {
+  this.tocClassApi = function(navItem) {
     return {
       active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
       current: this.pathInfo.contentPath === navItem.href,
@@ -8,7 +7,7 @@ function docServiceFunction($q, $http) {
     };
   };
 
-  this.gridClassApi =  function(toc) {
+  this.gridClassApi = function(toc) {
     return {
       'grid-right': toc,
       grid: !toc
@@ -17,7 +16,7 @@ function docServiceFunction($q, $http) {
 
   this.navClassApi = function(navItem) {
     var navPath;
-    if (this.pathInfo){
+    if (this.pathInfo) {
       navPath = this.pathInfo.tocPath || this.pathInfo.contentPath;
     }
 
@@ -27,53 +26,58 @@ function docServiceFunction($q, $http) {
     };
   };
 
-  this.getRemoteUrl = function(item, startLine){
-    if (item && item.remote && item.remote.repo){
+  this.getRemoteUrl = function(item, startLine) {
+    if (item && item.remote && item.remote.repo) {
       var repo = item.remote.repo;
       if (repo.substr(-4) === '.git') {
-        repo = repo.substr(0, repo.length-4);
+        repo = repo.substr(0, repo.length - 4);
       }
-      var linenum = startLine? startLine:item.startLine;
-      if (repo.match(/https:\/\/.*\.visualstudio\.com\/.*/g)){
+      var linenum = startLine ? startLine : item.startLine;
+      if (repo.match(/https:\/\/.*\.visualstudio\.com\/.*/g)) {
         // TODO: line not working for vso
-        return repo + '#path=/' + item.path+'&line='+linenum;
+        return repo + '#path=/' + item.path + '&line=' + linenum;
       }
-      if (repo.match(/https:\/\/.*github\.com\/.*/g)){
-        return repo + '/blob'+'/'+ item.remote.branch+'/'+ item.path+'/#L'+linenum;
+      if (repo.match(/https:\/\/.*github\.com\/.*/g)) {
+        return repo + '/blob' + '/' + item.remote.branch + '/' + item.path + '/#L' + linenum;
       }
-    }else{
+    } else {
       return "#";
     }
   };
 
-  this.setItemTypeVisiblity = function(itemTypes, items){
-    for(var prop in itemTypes){
+  this.setItemTypeVisiblity = function(itemTypes, items) {
+    for (var prop in itemTypes) {
       itemTypes[prop].show = false;
     }
     if (!items) return itemTypes;
-    items.forEach(function(e){
+    items.forEach(function(e) {
       if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
     });
     return itemTypes;
   };
 
-  this.getPathInfo = function(currentPath){
+  this.getPathInfo = function(currentPath) {
     if (!currentPath) return undefined;
     // seperate toc and content with !
     var index = currentPath.indexOf('!');
-    if (index < 0){
+    if (index < 0) {
       // If it ends with .md/.yaml, render it without toc
-      if ((/(\.yaml$)|(\.md$)/g).test(currentPath)){
-        return {contentPath: currentPath};
-      }else{
-        return {tocPath: currentPath, tocFilePath: currentPath + '/toc.yaml'};
+      if ((/(\.yaml$)|(\.md$)/g).test(currentPath)) {
+        return {
+          contentPath: currentPath
+        };
+      } else {
+        return {
+          tocPath: currentPath,
+          tocFilePath: currentPath + '/toc.yaml'
+        };
       }
     }
 
     return {
       tocPath: currentPath.substring(0, index),
       tocFilePath: currentPath.substring(0, index) + '/toc.yaml',
-      contentPath: currentPath.substring(index+1, currentPath.length)
+      contentPath: currentPath.substring(index + 1, currentPath.length)
     };
   };
 
@@ -82,35 +86,35 @@ function docServiceFunction($q, $http) {
 
     //deferred.notify();
     var req = {
-            method: 'GET',
-            url: path,
-            headers: {
-            'Content-Type': 'text/plain'
-            }
-        };
+      method: 'GET',
+      url: path,
+      headers: {
+        'Content-Type': 'text/plain'
+      }
+    };
     $http.get(req.url, req)
-        .success(
-            function(result){
-            if (success) success(result);
-            deferred.resolve();
+      .success(
+        function(result) {
+          if (success) success(result);
+          deferred.resolve();
 
-            }).error(
-            function(result){
-                if (fail) fail(result);
-                deferred.reject();
-            }
-            );
+        }).error(
+        function(result) {
+          if (fail) fail(result);
+          deferred.reject();
+        }
+      );
 
     return deferred.promise;
   };
 
-  this.getDefaultItem = function(array, action){
+  this.getDefaultItem = function(array, action) {
     if (!action) return;
-    if (array && array.length > 0){
-        return action(array[0]);
+    if (array && array.length > 0) {
+      return action(array[0]);
     }
   };
 }
 
 angular.module('docInitService', [])
-.service('docService', ['$q', '$http', docServiceFunction]);
+  .service('docService', ['$q', '$http', docServiceFunction]);

@@ -90,6 +90,7 @@ function markdownServiceFunction() {
   }
 
   var player;
+
   function createPlayer() {
     'use strict';
     var player = csplay("player", "http://dotnetsandbox.azurewebsites.net" /* hardcode for now */ );
