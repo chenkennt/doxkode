@@ -173,8 +173,7 @@ angular.module('directives', [])
   };
 }]);
 
-angular.module('DocsController', [])
-.service('docService', ['$q', '$http', docServiceFunction])
+angular.module('DocsController', ['docInitService'])
 .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
     return $cacheFactory('toc-cache');
   }])

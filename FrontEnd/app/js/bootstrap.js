@@ -83,13 +83,13 @@ directive.dropdownToggle =
             openElement = element;
 
             close = function (event) {
-              event && event.preventDefault();
-              event && event.stopPropagation();
+              if (event) event.preventDefault();
+              if (event) event.stopPropagation();
               $document.off('click', close);
               element.parent().removeClass('open');
               close = null;
               openElement = null;
-            }
+            };
 
             $document.on('click', close);
           }
@@ -107,7 +107,7 @@ directive.syntax = function() {
         return '<a href="' + link + '" class="btn syntax-' + type + '" target="_blank" rel="nofollow">' +
                 '<span class="' + icon + '"></span> ' + text +
                '</a>';
-      };
+      }
 
       var html = '';
       var types = {
@@ -133,7 +133,7 @@ directive.syntax = function() {
         if(link) {
           html += makeLink(type, data.text, link, data.icon);
         }
-      };
+      }
 
       var nav = document.createElement('nav');
       nav.className = 'syntax-links';
@@ -143,8 +143,8 @@ directive.syntax = function() {
       var par = node.parentNode;
       par.insertBefore(nav, node);
     }
-  }
-}
+  };
+};
 
 directive.tabbable = function() {
   'use strict';
@@ -166,7 +166,7 @@ directive.tabbable = function() {
       ngModel.$render = function() {
         var $viewValue = this.$viewValue;
 
-        if (selectedTab ? (selectedTab.value != $viewValue) : $viewValue) {
+        if (selectedTab ? (selectedTab.value !== $viewValue) : $viewValue) {
           if(selectedTab) {
             selectedTab.paneElement.removeClass('active');
             selectedTab.tabElement.removeClass('active');
@@ -174,7 +174,7 @@ directive.tabbable = function() {
           }
           if($viewValue) {
             for(var i = 0, ii = tabs.length; i < ii; i++) {
-              if ($viewValue == tabs[i].value) {
+              if ($viewValue === tabs[i].value) {
                 selectedTab = tabs[i];
                 break;
               }
@@ -199,18 +199,18 @@ directive.tabbable = function() {
 
         tabs.push(tab);
 
-        attr.$observe('value', update)();
-        attr.$observe('title', function(){ update(); a.text(tab.title); })();
-
         function update() {
           tab.title = attr.title;
           tab.value = attr.value || attr.title;
-          if (!ngModel.$setViewValue && (!ngModel.$viewValue || tab == selectedTab)) {
+          if (!ngModel.$setViewValue && (!ngModel.$viewValue || tab === selectedTab)) {
             // we are not part of angular
             ngModel.$viewValue = tab.value;
           }
           ngModel.$render();
         }
+
+        attr.$observe('value', update)();
+        attr.$observe('title', function(){ update(); a.text(tab.title); })();
 
         navTabs.append(li);
         li.on('click', function(event) {
@@ -231,12 +231,12 @@ directive.tabbable = function() {
         return function() {
           tab.tabElement.remove();
           for(var i = 0, ii = tabs.length; i < ii; i++ ) {
-            if (tab == tabs[i]) {
+            if (tab === tabs[i]) {
               tabs.splice(i, 1);
             }
           }
         };
-      }
+      };
     }]
   };
 };
@@ -304,7 +304,7 @@ var popoverElement = function() {
     },
 
     isSituatedAt : function(element) {
-      return this.besideElement ? element[0] == this.besideElement[0] : false;
+      return this.besideElement ? element[0] === this.besideElement[0] : false;
     },
 
     title : function(value) {
@@ -379,7 +379,7 @@ directive.popover = ['popoverElement', function(popover) {
         }
       });
     }
-  }
+  };
 }];
 
 directive.tabPane = function() {
@@ -423,19 +423,20 @@ directive.foldout = ['$http', '$animate','$window', function($http, $animate, $w
               container.html(html);
 
               //avoid showing the element if the user has already closed it
-              if(container.css('display') == 'block') {
+              if(container.css('display') === 'block') {
                 container.css('display','none');
                 $animate.addClass(container, 'ng-hide');
               }
             });
           }
           else {
-            container.hasClass('ng-hide') ? $animate.removeClass(container, 'ng-hide') : $animate.addClass(container, 'ng-hide');
+            if (container.hasClass('ng-hide')) $animate.removeClass(container, 'ng-hide');
+            else $animate.addClass(container, 'ng-hide');
           }
         });
       });
     }
-  }
+  };
 }];
 
 angular.module('bootstrap', [])

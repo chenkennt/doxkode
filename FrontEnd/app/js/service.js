@@ -1,3 +1,4 @@
+
 function docServiceFunction($q, $http) {
   this.tocClassApi =  function(navItem) {
     return {
@@ -54,7 +55,7 @@ function docServiceFunction($q, $http) {
       if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
     });
     return itemTypes;
-  }
+  };
 
   this.getPathInfo = function(currentPath){
     if (!currentPath) return undefined;
@@ -110,3 +111,6 @@ function docServiceFunction($q, $http) {
     }
   };
 }
+
+angular.module('docInitService', [])
+.service('docService', ['$q', '$http', docServiceFunction]);
