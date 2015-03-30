@@ -217,6 +217,10 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
       <SubType>Designer</SubType>
     </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\tocpage.tmpl">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+      <SubType>Designer</SubType>
+    </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
       <RootPath>Templates\Projects\DocProject</RootPath>
       <SubType>Designer</SubType>

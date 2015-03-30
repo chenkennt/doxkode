@@ -7,6 +7,12 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     return newArray.join('/');
   }
 
+  this.isAbsoluteUrl = function(url){
+    if (!url) return false;
+    var r = new RegExp('^(?:[a-z]+:)?//', 'i');
+    return r.test(url);
+  };
+
   this.tocClassApi = function(navItem) {
     return {
       active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
@@ -137,8 +143,8 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     if (!pathInfo) return '';
     var current = this.getContentFilePath(pathInfo);
     var sep = '/',
-      currentList = current.split(sep),
-      relList = relative.split(sep),
+      currentList = docUtility.cleanArray(current.split(sep)),
+      relList = docUtility.cleanArray(relative.split(sep)),
       fileName = currentList.pop();
 
     var relPath = currentList;
@@ -214,11 +220,43 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     }
   };
 
+  this.getMdContent = function($scope, path, mdIndexCache){
+    if (!path) return;
+    var pathInfo = this.getPathInfo(path);
+    var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+
+    if (mdPath) {
+      var tempMdIndex = mdIndexCache.get(mdPath);
+      if (tempMdIndex) {
+        if (tempMdIndex) $scope.mdIndex = tempMdIndex;
+      } else {
+        this.asyncFetchIndex(mdPath, function(result) {
+          tempMdIndex = jsyaml.load(result);
+          // This is the md file path
+          mdIndexCache.put(mdPath, tempMdIndex);
+          $scope.mdIndex = tempMdIndex;
+        });
+      }
+    }else{
+      $scope.toc = undefined;
+    }
+  };
+
   this.getDefaultItem = function(array, action) {
     if (!action) return;
     if (array && array.length > 0) {
       return action(array[0]);
     }
+  };
+
+  this.getHref = function($scope, current, url){
+    if (this.isAbsoluteUrl(url)) return url;
+    if (!url) return '';
+
+    var path = this.getAbsolutePath(current, url);
+    var pathInfo = this.getPathInfoFromContentPath($scope.navbar, path);
+
+    return '#' + this.getContentUrl(pathInfo);
   };
 }
 

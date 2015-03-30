@@ -133,9 +133,9 @@ function markdownServiceFunction() {
   };
 }
 
-angular.module('directives')
+angular.module('directives', ['docInitService'])
   .service('docsMarkdownService', markdownServiceFunction)
-  .directive('markdown', ['docsMarkdownService', function(docsMarkdownService) {
+  .directive('markdown', ['docsMarkdownService', 'docService', '$location', function(docsMarkdownService, docService, $location) {
     'use strict';
     var md = (function() {
       marked.setOptions({
@@ -173,6 +173,18 @@ angular.module('directives')
             };
             block.parentNode.replaceChild(wrapper, block);
             wrapper.appendChild(block);
+          });
+          angular.forEach(element.find("a"), function(block) {
+            var url = block.attributes['href'] && block.attributes['href'].value;
+            if (!url) return;
+            if (!docService.isAbsoluteUrl(url))
+              block.attributes['href'].value = docService.getHref(scope, $location.path(), url);
+          });
+          angular.forEach(element.find("img"), function(block) {
+            var url = block.attributes['src'] && block.attributes['src'].value;
+            if (!url) return;
+            if (!docService.isAbsoluteUrl(url))
+              block.attributes['src'].value = docService.getAbsolutePath($location.path(), url);
           });
         }
 

@@ -49,6 +49,9 @@
       <ProjectItem ReplaceParameters="true">
         template\toc.tmpl
       </ProjectItem>
+      <ProjectItem>
+        template\tocpage.tmpl
+      </ProjectItem>
       <ProjectItem ReplaceParameters="true">
         template\class.tmpl
       </ProjectItem>

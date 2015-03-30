@@ -1,4 +1,6 @@
-﻿- id: Roslyn Overview
+﻿- id: Home
+  href: Home.md
+- id: Roslyn Overview
   href: Roslyn-Overview.md
 - id: Getting Started
   items:

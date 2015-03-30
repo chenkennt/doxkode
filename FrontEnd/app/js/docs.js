@@ -58,24 +58,20 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       };
 
       // Href relative to current toc file
-      $scope.GetTocHref = function(relativeUrl) {
-        if (!relativeUrl || !$scope.toc) return '';
+      $scope.GetTocHref = function(url) {
+        if (!$scope.toc) return '';
+        return docService.getHref($scope, $scope.toc.path, url);
+      };
 
-        var path = docService.getAbsolutePath($scope.toc.path, relativeUrl);
-        var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
-
-        return '#' + docService.getContentUrl(pathInfo);
+      $scope.GetNavHref = function(url) {
+        if (docService.isAbsoluteUrl(url)) return url;
+        if (!url) return '';
+        return '#' + url;
       };
 
       // Href relative to current file
-      $scope.GetLinkHref = function(relativeUrl) {
-        if (!relativeUrl) return relativeUrl;
-
-        var current = $location.path();
-        var path = docService.getAbsolutePath(current, relativeUrl);
-        var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
-
-        return '#' + docService.getContentUrl(pathInfo);
+      $scope.GetLinkHref = function(url) {
+        return docService.getHref($scope, $location.path(), url);
       };
 
       $scope.$on('$includeContentLoaded', function() {
@@ -125,20 +121,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
               // if is yaml
 
               // 1. try get md.yaml from the same path as toc, or current path if toc is not there
-              var mdPath = pathInfo.tocPath ? pathInfo.tocPath + '/' + 'md.yaml' : 'md.yaml';
-
-              // TODO: move path to app.config?
-              var tempMdIndex = mdIndexCache.get(mdPath);
-              if (tempMdIndex) {
-                if (tempMdIndex) $scope.mdIndex = tempMdIndex;
-              } else {
-                docService.asyncFetchIndex(mdPath, function(result) {
-                  tempMdIndex = jsyaml.load(result);
-                  // This is the md file path
-                  mdIndexCache.put(mdPath, tempMdIndex);
-                  $scope.mdIndex = tempMdIndex;
-                });
-              }
+              docService.getMdContent($scope, currentPage, mdIndexCache);
 
               docService.asyncFetchIndex(path, function(result) {
                   var model = $scope.partialModel = jsyaml.load(result);
@@ -188,17 +171,15 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         }
       });
 
-      $scope.$watch(function modelWatch() {
-        return $scope.partialModel;
-      }, function modelWatchAction(path) {
+      function mdIndexWatcher(path){
         if ($scope.mdIndex && $scope.partialModel) {
           var mdPath = $scope.mdIndex[$scope.partialModel.id];
           if (mdPath) {
             if (mdPath.href) {
               $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
               var tocPath = docService.getPathInfo($location.path()).tocPath;
-              if (tocPath) mdPath.href = tocPath + '/' + mdPath.href;
-              var getMdIndex = docService.asyncFetchIndex(mdPath.href,
+              var href = (tocPath || '') + '/' + mdPath.href;
+              var getMdIndex = docService.asyncFetchIndex(href,
                 function(result) {
                   var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
                   $scope.partialModel.mdContent = md;
@@ -206,7 +187,15 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             }
           }
         }
-      });
+      }
+
+      $scope.$watch(function modelWatch() {
+        return $scope.partialModel ;
+      }, mdIndexWatcher);
+
+      $scope.$watch(function modelWatch() {
+        return $scope.mdIndex ;
+      }, mdIndexWatcher);
 
       // listen for toc change
       // $scope.$watch(function modelWatch() {
