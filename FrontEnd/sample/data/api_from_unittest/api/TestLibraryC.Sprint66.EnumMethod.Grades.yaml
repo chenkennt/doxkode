@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.EnumMethod.Grades
-href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
 name:
   CSharp: Grades
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 1057
 syntax:
   content:
@@ -27,7 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.EnumMethod.Grades.F
-  href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+  href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
   name:
     CSharp: F
   qualifiedName:
@@ -35,13 +35,13 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1059
   syntax:
     content:
       CSharp: F = 0
 - id: TestLibraryC.Sprint66.EnumMethod.Grades.D
-  href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+  href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
   name:
     CSharp: D
   qualifiedName:
@@ -49,13 +49,13 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1059
   syntax:
     content:
       CSharp: D = 1
 - id: TestLibraryC.Sprint66.EnumMethod.Grades.C
-  href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+  href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
   name:
     CSharp: C
   qualifiedName:
@@ -63,13 +63,13 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1059
   syntax:
     content:
       CSharp: C = 2
 - id: TestLibraryC.Sprint66.EnumMethod.Grades.B
-  href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+  href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
   name:
     CSharp: B
   qualifiedName:
@@ -77,13 +77,13 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1059
   syntax:
     content:
       CSharp: B = 3
 - id: TestLibraryC.Sprint66.EnumMethod.Grades.A
-  href: api/TestLibraryC.Sprint66.EnumMethod.Grades.yaml
+  href: TestLibraryC.Sprint66.EnumMethod.Grades.yaml
   name:
     CSharp: A
   qualifiedName:
@@ -91,7 +91,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 1059
   syntax:
     content:

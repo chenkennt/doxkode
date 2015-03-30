@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
-href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
 name:
   CSharp: ISurfaceD
 qualifiedName:
@@ -9,15 +9,15 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 228
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 226
 syntax:
   content:
     CSharp: public interface ISurfaceD
 items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.FooD
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
   name:
     CSharp: FooD
   qualifiedName:
@@ -25,8 +25,8 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 230
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 228
   syntax:
     content:
       CSharp: string FooD();
@@ -34,7 +34,7 @@ items:
     return:
       id: String
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.PropertyB
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
   name:
     CSharp: PropertyB
   qualifiedName:
@@ -42,8 +42,8 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 232
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 230
   syntax:
     content:
       CSharp: new string PropertyB { get; set; }
@@ -54,7 +54,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.otherEventHandler
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
   name:
     CSharp: otherEventHandler
   qualifiedName:
@@ -62,8 +62,8 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 234
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 232
   syntax:
     content:
       CSharp: otherEventHandler

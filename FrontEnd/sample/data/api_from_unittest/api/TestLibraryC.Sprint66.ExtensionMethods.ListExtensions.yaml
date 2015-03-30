@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
 name:
   CSharp: ListExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 444
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.AsParallel``1(System.Collections.Generic.List{``0},System.Boolean)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: AsParallel
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 449
   summary: template class extension method, which should be overloaded with the one in class IListExtensions
   syntax:
@@ -49,7 +49,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``0,``1)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: Find
   qualifiedName:
@@ -57,7 +57,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 455
   syntax:
     content:
@@ -81,7 +81,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``2(System.Collections.Generic.List{``0},``1,``0)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: Find
   qualifiedName:
@@ -89,7 +89,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 461
   syntax:
     content:
@@ -113,7 +113,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``0,``1,``2)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: Find
   qualifiedName:
@@ -121,7 +121,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 467
   syntax:
     content:
@@ -150,7 +150,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.Find``3(System.Collections.Generic.List{``0},``2,``1,``0)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: Find
   qualifiedName:
@@ -158,7 +158,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 478
   syntax:
     content:
@@ -187,7 +187,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExHiddenMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: ExHiddenMethod
   qualifiedName:
@@ -195,7 +195,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 486
   syntax:
     content:
@@ -209,7 +209,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.ExOverloadMethod``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   name:
     CSharp: ExOverloadMethod
   qualifiedName:
@@ -217,7 +217,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 489
   syntax:
     content:

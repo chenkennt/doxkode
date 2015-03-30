@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
 name:
   CSharp: IBasicExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 562
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicA``2(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,``1})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
   name:
     CSharp: BasicA
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 564
   syntax:
     content:
@@ -43,7 +43,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicB(TestLibraryC.Sprint66.BasicMethod.IBasic{System.String,System.Object})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
   name:
     CSharp: BasicB
   qualifiedName:
@@ -51,7 +51,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 567
   syntax:
     content:
@@ -65,7 +65,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicC``1(TestLibraryC.Sprint66.BasicMethod.IBasic{``0,System.Object})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
   name:
     CSharp: BasicC
   qualifiedName:
@@ -73,7 +73,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 570
   syntax:
     content:
@@ -87,7 +87,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.BasicD``1(TestLibraryC.Sprint66.BasicMethod.IBasic{System.Object,System.String})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
   name:
     CSharp: BasicD
   qualifiedName:
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 573
   syntax:
     content:

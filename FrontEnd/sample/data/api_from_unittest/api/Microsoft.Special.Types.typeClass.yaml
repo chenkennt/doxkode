@@ -1,5 +1,5 @@
 id: Microsoft.Special.Types.typeClass
-href: api/Microsoft.Special.Types.typeClass.yaml
+href: Microsoft.Special.Types.typeClass.yaml
 name:
   CSharp: typeClass
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 39
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.Special.Types.typeClass.funcArray1
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcArray1
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 42
   syntax:
     content:
@@ -37,7 +37,7 @@ items:
     parameters: []
     return: {}
 - id: Microsoft.Special.Types.typeClass.funcArray2
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcArray2
   qualifiedName:
@@ -45,7 +45,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 47
   syntax:
     content:
@@ -53,7 +53,7 @@ items:
     parameters: []
     return: {}
 - id: Microsoft.Special.Types.typeClass.funcRef(System.String@)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcRef
   qualifiedName:
@@ -61,7 +61,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 52
   syntax:
     content:
@@ -75,7 +75,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcPointer(System.Int32*)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcPointer
   qualifiedName:
@@ -83,7 +83,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 56
   syntax:
     content:
@@ -95,7 +95,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.iVolatile
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: iVolatile
   qualifiedName:
@@ -103,13 +103,13 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 60
   syntax:
     content:
       CSharp: iVolatile
 - id: Microsoft.Special.Types.typeClass.funcClassTypeDecorator(System.Int32,System.String)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcClassTypeDecorator
   qualifiedName:
@@ -117,7 +117,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 62
   syntax:
     content:
@@ -136,7 +136,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcParamRef``1(``0)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcParamRef
   qualifiedName:
@@ -144,7 +144,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 64
   syntax:
     content:
@@ -158,7 +158,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcGenericInstantiation(System.Collections.Generic.IEnumerable{System.String})
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcGenericInstantiation
   qualifiedName:
@@ -166,7 +166,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 66
   syntax:
     content:
@@ -180,7 +180,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcCLRType(Microsoft.Special.Types.typeClass)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcCLRType
   qualifiedName:
@@ -188,7 +188,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 68
   syntax:
     content:
@@ -198,11 +198,11 @@ items:
       type:
         id: Microsoft.Special.Types.typeClass
         name: typeClass
-        href: api/Microsoft.Special.Types.typeClass.yaml
+        href: Microsoft.Special.Types.typeClass.yaml
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcCLRTypeRef(System.DateTime)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcCLRTypeRef
   qualifiedName:
@@ -210,7 +210,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 70
   syntax:
     content:
@@ -224,7 +224,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcSimpleType(System.String)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcSimpleType
   qualifiedName:
@@ -232,7 +232,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 72
   syntax:
     content:
@@ -246,7 +246,7 @@ items:
     return:
       id: Void
 - id: Microsoft.Special.Types.typeClass.funcTypedByRefType(System.TypedReference)
-  href: api/Microsoft.Special.Types.typeClass.yaml
+  href: Microsoft.Special.Types.typeClass.yaml
   name:
     CSharp: funcTypedByRefType
   qualifiedName:
@@ -254,7 +254,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 74
   syntax:
     content:

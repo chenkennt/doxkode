@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB2
-href: api/Microsoft.DevDiv.Build.TestLibraryB2.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB2.yaml
 name:
   CSharp: TestLibraryB2
 qualifiedName:
@@ -9,64 +9,64 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 168
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 166
 items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   type: Interface
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   type: Interface
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
   type: Interface
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
   type: Interface
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
   type: Delegate
 - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
   type: Delegate
 - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
   type: Delegate
 - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
   type: Delegate
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
   type: Class

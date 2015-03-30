@@ -1,5 +1,5 @@
 id: VBTestClass1.BaseClass1
-href: api/VBTestClass1.BaseClass1.yaml
+href: VBTestClass1.BaseClass1.yaml
 language: VB
 name:
   VB: BaseClass1
@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 42
 summary: This is the BaseClass
 syntax:
@@ -23,7 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
-  href: api/VBTestClass1.BaseClass1.yaml
+  href: VBTestClass1.BaseClass1.yaml
   language: VB
   name:
     VB: WithDeclarationKeyword
@@ -32,7 +32,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 43
   syntax:
     content:

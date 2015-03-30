@@ -1,5 +1,5 @@
 id: CustomExtensionMethods.stringExtension
-href: api/CustomExtensionMethods.stringExtension.yaml
+href: CustomExtensionMethods.stringExtension.yaml
 name:
   CSharp: stringExtension
 qualifiedName:
@@ -9,9 +9,9 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
-  startLine: 869
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 878
 syntax:
   content:
     CSharp: public static class stringExtension
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: CustomExtensionMethods.stringExtension.WordCount(System.String)
-  href: api/CustomExtensionMethods.stringExtension.yaml
+  href: CustomExtensionMethods.stringExtension.yaml
   name:
     CSharp: WordCount
   qualifiedName:
@@ -29,8 +29,8 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
-    startLine: 878
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 887
   summary: extension method
   syntax:
     content:

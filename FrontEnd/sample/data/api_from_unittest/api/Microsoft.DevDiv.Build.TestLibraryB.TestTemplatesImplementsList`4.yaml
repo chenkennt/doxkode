@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
-href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
 name:
   CSharp: TestTemplatesImplementsList`4
 qualifiedName:
@@ -9,9 +9,9 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 105
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 103
 syntax:
   content:
     CSharp: 'public struct TestTemplatesImplementsList<K, T, L, M> where K : class, IComparable where T : struct where L : TestLibraryB, IEnumerable<long> where M : new ()'

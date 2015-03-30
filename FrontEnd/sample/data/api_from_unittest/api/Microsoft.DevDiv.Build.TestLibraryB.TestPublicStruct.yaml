@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
-href: api/Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
 name:
   CSharp: TestPublicStruct
 qualifiedName:
@@ -9,9 +9,9 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 58
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 64
 syntax:
   content:
     CSharp: public struct TestPublicStruct

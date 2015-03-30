@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
 name:
   CSharp: INormalBasicExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 526
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalBasic,``0)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
   name:
     CSharp: AddOverloadMethod
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 528
   syntax:
     content:
@@ -39,7 +39,7 @@ items:
       type:
         id: TestLibraryC.Sprint66.BasicMethod.INormalBasic
         name: INormalBasic
-        href: api/TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
+        href: TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
     - id: t
       type:
         id: T
@@ -48,7 +48,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.HiddenMethod(TestLibraryC.Sprint66.BasicMethod.INormalBasic,System.Int32)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
   name:
     CSharp: HiddenMethod
   qualifiedName:
@@ -56,7 +56,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 531
   syntax:
     content:
@@ -66,7 +66,7 @@ items:
       type:
         id: TestLibraryC.Sprint66.BasicMethod.INormalBasic
         name: INormalBasic
-        href: api/TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
+        href: TestLibraryC.Sprint66.BasicMethod.INormalBasic.yaml
     - id: a
       type:
         id: System.Int32

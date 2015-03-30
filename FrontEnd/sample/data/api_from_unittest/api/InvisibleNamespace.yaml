@@ -1,5 +1,5 @@
 id: InvisibleNamespace
-href: api/InvisibleNamespace.yaml
+href: InvisibleNamespace.yaml
 name:
   CSharp: InvisibleNamespace
 qualifiedName:
@@ -9,6 +9,6 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 128

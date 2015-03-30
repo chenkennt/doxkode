@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
-href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
 name:
   CSharp: ISurfaceA
 qualifiedName:
@@ -9,15 +9,15 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 170
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 168
 syntax:
   content:
     CSharp: public interface ISurfaceA
 items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   name:
     CSharp: Foo
   qualifiedName:
@@ -25,8 +25,8 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 172
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 170
   syntax:
     content:
       CSharp: int Foo();
@@ -34,7 +34,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   name:
     CSharp: FooA
   qualifiedName:
@@ -42,8 +42,8 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 173
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 171
   syntax:
     content:
       CSharp: int FooA();
@@ -51,7 +51,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   name:
     CSharp: PropertyA
   qualifiedName:
@@ -59,8 +59,8 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 175
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 173
   syntax:
     content:
       CSharp: int PropertyA { get; }
@@ -71,7 +71,7 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   name:
     CSharp: Property
   qualifiedName:
@@ -79,8 +79,8 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 176
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 174
   syntax:
     content:
       CSharp: int Property { get; }
@@ -91,7 +91,7 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
   name:
     CSharp: otherEventHandler
   qualifiedName:
@@ -99,8 +99,8 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-    startLine: 178
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 176
   syntax:
     content:
       CSharp: otherEventHandler

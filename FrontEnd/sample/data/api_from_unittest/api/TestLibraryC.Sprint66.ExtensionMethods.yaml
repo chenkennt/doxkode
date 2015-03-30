@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods
-href: api/TestLibraryC.Sprint66.ExtensionMethods.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.yaml
 name:
   CSharp: ExtensionMethods
 qualifiedName:
@@ -9,58 +9,58 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 371
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.stringExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.intExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.intExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.intExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.DictionaryExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IListExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IListExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.ListExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.NormalAdvanceExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.NormalBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalTemplateExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.NormalTemplateExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IOutBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IStrictInBasicExtensions.yaml
   type: Class
 - id: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IStrictOutBasicExtensions.yaml
   type: Class

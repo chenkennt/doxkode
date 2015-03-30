@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
 name:
   CSharp: INormalAdvanceExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 505
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.String},System.Int32)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
   name:
     CSharp: AddOverloadMethod
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 507
   syntax:
     content:
@@ -48,7 +48,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.IndependentMethod(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{System.Int32},System.Double)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
   name:
     CSharp: IndependentMethod
   qualifiedName:
@@ -56,7 +56,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 510
   syntax:
     content:
@@ -75,7 +75,7 @@ items:
     return:
       id: Double
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,System.Int64)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
   name:
     CSharp: AddOverloadMethod
   qualifiedName:
@@ -83,7 +83,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 513
   syntax:
     content:
@@ -107,7 +107,7 @@ items:
     return:
       id: Int64
 - id: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.AddOverloadMethod``1(TestLibraryC.Sprint66.BasicMethod.INormalAdvance{``0},``0,``0)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.INormalAdvanceExtensions.yaml
   name:
     CSharp: AddOverloadMethod
   qualifiedName:
@@ -115,7 +115,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 516
   syntax:
     content:

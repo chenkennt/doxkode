@@ -1,5 +1,5 @@
 id: Microsoft.Special.Operators.OperatorClass`2
-href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+href: Microsoft.Special.Operators.OperatorClass`2.yaml
 name:
   CSharp: OperatorClass`2
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 190
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Addition(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Addition
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 192
   syntax:
     content:
@@ -39,7 +39,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -48,7 +48,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Subtraction
   qualifiedName:
@@ -56,7 +56,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 193
   syntax:
     content:
@@ -66,7 +66,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: System.Int32
@@ -75,7 +75,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int64)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Subtraction
   qualifiedName:
@@ -83,7 +83,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 194
   syntax:
     content:
@@ -93,7 +93,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: System.Int64
@@ -102,7 +102,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Subtraction(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Subtraction
   qualifiedName:
@@ -110,7 +110,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 195
   syntax:
     content:
@@ -120,7 +120,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: System.Double
@@ -129,7 +129,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Modulus(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Int32)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Modulus
   qualifiedName:
@@ -137,7 +137,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 196
   syntax:
     content:
@@ -147,7 +147,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: a
       type:
         id: System.Int32
@@ -156,7 +156,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Multiply(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Multiply
   qualifiedName:
@@ -164,7 +164,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 197
   syntax:
     content:
@@ -174,7 +174,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: a
       type:
         id: System.Double
@@ -183,7 +183,7 @@ items:
     return:
       id: Double
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Division(Microsoft.Special.Operators.OperatorClass{`0,`1},System.Double)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Division
   qualifiedName:
@@ -191,7 +191,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 198
   syntax:
     content:
@@ -201,7 +201,7 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: a
       type:
         id: System.Double
@@ -210,7 +210,7 @@ items:
     return:
       id: Double
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Increment(Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Increment
   qualifiedName:
@@ -218,7 +218,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 199
   syntax:
     content:
@@ -228,11 +228,11 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: OperatorClass
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Decrement(Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Decrement
   qualifiedName:
@@ -240,7 +240,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 200
   syntax:
     content:
@@ -250,11 +250,11 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: OperatorClass
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Equality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -262,7 +262,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 201
   syntax:
     content:
@@ -272,16 +272,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.op_Inequality(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -289,7 +289,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 202
   syntax:
     content:
@@ -299,16 +299,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.op_GreaterThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_GreaterThan
   qualifiedName:
@@ -316,7 +316,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 203
   syntax:
     content:
@@ -326,16 +326,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.op_GreaterThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_GreaterThanOrEqual
   qualifiedName:
@@ -343,7 +343,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 204
   syntax:
     content:
@@ -353,16 +353,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.op_LessThan(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_LessThan
   qualifiedName:
@@ -370,7 +370,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 205
   syntax:
     content:
@@ -380,16 +380,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.op_LessThanOrEqual(Microsoft.Special.Operators.OperatorClass{`0,`1},Microsoft.Special.Operators.OperatorClass{`0,`1})
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: op_LessThanOrEqual
   qualifiedName:
@@ -397,7 +397,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 206
   syntax:
     content:
@@ -407,16 +407,16 @@ items:
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     - id: rsr
       type:
         id: Microsoft.Special.Operators.OperatorClass`2
         name: OperatorClass
-        href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+        href: Microsoft.Special.Operators.OperatorClass`2.yaml
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.Item(System.String)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: Item
   qualifiedName:
@@ -424,7 +424,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 207
   syntax:
     content:
@@ -436,7 +436,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.Special.Operators.OperatorClass`2.Equals(System.Object)
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -444,7 +444,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 212
   syntax:
     content:
@@ -458,7 +458,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.Special.Operators.OperatorClass`2.GetHashCode
-  href: api/Microsoft.Special.Operators.OperatorClass`2.yaml
+  href: Microsoft.Special.Operators.OperatorClass`2.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -466,7 +466,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 213
   syntax:
     content:

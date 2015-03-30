@@ -1,5 +1,5 @@
 id: TestLibraryC.TestLibraryC
-href: api/TestLibraryC.TestLibraryC.yaml
+href: TestLibraryC.TestLibraryC.yaml
 name:
   CSharp: TestLibraryC
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 81
 syntax:
   content:
@@ -21,10 +21,10 @@ inheritance:
   isExternal: true
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
   name: TestLibraryB
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
 items:
 - id: TestLibraryC.TestLibraryC.MultiplyMethod
-  href: api/TestLibraryC.TestLibraryC.yaml
+  href: TestLibraryC.TestLibraryC.yaml
   name:
     CSharp: MultiplyMethod
   qualifiedName:
@@ -32,7 +32,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 86
   syntax:
     content:
@@ -41,7 +41,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.TestLibraryC.MinusMethod
-  href: api/TestLibraryC.TestLibraryC.yaml
+  href: TestLibraryC.TestLibraryC.yaml
   name:
     CSharp: MinusMethod
   qualifiedName:
@@ -49,7 +49,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 91
   syntax:
     content:

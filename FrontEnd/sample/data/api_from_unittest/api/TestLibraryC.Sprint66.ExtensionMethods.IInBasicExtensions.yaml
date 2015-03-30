@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
 name:
   CSharp: IInBasicExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 577
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicA``1(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{``0}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   name:
     CSharp: InBasicA
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 579
   syntax:
     content:
@@ -43,7 +43,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicB(TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   name:
     CSharp: InBasicB
   qualifiedName:
@@ -51,7 +51,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 582
   syntax:
     content:
@@ -65,7 +65,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicC(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.Object}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   name:
     CSharp: InBasicC
   qualifiedName:
@@ -73,7 +73,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 585
   syntax:
     content:
@@ -87,7 +87,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicD(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   name:
     CSharp: InBasicD
   qualifiedName:
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 588
   syntax:
     content:
@@ -109,7 +109,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.InBasicE(TestLibraryC.Sprint66.BasicMethod.IInBasic{TestLibraryC.Sprint66.BasicMethod.IStrictInBasic{TestLibraryC.Sprint66.BasicMethod.IInBasic{System.String}}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IInBasicExtensions.yaml
   name:
     CSharp: InBasicE
   qualifiedName:
@@ -117,7 +117,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 591
   syntax:
     content:

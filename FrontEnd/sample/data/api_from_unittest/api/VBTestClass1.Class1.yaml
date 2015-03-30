@@ -1,5 +1,5 @@
 id: VBTestClass1.Class1
-href: api/VBTestClass1.Class1.yaml
+href: VBTestClass1.Class1.yaml
 language: VB
 name:
   VB: Class1
@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 3
 summary: This is summary from vb class...
 syntax:
@@ -23,10 +23,10 @@ inheritance:
   isExternal: true
 - id: VBTestClass1.BaseClass1
   name: BaseClass1
-  href: api/VBTestClass1.BaseClass1.yaml
+  href: VBTestClass1.BaseClass1.yaml
 items:
 - id: VBTestClass1.Class1.ValueClass
-  href: api/VBTestClass1.Class1.yaml
+  href: VBTestClass1.Class1.yaml
   language: VB
   name:
     VB: ValueClass
@@ -35,14 +35,14 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 11
   summary: This is a *Value* type
   syntax:
     content:
       VB: Public ValueClass As Class1
 - id: VBTestClass1.Class1.Keyword
-  href: api/VBTestClass1.Class1.yaml
+  href: VBTestClass1.Class1.yaml
   language: VB
   name:
     VB: Keyword
@@ -51,7 +51,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 13
   syntax:
     content:
@@ -63,7 +63,7 @@ items:
         name: System.Diagnostics.CounterSampleCalculator
         isExternal: true
 - id: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
-  href: api/VBTestClass1.Class1.yaml
+  href: VBTestClass1.Class1.yaml
   language: VB
   name:
     VB: WithDeclarationKeyword
@@ -72,7 +72,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 23
   summary: What is **Sub**?
   syntax:
@@ -87,7 +87,7 @@ items:
     return:
       id: DateTime
 - id: VBTestClass1.Class1.Value(System.String)
-  href: api/VBTestClass1.Class1.yaml
+  href: VBTestClass1.Class1.yaml
   language: VB
   name:
     VB: Value
@@ -96,7 +96,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 34
   summary: This is a *Function*
   syntax:

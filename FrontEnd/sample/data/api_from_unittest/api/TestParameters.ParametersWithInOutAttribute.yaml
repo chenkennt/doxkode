@@ -1,5 +1,5 @@
 id: TestParameters.ParametersWithInOutAttribute
-href: api/TestParameters.ParametersWithInOutAttribute.yaml
+href: TestParameters.ParametersWithInOutAttribute.yaml
 name:
   CSharp: ParametersWithInOutAttribute
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 101
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestParameters.ParametersWithInOutAttribute.FooOutKeyword(System.Int32@)
-  href: api/TestParameters.ParametersWithInOutAttribute.yaml
+  href: TestParameters.ParametersWithInOutAttribute.yaml
   name:
     CSharp: FooOutKeyword
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 104
   syntax:
     content:
@@ -43,7 +43,7 @@ items:
     return:
       id: Void
 - id: TestParameters.ParametersWithInOutAttribute.FooOutAttribute(System.String)
-  href: api/TestParameters.ParametersWithInOutAttribute.yaml
+  href: TestParameters.ParametersWithInOutAttribute.yaml
   name:
     CSharp: FooOutAttribute
   qualifiedName:
@@ -51,7 +51,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 110
   syntax:
     content:
@@ -65,7 +65,7 @@ items:
     return:
       id: Void
 - id: TestParameters.ParametersWithInOutAttribute.FooInAttribute(System.Int32)
-  href: api/TestParameters.ParametersWithInOutAttribute.yaml
+  href: TestParameters.ParametersWithInOutAttribute.yaml
   name:
     CSharp: FooInAttribute
   qualifiedName:
@@ -73,7 +73,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 116
   syntax:
     content:
@@ -87,7 +87,7 @@ items:
     return:
       id: Void
 - id: TestParameters.ParametersWithInOutAttribute.FooInOutAttribute(System.Double)
-  href: api/TestParameters.ParametersWithInOutAttribute.yaml
+  href: TestParameters.ParametersWithInOutAttribute.yaml
   name:
     CSharp: FooInOutAttribute
   qualifiedName:
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 121
   syntax:
     content:

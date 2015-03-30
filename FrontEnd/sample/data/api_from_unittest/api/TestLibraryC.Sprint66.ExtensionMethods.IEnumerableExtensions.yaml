@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions
-href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+href: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
 name:
   CSharp: IEnumerableExtensions
 qualifiedName:
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 493
 syntax:
   content:
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExHiddenMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
   name:
     CSharp: ExHiddenMethod
   qualifiedName:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 495
   syntax:
     content:
@@ -43,7 +43,7 @@ items:
     return:
       id: Void
 - id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.ExOverloadMethod``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}},``0)
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
   name:
     CSharp: ExOverloadMethod
   qualifiedName:
@@ -51,7 +51,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 498
   syntax:
     content:
@@ -70,7 +70,7 @@ items:
     return:
       id: Boolean
 - id: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.IEnumerableMethodA(System.Collections.Generic.IEnumerable{System.String})
-  href: api/TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
+  href: TestLibraryC.Sprint66.ExtensionMethods.IEnumerableExtensions.yaml
   name:
     CSharp: IEnumerableMethodA
   qualifiedName:
@@ -78,7 +78,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 501
   syntax:
     content:

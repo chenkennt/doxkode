@@ -1,5 +1,5 @@
 id: TestLibraryC.Sprint66.FakeAttribute
-href: api/TestLibraryC.Sprint66.FakeAttribute.yaml
+href: TestLibraryC.Sprint66.FakeAttribute.yaml
 name:
   CSharp: FakeAttribute
 qualifiedName:
@@ -9,13 +9,13 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 13_59_30/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 351
 items:
 - id: TestLibraryC.Sprint66.FakeAttribute.Language
-  href: api/TestLibraryC.Sprint66.FakeAttribute.Language.yaml
+  href: TestLibraryC.Sprint66.FakeAttribute.Language.yaml
   type: Enum
 - id: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute
-  href: api/TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
+  href: TestLibraryC.Sprint66.FakeAttribute.ExtensionHelperAttribute.yaml
   type: Class

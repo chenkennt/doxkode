@@ -1,5 +1,5 @@
 id: Microsoft.DevDiv.Build.TestLibraryB
-href: api/Microsoft.DevDiv.Build.TestLibraryB.yaml
+href: Microsoft.DevDiv.Build.TestLibraryB.yaml
 name:
   CSharp: TestLibraryB
 qualifiedName:
@@ -9,49 +9,47 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-61-g7be86a7
-  path: TestResults/Deploy_lianwei 2015-03-27 23_17_49/Out/Assets/TestClass1/TestClass1/Class1.cs
-  startLine: 13
+    description: v0.3-64-ge0510d3
+  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 17
 items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
   type: Interface
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
   type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
   type: Struct
-- id: Microsoft.DevDiv.Build.TestLibraryB.testClassStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.testClassStruct.yaml
-  type: Class
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
   type: Struct
+  summary: This is a struct with serializable true
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
   type: Delegate
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
   type: Struct
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
   type: Struct
