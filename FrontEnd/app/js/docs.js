@@ -58,21 +58,29 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       };
 
       // Href relative to current toc file
-      $scope.GetTocHref = function(relativeUrl) {
-        if (!relativeUrl || !$scope.toc) return '';
+      $scope.GetTocHref = function(url) {
+        if (docService.isAbsoluteUrl(url)) return url;
+        if (!url || !$scope.toc) return '';
 
-        var path = docService.getAbsolutePath($scope.toc.path, relativeUrl);
+        var path = docService.getAbsolutePath($scope.toc.path, url);
         var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
 
         return '#' + docService.getContentUrl(pathInfo);
       };
 
+      $scope.GetNavHref = function(url) {
+        if (docService.isAbsoluteUrl(url)) return url;
+        if (!url) return '';
+        return '#' + url;
+      };
+
       // Href relative to current file
-      $scope.GetLinkHref = function(relativeUrl) {
-        if (!relativeUrl) return relativeUrl;
+      $scope.GetLinkHref = function(url) {
+        if (docService.isAbsoluteUrl(url)) return url;
+        if (!url) return url;
 
         var current = $location.path();
-        var path = docService.getAbsolutePath(current, relativeUrl);
+        var path = docService.getAbsolutePath(current, url);
         var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
 
         return '#' + docService.getContentUrl(pathInfo);
