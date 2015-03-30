@@ -180,6 +180,12 @@ angular.module('directives', ['docInitService'])
             if (!docService.isAbsoluteUrl(url))
               block.attributes['href'].value = docService.getHref(scope, $location.path(), url);
           });
+          angular.forEach(element.find("img"), function(block) {
+            var url = block.attributes['src'] && block.attributes['src'].value;
+            if (!url) return;
+            if (!docService.isAbsoluteUrl(url))
+              block.attributes['src'].value = docService.getAbsolutePath($location.path(), url);
+          });
         }
 
         set(element.text() || '');
