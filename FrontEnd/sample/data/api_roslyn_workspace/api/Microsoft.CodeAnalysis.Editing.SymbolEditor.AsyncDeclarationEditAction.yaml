@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction
-href: api/Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction.yaml
+href: Microsoft.CodeAnalysis.Editing.SymbolEditor.AsyncDeclarationEditAction.yaml
 name:
   CSharp: AsyncDeclarationEditAction
 qualifiedName:
@@ -8,7 +8,7 @@ type: Delegate
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/SymbolEditor.cs
   startLine: 224
 summary: An action that make changes to a declaration node within a [Microsoft.CodeAnalysis.SyntaxTree](#).

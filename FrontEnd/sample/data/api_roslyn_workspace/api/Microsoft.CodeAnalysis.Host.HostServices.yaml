@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.HostServices
-href: api/Microsoft.CodeAnalysis.Host.HostServices.yaml
+href: Microsoft.CodeAnalysis.Host.HostServices.yaml
 name:
   CSharp: HostServices
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/HostServices.cs
   startLine: 7
 summary: Services provided by the host environment.

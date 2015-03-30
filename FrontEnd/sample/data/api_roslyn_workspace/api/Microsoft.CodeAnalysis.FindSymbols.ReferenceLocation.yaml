@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
-href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
 name:
   CSharp: ReferenceLocation
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/FindSymbols/ReferenceLocation.cs
   startLine: 12
 summary: Information about a reference to a symbol.
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Document
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: Document
   qualifiedName:
@@ -43,9 +43,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Alias
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: Alias
   qualifiedName:
@@ -66,7 +66,7 @@ items:
         name: IAliasSymbol
         href: Microsoft.CodeAnalysis.IAliasSymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Location
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: Location
   qualifiedName:
@@ -87,7 +87,7 @@ items:
         name: Location
         href: Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.IsImplicit
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: IsImplicit
   qualifiedName:
@@ -115,7 +115,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.CandidateReason
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: CandidateReason
   qualifiedName:
@@ -135,7 +135,7 @@ items:
         name: CandidateReason
         href: Microsoft.CodeAnalysis.CandidateReason
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.IsCandidateLocation
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: IsCandidateLocation
   qualifiedName:
@@ -163,7 +163,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.op_Equality(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -181,16 +181,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.op_Inequality(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation,Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -208,16 +208,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -239,7 +239,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.Equals(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -257,11 +257,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.GetHashCode
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -278,7 +278,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.CompareTo(Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation)
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
   name:
     CSharp: CompareTo
   qualifiedName:
@@ -296,6 +296,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation
         name: ReferenceLocation
-        href: api/Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
+        href: Microsoft.CodeAnalysis.FindSymbols.ReferenceLocation.yaml
     return:
       id: Int32

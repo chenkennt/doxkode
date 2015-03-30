@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceRegistration
-href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
+href: Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
 name:
   CSharp: WorkspaceRegistration
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/WorkspaceRegistration.cs
   startLine: 6
 syntax:
@@ -20,7 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceRegistration.Workspace
-  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
+  href: Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
   name:
     CSharp: Workspace
   qualifiedName:
@@ -38,9 +38,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
 - id: Microsoft.CodeAnalysis.WorkspaceRegistration.WorkspaceChanged
-  href: api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
+  href: Microsoft.CodeAnalysis.WorkspaceRegistration.yaml
   name:
     CSharp: WorkspaceChanged
   qualifiedName:

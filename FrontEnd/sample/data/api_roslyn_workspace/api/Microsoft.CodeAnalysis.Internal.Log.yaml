@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Internal.Log
-href: api/Microsoft.CodeAnalysis.Internal.Log.yaml
+href: Microsoft.CodeAnalysis.Internal.Log.yaml
 name:
   CSharp: Log
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Log/Logger.cs
   startLine: 7

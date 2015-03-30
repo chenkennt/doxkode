@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Formatting.Rules
-href: api/Microsoft.CodeAnalysis.Formatting.Rules.yaml
+href: Microsoft.CodeAnalysis.Formatting.Rules.yaml
 name:
   CSharp: Rules
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Formatting/Rules/Operations/SuppressOption.cs
   startLine: 5

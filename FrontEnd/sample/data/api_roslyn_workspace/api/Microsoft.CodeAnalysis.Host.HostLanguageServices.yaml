@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.HostLanguageServices
-href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
 name:
   CSharp: HostLanguageServices
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
   startLine: 9
 summary: Per language services provided by the host environment.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.WorkspaceServices
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: WorkspaceServices
   qualifiedName:
@@ -31,7 +31,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/HostLanguageServices.cs
     startLine: 14
-  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml) that originated this language service.
+  summary: The [Microsoft.CodeAnalysis.Host.HostWorkspaceServices](Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml) that originated this language service.
   syntax:
     content:
       CSharp: public abstract HostWorkspaceServices WorkspaceServices { get; }
@@ -40,9 +40,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
         name: HostWorkspaceServices
-        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+        href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.Language
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: Language
   qualifiedName:
@@ -63,7 +63,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetService``1
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: GetService
   qualifiedName:
@@ -84,7 +84,7 @@ items:
     return:
       id: TLanguageService
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.GetRequiredService``1
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: GetRequiredService
   qualifiedName:
@@ -105,7 +105,7 @@ items:
     return:
       id: TLanguageService
 - id: Microsoft.CodeAnalysis.Host.HostLanguageServices.CompilationFactory
-  href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
   name:
     CSharp: CompilationFactory
   qualifiedName:
@@ -124,4 +124,4 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
         name: ICompilationFactoryService
-        href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+        href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext
-href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
 name:
   CSharp: FixAllContext
 qualifiedName:
@@ -8,10 +8,10 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
   startLine: 16
-summary: Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
+summary: Context for "Fix all occurrences" code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 syntax:
   content:
     CSharp: public class FixAllContext
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.Solution
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: Solution
   qualifiedName:
@@ -40,9 +40,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.Project
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: Project
   qualifiedName:
@@ -61,9 +61,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.Document
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: Document
   qualifiedName:
@@ -82,9 +82,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.CodeFixProvider
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: CodeFixProvider
   qualifiedName:
@@ -94,7 +94,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 39
-  summary: Underlying [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) which triggered this fix all.
+  summary: Underlying [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) which triggered this fix all.
   syntax:
     content:
       CSharp: public CodeFixProvider CodeFixProvider { get; private set; }
@@ -103,9 +103,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
         name: CodeFixProvider
-        href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml
+        href: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.Scope
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: Scope
   qualifiedName:
@@ -124,9 +124,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeFixes.FixAllScope
         name: FixAllScope
-        href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
+        href: Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: DiagnosticIds
   qualifiedName:
@@ -139,7 +139,7 @@ items:
   summary: >-
     Diagnostic Ids to fix.
 
-    Note that [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetDocumentDiagnosticsAsync(Microsoft.CodeAnalysis.Document)](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml), [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) and [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) methods
+    Note that [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetDocumentDiagnosticsAsync(Microsoft.CodeAnalysis.Document)](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml), [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) and [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) methods
 
     return only diagnostics whose IDs are contained in this set of Ids.
   syntax:
@@ -152,7 +152,7 @@ items:
         name: System.Collections.Immutable.ImmutableHashSet{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.CodeActionEquivalenceKey
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: CodeActionEquivalenceKey
   qualifiedName:
@@ -162,7 +162,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 56
-  summary: The [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) value expected of a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) participating in this fix all.
+  summary: The [Microsoft.CodeAnalysis.CodeActions.CodeAction.EquivalenceKey](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) value expected of a [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) participating in this fix all.
   syntax:
     content:
       CSharp: public string CodeActionEquivalenceKey { get; private set; }
@@ -173,7 +173,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.CancellationToken
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: CancellationToken
   qualifiedName:
@@ -194,7 +194,7 @@ items:
         name: System.Threading.CancellationToken
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetDocumentDiagnosticsAsync(Microsoft.CodeAnalysis.Document)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: GetDocumentDiagnosticsAsync
   qualifiedName:
@@ -204,7 +204,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 114
-  summary: Gets all the diagnostics in the given document filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
+  summary: Gets all the diagnostics in the given document filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetDocumentDiagnosticsAsync(Document document)
@@ -213,11 +213,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetProjectDiagnosticsAsync(Microsoft.CodeAnalysis.Project)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: GetProjectDiagnosticsAsync
   qualifiedName:
@@ -227,7 +227,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 131
-  summary: Gets all the project-level diagnostics, i.e. diagnostics with no source location, in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
+  summary: Gets all the project-level diagnostics, i.e. diagnostics with no source location, in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetProjectDiagnosticsAsync(Project project)
@@ -236,11 +236,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.GetAllDiagnosticsAsync(Microsoft.CodeAnalysis.Project)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: GetAllDiagnosticsAsync
   qualifiedName:
@@ -251,7 +251,7 @@ items:
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 140
   summary: >-
-    Gets all the diagnostics in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
+    Gets all the diagnostics in the given project filtered by [Microsoft.CodeAnalysis.CodeFixes.FixAllContext.DiagnosticIds](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml).
 
     This includes both document-level diagnostics for all documents in the given project and project-level diagnostics, i.e. diagnostics with no source location, in the given project.
   syntax:
@@ -262,11 +262,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.WithCancellationToken(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
   name:
     CSharp: WithCancellationToken
   qualifiedName:
@@ -276,7 +276,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllContext.cs
     startLine: 167
-  summary: Gets a new [Microsoft.CodeAnalysis.CodeFixes.FixAllContext](api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) with the given cancellationToken.
+  summary: Gets a new [Microsoft.CodeAnalysis.CodeFixes.FixAllContext](Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml) with the given cancellationToken.
   syntax:
     content:
       CSharp: public FixAllContext WithCancellationToken(CancellationToken cancellationToken)

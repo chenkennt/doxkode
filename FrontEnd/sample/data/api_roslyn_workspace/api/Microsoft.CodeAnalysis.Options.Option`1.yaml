@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Options.Option`1
-href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+href: Microsoft.CodeAnalysis.Options.Option`1.yaml
 name:
   CSharp: Option`1
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Options/Option`1.cs
   startLine: 9
 summary: An global option. An instance of this class can be used to access an option value from an OptionSet.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Options.Option`1.Feature
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Feature
   qualifiedName:
@@ -42,7 +42,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.Name
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -63,7 +63,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.Type
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Type
   qualifiedName:
@@ -84,7 +84,7 @@ items:
         name: System.Type
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.Option`1.DefaultValue
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: DefaultValue
   qualifiedName:
@@ -105,7 +105,7 @@ items:
         name: T
         href: T
 - id: Microsoft.CodeAnalysis.Options.Option`1.#ctor(System.String,System.String,`0)
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: Option`1(System.String,System.String,`0)
   qualifiedName:
@@ -137,7 +137,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Options.Option`1.ToString
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -154,7 +154,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Options.Option`1.op_Implicit(Microsoft.CodeAnalysis.Options.Option{`0})~Microsoft.CodeAnalysis.Options.OptionKey
-  href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+  href: Microsoft.CodeAnalysis.Options.Option`1.yaml
   name:
     CSharp: op_Implicit
   qualifiedName:
@@ -172,6 +172,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.Option`1
         name: Option
-        href: api/Microsoft.CodeAnalysis.Options.Option`1.yaml
+        href: Microsoft.CodeAnalysis.Options.Option`1.yaml
     return:
       id: OptionKey

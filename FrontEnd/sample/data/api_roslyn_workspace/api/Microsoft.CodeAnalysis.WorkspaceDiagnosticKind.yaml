@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
-href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
+href: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
 name:
   CSharp: WorkspaceDiagnosticKind
 qualifiedName:
@@ -8,7 +8,7 @@ type: Enum
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/WorkspaceDiagnosticKind.cs
   startLine: 4
 syntax:
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.Failure
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
+  href: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
   name:
     CSharp: Failure
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     content:
       CSharp: Failure = 0
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.Warning
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
+  href: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
   name:
     CSharp: Warning
   qualifiedName:

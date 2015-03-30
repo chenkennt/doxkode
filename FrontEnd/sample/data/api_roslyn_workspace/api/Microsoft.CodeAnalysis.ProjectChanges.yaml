@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectChanges
-href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+href: Microsoft.CodeAnalysis.ProjectChanges.yaml
 name:
   CSharp: ProjectChanges
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectChanges.cs
   startLine: 9
 syntax:
@@ -23,7 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ProjectChanges.ProjectId
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -41,9 +41,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.ProjectChanges.OldProject
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: OldProject
   qualifiedName:
@@ -61,9 +61,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
 - id: Microsoft.CodeAnalysis.ProjectChanges.NewProject
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: NewProject
   qualifiedName:
@@ -81,9 +81,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedProjectReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedProjectReferences
   qualifiedName:
@@ -100,7 +100,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedProjectReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedProjectReferences
   qualifiedName:
@@ -117,7 +117,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedMetadataReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedMetadataReferences
   qualifiedName:
@@ -134,7 +134,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedMetadataReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedMetadataReferences
   qualifiedName:
@@ -151,7 +151,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedAnalyzerReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedAnalyzerReferences
   qualifiedName:
@@ -168,7 +168,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedAnalyzerReferences
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedAnalyzerReferences
   qualifiedName:
@@ -185,7 +185,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedDocuments
   qualifiedName:
@@ -202,7 +202,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetAddedAdditionalDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetAddedAdditionalDocuments
   qualifiedName:
@@ -219,7 +219,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetChangedDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetChangedDocuments
   qualifiedName:
@@ -236,7 +236,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetChangedAdditionalDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetChangedAdditionalDocuments
   qualifiedName:
@@ -253,7 +253,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedDocuments
   qualifiedName:
@@ -270,7 +270,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.ProjectChanges.GetRemovedAdditionalDocuments
-  href: api/Microsoft.CodeAnalysis.ProjectChanges.yaml
+  href: Microsoft.CodeAnalysis.ProjectChanges.yaml
   name:
     CSharp: GetRemovedAdditionalDocuments
   qualifiedName:

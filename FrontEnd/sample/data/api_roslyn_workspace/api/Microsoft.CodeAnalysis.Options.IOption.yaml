@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Options.IOption
-href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+href: Microsoft.CodeAnalysis.Options.IOption.yaml
 name:
   CSharp: IOption
 qualifiedName:
@@ -8,7 +8,7 @@ type: Interface
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Options/IOption.cs
   startLine: 6
 syntax:
@@ -16,7 +16,7 @@ syntax:
     CSharp: public interface IOption
 items:
 - id: Microsoft.CodeAnalysis.Options.IOption.Feature
-  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+  href: Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Feature
   qualifiedName:
@@ -36,7 +36,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.Name
-  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+  href: Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -56,7 +56,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.Type
-  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+  href: Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: Type
   qualifiedName:
@@ -76,7 +76,7 @@ items:
         name: System.Type
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.DefaultValue
-  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+  href: Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: DefaultValue
   qualifiedName:
@@ -96,7 +96,7 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.Options.IOption.IsPerLanguage
-  href: api/Microsoft.CodeAnalysis.Options.IOption.yaml
+  href: Microsoft.CodeAnalysis.Options.IOption.yaml
   name:
     CSharp: IsPerLanguage
   qualifiedName:

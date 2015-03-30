@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.Edit`1
-href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
 name:
   CSharp: Edit`1
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Differencing/Edit.cs
   startLine: 12
 summary: Represents an edit operation on a tree or a sequence of nodes.
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Kind
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -42,9 +42,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Differencing.EditKind
         name: EditKind
-        href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+        href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.OldNode
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: OldNode
   qualifiedName:
@@ -80,7 +80,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.NewNode
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: NewNode
   qualifiedName:
@@ -116,7 +116,7 @@ items:
         name: TNode
         href: TNode
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -138,7 +138,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.Equals(Microsoft.CodeAnalysis.Differencing.Edit{`0})
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -156,11 +156,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Differencing.Edit`1
         name: Edit
-        href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+        href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Differencing.Edit`1.GetHashCode
-  href: api/Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
+  href: Microsoft.CodeAnalysis.Differencing.Edit`1.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:

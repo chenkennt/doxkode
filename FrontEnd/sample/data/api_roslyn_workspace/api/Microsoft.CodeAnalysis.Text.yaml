@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Text
-href: api/Microsoft.CodeAnalysis.Text.yaml
+href: Microsoft.CodeAnalysis.Text.yaml
 name:
   CSharp: Text
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/TextExtensions.cs
   startLine: 6

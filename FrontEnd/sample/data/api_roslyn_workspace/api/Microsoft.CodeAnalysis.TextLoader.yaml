@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.TextLoader
-href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+href: Microsoft.CodeAnalysis.TextLoader.yaml
 name:
   CSharp: TextLoader
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/TextLoader.cs
   startLine: 12
 summary: A class that represents access to a source text and its version from a storage location.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.TextLoader.LoadTextAndVersionAsync(Microsoft.CodeAnalysis.Workspace,Microsoft.CodeAnalysis.DocumentId,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+  href: Microsoft.CodeAnalysis.TextLoader.yaml
   name:
     CSharp: LoadTextAndVersionAsync
   qualifiedName:
@@ -40,12 +40,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
     - id: documentId
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -54,7 +54,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.TextAndVersion)
-  href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+  href: Microsoft.CodeAnalysis.TextLoader.yaml
   name:
     CSharp: From
   qualifiedName:
@@ -73,11 +73,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextAndVersion
         name: TextAndVersion
-        href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+        href: Microsoft.CodeAnalysis.TextAndVersion.yaml
     return:
       id: TextLoader
 - id: Microsoft.CodeAnalysis.TextLoader.From(Microsoft.CodeAnalysis.Text.SourceTextContainer,Microsoft.CodeAnalysis.VersionStamp,System.String)
-  href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+  href: Microsoft.CodeAnalysis.TextLoader.yaml
   name:
     CSharp: From
   qualifiedName:
@@ -108,7 +108,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: filePath
       type:
         id: System.String

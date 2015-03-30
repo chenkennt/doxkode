@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
-href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
 name:
   CSharp: DeclarationModifiers
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/DeclarationModifiers.cs
   startLine: 7
 syntax:
@@ -23,7 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.From(Microsoft.CodeAnalysis.ISymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: From
   qualifiedName:
@@ -45,7 +45,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsStatic
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsStatic
   qualifiedName:
@@ -65,7 +65,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAbstract
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsAbstract
   qualifiedName:
@@ -85,7 +85,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsNew
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsNew
   qualifiedName:
@@ -105,7 +105,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsUnsafe
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsUnsafe
   qualifiedName:
@@ -125,7 +125,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsReadOnly
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsReadOnly
   qualifiedName:
@@ -145,7 +145,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsVirtual
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsVirtual
   qualifiedName:
@@ -165,7 +165,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsOverride
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsOverride
   qualifiedName:
@@ -185,7 +185,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsSealed
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsSealed
   qualifiedName:
@@ -205,7 +205,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsConst
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsConst
   qualifiedName:
@@ -225,7 +225,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsWithEvents
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsWithEvents
   qualifiedName:
@@ -245,7 +245,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsPartial
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsPartial
   qualifiedName:
@@ -265,7 +265,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.IsAsync
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: IsAsync
   qualifiedName:
@@ -285,7 +285,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsStatic(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsStatic
   qualifiedName:
@@ -307,7 +307,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsAbstract(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsAbstract
   qualifiedName:
@@ -329,7 +329,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsNew(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsNew
   qualifiedName:
@@ -351,7 +351,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsUnsafe(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsUnsafe
   qualifiedName:
@@ -373,7 +373,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsReadOnly(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsReadOnly
   qualifiedName:
@@ -395,7 +395,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsVirtual(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsVirtual
   qualifiedName:
@@ -417,7 +417,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsOverride(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsOverride
   qualifiedName:
@@ -439,7 +439,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsSealed(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsSealed
   qualifiedName:
@@ -461,7 +461,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithIsConst(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithIsConst
   qualifiedName:
@@ -483,7 +483,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithWithEvents(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithWithEvents
   qualifiedName:
@@ -505,7 +505,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithPartial(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithPartial
   qualifiedName:
@@ -527,7 +527,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithAsync(System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithAsync
   qualifiedName:
@@ -549,7 +549,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.None
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -563,7 +563,7 @@ items:
     content:
       CSharp: None
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Static
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Static
   qualifiedName:
@@ -577,7 +577,7 @@ items:
     content:
       CSharp: Static
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Abstract
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Abstract
   qualifiedName:
@@ -591,7 +591,7 @@ items:
     content:
       CSharp: Abstract
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.New
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: New
   qualifiedName:
@@ -605,7 +605,7 @@ items:
     content:
       CSharp: New
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Unsafe
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Unsafe
   qualifiedName:
@@ -619,7 +619,7 @@ items:
     content:
       CSharp: Unsafe
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ReadOnly
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: ReadOnly
   qualifiedName:
@@ -633,7 +633,7 @@ items:
     content:
       CSharp: ReadOnly
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Virtual
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Virtual
   qualifiedName:
@@ -647,7 +647,7 @@ items:
     content:
       CSharp: Virtual
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Override
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Override
   qualifiedName:
@@ -661,7 +661,7 @@ items:
     content:
       CSharp: Override
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Sealed
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Sealed
   qualifiedName:
@@ -675,7 +675,7 @@ items:
     content:
       CSharp: Sealed
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Const
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Const
   qualifiedName:
@@ -689,7 +689,7 @@ items:
     content:
       CSharp: Const
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.WithEvents
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: WithEvents
   qualifiedName:
@@ -703,7 +703,7 @@ items:
     content:
       CSharp: WithEvents
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Partial
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Partial
   qualifiedName:
@@ -717,7 +717,7 @@ items:
     content:
       CSharp: Partial
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Async
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Async
   qualifiedName:
@@ -731,7 +731,7 @@ items:
     content:
       CSharp: Async
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseOr(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_BitwiseOr
   qualifiedName:
@@ -749,16 +749,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_BitwiseAnd(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_BitwiseAnd
   qualifiedName:
@@ -776,16 +776,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Addition(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Addition
   qualifiedName:
@@ -803,16 +803,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Subtraction(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Subtraction
   qualifiedName:
@@ -830,16 +830,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -857,11 +857,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -883,7 +883,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.GetHashCode
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -900,7 +900,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Equality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -918,16 +918,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.op_Inequality(Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -945,16 +945,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.ToString
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
   name:
     CSharp: ToString
   qualifiedName:

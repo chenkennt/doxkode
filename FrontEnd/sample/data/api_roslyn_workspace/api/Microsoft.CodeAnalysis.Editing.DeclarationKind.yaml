@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.DeclarationKind
-href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
 name:
   CSharp: DeclarationKind
 qualifiedName:
@@ -8,7 +8,7 @@ type: Enum
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/DeclarationKind.cs
   startLine: 7
 syntax:
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.None
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     content:
       CSharp: None
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.CompilationUnit
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -54,7 +54,7 @@ items:
     content:
       CSharp: CompilationUnit
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Class
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Class
   qualifiedName:
@@ -68,7 +68,7 @@ items:
     content:
       CSharp: Class
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Struct
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Struct
   qualifiedName:
@@ -82,7 +82,7 @@ items:
     content:
       CSharp: Struct
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Interface
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Interface
   qualifiedName:
@@ -96,7 +96,7 @@ items:
     content:
       CSharp: Interface
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Enum
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Enum
   qualifiedName:
@@ -110,7 +110,7 @@ items:
     content:
       CSharp: Enum
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Delegate
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Delegate
   qualifiedName:
@@ -124,7 +124,7 @@ items:
     content:
       CSharp: Delegate
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Method
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Method
   qualifiedName:
@@ -138,7 +138,7 @@ items:
     content:
       CSharp: Method
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Operator
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Operator
   qualifiedName:
@@ -152,7 +152,7 @@ items:
     content:
       CSharp: Operator
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.ConversionOperator
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: ConversionOperator
   qualifiedName:
@@ -166,7 +166,7 @@ items:
     content:
       CSharp: ConversionOperator
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Constructor
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Constructor
   qualifiedName:
@@ -180,7 +180,7 @@ items:
     content:
       CSharp: Constructor
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Destructor
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Destructor
   qualifiedName:
@@ -194,7 +194,7 @@ items:
     content:
       CSharp: Destructor
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Field
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Field
   qualifiedName:
@@ -208,7 +208,7 @@ items:
     content:
       CSharp: Field
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Property
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Property
   qualifiedName:
@@ -222,7 +222,7 @@ items:
     content:
       CSharp: Property
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Indexer
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Indexer
   qualifiedName:
@@ -236,7 +236,7 @@ items:
     content:
       CSharp: Indexer
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.EnumMember
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: EnumMember
   qualifiedName:
@@ -250,7 +250,7 @@ items:
     content:
       CSharp: EnumMember
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Event
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Event
   qualifiedName:
@@ -264,7 +264,7 @@ items:
     content:
       CSharp: Event
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.CustomEvent
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: CustomEvent
   qualifiedName:
@@ -278,7 +278,7 @@ items:
     content:
       CSharp: CustomEvent
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Namespace
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Namespace
   qualifiedName:
@@ -292,7 +292,7 @@ items:
     content:
       CSharp: Namespace
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.NamespaceImport
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: NamespaceImport
   qualifiedName:
@@ -306,7 +306,7 @@ items:
     content:
       CSharp: NamespaceImport
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Parameter
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Parameter
   qualifiedName:
@@ -320,7 +320,7 @@ items:
     content:
       CSharp: Parameter
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Variable
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Variable
   qualifiedName:
@@ -334,7 +334,7 @@ items:
     content:
       CSharp: Variable
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.Attribute
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -348,7 +348,7 @@ items:
     content:
       CSharp: Attribute
 - id: Microsoft.CodeAnalysis.Editing.DeclarationKind.LambdaExpression
-  href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+  href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
   name:
     CSharp: LambdaExpression
   qualifiedName:

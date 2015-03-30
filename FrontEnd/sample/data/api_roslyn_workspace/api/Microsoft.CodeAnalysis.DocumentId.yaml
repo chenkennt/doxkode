@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.DocumentId
-href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+href: Microsoft.CodeAnalysis.DocumentId.yaml
 name:
   CSharp: DocumentId
 qualifiedName:
@@ -8,11 +8,11 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentId.cs
   startLine: 15
 summary: >-
-  An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](api/Microsoft.CodeAnalysis.Document.yaml) across versions of the
+  An identifier that can be used to retrieve the same [Microsoft.CodeAnalysis.Document](Microsoft.CodeAnalysis.Document.yaml) across versions of the
 
   workspace.
 syntax:
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DocumentId.ProjectId
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -42,9 +42,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.DocumentId.Id
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -64,7 +64,7 @@ items:
         name: System.Guid
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentId.CreateNewId(Microsoft.CodeAnalysis.ProjectId,System.String)
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: CreateNewId
   qualifiedName:
@@ -74,7 +74,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentId.cs
     startLine: 42
-  summary: Creates a new [Microsoft.CodeAnalysis.DocumentId](api/Microsoft.CodeAnalysis.DocumentId.yaml) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.DocumentId](Microsoft.CodeAnalysis.DocumentId.yaml) instance.
   syntax:
     content:
       CSharp: public static DocumentId CreateNewId(ProjectId projectId, string debugName = null)
@@ -83,7 +83,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
       description: The project id this document id is relative to.
     - id: debugName
       type:
@@ -94,7 +94,7 @@ items:
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.DocumentId.ToString
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -111,7 +111,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.DocumentId.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -133,7 +133,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DocumentId.Equals(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -151,11 +151,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DocumentId.GetHashCode
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -172,7 +172,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.DocumentId.op_Equality(Microsoft.CodeAnalysis.DocumentId,Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -190,16 +190,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DocumentId.op_Inequality(Microsoft.CodeAnalysis.DocumentId,Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+  href: Microsoft.CodeAnalysis.DocumentId.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -217,11 +217,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean

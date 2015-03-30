@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
-href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
 name:
   CSharp: SyntaxGenerator
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
   startLine: 20
 summary: >-
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultRemoveOptions
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultRemoveOptions
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     content:
       CSharp: DefaultRemoveOptions
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Workspace,System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGenerator
   qualifiedName:
@@ -50,7 +50,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 27
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the specified language.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the specified language.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Workspace workspace, string language)
@@ -59,7 +59,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
     - id: language
       type:
         id: System.String
@@ -68,7 +68,7 @@ items:
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGenerator(Microsoft.CodeAnalysis.Document)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGenerator
   qualifiedName:
@@ -78,7 +78,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 35
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the language corresponding to the document.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) for the language corresponding to the document.
   syntax:
     content:
       CSharp: public static SyntaxGenerator GetGenerator(Document document)
@@ -87,11 +87,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
     return:
       id: SyntaxGenerator
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclaration
   qualifiedName:
@@ -114,7 +114,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationKind)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclaration
   qualifiedName:
@@ -138,11 +138,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationKind
         name: DeclarationKind
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -176,7 +176,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: initializer
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -185,7 +185,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -208,7 +208,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FieldDeclaration(Microsoft.CodeAnalysis.IFieldSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FieldDeclaration
   qualifiedName:
@@ -236,7 +236,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MethodDeclaration
   qualifiedName:
@@ -280,7 +280,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: statements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -289,7 +289,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MethodDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MethodDeclaration
   qualifiedName:
@@ -317,7 +317,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.RefKind)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ParameterDeclaration
   qualifiedName:
@@ -355,7 +355,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ParameterDeclaration(Microsoft.CodeAnalysis.IParameterSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ParameterDeclaration
   qualifiedName:
@@ -383,7 +383,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: PropertyDeclaration
   qualifiedName:
@@ -417,7 +417,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -431,7 +431,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.PropertyDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: PropertyDeclaration
   qualifiedName:
@@ -464,7 +464,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IndexerDeclaration
   qualifiedName:
@@ -498,7 +498,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: getAccessorStatements
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -512,7 +512,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IndexerDeclaration(Microsoft.CodeAnalysis.IPropertySymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IndexerDeclaration
   qualifiedName:
@@ -545,7 +545,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EventDeclaration
   qualifiedName:
@@ -579,11 +579,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EventDeclaration(Microsoft.CodeAnalysis.IEventSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EventDeclaration
   qualifiedName:
@@ -606,7 +606,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CustomEventDeclaration
   qualifiedName:
@@ -640,7 +640,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: parameters
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -659,7 +659,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CustomEventDeclaration(Microsoft.CodeAnalysis.IEventSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CustomEventDeclaration
   qualifiedName:
@@ -692,7 +692,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConstructorDeclaration
   qualifiedName:
@@ -726,7 +726,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: baseConstructorArguments
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -740,7 +740,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConstructorDeclaration(Microsoft.CodeAnalysis.IMethodSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConstructorDeclaration
   qualifiedName:
@@ -773,7 +773,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPublicInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AsPublicInterfaceImplementation
   qualifiedName:
@@ -804,7 +804,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AsPrivateInterfaceImplementation(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AsPrivateInterfaceImplementation
   qualifiedName:
@@ -835,7 +835,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ClassDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ClassDeclaration
   qualifiedName:
@@ -869,7 +869,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: baseType
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -888,7 +888,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.StructDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: StructDeclaration
   qualifiedName:
@@ -922,7 +922,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: interfaceTypes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -936,7 +936,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InterfaceDeclaration(System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.Accessibility,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InterfaceDeclaration
   qualifiedName:
@@ -979,7 +979,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumDeclaration(System.String,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EnumDeclaration
   qualifiedName:
@@ -1008,7 +1008,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     - id: members
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1017,7 +1017,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.EnumMember(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: EnumMember
   qualifiedName:
@@ -1045,7 +1045,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DelegateDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DelegateDeclaration
   qualifiedName:
@@ -1089,11 +1089,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Declaration(Microsoft.CodeAnalysis.ISymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Declaration
   qualifiedName:
@@ -1116,7 +1116,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeParameters
   qualifiedName:
@@ -1144,7 +1144,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeParameters(Microsoft.CodeAnalysis.SyntaxNode,System.String[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeParameters
   qualifiedName:
@@ -1172,7 +1172,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1201,7 +1201,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
-        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
+        href: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -1210,7 +1210,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1239,7 +1239,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
-        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
+        href: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Array
@@ -1248,7 +1248,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeConstraint(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeConstraint
   qualifiedName:
@@ -1281,7 +1281,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1311,7 +1311,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1341,7 +1341,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1371,7 +1371,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceDeclaration(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceDeclaration
   qualifiedName:
@@ -1401,7 +1401,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -1425,7 +1425,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CompilationUnit(Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CompilationUnit
   qualifiedName:
@@ -1449,7 +1449,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceImportDeclaration
   qualifiedName:
@@ -1473,7 +1473,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NamespaceImportDeclaration(System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NamespaceImportDeclaration
   qualifiedName:
@@ -1497,7 +1497,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1525,7 +1525,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1553,7 +1553,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1581,7 +1581,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Attribute(Microsoft.CodeAnalysis.AttributeData)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Attribute
   qualifiedName:
@@ -1604,7 +1604,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AttributeArgument
   qualifiedName:
@@ -1632,7 +1632,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AttributeArgument(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AttributeArgument
   qualifiedName:
@@ -1655,7 +1655,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveAllAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveAllAttributes
   qualifiedName:
@@ -1678,7 +1678,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAttributes
   qualifiedName:
@@ -1701,7 +1701,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributes
   qualifiedName:
@@ -1734,7 +1734,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributes
   qualifiedName:
@@ -1767,7 +1767,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributes
   qualifiedName:
@@ -1795,7 +1795,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributes
   qualifiedName:
@@ -1823,7 +1823,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetReturnAttributes
   qualifiedName:
@@ -1846,7 +1846,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertReturnAttributes
   qualifiedName:
@@ -1879,7 +1879,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertReturnAttributes
   qualifiedName:
@@ -1912,7 +1912,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddReturnAttributes
   qualifiedName:
@@ -1940,7 +1940,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddReturnAttributes(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddReturnAttributes
   qualifiedName:
@@ -1968,7 +1968,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAttributeArguments
   qualifiedName:
@@ -1991,7 +1991,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertAttributeArguments
   qualifiedName:
@@ -2024,7 +2024,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddAttributeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddAttributeArguments
   qualifiedName:
@@ -2052,7 +2052,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetNamespaceImports
   qualifiedName:
@@ -2075,7 +2075,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNamespaceImports
   qualifiedName:
@@ -2108,7 +2108,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNamespaceImports
   qualifiedName:
@@ -2141,7 +2141,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddNamespaceImports
   qualifiedName:
@@ -2169,7 +2169,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddNamespaceImports(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddNamespaceImports
   qualifiedName:
@@ -2197,7 +2197,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetMembers(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -2220,7 +2220,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertMembers
   qualifiedName:
@@ -2253,7 +2253,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertMembers
   qualifiedName:
@@ -2286,7 +2286,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddMembers
   qualifiedName:
@@ -2314,7 +2314,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddMembers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddMembers
   qualifiedName:
@@ -2342,7 +2342,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetAccessibility(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetAccessibility
   qualifiedName:
@@ -2365,7 +2365,7 @@ items:
     return:
       id: Accessibility
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithAccessibility(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithAccessibility
   qualifiedName:
@@ -2393,7 +2393,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetModifiers(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetModifiers
   qualifiedName:
@@ -2403,7 +2403,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 833
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationModifiers GetModifiers(SyntaxNode declaration);
@@ -2416,7 +2416,7 @@ items:
     return:
       id: DeclarationModifiers
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithModifiers(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithModifiers
   qualifiedName:
@@ -2426,7 +2426,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 838
-  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
+  summary: Changes the [Microsoft.CodeAnalysis.Editing.DeclarationModifiers](Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract SyntaxNode WithModifiers(SyntaxNode declaration, DeclarationModifiers modifiers);
@@ -2440,11 +2440,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetDeclarationKind(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetDeclarationKind
   qualifiedName:
@@ -2454,7 +2454,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxGenerator.cs
     startLine: 843
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](api/Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml) for the declaration.
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DeclarationKind](Microsoft.CodeAnalysis.Editing.DeclarationKind.yaml) for the declaration.
   syntax:
     content:
       CSharp: public abstract DeclarationKind GetDeclarationKind(SyntaxNode declaration);
@@ -2467,7 +2467,7 @@ items:
     return:
       id: DeclarationKind
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetName(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetName
   qualifiedName:
@@ -2490,7 +2490,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithName(Microsoft.CodeAnalysis.SyntaxNode,System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithName
   qualifiedName:
@@ -2518,7 +2518,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetType(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetType
   qualifiedName:
@@ -2541,7 +2541,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithType
   qualifiedName:
@@ -2569,7 +2569,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetParameters(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetParameters
   qualifiedName:
@@ -2592,7 +2592,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertParameters
   qualifiedName:
@@ -2625,7 +2625,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddParameters(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddParameters
   qualifiedName:
@@ -2653,7 +2653,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetExpression
   qualifiedName:
@@ -2676,7 +2676,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithExpression
   qualifiedName:
@@ -2704,7 +2704,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetStatements
   qualifiedName:
@@ -2727,7 +2727,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithStatements
   qualifiedName:
@@ -2755,7 +2755,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetGetAccessorStatements
   qualifiedName:
@@ -2778,7 +2778,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithGetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithGetAccessorStatements
   qualifiedName:
@@ -2806,7 +2806,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetSetAccessorStatements
   qualifiedName:
@@ -2829,7 +2829,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithSetAccessorStatements(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithSetAccessorStatements
   qualifiedName:
@@ -2857,7 +2857,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GetBaseAndInterfaceTypes(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GetBaseAndInterfaceTypes
   qualifiedName:
@@ -2880,7 +2880,7 @@ items:
     return:
       id: IReadOnlyList
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddBaseType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddBaseType
   qualifiedName:
@@ -2908,7 +2908,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddInterfaceType(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddInterfaceType
   qualifiedName:
@@ -2936,7 +2936,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -2969,7 +2969,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNodesBefore
   qualifiedName:
@@ -3002,7 +3002,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InsertNodesAfter(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InsertNodesAfter
   qualifiedName:
@@ -3035,7 +3035,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveNode
   qualifiedName:
@@ -3063,7 +3063,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.RemoveNodes(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: RemoveNodes
   qualifiedName:
@@ -3091,7 +3091,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExpressionStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ExpressionStatement
   qualifiedName:
@@ -3118,7 +3118,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReturnStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReturnStatement
   qualifiedName:
@@ -3142,7 +3142,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThrowStatement(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ThrowStatement
   qualifiedName:
@@ -3166,7 +3166,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3204,7 +3204,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(Microsoft.CodeAnalysis.ITypeSymbol,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3242,7 +3242,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LocalDeclarationStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LocalDeclarationStatement
   qualifiedName:
@@ -3270,7 +3270,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IfStatement
   qualifiedName:
@@ -3306,7 +3306,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IfStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IfStatement
   qualifiedName:
@@ -3342,7 +3342,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchStatement
   qualifiedName:
@@ -3370,7 +3370,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchStatement
   qualifiedName:
@@ -3398,7 +3398,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchSection
   qualifiedName:
@@ -3426,7 +3426,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SwitchSection(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SwitchSection
   qualifiedName:
@@ -3454,7 +3454,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultSwitchSection(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultSwitchSection
   qualifiedName:
@@ -3477,7 +3477,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ExitSwitchStatement
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ExitSwitchStatement
   qualifiedName:
@@ -3495,7 +3495,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3533,7 +3533,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3566,7 +3566,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.UsingStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: UsingStatement
   qualifiedName:
@@ -3594,7 +3594,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCatchStatement
   qualifiedName:
@@ -3627,7 +3627,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCatchStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCatchStatement
   qualifiedName:
@@ -3655,7 +3655,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryFinallyStatement(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryFinallyStatement
   qualifiedName:
@@ -3683,7 +3683,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.SyntaxNode,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CatchClause
   qualifiedName:
@@ -3716,7 +3716,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CatchClause(Microsoft.CodeAnalysis.ITypeSymbol,System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CatchClause
   qualifiedName:
@@ -3749,7 +3749,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WhileStatement(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WhileStatement
   qualifiedName:
@@ -3777,7 +3777,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultExpression
   qualifiedName:
@@ -3803,7 +3803,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DefaultExpression(Microsoft.CodeAnalysis.ITypeSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DefaultExpression
   qualifiedName:
@@ -3825,7 +3825,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ThisExpression
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ThisExpression
   qualifiedName:
@@ -3843,7 +3843,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BaseExpression
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BaseExpression
   qualifiedName:
@@ -3861,7 +3861,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LiteralExpression(System.Object)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LiteralExpression
   qualifiedName:
@@ -3884,7 +3884,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.FalseLiteralExpression
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: FalseLiteralExpression
   qualifiedName:
@@ -3902,7 +3902,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TrueLiteralExpression
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TrueLiteralExpression
   qualifiedName:
@@ -3920,7 +3920,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullLiteralExpression
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NullLiteralExpression
   qualifiedName:
@@ -3938,7 +3938,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IdentifierName(System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IdentifierName
   qualifiedName:
@@ -3961,7 +3961,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -3989,7 +3989,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ITypeSymbol})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4017,7 +4017,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4045,7 +4045,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GenericName(System.String,Microsoft.CodeAnalysis.ITypeSymbol[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GenericName
   qualifiedName:
@@ -4073,7 +4073,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeArguments
   qualifiedName:
@@ -4104,7 +4104,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.WithTypeArguments(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: WithTypeArguments
   qualifiedName:
@@ -4135,7 +4135,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.QualifiedName(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: QualifiedName
   qualifiedName:
@@ -4168,7 +4168,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DottedName(System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DottedName
   qualifiedName:
@@ -4191,7 +4191,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.ITypeSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TypeExpression
   qualifiedName:
@@ -4214,7 +4214,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TypeExpression(Microsoft.CodeAnalysis.SpecialType)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TypeExpression
   qualifiedName:
@@ -4237,7 +4237,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ArrayTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ArrayTypeExpression
   qualifiedName:
@@ -4260,7 +4260,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NullableTypeExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NullableTypeExpression
   qualifiedName:
@@ -4283,7 +4283,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AssignmentStatement(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AssignmentStatement
   qualifiedName:
@@ -4311,7 +4311,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueEqualsExpression
   qualifiedName:
@@ -4339,7 +4339,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReferenceEqualsExpression
   qualifiedName:
@@ -4367,7 +4367,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueNotEqualsExpression
   qualifiedName:
@@ -4395,7 +4395,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ReferenceNotEqualsExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ReferenceNotEqualsExpression
   qualifiedName:
@@ -4423,7 +4423,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LessThanExpression
   qualifiedName:
@@ -4451,7 +4451,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LessThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LessThanOrEqualExpression
   qualifiedName:
@@ -4479,7 +4479,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GreaterThanExpression
   qualifiedName:
@@ -4507,7 +4507,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.GreaterThanOrEqualExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: GreaterThanOrEqualExpression
   qualifiedName:
@@ -4535,7 +4535,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.NegateExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: NegateExpression
   qualifiedName:
@@ -4558,7 +4558,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.AddExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: AddExpression
   qualifiedName:
@@ -4586,7 +4586,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.SubtractExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: SubtractExpression
   qualifiedName:
@@ -4614,7 +4614,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MultiplyExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MultiplyExpression
   qualifiedName:
@@ -4642,7 +4642,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.DivideExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: DivideExpression
   qualifiedName:
@@ -4670,7 +4670,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ModuloExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ModuloExpression
   qualifiedName:
@@ -4698,7 +4698,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseAndExpression
   qualifiedName:
@@ -4726,7 +4726,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseOrExpression
   qualifiedName:
@@ -4754,7 +4754,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.BitwiseNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: BitwiseNotExpression
   qualifiedName:
@@ -4777,7 +4777,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalAndExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalAndExpression
   qualifiedName:
@@ -4805,7 +4805,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalOrExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalOrExpression
   qualifiedName:
@@ -4833,7 +4833,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LogicalNotExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LogicalNotExpression
   qualifiedName:
@@ -4856,7 +4856,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConditionalExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConditionalExpression
   qualifiedName:
@@ -4889,7 +4889,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CoalesceExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CoalesceExpression
   qualifiedName:
@@ -4917,7 +4917,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MemberAccessExpression
   qualifiedName:
@@ -4945,7 +4945,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.MemberAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: MemberAccessExpression
   qualifiedName:
@@ -4973,7 +4973,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5001,7 +5001,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5029,7 +5029,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5057,7 +5057,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ObjectCreationExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ObjectCreationExpression
   qualifiedName:
@@ -5085,7 +5085,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InvocationExpression
   qualifiedName:
@@ -5113,7 +5113,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.InvocationExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: InvocationExpression
   qualifiedName:
@@ -5141,7 +5141,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(System.String,Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5174,7 +5174,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.RefKind,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5202,7 +5202,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.Argument(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: Argument
   qualifiedName:
@@ -5225,7 +5225,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ElementAccessExpression
   qualifiedName:
@@ -5253,7 +5253,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ElementAccessExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode[])
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ElementAccessExpression
   qualifiedName:
@@ -5281,7 +5281,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IsTypeExpression
   qualifiedName:
@@ -5309,7 +5309,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.IsTypeExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: IsTypeExpression
   qualifiedName:
@@ -5337,7 +5337,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCastExpression
   qualifiedName:
@@ -5365,7 +5365,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.TryCastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ITypeSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: TryCastExpression
   qualifiedName:
@@ -5393,7 +5393,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CastExpression
   qualifiedName:
@@ -5421,7 +5421,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.CastExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: CastExpression
   qualifiedName:
@@ -5449,7 +5449,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConvertExpression
   qualifiedName:
@@ -5477,7 +5477,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ConvertExpression(Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ConvertExpression
   qualifiedName:
@@ -5505,7 +5505,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5533,7 +5533,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5561,7 +5561,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5589,7 +5589,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5617,7 +5617,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5645,7 +5645,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5673,7 +5673,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5701,7 +5701,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.String,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5729,7 +5729,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5752,7 +5752,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5775,7 +5775,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.ValueReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: ValueReturningLambdaExpression
   qualifiedName:
@@ -5798,7 +5798,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.VoidReturningLambdaExpression(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: VoidReturningLambdaExpression
   qualifiedName:
@@ -5821,7 +5821,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LambdaParameter
   qualifiedName:
@@ -5849,7 +5849,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.LambdaParameter(System.String,Microsoft.CodeAnalysis.ITypeSymbol)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
   name:
     CSharp: LambdaParameter
   qualifiedName:

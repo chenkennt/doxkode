@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders
-href: api/Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml
+href: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml
 name:
   CSharp: WellKnownFixAllProviders
 qualifiedName:
@@ -8,10 +8,10 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/WellKnownFixAllProviders.cs
   startLine: 9
-summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
+summary: Contains well known implementations of [Microsoft.CodeAnalysis.CodeFixes.FixAllProvider](Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml).
 syntax:
   content:
     CSharp: public static class WellKnownFixAllProviders
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.BatchFixer
-  href: api/Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml
   name:
     CSharp: BatchFixer
   qualifiedName:
@@ -40,7 +40,7 @@ items:
 
     This fixer supports fixes for the following fix all scopes:
 
-    [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml), [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml) and [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml).
+    [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml), [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml) and [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml).
   syntax:
     content:
       CSharp: BatchFixer

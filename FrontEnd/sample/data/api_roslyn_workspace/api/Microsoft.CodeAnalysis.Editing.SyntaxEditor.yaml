@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
-href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
 name:
   CSharp: SyntaxEditor
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
   startLine: 14
 summary: An editor for making changes to a syntax tree.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Workspace)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: SyntaxEditor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Workspace)
   qualifiedName:
@@ -31,7 +31,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 23
-  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Editing.SyntaxEditor](Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) instance.
   syntax:
     content:
       CSharp: public SyntaxEditor(SyntaxNode root, Workspace workspace)
@@ -45,11 +45,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.OriginalRoot
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: OriginalRoot
   qualifiedName:
@@ -59,7 +59,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 43
-  summary: The [Microsoft.CodeAnalysis.SyntaxNode](#) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) was constructed.
+  summary: The [Microsoft.CodeAnalysis.SyntaxNode](#) that was specified when the [Microsoft.CodeAnalysis.Editing.SyntaxEditor](Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml) was constructed.
   syntax:
     content:
       CSharp: public SyntaxNode OriginalRoot { get; }
@@ -70,7 +70,7 @@ items:
         name: SyntaxNode
         href: Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.Generator
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: Generator
   qualifiedName:
@@ -80,7 +80,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SyntaxEditor.cs
     startLine: 51
-  summary: A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](#)'s.
+  summary: A [Microsoft.CodeAnalysis.Editing.SyntaxGenerator](Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml) to use to create and change [Microsoft.CodeAnalysis.SyntaxNode](#)'s.
   syntax:
     content:
       CSharp: public SyntaxGenerator Generator { get; }
@@ -89,9 +89,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxGenerator
         name: SyntaxGenerator
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxGenerator.yaml
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.GetChangedRoot
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: GetChangedRoot
   qualifiedName:
@@ -109,7 +109,7 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.TrackNode(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: TrackNode
   qualifiedName:
@@ -132,7 +132,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.RemoveNode(Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: RemoveNode
   qualifiedName:
@@ -156,7 +156,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.SyntaxGenerator,Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -189,7 +189,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.ReplaceNode(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -219,7 +219,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertBefore(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: InsertBefore
   qualifiedName:
@@ -249,7 +249,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertBefore(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: InsertBefore
   qualifiedName:
@@ -279,7 +279,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertAfter(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: InsertAfter
   qualifiedName:
@@ -309,7 +309,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditor.InsertAfter(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
   name:
     CSharp: InsertAfter
   qualifiedName:

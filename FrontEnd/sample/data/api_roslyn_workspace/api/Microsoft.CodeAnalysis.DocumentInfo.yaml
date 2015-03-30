@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.DocumentInfo
-href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+href: Microsoft.CodeAnalysis.DocumentInfo.yaml
 name:
   CSharp: DocumentInfo
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/DocumentInfo.cs
   startLine: 13
 summary: A class that represents all the arguments necessary to create a new document instance.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DocumentInfo.Id
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -40,9 +40,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
 - id: Microsoft.CodeAnalysis.DocumentInfo.Name
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -63,7 +63,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.Folders
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Folders
   qualifiedName:
@@ -84,7 +84,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.SourceCodeKind
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: SourceCodeKind
   qualifiedName:
@@ -105,7 +105,7 @@ items:
         name: SourceCodeKind
         href: Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.DocumentInfo.FilePath
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -126,7 +126,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.TextLoader
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: TextLoader
   qualifiedName:
@@ -145,9 +145,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+        href: Microsoft.CodeAnalysis.TextLoader.yaml
 - id: Microsoft.CodeAnalysis.DocumentInfo.IsGenerated
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: IsGenerated
   qualifiedName:
@@ -168,7 +168,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.DocumentInfo.Create(Microsoft.CodeAnalysis.DocumentId,System.String,System.Collections.Generic.IEnumerable{System.String},Microsoft.CodeAnalysis.SourceCodeKind,Microsoft.CodeAnalysis.TextLoader,System.String,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -186,7 +186,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: name
       type:
         id: System.String
@@ -206,7 +206,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+        href: Microsoft.CodeAnalysis.TextLoader.yaml
     - id: filePath
       type:
         id: System.String
@@ -220,7 +220,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithId(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithId
   qualifiedName:
@@ -238,11 +238,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithName(System.String)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithName
   qualifiedName:
@@ -264,7 +264,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFolders(System.Collections.Generic.IEnumerable{System.String})
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithFolders
   qualifiedName:
@@ -286,7 +286,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithSourceCodeKind(Microsoft.CodeAnalysis.SourceCodeKind)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithSourceCodeKind
   qualifiedName:
@@ -308,7 +308,7 @@ items:
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithTextLoader(Microsoft.CodeAnalysis.TextLoader)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithTextLoader
   qualifiedName:
@@ -326,11 +326,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TextLoader
         name: TextLoader
-        href: api/Microsoft.CodeAnalysis.TextLoader.yaml
+        href: Microsoft.CodeAnalysis.TextLoader.yaml
     return:
       id: DocumentInfo
 - id: Microsoft.CodeAnalysis.DocumentInfo.WithFilePath(System.String)
-  href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+  href: Microsoft.CodeAnalysis.DocumentInfo.yaml
   name:
     CSharp: WithFilePath
   qualifiedName:

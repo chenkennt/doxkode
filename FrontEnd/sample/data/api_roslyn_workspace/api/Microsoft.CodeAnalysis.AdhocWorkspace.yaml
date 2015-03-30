@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.AdhocWorkspace
-href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
 name:
   CSharp: AdhocWorkspace
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/AdhocWorkspace.cs
   startLine: 16
 summary: >-
@@ -24,10 +24,10 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace
   name: Workspace
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
 items:
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor(Microsoft.CodeAnalysis.Host.HostServices,System.String)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AdhocWorkspace(Microsoft.CodeAnalysis.Host.HostServices,System.String)
   qualifiedName:
@@ -45,7 +45,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostServices
         name: HostServices
-        href: api/Microsoft.CodeAnalysis.Host.HostServices.yaml
+        href: Microsoft.CodeAnalysis.Host.HostServices.yaml
     - id: workspaceKind
       type:
         id: System.String
@@ -54,7 +54,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.#ctor
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AdhocWorkspace
   qualifiedName:
@@ -71,7 +71,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: CanApplyChange
   qualifiedName:
@@ -89,11 +89,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ApplyChangesKind
         name: ApplyChangesKind
-        href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+        href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CanOpenDocuments
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: CanOpenDocuments
   qualifiedName:
@@ -113,7 +113,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.ClearSolution
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: ClearSolution
   qualifiedName:
@@ -131,7 +131,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddSolution(Microsoft.CodeAnalysis.SolutionInfo)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddSolution
   qualifiedName:
@@ -150,11 +150,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionInfo
         name: SolutionInfo
-        href: api/Microsoft.CodeAnalysis.SolutionInfo.yaml
+        href: Microsoft.CodeAnalysis.SolutionInfo.yaml
     return:
       id: Solution
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(System.String,System.String)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddProject
   qualifiedName:
@@ -182,7 +182,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProject(Microsoft.CodeAnalysis.ProjectInfo)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddProject
   qualifiedName:
@@ -201,11 +201,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectInfo
         name: ProjectInfo
-        href: api/Microsoft.CodeAnalysis.ProjectInfo.yaml
+        href: Microsoft.CodeAnalysis.ProjectInfo.yaml
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddProjects(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectInfo})
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddProjects
   qualifiedName:
@@ -228,7 +228,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.ProjectId,System.String,Microsoft.CodeAnalysis.Text.SourceText)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -247,7 +247,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
     - id: name
       type:
         id: System.String
@@ -261,7 +261,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.AddDocument(Microsoft.CodeAnalysis.DocumentInfo)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -280,11 +280,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentInfo
         name: DocumentInfo
-        href: api/Microsoft.CodeAnalysis.DocumentInfo.yaml
+        href: Microsoft.CodeAnalysis.DocumentInfo.yaml
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: OpenDocument
   qualifiedName:
@@ -303,7 +303,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -312,7 +312,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CloseDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: CloseDocument
   qualifiedName:
@@ -331,11 +331,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: OpenAdditionalDocument
   qualifiedName:
@@ -354,7 +354,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -363,7 +363,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.AdhocWorkspace.CloseAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.AdhocWorkspace.yaml
+  href: Microsoft.CodeAnalysis.AdhocWorkspace.yaml
   name:
     CSharp: CloseAdditionalDocument
   qualifiedName:
@@ -382,6 +382,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions
-href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
 name:
   CSharp: SimplificationOptions
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Simplification/SimplificationOption.cs
   startLine: 9
 summary: This Object contains the options that needs to be drilled down to the Simplification Engine
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferAliasToQualification
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferAliasToQualification
   qualifiedName:
@@ -39,7 +39,7 @@ items:
     content:
       CSharp: PreferAliasToQualification
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferOmittingModuleNamesInQualification
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferOmittingModuleNamesInQualification
   qualifiedName:
@@ -57,7 +57,7 @@ items:
     content:
       CSharp: PreferOmittingModuleNamesInQualification
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferImplicitTypeInference
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferImplicitTypeInference
   qualifiedName:
@@ -72,7 +72,7 @@ items:
     content:
       CSharp: PreferImplicitTypeInference
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferImplicitTypeInLocalDeclaration
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferImplicitTypeInLocalDeclaration
   qualifiedName:
@@ -87,7 +87,7 @@ items:
     content:
       CSharp: PreferImplicitTypeInLocalDeclaration
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.AllowSimplificationToGenericType
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: AllowSimplificationToGenericType
   qualifiedName:
@@ -102,7 +102,7 @@ items:
     content:
       CSharp: AllowSimplificationToGenericType
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.AllowSimplificationToBaseType
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: AllowSimplificationToBaseType
   qualifiedName:
@@ -117,7 +117,7 @@ items:
     content:
       CSharp: AllowSimplificationToBaseType
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.QualifyMemberAccessWithThisOrMe
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: QualifyMemberAccessWithThisOrMe
   qualifiedName:
@@ -132,7 +132,7 @@ items:
     content:
       CSharp: QualifyMemberAccessWithThisOrMe
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferIntrinsicPredefinedTypeKeywordInDeclaration
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferIntrinsicPredefinedTypeKeywordInDeclaration
   qualifiedName:
@@ -147,7 +147,7 @@ items:
     content:
       CSharp: PreferIntrinsicPredefinedTypeKeywordInDeclaration
 - id: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.PreferIntrinsicPredefinedTypeKeywordInMemberAccess
-  href: api/Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
+  href: Microsoft.CodeAnalysis.Simplification.SimplificationOptions.yaml
   name:
     CSharp: PreferIntrinsicPredefinedTypeKeywordInMemberAccess
   qualifiedName:

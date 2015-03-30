@@ -1,5 +1,5 @@
 id: Roslyn.Utilities
-href: api/Roslyn.Utilities.yaml
+href: Roslyn.Utilities.yaml
 name:
   CSharp: Utilities
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Compilers/Core/SharedCollections/ObjectPool`1.cs
   startLine: 20

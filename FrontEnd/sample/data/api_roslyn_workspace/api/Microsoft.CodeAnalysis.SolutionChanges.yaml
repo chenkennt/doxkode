@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.SolutionChanges
-href: api/Microsoft.CodeAnalysis.SolutionChanges.yaml
+href: Microsoft.CodeAnalysis.SolutionChanges.yaml
 name:
   CSharp: SolutionChanges
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionChanges.cs
   startLine: 8
 syntax:
@@ -23,7 +23,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SolutionChanges.GetAddedProjects
-  href: api/Microsoft.CodeAnalysis.SolutionChanges.yaml
+  href: Microsoft.CodeAnalysis.SolutionChanges.yaml
   name:
     CSharp: GetAddedProjects
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SolutionChanges.GetProjectChanges
-  href: api/Microsoft.CodeAnalysis.SolutionChanges.yaml
+  href: Microsoft.CodeAnalysis.SolutionChanges.yaml
   name:
     CSharp: GetProjectChanges
   qualifiedName:
@@ -57,7 +57,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SolutionChanges.GetRemovedProjects
-  href: api/Microsoft.CodeAnalysis.SolutionChanges.yaml
+  href: Microsoft.CodeAnalysis.SolutionChanges.yaml
   name:
     CSharp: GetRemovedProjects
   qualifiedName:

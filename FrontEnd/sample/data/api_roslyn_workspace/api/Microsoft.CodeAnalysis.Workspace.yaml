@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Workspace
-href: api/Microsoft.CodeAnalysis.Workspace.yaml
+href: Microsoft.CodeAnalysis.Workspace.yaml
 name:
   CSharp: Workspace
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Workspace_Registration.cs
   startLine: 9
 summary: >-
@@ -20,7 +20,7 @@ summary: >-
 
   as the workspace is updated either from live interactions in the environment or via call to the
 
-  workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api/Microsoft.CodeAnalysis.Workspace.yaml) method.
+  workspace's [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](Microsoft.CodeAnalysis.Workspace.yaml) method.
 syntax:
   content:
     CSharp: public abstract partial class Workspace
@@ -30,7 +30,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Workspace.Services
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: Services
   qualifiedName:
@@ -49,9 +49,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
         name: HostWorkspaceServices
-        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+        href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
 - id: Microsoft.CodeAnalysis.Workspace.Kind
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: Kind
   qualifiedName:
@@ -64,7 +64,7 @@ items:
   summary: >-
     The kind of the workspace.
 
-    This is generally [Microsoft.CodeAnalysis.WorkspaceKind.Host](api/Microsoft.CodeAnalysis.WorkspaceKind.yaml) if originating from the host environment, but may be
+    This is generally [Microsoft.CodeAnalysis.WorkspaceKind.Host](Microsoft.CodeAnalysis.WorkspaceKind.yaml) if originating from the host environment, but may be
 
     any other name used for a specific kind of workspace.
   syntax:
@@ -77,7 +77,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace.CurrentSolution
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: CurrentSolution
   qualifiedName:
@@ -100,7 +100,7 @@ items:
 
     This property may change as the workspace reacts to changes in the environment or
 
-    after [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api/Microsoft.CodeAnalysis.Workspace.yaml) is called.
+    after [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](Microsoft.CodeAnalysis.Workspace.yaml) is called.
   syntax:
     content:
       CSharp: public Solution CurrentSolution { get; }
@@ -109,9 +109,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.Workspace.Options
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: Options
   qualifiedName:
@@ -130,9 +130,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Options.OptionSet
         name: OptionSet
-        href: api/Microsoft.CodeAnalysis.Options.OptionSet.yaml
+        href: Microsoft.CodeAnalysis.Options.OptionSet.yaml
 - id: Microsoft.CodeAnalysis.Workspace.Dispose
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: Dispose
   qualifiedName:
@@ -150,7 +150,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: CanApplyChange
   qualifiedName:
@@ -160,7 +160,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Workspace.cs
     startLine: 808
-  summary: Determines if the specific kind of change is supported by the [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](api/Microsoft.CodeAnalysis.Workspace.yaml) method.
+  summary: Determines if the specific kind of change is supported by the [Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)](Microsoft.CodeAnalysis.Workspace.yaml) method.
   syntax:
     content:
       CSharp: public virtual bool CanApplyChange(ApplyChangesKind feature)
@@ -169,11 +169,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ApplyChangesKind
         name: ApplyChangesKind
-        href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+        href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.TryApplyChanges(Microsoft.CodeAnalysis.Solution)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: TryApplyChanges
   qualifiedName:
@@ -192,7 +192,7 @@ items:
 
     has been updated since the solution was obtained from the workspace, then this method returns false. This method
 
-    will still throw if the solution contains changes that are not supported according to the [Microsoft.CodeAnalysis.Workspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)](api/Microsoft.CodeAnalysis.Workspace.yaml)
+    will still throw if the solution contains changes that are not supported according to the [Microsoft.CodeAnalysis.Workspace.CanApplyChange(Microsoft.CodeAnalysis.ApplyChangesKind)](Microsoft.CodeAnalysis.Workspace.yaml)
 
     method.
   syntax:
@@ -203,11 +203,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.CanOpenDocuments
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: CanOpenDocuments
   qualifiedName:
@@ -228,7 +228,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Workspace.OpenDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: OpenDocument
   qualifiedName:
@@ -247,7 +247,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -256,7 +256,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.CloseDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: CloseDocument
   qualifiedName:
@@ -275,11 +275,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.OpenAdditionalDocument(Microsoft.CodeAnalysis.DocumentId,System.Boolean)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: OpenAdditionalDocument
   qualifiedName:
@@ -298,7 +298,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: activate
       type:
         id: System.Boolean
@@ -307,7 +307,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.CloseAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: CloseAdditionalDocument
   qualifiedName:
@@ -326,11 +326,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.IsDocumentOpen(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: IsDocumentOpen
   qualifiedName:
@@ -349,11 +349,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.GetOpenDocumentIds(Microsoft.CodeAnalysis.ProjectId)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: GetOpenDocumentIds
   qualifiedName:
@@ -372,11 +372,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Workspace.GetRelatedDocumentIds(Microsoft.CodeAnalysis.Text.SourceTextContainer)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: GetRelatedDocumentIds
   qualifiedName:
@@ -402,7 +402,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Workspace.GetDocumentIdInCurrentContext(Microsoft.CodeAnalysis.Text.SourceTextContainer)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: GetDocumentIdInCurrentContext
   qualifiedName:
@@ -428,7 +428,7 @@ items:
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.Workspace.WorkspaceChanged
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: WorkspaceChanged
   qualifiedName:
@@ -443,7 +443,7 @@ items:
     content:
       CSharp: public event EventHandler<WorkspaceChangeEventArgs> WorkspaceChanged { add { _eventMap.AddEventHandler(WorkspaceChangeEventName, value); } remove { _eventMap.RemoveEventHandler(WorkspaceChangeEventName, value); } }
 - id: Microsoft.CodeAnalysis.Workspace.add_WorkspaceChanged(System.EventHandler{Microsoft.CodeAnalysis.WorkspaceChangeEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: add_WorkspaceChanged
   qualifiedName:
@@ -465,7 +465,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.remove_WorkspaceChanged(System.EventHandler{Microsoft.CodeAnalysis.WorkspaceChangeEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: remove_WorkspaceChanged
   qualifiedName:
@@ -487,7 +487,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.WorkspaceFailed
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: WorkspaceFailed
   qualifiedName:
@@ -505,7 +505,7 @@ items:
     content:
       CSharp: public event EventHandler<WorkspaceDiagnosticEventArgs> WorkspaceFailed { add { _eventMap.AddEventHandler(WorkspaceFailedEventName, value); } remove { _eventMap.RemoveEventHandler(WorkspaceFailedEventName, value); } }
 - id: Microsoft.CodeAnalysis.Workspace.add_WorkspaceFailed(System.EventHandler{Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: add_WorkspaceFailed
   qualifiedName:
@@ -527,7 +527,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.remove_WorkspaceFailed(System.EventHandler{Microsoft.CodeAnalysis.WorkspaceDiagnosticEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: remove_WorkspaceFailed
   qualifiedName:
@@ -549,7 +549,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.DocumentOpened
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: DocumentOpened
   qualifiedName:
@@ -564,7 +564,7 @@ items:
     content:
       CSharp: public event EventHandler<DocumentEventArgs> DocumentOpened { add { _eventMap.AddEventHandler(DocumentOpenedEventName, value); } remove { _eventMap.RemoveEventHandler(DocumentOpenedEventName, value); } }
 - id: Microsoft.CodeAnalysis.Workspace.add_DocumentOpened(System.EventHandler{Microsoft.CodeAnalysis.DocumentEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: add_DocumentOpened
   qualifiedName:
@@ -586,7 +586,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.remove_DocumentOpened(System.EventHandler{Microsoft.CodeAnalysis.DocumentEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: remove_DocumentOpened
   qualifiedName:
@@ -608,7 +608,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.DocumentClosed
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: DocumentClosed
   qualifiedName:
@@ -623,7 +623,7 @@ items:
     content:
       CSharp: public event EventHandler<DocumentEventArgs> DocumentClosed { add { _eventMap.AddEventHandler(DocumentClosedEventName, value); } remove { _eventMap.RemoveEventHandler(DocumentClosedEventName, value); } }
 - id: Microsoft.CodeAnalysis.Workspace.add_DocumentClosed(System.EventHandler{Microsoft.CodeAnalysis.DocumentEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: add_DocumentClosed
   qualifiedName:
@@ -645,7 +645,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.remove_DocumentClosed(System.EventHandler{Microsoft.CodeAnalysis.DocumentEventArgs})
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: remove_DocumentClosed
   qualifiedName:
@@ -667,7 +667,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Workspace.TryGetWorkspace(Microsoft.CodeAnalysis.Text.SourceTextContainer,Microsoft.CodeAnalysis.Workspace@)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: TryGetWorkspace
   qualifiedName:
@@ -691,11 +691,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Workspace.GetWorkspaceRegistration(Microsoft.CodeAnalysis.Text.SourceTextContainer)
-  href: api/Microsoft.CodeAnalysis.Workspace.yaml
+  href: Microsoft.CodeAnalysis.Workspace.yaml
   name:
     CSharp: GetWorkspaceRegistration
   qualifiedName:
@@ -705,7 +705,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Workspace_Registration.cs
     startLine: 66
-  summary: Returns a [Microsoft.CodeAnalysis.WorkspaceRegistration](api/Microsoft.CodeAnalysis.WorkspaceRegistration.yaml) for a given text container.
+  summary: Returns a [Microsoft.CodeAnalysis.WorkspaceRegistration](Microsoft.CodeAnalysis.WorkspaceRegistration.yaml) for a given text container.
   syntax:
     content:
       CSharp: public static WorkspaceRegistration GetWorkspaceRegistration(SourceTextContainer textContainer)

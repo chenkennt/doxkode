@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeGeneration
-href: api/Microsoft.CodeAnalysis.CodeGeneration.yaml
+href: Microsoft.CodeAnalysis.CodeGeneration.yaml
 name:
   CSharp: CodeGeneration
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeGeneration/TypeGenerator.cs
   startLine: 6
