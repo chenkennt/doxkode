@@ -226,6 +226,16 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
       return action(array[0]);
     }
   };
+
+  this.getHref = function($scope, current, url){
+    if (this.isAbsoluteUrl(url)) return url;
+    if (!url) return '';
+
+    var path = this.getAbsolutePath(current, url);
+    var pathInfo = this.getPathInfoFromContentPath($scope.navbar, path);
+
+    return '#' + this.getContentUrl(pathInfo);
+  };
 }
 
 angular.module('docInitService', ['docConstants', 'docUtility'])
