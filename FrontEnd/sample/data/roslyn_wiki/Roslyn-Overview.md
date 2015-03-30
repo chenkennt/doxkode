@@ -48,7 +48,7 @@ The .NET Compiler Platform (“Roslyn”) exposes the C# and Visual Basic compil
 Each phase of this pipeline is now a separate component. First the parse phase, where source is tokenized and parsed into syntax that follows the language grammar. Second the declaration phase, where declarations from source and imported metadata are analyzed to form named symbols. Next the bind phase, where identifiers in the code are matched to symbols. Finally, the emit phase, where all the information built up by the compiler is emitted as an assembly.
 
 ![compiler pipeline api](images/compiler-pipeline-api.png)
- 
+
 Corresponding to each of those phases, an object model is surfaced that allows access to the information at that phase. The parsing phase is exposed as a syntax tree, the declaration phase as a hierarchical symbol table, the binding phase as a model that exposes the result of the compiler’s semantic analysis and the emit phase as an API that produces IL byte codes.
 
 ![compiler api lang service](images/compiler-pipeline-lang-svc.png)
@@ -61,7 +61,7 @@ To ensure that the public Compiler APIs are sufficient for building world-class 
 
 The .NET Compiler Platform (“Roslyn”) consists of two main layers of APIs – the Compiler APIs and Workspaces APIs.
 
-![api layers](images/alex-api-layers.png)
+![api layers](../alex-api-layers.png)
 
 #### Compiler APIs
 
@@ -92,31 +92,31 @@ The most fundamental data structure exposed by the Compiler APIs is the syntax t
 
 ### Syntax Trees
 
-Syntax trees are the primary structure used for compilation, code analysis, binding, refactoring, IDE features, and code generation. No part of the source code is understood without it first being identified and categorized into one of many well-known structural language elements. 
+Syntax trees are the primary structure used for compilation, code analysis, binding, refactoring, IDE features, and code generation. No part of the source code is understood without it first being identified and categorized into one of many well-known structural language elements.
 
-Syntax trees have three key attributes. The first attribute is that syntax trees hold all the source information in full fidelity. This means that the syntax tree contains every piece of information found in the source text, every grammatical construct, every lexical token, and everything else in between including whitespace, comments, and preprocessor directives. For example, each literal mentioned in the source is represented exactly as it was typed. The syntax trees also represent errors in source code when the program is incomplete or malformed, by representing skipped or missing tokens in the syntax tree.  
+Syntax trees have three key attributes. The first attribute is that syntax trees hold all the source information in full fidelity. This means that the syntax tree contains every piece of information found in the source text, every grammatical construct, every lexical token, and everything else in between including whitespace, comments, and preprocessor directives. For example, each literal mentioned in the source is represented exactly as it was typed. The syntax trees also represent errors in source code when the program is incomplete or malformed, by representing skipped or missing tokens in the syntax tree.
 
-This enables the second attribute of syntax trees. A syntax tree obtained from the parser is completely round-trippable back to the text it was parsed from. From any syntax node, it is possible to get the text representation of the sub-tree rooted at that node. This means that syntax trees can be used as a way to construct and edit source text. By creating a tree you have by implication created the equivalent text, and by editing a syntax tree, making a new tree out of changes to an existing tree, you have effectively edited the text. 
+This enables the second attribute of syntax trees. A syntax tree obtained from the parser is completely round-trippable back to the text it was parsed from. From any syntax node, it is possible to get the text representation of the sub-tree rooted at that node. This means that syntax trees can be used as a way to construct and edit source text. By creating a tree you have by implication created the equivalent text, and by editing a syntax tree, making a new tree out of changes to an existing tree, you have effectively edited the text.
 
 The third attribute of syntax trees is that they are immutable and thread-safe.  This means that after a tree is obtained, it is a snapshot of the current state of the code, and never changes. This allows multiple users to interact with the same syntax tree at the same time in different threads without locking or duplication. Because the trees are immutable and no modifications can be made directly to a tree, factory methods help create and modify syntax trees by creating additional snapshots of the tree. The trees are efficient in the way they reuse underlying nodes, so the new version can be rebuilt fast and with little extra memory.
 
-A syntax tree is literally a tree data structure, where non-terminal structural elements parent other elements. Each syntax tree is made up of nodes, tokens, and trivia.  
+A syntax tree is literally a tree data structure, where non-terminal structural elements parent other elements. Each syntax tree is made up of nodes, tokens, and trivia.
 
 ### Syntax Nodes
 
-Syntax nodes are one of the primary elements of syntax trees. These nodes represent syntactic constructs such as declarations, statements, clauses, and expressions. Each category of syntax nodes is represented by a separate class derived from SyntaxNode. The set of node classes is not extensible. 
+Syntax nodes are one of the primary elements of syntax trees. These nodes represent syntactic constructs such as declarations, statements, clauses, and expressions. Each category of syntax nodes is represented by a separate class derived from SyntaxNode. The set of node classes is not extensible.
 
-All syntax nodes are non-terminal nodes in the syntax tree, which means they always have other nodes and tokens as children. As a child of another node, each node has a parent node that can be accessed through the Parent property. Because nodes and trees are immutable, the parent of a node never changes. The root of the tree has a null parent.  
+All syntax nodes are non-terminal nodes in the syntax tree, which means they always have other nodes and tokens as children. As a child of another node, each node has a parent node that can be accessed through the Parent property. Because nodes and trees are immutable, the parent of a node never changes. The root of the tree has a null parent.
 
-Each node has a ChildNodes method, which returns a list of child nodes in sequential order based on its position in the source text. This list does not contain tokens. Each node also has a collection of Descendant methods - such as DescendantNodes, DescendantTokens, or DescendantTrivia - that represent a list of all the nodes, tokens, or trivia that exist in the sub-tree rooted by that node.  
+Each node has a ChildNodes method, which returns a list of child nodes in sequential order based on its position in the source text. This list does not contain tokens. Each node also has a collection of Descendant methods - such as DescendantNodes, DescendantTokens, or DescendantTrivia - that represent a list of all the nodes, tokens, or trivia that exist in the sub-tree rooted by that node.
 
 In addition, each syntax node subclass exposes all the same children through strongly typed properties. For example, a BinaryExpressionSyntax node class has three additional properties specific to binary operators: Left, OperatorToken, and Right. The type of Left and Right is ExpressionSyntax, and the type of OperatorToken is SyntaxToken.
 
-Some syntax nodes have optional children. For example, an IfStatementSyntax has an optional ElseClauseSyntax. If the child is not present, the property returns null. 
+Some syntax nodes have optional children. For example, an IfStatementSyntax has an optional ElseClauseSyntax. If the child is not present, the property returns null.
 
 ### Syntax Tokens
 
-Syntax tokens are the terminals of the language grammar, representing the smallest syntactic fragments of the code. They are never parents of other nodes or tokens. Syntax tokens consist of keywords, identifiers, literals, and punctuation. 
+Syntax tokens are the terminals of the language grammar, representing the smallest syntactic fragments of the code. They are never parents of other nodes or tokens. Syntax tokens consist of keywords, identifiers, literals, and punctuation.
 
 For efficiency purposes, the SyntaxToken type is a CLR value type. Therefore, unlike syntax nodes, there is only one structure for all kinds of tokens with a mix of properties that have meaning depending on the kind of token that is being represented.
 
@@ -126,7 +126,7 @@ The ValueText property tells you the same information as the Value property; how
 
 ### Syntax Trivia
 
-Syntax trivia represent the parts of the source text that are largely insignificant for normal understanding of the code, such as whitespace, comments, and preprocessor directives. 
+Syntax trivia represent the parts of the source text that are largely insignificant for normal understanding of the code, such as whitespace, comments, and preprocessor directives.
 
 Because trivia are not part of the normal language syntax and can appear anywhere between any two tokens, they are not included in the syntax tree as a child of a node. Yet, because they are important when implementing a feature like refactoring and to maintain full fidelity with the source text, they do exist as part of the syntax tree.
 
@@ -140,13 +140,13 @@ Like syntax tokens, trivia are value types. The single SyntaxTrivia type is used
 
 Each node, token, or trivia knows its position within the source text and the number of characters it consists of. A text position is represented as a 32-bit integer, which is a zero-based Unicode character index. A TextSpan object is the beginning position and a count of characters, both represented as integers. If TextSpan has a zero length, it refers to a location between two characters.
 
-Each node has two TextSpan properties: Span and FullSpan. 
+Each node has two TextSpan properties: Span and FullSpan.
 
 The Span property is the text span from the start of the first token in the node’s sub-tree to the end of the last token. This span does not include any leading or trailing trivia.
 
 The FullSpan property is the text span that includes the node’s normal span, plus the span of any leading or trailing trivia.
 
-For example: 
+For example:
 
 ``` csharp
       if (x > 3)
@@ -162,7 +162,7 @@ The statement node inside the block has a span indicated by the single vertical 
 
 Each node, token, or trivia has a RawKind property, of type System.Int32, that identifies the exact syntax element represented. This value can be cast to a language-specific enumeration; each language, C# or VB, has a single SyntaxKind enumeration that lists all the possible nodes, tokens, and trivia elements in the grammar. This conversion can be done automatically by accessing the CSharpSyntaxKind() or VisualBasicSyntaxKind() extension methods.
 
-The RawKind property allows for easy disambiguation of syntax node types that share the same node class. For tokens and trivia, this property is the only way to distinguish one type of element from another. 
+The RawKind property allows for easy disambiguation of syntax node types that share the same node class. For tokens and trivia, this property is the only way to distinguish one type of element from another.
 
 For example, a single BinaryExpressionSyntax class has Left, OperatorToken, and Right as children. The Kind property distinguishes whether it is an AddExpression, SubtractExpression, or MultiplyExpression kind of syntax node.
 
@@ -178,7 +178,7 @@ Second, the parser may skip tokens until it finds one where it can continue pars
 
 Syntax trees represent the lexical and syntactic structure of source code. Although this information alone is enough to describe all the declarations and logic in the source, it is not enough information to identify what is being referenced.
 
-For example, many types, fields, methods, and local variables with the same name may be spread throughout the source. Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules. 
+For example, many types, fields, methods, and local variables with the same name may be spread throughout the source. Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules.
 
 There are program elements represented in source code, and programs can also refer to previously compiled libraries, packaged in assembly files. Although no source code is available for assemblies and therefore no syntax nodes or trees, programs can still refer to elements inside them.
 
@@ -186,14 +186,14 @@ In addition to a syntactic model of the source code, a semantic model encapsulat
 
 ### Compilation
 
-A compilation is a representation of everything needed to compile a C# or Visual Basic program, which includes all the assembly references, compiler options, and source files. 
+A compilation is a representation of everything needed to compile a C# or Visual Basic program, which includes all the assembly references, compiler options, and source files.
 
 Because all this information is in one place, the elements contained in the source code can be described in more detail. The compilation represents each declared type, member, or variable as a symbol. The compilation contains a variety of methods that help you find and relate the symbols that have either been declared in the source code or imported as metadata from an assembly.
 
 Similar to syntax trees, compilations are immutable. After you create a compilation, it cannot be changed by you or anyone else you might be sharing it with. However, you can create a new compilation from an existing compilation, specifying a change as you do so. For example, you might create a compilation that is the same in every way as an existing compilation, except it may include an additional source file or assembly reference.
 
 ### Symbols
-A symbol represents a distinct element declared by the source code or imported from an assembly as metadata. Every namespace, type, method, property, field, event, parameter, or local variable is represented by a symbol. 
+A symbol represents a distinct element declared by the source code or imported from an assembly as metadata. Every namespace, type, method, property, field, event, parameter, or local variable is represented by a symbol.
 
 A variety of methods and properties on the Compilation type help you find symbols. For example, you can find a symbol for a declared type by its common metadata name. You can also access the entire symbol table as a tree of symbols rooted by the global namespace.
 
@@ -205,7 +205,7 @@ Symbols are similar in concept to the CLR type system as represented by the Syst
 
 ### Semantic Model
 
-A semantic model represents all the semantic information for a single source file. You can use it to discover the following: 
+A semantic model represents all the semantic information for a single source file. You can use it to discover the following:
 
 * The symbols referenced at a specific location in source.
 * The resultant type of any expression.
@@ -215,21 +215,21 @@ A semantic model represents all the semantic information for a single source fil
 
 ## Working with a Workspace
 
-The Workspaces layer is the starting point for doing code analysis and refactoring over entire solutions. Within this layer, the Workspace API assists you in organizing all the information about the projects in a solution into single object model, offering you direct access to compiler layer object models like source text, syntax trees, semantic models and compilations without needing to parse files, configure options or manage inter-project dependencies. 
+The Workspaces layer is the starting point for doing code analysis and refactoring over entire solutions. Within this layer, the Workspace API assists you in organizing all the information about the projects in a solution into single object model, offering you direct access to compiler layer object models like source text, syntax trees, semantic models and compilations without needing to parse files, configure options or manage inter-project dependencies.
 
 Host environments, like an IDE, provide a workspace for you corresponding to the open solution. It is also possible to use this model outside of an IDE by simply loading a solution file.
 
 ### Workspace
 
-A workspace is an active representation of your solution as a collection of projects, each with a collection of documents. A workspace is typically tied to a host environment that is constantly changing as a user types or manipulates properties. 
+A workspace is an active representation of your solution as a collection of projects, each with a collection of documents. A workspace is typically tied to a host environment that is constantly changing as a user types or manipulates properties.
 
-The workspace provides access to the current model of the solution. When a change in the host environment occurs, the workspace fires corresponding events, and the CurrentSolution property is updated. For example, when the user types in a text editor corresponding to one of the source documents, the workspace uses an event to signal that the overall model of the solution has changed and which document was modified. You can then react to those changes by analyzing the new model for correctness, highlighting areas of significance, or by making a suggestion for a code change. 
+The workspace provides access to the current model of the solution. When a change in the host environment occurs, the workspace fires corresponding events, and the CurrentSolution property is updated. For example, when the user types in a text editor corresponding to one of the source documents, the workspace uses an event to signal that the overall model of the solution has changed and which document was modified. You can then react to those changes by analyzing the new model for correctness, highlighting areas of significance, or by making a suggestion for a code change.
 
 You can also create stand-alone workspaces that are disconnected from the host environment or used in an application that has no host environment.
 
 ### Solutions, Projects, Documents
 
-Although a workspace may change every time a key is pressed, you can work with the model of the solution in isolation. 
+Although a workspace may change every time a key is pressed, you can work with the model of the solution in isolation.
 
 A solution is an immutable model of the projects and documents. This means that the model can be shared without locking or duplication. After you obtain a solution instance from the Workspace’s CurrentSolution property, that instance will never change. However, like with syntax trees and compilations, you can modify solutions by constructing new instances based on existing solutions and specific changes. To get the workspace to reflect your changes, you must explicitly apply the changed solution back to the workspace.
 
@@ -243,5 +243,5 @@ The following diagram is a representation of how the Workspace relates to the ho
 
 ## Summary
 
-The .NET Compiler Platform (“Roslyn”) exposes a set of Compiler APIs and Workspaces APIs that provides rich information about your source code and that has full fidelity with the C# and Visual Basic languages.  The transition to compilers as a platform dramatically lowers the barrier to entry for creating code focused tools and applications. It creates many opportunities for innovation in areas such as meta-programming, code generation and transformation, interactive use of the C# and VB languages, and embedding of C# and VB in domain specific languages.  
+The .NET Compiler Platform (“Roslyn”) exposes a set of Compiler APIs and Workspaces APIs that provides rich information about your source code and that has full fidelity with the C# and Visual Basic languages.  The transition to compilers as a platform dramatically lowers the barrier to entry for creating code focused tools and applications. It creates many opportunities for innovation in areas such as meta-programming, code generation and transformation, interactive use of the C# and VB languages, and embedding of C# and VB in domain specific languages.
 

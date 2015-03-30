@@ -143,8 +143,8 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     if (!pathInfo) return '';
     var current = this.getContentFilePath(pathInfo);
     var sep = '/',
-      currentList = current.split(sep),
-      relList = relative.split(sep),
+      currentList = docUtility.cleanArray(current.split(sep)),
+      relList = docUtility.cleanArray(relative.split(sep)),
       fileName = currentList.pop();
 
     var relPath = currentList;
