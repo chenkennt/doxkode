@@ -209,6 +209,8 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
           $scope.toc = toc;
         });
       }
+    }else{
+      $scope.toc = undefined;
     }
   };
 

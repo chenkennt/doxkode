@@ -60,7 +60,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
 
       // Href relative to current toc file
       $scope.GetTocHref = function(relativeUrl) {
-        if (!relativeUrl || !$scope.toc) return '#';
+        if (!relativeUrl || !$scope.toc) return '';
 
         var path = docService.getAbsolutePath($scope.toc.path, relativeUrl);
         var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
