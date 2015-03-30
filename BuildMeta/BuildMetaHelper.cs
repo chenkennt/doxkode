@@ -434,7 +434,7 @@ namespace DocAsCode.BuildMeta
             // 3. generate each item's yaml
             foreach (var item in viewModel.MemberYamlViewModelList)
             {
-                string itemFilepath = Path.Combine(folder, item.Href);
+                string itemFilepath = Path.Combine(folder, apiFolder, item.Href);
                 Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
                 using (StreamWriter sw = new StreamWriter(itemFilepath))
                 {

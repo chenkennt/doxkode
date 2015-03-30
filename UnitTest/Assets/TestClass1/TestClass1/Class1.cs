@@ -3,17 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace Microsoft.DevDiv.Build.TestLibraryA
-{
-    public partial class TestLibraryA
-    {
-        public enum ColorType { Red, Blue }
-    }
-}
+// partial class will override one other randomly
+// namespace Microsoft.DevDiv.Build.TestLibraryA
+// {
+//    /// <summary>
+//    /// This is *partial* libraryA
+//    /// </summary>
+//    public partial class TestLibraryA
+//    {
+//        public enum ColorType { Red, Blue }
+//    }
+// }
 
 namespace Microsoft.DevDiv.Build.TestLibraryB
 {
-    public class TestLibraryB : Microsoft.DevDiv.Build.TestLibraryA.ISurface
+    public class TestLibraryB : ISurface
     {
         // Fields
         private long c = 0;
@@ -55,30 +59,24 @@ namespace Microsoft.DevDiv.Build.TestLibraryB
         }
     }
 
-    // visibility public & abstract false
+    /// <summary>
+    /// This is the struct: visibility public & abstract false
+    /// </summary>
     public struct TestPublicStruct
     {
     }
 
-    // visibility assembly (internal)
+
+    /// <summary>
+    /// This is the struct: visibility assembly (internal)
+    /// </summary>
     internal struct TestInternalStruct
     {
     }
 
-    public class testClassStruct
-    {
-        // visibility family (protected)
-        protected struct TestProtectedStruct
-        {
-        }
-
-        // visibility private
-        private struct TestPrivateStruct
-        {
-        }
-    }
-
-    // serializable true
+    /// <summary>
+    /// This is a struct with serializable true
+    /// </summary>
     [Serializable]
     public struct TestSerializableStruct
     {
