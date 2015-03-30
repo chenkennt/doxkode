@@ -188,7 +188,6 @@
     <ZipItem Include="Templates\Items\Markdown\Markdown.vstemplate">
       <RootPath>Templates\Items\Markdown</RootPath>
     </ZipItem>
-    
     <ZipProject Include="Templates\Projects\DocProject\api\NOTE.md">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
@@ -214,6 +213,10 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\Targets\Microsoft.DocProject.targets">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+      <SubType>Designer</SubType>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\tocpage.tmpl">
       <RootPath>Templates\Projects\DocProject</RootPath>
       <SubType>Designer</SubType>
     </ZipProject>

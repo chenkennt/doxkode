@@ -32,6 +32,7 @@
     <Content Include="template/namespace.tmpl" />
     <Content Include="template/navbar.tmpl" />
     <Content Include="template/toc.tmpl" />
+    <Content Include="template/tocpage.tmpl" />
     <Content Include="articles/about.md" />
     <Content Include="articles/index.md" />
     <Content Include="api/NOTE.md" />
