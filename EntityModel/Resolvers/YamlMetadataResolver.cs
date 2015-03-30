@@ -14,6 +14,7 @@ namespace DocAsCode.EntityModel
             new ResolveLink(),
             new ResolveGitPath(),
             new ResolvePath(),
+            new NormalizeSyntax(),
             new BuildMembers(),
             new BuildToc(),
         };

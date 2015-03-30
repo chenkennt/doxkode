@@ -35,6 +35,7 @@ namespace DocAsCode.BuildMeta
                 var directory = Path.GetDirectoryName(f);
                 if (string.IsNullOrWhiteSpace(directory)) directory = Directory.GetCurrentDirectory();
                 var searchPattern = Path.GetFileName(f);
+                if (!Directory.Exists(directory)) return files;
                 var fileNames = Directory.GetFiles(directory, searchPattern, SearchOption.TopDirectoryOnly);
                 foreach(var item in fileNames)
                 {
@@ -415,11 +416,12 @@ namespace DocAsCode.BuildMeta
         {
             var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers, apiFolder);
             // 1. generate toc.yaml
-            viewModel.TocYamlViewModel.YamlPath = tocFileName;
-            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
+            viewModel.TocYamlViewModel.Href = tocFileName;
+            viewModel.TocYamlListViewModel = viewModel.TocYamlViewModel.Items;
+            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.Href);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
-                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
+                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlListViewModel);
             }
 
             // 2. generate api.yaml
@@ -432,7 +434,7 @@ namespace DocAsCode.BuildMeta
             // 3. generate each item's yaml
             foreach (var item in viewModel.MemberYamlViewModelList)
             {
-                string itemFilepath = Path.Combine(folder, item.YamlPath);
+                string itemFilepath = Path.Combine(folder, apiFolder, item.Href);
                 Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
                 using (StreamWriter sw = new StreamWriter(itemFilepath))
                 {
@@ -450,6 +452,7 @@ namespace DocAsCode.BuildMeta
 
             // Read index
             string indexFilePath = Path.Combine(workingDirectory, indexFileName);
+            if (!File.Exists(indexFilePath)) return null;
             using (StreamReader sr = new StreamReader(indexFilePath))
             {
                 indexViewModel = YamlUtility.Deserializer.Deserialize<Dictionary<string, IndexYamlItemViewModel>>(sr);

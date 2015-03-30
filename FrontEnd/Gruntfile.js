@@ -29,78 +29,33 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
+        'app/js/constants.js',
+        'app/js/util.js',
+        'app/js/directives.js',
         'app/js/bootstrap.js',
         'app/js/pages-data.js',
         'app/js/versions-data.js',
-        'app/js/csplay.js',
+        'app/js/markdown.js',
+        'app/js/service.js',
+        'app/js/errors.js',
+        'app/js/versions.js',
         'app/js/docs.js',
     ],
     ownCssFiles: [
         'app/bower_components/highlightjs/styles/vs.css',
-        // 'app/css/default.css',
-        // 'app/css/docs.css',
-        // 'app/css/prettify-theme.css',
-        // 'app/css/csplay.css',
-        // 'app/css/animations.css',
         'tmp/main.css',
-        // 'app/css/open-sans.css'
     ],
     // REMEMBER:
     // * ORDER OF FILES IS IMPORTANT
     // * ALWAYS ADD EACH FILE TO BOTH minified/unminified SECTIONS!
+    // Move to use CDN instead
     cssFiles: [
-       /* move to use CDN
-        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
-        // 'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
-        // 'app/bower_components/highlightjs/styles/vs.css',
     ],
     jsFiles: [
-    /*  move to use CDN
-        'app/bower_components/jquery/dist/jquery.min.js',
-        'app/bower_components/js-yaml/dist/js-yaml.min.js',
-        'app/bower_components/angular/angular.min.js',
-        'app/bower_components/angular-resource/angular-resource.min.js',
-        'app/bower_components/angular-route/angular-route.min.js',
-        'app/bower_components/angular-cookies/angular-cookies.min.js',
-        'app/bower_components/angular-sanitize/angular-sanitize.min.js',
-        'app/bower_components/angular-touch/angular-touch.min.js',
-        'app/bower_components/angular-animate/angular-animate.min.js',
-        'app/bower_components/marked/lib/marked.js',
-        'app/bower_components/lunr.js/lunr.min.js',
-        // 'app/bower_components/google-code-prettify/src/prettify.js',
-        // 'app/bower_components/google-code-prettify/src/lang-css.js',
-        // 'app/bower_components/highlightjs/highlight.pack.js',
-        // 'app/bower_components/highlight/src/highlight.js',
-        // 'app/bower_components/highlight/src/languages/cs.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
-        'app/js/angular-bootstrap/bootstrap.min.js',*/
     ],
     unminifiedCssFiles: [
-       /* move to use CDN
-         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',*/
-        // 'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
-        // 'app/bower_components/highlightjs/styles/vs.css',
     ],
     unminifiedJsFiles: [
-      /* move to use CDN
-        'app/bower_components/jquery/dist/jquery.min.js',
-        'app/bower_components/js-yaml/dist/js-yaml.min.js',
-        'app/bower_components/angular/angular.min.js',
-        'app/bower_components/angular-resource/angular-resource.min.js',
-        'app/bower_components/angular-route/angular-route.min.js',
-        'app/bower_components/angular-cookies/angular-cookies.min.js',
-        'app/bower_components/angular-sanitize/angular-sanitize.min.js',
-        'app/bower_components/angular-touch/angular-touch.min.js',
-        'app/bower_components/angular-animate/angular-animate.min.js',
-        'app/bower_components/marked/lib/marked.js',
-        'app/bower_components/lunr.js/lunr.min.js',
-        // 'app/bower_components/google-code-prettify/src/prettify.js',
-        // 'app/bower_components/google-code-prettify/src/lang-css.js',
-        // 'app/bower_components/highlight/src/highlight.js',
-        // 'app/bower_components/highlight/src/languages/cs.js',
-        // 'app/bower_components/highlightjs/highlight.pack.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
-        'app/js/angular-bootstrap/bootstrap.min.js',*/
     ],
     cdnCssFiles: [
         "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
@@ -139,6 +94,11 @@ module.exports = function(grunt) {
             eqnull: true,
             browser: true,
             globals: {
+                ace: true,
+                $: true,
+                csplay: true,
+                angular: true,
+                jsyaml: true,
                 jQuery: true,
                 marked: true,
                 google: true,
@@ -169,16 +129,17 @@ module.exports = function(grunt) {
             'app/css/*.less',
             'app/css/**/*.less',
             'app/template/*.tmpl',
-            'app/index.tmpl'
+            'app/index.tmpl',
+            'sample/data/**/*.*',
         ],
-        tasks: ['test' ]
+        tasks: ['jshint']
     },
     connect: {
       test: {
         options: {
           port: 8000,
           hostname: '0.0.0.0',
-          base: './test1/debug',
+          base: './sample/host/debug',
           keepalive: true
         }
       }
@@ -216,6 +177,9 @@ module.exports = function(grunt) {
         dest: 'tmp/<%= pkg.name %>.js'
       }
     },
+    exists: {
+        src: ['<%= ownJsFiles %>', '<%= ownCssFiles %>']
+    },
     cssmin: {
       target: {
           src:  ['<%= ownCssFiles %>'],
@@ -243,24 +207,9 @@ module.exports = function(grunt) {
         release: ['release/'],
        // Unable to clean folder outside current directory:
        // vsix: ['../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/'],
-        test: ['test1/', 'test2/']
+        test: ['sample/host/**']
     },
     copy: {
-        /*main: {
-          files: [
-            // includes files within path
-            {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
-
-            // includes files within path and its sub-directories
-            {expand: true, src: ['path/**'], dest: 'dest/'},
-
-            // makes all src relative to cwd
-            {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
-
-            // flattens results to a single level
-            {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
-          ],
-        },*/
         debug: {
           files: [
             {expand: true,flatten: false, src: ['template/*', 'web.config', 'favicon.ico'], cwd: 'app', dest: 'debug/', filter: 'isFile'},
@@ -292,20 +241,12 @@ module.exports = function(grunt) {
 
           ]
         },
-        test_roslyn: {
+        test: {
           files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: 'test1/debug' },
-            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test1/debug' },
-            {expand: true, src: ['**'], cwd: 'release/', dest: 'test1/release' },
-            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test1/release' },
-          ]
-        },
-        test_simple: {
-          files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: 'test2/debug' },
-            {expand: true, src: ['**'], cwd: 'testdata/test2/', dest: 'test2/debug' },
-            {expand: true, src: ['**'], cwd: 'release/', dest: 'test2/release' },
-            {expand: true, src: ['**'], cwd: 'testdata/test2/', dest: 'test2/release' },
+            {expand: true, src: ['**'], cwd: 'debug/', dest: 'sample/host/debug' },
+            {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/debug' },
+            {expand: true, src: ['**'], cwd: 'release/', dest: 'sample/host/release' },
+            {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/release' },
           ]
         },
         vsix: {
@@ -343,25 +284,28 @@ module.exports = function(grunt) {
         createIndex(grunt, 'debug', 'ref');
     });
 
-    grunt.registerTask('assembleTemplates', 'Adds a script tag with id to each template', function() {
-        var templateString = '';
-        grunt.file.recurse('templates/', function(abspath, rootdir, subdir, filename){
-            var intro = '<script type="text/html" id="/' + rootdir.replace('/','') + '/' + subdir.replace('/','') + '/' + filename.replace('.html','') + '">\n';
-            var content = grunt.file.read(abspath);
-            var outro = '</script>\n';
-            templateString += intro + content + outro;
+    var fs = require('fs');
+    var path = require('path');
+    grunt.registerMultiTask('exists', 'File Existence', function() {
+        grunt.util._.each(this.data, function(files) {
+            files.forEach(function(file){
+                if (!fs.existsSync(file)) {
+                    grunt.fatal("Required file '" + file + "' doesn't exist.");
+                } else {
+                    grunt.log.ok("Verified that required file [" + file + "] exists.");
+                }
+            })
         });
-        grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'less:dev', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
-    grunt.registerTask('debuginline', [ 'assembleTemplates','less:dev', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test_roslyn', 'copy:test_simple', 'watch']);
-    grunt.registerTask('release', [ 'assembleTemplates','less:dev', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
-    grunt.registerTask('releaseinline', [ 'assembleTemplates', 'less:dev','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
-    grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
+    grunt.registerTask('build', ['exists:src', 'less:dev', 'jshint']);
+    grunt.registerTask('debug', [ 'build', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
+    grunt.registerTask('debuginline', [ 'build', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
+    grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
+    grunt.registerTask('releaseinline', [ 'build','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
+    grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
-    grunt.registerTask('server', [ 'debug', 'copy:test_roslyn', 'connect:test' ]);
+    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
 };

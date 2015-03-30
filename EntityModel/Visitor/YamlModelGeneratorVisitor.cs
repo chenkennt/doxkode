@@ -1,11 +1,11 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-
-namespace DocAsCode.EntityModel
+﻿namespace DocAsCode.EntityModel
 {
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+
+    using Microsoft.CodeAnalysis;
+
     public abstract class YamlModelGeneratorVisitor : SymbolVisitor<YamlItemViewModel>
     {
         private YamlItemViewModel parent = new YamlItemViewModel();
@@ -34,6 +34,7 @@ namespace DocAsCode.EntityModel
             
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
+
             return item;
         }
 

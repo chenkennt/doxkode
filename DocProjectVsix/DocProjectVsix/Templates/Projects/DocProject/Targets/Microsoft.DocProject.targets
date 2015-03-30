@@ -8,8 +8,10 @@
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
     <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
     <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
-    <TocFilePath>$(OutputPath)/toc.yaml</TocFilePath>
+    <ApiFolderPath>$(OutputPath)/api/</ApiFolderPath>
+    <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
     <MarkdownIndexFilePath>$(OutputPath)/md.yaml</MarkdownIndexFilePath>
+    <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
   </PropertyGroup>
   <Target Name="Build">
     <CallTarget Targets="Validation" />
@@ -20,7 +22,7 @@
     <CallTarget Targets="IndexMarkdown" />
     <CallTarget Targets="CopyWebsiteFiles" />
 
-    <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
+    <!--<CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />-->
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
   </Target>
   <Target Name="Validation">
@@ -38,9 +40,7 @@
 
   <Target Name="CopyWebsiteFiles">
     <ItemGroup>
-      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
-      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
-      <WebsiteFiles  Include="@(Compile)"  Condition="'%(Extension)' == '.html' or '%(Extension)' == '.js' or '%(Extension)' == '.css' or '%(Extension)' == '.tmpl' or '%(Filename)%(Extension)' == 'web.config'" />
+      <WebsiteFiles Include="@(Content)" />
       <!--
       <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
       <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />
@@ -112,7 +112,7 @@
   <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(IntermediateOutputPath)/obj.list => merge metadata file in $(IntermediateOutputPath) and output the yaml metadata in $(OutputPath) -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(OutputPath)&quot; /target:merge" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(ApiFolderPath)&quot; /target:merge" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -134,7 +134,7 @@
 
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(OutputPath), @(MarkdownFiles) => Markdown Index File -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(OutputPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -162,9 +162,10 @@
 
   <Target Name="PreviewWebsite">
     <ItemGroup>
-      <OutputHomepage Include="$(OutputPath)\index.html" />
+      <OutputHomepage Include="$(OutputPath)" />
     </ItemGroup>
-    <Message Text ="Opening %(OutputHomepage.File)" />
-    <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" Condition="Exists(%(OutputHomepage.File))" />
+    <Message Text ="Opening %(OutputHomepage.FullPath)" />
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="&quot;$(ProgramFiles)/IIS Express/iisexpress&quot; /path:&quot;%(OutputHomepage.FullPath)&quot; /port:$(PreviewPort) /systray:false"/>
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="start http://localhost:$(PreviewPort)"/>
   </Target>
 </Project>

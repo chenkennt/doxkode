@@ -7,6 +7,8 @@ using DocAsCode.Utility;
 
 namespace DocAsCode.EntityModel
 {
+    using Microsoft.CodeAnalysis.CSharp;
+
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
         public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
@@ -132,16 +134,7 @@ namespace DocAsCode.EntityModel
                                 .ToString()
                                 .Trim();
                         }
-                        else
-                        {
-                            Debug.Assert(syntaxNode is DelegateDeclarationSyntax 
-                                || syntaxNode is OperatorDeclarationSyntax 
-                                || syntaxNode is ConversionOperatorDeclarationSyntax);
-                            syntaxStr = syntaxNode
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                        }
+
                         break;
                     };
                 case MemberType.Constructor:
@@ -154,16 +147,7 @@ namespace DocAsCode.EntityModel
                             .ToString()
                             .Trim();
                         }
-                        else
-                        {
-                            var delegateSyntax = syntaxNode as DelegateDeclarationSyntax;
-                            Debug.Assert(delegateSyntax != null);
-                            if (delegateSyntax == null) break;
-                            syntaxStr = delegateSyntax
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                        }
+
                         break;
                     };
                 case MemberType.Field:
@@ -177,44 +161,46 @@ namespace DocAsCode.EntityModel
                             .ToString()
                             .Trim();
                         }
-                        else
-                        {
-                            var memberSyntax = syntaxNode as MemberDeclarationSyntax;
-                            Debug.Assert(memberSyntax != null);
-                            if (memberSyntax == null) break;
-
-                            syntaxStr = memberSyntax
-                                    .NormalizeWhitespace()
-                                    .ToString()
-                                    .Trim();
-                        }
 
                         break;
                     };
                 case MemberType.Event:
                     {
-                        var syntax = syntaxNode as VariableDeclaratorSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
                         break;
                     };
                 case MemberType.Property:
                     {
+                        Debug.Assert(syntaxNode is PropertyDeclarationSyntax || syntaxNode is IndexerDeclarationSyntax);
+
                         var syntax = syntaxNode as PropertyDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
-                        syntaxStr = syntax
-                                    .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                    .ToString()
-                                    .Trim();
+                        if (syntax != null)
+                        {
+                            var accessorList = syntax.AccessorList.Accessors;
+                            var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
+                            SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
+                            syntaxList = syntaxList.AddRange(simplifiedAccessorList);
+                            var simplifiedSyntax = syntax.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
+                        }
+                        else
+                        {
+                            var syntaxIndexer = syntaxNode as IndexerDeclarationSyntax;
+                            if (syntaxIndexer != null)
+                            {
+                                var accessorList = syntaxIndexer.AccessorList.Accessors;
+                                var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
+                                SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
+                                syntaxList = syntaxList.AddRange(simplifiedAccessorList);
+                                var simplifiedSyntax = syntaxIndexer.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                                syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
+                            }
+                        }
+
                         break;
                     };
             }
 
+            if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.NormalizeWhitespace().ToString().Trim();
             return syntaxStr;
         }
     }

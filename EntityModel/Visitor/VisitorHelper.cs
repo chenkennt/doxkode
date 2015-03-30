@@ -1,12 +1,13 @@
-﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using DocAsCode.Utility;
-
-namespace DocAsCode.EntityModel
+﻿namespace DocAsCode.EntityModel
 {
+    using System;
+    using System.Diagnostics;
+    using System.Linq;
+
+    using DocAsCode.Utility;
+
+    using Microsoft.CodeAnalysis;
+
     public static class VisitorHelper
     {
         public static bool CanVisit(ISymbol symbol)
@@ -61,7 +62,7 @@ namespace DocAsCode.EntityModel
             if (string.IsNullOrEmpty(id))
             {
                 var typeSymbol = symbol as ITypeSymbol;
-                if (typeSymbol != null)
+                if (typeSymbol?.BaseType != null)
                 {
                     id = typeSymbol.BaseType.GetDocumentationCommentId();
                 }
@@ -141,7 +142,7 @@ namespace DocAsCode.EntityModel
                 return null;
             }
 
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            var syntaxRef = symbol.DeclaringSyntaxReferences.LastOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
                 return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
@@ -158,6 +159,7 @@ namespace DocAsCode.EntityModel
                 };
 
                 source.Remote = GitUtility.GetGitDetail(source.Path);
+                if (source.Remote != null) source.Path = source.Path.FormatPath(UriKind.Relative, source.Remote.LocalWorkingDirectory);
                 return source;
             }
 

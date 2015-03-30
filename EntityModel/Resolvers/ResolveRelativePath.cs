@@ -18,12 +18,10 @@ namespace DocAsCode.EntityModel
                     {
                         if (current.Type.IsPageLevel())
                         {
-                            current.YamlPath = context.ApiFolder.ForwardSlashCombine(current.Name + Constants.YamlExtension);
-                            current.Href = context.ApiFolder.ForwardSlashCombine(current.Name);
+                            current.Href = current.Name + Constants.YamlExtension;
                         }
                         else
                         {
-                            current.YamlPath = parent.YamlPath;
                             current.Href = parent.Href;
                         }
                     }

@@ -1,9 +1,22 @@
+@header-height:          60px;
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 a{
     color: #6F0101;
+}
+
+img {
+  max-width: 100%;
 }
 .btn{
     color: #6F0101;
 }
+
+.navbar-inverse .navbar-nav>li>a.current{
+  color: #ffffff;
+}
+
 #article-header .article-header-content{
     font-size: 14px;
     padding: 25px 0 25px 0;
@@ -215,7 +228,7 @@ html, body {
 #wrapper {
   min-height:100%;
   position:relative;
-  padding-bottom:120px;
+  padding-bottom:@header-height;
 }
 
 .footer {
@@ -328,13 +341,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-index-group-heading {
-  color:#6F0101;
+  color:#666;
   font-weight:bold;
-  font-size:1.2em;
-  padding:0;
-  margin:0;
-  border-bottom:1px soild #aaa;
-  margin-bottom:5px;
+}
+
+.nav-index-group-heading.current {
+  color:#6F0101;
 }
 
 .nav-index-group .nav-index-listing.current a {
@@ -591,7 +603,7 @@ iframe.example {
 }
 
 .main-body-grid {
-  margin-top:120px;
+  margin-top:@header-height;
   position:relative;
 }
 
@@ -602,7 +614,7 @@ iframe.example {
 
 .main-body-grid > .grid-left {
   position:fixed;
-  top:120px;
+  top:@header-height;
   bottom:0;
   overflow:auto;
 }
@@ -624,7 +636,7 @@ iframe.example {
 
 .main-body-grid .side-navigation {
   position:relative;
-  padding-bottom:120px;
+  padding-bottom:@header-height;
 }
 
 .main-body-grid .side-navigation.ng-hide {
@@ -848,7 +860,7 @@ ul.events > li {
 
 #player {
   width: 100%;
-  height: calc(100% - 50px);
+  height: ~"calc(100% - 50px)";
   text-align: left;
 }
 
