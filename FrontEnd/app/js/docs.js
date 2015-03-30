@@ -17,7 +17,6 @@ angular.module('docsApp', [
   'versions',
   'bootstrap',
   'ui.bootstrap.dropdown',
-  'hc.marked'
 ]);
 
 angular.module('docCtrl', ['docInitService', 'docUtility'])
