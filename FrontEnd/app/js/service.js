@@ -1,4 +1,12 @@
-function docServiceFunction($q, $http, docConstants) {
+function docServiceFunction($q, $http, docConstants, docUtility) {
+
+  function normalizeUrl(url){
+    if (!url) return '';
+    var arr = url.split(/[/|\\]/);
+    var newArray = docUtility.cleanArray(arr);
+    return newArray.join('/');
+  }
+
   this.tocClassApi = function(navItem) {
     return {
       active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
@@ -17,7 +25,7 @@ function docServiceFunction($q, $http, docConstants) {
   this.navClassApi = function(navItem) {
     var navPath;
     if (this.pathInfo) {
-      navPath = this.pathInfo.tocPath || this.pathInfo.contentPath;
+      navPath = normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
     }
 
     return {
@@ -57,7 +65,9 @@ function docServiceFunction($q, $http, docConstants) {
   };
 
   this.getPathInfo = function(currentPath) {
-    if (!currentPath) return currentPath;
+    if (!currentPath) return '';
+    currentPath = normalizeUrl(currentPath);
+
     // seperate toc and content with !
     var index = currentPath.indexOf(docConstants.TocAndFileUrlSeperator);
     if (index < 0) {
@@ -82,7 +92,7 @@ function docServiceFunction($q, $http, docConstants) {
   };
 
   this.getContentFilePath = function(pathInfo) {
-    if (!pathInfo) return pathInfo;
+    if (!pathInfo) return '';
     var path = pathInfo.tocPath ? pathInfo.tocPath + '/' : '';
     path += pathInfo.contentPath ? pathInfo.contentPath : docConstants.TocFile;
     return path;
@@ -99,6 +109,53 @@ function docServiceFunction($q, $http, docConstants) {
     var path = tocPath ? tocPath + docConstants.TocAndFileUrlSeperator : '';
     path += contentPath ? contentPath : docConstants.TocFile;
     return path;
+  };
+
+  this.getPathInfoFromContentPath = function(navList, path){
+    // normalize path
+    path = normalizeUrl(path);
+    if (!navList || navList.length === 0) return {contentPath: path};
+
+    for (var i = 0; i < navList.length; i++){
+      var href = navList[i].href;
+      href = normalizeUrl(href) + '/'; // Append '/'' so that it must be a full path
+      // return the first matched nav
+      if (path.startsWith(href)){
+        return {
+              tocPath: href,
+              tocFilePath: href + docConstants.TocFile,
+              contentPath: path.replace(href, ''),
+            };
+      }
+    }
+
+    return {contentPath: path};
+  };
+
+  this. getAbsolutePath = function(currentUrl, relative){
+    var pathInfo = this.getPathInfo(currentUrl);
+    if (!pathInfo) return '';
+    var current = this.getContentFilePath(pathInfo);
+    var sep = '/',
+      currentList = current.split(sep),
+      relList = relative.split(sep),
+      fileName = currentList.pop();
+
+    var relPath = currentList;
+    while (relList.length > 0){
+      var pathPart = relList.shift();
+      if (pathPart === '..'){
+        if (relPath.length > 0){
+          relPath.pop();
+        }else{
+          throw "invalid path: " + relative;
+        }
+      }else{
+        relPath.push(pathPart);
+      }
+    }
+
+    return relPath.join(sep);
   };
 
   this.asyncFetchIndex = function(path, success, fail) {
@@ -128,6 +185,33 @@ function docServiceFunction($q, $http, docConstants) {
     return deferred.promise;
   };
 
+  this.getTocContent = function($scope, path, tocCache){
+    if (path) {
+      path = normalizeUrl(path);
+      var temp = tocCache.get(path);
+      if (temp) {
+        $scope.toc = temp;
+      } else {
+        $scope.toc = {path: path};
+        this.asyncFetchIndex(path, function(result) {
+          var content = jsyaml.load(result);
+          var toc = {
+            path: path,
+            content: content
+          };
+          tocCache.put(path, toc);
+          $scope.toc = toc;
+        }, function() {
+          var toc = {
+            path: path,
+          };
+          tocCache.put(path, toc);
+          $scope.toc = toc;
+        });
+      }
+    }
+  };
+
   this.getDefaultItem = function(array, action) {
     if (!action) return;
     if (array && array.length > 0) {
@@ -136,5 +220,5 @@ function docServiceFunction($q, $http, docConstants) {
   };
 }
 
-angular.module('docInitService', ['docConstants'])
-  .service('docService', ['$q', '$http', 'docConstants', docServiceFunction]);
+angular.module('docInitService', ['docConstants', 'docUtility'])
+  .service('docService', ['$q', '$http', 'docConstants', 'docUtility', docServiceFunction]);

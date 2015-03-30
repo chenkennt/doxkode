@@ -46,7 +46,6 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       };
 
       $scope.GetDetail = function(e) {
-        console.log(e.target);
         var display = e.target.nextElementSibling.style.display;
         e.target.nextElementSibling.style.display = (display === 'block') ? 'none' : 'block';
       };
@@ -59,10 +58,25 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         return $scope.partialModel.mdContent;
       };
 
+      // Href relative to current toc file
       $scope.GetTocHref = function(relativeUrl) {
+        if (!relativeUrl || !$scope.toc) return '#';
+
+        var path = docService.getAbsolutePath($scope.toc.path, relativeUrl);
+        var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
+
+        return '#' + docService.getContentUrl(pathInfo);
+      };
+
+      // Href relative to current file
+      $scope.GetLinkHref = function(relativeUrl) {
         if (!relativeUrl) return relativeUrl;
-        if (!$scope.toc) return '#' + relativeUrl;
-        return '#' + docService.getContentUrlWithTocAndContentUrl($scope.toc.path, relativeUrl);
+
+        var current = $location.path();
+        var path = docService.getAbsolutePath(current, relativeUrl);
+        var pathInfo = docService.getPathInfoFromContentPath($scope.navbar, path);
+
+        return '#' + docService.getContentUrl(pathInfo);
       };
 
       $scope.$on('$includeContentLoaded', function() {
@@ -97,33 +111,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         if (currentPage) {
           var pathInfo = docService.getPathInfo(currentPage);
           $scope.pathInfo = pathInfo;
-          if (pathInfo.tocPath) {
-            var temp = tocCache.get(pathInfo.tocPath);
-            if (temp) {
-              if (temp.content) $scope.toc = temp;
-            } else {
-              docService.asyncFetchIndex(pathInfo.tocFilePath, function(result) {
-                var content = jsyaml.load(result);
-                var toc = {
-                  path: pathInfo.tocPath,
-                  content: content
-                };
-                tocCache.put(pathInfo.tocPath, toc);
-                $scope.toc = toc;
-                // If the requested content path is not specified, pick the first item in toc.yaml as the default one
-                if (!pathInfo.contentPath && toc.content.count > 0) {
-                  $location.url(toc.path + '!' + toc.content[0].href);
-                }
-              }, function() {
-                tocCache.put(pathInfo.tocPath, {
-                  path: pathInfo.tocPath
-                });
-              });
-            }
-          } else {
-            // hide toc
-            $scope.toc = undefined;
-          }
+          docService.getTocContent($scope, pathInfo.tocFilePath, tocCache);
 
           path = docService.getContentFilePath(pathInfo);
           if (path) {

@@ -228,7 +228,7 @@
                 <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
               </li>
             </ul>
-          </div> 
+          </div>
         </div>
       </section>-->
     </header>
@@ -238,7 +238,7 @@
         <div class="grid-left" ng-if="toc">
           <div class="side-navigation">
             <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-            <div ng-hide="tocLoading" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+            <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
           </div>
         </div>
         <div ng-class="gridClass(toc)">
