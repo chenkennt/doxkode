@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.SolutionId
-href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+href: Microsoft.CodeAnalysis.SolutionId.yaml
 name:
   CSharp: SolutionId
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/SolutionId.cs
   startLine: 13
 summary: An identifier that can be used to refer to the same Solution across versions.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SolutionId.Id
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -42,7 +42,7 @@ items:
         name: System.Guid
         isExternal: true
 - id: Microsoft.CodeAnalysis.SolutionId.CreateNewId(System.String)
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: CreateNewId
   qualifiedName:
@@ -66,7 +66,7 @@ items:
     return:
       id: SolutionId
 - id: Microsoft.CodeAnalysis.SolutionId.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -88,7 +88,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.Equals(Microsoft.CodeAnalysis.SolutionId)
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -106,11 +106,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+        href: Microsoft.CodeAnalysis.SolutionId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.op_Equality(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.SolutionId)
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -128,16 +128,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+        href: Microsoft.CodeAnalysis.SolutionId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+        href: Microsoft.CodeAnalysis.SolutionId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.op_Inequality(Microsoft.CodeAnalysis.SolutionId,Microsoft.CodeAnalysis.SolutionId)
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -155,16 +155,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+        href: Microsoft.CodeAnalysis.SolutionId.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.SolutionId
         name: SolutionId
-        href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+        href: Microsoft.CodeAnalysis.SolutionId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SolutionId.GetHashCode
-  href: api/Microsoft.CodeAnalysis.SolutionId.yaml
+  href: Microsoft.CodeAnalysis.SolutionId.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:

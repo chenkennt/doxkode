@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory
-href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
+href: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
 name:
   CSharp: ILanguageServiceFactory
 qualifiedName:
@@ -8,21 +8,21 @@ type: Interface
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
   startLine: 11
 summary: >-
-  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](api/Microsoft.CodeAnalysis.Host.ILanguageService.yaml).
+  A factory that creates instances of a specific [Microsoft.CodeAnalysis.Host.ILanguageService](Microsoft.CodeAnalysis.Host.ILanguageService.yaml).
 
 
 
-  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](api/Microsoft.CodeAnalysis.Host.ILanguageService.yaml) instances that use other services.
+  Implement a [Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory](Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml) when you want to provide [Microsoft.CodeAnalysis.Host.ILanguageService](Microsoft.CodeAnalysis.Host.ILanguageService.yaml) instances that use other services.
 syntax:
   content:
     CSharp: public interface ILanguageServiceFactory
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.CreateLanguageService(Microsoft.CodeAnalysis.Host.HostLanguageServices)
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
+  href: Microsoft.CodeAnalysis.Host.Mef.ILanguageServiceFactory.yaml
   name:
     CSharp: CreateLanguageService
   qualifiedName:
@@ -32,7 +32,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ILanguageServiceFactory.cs
     startLine: 17
-  summary: Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](api/Microsoft.CodeAnalysis.Host.ILanguageService.yaml) instance.
+  summary: Creates a new [Microsoft.CodeAnalysis.Host.ILanguageService](Microsoft.CodeAnalysis.Host.ILanguageService.yaml) instance.
   syntax:
     content:
       CSharp: ILanguageService CreateLanguageService(HostLanguageServices languageServices);
@@ -41,7 +41,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostLanguageServices
         name: HostLanguageServices
-        href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
-      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml) that can be used to access other services.
+        href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+      description: The [Microsoft.CodeAnalysis.Host.HostLanguageServices](Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml) that can be used to access other services.
     return:
       id: ILanguageService

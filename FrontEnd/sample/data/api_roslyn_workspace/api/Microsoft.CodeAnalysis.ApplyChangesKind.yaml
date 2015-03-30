@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.ApplyChangesKind
-href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
 name:
   CSharp: ApplyChangesKind
 qualifiedName:
@@ -8,7 +8,7 @@ type: Enum
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/ApplyChangesKind.cs
   startLine: 6
 syntax:
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddProject
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddProject
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     content:
       CSharp: AddProject = 0
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveProject
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveProject
   qualifiedName:
@@ -54,7 +54,7 @@ items:
     content:
       CSharp: RemoveProject = 1
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddProjectReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddProjectReference
   qualifiedName:
@@ -68,7 +68,7 @@ items:
     content:
       CSharp: AddProjectReference = 2
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveProjectReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveProjectReference
   qualifiedName:
@@ -82,7 +82,7 @@ items:
     content:
       CSharp: RemoveProjectReference = 3
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddMetadataReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddMetadataReference
   qualifiedName:
@@ -96,7 +96,7 @@ items:
     content:
       CSharp: AddMetadataReference = 4
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveMetadataReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveMetadataReference
   qualifiedName:
@@ -110,7 +110,7 @@ items:
     content:
       CSharp: RemoveMetadataReference = 5
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -124,7 +124,7 @@ items:
     content:
       CSharp: AddDocument = 6
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveDocument
   qualifiedName:
@@ -138,7 +138,7 @@ items:
     content:
       CSharp: RemoveDocument = 7
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeDocument
   qualifiedName:
@@ -152,7 +152,7 @@ items:
     content:
       CSharp: ChangeDocument = 8
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddAnalyzerReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddAnalyzerReference
   qualifiedName:
@@ -166,7 +166,7 @@ items:
     content:
       CSharp: AddAnalyzerReference = 9
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveAnalyzerReference
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveAnalyzerReference
   qualifiedName:
@@ -180,7 +180,7 @@ items:
     content:
       CSharp: RemoveAnalyzerReference = 10
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.AddAdditionalDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -194,7 +194,7 @@ items:
     content:
       CSharp: AddAdditionalDocument = 11
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.RemoveAdditionalDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: RemoveAdditionalDocument
   qualifiedName:
@@ -208,7 +208,7 @@ items:
     content:
       CSharp: RemoveAdditionalDocument = 12
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeAdditionalDocument
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeAdditionalDocument
   qualifiedName:
@@ -222,7 +222,7 @@ items:
     content:
       CSharp: ChangeAdditionalDocument = 13
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeCompilationOptions
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeCompilationOptions
   qualifiedName:
@@ -236,7 +236,7 @@ items:
     content:
       CSharp: ChangeCompilationOptions = 14
 - id: Microsoft.CodeAnalysis.ApplyChangesKind.ChangeParseOptions
-  href: api/Microsoft.CodeAnalysis.ApplyChangesKind.yaml
+  href: Microsoft.CodeAnalysis.ApplyChangesKind.yaml
   name:
     CSharp: ChangeParseOptions
   qualifiedName:

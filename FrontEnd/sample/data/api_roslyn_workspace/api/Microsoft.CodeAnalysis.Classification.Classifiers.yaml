@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Classification.Classifiers
-href: api/Microsoft.CodeAnalysis.Classification.Classifiers.yaml
+href: Microsoft.CodeAnalysis.Classification.Classifiers.yaml
 name:
   CSharp: Classifiers
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Classification/Classifiers/ISyntaxClassifier.cs
   startLine: 6

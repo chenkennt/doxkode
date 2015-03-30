@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Options.Providers
-href: api/Microsoft.CodeAnalysis.Options.Providers.yaml
+href: Microsoft.CodeAnalysis.Options.Providers.yaml
 name:
   CSharp: Providers
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Options/Providers/OptionSerializerMetadata.cs
   startLine: 7

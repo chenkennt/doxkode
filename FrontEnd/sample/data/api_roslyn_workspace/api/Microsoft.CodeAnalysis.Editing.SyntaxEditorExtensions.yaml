@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions
-href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
 name:
   CSharp: SyntaxEditorExtensions
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/SyntaxEditorExtensions.cs
   startLine: 12
 syntax:
@@ -20,7 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetAccessibility(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Accessibility)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetAccessibility
   qualifiedName:
@@ -38,7 +38,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -52,7 +52,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetModifiers(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.Editing.DeclarationModifiers)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetModifiers
   qualifiedName:
@@ -70,7 +70,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -80,11 +80,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.DeclarationModifiers
         name: DeclarationModifiers
-        href: api/Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
+        href: Microsoft.CodeAnalysis.Editing.DeclarationModifiers.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetName(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.String)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetName
   qualifiedName:
@@ -102,7 +102,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -116,7 +116,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetType
   qualifiedName:
@@ -134,7 +134,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -148,7 +148,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetTypeParameters(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetTypeParameters
   qualifiedName:
@@ -166,7 +166,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -180,7 +180,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetTypeConstraint(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.String,Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetTypeConstraint
   qualifiedName:
@@ -198,7 +198,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -213,7 +213,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind
         name: SpecialTypeConstraintKind
-        href: api/Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
+        href: Microsoft.CodeAnalysis.Editing.SpecialTypeConstraintKind.yaml
     - id: types
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
@@ -222,7 +222,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetExpression(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetExpression
   qualifiedName:
@@ -240,7 +240,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -254,7 +254,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetStatements
   qualifiedName:
@@ -272,7 +272,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -286,7 +286,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetGetAccessorStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetGetAccessorStatements
   qualifiedName:
@@ -304,7 +304,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -318,7 +318,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.SetSetAccessorStatements(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: SetSetAccessorStatements
   qualifiedName:
@@ -336,7 +336,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -350,7 +350,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddParameter(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddParameter
   qualifiedName:
@@ -368,7 +368,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -382,7 +382,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddAttribute(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddAttribute
   qualifiedName:
@@ -400,7 +400,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -414,7 +414,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddReturnAttribute(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddReturnAttribute
   qualifiedName:
@@ -432,7 +432,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -446,7 +446,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddAttributeArgument(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddAttributeArgument
   qualifiedName:
@@ -464,7 +464,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: attributeDeclaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -478,7 +478,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddMember(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddMember
   qualifiedName:
@@ -496,7 +496,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -510,7 +510,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.InsertMembers(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: InsertMembers
   qualifiedName:
@@ -528,7 +528,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -547,7 +547,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddInterfaceType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddInterfaceType
   qualifiedName:
@@ -565,7 +565,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
@@ -579,7 +579,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.AddBaseType(Microsoft.CodeAnalysis.Editing.SyntaxEditor,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
+  href: Microsoft.CodeAnalysis.Editing.SyntaxEditorExtensions.yaml
   name:
     CSharp: AddBaseType
   qualifiedName:
@@ -597,7 +597,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Editing.SyntaxEditor
         name: SyntaxEditor
-        href: api/Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
+        href: Microsoft.CodeAnalysis.Editing.SyntaxEditor.yaml
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode

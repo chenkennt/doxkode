@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Project
-href: api/Microsoft.CodeAnalysis.Project.yaml
+href: Microsoft.CodeAnalysis.Project.yaml
 name:
   CSharp: Project
 qualifiedName:
@@ -8,10 +8,10 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/Project.EquivalenceResult.cs
   startLine: 6
-summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](api/Microsoft.CodeAnalysis.Project.yaml).
+summary: Represents a project that is part of a [Microsoft.CodeAnalysis.Project.Solution](Microsoft.CodeAnalysis.Project.yaml).
 syntax:
   content:
     CSharp: public partial class Project
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Project.Solution
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Solution
   qualifiedName:
@@ -40,9 +40,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.Project.Id
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Id
   qualifiedName:
@@ -53,7 +53,7 @@ items:
     path: src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 57
   summary: >-
-    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](api/Microsoft.CodeAnalysis.Project.yaml) instances may share the same ID. However, only
+    The ID of the project. Multiple [Microsoft.CodeAnalysis.Project](Microsoft.CodeAnalysis.Project.yaml) instances may share the same ID. However, only
 
     one project may have this ID in any given solution.
   syntax:
@@ -64,9 +64,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.Project.FilePath
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -87,7 +87,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.OutputFilePath
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: OutputFilePath
   qualifiedName:
@@ -108,7 +108,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.SupportsCompilation
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: SupportsCompilation
   qualifiedName:
@@ -119,9 +119,9 @@ items:
     path: src/Workspaces/Core/Portable/Workspace/Solution/Project.cs
     startLine: 93
   summary: >-
-    true if this [Microsoft.CodeAnalysis.Project](api/Microsoft.CodeAnalysis.Project.yaml) supports providing data through the
+    true if this [Microsoft.CodeAnalysis.Project](Microsoft.CodeAnalysis.Project.yaml) supports providing data through the
 
-    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](api/Microsoft.CodeAnalysis.Project.yaml) method.
+    [Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)](Microsoft.CodeAnalysis.Project.yaml) method.
 
 
 
@@ -136,7 +136,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.LanguageServices
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: LanguageServices
   qualifiedName:
@@ -155,9 +155,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostLanguageServices
         name: HostLanguageServices
-        href: api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
+        href: Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml
 - id: Microsoft.CodeAnalysis.Project.Language
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Language
   qualifiedName:
@@ -178,7 +178,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AssemblyName
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AssemblyName
   qualifiedName:
@@ -199,7 +199,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.Name
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -220,7 +220,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.MetadataReferences
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: MetadataReferences
   qualifiedName:
@@ -241,7 +241,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.MetadataReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.ProjectReferences
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ProjectReferences
   qualifiedName:
@@ -262,7 +262,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AllProjectReferences
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AllProjectReferences
   qualifiedName:
@@ -286,7 +286,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.ProjectReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AnalyzerReferences
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AnalyzerReferences
   qualifiedName:
@@ -307,7 +307,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AnalyzerOptions
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AnalyzerOptions
   qualifiedName:
@@ -328,7 +328,7 @@ items:
         name: AnalyzerOptions
         href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Project.CompilationOptions
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: CompilationOptions
   qualifiedName:
@@ -349,7 +349,7 @@ items:
         name: CompilationOptions
         href: Microsoft.CodeAnalysis.CompilationOptions
 - id: Microsoft.CodeAnalysis.Project.ParseOptions
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ParseOptions
   qualifiedName:
@@ -370,7 +370,7 @@ items:
         name: ParseOptions
         href: Microsoft.CodeAnalysis.ParseOptions
 - id: Microsoft.CodeAnalysis.Project.IsSubmission
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: IsSubmission
   qualifiedName:
@@ -391,7 +391,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.HasDocuments
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: HasDocuments
   qualifiedName:
@@ -412,7 +412,7 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.DocumentIds
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: DocumentIds
   qualifiedName:
@@ -433,7 +433,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AdditionalDocumentIds
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AdditionalDocumentIds
   qualifiedName:
@@ -454,7 +454,7 @@ items:
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.DocumentId}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.Documents
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Documents
   qualifiedName:
@@ -475,7 +475,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Document}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.AdditionalDocuments
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AdditionalDocuments
   qualifiedName:
@@ -495,7 +495,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.TextDocument}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Project.ContainsDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ContainsDocument
   qualifiedName:
@@ -514,11 +514,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.ContainsAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: ContainsAdditionalDocument
   qualifiedName:
@@ -537,11 +537,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetDocumentId(Microsoft.CodeAnalysis.SyntaxTree)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocumentId
   qualifiedName:
@@ -564,7 +564,7 @@ items:
     return:
       id: DocumentId
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.SyntaxTree)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocument
   qualifiedName:
@@ -587,7 +587,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDocument
   qualifiedName:
@@ -606,11 +606,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.GetAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetAdditionalDocument
   qualifiedName:
@@ -629,11 +629,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.TryGetCompilation(Microsoft.CodeAnalysis.Compilation@)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: TryGetCompilation
   qualifiedName:
@@ -656,7 +656,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Project.GetCompilationAsync(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetCompilationAsync
   qualifiedName:
@@ -679,7 +679,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetChanges(Microsoft.CodeAnalysis.Project)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetChanges
   qualifiedName:
@@ -698,11 +698,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
     return:
       id: ProjectChanges
 - id: Microsoft.CodeAnalysis.Project.Version
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: Version
   qualifiedName:
@@ -721,9 +721,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
 - id: Microsoft.CodeAnalysis.Project.GetLatestDocumentVersionAsync(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetLatestDocumentVersionAsync
   qualifiedName:
@@ -746,7 +746,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetDependentVersionAsync(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDependentVersionAsync
   qualifiedName:
@@ -769,7 +769,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetDependentSemanticVersionAsync(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetDependentSemanticVersionAsync
   qualifiedName:
@@ -795,7 +795,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.GetSemanticVersionAsync(System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: GetSemanticVersionAsync
   qualifiedName:
@@ -821,7 +821,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Project.WithAssemblyName(System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithAssemblyName
   qualifiedName:
@@ -844,7 +844,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithCompilationOptions(Microsoft.CodeAnalysis.CompilationOptions)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithCompilationOptions
   qualifiedName:
@@ -867,7 +867,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithParseOptions(Microsoft.CodeAnalysis.ParseOptions)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithParseOptions
   qualifiedName:
@@ -890,7 +890,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReference(Microsoft.CodeAnalysis.ProjectReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddProjectReference
   qualifiedName:
@@ -912,11 +912,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
+        href: Microsoft.CodeAnalysis.ProjectReference.yaml
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddProjectReferences
   qualifiedName:
@@ -942,7 +942,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveProjectReference(Microsoft.CodeAnalysis.ProjectReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveProjectReference
   qualifiedName:
@@ -961,11 +961,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectReference
         name: ProjectReference
-        href: api/Microsoft.CodeAnalysis.ProjectReference.yaml
+        href: Microsoft.CodeAnalysis.ProjectReference.yaml
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithProjectReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ProjectReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithProjectReferences
   qualifiedName:
@@ -991,7 +991,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddMetadataReference(Microsoft.CodeAnalysis.MetadataReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddMetadataReference
   qualifiedName:
@@ -1017,7 +1017,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddMetadataReferences
   qualifiedName:
@@ -1043,7 +1043,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveMetadataReference(Microsoft.CodeAnalysis.MetadataReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveMetadataReference
   qualifiedName:
@@ -1066,7 +1066,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithMetadataReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithMetadataReferences
   qualifiedName:
@@ -1092,7 +1092,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddAnalyzerReference(Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAnalyzerReference
   qualifiedName:
@@ -1118,7 +1118,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAnalyzerReferences
   qualifiedName:
@@ -1144,7 +1144,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveAnalyzerReference(Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveAnalyzerReference
   qualifiedName:
@@ -1167,7 +1167,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.WithAnalyzerReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference})
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: WithAnalyzerReferences
   qualifiedName:
@@ -1193,7 +1193,7 @@ items:
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{System.String},System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1231,7 +1231,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{System.String},System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1269,7 +1269,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddDocument(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddDocument
   qualifiedName:
@@ -1307,7 +1307,7 @@ items:
     return:
       id: Document
 - id: Microsoft.CodeAnalysis.Project.AddAdditionalDocument(System.String,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{System.String},System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -1345,7 +1345,7 @@ items:
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.AddAdditionalDocument(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: AddAdditionalDocument
   qualifiedName:
@@ -1383,7 +1383,7 @@ items:
     return:
       id: TextDocument
 - id: Microsoft.CodeAnalysis.Project.RemoveDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveDocument
   qualifiedName:
@@ -1402,11 +1402,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Project
 - id: Microsoft.CodeAnalysis.Project.RemoveAdditionalDocument(Microsoft.CodeAnalysis.DocumentId)
-  href: api/Microsoft.CodeAnalysis.Project.yaml
+  href: Microsoft.CodeAnalysis.Project.yaml
   name:
     CSharp: RemoveAdditionalDocument
   qualifiedName:
@@ -1425,6 +1425,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     return:
       id: Project

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext
-href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
 name:
   CSharp: CodeFixContext
 qualifiedName:
@@ -8,10 +8,10 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
   startLine: 16
-summary: Context for code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml).
+summary: Context for code fixes provided by an [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml).
 syntax:
   content:
     CSharp: public struct CodeFixContext
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Document
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: Document
   qualifiedName:
@@ -34,7 +34,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
     startLine: 27
-  summary: Document corresponding to the [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Span](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) to fix.
+  summary: Document corresponding to the [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Span](Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) to fix.
   syntax:
     content:
       CSharp: public Document Document { get; }
@@ -43,9 +43,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Span
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: Span
   qualifiedName:
@@ -55,7 +55,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
     startLine: 32
-  summary: Text span within the [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Document](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) to fix.
+  summary: Text span within the [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Document](Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) to fix.
   syntax:
     content:
       CSharp: public TextSpan Span { get; }
@@ -66,7 +66,7 @@ items:
         name: TextSpan
         href: Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: Diagnostics
   qualifiedName:
@@ -90,7 +90,7 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.CancellationToken
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: CancellationToken
   qualifiedName:
@@ -111,7 +111,7 @@ items:
         name: System.Threading.CancellationToken
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.#ctor(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.TextSpan,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic},System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}},System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: CodeFixContext(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Text.TextSpan,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic},System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}},System.Threading.CancellationToken)
   qualifiedName:
@@ -121,7 +121,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
     startLine: 58
-  summary: Creates a code fix context to be passed into [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
+  summary: Creates a code fix context to be passed into [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
   syntax:
     content:
       CSharp: 'public CodeFixContext(Document document, TextSpan span, ImmutableArray<Diagnostic> diagnostics, Action<CodeAction, ImmutableArray<Diagnostic>> registerCodeFix, CancellationToken cancellationToken): this (document, span, diagnostics, registerCodeFix, verifyArguments: true, cancellationToken: cancellationToken)'
@@ -130,7 +130,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
       description: Document to fix.
     - id: span
       type:
@@ -149,7 +149,7 @@ items:
         id: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}}
         name: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}}
         isExternal: true
-      description: Delegate to register a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) fixing a subset of diagnostics.
+      description: Delegate to register a [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) fixing a subset of diagnostics.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -159,7 +159,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.#ctor(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Diagnostic,System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}},System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: CodeFixContext(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.Diagnostic,System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}},System.Threading.CancellationToken)
   qualifiedName:
@@ -169,7 +169,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeFixes/CodeFixContext.cs
     startLine: 76
-  summary: Creates a code fix context to be passed into [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
+  summary: Creates a code fix context to be passed into [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
   syntax:
     content:
       CSharp: 'public CodeFixContext(Document document, Diagnostic diagnostic, Action<CodeAction, ImmutableArray<Diagnostic>> registerCodeFix, CancellationToken cancellationToken): this (document, diagnostic.Location.SourceSpan, ImmutableArray.Create(diagnostic), registerCodeFix, verifyArguments: true, cancellationToken: cancellationToken)'
@@ -178,7 +178,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
       description: Document to fix.
     - id: diagnostic
       type:
@@ -191,7 +191,7 @@ items:
         id: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}}
         name: System.Action{Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}}
         isExternal: true
-      description: Delegate to register a [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) fixing a subset of diagnostics.
+      description: Delegate to register a [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) fixing a subset of diagnostics.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -201,7 +201,7 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.RegisterCodeFix(Microsoft.CodeAnalysis.CodeActions.CodeAction,Microsoft.CodeAnalysis.Diagnostic)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: RegisterCodeFix
   qualifiedName:
@@ -220,18 +220,18 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeActions.CodeAction
         name: CodeAction
-        href: api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
-      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
+        href: Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
+      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
     - id: diagnostic
       type:
         id: Microsoft.CodeAnalysis.Diagnostic
         name: Diagnostic
         href: Microsoft.CodeAnalysis.Diagnostic
-      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
+      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.RegisterCodeFix(Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic})
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: RegisterCodeFix
   qualifiedName:
@@ -250,18 +250,18 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeActions.CodeAction
         name: CodeAction
-        href: api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
-      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
+        href: Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
+      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
     - id: diagnostics
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
         isExternal: true
-      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
+      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.RegisterCodeFix(Microsoft.CodeAnalysis.CodeActions.CodeAction,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic})
-  href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml
   name:
     CSharp: RegisterCodeFix
   qualifiedName:
@@ -280,13 +280,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeActions.CodeAction
         name: CodeAction
-        href: api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
-      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](api/Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
+        href: Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml
+      description: The [Microsoft.CodeAnalysis.CodeActions.CodeAction](Microsoft.CodeAnalysis.CodeActions.CodeAction.yaml) that will be invoked to apply the fix.
     - id: diagnostics
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         isExternal: true
-      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
+      description: The subset of [Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.Diagnostics](Microsoft.CodeAnalysis.CodeFixes.CodeFixContext.yaml) being addressed / fixed by the .
     return:
       id: Void

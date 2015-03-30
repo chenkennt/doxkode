@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Shared.Utilities
-href: api/Microsoft.CodeAnalysis.Shared.Utilities.yaml
+href: Microsoft.CodeAnalysis.Shared.Utilities.yaml
 name:
   CSharp: Utilities
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Utilities/AbstractSpeculationAnalyzer.cs
   startLine: 11

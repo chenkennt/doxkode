@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices
-href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
 name:
   CSharp: HostWorkspaceServices
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
   startLine: 12
 summary: Per workspace services provided by the host environment.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.HostServices
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: HostServices
   qualifiedName:
@@ -40,9 +40,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostServices
         name: HostServices
-        href: api/Microsoft.CodeAnalysis.Host.HostServices.yaml
+        href: Microsoft.CodeAnalysis.Host.HostServices.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.Workspace
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: Workspace
   qualifiedName:
@@ -61,9 +61,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Workspace
         name: Workspace
-        href: api/Microsoft.CodeAnalysis.Workspace.yaml
+        href: Microsoft.CodeAnalysis.Workspace.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetService``1
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: GetService
   qualifiedName:
@@ -84,7 +84,7 @@ items:
     return:
       id: TWorkspaceService
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetRequiredService``1
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: GetRequiredService
   qualifiedName:
@@ -105,7 +105,7 @@ items:
     return:
       id: TWorkspaceService
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.PersistentStorage
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: PersistentStorage
   qualifiedName:
@@ -124,9 +124,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.IPersistentStorageService
         name: IPersistentStorageService
-        href: api/Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
+        href: Microsoft.CodeAnalysis.Host.IPersistentStorageService.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.TemporaryStorage
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: TemporaryStorage
   qualifiedName:
@@ -145,9 +145,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.ITemporaryStorageService
         name: ITemporaryStorageService
-        href: api/Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
+        href: Microsoft.CodeAnalysis.Host.ITemporaryStorageService.yaml
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.SupportedLanguages
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: SupportedLanguages
   qualifiedName:
@@ -168,7 +168,7 @@ items:
         name: System.Collections.Generic.IEnumerable{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.IsSupported(System.String)
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: IsSupported
   qualifiedName:
@@ -191,7 +191,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.GetLanguageServices(System.String)
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: GetLanguageServices
   qualifiedName:
@@ -201,7 +201,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/HostWorkspaceServices.cs
     startLine: 89
-  summary: Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](api/Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml) for the language name.
+  summary: Gets the [Microsoft.CodeAnalysis.Host.HostLanguageServices](Microsoft.CodeAnalysis.Host.HostLanguageServices.yaml) for the language name.
   syntax:
     content:
       CSharp: public virtual HostLanguageServices GetLanguageServices(string languageName)
@@ -214,7 +214,7 @@ items:
     return:
       id: HostLanguageServices
 - id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.FindLanguageServices``1(Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter)
-  href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
+  href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.yaml
   name:
     CSharp: FindLanguageServices
   qualifiedName:
@@ -233,6 +233,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter
         name: MetadataFilter
-        href: api/Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
+        href: Microsoft.CodeAnalysis.Host.HostWorkspaceServices.MetadataFilter.yaml
     return:
       id: IEnumerable

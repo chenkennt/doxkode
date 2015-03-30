@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute
-href: api/Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
+href: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
 name:
   CSharp: ExportCodeRefactoringProviderAttribute
 qualifiedName:
@@ -8,10 +8,10 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeRefactorings/ExportCodeRefactoringProviderAttribute.cs
   startLine: 10
-summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml) implementation so that it can be discovered by the host.
+summary: Use this attribute to declare a [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml) implementation so that it can be discovered by the host.
 syntax:
   content:
     CSharp: public sealed class ExportCodeRefactoringProviderAttribute
@@ -27,7 +27,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.Name
-  href: api/Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
+  href: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
   name:
     CSharp: Name
   qualifiedName:
@@ -37,7 +37,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/CodeRefactorings/ExportCodeRefactoringProviderAttribute.cs
     startLine: 17
-  summary: The name of the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](api/Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml).
+  summary: The name of the [Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider](Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringProvider.yaml).
   syntax:
     content:
       CSharp: public string Name { get; set; }
@@ -48,7 +48,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.Languages
-  href: api/Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
+  href: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
   name:
     CSharp: Languages
   qualifiedName:
@@ -69,7 +69,7 @@ items:
         name: System.Array
         isExternal: true
 - id: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.#ctor(System.String,System.String[])
-  href: api/Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
+  href: Microsoft.CodeAnalysis.CodeRefactorings.ExportCodeRefactoringProviderAttribute.yaml
   name:
     CSharp: ExportCodeRefactoringProviderAttribute(System.String,System.String[])
   qualifiedName:

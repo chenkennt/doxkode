@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.VersionStamp
-href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+href: Microsoft.CodeAnalysis.VersionStamp.yaml
 name:
   CSharp: VersionStamp
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/VersionStamp.cs
   startLine: 11
 summary: VersionStamp should be only used to compare versions returned by same API.
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.VersionStamp.Create
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -42,7 +42,7 @@ items:
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.Create(System.DateTime)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -65,7 +65,7 @@ items:
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion(Microsoft.CodeAnalysis.VersionStamp)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: GetNewerVersion
   qualifiedName:
@@ -87,11 +87,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.GetNewerVersion
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: GetNewerVersion
   qualifiedName:
@@ -112,7 +112,7 @@ items:
     return:
       id: VersionStamp
 - id: Microsoft.CodeAnalysis.VersionStamp.ToString
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: ToString
   qualifiedName:
@@ -130,7 +130,7 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.VersionStamp.GetHashCode
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -147,7 +147,7 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.VersionStamp.Equals(System.Object)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -169,7 +169,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.Equals(Microsoft.CodeAnalysis.VersionStamp)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: Equals
   qualifiedName:
@@ -187,11 +187,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.op_Equality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -209,16 +209,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.op_Inequality(Microsoft.CodeAnalysis.VersionStamp,Microsoft.CodeAnalysis.VersionStamp)
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -236,16 +236,16 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     - id: right
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.VersionStamp.Default
-  href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+  href: Microsoft.CodeAnalysis.VersionStamp.yaml
   name:
     CSharp: Default
   qualifiedName:

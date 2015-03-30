@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer
-href: api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+href: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
 name:
   CSharp: ServiceLayer
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ServiceLayer.cs
   startLine: 9
 summary: >-
@@ -16,7 +16,7 @@ summary: >-
 
 
 
-  If there are multiple definitions of a service, the [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) is used to determine which is used.
+  If there are multiple definitions of a service, the [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) is used to determine which is used.
 syntax:
   content:
     CSharp: public static class ServiceLayer
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Host
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+  href: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
   name:
     CSharp: Host
   qualifiedName:
@@ -36,12 +36,12 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ServiceLayer.cs
     startLine: 14
-  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Editor](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml), [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Desktop](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) and [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
+  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Editor](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml), [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Desktop](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) and [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
   syntax:
     content:
       CSharp: Host
 - id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Editor
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+  href: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
   name:
     CSharp: Editor
   qualifiedName:
@@ -51,12 +51,12 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ServiceLayer.cs
     startLine: 19
-  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Desktop](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) and [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
+  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Desktop](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml) and [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
   syntax:
     content:
       CSharp: Editor
 - id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Desktop
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+  href: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
   name:
     CSharp: Desktop
   qualifiedName:
@@ -66,12 +66,12 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Workspace/Host/Mef/ServiceLayer.cs
     startLine: 24
-  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
+  summary: Service layer that overrides [Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default](Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml).
   syntax:
     content:
       CSharp: Desktop
 - id: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.Default
-  href: api/Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
+  href: Microsoft.CodeAnalysis.Host.Mef.ServiceLayer.yaml
   name:
     CSharp: Default
   qualifiedName:

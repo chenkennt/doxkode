@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider
-href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
+href: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
 name:
   CSharp: FixAllProvider
 qualifiedName:
@@ -8,13 +8,13 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/CodeFixes/FixAllOccurrences/FixAllProvider.cs
   startLine: 13
 summary: >-
   Implement this abstract type to provide fix all/multiple occurrences code fixes for source code problems.
 
-  Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](api/Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml).
+  Alternatively, you can use any of the well known fix all providers from [Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders](Microsoft.CodeAnalysis.CodeFixes.WellKnownFixAllProviders.yaml).
 syntax:
   content:
     CSharp: public abstract class FixAllProvider
@@ -24,7 +24,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.GetSupportedFixAllScopes
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
   name:
     CSharp: GetSupportedFixAllScopes
   qualifiedName:
@@ -39,11 +39,11 @@ items:
 
     By default, it returns the following scopes:
 
-    (a) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml)
+    (a) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Document](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml)
 
-    (b) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml) and
+    (b) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Project](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml) and
 
-    (c) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](api/Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml)
+    (c) [Microsoft.CodeAnalysis.CodeFixes.FixAllScope.Solution](Microsoft.CodeAnalysis.CodeFixes.FixAllScope.yaml)
   syntax:
     content:
       CSharp: public virtual IEnumerable<FixAllScope> GetSupportedFixAllScopes()
@@ -51,7 +51,7 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.GetSupportedFixAllDiagnosticIds(Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
   name:
     CSharp: GetSupportedFixAllDiagnosticIds
   qualifiedName:
@@ -64,7 +64,7 @@ items:
   summary: >-
     Gets the diagnostic IDs for which fix all occurrences is supported.
 
-    By default, it returns [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.FixableDiagnosticIds](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) for the given .
+    By default, it returns [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.FixableDiagnosticIds](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) for the given .
   syntax:
     content:
       CSharp: public virtual IEnumerable<string> GetSupportedFixAllDiagnosticIds(CodeFixProvider originalCodeFixProvider)
@@ -73,12 +73,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider
         name: CodeFixProvider
-        href: api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml
-      description: Original code fix provider that returned this fix all provider from [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.GetFixAllProvider](api/Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
+        href: Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml
+      description: Original code fix provider that returned this fix all provider from [Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.GetFixAllProvider](Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.yaml) method.
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.GetFixAsync(Microsoft.CodeAnalysis.CodeFixes.FixAllContext)
-  href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
+  href: Microsoft.CodeAnalysis.CodeFixes.FixAllProvider.yaml
   name:
     CSharp: GetFixAsync
   qualifiedName:
@@ -97,6 +97,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CodeFixes.FixAllContext
         name: FixAllContext
-        href: api/Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
+        href: Microsoft.CodeAnalysis.CodeFixes.FixAllContext.yaml
     return:
       id: Task

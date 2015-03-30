@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Versions
-href: api/Microsoft.CodeAnalysis.Versions.yaml
+href: Microsoft.CodeAnalysis.Versions.yaml
 name:
   CSharp: Versions
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Versions/PersistedVersionStampLogger.cs
   startLine: 4

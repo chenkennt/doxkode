@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.ProjectDiagnostic
-href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+href: Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
 name:
   CSharp: ProjectDiagnostic
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/ProjectDiagnostic.cs
   startLine: 4
 syntax:
@@ -20,10 +20,10 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.WorkspaceDiagnostic
   name: WorkspaceDiagnostic
-  href: api/Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
+  href: Microsoft.CodeAnalysis.WorkspaceDiagnostic.yaml
 items:
 - id: Microsoft.CodeAnalysis.ProjectDiagnostic.ProjectId
-  href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+  href: Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
   name:
     CSharp: ProjectId
   qualifiedName:
@@ -41,9 +41,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
 - id: Microsoft.CodeAnalysis.ProjectDiagnostic.#ctor(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.ProjectId)
-  href: api/Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
+  href: Microsoft.CodeAnalysis.ProjectDiagnostic.yaml
   name:
     CSharp: ProjectDiagnostic(Microsoft.CodeAnalysis.WorkspaceDiagnosticKind,System.String,Microsoft.CodeAnalysis.ProjectId)
   qualifiedName:
@@ -61,7 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind
         name: WorkspaceDiagnosticKind
-        href: api/Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
+        href: Microsoft.CodeAnalysis.WorkspaceDiagnosticKind.yaml
     - id: message
       type:
         id: System.String
@@ -71,6 +71,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ProjectId
         name: ProjectId
-        href: api/Microsoft.CodeAnalysis.ProjectId.yaml
+        href: Microsoft.CodeAnalysis.ProjectId.yaml
     return:
       id: Void

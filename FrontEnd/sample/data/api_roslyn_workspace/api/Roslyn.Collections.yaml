@@ -1,5 +1,5 @@
 id: Roslyn.Collections
-href: api/Roslyn.Collections.yaml
+href: Roslyn.Collections.yaml
 name:
   CSharp: Collections
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Utilities/CompilerUtilities/ImmutableHashMap.cs
   startLine: 14

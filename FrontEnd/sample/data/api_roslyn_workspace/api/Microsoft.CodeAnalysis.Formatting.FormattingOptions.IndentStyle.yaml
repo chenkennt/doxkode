@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle
-href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
+href: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
 name:
   CSharp: IndentStyle
 qualifiedName:
@@ -8,7 +8,7 @@ type: Enum
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Formatting/FormattingOptions.cs
   startLine: 28
 syntax:
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.None
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
+  href: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -40,7 +40,7 @@ items:
     content:
       CSharp: None = 0
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.Block
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
+  href: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
   name:
     CSharp: Block
   qualifiedName:
@@ -54,7 +54,7 @@ items:
     content:
       CSharp: Block = 1
 - id: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.Smart
-  href: api/Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
+  href: Microsoft.CodeAnalysis.Formatting.FormattingOptions.IndentStyle.yaml
   name:
     CSharp: Smart
   qualifiedName:

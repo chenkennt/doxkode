@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol
-href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
+href: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
 name:
   CSharp: ReferencedSymbol
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/FindSymbols/ReferencedSymbol.cs
   startLine: 17
 summary: >-
@@ -32,7 +32,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Definition
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
   name:
     CSharp: Definition
   qualifiedName:
@@ -53,7 +53,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.Locations
-  href: api/Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.ReferencedSymbol.yaml
   name:
     CSharp: Locations
   qualifiedName:

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames
-href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
 name:
   CSharp: ClassificationTypeNames
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Classification/ClassificationTypeNames.cs
   startLine: 4
 syntax:
@@ -20,7 +20,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Comment
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Comment
   qualifiedName:
@@ -34,7 +34,7 @@ items:
     content:
       CSharp: Comment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ExcludedCode
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ExcludedCode
   qualifiedName:
@@ -48,7 +48,7 @@ items:
     content:
       CSharp: ExcludedCode
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Identifier
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Identifier
   qualifiedName:
@@ -62,7 +62,7 @@ items:
     content:
       CSharp: Identifier
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Keyword
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Keyword
   qualifiedName:
@@ -76,7 +76,7 @@ items:
     content:
       CSharp: Keyword
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.NumericLiteral
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: NumericLiteral
   qualifiedName:
@@ -90,7 +90,7 @@ items:
     content:
       CSharp: NumericLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Operator
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Operator
   qualifiedName:
@@ -104,7 +104,7 @@ items:
     content:
       CSharp: Operator
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.PreprocessorKeyword
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: PreprocessorKeyword
   qualifiedName:
@@ -118,7 +118,7 @@ items:
     content:
       CSharp: PreprocessorKeyword
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.StringLiteral
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: StringLiteral
   qualifiedName:
@@ -132,7 +132,7 @@ items:
     content:
       CSharp: StringLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.WhiteSpace
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: WhiteSpace
   qualifiedName:
@@ -146,7 +146,7 @@ items:
     content:
       CSharp: WhiteSpace
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Text
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Text
   qualifiedName:
@@ -160,7 +160,7 @@ items:
     content:
       CSharp: Text
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.PreprocessorText
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: PreprocessorText
   qualifiedName:
@@ -174,7 +174,7 @@ items:
     content:
       CSharp: PreprocessorText
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.Punctuation
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: Punctuation
   qualifiedName:
@@ -188,7 +188,7 @@ items:
     content:
       CSharp: Punctuation
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.VerbatimStringLiteral
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: VerbatimStringLiteral
   qualifiedName:
@@ -202,7 +202,7 @@ items:
     content:
       CSharp: VerbatimStringLiteral
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ClassName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ClassName
   qualifiedName:
@@ -216,7 +216,7 @@ items:
     content:
       CSharp: ClassName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.DelegateName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: DelegateName
   qualifiedName:
@@ -230,7 +230,7 @@ items:
     content:
       CSharp: DelegateName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.EnumName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: EnumName
   qualifiedName:
@@ -244,7 +244,7 @@ items:
     content:
       CSharp: EnumName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.InterfaceName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: InterfaceName
   qualifiedName:
@@ -258,7 +258,7 @@ items:
     content:
       CSharp: InterfaceName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.ModuleName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: ModuleName
   qualifiedName:
@@ -272,7 +272,7 @@ items:
     content:
       CSharp: ModuleName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.StructName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: StructName
   qualifiedName:
@@ -286,7 +286,7 @@ items:
     content:
       CSharp: StructName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.TypeParameterName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: TypeParameterName
   qualifiedName:
@@ -300,7 +300,7 @@ items:
     content:
       CSharp: TypeParameterName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeName
   qualifiedName:
@@ -314,7 +314,7 @@ items:
     content:
       CSharp: XmlDocCommentAttributeName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeQuotes
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeQuotes
   qualifiedName:
@@ -328,7 +328,7 @@ items:
     content:
       CSharp: XmlDocCommentAttributeQuotes
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentAttributeValue
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentAttributeValue
   qualifiedName:
@@ -342,7 +342,7 @@ items:
     content:
       CSharp: XmlDocCommentAttributeValue
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentCDataSection
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentCDataSection
   qualifiedName:
@@ -356,7 +356,7 @@ items:
     content:
       CSharp: XmlDocCommentCDataSection
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentComment
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentComment
   qualifiedName:
@@ -370,7 +370,7 @@ items:
     content:
       CSharp: XmlDocCommentComment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentDelimiter
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentDelimiter
   qualifiedName:
@@ -384,7 +384,7 @@ items:
     content:
       CSharp: XmlDocCommentDelimiter
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentEntityReference
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentEntityReference
   qualifiedName:
@@ -398,7 +398,7 @@ items:
     content:
       CSharp: XmlDocCommentEntityReference
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentName
   qualifiedName:
@@ -412,7 +412,7 @@ items:
     content:
       CSharp: XmlDocCommentName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentProcessingInstruction
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentProcessingInstruction
   qualifiedName:
@@ -426,7 +426,7 @@ items:
     content:
       CSharp: XmlDocCommentProcessingInstruction
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlDocCommentText
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlDocCommentText
   qualifiedName:
@@ -440,7 +440,7 @@ items:
     content:
       CSharp: XmlDocCommentText
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeName
   qualifiedName:
@@ -454,7 +454,7 @@ items:
     content:
       CSharp: XmlLiteralAttributeName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeQuotes
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeQuotes
   qualifiedName:
@@ -468,7 +468,7 @@ items:
     content:
       CSharp: XmlLiteralAttributeQuotes
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralAttributeValue
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralAttributeValue
   qualifiedName:
@@ -482,7 +482,7 @@ items:
     content:
       CSharp: XmlLiteralAttributeValue
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralCDataSection
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralCDataSection
   qualifiedName:
@@ -496,7 +496,7 @@ items:
     content:
       CSharp: XmlLiteralCDataSection
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralComment
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralComment
   qualifiedName:
@@ -510,7 +510,7 @@ items:
     content:
       CSharp: XmlLiteralComment
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralDelimiter
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralDelimiter
   qualifiedName:
@@ -524,7 +524,7 @@ items:
     content:
       CSharp: XmlLiteralDelimiter
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralEmbeddedExpression
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralEmbeddedExpression
   qualifiedName:
@@ -538,7 +538,7 @@ items:
     content:
       CSharp: XmlLiteralEmbeddedExpression
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralEntityReference
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralEntityReference
   qualifiedName:
@@ -552,7 +552,7 @@ items:
     content:
       CSharp: XmlLiteralEntityReference
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralName
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralName
   qualifiedName:
@@ -566,7 +566,7 @@ items:
     content:
       CSharp: XmlLiteralName
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralProcessingInstruction
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralProcessingInstruction
   qualifiedName:
@@ -580,7 +580,7 @@ items:
     content:
       CSharp: XmlLiteralProcessingInstruction
 - id: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.XmlLiteralText
-  href: api/Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
+  href: Microsoft.CodeAnalysis.Classification.ClassificationTypeNames.yaml
   name:
     CSharp: XmlLiteralText
   qualifiedName:

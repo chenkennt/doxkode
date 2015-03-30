@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Serialization
-href: api/Microsoft.CodeAnalysis.Serialization.yaml
+href: Microsoft.CodeAnalysis.Serialization.yaml
 name:
   CSharp: Serialization
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Serialization/IAssemblySerializationInfoService.cs
   startLine: 4

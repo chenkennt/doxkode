@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo
-href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
+href: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
 name:
   CSharp: SymbolCallerInfo
 qualifiedName:
@@ -8,7 +8,7 @@ type: Struct
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/FindSymbols/SymbolCallerInfo.cs
   startLine: 24
 summary: >-
@@ -37,7 +37,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CallingSymbol
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: CallingSymbol
   qualifiedName:
@@ -58,7 +58,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.Locations
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: Locations
   qualifiedName:
@@ -79,7 +79,7 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
         isExternal: true
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.CalledSymbol
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: CalledSymbol
   qualifiedName:
@@ -100,7 +100,7 @@ items:
         name: ISymbol
         href: Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.IsDirect
-  href: api/Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
+  href: Microsoft.CodeAnalysis.FindSymbols.SymbolCallerInfo.yaml
   name:
     CSharp: IsDirect
   qualifiedName:

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Editing.SolutionEditor
-href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
+href: Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
 name:
   CSharp: SolutionEditor
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
   startLine: 14
 summary: An editor for making changes to multiple documents in a solution.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.#ctor(Microsoft.CodeAnalysis.Solution)
-  href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   name:
     CSharp: SolutionEditor(Microsoft.CodeAnalysis.Solution)
   qualifiedName:
@@ -39,11 +39,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.OriginalSolution
-  href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   name:
     CSharp: OriginalSolution
   qualifiedName:
@@ -53,7 +53,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 28
-  summary: The [Microsoft.CodeAnalysis.Solution](api/Microsoft.CodeAnalysis.Solution.yaml) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml) was constructed.
+  summary: The [Microsoft.CodeAnalysis.Solution](Microsoft.CodeAnalysis.Solution.yaml) that was specified when the [Microsoft.CodeAnalysis.Editing.SolutionEditor](Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml) was constructed.
   syntax:
     content:
       CSharp: public Solution OriginalSolution { get; }
@@ -62,9 +62,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Solution
         name: Solution
-        href: api/Microsoft.CodeAnalysis.Solution.yaml
+        href: Microsoft.CodeAnalysis.Solution.yaml
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.GetDocumentEditorAsync(Microsoft.CodeAnalysis.DocumentId,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   name:
     CSharp: GetDocumentEditorAsync
   qualifiedName:
@@ -74,7 +74,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 36
-  summary: Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](api/Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml) for the corresponding [Microsoft.CodeAnalysis.DocumentId](api/Microsoft.CodeAnalysis.DocumentId.yaml).
+  summary: Gets the [Microsoft.CodeAnalysis.Editing.DocumentEditor](Microsoft.CodeAnalysis.Editing.DocumentEditor.yaml) for the corresponding [Microsoft.CodeAnalysis.DocumentId](Microsoft.CodeAnalysis.DocumentId.yaml).
   syntax:
     content:
       CSharp: public async Task<DocumentEditor> GetDocumentEditorAsync(DocumentId id, CancellationToken cancellationToken = default (CancellationToken))
@@ -83,7 +83,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentId
         name: DocumentId
-        href: api/Microsoft.CodeAnalysis.DocumentId.yaml
+        href: Microsoft.CodeAnalysis.DocumentId.yaml
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -92,7 +92,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Editing.SolutionEditor.GetChangedSolution
-  href: api/Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
+  href: Microsoft.CodeAnalysis.Editing.SolutionEditor.yaml
   name:
     CSharp: GetChangedSolution
   qualifiedName:
@@ -102,7 +102,7 @@ items:
     remote: *o0
     path: src/Workspaces/Core/Portable/Editing/SolutionEditor.cs
     startLine: 51
-  summary: Returns the changed [Microsoft.CodeAnalysis.Solution](api/Microsoft.CodeAnalysis.Solution.yaml).
+  summary: Returns the changed [Microsoft.CodeAnalysis.Solution](Microsoft.CodeAnalysis.Solution.yaml).
   syntax:
     content:
       CSharp: public Solution GetChangedSolution()

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.TextAndVersion
-href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+href: Microsoft.CodeAnalysis.TextAndVersion.yaml
 name:
   CSharp: TextAndVersion
 qualifiedName:
@@ -8,7 +8,7 @@ type: Class
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Solution/TextAndVersion.cs
   startLine: 15
 summary: A class that represents both a source text and its version stamp.
@@ -21,7 +21,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.TextAndVersion.Text
-  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+  href: Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Text
   qualifiedName:
@@ -42,7 +42,7 @@ items:
         name: SourceText
         href: Microsoft.CodeAnalysis.Text.SourceText
 - id: Microsoft.CodeAnalysis.TextAndVersion.Version
-  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+  href: Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Version
   qualifiedName:
@@ -61,9 +61,9 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
 - id: Microsoft.CodeAnalysis.TextAndVersion.FilePath
-  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+  href: Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: FilePath
   qualifiedName:
@@ -84,7 +84,7 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.TextAndVersion.Create(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.VersionStamp,System.String)
-  href: api/Microsoft.CodeAnalysis.TextAndVersion.yaml
+  href: Microsoft.CodeAnalysis.TextAndVersion.yaml
   name:
     CSharp: Create
   qualifiedName:
@@ -109,7 +109,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VersionStamp
         name: VersionStamp
-        href: api/Microsoft.CodeAnalysis.VersionStamp.yaml
+        href: Microsoft.CodeAnalysis.VersionStamp.yaml
       description: The version
     - id: filePath
       type:

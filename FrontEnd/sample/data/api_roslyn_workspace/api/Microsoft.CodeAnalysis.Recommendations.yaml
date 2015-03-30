@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Recommendations
-href: api/Microsoft.CodeAnalysis.Recommendations.yaml
+href: Microsoft.CodeAnalysis.Recommendations.yaml
 name:
   CSharp: Recommendations
 qualifiedName:
@@ -8,13 +8,13 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Recommendations/Recommender.cs
   startLine: 8
 items:
 - id: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions
-  href: api/Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.yaml
+  href: Microsoft.CodeAnalysis.Recommendations.RecommendationOptions.yaml
   type: Class
 - id: Microsoft.CodeAnalysis.Recommendations.Recommender
-  href: api/Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
+  href: Microsoft.CodeAnalysis.Recommendations.Recommender.yaml
   type: Class

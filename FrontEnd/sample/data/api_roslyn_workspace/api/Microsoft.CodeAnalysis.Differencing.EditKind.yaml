@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Differencing.EditKind
-href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
 name:
   CSharp: EditKind
 qualifiedName:
@@ -8,7 +8,7 @@ type: Enum
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Differencing/EditKind.cs
   startLine: 4
 syntax:
@@ -26,7 +26,7 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.None
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: None
   qualifiedName:
@@ -41,7 +41,7 @@ items:
     content:
       CSharp: None = 0
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Update
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Update
   qualifiedName:
@@ -56,7 +56,7 @@ items:
     content:
       CSharp: Update = 1
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Insert
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Insert
   qualifiedName:
@@ -71,7 +71,7 @@ items:
     content:
       CSharp: Insert = 2
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Delete
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Delete
   qualifiedName:
@@ -86,7 +86,7 @@ items:
     content:
       CSharp: Delete = 3
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Move
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Move
   qualifiedName:
@@ -101,7 +101,7 @@ items:
     content:
       CSharp: Move = 4
 - id: Microsoft.CodeAnalysis.Differencing.EditKind.Reorder
-  href: api/Microsoft.CodeAnalysis.Differencing.EditKind.yaml
+  href: Microsoft.CodeAnalysis.Differencing.EditKind.yaml
   name:
     CSharp: Reorder
   qualifiedName:

@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService
-href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
 name:
   CSharp: ICompilationFactoryService
 qualifiedName:
@@ -8,7 +8,7 @@ type: Interface
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/CompilationFactory/ICompilationFactoryService.cs
   startLine: 6
 syntax:
@@ -16,7 +16,7 @@ syntax:
     CSharp: public interface ICompilationFactoryService
 items:
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions)
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: CreateCompilation
   qualifiedName:
@@ -43,7 +43,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.CreateSubmissionCompilation(System.String,Microsoft.CodeAnalysis.CompilationOptions,System.Type)
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: CreateSubmissionCompilation
   qualifiedName:
@@ -75,7 +75,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetCompilationFromCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: GetCompilationFromCompilationReference
   qualifiedName:
@@ -97,7 +97,7 @@ items:
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.IsCompilationReference(Microsoft.CodeAnalysis.MetadataReference)
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: IsCompilationReference
   qualifiedName:
@@ -119,7 +119,7 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.GetDefaultCompilationOptions
-  href: api/Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
+  href: Microsoft.CodeAnalysis.Host.ICompilationFactoryService.yaml
   name:
     CSharp: GetDefaultCompilationOptions
   qualifiedName:

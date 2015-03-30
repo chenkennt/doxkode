@@ -1,5 +1,5 @@
 id: Microsoft.CodeAnalysis.Host.IPersistentStorage
-href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
 name:
   CSharp: IPersistentStorage
 qualifiedName:
@@ -8,7 +8,7 @@ type: Interface
 source:
   remote: &o0
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Workspaces/Core/Portable/Workspace/Host/PersistentStorage/IPersistentStorage.cs
   startLine: 9
 syntax:
@@ -16,7 +16,7 @@ syntax:
     CSharp: public interface IPersistentStorage
 items:
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(System.String,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -43,7 +43,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(Microsoft.CodeAnalysis.Project,System.String,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -61,7 +61,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
     - id: name
       type:
         id: System.String
@@ -75,7 +75,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.ReadStreamAsync(Microsoft.CodeAnalysis.Document,System.String,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: ReadStreamAsync
   qualifiedName:
@@ -93,7 +93,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
     - id: name
       type:
         id: System.String
@@ -107,7 +107,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(System.String,System.IO.Stream,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -139,7 +139,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(Microsoft.CodeAnalysis.Project,System.String,System.IO.Stream,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -157,7 +157,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Project
         name: Project
-        href: api/Microsoft.CodeAnalysis.Project.yaml
+        href: Microsoft.CodeAnalysis.Project.yaml
     - id: name
       type:
         id: System.String
@@ -176,7 +176,7 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.Host.IPersistentStorage.WriteStreamAsync(Microsoft.CodeAnalysis.Document,System.String,System.IO.Stream,System.Threading.CancellationToken)
-  href: api/Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
+  href: Microsoft.CodeAnalysis.Host.IPersistentStorage.yaml
   name:
     CSharp: WriteStreamAsync
   qualifiedName:
@@ -194,7 +194,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Document
         name: Document
-        href: api/Microsoft.CodeAnalysis.Document.yaml
+        href: Microsoft.CodeAnalysis.Document.yaml
     - id: name
       type:
         id: System.String

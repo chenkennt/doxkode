@@ -1,5 +1,5 @@
 id: Microsoft
-href: api/Microsoft.yaml
+href: Microsoft.yaml
 name:
   CSharp: Microsoft
 qualifiedName:
@@ -8,6 +8,6 @@ type: Namespace
 source:
   remote:
     branch: master
-    repo: https://github.com/dotnet/roslyn.git
+    repo: https://github.com/vicancy/roslyn
   path: src/Compilers/Core/SharedCollections/PooledHashSet.cs
   startLine: 6
