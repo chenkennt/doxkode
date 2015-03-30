@@ -7,6 +7,12 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     return newArray.join('/');
   }
 
+  this.isAbsoluteUrl = function(url){
+    if (!url) return false;
+    var r = new RegExp('^(?:[a-z]+:)?//', 'i');
+    return r.test(url);
+  };
+
   this.tocClassApi = function(navItem) {
     return {
       active: navItem.href && this.pathInfo && this.pathInfo.contentPath,

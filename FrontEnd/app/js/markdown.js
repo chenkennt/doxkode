@@ -155,11 +155,10 @@ angular.module('directives')
       };
     }());
     return {
-      restrict: 'E',
+      restrict: 'AE',
       link: function(scope, element, attrs) {
-        scope.$watch(attrs.ngModel, function(value, oldValue) {
-          var markdown = value;
-          var html = md.toHtml(markdown);
+        function set(val) {
+          var html = md.toHtml(val);
           element.html(html);
           angular.forEach(element.find("code"), function(block) {
             // use highlight.js to highlight code
@@ -175,7 +174,20 @@ angular.module('directives')
             block.parentNode.replaceChild(wrapper, block);
             wrapper.appendChild(block);
           });
-        });
+        }
+
+        set(element.text() || '');
+        if(attrs.ngModel){
+          scope.$watch(attrs.ngModel, function(value, oldValue) {
+            set(value);
+          });
+        }
+
+        if (attrs.markdown){
+          scope.$watch('markdown', function(value, oldValue) {
+            set(value);
+          });
+        }
       }
     };
   }])
