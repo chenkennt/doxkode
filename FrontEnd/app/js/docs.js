@@ -121,20 +121,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
               // if is yaml
 
               // 1. try get md.yaml from the same path as toc, or current path if toc is not there
-              var mdPath = pathInfo.tocPath ? pathInfo.tocPath + '/' + 'md.yaml' : 'md.yaml';
-
-              // TODO: move path to app.config?
-              var tempMdIndex = mdIndexCache.get(mdPath);
-              if (tempMdIndex) {
-                if (tempMdIndex) $scope.mdIndex = tempMdIndex;
-              } else {
-                docService.asyncFetchIndex(mdPath, function(result) {
-                  tempMdIndex = jsyaml.load(result);
-                  // This is the md file path
-                  mdIndexCache.put(mdPath, tempMdIndex);
-                  $scope.mdIndex = tempMdIndex;
-                });
-              }
+              docService.getMdContent($scope, currentPage, mdIndexCache);
 
               docService.asyncFetchIndex(path, function(result) {
                   var model = $scope.partialModel = jsyaml.load(result);
@@ -184,17 +171,15 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         }
       });
 
-      $scope.$watch(function modelWatch() {
-        return $scope.partialModel;
-      }, function modelWatchAction(path) {
+      function mdIndexWatcher(path){
         if ($scope.mdIndex && $scope.partialModel) {
           var mdPath = $scope.mdIndex[$scope.partialModel.id];
           if (mdPath) {
             if (mdPath.href) {
               $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
               var tocPath = docService.getPathInfo($location.path()).tocPath;
-              if (tocPath) mdPath.href = tocPath + '/' + mdPath.href;
-              var getMdIndex = docService.asyncFetchIndex(mdPath.href,
+              var href = (tocPath || '') + '/' + mdPath.href;
+              var getMdIndex = docService.asyncFetchIndex(href,
                 function(result) {
                   var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
                   $scope.partialModel.mdContent = md;
@@ -202,7 +187,15 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             }
           }
         }
-      });
+      }
+
+      $scope.$watch(function modelWatch() {
+        return $scope.partialModel ;
+      }, mdIndexWatcher);
+
+      $scope.$watch(function modelWatch() {
+        return $scope.mdIndex ;
+      }, mdIndexWatcher);
 
       // listen for toc change
       // $scope.$watch(function modelWatch() {

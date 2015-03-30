@@ -220,6 +220,28 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     }
   };
 
+  this.getMdContent = function($scope, path, mdIndexCache){
+    if (!path) return;
+    var pathInfo = this.getPathInfo(path);
+    var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+
+    if (mdPath) {
+      var tempMdIndex = mdIndexCache.get(mdPath);
+      if (tempMdIndex) {
+        if (tempMdIndex) $scope.mdIndex = tempMdIndex;
+      } else {
+        this.asyncFetchIndex(mdPath, function(result) {
+          tempMdIndex = jsyaml.load(result);
+          // This is the md file path
+          mdIndexCache.put(mdPath, tempMdIndex);
+          $scope.mdIndex = tempMdIndex;
+        });
+      }
+    }else{
+      $scope.toc = undefined;
+    }
+  };
+
   this.getDefaultItem = function(array, action) {
     if (!action) return;
     if (array && array.length > 0) {
