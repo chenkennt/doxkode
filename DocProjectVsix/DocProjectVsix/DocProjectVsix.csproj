@@ -189,7 +189,6 @@
     <ZipItem Include="Templates\Items\Markdown\Markdown.vstemplate">
       <RootPath>Templates\Items\Markdown</RootPath>
     </ZipItem>
-    
     <ZipProject Include="Templates\Projects\DocProject\api\NOTE.md">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
@@ -220,6 +219,7 @@
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
       <RootPath>Templates\Projects\DocProject</RootPath>
+      <SubType>Designer</SubType>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
       <RootPath>Templates\Projects\DocProject</RootPath>
@@ -243,12 +243,6 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\js\docascode.js">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\Startup.cs">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\project.json">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <VSIXSourceItem Include="$(OutputPath)\ProjectTemplates\DocProject.zip">
