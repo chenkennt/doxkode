@@ -115,7 +115,7 @@ namespace DocAsCode.BuildMeta
                 {
                     using (StringReader reader = new StringReader(content))
                     {
-                        viewModel = YamlUtility.Deserializer.Deserialize<YamlItemViewModel>(reader);
+                        viewModel = YamlUtility.Deserialize<YamlItemViewModel>(reader);
 
                         if (string.IsNullOrEmpty(viewModel.Name))
                         {
