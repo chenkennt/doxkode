@@ -385,7 +385,7 @@ namespace DocAsCode.BuildMeta
             {
                 using (StreamReader reader = new StreamReader(metadataFileName))
                 {
-                    projectMetadata = YamlUtility.Deserializer.Deserialize<YamlItemViewModel>(reader);
+                    projectMetadata = YamlUtility.Deserialize<YamlItemViewModel>(reader);
                     return new ParseResult(ResultLevel.Success);
                 }
             }
@@ -402,7 +402,7 @@ namespace DocAsCode.BuildMeta
             {
                 using (StreamWriter writer = new StreamWriter(filePath))
                 {
-                    YamlUtility.Serializer.Serialize(writer, doc);
+                    YamlUtility.Serialize(writer, doc);
                     return new ParseResult(ResultLevel.Success, "Successfully generated metadata {0} for {1}", filePath, doc.Name);
                 }
             }
@@ -421,14 +421,14 @@ namespace DocAsCode.BuildMeta
             string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.Href);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
-                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlListViewModel);
+                YamlUtility.Serialize(sw, viewModel.TocYamlListViewModel);
             }
 
             // 2. generate api.yaml
             string indexFilePath = Path.Combine(folder, indexFileName);
             using (StreamWriter sw = new StreamWriter(indexFilePath))
             {
-                YamlUtility.Serializer.Serialize(sw, viewModel.IndexYamlViewModel);
+                YamlUtility.Serialize(sw, viewModel.IndexYamlViewModel);
             }
 
             // 3. generate each item's yaml
@@ -438,7 +438,7 @@ namespace DocAsCode.BuildMeta
                 Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
                 using (StreamWriter sw = new StreamWriter(itemFilepath))
                 {
-                    YamlUtility.Serializer.Serialize(sw, item);
+                    YamlUtility.Serialize(sw, item);
                     ParseResult.WriteToConsole(ResultLevel.Success, "Metadata file for {0} is saved to {1}", item.Name, itemFilepath);
                 }
             }
@@ -455,7 +455,7 @@ namespace DocAsCode.BuildMeta
             if (!File.Exists(indexFilePath)) return null;
             using (StreamReader sr = new StreamReader(indexFilePath))
             {
-                indexViewModel = YamlUtility.Deserializer.Deserialize<Dictionary<string, IndexYamlItemViewModel>>(sr);
+                indexViewModel = YamlUtility.Deserialize<Dictionary<string, IndexYamlItemViewModel>>(sr);
             }
 
             // Generate markdown index
@@ -467,7 +467,7 @@ namespace DocAsCode.BuildMeta
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);
                     using (StreamWriter sw = new StreamWriter(markdownIndexFilePath))
                     {
-                        YamlUtility.Serializer.Serialize(sw, mdresult);
+                        YamlUtility.Serialize(sw, mdresult);
                         return markdownIndexFilePath;
                     }
                 }

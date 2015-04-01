@@ -126,7 +126,7 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
       var href = navList[i].href;
       href = normalizeUrl(href) + '/'; // Append '/'' so that it must be a full path
       // return the first matched nav
-      if (path.startsWith(href)){
+      if (path.indexOf(href) === 0){
         return {
               tocPath: href,
               tocFilePath: href + docConstants.TocFile,

@@ -56,11 +56,11 @@ namespace DocAsCode.EntityModel
                 return false;
             }
 
-            if (string.IsNullOrEmpty(this.ApiName) && string.IsNullOrEmpty(other.ApiName) == null)
+            if (string.IsNullOrEmpty(this.ApiName) && string.IsNullOrEmpty(other.ApiName))
             {
                 return true;
             }
-            else
+            else if (string.IsNullOrEmpty(this.ApiName) || string.IsNullOrEmpty(other.ApiName))
             {
                 return false;
             }
@@ -82,7 +82,7 @@ namespace DocAsCode.EntityModel
         {
             using (StringWriter writer = new StringWriter())
             {
-                YamlUtility.Serializer.Serialize(writer, this);
+                YamlUtility.Serialize(writer, this);
                 return writer.ToString();
             }
         }

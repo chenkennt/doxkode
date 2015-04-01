@@ -2,8 +2,9 @@ var createIndex = function (grunt, config, mode) {
     'use strict';
     var conf = grunt.config('index')[config],
     tmpl = grunt.file.read(conf.template);
-    var templatesString = grunt.file.read('tmp/templates.html');
-    grunt.config.set('templatesString', templatesString);
+    // Doesn't seem to be useful... comment for now to unblock build
+    // var templatesString = grunt.file.read('tmp/templates.html');
+    // grunt.config.set('templatesString', templatesString);
     // register the task name in global scope so we can access it in the .tmpl file
     grunt.config.set('compileConfig', {mode: mode, config: config});
     var gruntTemplate = grunt.template;
@@ -298,7 +299,7 @@ module.exports = function(grunt) {
         });
     });
 
-    grunt.registerTask('build', ['exists:src', 'less:dev', 'jshint']);
+    grunt.registerTask('build', ['less:dev', 'exists:src', 'jshint']);
     grunt.registerTask('debug', [ 'build', 'concat', 'index_debug_ref', 'clean:debug', 'copy:debug_ref']);
     grunt.registerTask('debuginline', [ 'build', 'concat', 'index_debug_inline','clean:debug', 'copy:debug']);
     grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
