@@ -36,12 +36,14 @@
         <div class=""  ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
           <!--<div class="" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">-->
           <div class="">
-            <h4 class="item-title" ng-if="item.name.CSharp">
-              {{item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-            </h4>
-            <h4 class="item-title" ng-if="!item.name.CSharp && item.name.VB">
-              {{item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-            </h4>
+            <a ng-click="isCollapsed = !isCollapsed">
+              <h4 class="item-title" ng-if="item.name.CSharp">
+                {{item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+              </h4>
+              <h4 class="item-title" ng-if="!item.name.CSharp && item.name.VB">
+                {{item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+              </h4>
+            </a>
             <!--<div class="view-source btn" ng-show="showBtn">
               <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
             </div>
@@ -51,92 +53,85 @@
               </div>
             </div>-->
             <div class="summary">
-              <markdown ng-model="item.summary">
-              </markdown>
+              <markdown ng-model="item.summary"></markdown>
             </div>
             <!--<a class="section-member-detail-before"  ng-init="showDetail=false"  ng-show="showDetail"> - </a>
             <a class="section-member-detail-before" ng-show="!showDetail"> + </a>
             <a class="section-member-detail" ng-click="showDetail=!showDetail; GetDetail($event)">
                 details
             </a>-->
-            <div>
-              
-              <section>
-                
-                <div class="">
-                  <div class="">
-                    <markdown ng-model="item.mdContent">
-                    </markdown>
-                  </div>
-                  <div class="" ng-if="item.syntax">
-                    <div class="declaration">
-                      <h5>Declaration</h5>
-                      <declaration ng-if="item.syntax.content.CSharp" ng-model="item.syntax.content.CSharp" ng-language="csharp" class="sudo-pre">
-                      </declaration>
-                      <declaration ng-if="!item.syntax.content.CSharp && item.syntax.content.VB"  ng-language="vb" ng-model="item.syntax.content.VB" class="sudo-pre">
-                      </declaration>
-                    </div>
-                    <div class="parameters" ng-if="item.syntax.parameters && item.type == 'Property'" >
-                      <h5>Property Value</h5>
-                      <table>
-                        <tr ng-repeat="par in item.syntax.parameters">
-                          <td scope="row">
-                            <a ng-href="{{GetLinkHref(par.type.href)}}">{{par.type.id}}</a>
-                          </td>
-                          <td>
-                            <div class="">
-                              <p class="">
-                                <markdown ng-model="par.description">
-                                </markdown>
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="parameters" ng-if="item.syntax.parameters && item.type != 'Property'" >
-                      <h5>Parameters</h5>
-                      <table>
-                        <tr ng-repeat="par in item.syntax.parameters">
-                          <td scope="row">
-                            <a ng-href="{{GetLinkHref(par.type.href)}}">{{par.type.id}}</a>
-                          </td>
-                          <td scope="row">
-                            <em class="term">{{par.id}}</em>
-                          </td>
-                          <td>
-                            <div class="definition">
-                              <p class="para">
-                                <markdown ng-model="par.description">
-                                </markdown>
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="Returns" ng-if="item.syntax.return">
-                      <h5>Returns</h5>
-                      <table>
-                        <tr>
-                          <td scope="row">
-                            <a ng-href="{{GetLinkHref(item.syntax.return.type.href)}}">{{item.syntax.return.id}}</a>
-                          </td>
-                          <td>
-                            <div class="definition">
-                              <p class="para">
-                                <markdown ng-model="item.syntax.return.description">
-                                </markdown>
-                              </p>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+            <section class="item-section" collapse="!isCollapsed">
+              <div class="">
+                <markdown ng-model="item.mdContent">
+                </markdown>
+              </div>
+              <div class="" ng-if="item.syntax">
+                <div class="declaration">
+                  <h5>Declaration</h5>
+                  <declaration ng-if="item.syntax.content.CSharp" ng-model="item.syntax.content.CSharp" ng-language="csharp" class="sudo-pre">
+                  </declaration>
+                  <declaration ng-if="!item.syntax.content.CSharp && item.syntax.content.VB"  ng-language="vb" ng-model="item.syntax.content.VB" class="sudo-pre">
+                  </declaration>
                 </div>
-              </section>
-            </div>
+                <div class="parameters" ng-if="item.syntax.parameters && item.type == 'Property'" >
+                  <h5>Property Value</h5>
+                  <table>
+                    <tr ng-repeat="par in item.syntax.parameters">
+                      <td scope="row">
+                        <a ng-href="{{GetLinkHref(par.type.href)}}">{{par.type.id}}</a>
+                      </td>
+                      <td>
+                        <div class="">
+                          <p class="">
+                            <markdown ng-model="par.description">
+                            </markdown>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="parameters" ng-if="item.syntax.parameters && item.type != 'Property'" >
+                  <h5>Parameters</h5>
+                  <table>
+                    <tr ng-repeat="par in item.syntax.parameters">
+                      <td scope="row">
+                        <a ng-href="{{GetLinkHref(par.type.href)}}">{{par.type.id}}</a>
+                      </td>
+                      <td scope="row">
+                        <em class="term">{{par.id}}</em>
+                      </td>
+                      <td>
+                        <div class="definition">
+                          <p class="para">
+                            <markdown ng-model="par.description">
+                            </markdown>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="Returns" ng-if="item.syntax.return">
+                  <h5>Returns</h5>
+                  <table>
+                    <tr>
+                      <td scope="row">
+                        <a ng-href="{{GetLinkHref(item.syntax.return.type.href)}}">{{item.syntax.return.id}}</a>
+                      </td>
+                      <td>
+                        <div class="definition">
+                          <p class="para">
+                            <markdown ng-model="item.syntax.return.description">
+                            </markdown>
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>

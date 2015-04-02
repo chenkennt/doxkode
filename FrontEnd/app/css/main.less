@@ -18,6 +18,7 @@ body {
 
 a {
   color: @brand-color;
+  cursor: pointer;
 }
 
 a:hover,
@@ -58,6 +59,27 @@ h5, .h5 {
 .btn:hover, .btn:focus {
   color: #000;
   background: white;
+}
+
+/* additional spacing fixes */
+
+.table {
+  margin-bottom: 10px;
+}
+
+//workaround for table summary with p tag
+table p {
+  margin-bottom: 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 //========================================
@@ -142,8 +164,21 @@ h5, .h5 {
   margin-left: 5px;
 }
 
-/* additional spacing fixes */
+/* animation issue workaround */
 
+.summary {
+  overflow: hidden;
+}
+
+.summary p {
+  margin-bottom: 0;
+}
+
+.item-section {
+  overflow: hidden;
+}
+
+/* additional spacing fixes */
 
 //========================================
 //  console

@@ -16,6 +16,7 @@ angular.module('docsApp', [
   'errors',
   'versions',
   'bootstrap',
+  'ui.bootstrap',
   'ui.bootstrap.dropdown',
 ]);
 
