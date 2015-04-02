@@ -209,8 +209,8 @@ angular.module('directives', ['docInitService'])
       link: function(scope, element, attrs) {
         scope.$watch(attrs.ngModel, function(value, oldValue) {
           var language = attrs.ngLanguage;
-          element.html('<code class="lang-' + 'language' + '"></code>');
-          var code = element.children("code");
+          element.html('<pre><code class="lang-' + 'language' + '"></code></pre>');
+          var code = element.children("pre").children("code");
           code.text(value);
           hljs.highlightBlock(code[0]);
         });

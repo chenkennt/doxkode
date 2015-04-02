@@ -168,13 +168,11 @@
     </div>
   </div>
   <div id="wrapper">
-    <header scroll-y-offset-element class="header header-fixed">
-      <section class="navbar navbar-inverse docs-navbar-primary">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 header-branding">
-              <div ng-repeat="model in [navbar]"  ng-include="'template/navbar.tmpl'"></div>
-            </div>
+    <header scroll-y-offset-element class="">
+      <div class="topnav">
+        <div class="navbar navbar-inverse navbar-default navbar-fixed-top">
+          <div class="container">
+            <div ng-repeat="model in [navbar]"  ng-include="'template/navbar.tmpl'"></div>
             <!-- comment out search box as it is not currently supported
             <form ng-class="{focus:focus}" class="navbar-search col-md-3 docs-search" ng-submit="submit()">
               <span class="glyphicon glyphicon-search search-icon"></span>
@@ -191,7 +189,7 @@
             </form> -->
           </div>
         </div>
-        <div class="search-results-container" ng-show="hasResults">
+        <!--<div class="search-results-container" ng-show="hasResults">
           <div class="container">
             <div class="search-results-frame">
               <div ng-repeat="(key, value) in results" class="search-results-group" ng-class="colClassName + ' col-group-' + key">
@@ -207,10 +205,10 @@
               <span class="glyphicon glyphicon-remove search-close-icon"></span> Close
             </a>
           </div>
-        </div>
-      </section>
+        </div>-->
+      </div>
       <!-- Temp disable it: what to show for conceptual?
-      <section class="sup-header">
+      <div class="sup-header">
         <div class="container main-grid main-header-grid">
           <div class="grid-left">
             <div ng-controller="DocsVersionsCtrl" class="picker version-picker">
@@ -230,24 +228,20 @@
             </ul>
           </div>
         </div>
-      </section>-->
+      </div>-->
     </header>
 
-    <section role="main" class="container main-body">
-      <div class="main-grid main-body-grid">
-        <div class="grid-left" ng-if="toc">
-          <div class="side-navigation">
-            <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-            <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
-          </div>
-        </div>
-        <div ng-class="gridClass(toc)">
-          <div id="loading" ng-show="loading">Loading...</div>
-          <div markdown ng-if="contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
-          <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
-        </div>
+    <div role="main" class="container content">
+      <div class="sidenav" ng-if="toc">
+        <div id="tocLoading" ng-show="tocLoading">Loading...</div>
+        <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
-    </section>
+      <div ng-class="gridClass(toc)" class="article">
+        <div id="loading" ng-show="loading">Loading...</div>
+        <div markdown ng-if="contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+        <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+      </div>
+    </div>
 
     <!--
     comment out footer as it is currently having display issue
