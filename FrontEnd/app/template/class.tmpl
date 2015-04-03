@@ -2,15 +2,15 @@
   <!--article-content-->
   <article class="">
     <div id="article-header">
-      <div ng-if="model.mdHref">
-        <a ng-href="{{model.mdHref}}" class="btn pull-right">Improve this Doc</a>
-      </div>
+      <a ng-if="model.mdHref" ng-href="{{model.mdHref}}" class="btn pull-right">Improve this Doc</a>
       <a class="btn pull-right" ng-href={{ViewSource()}}> View Source</a>
-      <h1 class="item-title" ng-if="model.name.CSharp">{{model.type}} {{model.name.CSharp}}</h1>
-      <h1 class="item-title" ng-if="!model.name.CSharp && model.name.VB">{{model.type}} {{model.name.VB}}</h1>
+      <h1 ng-if="model.name.CSharp">{{model.type}} {{model.name.CSharp}}</h1>
+      <h1 ng-if="!model.name.CSharp && model.name.VB">{{model.type}} {{model.name.VB}}</h1>
       <section class="summary">
-          <markdown ng-model="model.summary"></markdown>
-          <markdown ng-model="model.mdContent"></markdown>
+        <markdown ng-model="model.summary"></markdown>
+      </section>
+      <section>
+        <markdown ng-model="model.mdContent"></markdown>
       </section>
       <section id="metadata_table" class="inheritance">
         <div class="" ng-if="model.inheritance">
@@ -35,13 +35,17 @@
         <h3 class="" ng-show="itemtype.show">{{itemtype.description}}</h3>
         <div class=""  ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
           <!--<div class="" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">-->
-          <div class="">
-            <a ng-click="isCollapsed = !isCollapsed">
-              <h4 class="item-title" ng-if="item.name.CSharp">
-                {{item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-              </h4>
-              <h4 class="item-title" ng-if="!item.name.CSharp && item.name.VB">
-                {{item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+          <div class="item-section">
+            <a class="item-toggle" ng-init="showDetail=false" ng-click="showDetail = !showDetail; isCollapsed = !isCollapsed">
+              <h4>
+                <span ng-if="item.name.CSharp">
+                  {{item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+                </span>
+                <span ng-if="!item.name.CSharp && item.name.VB">
+                  {{item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+                </span>
+                <span class="minus-icon" ng-show = "showDetail"></span>
+                <span class="plus-icon" ng-show = "!showDetail"></span>
               </h4>
             </a>
             <!--<div class="view-source btn" ng-show="showBtn">
@@ -60,7 +64,7 @@
             <a class="section-member-detail" ng-click="showDetail=!showDetail; GetDetail($event)">
                 details
             </a>-->
-            <section class="item-section" collapse="!isCollapsed">
+            <div class="item-collapsible" collapse="!isCollapsed">
               <div class="">
                 <markdown ng-model="item.mdContent">
                 </markdown>
@@ -131,7 +135,7 @@
                   </table>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>

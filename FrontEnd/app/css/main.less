@@ -16,19 +16,15 @@ body {
   font-family: @font-default;
 }
 
-a {
+button, a {
   color: @brand-color;
   cursor: pointer;
 }
 
-a:hover,
-a:focus {
+button:hover, button:focus,
+a:hover, a:focus {
   color: @brand-highlight;
-}
-
-hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  text-decoration: none;
 }
 
 //overwrite code style from highlighter
@@ -46,6 +42,7 @@ h5, .h5 {
   font-family: @font-semibold;
 }
 
+//gradient button
 .btn {
   font-family: @font-semibold;
   border: 1px solid #e5e5e5;
@@ -63,6 +60,11 @@ h5, .h5 {
 
 /* additional spacing fixes */
 
+//
+.btn+.btn {
+  margin-right: 10px;
+}
+
 .table {
   margin-bottom: 10px;
 }
@@ -74,7 +76,7 @@ table p {
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
@@ -155,10 +157,6 @@ h4, .h4, h5, .h5, h6, .h6 {
 //  article
 //========================================
 
-.item-title {
-  color: @brand-color;
-}
-
 //inheritance indentation
 .inheritance span {
   margin-left: 5px;
@@ -174,19 +172,133 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 0;
 }
 
-.item-section {
+.item-collapsible {
   overflow: hidden;
 }
 
+/* expand icons */
+
+.item-toggle:hover .plus-icon, .item-toggle:focus .plus-icon,
+.item-toggle:hover .minus-icon, .item-toggle:focus .minus-icon,
+.item-toggle:hover .plus-icon:before, .item-toggle:focus .plus-icon:before,
+.item-toggle:hover .minus-icon:before, .item-toggle:focus .minus-icon:before,
+.item-toggle:hover .plus-icon:after, .item-toggle:focus .plus-icon:after,
+.item-toggle:hover .minus-icon:after, .item-toggle:focus .minus-icon:after {
+  border-color: @brand-highlight;
+}
+
+.plus-icon, .minus-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid @brand-color;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.plus-icon:before, .minus-icon:before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  border-top: 1px solid @brand-color;
+  display: block;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 0px;
+}
+
+.plus-icon:after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  border-right: 1px solid @brand-color;
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 6px;
+}
+
 /* additional spacing fixes */
+
+//inheritance hr should be smaller
+.inheritance hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 //========================================
 //  console
 //========================================
 
+.codewrapper {
+  position: relative;
+}
+
+.trydiv {
+  height: 0px;
+}
+
+.tryspan {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-style: solid;
+  border-radius: 0px 4px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-color: #ccc;
+  text-align: center;
+  padding: 2px 8px;
+  background-color: white;
+  //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  color: rgb(118,118,118);
+}
+
+.tryspan:hover {
+  background-color: rgb(59, 139, 208);
+  color: white;
+  border-color: rgb(59, 139, 208);
+}
+
+.codewrapper:hover .tryspan {
+  display: block;
+}
+
 #console {
-  position: fixed;
+  position:fixed;
   width: 50%;
   height: 100%;
   margin-left: 100%;
+  float: left;
+  text-align: center;
+  background-color: rgb(61,61,61);
+  color: white;
+  z-index: 2000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 0;
 }
+
+#player {
+  width: 100%;
+  height: ~"calc(100% - 50px)";
+  text-align: left;
+}
+
+#run, #close {
+  //height: 30px;
+  width: 65px;
+  //margin-top: 10px;
+}
+
+//========================================
+//  responsive
+//========================================
+
+@media only screen
