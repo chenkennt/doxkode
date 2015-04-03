@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Globalization;
+using System.IO;
+using System.Threading;
 using YamlDotNet.Serialization;
 
 /// <summary>
@@ -55,7 +57,17 @@ namespace DocAsCode.EntityModel
 
     public static class YamlUtility
     {
-        public static Serializer Serializer = new Serializer();
-        public static Deserializer Deserializer = new Deserializer();
+        private static readonly ThreadLocal<Serializer> serializer = new ThreadLocal<Serializer>(() => new Serializer());
+        private static readonly ThreadLocal<Deserializer> deserializer = new ThreadLocal<Deserializer>(() => new Deserializer());
+
+        public static void Serialize(TextWriter writer, object graph)
+        {
+            serializer.Value.Serialize(writer, graph);
+        }
+
+        public static T Deserialize<T>(TextReader reader)
+        {
+            return deserializer.Value.Deserialize<T>(reader);
+        }
     }
 }

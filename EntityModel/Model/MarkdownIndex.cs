@@ -82,7 +82,7 @@ namespace DocAsCode.EntityModel
         {
             using (StringWriter writer = new StringWriter())
             {
-                YamlUtility.Serializer.Serialize(writer, this);
+                YamlUtility.Serialize(writer, this);
                 return writer.ToString();
             }
         }
