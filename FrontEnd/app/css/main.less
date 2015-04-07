@@ -121,11 +121,6 @@ h4, .h4, h5, .h5, h6, .h6 {
     padding: 15px;
 }
 
-//content section on the right
-.article.grid-right {
-  margin-left: 270px;
-}
-
 .sidenav .nav > li > a {
     display: inline;
     padding: 0;
@@ -164,6 +159,15 @@ h4, .h4, h5, .h5, h6, .h6 {
 //========================================
 //  article
 //========================================
+
+.article {
+  margin-top: 15px;
+}
+
+//content section on the right
+.article.grid-right {
+  margin-left: 270px;
+}
 
 //inheritance indentation
 .inheritance span {
@@ -232,6 +236,11 @@ h4, .h4, h5, .h5, h6, .h6 {
 .inheritance hr {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+//workaround to set img max width as default behavior
+.article img {
+  max-width: 100%;
 }
 
 //========================================
