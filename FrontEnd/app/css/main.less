@@ -60,7 +60,7 @@ h5, .h5 {
 
 /* additional spacing fixes */
 
-//
+//margin between 2 buttons
 .btn+.btn {
   margin-right: 10px;
 }
@@ -84,10 +84,14 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 5px;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 //========================================
 //  top nav bar
 //========================================
-.topnav .nav > li > a.current {
+.topnav > li > a.current {
   color: #fff;
 }
 
@@ -112,10 +116,19 @@ h4, .h4, h5, .h5, h6, .h6 {
     bottom: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+}
+
+//content section on the right
+.article.grid-right {
+  margin-left: 270px;
 }
 
 .sidenav .nav > li > a {
-    padding: 0px;
+    display: inline;
+    padding: 0;
 }
 
 .sidenav .nav > li > a:hover,
@@ -129,12 +142,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .sidenav .sidenav-lvl-1 > li {
-    margin: 10px 0;
-}
-
-//content section on the right
-.article.grid-right {
-  margin-left: 270px;
+    margin-bottom: 20px;
 }
 
 /* second lvl navbar grey text */
@@ -301,4 +309,38 @@ h4, .h4, h5, .h5, h6, .h6 {
 //  responsive
 //========================================
 
-@media only screen
+@media only screen and (max-width : 768px) {
+
+/* TOC display for responsive */
+
+  .topnav {
+    position: static;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  .sidenav {
+    position: static;
+    width: auto;
+    float: none;
+    background-color: #efefef;
+  }
+
+  .sidenav .sidenav-lvl-2 > li {
+    display: inline-block;
+  }
+
+  .sidenav .sidenav-lvl-2 > li:after {
+    margin-left: -3px;
+    margin-right: 5px;
+    content: ", ";
+  }
+
+  .article.grid-right {
+    margin-left: 0;
+  }
+
+}
