@@ -66,18 +66,13 @@
             </a>-->
             <div class="item-collapsible" collapse="!isCollapsed">
               <div class="">
-                <div class="markdown">{{::item.mdContent}}
-                </div>
+                <div class="markdown">{{::item.mdContent}}</div>
               </div>
               <div class="" ng-if="::item.syntax">
                 <div class="declaration">
                   <h5>Declaration</h5>
-                    <div class="declaration-content sudo-pre" ng-if="::item.syntax.content.CSharp" ng-language="csharp">
-                        {{::item.syntax.content.CSharp}}
-                    </div>
-                    <div class="declaration-content sudo-pre" ng-if="::(!item.syntax.content.CSharp && item.syntax.content.VB)" ng-language="vb">
-                        {{::item.syntax.content.VB}}
-                    </div>
+                    <div class="declaration-content sudo-pre" ng-if="::item.syntax.content.CSharp" ng-language="csharp">{{::item.syntax.content.CSharp}}</div>
+                    <div class="declaration-content sudo-pre" ng-if="::(!item.syntax.content.CSharp && item.syntax.content.VB)" ng-language="vb">{{::item.syntax.content.VB}}</div>
                 </div>
                 <div class="parameters" ng-if="::(item.syntax.parameters && item.type == 'Property')" >
                   <h5>Property Value</h5>
@@ -89,9 +84,7 @@
                       <td>
                         <div class="">
                           <p class="">
-                              <div class="markdown">
-                                  {{::par.description}}
-                              </div>
+                            <div class="markdown">{{::par.description}}</div>
                           </p>
                         </div>
                       </td>
@@ -111,9 +104,7 @@
                       <td>
                         <div class="definition">
                           <p class="para">
-                              <div class="markdown">
-                                  {{::par.description}}
-                              </div>
+                              <div class="markdown">{{::par.description}}</div>
                           </p>
                         </div>
                       </td>
@@ -130,9 +121,7 @@
                       <td>
                         <div class="definition">
                           <p class="para">
-                              <div class="markdown">
-                                  {{::item.syntax.return.description}}
-                              </div>
+                            <div class="markdown">{{::item.syntax.return.description}}</div>
                           </p>
                         </div>
                       </td>
