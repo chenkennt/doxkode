@@ -5,7 +5,6 @@ angular.module('docsApp', [
   'ngRoute',
   'ngCookies',
   'ngSanitize',
-  'ngAnimate',
   'docConstants',
   'docUtility',
   'docCtrl',
@@ -16,6 +15,7 @@ angular.module('docsApp', [
   'errors',
   'versions',
   'bootstrap',
+  'ui.bootstrap',
   'ui.bootstrap.dropdown',
 ]);
 
@@ -27,10 +27,10 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
     return $cacheFactory('mdIndex-cache');
   }])
   .controller('DocsController', [
-    '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies',
-    'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache', 'docUtility',
-    function($scope, $http, $q, $rootScope, $location, $window, $cookies,
-      NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache, docUtility) {
+    '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
+    'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache', 'docUtility', 'docsMarkdownService',
+    function ($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
+      NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache, docUtility, docsMarkdownService) {
       'use strict';
 
       $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
@@ -39,6 +39,68 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
       $scope.gridClass = docService.gridClassApi;
 
       $scope.navClass = docService.navClassApi;
+
+      var md = (function () {
+          marked.setOptions({
+              gfm: true,
+              pedantic: false,
+              sanitize: true
+          });
+
+          var toHtml = function (markdown) {
+              if (!markdown)
+                  return '';
+
+              return marked(markdown);
+          };
+          return {
+              toHtml: toHtml
+          };
+      }());
+        //This is used to convert all the markdown content into html when the page is loaded
+        //But I just finished it in jquery, maybe someone can change it into angularjs style
+      $scope.finishLoading = function () {
+          $timeout(function () {
+              //declaration
+              var declarationElement = $("div.declaration-content").html(function () {
+                  var language = $(this).attr("ng-language");
+                  return '<pre><code class="lang-' + language + '">' + $(this).context.innerText + '</code></pre>';
+              }).each(function (i, block) {
+                  hljs.highlightBlock(block);
+              });
+              //markdown
+              var markdownElement = $("div.markdown").html(function () {
+                  var html = md.toHtml($(this).context.innerText);
+                  return html;
+              });
+              markdownElement.find("code").each(function (i, block) {
+                  // use highlight.js to highlight code
+                  hljs.highlightBlock(block);
+                  // Add try button
+                  block = block.parentNode;
+                  var wrapper = document.createElement("div");
+                  wrapper.className = "codewrapper";
+                  wrapper.innerHTML = '<div class="trydiv"><span class="tryspan">Try this code</span></div>';
+                  wrapper.childNodes[0].childNodes[0].onclick = function () {
+                      docsMarkdownService.tryCode(true, block.innerText);
+                  };
+                  block.parentNode.replaceChild(wrapper, block);
+                  wrapper.appendChild(block);
+              });
+              markdownElement.find("code").each(function (i, block) {
+                  var url = block.attributes['href'] && block.attributes['href'].value;
+                  if (!url) return;
+                  if (!docService.isAbsoluteUrl(url))
+                      block.attributes['href'].value = docService.getHref($scope, $location.path(), url);
+              });
+              markdownElement.find("code").each(function (i, block) {
+                  var url = block.attributes['src'] && block.attributes['src'].value;
+                  if (!url) return;
+                  if (!docService.isAbsoluteUrl(url))
+                      block.attributes['src'].value = docService.getAbsolutePath($location.path(), url);
+              });
+          }, 1, false);
+      };
 
       $scope.getNumber = function(num) {
         return new Array(num + 1);
