@@ -70,7 +70,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
               });
               //markdown
               var markdownElement = $("div.markdown").html(function () {
-                  var html = md.toHtml($(this).context.innerText);
+                  var html = md.toHtml($(this).text());
                   return html;
               });
               markdownElement.find("code").each(function (i, block) {
