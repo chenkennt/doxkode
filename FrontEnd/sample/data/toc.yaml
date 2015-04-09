@@ -10,5 +10,7 @@
   href: api_roslyn_workspace
 - id: Test Case API
   href: api_from_unittest
+- id: Cat Test API
+  href: api_cat
 - id: External
   href: http://www.bing.com
