@@ -133,7 +133,7 @@ module.exports = function(grunt) {
             'app/index.tmpl',
             'sample/data/**/*.*',
         ],
-        tasks: ['jshint']
+        tasks: ['jshint', 'test']
     },
     connect: {
       test: {

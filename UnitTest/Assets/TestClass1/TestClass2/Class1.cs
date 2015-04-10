@@ -35,7 +35,7 @@ namespace Microsoft.DevDiv.Build.TestLibraryA
     public partial class TestLibraryA
     {
         /// <summary>
-        /// This is an **ENUM**
+        /// This is an **ENUM** <see cref="Tuple"/>
         /// </summary>
         public enum ColorType { Red, Blue, Yellow }
         private enum PrivateColorType { Purple, White }
@@ -43,6 +43,26 @@ namespace Microsoft.DevDiv.Build.TestLibraryA
         internal enum InternalColorType { Grey }
         [Serializable]
         protected internal enum ProtectedInternalColorType { Green }
+
+        /// <summary>
+        /// This is a Tuple
+        /// </summary>
+        /// <typeparam name="T">Tuple type</typeparam>
+        /// <returns>A</returns>
+        public Tuple<string, T> GetTuple<T>(Tuple<string, Tuple<T, T>> a) where T : class
+        {
+            return Tuple.Create(string.Empty, default(T));
+        }
+
+        /// <summary>
+        /// Get k
+        /// </summary>
+        /// <param name="a">a</param>
+        /// <returns>a</returns>
+        public Tuple<string, int> GetInt(Tuple<string, int> a)
+        {
+            return null;
+        }
     }
 
     #region Basic Class
@@ -338,7 +358,7 @@ namespace Microsoft.DevDiv.Build.TestLibraryA
         [Obsolete]
         protected string AddProtected(string name, int num, string level)
         {
-            int wordCount = name.WordCount();
+            // int wordCount = name.WordCount();
             return "asdf";
         }
 
