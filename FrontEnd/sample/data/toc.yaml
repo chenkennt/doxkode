@@ -8,8 +8,10 @@
   href: roslyn_wiki
 - id: Roslyn Workspace API
   href: api_roslyn_workspace
-- id: System.Web.Mvc
+- id: System.Web.Mvc API
   href: api_system_web_mvc
+- id: .NET Core API
+  href: api_corefx
 - id: Test Case API
   href: api_from_unittest
 - id: Cat Test API
