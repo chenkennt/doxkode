@@ -168,8 +168,8 @@
     </div>
   </div>
   <div id="wrapper">
-    <header scroll-y-offset-element class="">
-      <div class="topnav navbar navbar-inverse navbar-default navbar-fixed-top">
+    <header scroll-y-offset-element>
+      <div class="topnav navbar navbar-inverse navbar-default">
         <div class="container">
           <div ng-repeat="model in [navbar]"  ng-include="'template/navbar.tmpl'"></div>
           <!-- comment out search box as it is not currently supported
@@ -188,6 +188,16 @@
           </form> -->
         </div>
       </div>
+      <div class="subnav navbar navbar-default">
+        <div class="container">
+            <ul class="breadcrumb">
+              <li ng-repeat="crumb in breadcrumb">
+                <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="grad-top"></div>
       <!--<div class="search-results-container" ng-show="hasResults">
         <div class="container">
           <div class="search-results-frame">
@@ -229,10 +239,11 @@
       </div>-->
     </header>
 
-    <div role="main" class="container content">
+    <div role="main" class="container">
       <div class="sidenav" ng-if="toc">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-        <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+        <a class="btn toc-toggle" ng-init="tocToggle=tocLoading" ng-click="tocToggle=!tocToggle">Show / Hide Table of Contents</a>
+        <div ng-hide="tocToggle" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
       <div ng-class="gridClass(toc)" class="article">
         <div id="loading" ng-show="loading">Loading...</div>
@@ -240,19 +251,20 @@
           <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" onload="finishLoading()" autoscroll></div>
       </div>
     </div>
-
     <!--
-    comment out footer as it is currently having display issue
-    <footer class="footer">
-      <div class="container">
-        <p class="pull-right"><a back-to-top>Back to top</a></p>
-
-        <p>
-          Super-powered by Microsoft Visual Studio China  ©2014-2015
-          Code licensed under the MIT License
-        </p>
+    comment out footer as it is currently having display issue-->
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right"><a back-to-top>Back to top</a></span>
+          <span>
+            Super-powered by Microsoft Visual Studio China  ©2014-2015
+            Code licensed under the MIT License
+          </span>
+        </div> 
       </div>
-    </footer> -->
+    </footer>
   </div>
 </body>
 </html>
