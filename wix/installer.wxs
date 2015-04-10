@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<?define ProductVersion = "0.0.1"?>
+<?define ProductUpgradeCode = "CD6D527F-70A3-4F4A-AF75-669F55136BED"?>
+<?define DropFolder = "../Drop/debug/"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Language="1033" Manufacturer="Microsoft CAPS" Name="Doc-as-code Project" UpgradeCode="$(var.ProductUpgradeCode)" Version="$(var.ProductVersion)">
+    <Package Comments="Windows Installer Package" Compressed="yes" InstallerVersion="200"/>
+    <Media Cabinet="product.cab" EmbedCab="yes" Id="1"/>
+    <Icon Id="ProductIcon" SourceFile="installer.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="ProductIcon"/>
+    <Property Id="ARPNOREPAIR" Value="1"/>
+    <Property Id="ARPNOMODIFY" Value="1"/>
+    <Upgrade Id="$(var.ProductUpgradeCode)">
+      <UpgradeVersion Minimum="$(var.ProductVersion)" OnlyDetect="yes" Property="NEWERVERSIONDETECTED"/>
+      <UpgradeVersion Minimum="0.0.0" Maximum="$(var.ProductVersion)" IncludeMinimum="yes" IncludeMaximum="no" Property="OLDERVERSIONBEINGUPGRADED"/>
+    </Upgrade>
+    <Condition Message="A newer version of this software is already installed.">NOT NEWERVERSIONDETECTED</Condition>
+    <Directory Id="TARGETDIR" Name="Microsoft Docascode">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLDIR" Name="Microsoft Docascode">
+          <Component Id="ApplicationFiles" Guid="C7E518B7-DCB2-41A2-97F8-6BDA2F792658">
+            <File Id="BuildMetaExecutableFiles" Source="$(var.DropFolder)123"/>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <InstallExecuteSequence>
+      <RemoveExistingProducts After="InstallValidate"/>
+    </InstallExecuteSequence>
+
+    <Feature Id="DefaultFeature" Level="1">
+      <ComponentRef Id="ApplicationFiles"/>
+    </Feature>
+  </Product>
+</Wix>

@@ -22,6 +22,43 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigPublish", "ConfigPubl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublishDoc", "PublishDoc\PublishDoc.csproj", "{F6CBB448-7A7D-4140-BE6B-ECB4D6E95868}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateProject", "TemplateProject", "{1EF3BBCB-7ED2-488A-BCBA-577417B5D2CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentationWebsite", "DocumentationWebsite", "{5A0BE0B3-C5A1-4654-9396-0D7B19932150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentationWebsite", "TemplateProject\DocumentationProject\DocumentationWebsite.csproj", "{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{F7C5DB55-EA2C-431C-88F2-C5597B8A93DB}"
+	ProjectSection(SolutionItems) = preProject
+		TemplateProject\Resources\template.ico = TemplateProject\Resources\template.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wix", "wix", "{406269E7-5471-4C69-BD97-8A900690D357}"
+	ProjectSection(SolutionItems) = preProject
+		wix\darice.cub = wix\darice.cub
+		wix\heat.exe = wix\heat.exe
+		wix\installer.ico = wix\installer.ico
+		wix\installer.wxs = wix\installer.wxs
+		wix\light.exe = wix\light.exe
+		wix\make.cmd = wix\make.cmd
+		wix\wconsole.dll = wix\wconsole.dll
+		wix\winterop.dll = wix\winterop.dll
+		wix\wix.dll = wix\wix.dll
+	EndProjectSection
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "candle", "wix\candle.exe", "{94259A40-9034-462E-BA6D-03DD68E8A77B}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = E:\Repo1\docascode\wix\candle.exe
+		RemoteMachine = LIANWEI-WORK1
+		StartingDirectory = E:\Repo1\docascode\wix
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,8 +151,32 @@ Global
 		{F6CBB448-7A7D-4140-BE6B-ECB4D6E95868}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F6CBB448-7A7D-4140-BE6B-ECB4D6E95868}.Release|x86.ActiveCfg = Release|Any CPU
 		{F6CBB448-7A7D-4140-BE6B-ECB4D6E95868}.Release|x86.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|x86.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Debug|x86.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970}.Release|x86.Build.0 = Release|Any CPU
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Debug|x86.ActiveCfg = Debug|x86
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Release|Any CPU.ActiveCfg = Debug|x86
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Release|Mixed Platforms.ActiveCfg = Debug|x86
+		{94259A40-9034-462E-BA6D-03DD68E8A77B}.Release|x86.ActiveCfg = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A0BE0B3-C5A1-4654-9396-0D7B19932150} = {1EF3BBCB-7ED2-488A-BCBA-577417B5D2CE}
+		{CEBE9092-AEEA-4F7F-A7CA-03A8BA405970} = {5A0BE0B3-C5A1-4654-9396-0D7B19932150}
+		{F7C5DB55-EA2C-431C-88F2-C5597B8A93DB} = {1EF3BBCB-7ED2-488A-BCBA-577417B5D2CE}
+		{94259A40-9034-462E-BA6D-03DD68E8A77B} = {406269E7-5471-4C69-BD97-8A900690D357}
 	EndGlobalSection
 EndGlobal

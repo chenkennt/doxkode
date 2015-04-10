@@ -1,0 +1,40 @@
+<div class="">
+  <!--article-content-->
+  <article class="">
+    <div id="article-header">
+      <a ng-if="model.mdHref" ng-href="{{model.mdHref}}" class="btn pull-right">Improve this Doc</a>
+      <a class="btn pull-right" ng-href={{ViewSource()}}> View Source</a>
+      <h1 class="">
+        {{model.type}} {{model.name.CSharp}}
+      </h1>
+      <section class="">
+        <div class="" >
+          <markdown ng-model="model.summary">
+          </markdown>
+          <markdown ng-model="model.mdContent">
+          </markdown>
+        </div>
+      </section>
+    </div>
+    <section id="article-body">
+      <div class="" ng-repeat="itemtype in itemtypes" >
+        <h3 class="" ng-if="itemtype.show">{{itemtype.description}}</h3>
+        <table ng-if="itemtype.show">
+          <tr ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
+            <td>
+              <a href="{{GetLinkHref(item.href)}}">
+                {{item.id.replace(model.id + '.', '')}}
+              </a>
+            </td>
+            <td>
+              <div class="">
+                <markdown ng-model="item.summary">
+                </markdown>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </article>
+</div>

@@ -15,7 +15,7 @@
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MicrosoftIT.DocProject</RootNamespace>
+    <RootNamespace>Docascode.DocProject</RootNamespace>
     <AssemblyName>DocProject</AssemblyName>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
@@ -134,6 +134,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="template.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <ZipItem Include="Templates\Items\JavaScript\JavaScript.vstemplate" />
     <ZipItem Include="Templates\Items\JavaScript\JavaScriptTemplate.ico" />
     <ZipItem Include="Templates\Items\JavaScript\JavaScript.js" />
@@ -145,6 +149,10 @@
     <ZipItem Include="Templates\Items\Html\HTMLPage.vstemplate" />
     <None Include="Key.snk" />
     <None Include="packages.config" />
+    <Content Include="ProjectTemplates\DocumentationWebsite.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -251,7 +259,20 @@
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
     </VSIXSourceItem>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildMeta\BuildMeta.csproj">
+      <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
+      <Name>BuildMeta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EntityModel\EntityModel.csproj">
+      <Project>{a4be543d-2cf1-40ab-9889-e9e48cbf7dfe}</Project>
+      <Name>EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\Utility.csproj">
+      <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>

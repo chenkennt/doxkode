@@ -7,12 +7,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DocProject")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("DocumentationProject")]
+[assembly: AssemblyDescription("A documentation project supported by doc-as-code")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MicrosoftIT")]
-[assembly: AssemblyProduct("DocProject")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("Microsoft.Docascode")]
+[assembly: AssemblyProduct("DocumentationProject")]
+[assembly: AssemblyCopyright("Microsoft CAPS")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]   
 [assembly: ComVisible(false)]     
