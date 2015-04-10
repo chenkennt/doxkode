@@ -11,7 +11,7 @@ namespace DocAsCode.BuildMeta
 {
     public class BuildMarkdownIndexHelper
     {
-        public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName)
+        public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName, string referenceFolderName)
         {
             Dictionary<string, MarkdownIndex> table = new Dictionary<string, MarkdownIndex>();
 
@@ -20,6 +20,7 @@ namespace DocAsCode.BuildMeta
                 List<MarkdownIndex> indics;
                 IndexYamlItemViewModel item;
                 string apiFolder = Path.Combine(workingDirectory, mdFolderName);
+                string referenceFolder = Path.Combine(workingDirectory, referenceFolderName);
                 if (Directory.Exists(apiFolder))
                 {
                     ParseResult.WriteToConsole(ResultLevel.Warn, "Folder {0} already exists!", apiFolder);
@@ -43,7 +44,7 @@ namespace DocAsCode.BuildMeta
                     continue;
                 }
 
-                var result = TryParseCustomizedMarkdown(file, resolvedContent, s =>
+                var result = TryParseCustomizedMarkdown(file, resolvedContent,referenceFolder, s =>
                 {
                     if (apiList.TryGetValue(s.Name, out item))
                     {
@@ -71,6 +72,13 @@ namespace DocAsCode.BuildMeta
                     {
                         key.Href = destFileName.FormatPath(UriKind.Relative, workingDirectory);
                         table.Add(key.ApiName, key);
+                        if(key.Items != null)
+                        {
+                            foreach(var keyItem in key.Items)
+                            {
+                                keyItem.Href = Path.Combine(referenceFolder.FormatPath(UriKind.Relative, workingDirectory), keyItem.Path.ToValidFilePath());
+                            }
+                        }
                     }
                 }
             }
@@ -84,7 +92,7 @@ namespace DocAsCode.BuildMeta
         /// <param name="markdownFilePath"></param>
         /// <param name="markdown"></param>
         /// <returns></returns>
-        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
+        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, string referenceFolder, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
         {
             var gitDetail = GitUtility.GetGitDetail(markdownFilePath);
             if (string.IsNullOrEmpty(resolvedContent)) resolvedContent = File.ReadAllText(markdownFilePath);
@@ -149,6 +157,7 @@ namespace DocAsCode.BuildMeta
                     if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                     {
                         lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
+                        TryExtractReference(ref lastSection, referenceFolder);
                         sections.Add(lastSection);
                     }
                 }
@@ -166,7 +175,7 @@ namespace DocAsCode.BuildMeta
                 {
                     lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
                 }
-
+                TryExtractReference(ref lastSection, referenceFolder);
                 sections.Add(lastSection);
             }
 
@@ -177,6 +186,101 @@ namespace DocAsCode.BuildMeta
             }
 
             return new ParseResult(ResultLevel.Success);
+        }
+
+        private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
+        {
+            var ReferenceRegex = new Regex(@"{{\s*“(?<source>\S*?)”\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
+            MatchCollection matches = ReferenceRegex.Matches(section.MarkdownContent);
+
+            if(matches.Count > 0)
+            {
+                if (Directory.Exists(referenceFolder))
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "Folder {0} already exists!", referenceFolder);
+                }
+                else
+                {
+                    Directory.CreateDirectory(referenceFolder);
+                }
+
+                for (int i = 0; i < matches.Count; i++)
+                {
+                    var match = matches[i];
+                    string source = match.Groups["source"].Value.Trim();
+                    string line = match.Groups["line"].Value.Trim();
+
+                    MarkdownIndex item = new MarkdownIndex();
+                    item.ApiName = source;
+                    string sourceFile = Path.Combine(Path.GetDirectoryName(section.Path), source.Replace('/', '\\'));
+                    item.Path = sourceFile;
+                    string destFile = Path.Combine(referenceFolder, sourceFile.ToValidFilePath());
+
+                    try
+                    {
+                        File.Copy(sourceFile, destFile, true);
+                    }
+                    catch (Exception e)
+                    {
+                        ParseResult.WriteToConsole(ResultLevel.Error, "Unable to copy referenced file {0} to output directory {1}: {2}", sourceFile, referenceFolder, e.Message);
+                        continue;
+                    }
+
+                    item.ContentStartIndex = section.ContentStartIndex + match.Index;
+                    item.ContentEndIndex = item.ContentStartIndex + match.Length - 1;
+
+                    if (!string.IsNullOrEmpty(line))
+                    {
+                        try
+                        {
+                            string[] lines = line.Split('-');
+                            int startline = 0, endLine = 0;
+
+                            if (string.IsNullOrEmpty(lines[0]))
+                            {
+                                startline = 1;
+                            }
+                            else
+                            {
+                                startline = Convert.ToInt32(lines[0]);
+                            }
+
+                            int fileLength = File.ReadLines(destFile).Count();
+                            if (string.IsNullOrEmpty(lines[1]))
+                            {
+                                endLine = fileLength;
+                            }
+                            else
+                            {
+                                endLine = Convert.ToInt32(lines[1]);
+                            }
+
+                            if(endLine < startline || startline < 1 || endLine > fileLength)
+                            {
+                                ParseResult.WriteToConsole(ResultLevel.Error, 
+                                    "Span infromation about referenced file {0} form line {1} to {2} is invalid", sourceFile, Convert.ToString(startline), Convert.ToString(endLine));
+                            }
+                            else
+                            {
+                                item.ReferenceStartIndex = startline;
+                                item.ReferenceEndIndex = endLine;
+                                item.ApiName += string.Format("[{0}-{1}]", startline, endLine);
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            ParseResult.WriteToConsole(ResultLevel.Error, "Cannot extract span infromation about referenced file {0}: {1}", sourceFile, e.Message);
+                            continue;
+                        }
+                    }
+
+                    if (section.Items == null)
+                    {
+                        section.Items = new List<MarkdownIndex>();
+                    }
+                    section.Items.Add(item);
+                }
+            }
         }
     }
 }

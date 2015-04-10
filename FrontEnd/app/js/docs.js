@@ -233,22 +233,47 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         }
       });
 
-      function mdIndexWatcher(path){
-        if ($scope.mdIndex && $scope.partialModel) {
-          var mdPath = $scope.mdIndex[$scope.partialModel.id];
-          if (mdPath) {
-            if (mdPath.href) {
-              $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
-              var tocPath = docService.getPathInfo($location.path()).tocPath;
-              var href = (tocPath || '') + '/' + mdPath.href;
-              var getMdIndex = docService.asyncFetchIndex(href,
-                function(result) {
-                  var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+      function getMdItemIndex(item, tocPath, mdPath, mdCopy) {
+          var itemHref = (tocPath || '') + '/' + item.href;
+          docService.asyncFetchIndex(itemHref,
+              function (res) {
+                  var snippet = res;
+                  if (item.referenceStartLine != null && item.referenceEndLine != null) {
+                      var lines = snippet.split('\n');
+                      snippet = "";
+                      for (var i = item.referenceStartLine - 1; i < item.referenceEndLine; i++) {
+                          snippet += lines[i];
+                      }
+                  }
+                  var md = $scope.partialModel.mdContent;
+                  md = md.replace(mdCopy.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
                   $scope.partialModel.mdContent = md;
-                });
-            }
+              });
+      }
+
+      function mdIndexWatcher(path) {
+          if ($scope.mdIndex && $scope.partialModel) {
+              var mdPath = $scope.mdIndex[$scope.partialModel.id];
+              if (mdPath) {
+                  if (mdPath.href) {
+                      $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
+                      var tocPath = docService.getPathInfo($location.path()).tocPath;
+                      var href = (tocPath || '') + '/' + mdPath.href;
+                      var md = "";
+                      var getMdIndex = docService.asyncFetchIndex(href,
+                        function (result) {
+                            md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                            $scope.partialModel.mdContent = md;
+                            if (mdPath.items) {
+                                for (var i = 0; i < mdPath.items.length; i++) {
+                                    var item = mdPath.items[i];
+                                    getMdItemIndex(item, tocPath, mdPath, md);
+                                }
+                            }
+                        });
+                  }
+              }
           }
-        }
       }
 
       $scope.$watch(function modelWatch() {

@@ -30,8 +30,17 @@ namespace DocAsCode.EntityModel
         [YamlDotNet.Serialization.YamlMember(Alias = "endLine")]
         public int ContentEndIndex { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "referenceStartLine")]
+        public int ReferenceStartIndex { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "referenceEndLine")]
+        public int ReferenceEndIndex { get; set; }
+
         [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
         public GitDetail Remote { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "items")]
+        public List<MarkdownIndex> Items { get; set; }
 
         /// <summary>
         /// To override yaml settings

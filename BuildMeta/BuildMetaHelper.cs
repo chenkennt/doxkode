@@ -111,7 +111,7 @@ namespace DocAsCode.BuildMeta
             return await MergeYamlMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName, tocFileName, apiFolder);
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName, string mdFolderName)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName, string mdFolderName, string referenceFolderName)
         {
             if (string.IsNullOrWhiteSpace(workingDirectory))
             {
@@ -125,7 +125,7 @@ namespace DocAsCode.BuildMeta
                     return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", markdownListFile);
                 }
 
-                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList, mdFolderName);
+                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList, mdFolderName, referenceFolderName);
                 if (!string.IsNullOrEmpty(indexFilePath))
                 {
                     return new ParseResult(ResultLevel.Success);
@@ -446,7 +446,7 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles, string mdFolderName)
+        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles, string mdFolderName, string referenceFolderName)
         {
             Dictionary<string, IndexYamlItemViewModel> indexViewModel;
 
@@ -461,7 +461,7 @@ namespace DocAsCode.BuildMeta
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                Dictionary<string, MarkdownIndex> mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName);
+                Dictionary<string, MarkdownIndex> mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName, referenceFolderName);
                 if (mdresult.Any())
                 {
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);

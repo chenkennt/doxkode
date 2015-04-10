@@ -21,6 +21,7 @@ namespace DocAsCode.BuildMeta
             const string DefaultIndexFileName = "index.yaml";
             const string DefaultMarkdownFileName = "md.yaml";
             const string DefaultMdFolderName = "md";
+            const string DefaultReferenceFolderName = "reference";
             const string DefaultApiFolderName = "api";
             const string DefaultOutputFolderName = "output";
             const string DefaultIntermediateOutputListFile = "obj/output.list";
@@ -34,6 +35,7 @@ namespace DocAsCode.BuildMeta
             string intermediateOutputFileName = null;
             string outputApiFolder = null;
             string outputMarkdownFolder = null;
+            string outputReferenceFolder = null;
             BuildTarget target = BuildTarget.All;
 
             try
@@ -49,6 +51,7 @@ namespace DocAsCode.BuildMeta
                     new Option("md", s => outputMarkdownIndexFile = s, defaultValue: DefaultMarkdownFileName, helpName: "outputMarkdownIndexFile", helpText: "Specify the file name containing all the markdown index. (default: " + DefaultMarkdownFileName + ")."),
                     new Option("folder", s => outputApiFolder = s, defaultValue: DefaultApiFolderName, helpName: "outputApiFolder", helpText: "Specify the output subfolder name containing all the member's yaml file. (default: " + DefaultApiFolderName + ")."),
                     new Option("mdFolder", s => outputMarkdownFolder = s, defaultValue: DefaultMdFolderName, helpName: "outputMarkdownFolder", helpText: "Specify the output subfolder name containing all the markdown files copied. (default: " + DefaultMdFolderName+ ")."),
+                    new Option("referenceFolder", s => outputReferenceFolder = s, defaultValue: DefaultReferenceFolderName, helpName: "outputReferenceFolder", helpText: "Specify the output subfolder name containing all the files copied referenced by markdown files. (default: " + DefaultReferenceFolderName+ ")."),
                     new Option("target", s => target = (BuildTarget)Enum.Parse(typeof(BuildTarget), s, true), defaultValue: BuildTarget.All.ToString(), helpName: "buildTarget", helpText: "Specify the output target. (default: All)."),
                     };
 
@@ -72,7 +75,7 @@ namespace DocAsCode.BuildMeta
                 if (target.HasFlag(BuildTarget.Merge))
                     BuildMetaHelper.MergeMetadataFromMetadataListAsync(intermediateOutputListFile, outputFolder, outputIndexFile, outputTocFile, outputApiFolder, BuildMetaHelper.MetadataType.Yaml).Wait();
                 if (target.HasFlag(BuildTarget.Markdown))
-                    BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, outputIndexFile, inputMarkdownList, outputMarkdownIndexFile, outputMarkdownFolder).Wait();
+                    BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, outputIndexFile, inputMarkdownList, outputMarkdownIndexFile, outputMarkdownFolder, DefaultReferenceFolderName).Wait();
                 return 0;
             }
             catch (Exception e)
