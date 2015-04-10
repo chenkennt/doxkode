@@ -75,7 +75,7 @@ namespace DocAsCode.BuildMeta
                 if (target.HasFlag(BuildTarget.Merge))
                     BuildMetaHelper.MergeMetadataFromMetadataListAsync(intermediateOutputListFile, outputFolder, outputIndexFile, outputTocFile, outputApiFolder, BuildMetaHelper.MetadataType.Yaml).Wait();
                 if (target.HasFlag(BuildTarget.Markdown))
-                    BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, outputIndexFile, inputMarkdownList, outputMarkdownIndexFile, outputMarkdownFolder, DefaultReferenceFolderName).Wait();
+                    BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, outputIndexFile, inputMarkdownList, outputMarkdownIndexFile, outputMarkdownFolder, outputReferenceFolder).Wait();
                 return 0;
             }
             catch (Exception e)

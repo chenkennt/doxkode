@@ -188,6 +188,8 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
+        private static Dictionary<string, int> referencedFileCache = new Dictionary<string, int>();
+
         private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
         {
             var ReferenceRegex = new Regex(@"{{\s*“(?<source>\S*?)”\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
@@ -245,7 +247,13 @@ namespace DocAsCode.BuildMeta
                                 startline = Convert.ToInt32(lines[0]);
                             }
 
-                            int fileLength = File.ReadLines(destFile).Count();
+                            int fileLength;
+                             if(!referencedFileCache.TryGetValue(destFile, out fileLength))
+                            {
+                                fileLength = File.ReadLines(destFile).Count();
+                                referencedFileCache.Add(destFile, fileLength);
+                            }
+
                             if (string.IsNullOrEmpty(lines[1]))
                             {
                                 endLine = fileLength;
@@ -257,8 +265,7 @@ namespace DocAsCode.BuildMeta
 
                             if(endLine < startline || startline < 1 || endLine > fileLength)
                             {
-                                ParseResult.WriteToConsole(ResultLevel.Error, 
-                                    "Span infromation about referenced file {0} form line {1} to {2} is invalid", sourceFile, Convert.ToString(startline), Convert.ToString(endLine));
+                                throw new Exception(string.Format("Span infromation about referenced file {0} form line {1} to {2} is invalid", sourceFile, startline.ToString(), endLine.ToString()));
                             }
                             else
                             {
