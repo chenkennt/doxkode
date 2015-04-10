@@ -12,8 +12,9 @@
 //========================================
 //  basic style overrides
 //========================================
-body {
+html, body {
   font-family: @font-default;
+  height: 100%;
 }
 
 button, a {
@@ -51,6 +52,7 @@ h5, .h5 {
   background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
   background-image: -o-linear-gradient(#ffffff, #f2f2f2);
   background-image: linear-gradient(#ffffff, #f2f2f2);
+  overflow: hidden;
 }
 
 .btn:hover, .btn:focus {
@@ -62,6 +64,7 @@ h5, .h5 {
 
 //margin between 2 buttons
 .btn+.btn {
+  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -88,22 +91,65 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 0;
 }
 
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+/* blends header footer and content together with gradient effect */
+.grad-top {
+  background: -webkit-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* Standard syntax */
+  height: 5px;
+}
+
+.grad-bottom {
+  background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)); /* Standard syntax */
+  height: 5px;
+}
+
 //========================================
 //  top nav bar
 //========================================
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .navbar {
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+.subnav {
+  min-height: 40px;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 10px 0;
+  background-color: inherit;
+}
+
 //when navbar item is selected
-.navbar-nav > li > a.current {
+.topnav .nav > li > a.current {
   color: #fff;
 }
 
 //left align nav bar
-.topnav .nav {
+header .nav {
   margin-left: -15px;
-}
-
-/* content is everything that is not top nav */
-.content {
-  margin-top: 60px;
 }
 
 //========================================
@@ -113,13 +159,18 @@ h4, .h4, h5, .h5, h6, .h6 {
     position: fixed;
     float: left;
     width: 260px;
-    top: 60px;
+    top: 90px;
     bottom: 0;
     overflow-y: auto;
     overflow-x: hidden;
     margin-left: -15px;
     margin-right: -15px;
-    padding: 15px;
+    padding: 15px 15px 120px 15px;
+}
+
+//in desktop mode TOC is always shown
+.toc.ng-hide {
+  display: block!important;
 }
 
 .sidenav .nav > li > a {
@@ -138,7 +189,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .sidenav .sidenav-lvl-1 > li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* second lvl navbar grey text */
@@ -157,12 +208,18 @@ h4, .h4, h5, .h5, h6, .h6 {
   color: @brand-highlight;
 }
 
+.toc-toggle {
+  display: none;
+  margin-bottom: 10px;
+}
+
 //========================================
 //  article
 //========================================
 
 .article {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 //content section on the right
@@ -316,6 +373,24 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 //========================================
+//  footer
+//========================================
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.footer {
+  border-top: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
+  padding: 15px 0;
+}
+
+//========================================
 //  responsive
 //========================================
 
@@ -323,13 +398,13 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 /* TOC display for responsive */
 
-  .topnav {
-    position: static;
-    text-align: center;
+  #wrapper {
+    padding-top: 0;
   }
 
-  .content {
-    margin-top: 0;
+  header {
+    position: static;
+    text-align: center;
   }
 
   .sidenav {
@@ -337,6 +412,7 @@ h4, .h4, h5, .h5, h6, .h6 {
     width: auto;
     float: none;
     background-color: #efefef;
+    padding-bottom: 15px;
   }
 
   .sidenav .sidenav-lvl-2 > li {
@@ -347,10 +423,25 @@ h4, .h4, h5, .h5, h6, .h6 {
     margin-left: -3px;
     margin-right: 5px;
     content: ", ";
+    color: @grey;
   }
 
   .article.grid-right {
     margin-left: 0;
   }
 
+  //hide blending
+  .grad-top, .grad-bottom {
+    display: none;
+  }
+
+  //show button in phone mode
+  .toc-toggle {
+    display: block;
+  }
+
+  //in phone mode TOC can be hidden
+  .toc.ng-hide {
+  display: none!important;
+  }
 }
