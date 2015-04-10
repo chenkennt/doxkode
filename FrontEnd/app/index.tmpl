@@ -243,7 +243,7 @@
       <div class="sidenav" ng-if="toc">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
         <a class="btn toc-toggle" ng-init="tocToggle=tocLoading" ng-click="tocToggle=!tocToggle">Show / Hide Table of Contents</a>
-        <div ng-hide="tocToggle" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+        <div class="toc" ng-hide="tocToggle" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
       <div ng-class="gridClass(toc)" class="article">
         <div id="loading" ng-show="loading">Loading...</div>
