@@ -31,10 +31,10 @@ namespace DocAsCode.EntityModel
         public int ContentEndIndex { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "referenceStartLine")]
-        public int ReferenceStartIndex { get; set; }
+        public int ReferenceStartLine { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "referenceEndLine")]
-        public int ReferenceEndIndex { get; set; }
+        public int ReferenceEndLine { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
         public GitDetail Remote { get; set; }

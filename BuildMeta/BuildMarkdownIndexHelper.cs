@@ -262,8 +262,8 @@ namespace DocAsCode.BuildMeta
                             }
                             else
                             {
-                                item.ReferenceStartIndex = startline;
-                                item.ReferenceEndIndex = endLine;
+                                item.ReferenceStartLine = startline;
+                                item.ReferenceEndLine = endLine;
                                 item.ApiName += string.Format("[{0}-{1}]", startline, endLine);
                             }
                         }
