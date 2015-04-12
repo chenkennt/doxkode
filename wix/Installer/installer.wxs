@@ -23,12 +23,10 @@
     </Property>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLDIR" Name="StrangeMicrosoft Docascode">
-          <Directory Id="BUILDMETADIR" Name="StrangeBuildMeta">
-            <Component Id="BuildMeta" Guid="63A926FD-C523-434C-BF8A-83B184264898">
-              <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
-            </Component>
-          </Directory>
+        <Directory Id="INSTALLDIR" Name="Microsoft Docascode">
+          <Component Id="BuildMeta" Guid="63A926FD-C523-434C-BF8A-83B184264898">
+            <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
+          </Component>
         </Directory>
           <Directory Id="VisualStudioDir" Name="Microsoft Visual Studio $(var.VsVersion)">
             <Directory Id="VisualStudioCommon7Dir" Name="Common7">
