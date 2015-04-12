@@ -2,7 +2,6 @@
 <?define ProductVersion = "0.0.1"?>
 <?define ProductUpgradeCode = "CD6D527F-70A3-4F4A-AF75-669F55136BED"?>
 <?define VsVersion = "14.0"?>
-<?define VsixDropFolder = "..\..\Drop\Debug\Vsix"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
   xmlns:VSExtension="http://schemas.microsoft.com/wix/VSExtension">
   <Product Id="*" Language="1033" Manufacturer="Microsoft CAPS" Name="Doc-as-code Project" UpgradeCode="$(var.ProductUpgradeCode)" Version="$(var.ProductVersion)">
@@ -22,13 +21,11 @@
     <Property Id="VSINSTALLDIR">
         <RegistrySearch Id="VSInstallRegistry" Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\$(var.VsVersion)" Name="InstallDir" Type="directory" />
     </Property>
-
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLDIR" Name="StrangeMicrosoft Docascode">
           <Directory Id="BUILDMETADIR" Name="StrangeBuildMeta">
             <Component Id="BuildMeta" Guid="63A926FD-C523-434C-BF8A-83B184264898">
-              <File Id="VsPackageInstaller" Name="DocProject.vsix" Source="$(var.VsixDropFolder)\DocProject.vsix"/>
               <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
             </Component>
           </Directory>
@@ -49,8 +46,17 @@
       </Directory>
     </Directory>
 
+    <!-- Install vsix extension via msi without devenv steup: http://hmemcpy.com/2014/03/installing-vsix-extension-via-msi-without-devenv-setup/ -->
+    <CustomAction Id='RefreshVSExtensions'
+              Directory='VisualStudioCommon7IDEDir'
+              Execute="deferred"
+              Impersonate="no"
+              ExeCommand='[VisualStudioCommon7IDEDir]\devenv.exe /updateconfiguration'
+              Return='ignore'></CustomAction>
+
     <InstallExecuteSequence>
       <RemoveExistingProducts After="InstallValidate"/>
+      <Custom Action='RefreshVSExtensions' Before='InstallFinalize'>NOT Installed</Custom>
     </InstallExecuteSequence>
 
     <Feature Id="Complete" Title="Docascode v$(var.ProductVersion)" Description="The complete package for docascode v$(var.ProductVersion)" Level="1">

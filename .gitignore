@@ -22,6 +22,7 @@
 *.ccproj.user
 *.csproj.user
 .gitattributes
+log.txt
 
 
 ############################
