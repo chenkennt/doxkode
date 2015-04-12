@@ -212,6 +212,7 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             }
           }
 
+          // breadcrumb generation logic
           var pathParts = pathInfo.tocPath ? pathInfo.tocPath.split('/') : [];
           if (pathInfo.contentPath) pathParts.push('!' + pathInfo.contentPath);
           var breadcrumb = $scope.breadcrumb = [];

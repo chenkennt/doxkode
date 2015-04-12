@@ -2,11 +2,11 @@
   <!--article-content-->
   <article class="">
     <div id="article-header">
-        <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">Improve this Doc</a>
-        <a class="btn pull-right" ng-href={{::ViewSource()}}> View Source</a>
-        <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
-        <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
-      <section class="summary">
+      <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">Improve this Doc</a>
+      <a class="btn pull-right" ng-href={{::ViewSource()}}> View Source</a>
+      <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
+      <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
+      <section>
         <div class="markdown">{{::model.summary}}</div>
       </section>
       <section>
@@ -33,21 +33,23 @@
     <section id="article-body">
       <div class="" ng-repeat="itemtype in ::itemtypes">
         <h3 class="" ng-if="::itemtype.show">{{::itemtype.description}}</h3>
-        <div class=""  ng-repeat="item in ::model.items" ng-if="::(item.type==itemtype.name)">
+        <div class=""  ng-repeat="item in ::model.items" ng-if="::(item.type == itemtype.name)">
           <!--<div class="" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">-->
           <div class="item-section">
-            <a class="item-toggle" ng-init="showDetail=false" ng-click="showDetail = !showDetail; isCollapsed = !isCollapsed">
-              <h4>
-                <span ng-if="::item.name.CSharp">
+            <div class="item-header">
+              <a class="item-toggle" ng-init="showDetail = false" ng-click="showDetail = !showDetail; isCollapsed = !isCollapsed">
+                <div class="pull-right" ng-show = "showDetail">Hide</div>
+                <div class="pull-right" ng-show = "!showDetail">Show</div>
+                <div class="item-title" ng-if="::item.name.CSharp">
                   {{::item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-                </span>
-                <span ng-if="::(!item.name.CSharp && item.name.VB)">
+                </div>
+                <div class="item-title" ng-if="::(!item.name.CSharp && item.name.VB)">
                   {{::item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-                </span>
-                <span class="minus-icon" ng-show = "showDetail"></span>
-                <span class="plus-icon" ng-show = "!showDetail"></span>
-              </h4>
-            </a>
+                </div>
+                <!--<span class="minus-icon" ng-show = "showDetail"></span>
+                <span class="plus-icon" ng-show = "!showDetail"></span>-->
+              </a>
+            </div>
             <!--<div class="view-source btn" ng-show="showBtn">
               <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
             </div>
@@ -56,7 +58,7 @@
                 <a ng-href="{{model.mdHref}}">Improve this Doc</a>
               </div>
             </div>-->
-            <div class="summary">
+            <div class="item-summary">
               <div class="markdown">{{::item.summary}}</div>
             </div>
             <!--<a class="section-member-detail-before"  ng-init="showDetail=false"  ng-show="showDetail"> - </a>

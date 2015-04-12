@@ -190,6 +190,7 @@
       </div>
       <div class="subnav navbar navbar-default">
         <div class="container">
+            <div class="expand-all pull-right"><a>Expand All</a> / <a>Collapse All</a></div>
             <ul class="breadcrumb">
               <li ng-repeat="crumb in breadcrumb">
                 <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
@@ -242,8 +243,7 @@
     <div role="main" class="container">
       <div class="sidenav" ng-if="toc">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-        <a class="btn toc-toggle" ng-init="tocToggle=tocLoading" ng-click="tocToggle=!tocToggle">Show / Hide Table of Contents</a>
-        <div class="toc" ng-hide="tocToggle" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+        <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
       <div ng-class="gridClass(toc)" class="article">
         <div id="loading" ng-show="loading">Loading...</div>

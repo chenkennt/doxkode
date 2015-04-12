@@ -28,7 +28,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-//overwrite code style from highlighter
+// overwrite code style from highlighter
 .hljs {
   background-color: inherit;
   padding: 0;
@@ -43,7 +43,7 @@ h5, .h5 {
   font-family: @font-semibold;
 }
 
-//gradient button
+// gradient button
 .btn {
   font-family: @font-semibold;
   border: 1px solid #e5e5e5;
@@ -62,7 +62,7 @@ h5, .h5 {
 
 /* additional spacing fixes */
 
-//margin between 2 buttons
+// margin between 2 buttons
 .btn+.btn {
   margin-left: 10px;
   margin-right: 10px;
@@ -136,18 +136,22 @@ header .navbar {
   min-height: 40px;
 }
 
+.expand-all {
+  padding: 10px 0;
+}
+
 .breadcrumb {
   margin: 0;
   padding: 10px 0;
   background-color: inherit;
 }
 
-//when navbar item is selected
+// when navbar item is selected
 .topnav .nav > li > a.current {
   color: #fff;
 }
 
-//left align nav bar
+// left align nav bar
 header .nav {
   margin-left: -15px;
 }
@@ -165,11 +169,11 @@ header .nav {
     overflow-x: hidden;
     margin-left: -15px;
     margin-right: -15px;
-    padding: 15px 15px 120px 15px;
+    padding: 15px 15px 100px 15px;
 }
 
-//in desktop mode TOC is always shown
-.toc.ng-hide {
+// in desktop mode TOC is always shown
+.sidenav .nav.ng-hide {
   display: block!important;
 }
 
@@ -203,7 +207,7 @@ header .nav {
   color: @grey-highlight;
 }
 
-//highlight selected
+// highlight selected
 .sidenav .nav > li.current > a {
   color: @brand-highlight;
 }
@@ -222,28 +226,42 @@ header .nav {
   margin-bottom: 15px;
 }
 
-//content section on the right
+// content section on the right
 .article.grid-right {
   margin-left: 270px;
 }
 
-//inheritance indentation
+// inheritance indentation
 .inheritance span {
   margin-left: 5px;
 }
 
-/* animation issue workaround */
-
-.summary {
-  overflow: hidden;
+.item-header {
+  background-color: rgb(255,240,240); 
+  padding: 5px 10px; 
+  border-bottom: 1px solid rgb(255,220,220);
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-.summary p {
+.item-title {
+  font-size: 16px;
+  font-family: @font-light;
+  font-weight: 700;
+}
+
+.item-summary {
+  overflow: hidden; // animation issue workaround
+  padding: 0 10px;
+}
+
+.item-summary p {
   margin-bottom: 0;
 }
 
 .item-collapsible {
-  overflow: hidden;
+  overflow: hidden; // animation issue workaround
+  padding: 0 10px;
 }
 
 /* expand icons */
@@ -257,7 +275,7 @@ header .nav {
   border-color: @brand-highlight;
 }
 
-.plus-icon, .minus-icon {
+/*.plus-icon, .minus-icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -286,17 +304,17 @@ header .nav {
   position: absolute;
   margin-top: 2px;
   margin-left: 6px;
-}
+}*/
 
 /* additional spacing fixes */
 
-//inheritance hr should be smaller
+// inheritance hr should be smaller
 .inheritance hr {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-//workaround to set img max width as default behavior
+// workaround to set img max width as default behavior
 .article img {
   max-width: 100%;
 }
@@ -430,18 +448,18 @@ footer {
     margin-left: 0;
   }
 
-  //hide blending
+  // hide blending
   .grad-top, .grad-bottom {
     display: none;
   }
 
-  //show button in phone mode
+  // show button in phone mode
   .toc-toggle {
     display: block;
   }
 
-  //in phone mode TOC can be hidden
-  .toc.ng-hide {
-  display: none!important;
+  // in phone mode TOC can be hidden
+  .sidenav .nav.ng-hide {
+    display: none!important;
   }
 }
