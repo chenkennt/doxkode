@@ -17,38 +17,74 @@
       <UpgradeVersion Minimum="0.0.0" Maximum="$(var.ProductVersion)" IncludeMinimum="yes" IncludeMaximum="no" Property="OLDERVERSIONBEINGUPGRADED"/>
     </Upgrade>
     <Condition Message="A newer version of this software is already installed.">NOT NEWERVERSIONDETECTED</Condition>
+
+    <SetProperty Id="VSINSTALLDIR" Value="[ProgramFilesFolder]\Microsoft Visual Studio $(var.VsVersion)" Sequence="execute" After="InstallInitialize" />
+    <Property Id="VSINSTALLDIR">
+        <RegistrySearch Id="VSInstallRegistry" Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\$(var.VsVersion)" Name="InstallDir" Type="directory" />
+    </Property>
+
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLDIR" Name="StrangeMicrosoft Docascode">
           <Directory Id="BUILDMETADIR" Name="StrangeBuildMeta">
-            <Component Id="VSPackage" Guid="63A926FD-C523-434C-BF8A-83B184264898">
+            <Component Id="BuildMeta" Guid="63A926FD-C523-434C-BF8A-83B184264898">
               <!-- <VSExtension:VsixPackage File="VsPackageInstaller" PackageId="897d8579-59cd-4d80-bf9e-8e00e270775c"  Vital="no" Permanent="yes" Target="ultimate" TargetVersion="14.0"/> -->
               <File Id="VsPackageInstaller" Name="DocProject.vsix" Source="$(var.VsixDropFolder)\DocProject.vsix"/>
               <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
             </Component>
           </Directory>
         </Directory>
+          <Directory Id="VisualStudioDir" Name="Microsoft Visual Studio $(var.VsVersion)">
+            <Directory Id="VisualStudioCommon7Dir" Name="Common7">
+              <Directory Id="VisualStudioCommon7IDEDir" Name="IDE">
+                <Directory Id="VisualStudioCommon7IDEExtensionsDir" Name="Extensions">
+                  <Directory Id="DocascodeVsixDir" Name="DocascodeVsix">
+                    <Component Id="VSPackage" Guid="63A926DD-C523-434C-BF8A-83B184264898">
+                      <RemoveFolder Id="RemoveDocascodeVsixDir" On="uninstall" />
+                    </Component>
+                  </Directory>
+                </Directory>
+              </Directory>
+            </Directory>
+          </Directory>
       </Directory>
+      <!-- <Directory Id="LocalAppDataFolder" Name="AppData">
+        <Directory Id="ExtensionDir" Name="Microsoft">
+          <Directory Id="VisualStudioDir" Name="VisualStudio">
+            <Directory Id="VisualStudioVersionDir" Name="$(var.VsVersion)">
+              <Directory Id="VisualStudioExtensionDir" Name="Extensions">
+                <Directory Id="DocascodeVsixDir" Name="DocascodeVsix">
+                  <Component Id="VSPackage" Guid="63A926FD-C523-434C-BF8A-83B184264898">
+                    <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
+                    <RegistryKey Root="HKCU" Key="Software\Microsoft\Docascode">
+                      <RegistryValue Name="MainExe" Value="1" KeyPath="yes" Type="integer" />
+                    </RegistryKey>
+                  </Component>
+                </Directory>
+              </Directory>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory> -->
     </Directory>
 
-    <Property Id="VSINSTALLDIR">
-        <RegistrySearch Id="VSInstallRegistry" Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\$(var.VsVersion)" Name="InstallDir" Type="directory" />
-    </Property>
-
-    <CustomAction Id="SetVSIXInstaller" Return="check" Execute="immediate" Property="VSIXInstaller" Value="C:\Program Files (x86)\Microsoft Visual Studio $(var.VsVersion)\Common7\IDE\VSIXInstaller.exe" />
-    <CustomAction Id="DeployVSIX" Property="VSIXInstaller" Execute="deferred" Impersonate="no" ExeCommand="/quiet" Return="asyncWait"/>
-
+<!--     <CustomAction Id="SetVSIXInstaller" Return="check" Execute="immediate" Property="VSIXInstaller" Value="C:\Program Files (x86)\Microsoft Visual Studio $(var.VsVersion)\Common7\IDE\VSIXInstaller.exe" />
+    <CustomAction Id="DeployVSIX" Property="VSIXInstaller" Execute="deferred" Impersonate="no" ExeCommand="[BUILDMETADIR]DocProject.vsix" Return="asyncWait"/> -->
+    <CustomAction Id="DeployVSIX" Return="check" Directory="TARGETDIR"  ExeCommand="&quot;C:\Program Files (x86)\Microsoft Visual Studio $(var.VsVersion)\Common7\IDE\VSIXInstaller.exe&quot; /q &quot;[BUILDMETADIR]DocProject.vsix&quot;" />
     <InstallExecuteSequence>
       <RemoveExistingProducts After="InstallValidate"/>
-      <Custom Action="DeployVSIX" After="MsiPublishAssemblies" />
+      <!-- <Custom Action="SetVSIXInstaller" Before="InstallFinalize" /> -->
+      <!-- <Custom Action="DeployVSIX" After="InstallFinalize" /> -->
     </InstallExecuteSequence>
 
     <Feature Id="Complete" Title="Docascode v$(var.ProductVersion)" Description="The complete package for docascode v$(var.ProductVersion)" Level="1">
       <Feature Id="BuildMeta" Title="Install BuildMeta globally" Description="Install BuildMeta globally" Level="1">
         <ComponentGroupRef Id="BuildMetaFiles"/>
       </Feature>
-      <Feature Id="DocascodeVsix" Title="Microsoft Docascode" Level="0">
+      <Feature Id="DocascodeVsix" Title="Microsoft Docascode" Level="1">
+          <ComponentRef Id="BuildMeta" />
           <ComponentRef Id="VSPackage" />
+          <ComponentGroupRef Id="DocascodeVsixFiles" />
       </Feature>
     </Feature>
   </Product>
