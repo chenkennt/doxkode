@@ -25,10 +25,12 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Drop\Debug\Vsix\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CopyVsixExtensionFiles>True</CopyVsixExtensionFiles>
+    <CopyVsixExtensionLocation>..\..\Drop\Debug\VsixSource</CopyVsixExtensionLocation>
   </PropertyGroup>
   <PropertyGroup>
     <GetVsixSourceItemsDependsOn>$(GetVsixSourceItemsDependsOn);GetVsixTemplateItems</GetVsixSourceItemsDependsOn>
@@ -46,11 +48,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Drop\Release\Vsix\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CopyVsixExtensionFiles>True</CopyVsixExtensionFiles>
+    <CopyVsixExtensionLocation>..\..\Drop\Release\VsixSource</CopyVsixExtensionLocation>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LibGit2Sharp">
@@ -260,14 +264,6 @@
     </VSIXSourceItem>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BuildMeta\BuildMeta.csproj">
-      <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
-      <Name>BuildMeta</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EntityModel\EntityModel.csproj">
-      <Project>{a4be543d-2cf1-40ab-9889-e9e48cbf7dfe}</Project>
-      <Name>EntityModel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Utility\Utility.csproj">
       <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
       <Name>Utility</Name>

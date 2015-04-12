@@ -1,0 +1,3 @@
+This folder contains the project to export template in *DocumentationProject* folder and resources needed in creating the template in *Resouces* folder. 
+
+To update the template, Open in VS, File=>Export Template...=>DocumentationWebsite=>Uncheck "Automatically import the template into Visual Studio", the template will be generated as "D:\Documents\Documents\Visual Studio 2015\My Exported Templates\DocumentationWebsite.zip"

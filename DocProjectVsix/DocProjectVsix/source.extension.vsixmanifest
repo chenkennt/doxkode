@@ -3,9 +3,12 @@
   <Metadata>
     <Identity Id="897d8579-59cd-4d80-bf9e-8e00e270775c" Version="1.0" Language="en-US" Publisher="Microsoft CAPS" />
     <DisplayName>DocProject</DisplayName>
-    <Description>New Project type for docs</Description>
+    <Description xml:space="preserve">New Project type for documentation project</Description>
+    <Icon>template.ico</Icon>
+    <PreviewImage>template.ico</PreviewImage>
+    <Tags>documentation, docascode, caps</Tags>
   </Metadata>
-  <Installation InstalledByMsi="false">
+  <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0]" />
   </Installation>
   <Dependencies>
