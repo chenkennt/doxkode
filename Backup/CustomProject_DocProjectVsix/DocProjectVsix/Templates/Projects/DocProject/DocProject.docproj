@@ -1,0 +1,44 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <OutputType>Documentation</OutputType>
+    <DocToolExtensionsPath Condition="'$(DocToolExtensionsPath)' == '' ">Targets</DocToolExtensionsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'PublishDoc' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\PublishDoc</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="template"/>
+    <Folder Include="Targets"/>
+    <Folder Include="js"/>
+    <Folder Include="css"/>
+    <Folder Include="articles"/>
+    <Folder Include="api"/>
+    <None Include="Targets/Microsoft.DocProject.targets" />
+    <None Include="favicon.ico" />
+    <Content Include="js/docascode.js" />
+    <Content Include="css/docascode.css" />
+    <Content Include="template/class.tmpl" />
+    <Content Include="template/error404.tmpl" />
+    <Content Include="template/namespace.tmpl" />
+    <Content Include="template/navbar.tmpl" />
+    <Content Include="template/toc.tmpl" />
+    <Content Include="template/tocpage.tmpl" />
+    <Content Include="articles/about.md" />
+    <Content Include="articles/index.md" />
+    <Content Include="api/NOTE.md" />
+    <Content Include="toc.yaml" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <Import Project="Targets\Microsoft.DocProject.targets" />
+</Project>

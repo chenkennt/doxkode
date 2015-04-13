@@ -1,0 +1,63 @@
+﻿<VSTemplate Version="2.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>DocumentationProject</Name>
+    <Description>
+      A project for creating a Documentation Project application
+    </Description>
+    <Icon>DocProject.ico</Icon>
+    <ProjectType>DocProject</ProjectType>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="DocProject.docproj" ReplaceParameters="true">
+      <ProjectItem>
+        Targets\Microsoft.DocProject.targets
+      </ProjectItem>
+      <ProjectItem>
+        index.html
+      </ProjectItem>
+      <ProjectItem>
+        favicon.ico
+      </ProjectItem>
+      <ProjectItem>
+        web.config
+      </ProjectItem>
+      <ProjectItem>
+        toc.yaml
+      </ProjectItem>
+      <ProjectItem>
+        js\docascode.js
+      </ProjectItem>
+      <ProjectItem>
+        css\docascode.css
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        api\NOTE.md
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        articles\about.md
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        articles\index.md
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        template\error404.tmpl
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        template\navbar.tmpl
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        template\toc.tmpl
+      </ProjectItem>
+      <ProjectItem>
+        template\tocpage.tmpl
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        template\class.tmpl
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true">
+        template\namespace.tmpl
+      </ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
