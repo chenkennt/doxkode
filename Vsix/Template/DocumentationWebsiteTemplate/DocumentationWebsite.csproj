@@ -19,6 +19,9 @@
     <TargetFrameworkVersion>v$targetframeworkversion$</TargetFrameworkVersion>
     <DocToolExtensionsPath>$(MSBuildProgramFiles32)\Microsoft Docascode\BuildMeta</DocToolExtensionsPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
   <ItemGroup>
     <Content Include="css\docascode.css" />
     <Content Include="favicon.ico" />
@@ -58,8 +61,8 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" Condition="Exists('$(BuildDocToolPath)\Microsoft.DocProject.targets')" />
-  <Target AfterTargets="AfterBuild">
-    <Message Text="Unable to locate '$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets'!" Condition="!Exists('$(BuildDocToolPath)\Microsoft.DocProject.targets')" />
+  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" Condition="Exists('$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets')" />
+  <Target Name="WarnWhenTargetNotExists" AfterTargets="AfterBuild">
+    <Message Text="Unable to locate '$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets'!" Condition="!Exists('$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets')" />
   </Target>
 </Project>

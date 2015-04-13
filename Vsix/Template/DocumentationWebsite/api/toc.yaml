@@ -1,9 +1,0 @@
-- id: ClassLibrary1
-  href: api/ClassLibrary1.yaml
-  name:
-    CSharp: ClassLibrary1
-  items:
-  - id: ClassLibrary1.Class1
-    href: api/ClassLibrary1.Class1.yaml
-    name:
-      CSharp: Class1

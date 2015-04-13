@@ -206,8 +206,6 @@ module.exports = function(grunt) {
     clean: {
         debug: ['debug/'],
         release: ['release/'],
-       // Unable to clean folder outside current directory:
-       // vsix: ['../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/'],
         test: ['sample/host/**']
     },
     copy: {
@@ -252,12 +250,12 @@ module.exports = function(grunt) {
         },
         vsix: {
           files: [
-            {expand: true, src: ['**'], cwd: 'release/', dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/' },
+            {expand: true, src: ['**'], cwd: 'release/', dest: '../Vsix/Template/DocumentationWebsiteTemplate/' },
           ]
         },
         vsix_debug: {
           files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/' },
+            {expand: true, src: ['**'], cwd: 'debug/', dest: '../Vsix/Template/DocumentationWebsiteTemplate/' },
           ]
         }
      }
@@ -305,7 +303,8 @@ module.exports = function(grunt) {
     grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'build','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);
+    grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
     grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
