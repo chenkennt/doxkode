@@ -21,8 +21,10 @@
 *.suo
 *.ccproj.user
 *.csproj.user
+*.kproj.user
 .gitattributes
 log.txt
+
 
 
 ############################
