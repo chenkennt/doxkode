@@ -1,0 +1,18 @@
+id: ClassLibrary1.Class1
+href: ClassLibrary1.Class1.yaml
+name:
+  CSharp: Class1
+qualifiedName:
+  CSharp: ClassLibrary1.Class1
+type: Class
+source:
+  path: C:\Users\lianwei\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\Class1.cs
+  startLine: 12
+summary: Test *Class* a **a**
+syntax:
+  content:
+    CSharp: public class Class1
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

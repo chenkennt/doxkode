@@ -1,0 +1,8 @@
+ClassLibrary1:
+  Name: ClassLibrary1
+  Href: ClassLibrary1.yaml
+  YamlPath: ClassLibrary1.yaml
+ClassLibrary1.Class1:
+  Name: ClassLibrary1.Class1
+  Href: ClassLibrary1.Class1.yaml
+  YamlPath: ClassLibrary1.Class1.yaml

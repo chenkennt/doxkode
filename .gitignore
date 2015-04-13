@@ -28,7 +28,7 @@ log.txt
 ############################
 #  wix intermediate files  #
 ############################
-wix/Installer/obj/
-wix/Installer/*.wixpdb
-wix/Installer/*.wixobj
-wix/Installer/*.msi
+Installer/obj/
+Installer/*.wixpdb
+Installer/*.wixobj
+Installer/*.msi

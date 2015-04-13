@@ -59,4 +59,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" Condition="Exists('$(BuildDocToolPath)\Microsoft.DocProject.targets')" />
+  <Target AfterTargets="AfterBuild">
+    <Message Text="Unable to locate '$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets'!" Condition="!Exists('$(BuildDocToolPath)\Microsoft.DocProject.targets')" />
+  </Target>
 </Project>

@@ -5,13 +5,14 @@
     <ConfigPublishToolPath Condition=" '$(ConfigPublishToolPath)' == '' ">$(DocToolExtensionsPath)\ConfigPublish.exe</ConfigPublishToolPath>
     <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">GithubPublish.config</GithubConfigPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
-    <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
     <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
     <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
-    <ApiFolderPath>$(OutputPath)/api/</ApiFolderPath>
+    <ApiFolderPath>api/</ApiFolderPath>
     <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
-    <MarkdownIndexFilePath>$(OutputPath)/md.yaml</MarkdownIndexFilePath>
+    <MarkdownIndexFilePath>md.yaml</MarkdownIndexFilePath>
     <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
+    <!-- Website project's output directory is current folder, disable it as a temp workaround until a better way is found-->
+    <CopyToOutput>False</CopyToOutput>
   </PropertyGroup>
   <Target Name="Build">
     <CallTarget Targets="Validation" />
@@ -20,7 +21,7 @@
     <CallTarget Targets="GenerateMetadata" />
     <CallTarget Targets="MergeMetadata" />
     <CallTarget Targets="IndexMarkdown" />
-    <CallTarget Targets="CopyWebsiteFiles" />
+    <CallTarget Targets="CopyWebsiteFiles" Condition="$(CopyToOutput)"/>
 
     <!--<CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />-->
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
@@ -69,13 +70,13 @@
     <Delete Files="@(ObjFiles)"  ContinueOnError="true" />
   </Target>
 
+  <!-- TODO: to clean up all the files not in .csproj? -->
   <Target Name="CleanupExistingOutput">
     <ItemGroup>
-      <OutputFiles Include="$(OutputPath)\**\*.*" />
+      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yaml" />
     </ItemGroup>
     <!-- Cleanup existing docmta -->
-    <Delete Files="@(OutputFiles)"  ContinueOnError="true" />
-    <RemoveDir Directories="$(OutputPath)" ContinueOnError="true" />
+    <Delete Files="@(OutputApiFiles)" ContinueOnError="true" />
   </Target>
 
   <Target Name ="GenerateMetadata">
@@ -106,7 +107,8 @@
     <CallTarget Targets="CleanupExistingOutput" />
     <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
     <Message Text="OutputMetadataFiles: @(OutputMetadataFiles)" />
-    <CallTarget Targets="_MergeMetadata" />
+    <CallTarget Targets="_MergeMetadata" Condition="Exists('$(IntermediateFilePath)')"/>
+    <Warning Text="No intermediate file '$(IntermediateFilePath)' gets generated. No MergeMetadata Action will be taken." Condition="!Exists('$(IntermediateFilePath)')"/>
   </Target>
 
   <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
@@ -160,12 +162,12 @@
     <Exec Command="$(ConfigPublishToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
   </Target>
 
-  <Target Name="PreviewWebsite">
+  <!--<Target Name="PreviewWebsite">
     <ItemGroup>
       <OutputHomepage Include="$(OutputPath)" />
     </ItemGroup>
     <Message Text ="Opening %(OutputHomepage.FullPath)" />
     <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="&quot;$(ProgramFiles)/IIS Express/iisexpress&quot; /path:&quot;%(OutputHomepage.FullPath)&quot; /port:$(PreviewPort) /systray:false"/>
     <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="start http://localhost:$(PreviewPort)"/>
-  </Target>
+  </Target>-->
 </Project>

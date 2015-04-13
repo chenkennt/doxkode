@@ -34,6 +34,10 @@
       <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
       <Name>BuildMeta</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\TemplateProject\DocascodeVsixProject\DocascodeVsixProject.csproj">
+      <Project>{890b4cfd-b6ef-4f11-8952-3d830badbbc4}</Project>
+      <Name>DocascodeVsixProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="installer.ico" />
@@ -60,5 +64,4 @@
   <Target Name="AfterBuild">
     <Exec Command="make.cmd $(OutputPath)" />
   </Target>
-
 </Project>
