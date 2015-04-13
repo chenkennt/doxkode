@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="DocascodeVsixProject.Microsoft CAPS.62405247-e12a-4ce5-8c12-5e9beedbd734" Version="1.0" Language="en-US" Publisher="Microsoft CAPS" />
+    <DisplayName>Docascode Project</DisplayName>
+    <Description xml:space="preserve">Vsix project containing documentation project template supported by doc-as-code</Description>
+    <Icon>template.ico</Icon>
+    <PreviewImage>template.ico</PreviewImage>
+    <Tags>documentation, docascode</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DocumentationWebsiteTemplate" d:TargetPath="|DocumentationWebsiteTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
+</PackageManifest>

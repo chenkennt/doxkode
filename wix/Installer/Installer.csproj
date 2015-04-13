@@ -30,25 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\BuildMeta\BuildMeta.csproj">
       <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
       <Name>BuildMeta</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\DocProjectVsix\DocProjectVsix\DocProjectVsix.csproj">
-      <Project>{3b3b48bc-84c8-4f2b-aea9-df6154e357a1}</Project>
-      <Name>DocProjectVsix</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -72,8 +56,9 @@
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-  </Target>
+  </Target>  -->
   <Target Name="AfterBuild">
+    <Exec Command="make.cmd" />
   </Target>
-  -->
+
 </Project>
