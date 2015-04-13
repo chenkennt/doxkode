@@ -30,7 +30,7 @@ namespace UnitTest
                 Console.WriteLine(index);
             }
 
-            Assert.AreEqual(2, indexes.Count);
+            Assert.AreEqual(3, indexes.Count);
             Assert.AreEqual(ResultLevel.Warn, result.ResultLevel, result.Message);
         }
     }
