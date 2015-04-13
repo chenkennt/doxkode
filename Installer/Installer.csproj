@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BuildMeta\BuildMeta.csproj">
+    <ProjectReference Include="..\BackEnd\BuildMeta\BuildMeta.csproj">
       <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
       <Name>BuildMeta</Name>
       <Private>False</Private>
