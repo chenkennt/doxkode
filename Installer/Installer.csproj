@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\Drop\Debug\Installer\</OutputPath>
+    <OutputPath>..\Drop\Debug\Installer\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,19 +24,16 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Drop\Release\Installer\</OutputPath>
+    <OutputPath>..\Drop\Release\Installer\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BuildMeta\BuildMeta.csproj">
+    <ProjectReference Include="..\BuildMeta\BuildMeta.csproj">
       <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
       <Name>BuildMeta</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TemplateProject\DocascodeVsixProject\DocascodeVsixProject.csproj">
-      <Project>{890b4cfd-b6ef-4f11-8952-3d830badbbc4}</Project>
-      <Name>DocascodeVsixProject</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
