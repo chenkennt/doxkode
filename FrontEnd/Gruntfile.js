@@ -136,14 +136,22 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'test']
     },
     connect: {
-      test: {
+      debug: {
         options: {
           port: 8000,
           hostname: '0.0.0.0',
           base: './sample/host/debug',
           keepalive: true
         }
-      }
+      },
+      release: {
+        options: {
+          port: 8001,
+          hostname: '0.0.0.0',
+          base: './sample/host/release',
+          keepalive: true
+        }
+      },
     },
     less: {
         dev: {
@@ -307,5 +315,6 @@ module.exports = function(grunt) {
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
-    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
+    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:debug' ]);
+    grunt.registerTask('serverrelease', [ 'release', 'copy:test', 'connect:release' ]);
 };
