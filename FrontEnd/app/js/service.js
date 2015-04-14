@@ -1,5 +1,4 @@
 function docServiceFunction($q, $http, docConstants, docUtility) {
-
   function normalizeUrl(url){
     if (!url) return '';
     var arr = url.split(/[/|\\]/);
@@ -13,34 +12,7 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     return r.test(url);
   };
 
-  this.tocClassApi = function(navItem) {
-    return {
-      // not sure why active is needed
-      //active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
-      current: this.pathInfo.contentPath === navItem.href,
-      'nav-index-section': navItem.type === 'section'
-    };
-  };
-
-  this.gridClassApi = function(toc) {
-    return {
-      'grid-right': toc,
-      grid: !toc
-    };
-  };
-
-  this.navClassApi = function(navItem) {
-    var navPath;
-    if (this.pathInfo) {
-      navPath = normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
-    }
-
-    return {
-      // not sure why active is needed
-      //active: navItem.href && navPath,
-      current: navPath === navItem.href,
-    };
-  };
+  this.normalizeUrl = normalizeUrl;
 
   this.getRemoteUrl = function(item, startLine) {
     if (item && item.remote && item.remote.repo) {
@@ -140,7 +112,7 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     return {contentPath: path};
   };
 
-  this. getAbsolutePath = function(currentUrl, relative){
+  this.getAbsolutePath = function(currentUrl, relative){
     var pathInfo = this.getPathInfo(currentUrl);
     if (!pathInfo) return '';
     var current = this.getContentFilePath(pathInfo);

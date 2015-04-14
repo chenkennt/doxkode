@@ -35,10 +35,36 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
 
       $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
-      $scope.tocClass = docService.tocClassApi;
-      $scope.gridClass = docService.gridClassApi;
+      $scope.tocClass = function(navItem) {
+        var tocClass = {
+          current: navItem.href && this.pathInfo.contentPath === navItem.href,
+          'nav-index-section': navItem.type === 'section'
+        };
+        if (tocClass.current === true) {
+          $scope.navGroup = this.navGroup;
+          $scope.navItem = this.navItem;
+        }
 
-      $scope.navClass = docService.navClassApi;
+        return tocClass;
+      };
+
+      $scope.gridClass = function(toc) {
+        return {
+          'grid-right': toc,
+          grid: !toc
+        };
+      };
+
+      $scope.navClass = function(navItem) {
+        var navPath;
+        if (this.pathInfo) {
+          navPath = docService.normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
+        }
+
+        return {
+          current: navPath && navPath === navItem.href,
+        };
+      };
 
       var md = (function () {
           marked.setOptions({
@@ -134,6 +160,14 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         return docService.getHref($scope, $scope.toc.path, url);
       };
 
+      // Href relative to current toc file
+      $scope.GetBreadCrumbHref = function(url) {
+        // For navbar url, no need to calculate relative path from toc
+        if (url && url.indexOf('/#/') === 0) return url;
+        if (!$scope.toc) return '';
+        return docService.getHref($scope, $scope.toc.path, url);
+      };
+
       $scope.GetNavHref = function(url) {
         if (docService.isAbsoluteUrl(url)) return url;
         if (!url) return '';
@@ -169,7 +203,8 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         return $location.path();
       }, function docsPathWatchAction(path) {
         path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
-
+        $scope.navGroup = null;
+        $scope.navItem = null;
         var currentPage = $scope.currentPage = path; //NG_PAGES[path];
 
         // TODO: check if it is inside NG_PAGES
@@ -221,48 +256,12 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
             }
           }
 
-          // breadcrumb generation logic
-          var breadcrumb = $scope.breadcrumb = [];
-          var currElem = document.getElementsByClassName("current");
-          if (currElem[0]) {
-            breadcrumb.push({
-              name: currElem[0].firstElementChild.innerText,
-              url: currElem[0].firstElementChild.href
-            });
-          }
-          if (currElem[1]) {
-            if (currElem[1].parentNode.parentNode.nodeName === 'LI') {
-              breadcrumb.push({
-                name: currElem[1].parentNode.parentNode.firstElementChild.innerText,
-                url: currElem[1].parentNode.parentNode.firstElementChild.href
-              });
-            }
-            breadcrumb.push({
-              name: currElem[1].firstElementChild.innerText,
-              url: currElem[1].firstElementChild.href
-            });
-          }
-
-          /*var pathParts = pathInfo.tocPath ? pathInfo.tocPath.split('/') : [];
-          if (pathInfo.contentPath) pathParts.push('!' + pathInfo.contentPath);
-          var breadcrumb = $scope.breadcrumb = [];
-          var breadcrumbPath = '';
-          angular.forEach(pathParts, function(part) {
-            if (part) {
-              breadcrumbPath += part;
-              breadcrumb.push({
-                name: part,
-                url: breadcrumbPath
-              });
-              breadcrumbPath += '/';
-            }
-          });*/
-
         } else {
           if ($scope.navbar && $scope.navbar.length > 0) {
             $location.url($scope.navbar[0].href);
           }
         }
+
       });
 
       function mdIndexWatcher(path){
@@ -283,9 +282,63 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         }
       }
 
+
+      function breadCrumbWatcher(currentGroup, currentPage, currentPath){
+        // breadcrumb generation logic
+        var breadcrumb = $scope.breadcrumb = [];
+        var pathInfo = docService.getPathInfo(currentPath);
+
+        var currentNav = docService.normalizeUrl(pathInfo.tocPath || pathInfo.contentPath);
+        var navbar = $scope.navbar;
+        if (currentNav && navbar){
+          var navName = navbar.filter(function(x) {return docService.normalizeUrl(x.href) === currentNav;})[0] || {};
+
+          breadcrumb.push({
+            name: navName.id,
+            // use '/#/' to indicate this is a nav link...
+            url: '/#/' + currentNav
+          });
+        }
+        if (currentGroup){
+          breadcrumb.push({
+            name: currentGroup.id,
+            url: currentGroup.href
+          });
+
+          // If toc does not exist, use navbar's title
+          if (currentPage){
+            breadcrumb.push({
+              name: currentPage.id,
+              url: currentPage.href
+            });
+          }
+        }
+      }
+
       $scope.$watch(function modelWatch() {
-        return $scope.partialModel ;
-      }, mdIndexWatcher);
+        return $scope.partialModel;
+      }, function(){
+        mdIndexWatcher();
+        breadCrumbWatcher($scope.navGroup, $scope.navItem, $location.path());
+      });
+
+      $scope.$watch(function modelWatch() {
+        return $scope.navbar ;
+      }, function(navbar){
+        breadCrumbWatcher($scope.navGroup, $scope.navItem, $location.path());
+      });
+
+      $scope.$watch(function modelWatch() {
+        return $scope.navGroup ;
+      }, function(navGroup){
+        breadCrumbWatcher(navGroup, $scope.navItem, $location.path());
+      });
+
+      $scope.$watch(function modelWatch() {
+        return $scope.navItem ;
+      }, function(navItem){
+        breadCrumbWatcher($scope.navGroup, navItem, $location.path());
+      });
 
       $scope.$watch(function modelWatch() {
         return $scope.mdIndex ;

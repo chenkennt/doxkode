@@ -197,7 +197,7 @@
             </div>
             <ul class="breadcrumb">
               <li ng-repeat="crumb in breadcrumb">
-                <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
+                <a ng-href="{{GetBreadCrumbHref(crumb.url)}}">{{crumb.name}}</a>
               </li>
             </ul>
         </div>
@@ -266,7 +266,7 @@
             Super-powered by Microsoft Visual Studio China  ©2014-2015
             Code licensed under the MIT License
           </span>
-        </div> 
+        </div>
       </div>
     </footer>
   </div>
