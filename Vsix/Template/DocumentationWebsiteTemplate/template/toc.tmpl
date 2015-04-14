@@ -1,7 +1,7 @@
 <a class="btn toc-toggle" ng-init="tocToggle = false" ng-click="tocToggle = !tocToggle">Show / Hide Table of Contents</a>
 <ul class="nav nav-stacked sidenav-lvl-1" ng-hide="tocToggle">
-  <li ng-repeat="navGroup in model track by navGroup.id">
-    <a ng-href="{{GetTocHref(navGroup.href)}}" ng-class="tocClass(navGroup)" class="sidenav-heading">{{ navGroup.id }}</a>
+  <li ng-repeat="navGroup in model track by navGroup.id" ng-class="tocClass(navGroup)">
+    <a ng-href="{{GetTocHref(navGroup.href)}}" class="sidenav-heading">{{ navGroup.id }}</a>
     <ul class="nav nav-stacked sidenav-lvl-2">
       <li ng-repeat="navItem in navGroup.items" ng-class="tocClass(navItem)">
         <a ng-if="navItem.extra.href" ng-class="tocClass(navItem.extra)" ng-href="{{GetTocHref(navItem.extra.href)}}">
