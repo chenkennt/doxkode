@@ -106,10 +106,10 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
         return new Array(num + 1);
       };
 
-      $scope.GetDetail = function(e) {
+      /*$scope.GetDetail = function(e) {
         var display = e.target.nextElementSibling.style.display;
         e.target.nextElementSibling.style.display = (display === 'block') ? 'none' : 'block';
-      };
+      };*/
 
       $scope.ViewSource = function() {
         return docService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
@@ -117,6 +117,15 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
 
       $scope.ImproveThisDoc = function() {
         return $scope.partialModel.mdContent;
+      };
+
+      // expand / collapse all logic for model items
+      $scope.expandAll = function(state) {
+        if ($scope.partialModel.items) {
+          $scope.partialModel.items.forEach(function(e) {
+            e.isCollapsed = state;
+          });
+        }
       };
 
       // Href relative to current toc file
@@ -213,7 +222,28 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
           }
 
           // breadcrumb generation logic
-          var pathParts = pathInfo.tocPath ? pathInfo.tocPath.split('/') : [];
+          var breadcrumb = $scope.breadcrumb = [];
+          var currElem = document.getElementsByClassName("current");
+          if (currElem[0]) {
+            breadcrumb.push({
+              name: currElem[0].firstElementChild.innerText,
+              url: currElem[0].firstElementChild.href
+            });
+          }
+          if (currElem[1]) {
+            if (currElem[1].parentNode.parentNode.nodeName === 'LI') {
+              breadcrumb.push({
+                name: currElem[1].parentNode.parentNode.firstElementChild.innerText,
+                url: currElem[1].parentNode.parentNode.firstElementChild.href
+              });
+            }
+            breadcrumb.push({
+              name: currElem[1].firstElementChild.innerText,
+              url: currElem[1].firstElementChild.href
+            });
+          }
+
+          /*var pathParts = pathInfo.tocPath ? pathInfo.tocPath.split('/') : [];
           if (pathInfo.contentPath) pathParts.push('!' + pathInfo.contentPath);
           var breadcrumb = $scope.breadcrumb = [];
           var breadcrumbPath = '';
@@ -226,7 +256,8 @@ angular.module('docCtrl', ['docInitService', 'docUtility'])
               });
               breadcrumbPath += '/';
             }
-          });
+          });*/
+
         } else {
           if ($scope.navbar && $scope.navbar.length > 0) {
             $location.url($scope.navbar[0].href);

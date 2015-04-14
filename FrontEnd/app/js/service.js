@@ -15,7 +15,8 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
 
   this.tocClassApi = function(navItem) {
     return {
-      active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
+      // not sure why active is needed
+      //active: navItem.href && this.pathInfo && this.pathInfo.contentPath,
       current: this.pathInfo.contentPath === navItem.href,
       'nav-index-section': navItem.type === 'section'
     };
@@ -35,7 +36,8 @@ function docServiceFunction($q, $http, docConstants, docUtility) {
     }
 
     return {
-      active: navItem.href && navPath,
+      // not sure why active is needed
+      //active: navItem.href && navPath,
       current: navPath === navItem.href,
     };
   };
