@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Symbols;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.IO;
 using Microsoft.CodeAnalysis.MSBuild;
 using DocAsCode.Utility;
@@ -15,6 +13,8 @@ namespace DocAsCode.BuildMeta
 {
     public static class BuildMetaHelper
     {
+        private static readonly MSBuildWorkspace Workspace = MSBuildWorkspace.Create();
+
         /// <summary>
         /// Support file with .list files and search pattern delimited by comma(,)
         /// </summary>
@@ -58,13 +58,11 @@ namespace DocAsCode.BuildMeta
         /// Could be absolute path
         /// </summary>
         /// <param name="projectListFile"></param>
-        /// <param name="outputFolder"></param>
         /// <param name="outputListFile"></param>
         /// <returns></returns>
         public static async Task<ParseResult> GenerateMetadataFromProjectListAsync(string projectListFile, string outputListFile)
         {
-            List<string> projectList;
-            projectList = GetFileList(projectListFile);
+            var projectList = GetFileList(projectListFile);
 
             if (projectList == null || projectList.Count == 0)
             {
@@ -108,7 +106,7 @@ namespace DocAsCode.BuildMeta
                 return new ParseResult(ResultLevel.Error, "No metadata file listed in {0}, Exiting", metadataListFile);
             }
 
-            return await MergeYamlMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName, tocFileName, apiFolder);
+            return await Task.Run(() => MergeYamlMetadataFromMetadataListCore(metadataList, outputFolder, indexFileName, tocFileName, apiFolder));
         }
 
         public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName, string mdFolderName)
@@ -136,8 +134,6 @@ namespace DocAsCode.BuildMeta
                 }
             });
         }
-
-        private static MSBuildWorkspace workspace = MSBuildWorkspace.Create();
 
         private static async Task<List<string>> GenerateMetadataFromProjectListCoreAsync(List<string> projectFiles, string outputFolder)
         {
@@ -168,12 +164,12 @@ namespace DocAsCode.BuildMeta
                 ParseResult.WriteToConsole(ResultLevel.Info, "Generating documentation metadata from {0} ...", projectFile);
                 if (fileExtension == ".sln")
                 {
-                    var solution = await workspace.OpenSolutionAsync(projectFile);
+                    var solution = await Workspace.OpenSolutionAsync(projectFile);
                     projects = solution.Projects.ToList();
                 }
                 else if (fileExtension == ".csproj" || fileExtension == ".vbproj")
                 {
-                    var project = await workspace.OpenProjectAsync(projectFile);
+                    var project = await Workspace.OpenProjectAsync(projectFile);
                     projects.Add(project);
                 }
                 else
@@ -215,14 +211,13 @@ namespace DocAsCode.BuildMeta
             return outputFilePathList;
         }
 
-        private static async Task<ParseResult> MergeYamlMetadataFromMetadataListCoreAsync(List<string> metadataFiles, string outputFolder, string indexFileName, string tocFileName, string apiFolder)
+        private static ParseResult MergeYamlMetadataFromMetadataListCore(List<string> metadataFiles, string outputFolder, string indexFileName, string tocFileName, string apiFolder)
         {
             if (metadataFiles == null || metadataFiles.Count == 0)
             {
                 return null;
             }
 
-            List<string> outputFilePathList = new List<string>();
             if (Directory.Exists(outputFolder))
             {
                 ParseResult.WriteToConsole(ResultLevel.Warn, "{0} directory already exists.", outputFolder);
@@ -235,7 +230,6 @@ namespace DocAsCode.BuildMeta
             List<YamlItemViewModel> projectMetadataList = new List<YamlItemViewModel>();
             foreach (var metadataFile in metadataFiles)
             {
-                string projectFilePath;
                 YamlItemViewModel projectMetadata;
                 var result = TryParseYamlMetadataFile(metadataFile, out projectMetadata);
                 if (result.ResultLevel == ResultLevel.Success)
@@ -256,7 +250,6 @@ namespace DocAsCode.BuildMeta
             }
             else
             {
-                string indexFilePath;
                 ParseResult result = ResolveAndExportYamlMetadata(allMemebers, outputFolder, indexFileName, tocFileName, apiFolder);
                 if (result.ResultLevel == ResultLevel.Success)
                 {
@@ -310,9 +303,7 @@ namespace DocAsCode.BuildMeta
 
                         allMembers[ns.Name] = ns;
 
-                        if (ns.Items != null)
-                        {
-                            ns.Items.ForEach(s =>
+                        ns.Items?.ForEach(s =>
                             {
                                 YamlItemViewModel existingMetadata;
                                 if (allMembers.TryGetValue(s.Name, out existingMetadata))
@@ -324,9 +315,7 @@ namespace DocAsCode.BuildMeta
                                     allMembers.Add(s.Name, s);
                                 }
 
-                                if (s.Items != null)
-                                {
-                                    s.Items.ForEach(s1 =>
+                                s.Items?.ForEach(s1 =>
                                     {
                                         YamlItemViewModel existingMetadata1;
                                         if (allMembers.TryGetValue(s1.Name, out existingMetadata1))
@@ -338,9 +327,7 @@ namespace DocAsCode.BuildMeta
                                             allMembers.Add(s1.Name, s1);
                                         }
                                     });
-                                }
                             });
-                        }
                     }
                 }
             }

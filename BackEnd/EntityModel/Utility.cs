@@ -104,7 +104,6 @@ namespace DocAsCode.EntityModel
 
         private static string LinkResolver(Match match, Func<string, string> replaceHandler)
         {
-            string filePath;
             string id = match.Groups["content"].Value;
             // For a valid commentid, remove the first 2 characters
             if (CommentIdRegex.IsMatch(id))

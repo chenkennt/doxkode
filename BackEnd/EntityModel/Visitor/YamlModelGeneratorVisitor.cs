@@ -1,5 +1,6 @@
 ﻿namespace DocAsCode.EntityModel
 {
+    using System;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
@@ -11,10 +12,10 @@
         private YamlItemViewModel parent = new YamlItemViewModel();
         private YamlItemViewModel currentNamespace = new YamlItemViewModel();
         private YamlItemViewModel currentAssembly = new YamlItemViewModel();
-        private SyntaxLanguage _language;
+        private readonly SyntaxLanguage language;
         public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
         {
-            _language = language;
+            this.language = language;
         }
 
         public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
@@ -25,12 +26,12 @@
             var item = new YamlItemViewModel
             {
                 Name = VisitorHelper.GetId(symbol),
-                DisplayNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.MetadataName } },
+                DisplayNames = new Dictionary<SyntaxLanguage, string> { { this.language, symbol.MetadataName } },
                 RawComment = symbol.GetDocumentationCommentXml(),
-                Language = _language,
+                Language = this.language,
             };
 
-            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { _language, item.Name } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string> { { this.language, item.Name } };
             
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
@@ -40,12 +41,12 @@
 
         public override YamlItemViewModel VisitAssembly(IAssemblySymbol symbol)
         {
-            var item = DefaultVisit(symbol);
+            var item = this.DefaultVisit(symbol);
             if (item == null) return null;
             item.Type = MemberType.Assembly;
-            
-            parent = item;
-            currentAssembly = item;
+
+            this.parent = item;
+            this.currentAssembly = item;
             foreach (var ns in symbol.GlobalNamespace.GetNamespaceMembers())
             {
                 ns.Accept(this);
@@ -56,38 +57,38 @@
 
         public override YamlItemViewModel VisitNamespace(INamespaceSymbol symbol)
         {
-            var item = DefaultVisit(symbol);
+            var item = this.DefaultVisit(symbol);
             if (item == null) return null;
             item.Type = MemberType.Namespace;
 
-            Debug.Assert(parent != null && currentAssembly != null);
-            if (currentAssembly != null)
+            Debug.Assert(this.parent != null && this.currentAssembly != null);
+            if (this.currentAssembly != null)
             {
-                if (currentAssembly.Items == null)
+                if (this.currentAssembly.Items == null)
                 {
-                    currentAssembly.Items = new List<YamlItemViewModel>();
+                    this.currentAssembly.Items = new List<YamlItemViewModel>();
                 }
 
-                currentAssembly.Items.Add(item);
+                this.currentAssembly.Items.Add(item);
             }
 
             var members = symbol.GetMembers().ToList();
-            var currentNamespaceSaved = currentNamespace;
-            currentNamespace = item;
-            var parentSaved = parent;
-            parent = item;
+            var currentNamespaceSaved = this.currentNamespace;
+            this.currentNamespace = item;
+            var parentSaved = this.parent;
+            this.parent = item;
             foreach (var member in members)
             {
                 var nsItem = member.Accept(this);
             }
-            parent = parentSaved;
-            currentNamespace = currentNamespaceSaved;
+            this.parent = parentSaved;
+            this.currentNamespace = currentNamespaceSaved;
             return item;
         }
 
         public override YamlItemViewModel VisitNamedType(INamedTypeSymbol symbol)
         {
-            var item = DefaultVisit(symbol);
+            var item = this.DefaultVisit(symbol);
             if (item == null) return null;
 
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
@@ -117,19 +118,19 @@
 
                 item.Inheritance.Reverse();
             }
-            Debug.Assert(parent != null && currentNamespace != null);
-            if (currentNamespace != null)
+            Debug.Assert(this.parent != null && this.currentNamespace != null);
+            if (this.currentNamespace != null)
             {
-                if (currentNamespace.Items == null)
+                if (this.currentNamespace.Items == null)
                 {
-                    currentNamespace.Items = new List<YamlItemViewModel>();
+                    this.currentNamespace.Items = new List<YamlItemViewModel>();
                 }
 
-                currentNamespace.Items.Add(item);
+                this.currentNamespace.Items.Add(item);
             }
 
             item.Type = VisitorHelper.GetMemberTypeFromTypeKind(symbol.TypeKind);
-            string syntaxStr = GetSyntaxContent(item.Type, syntaxNode);
+            string syntaxStr = this.GetSyntaxContent(item.Type, syntaxNode);
             Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
             if (string.IsNullOrEmpty(syntaxStr)) return null;
 
@@ -143,23 +144,23 @@
                 item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
             }
 
-            item.Syntax.Content.Add(_language, syntaxStr);
+            item.Syntax.Content.Add(this.language, syntaxStr);
 
-            var parentSaved = parent;
-            parent = item;
+            var parentSaved = this.parent;
+            this.parent = item;
 
             foreach (var member in symbol.GetMembers())
             {
                 var nsItem = member.Accept(this);
             }
 
-            parent = parentSaved;
+            this.parent = parentSaved;
             return item;
         }
 
         public override YamlItemViewModel VisitMethod(IMethodSymbol symbol)
         {
-            var item = AddYamlItem(symbol);
+            var item = this.AddYamlItem(symbol);
             if (item == null) return null;
 
             if (item.Syntax == null)
@@ -184,16 +185,16 @@
 
             if (item.Type == MemberType.Constructor)
             {
-                string parentName = parent.DisplayNames[_language];
-                string name = item.DisplayQualifiedNames[_language];
-                int index = name.IndexOf("#ctor");
+                string parentName = this.parent.DisplayNames[this.language];
+                string name = item.DisplayQualifiedNames[this.language];
+                int index = name.IndexOf("#ctor", StringComparison.Ordinal);
                 Debug.Assert(index > -1);
                 if (index > -1)
                 {
-                    item.DisplayQualifiedNames[_language] = name.Replace("#ctor", parentName);
+                    item.DisplayQualifiedNames[this.language] = name.Replace("#ctor", parentName);
 
                     // Special handles for constructor's displayName as .ctor is internal
-                    item.DisplayNames[_language] = item.DisplayQualifiedNames[_language].Substring(index);
+                    item.DisplayNames[this.language] = item.DisplayQualifiedNames[this.language].Substring(index);
                 }
             }
 
@@ -202,17 +203,17 @@
 
         public override YamlItemViewModel VisitField(IFieldSymbol symbol)
         {
-            return AddYamlItem(symbol);
+            return this.AddYamlItem(symbol);
         }
 
         public override YamlItemViewModel VisitEvent(IEventSymbol symbol)
         {
-            return AddYamlItem(symbol);
+            return this.AddYamlItem(symbol);
         }
 
         public override YamlItemViewModel VisitProperty(IPropertySymbol symbol)
         {
-            var item = AddYamlItem(symbol);
+            var item = this.AddYamlItem(symbol);
             if (item == null) return null;
 
             if (item.Syntax == null)
@@ -281,9 +282,9 @@
 
         private YamlItemViewModel AddYamlItem(ISymbol symbol)
         {
-            var item = DefaultVisit(symbol);
+            var item = this.DefaultVisit(symbol);
             if (item == null) return null;
-            item.Type = GetMemberTypeFromSymbol(symbol);
+            item.Type = this.GetMemberTypeFromSymbol(symbol);
             if (item.Type == MemberType.Default)
             {
                 // If Default, then it is PropertyGet or PropertySet, ignore
@@ -314,21 +315,21 @@
                 item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
             }
 
-            string syntaxStr = GetSyntaxContent(item.Type, syntaxNode);
+            string syntaxStr = this.GetSyntaxContent(item.Type, syntaxNode);
 
             Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
             if (string.IsNullOrEmpty(syntaxStr)) return null;
 
-            item.Syntax.Content.Add(_language, syntaxStr);
-            Debug.Assert(parent != null && currentNamespace != null);
-            if (parent != null)
+            item.Syntax.Content.Add(this.language, syntaxStr);
+            Debug.Assert(this.parent != null && this.currentNamespace != null);
+            if (this.parent != null)
             {
-                if (parent.Items == null)
+                if (this.parent.Items == null)
                 {
-                    parent.Items = new List<YamlItemViewModel>();
+                    this.parent.Items = new List<YamlItemViewModel>();
                 }
 
-                parent.Items.Add(item);
+                this.parent.Items.Add(item);
             }
 
             return item;

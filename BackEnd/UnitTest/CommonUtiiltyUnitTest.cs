@@ -16,7 +16,7 @@ namespace UnitTest
     public class UtilityUnitTest
     {
         [TestMethod]
-        public async Task TestTripleSlashParser()
+        public void TestTripleSlashParser()
         {
             string input = @"
       <member name='T:TestClass1.Partial1'>

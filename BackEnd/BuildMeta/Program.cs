@@ -31,7 +31,6 @@ namespace DocAsCode.BuildMeta
             string outputTocFile = null;
             string outputIndexFile = null;
             string intermediateOutputListFile = null;
-            string intermediateOutputFileName = null;
             string outputApiFolder = null;
             string outputMarkdownFolder = null;
             BuildTarget target = BuildTarget.All;

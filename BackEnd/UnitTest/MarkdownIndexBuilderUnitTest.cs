@@ -19,10 +19,9 @@ namespace UnitTest
     {
         [TestMethod]
         [DeploymentItem("Assets/Markdown/About.md")]
-        public async Task TestMarkdownIndexBuilder()
+        public void TestMarkdownIndexBuilder()
         {
-            string markdownFile = "About.md";
-            string outputDirectory = "output";
+            const string markdownFile = "About.md";
             List<MarkdownIndex> indexes;
             var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, null, out indexes);
             foreach(var index in indexes)
