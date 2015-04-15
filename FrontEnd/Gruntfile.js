@@ -30,6 +30,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
+        'app/js/services/contentService.js',
+        'app/js/services/styleProvider.js',
+        'app/js/services/urlService.js',
         'app/js/app.js',
         'app/js/bootstrap.js',
         'app/js/constants.js',
@@ -37,7 +40,6 @@ module.exports = function(grunt) {
         'app/js/directives.js',
         'app/js/errors.js',
         'app/js/pages-data.js',
-        'app/js/service.js',
         'app/js/util.js',
         'app/js/versions-data.js',
         'app/js/versions.js',
@@ -124,6 +126,7 @@ module.exports = function(grunt) {
         files: [
             'Gruntfile.js',
             'app/js/*.js',
+            'app/js/**/*.js',
             'app/css/*.css',
             'app/css/**/*.css',
             'app/css/*.css',

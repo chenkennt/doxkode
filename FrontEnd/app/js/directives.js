@@ -139,7 +139,7 @@
     };
   }
 
-  angular.module('docascode.directives', ['docascode.service'])
+  angular.module('docascode.directives', ['docascode.urlService'])
     .service('docsMarkdownService', markdownServiceFunction)
     /**
      * backToTop Directive
@@ -160,7 +160,7 @@
         $anchorScroll.yOffset = element;
       };
     }])
-    .directive('markdown', ['docsMarkdownService', 'docService', '$location', function(docsMarkdownService, docService, $location) {
+    .directive('markdown', ['docsMarkdownService', 'urlService', '$location', function(docsMarkdownService, urlService, $location) {
       var md = (function() {
         marked.setOptions({
           gfm: true,
@@ -201,14 +201,14 @@
             angular.forEach(element.find("a"), function(block) {
               var url = block.attributes['href'] && block.attributes['href'].value;
               if (!url) return;
-              if (!docService.isAbsoluteUrl(url))
-                block.attributes['href'].value = docService.getHref(scope, $location.path(), url);
+              if (!urlService.isAbsoluteUrl(url))
+                block.attributes['href'].value = urlService.getHref(scope, $location.path(), url);
             });
             angular.forEach(element.find("img"), function(block) {
               var url = block.attributes['src'] && block.attributes['src'].value;
               if (!url) return;
-              if (!docService.isAbsoluteUrl(url))
-                block.attributes['src'].value = docService.getAbsolutePath($location.path(), url);
+              if (!urlService.isAbsoluteUrl(url))
+                block.attributes['src'].value = urlService.getAbsolutePath($location.path(), url);
             });
           }
 

@@ -7,7 +7,7 @@
 (function() {
   'use strict';
    /*jshint validthis:true */
-  function docServiceFunction($q, $http, docConstants, docUtility) {
+  function provider($q, $http, docConstants, docUtility) {
     function normalizeUrl(url) {
       if (!url) return '';
       var arr = url.split(/[/|\\]/);
@@ -249,7 +249,7 @@
     };
   }
 
-  angular.module('docascode.service', ['docascode.constants', 'docascode.util'])
-    .service('docService', ['$q', '$http', 'docConstants', 'docUtility', docServiceFunction]);
+  angular.module('docascode.urlService', ['docascode.constants', 'docascode.util'])
+    .service('urlService', ['$q', '$http', 'docConstants', 'docUtility', provider]);
 
 })();
