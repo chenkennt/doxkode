@@ -21,5 +21,16 @@
 *.suo
 *.ccproj.user
 *.csproj.user
+*.kproj.user
 .gitattributes
+log.txt
 
+
+
+############################
+#  wix intermediate files  #
+############################
+Installer/obj/
+Installer/*.wixpdb
+Installer/*.wixobj
+Installer/*.msi

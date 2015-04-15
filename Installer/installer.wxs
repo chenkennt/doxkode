@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<?define ProductVersion = "0.0.1"?>
+<?define ProductUpgradeCode = "CD6D527F-70A3-4F4A-AF75-669F55136BED"?>
+<?define VsVersion = "14.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+  xmlns:VSExtension="http://schemas.microsoft.com/wix/VSExtension">
+  <Product Id="*" Language="1033" Manufacturer="Microsoft CAPS" Name="Doc-as-code Project" UpgradeCode="$(var.ProductUpgradeCode)" Version="$(var.ProductVersion)">
+    <Package Comments="Windows Installer Package" Compressed="yes" InstallerVersion="200"/>
+    <Media Cabinet="product.cab" EmbedCab="yes" Id="1"/>
+    <Icon Id="ProductIcon" SourceFile="installer.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="ProductIcon"/>
+    <Property Id="ARPNOREPAIR" Value="1"/>
+    <Property Id="ARPNOMODIFY" Value="1"/>
+    <Upgrade Id="$(var.ProductUpgradeCode)">
+      <UpgradeVersion Minimum="$(var.ProductVersion)" OnlyDetect="yes" Property="NEWERVERSIONDETECTED"/>
+      <UpgradeVersion Minimum="0.0.0" Maximum="$(var.ProductVersion)" IncludeMinimum="yes" IncludeMaximum="no" Property="OLDERVERSIONBEINGUPGRADED"/>
+    </Upgrade>
+    <Condition Message="A newer version of this software is already installed.">NOT NEWERVERSIONDETECTED</Condition>
+
+    <SetProperty Id="VSINSTALLDIR" Value="[ProgramFilesFolder]\Microsoft Visual Studio $(var.VsVersion)" Sequence="execute" After="InstallInitialize" />
+    <Property Id="VSINSTALLDIR">
+        <RegistrySearch Id="VSInstallRegistry" Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\$(var.VsVersion)" Name="InstallDir" Type="directory" />
+    </Property>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLDIR" Name="Microsoft Docascode">
+          <Component Id="BuildMeta" Guid="63A926FD-C523-434C-BF8A-83B184264898">
+            <RemoveFolder Id="RemoveBuildMetaDir" On="uninstall" />
+          </Component>
+        </Directory>
+          <Directory Id="VisualStudioDir" Name="Microsoft Visual Studio $(var.VsVersion)">
+            <Directory Id="VisualStudioCommon7Dir" Name="Common7">
+              <Directory Id="VisualStudioCommon7IDEDir" Name="IDE">
+                <Directory Id="VisualStudioCommon7IDEExtensionsDir" Name="Extensions">
+                  <Directory Id="DocascodeVsixDir" Name="DocascodeVsix">
+                    <Component Id="VSPackage" Guid="63A926DD-C523-434C-BF8A-83B184264898">
+                      <RemoveFolder Id="RemoveDocascodeVsixDir" On="uninstall" />
+                    </Component>
+                  </Directory>
+                </Directory>
+              </Directory>
+            </Directory>
+          </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- Install vsix extension via msi without devenv steup: http://hmemcpy.com/2014/03/installing-vsix-extension-via-msi-without-devenv-setup/ -->
+    <CustomAction Id='RefreshVSExtensions'
+              Directory='VisualStudioCommon7IDEDir'
+              Execute="deferred"
+              Impersonate="no"
+              ExeCommand='[VisualStudioCommon7IDEDir]\devenv.exe /updateconfiguration'
+              Return='ignore'></CustomAction>
+
+    <InstallExecuteSequence>
+      <RemoveExistingProducts After="InstallValidate"/>
+      <Custom Action='RefreshVSExtensions' Before='InstallFinalize'>NOT Installed</Custom>
+    </InstallExecuteSequence>
+
+    <Feature Id="Complete" Title="Docascode v$(var.ProductVersion)" Description="The complete package for docascode v$(var.ProductVersion)" Level="1">
+      <Feature Id="BuildMeta" Title="Install BuildMeta globally" Description="Install BuildMeta globally" Level="1">
+        <ComponentRef Id="BuildMeta" />
+        <ComponentGroupRef Id="BuildMetaFiles"/>
+      </Feature>
+      <Feature Id="DocascodeVsix" Title="Microsoft Docascode" Level="1">
+        <ComponentRef Id="VSPackage" />
+        <ComponentGroupRef Id="DocascodeVsixFiles" />
+      </Feature>
+    </Feature>
+  </Product>
+</Wix>

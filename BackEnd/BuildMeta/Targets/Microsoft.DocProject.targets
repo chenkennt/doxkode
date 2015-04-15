@@ -1,0 +1,173 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildDocToolPath>"$(DocToolExtensionsPath)\BuildMeta.exe"</BuildDocToolPath>
+    <PublishDocToolPath Condition=" '$(PublishDocToolPath)' == '' ">$(DocToolExtensionsPath)\PublishDoc.exe</PublishDocToolPath>
+    <ConfigPublishToolPath Condition=" '$(ConfigPublishToolPath)' == '' ">$(DocToolExtensionsPath)\ConfigPublish.exe</ConfigPublishToolPath>
+    <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">GithubPublish.config</GithubConfigPath>
+    <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
+    <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
+    <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
+    <ApiFolderPath>api/</ApiFolderPath>
+    <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
+    <MarkdownIndexFilePath>md.yaml</MarkdownIndexFilePath>
+    <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
+    <!-- Website project's output directory is current folder, disable it as a temp workaround until a better way is found-->
+    <CopyToOutput>False</CopyToOutput>
+  </PropertyGroup>
+  <Target Name="Build">
+    <CallTarget Targets="Validation" />
+
+    <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="ConfigGithub" />
+    <CallTarget Targets="GenerateMetadata" />
+    <CallTarget Targets="MergeMetadata" />
+    <CallTarget Targets="IndexMarkdown" />
+    <CallTarget Targets="CopyWebsiteFiles" Condition="$(CopyToOutput)"/>
+
+    <!--<CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />-->
+    <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
+  </Target>
+  <Target Name="Validation">
+    <Error Condition="'$(DocToolExtensionsPath)' == ''" Text="DocToolExtensionsPath is not set! Please set DocToolExtensionsPath to the executive path of BuildMeta.exe to continue build!" ></Error>
+  </Target>
+  <Target Name ="Clean">
+    <CallTarget Targets="CleanupExistingOutput" />
+    <!-- TO BE IMPLEMENTED-->
+  </Target>
+  <Target Name ="ReBuild">
+    <CallTarget Targets="Clean" />
+    <CallTarget Targets="Build" />
+  </Target>
+  <Target Name ="GetFrameworkPaths" />
+
+  <Target Name="CopyWebsiteFiles">
+    <ItemGroup>
+      <WebsiteFiles Include="@(Content)" />
+      <!--
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />
+      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.js'" />
+
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.css'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.css'" />
+      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.css'" />-->
+      <!--   <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.tmpl" />
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/web.config" /> -->
+    </ItemGroup>
+    <!--<Copy SourceFiles="@(WebsiteFiles)"  DestinationFolder="$(OutputPath)" />-->
+    <Message Text="Copying @(WebsiteFiles)" />
+    <Copy
+        SourceFiles="@(WebsiteFiles)"
+        DestinationFiles="@(WebsiteFiles->'$(OutputPath)\%(RelativeDir)%(Filename)%(Extension)')"
+        />
+  </Target>
+
+  <Target Name="CleanupExistingObj">
+    <ItemGroup>
+      <ObjFiles Include="$(IntermediateOutputPath)\**\*.*" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(ObjFiles)"  ContinueOnError="true" />
+  </Target>
+
+  <!-- TODO: to clean up all the files not in .csproj? -->
+  <Target Name="CleanupExistingOutput">
+    <ItemGroup>
+      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yaml" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(OutputApiFiles)" ContinueOnError="true" />
+  </Target>
+
+  <Target Name ="GenerateMetadata">
+    <ItemGroup>
+      <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
+    </ItemGroup>
+    <CallTarget Targets="CleanupExistingObj" />
+    <Message Text="InputProjectFiles: @(InputProjectFiles)" />
+    <CallTarget Targets="_GenerateMetadata" />
+  </Target>
+  <Target Name ="_GenerateMetadata" Outputs="$(IntermediateFilePath)">
+    <!-- BuildMeta.exe <ProjectFiles> /i:$(IntermediateOutputPath)/obj.list /target:build -->
+    <!-- ProjectFiles => Generate metadata file for each project in $(IntermediateOutputPath) and list the file paths in obj.list -->
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;', ',') /i:&quot;$(IntermediateFilePath)&quot; /target:build" >
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
+      <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
+    </Exec>
+
+    <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
+    <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
+  </Target>
+
+  <Target Name ="MergeMetadata">
+    <ItemGroup>
+      <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
+      <OutputMetadataFiles Include="$(OutputPath)\**\*.*" />
+    </ItemGroup>
+    <CallTarget Targets="CleanupExistingOutput" />
+    <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
+    <Message Text="OutputMetadataFiles: @(OutputMetadataFiles)" />
+    <CallTarget Targets="_MergeMetadata" Condition="Exists('$(IntermediateFilePath)')"/>
+    <Warning Text="No intermediate file '$(IntermediateFilePath)' gets generated. No MergeMetadata Action will be taken." Condition="!Exists('$(IntermediateFilePath)')"/>
+  </Target>
+
+  <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
+    <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
+    <!-- $(IntermediateOutputPath)/obj.list => merge metadata file in $(IntermediateOutputPath) and output the yaml metadata in $(OutputPath) -->
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /i:&quot;$(IntermediateFilePath)&quot; /o:&quot;$(ApiFolderPath)&quot; /target:merge" >
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
+      <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
+    </Exec>
+    <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
+    <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
+  </Target>
+
+  <Target Name ="IndexMarkdown">
+    <CallTarget Targets="CleanupExistingMarkdownIndexFile" />
+    <CallTarget Targets="_IndexMarkdown" />
+  </Target>
+
+  <Target Name="_IndexMarkdown" Outputs="$(MarkdownIndexFilePath)">
+    <ItemGroup>
+      <MarkdownFiles  Include="@(None)" Condition="'%(Extension)' == '.md'" />
+      <MarkdownFiles  Include="@(Content)" Condition="'%(Extension)' == '.md'" />
+      <MarkdownFiles  Include="@(Compile)" Condition="'%(Extension)' == '.md'" />
+    </ItemGroup>
+
+    <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
+    <!-- $(OutputPath), @(MarkdownFiles) => Markdown Index File -->
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
+      <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
+    </Exec>
+
+    <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
+    <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
+  </Target>
+
+  <Target Name="CleanupExistingMarkdownIndexFile">
+    <ItemGroup>
+      <MarkdownIndexFiles Include="$(MarkdownIndexFilePath)" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Message Text="Deleting @(MarkdownIndexFiles)" />
+    <Delete Files="@(MarkdownIndexFiles)" ContinueOnError="true" />
+  </Target>
+
+  <Target Name="PublishDoc">
+    <Exec Command="$(PublishDocToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
+  </Target>
+
+  <Target Name="ConfigGithub">
+    <Exec Command="$(ConfigPublishToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
+  </Target>
+
+  <!--<Target Name="PreviewWebsite">
+    <ItemGroup>
+      <OutputHomepage Include="$(OutputPath)" />
+    </ItemGroup>
+    <Message Text ="Opening %(OutputHomepage.FullPath)" />
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="&quot;$(ProgramFiles)/IIS Express/iisexpress&quot; /path:&quot;%(OutputHomepage.FullPath)&quot; /port:$(PreviewPort) /systray:false"/>
+    <Exec Condition="Exists(%(OutputHomepage.FullPath))" Command="start http://localhost:$(PreviewPort)"/>
+  </Target>-->
+</Project>

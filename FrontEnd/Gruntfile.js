@@ -30,17 +30,17 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
-        'app/js/constants.js',
-        'app/js/util.js',
-        'app/js/directives.js',
+        'app/js/app.js',
         'app/js/bootstrap.js',
-        'app/js/pages-data.js',
-        'app/js/versions-data.js',
-        'app/js/service.js',
-        'app/js/markdown.js',
+        'app/js/constants.js',
+        'app/js/controller.js',
+        'app/js/directives.js',
         'app/js/errors.js',
+        'app/js/pages-data.js',
+        'app/js/service.js',
+        'app/js/util.js',
+        'app/js/versions-data.js',
         'app/js/versions.js',
-        'app/js/docs.js',
     ],
     ownCssFiles: [
         'app/bower_components/highlightjs/styles/vs.css',
@@ -136,14 +136,22 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'test']
     },
     connect: {
-      test: {
+      debug: {
         options: {
           port: 8000,
           hostname: '0.0.0.0',
           base: './sample/host/debug',
           keepalive: true
         }
-      }
+      },
+      release: {
+        options: {
+          port: 8001,
+          hostname: '0.0.0.0',
+          base: './sample/host/release',
+          keepalive: true
+        }
+      },
     },
     less: {
         dev: {
@@ -206,8 +214,6 @@ module.exports = function(grunt) {
     clean: {
         debug: ['debug/'],
         release: ['release/'],
-       // Unable to clean folder outside current directory:
-       // vsix: ['../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/'],
         test: ['sample/host/**']
     },
     copy: {
@@ -252,12 +258,12 @@ module.exports = function(grunt) {
         },
         vsix: {
           files: [
-            {expand: true, src: ['**'], cwd: 'release/', dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/' },
+            {expand: true, src: ['**'], cwd: 'release/', dest: '../Vsix/Template/DocumentationWebsiteTemplate/' },
           ]
         },
         vsix_debug: {
           files: [
-            {expand: true, src: ['**'], cwd: 'debug/', dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/' },
+            {expand: true, src: ['**'], cwd: 'debug/', dest: '../Vsix/Template/DocumentationWebsiteTemplate/' },
           ]
         }
      }
@@ -305,8 +311,10 @@ module.exports = function(grunt) {
     grunt.registerTask('release', [ 'build', 'concat', 'cssmin', 'uglify', 'index_release_ref', 'clean:release','copy:release_ref']);
     grunt.registerTask('releaseinline', [ 'build','concat', 'cssmin', 'uglify', 'index_release_inline','clean:release', 'copy:release']);
     grunt.registerTask('test', [ 'debug', 'release', 'clean:test', 'copy:test']);
-    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
+    grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);
+    grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['debug']);
-    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:test' ]);
+    grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:debug' ]);
+    grunt.registerTask('serverrelease', [ 'release', 'copy:test', 'connect:release' ]);
 };
