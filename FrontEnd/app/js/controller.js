@@ -2,25 +2,26 @@
  * Define the main functionality used in docsApp
  * Wrap Angular components in an Immediately Invoked Function Expression (IIFE)
  * to avoid variable collisions
+ * Controller is *class*
+ * Use controllers to
+ *   * Set up the initial state of the $scope object
+ *   * Add behavior to the $scope object
+ * DONOT use controllers to
+ *   * Manipulate DOM -- Controllers should contain only business logic
+ *   * Format input -- Use *form* controls instead
+ *   * Filter output -- Use *filter* instad
+ *   * Share code or state across controllers -- Use *service* instead
+ *   * Manage the life-cycle of other components
  */
 
 (function() {
   'use strict';
 
-  angular.module('docascode.controller', ['docascode.service'])
-    .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
-      return $cacheFactory('toc-cache');
-    }])
-    .factory('mdIndexCache', ['$cacheFactory', function($cacheFactory) {
-      return $cacheFactory('mdIndex-cache');
-    }])
-    .controller('DocsController', [
-      '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'docService', 'tocCache', 'mdIndexCache', 'docUtility', 'docsMarkdownService',
-      function($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-        NG_PAGES, NG_VERSION, NG_ITEMTYPES, docService, tocCache, mdIndexCache, docUtility, docsMarkdownService) {
+  function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
+    NG_PAGES, NG_VERSION, NG_ITEMTYPES, styleProvider, contentService, urlService, docsMarkdownService, tocCache, mdIndexCache) {
         $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
+    // TODO: Hacky, need change, how to bind this if move it to styleProvider?
         $scope.tocClass = function(navItem) {
           var tocClass = {
             current: navItem.href && this.pathInfo.contentPath === navItem.href,
@@ -34,23 +35,9 @@
           return tocClass;
         };
 
-        $scope.gridClass = function(toc) {
-          return {
-            'grid-right': toc,
-            grid: !toc
-          };
-        };
+    $scope.gridClass = styleProvider.gridClass;
 
-        $scope.navClass = function(navItem) {
-          var navPath;
-          if (this.pathInfo) {
-            navPath = docService.normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
-          }
-
-          return {
-            current: navPath && navPath === navItem.href,
-          };
-        };
+    $scope.navClass = styleProvider.navClass;
 
         var md = (function() {
           marked.setOptions({
@@ -102,14 +89,14 @@
             markdownElement.find("code").each(function(i, block) {
               var url = block.attributes['href'] && block.attributes['href'].value;
               if (!url) return;
-              if (!docService.isAbsoluteUrl(url))
-                block.attributes['href'].value = docService.getHref($scope, $location.path(), url);
+          if (!urlService.isAbsoluteUrl(url))
+            block.attributes['href'].value = urlService.getHref($scope, $location.path(), url);
             });
             markdownElement.find("code").each(function(i, block) {
               var url = block.attributes['src'] && block.attributes['src'].value;
               if (!url) return;
-              if (!docService.isAbsoluteUrl(url))
-                block.attributes['src'].value = docService.getAbsolutePath($location.path(), url);
+          if (!urlService.isAbsoluteUrl(url))
+            block.attributes['src'].value = urlService.getAbsolutePath($location.path(), url);
             });
           }, 1, false);
         };
@@ -124,7 +111,7 @@
         };*/
 
         $scope.ViewSource = function() {
-          return docService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
+      return urlService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
         };
 
         $scope.ImproveThisDoc = function() {
@@ -143,7 +130,7 @@
         // Href relative to current toc file
         $scope.GetTocHref = function(url) {
           if (!$scope.toc) return '';
-          return docService.getHref($scope, $scope.toc.path, url);
+      return urlService.getHref($scope, $scope.toc.path, url);
         };
 
         // Href relative to current toc file
@@ -151,38 +138,31 @@
           // For navbar url, no need to calculate relative path from toc
           if (url && url.indexOf('/#/') === 0) return url;
           if (!$scope.toc) return '';
-          return docService.getHref($scope, $scope.toc.path, url);
+      return urlService.getHref($scope, $scope.toc.path, url);
         };
 
         $scope.GetNavHref = function(url) {
-          if (docService.isAbsoluteUrl(url)) return url;
+      if (urlService.isAbsoluteUrl(url)) return url;
           if (!url) return '';
           return '#' + url;
         };
 
         // Href relative to current file
         $scope.GetLinkHref = function(url) {
-          return docService.getHref($scope, $location.path(), url);
+      return urlService.getHref($scope, $location.path(), url);
         };
 
         $scope.$on('$includeContentLoaded', function() {
           // Add post actions when ng-include updated
         });
 
-        (function getNavbar() {
-          // load navigation bar, should be toc.yaml in root path
-          // TODO: support toc.md => extract <h><a> from marked(toc.md)
-          var navBarPath = "toc.yaml";
-          docService.asyncFetchIndex(navBarPath, function(result) {
-            $scope.navbar = jsyaml.load(result);
-
-            // Load first item as the default page
-            docService.getDefaultItem($scope.navbar,
+    contentService.getNavBar().then(function(data) {
+      $scope.navbar = data;
+      contentService.getDefaultItem($scope.navbar,
               function(defaultItem) {
                 if (!$location.path() && defaultItem.href) $location.url(defaultItem.href);
               });
           });
-        })();
 
         // #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
         $scope.$watch(function docsPathWatch() {
@@ -196,11 +176,11 @@
           // TODO: check if it is inside NG_PAGES
           // If current page exists in NG_PAGES
           if (currentPage) {
-            var pathInfo = docService.getPathInfo(currentPage);
+        var pathInfo = urlService.getPathInfo(currentPage);
             $scope.pathInfo = pathInfo;
-            docService.getTocContent($scope, pathInfo.tocFilePath, tocCache);
+        contentService.getTocContent($scope, pathInfo.tocFilePath, tocCache);
 
-            path = docService.getContentFilePath(pathInfo);
+        path = urlService.getContentFilePath(pathInfo);
             if (path) {
               // If end with .md
               if ((/\.md$/g).test(path)) {
@@ -211,26 +191,25 @@
               } else if ((/\.yaml$/g).test(path)) {
                 $scope.contentType = 'yaml';
                 // if is yaml
-
                 // 1. try get md.yaml from the same path as toc, or current path if toc is not there
-                docService.getMdContent($scope, currentPage, mdIndexCache);
+            contentService.getMdContent($scope, currentPage, mdIndexCache);
 
-                docService.asyncFetchIndex(path, function(result) {
-                    var model = $scope.partialModel = jsyaml.load(result);
+            contentService.getContent(path).then(function(data) {
+                var model = $scope.partialModel = data;
                     if (model instanceof Array) {
                       // toc list
                       $scope.partialPath = 'template' + '/tocpage.tmpl';
                     } else {
                       $scope.title = model.id;
                       if (model.type.toLowerCase() === 'namespace') {
-                        $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, model.items);
+                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, model.items);
                         $scope.partialPath = 'template' + '/namespace.tmpl';
                       } else {
-                        $scope.itemtypes = docService.setItemTypeVisiblity(NG_ITEMTYPES.class, model.items);
+                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, model.items);
                         $scope.partialPath = 'template' + '/class.tmpl';
                       }
                     }
-                  },
+              }).catch(
                   function() {
                     $scope.breadcrumb = [];
                     $scope.partialPath = 'template/error404.tmpl';
@@ -255,10 +234,10 @@
             var mdPath = $scope.mdIndex[$scope.partialModel.id];
             if (mdPath) {
               if (mdPath.href) {
-                $scope.partialModel.mdHref = docService.getRemoteUrl(mdPath);
-                var tocPath = docService.getPathInfo($location.path()).tocPath;
+            $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+            var tocPath = urlService.getPathInfo($location.path()).tocPath;
                 var href = (tocPath || '') + '/' + mdPath.href;
-                var getMdIndex = docService.asyncFetchIndex(href,
+            var getMdIndex = contentService.getMarkdownContent(href).then(
                   function(result) {
                     var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
                     $scope.partialModel.mdContent = md;
@@ -272,13 +251,13 @@
         function breadCrumbWatcher(currentGroup, currentPage, currentPath) {
           // breadcrumb generation logic
           var breadcrumb = $scope.breadcrumb = [];
-          var pathInfo = docService.getPathInfo(currentPath);
+      var pathInfo = urlService.getPathInfo(currentPath);
 
-          var currentNav = docService.normalizeUrl(pathInfo.tocPath || pathInfo.contentPath);
+      var currentNav = urlService.normalizeUrl(pathInfo.tocPath || pathInfo.contentPath);
           var navbar = $scope.navbar;
           if (currentNav && navbar) {
             var navName = navbar.filter(function(x) {
-              return docService.normalizeUrl(x.href) === currentNav;
+          return urlService.normalizeUrl(x.href) === currentNav;
             })[0] || {};
 
             breadcrumb.push({
@@ -333,23 +312,6 @@
         }, mdIndexWatcher);
 
         // listen for toc change
-        // $scope.$watch(function modelWatch() {
-        //   return $scope.toc;
-        // }, function modelWatchAction(toc) {
-        //   if (toc && toc.content) {
-        //     var info = docService.getPathInfo($location.path());
-        //     if (!info.contentPath) {
-        //       docService.getDefaultItem(toc.content,
-        //         function(defaultItem) {
-        //           if (defaultItem && defaultItem.href) {
-        //             $location.url(docService.getContentUrlWithTocAndContentUrl(toc.path, defaultItem.href));
-        //           }
-        //         });
-        //     }
-        //   }
-        // });
-
-        // listen for toc change
         $scope.$watch(function modelWatch() {
           return $scope.navbar;
         }, function modelWatchAction(navbar) {
@@ -366,6 +328,18 @@
         $scope.version = angular.version.full + "  " + angular.version.codeName;
         $scope.loading = 0;
       }
+
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.styleProvider', 'docascode.directives'])
+    .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
+      return $cacheFactory('toc-cache');
+    }])
+    .factory('mdIndexCache', ['$cacheFactory', function($cacheFactory) {
+      return $cacheFactory('mdIndex-cache');
+    }])
+    .controller('DocsController', [
+      '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
+      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES','styleProvider', 'contentService', 'urlService', 'docsMarkdownService', 'tocCache', 'mdIndexCache',
+      DocsCtrl
     ]);
 
 })();
