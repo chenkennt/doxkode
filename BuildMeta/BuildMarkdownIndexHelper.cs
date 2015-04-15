@@ -188,7 +188,7 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static Dictionary<string, int> referencedFileCache = new Dictionary<string, int>();
+        private static Dictionary<string, int> referencedFileLengthCache = new Dictionary<string, int>();
 
         private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
         {
@@ -248,10 +248,10 @@ namespace DocAsCode.BuildMeta
                             }
 
                             int fileLength;
-                             if(!referencedFileCache.TryGetValue(destFile, out fileLength))
+                            if(!referencedFileLengthCache.TryGetValue(destFile, out fileLength))
                             {
                                 fileLength = File.ReadLines(destFile).Count();
-                                referencedFileCache.Add(destFile, fileLength);
+                                referencedFileLengthCache.Add(destFile, fileLength);
                             }
 
                             if (string.IsNullOrEmpty(lines[1]))
