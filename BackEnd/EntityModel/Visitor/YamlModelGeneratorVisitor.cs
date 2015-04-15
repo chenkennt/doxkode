@@ -30,8 +30,8 @@
                 Language = this.language,
             };
 
-            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpShortErrorMessageFormat) } };
-            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
+            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpShortErrorMessageFormat) } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
 
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
