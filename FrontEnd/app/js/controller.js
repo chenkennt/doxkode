@@ -135,7 +135,7 @@
         $scope.expandAll = function(state) {
           if ($scope.partialModel.items) {
             $scope.partialModel.items.forEach(function(e) {
-              e.isCollapsed = state;
+              e.showDetail = state;
             });
           }
         };
