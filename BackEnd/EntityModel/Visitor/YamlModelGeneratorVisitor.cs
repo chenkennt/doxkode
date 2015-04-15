@@ -26,13 +26,13 @@
             var item = new YamlItemViewModel
             {
                 Name = VisitorHelper.GetId(symbol),
-                DisplayNames = new Dictionary<SyntaxLanguage, string> { { this.language, symbol.MetadataName } },
                 RawComment = symbol.GetDocumentationCommentXml(),
                 Language = this.language,
             };
 
-            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string> { { this.language, item.Name } };
-            
+            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpShortErrorMessageFormat) } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { _language, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
+
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
 
@@ -181,21 +181,6 @@
                 Debug.Assert(param.Type != null);
 
                 item.Syntax.Parameters.Add(param);
-            }
-
-            if (item.Type == MemberType.Constructor)
-            {
-                string parentName = this.parent.DisplayNames[this.language];
-                string name = item.DisplayQualifiedNames[this.language];
-                int index = name.IndexOf("#ctor", StringComparison.Ordinal);
-                Debug.Assert(index > -1);
-                if (index > -1)
-                {
-                    item.DisplayQualifiedNames[this.language] = name.Replace("#ctor", parentName);
-
-                    // Special handles for constructor's displayName as .ctor is internal
-                    item.DisplayNames[this.language] = item.DisplayQualifiedNames[this.language].Substring(index);
-                }
             }
 
             return item;
