@@ -81,43 +81,10 @@ module.exports = function(grunt) {
         "//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js",
         "//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js",
     ],
-    /* make it use .jshintrc */
     jshint: {
         options: {
-            curly: false,
-            eqeqeq: true,
-            immed: true,
-            latedef: true,
-            newcap: true,
-            noarg: true,
-            sub: true,
-            undef: true,
-            unused: false,
-            boss: true,
-            eqnull: true,
-            browser: true,
-            globals: {
-                ace: true,
-                $: true,
-                csplay: true,
-                angular: true,
-                jsyaml: true,
-                jQuery: true,
-                marked: true,
-                google: true,
-                hljs: true,
-                /* leaflet.js*/
-                L: true,
-                console: true,
-                MDwiki: true,
-                Prism: true,
-                alert: true,
-                Hogan: true
-            }
+            jshintrc: '.jshintrc'
         },
-        /*gruntfile: {
-            src: 'Gruntfile.js'
-        },*/
         js: {
             src: ['app/js/*.js', 'app/js/**/*.js', '!app/js/marked.js']
         }
