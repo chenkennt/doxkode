@@ -64,21 +64,21 @@
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
       var pathInfo = urlService.getPathInfo(path);
-      var mdPath = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
 
-      if (mdPath) {
-        tempMdIndex = mdIndexCache.get(mdPath);
+      if (path) {
+        tempMdIndex = mdIndexCache.get(path);
         if (tempMdIndex !== undefined) {
-          if (tempMdIndex) return valueHttpWrapper(tempMdIndex);
+          return valueHttpWrapper(tempMdIndex);
         } else {
-          return $http.get(mdPath)
+          return $http.get(path)
             .then(function(result) {
               var content = getYamlResponse(result);
               mdIndexCache.put(path, content);
               return content;
             }).catch(function(result) {
               mdIndexCache.put(path, null);
-              return null;
+              return valueHttpWrapper(null);
             });
         }
       } else {
