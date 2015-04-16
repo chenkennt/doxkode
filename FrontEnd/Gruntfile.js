@@ -32,6 +32,7 @@ module.exports = function(grunt) {
         //'app/js/search-worker.js',
         'app/js/services/contentService.js',
         'app/js/services/styleProvider.js',
+        'app/js/services/csplayService.js',
         'app/js/services/urlService.js',
         'app/js/app.js',
         'app/js/bootstrap.js',
