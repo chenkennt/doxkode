@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-180-g7a6962d
-  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-187-gbbbb1be
+  path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 237
 syntax:
   content:
@@ -29,7 +29,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 244
   syntax:
     content:
@@ -46,7 +46,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 246
   syntax:
     content:
@@ -68,7 +68,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 248
   syntax:
     content:
@@ -85,7 +85,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 253
   syntax:
     content:
@@ -107,7 +107,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 255
   syntax:
     content:
@@ -134,7 +134,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 257
   syntax:
     content:
@@ -148,7 +148,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 259
   syntax:
     content:
@@ -162,7 +162,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 261
   syntax:
     content:
@@ -182,7 +182,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 263
   syntax:
     content:

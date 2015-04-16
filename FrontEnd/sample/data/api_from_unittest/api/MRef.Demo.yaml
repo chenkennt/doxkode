@@ -1,0 +1,14 @@
+id: MRef.Demo
+href: MRef.Demo.yaml
+name:
+  CSharp: Demo
+qualifiedName:
+  CSharp: MRef.Demo
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-187-gbbbb1be
+  path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/CatLibrary/Class1.cs
+  startLine: 335

@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-180-g7a6962d
-  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-187-gbbbb1be
+  path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 3
 summary: This is summary from vb class...
 syntax:
@@ -29,13 +29,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Class1.ValueClass
+    VB: Public ValueClass As Class1
   qualifiedName:
-    VB: VBTestClass1.Class1.ValueClass
+    VB: Public ValueClass As VBTestClass1.Class1
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 11
   summary: This is a *Value* type
   syntax:
@@ -45,13 +45,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Class1.Keyword
+    VB: Public ReadOnly Property Keyword As CounterSampleCalculator
   qualifiedName:
-    VB: VBTestClass1.Class1.Keyword
+    VB: Public ReadOnly Property Keyword As System.Diagnostics.CounterSampleCalculator
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 13
   syntax:
     content:
@@ -66,13 +66,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Class1.WithDeclarationKeyword(CounterSampleCalculator)
+    VB: Public Overrides Function WithDeclarationKeyword(keyword As CounterSampleCalculator) As Date
   qualifiedName:
-    VB: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+    VB: Public Overrides Function WithDeclarationKeyword(keyword As System.Diagnostics.CounterSampleCalculator) As Date
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 23
   summary: What is **Sub**?
   syntax:
@@ -90,13 +90,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Class1.Value(String)
+    VB: Public Function Value(name As String) As Integer
   qualifiedName:
-    VB: VBTestClass1.Class1.Value(String)
+    VB: Public Function Value(name As String) As Integer
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 34
   summary: This is a *Function*
   syntax:

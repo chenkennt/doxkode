@@ -7,12 +7,7 @@ qualifiedName:
   VB: VBTestClass1
 type: Namespace
 source:
-  remote:
-    branch: develop
-    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-180-g7a6962d
-  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/My Project/Settings.Designer.vb
-  startLine: 10
+  path: C:\Users\t-hax\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb
 items:
 - id: VBTestClass1.Class1
   href: VBTestClass1.Class1.yaml

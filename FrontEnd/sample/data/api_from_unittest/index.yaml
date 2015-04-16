@@ -1058,3 +1058,155 @@ Microsoft.VisualBasic:
   Name: Microsoft.VisualBasic
   Href: Microsoft.VisualBasic.yaml
   YamlPath: Microsoft.VisualBasic.yaml
+CatLibrary:
+  Name: CatLibrary
+  Href: CatLibrary.yaml
+  YamlPath: CatLibrary.yaml
+CatLibrary.IAnimal:
+  Name: CatLibrary.IAnimal
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.IAnimal.Name:
+  Name: CatLibrary.IAnimal.Name
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.IAnimal.Item(System.Int32):
+  Name: CatLibrary.IAnimal.Item(System.Int32)
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.IAnimal.Eat:
+  Name: CatLibrary.IAnimal.Eat
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.IAnimal.Eat``1(``0):
+  Name: CatLibrary.IAnimal.Eat``1(``0)
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.IAnimal.Eat(System.String):
+  Name: CatLibrary.IAnimal.Eat(System.String)
+  Href: CatLibrary.IAnimal.yaml
+  YamlPath: CatLibrary.IAnimal.yaml
+CatLibrary.ICat:
+  Name: CatLibrary.ICat
+  Href: CatLibrary.ICat.yaml
+  YamlPath: CatLibrary.ICat.yaml
+CatLibrary.ICat.eat:
+  Name: CatLibrary.ICat.eat
+  Href: CatLibrary.ICat.yaml
+  YamlPath: CatLibrary.ICat.yaml
+CatLibrary.Cat`2:
+  Name: CatLibrary.Cat`2
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.#ctor:
+  Name: CatLibrary.Cat`2.#ctor
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.#ctor(`0):
+  Name: CatLibrary.Cat`2.#ctor(`0)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean):
+  Name: CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.CalculateFood(System.DateTime):
+  Name: CatLibrary.Cat`2.CalculateFood(System.DateTime)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.Jump(`0,`1,System.Boolean@):
+  Name: CatLibrary.Cat`2.Jump(`0,`1,System.Boolean@)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.Equals(System.Object):
+  Name: CatLibrary.Cat`2.Equals(System.Object)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.GetTailLength(System.Int32*,System.Object[]):
+  Name: CatLibrary.Cat`2.GetTailLength(System.Int32*,System.Object[])
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.op_Addition(CatLibrary.Cat{`0,`1},System.Int32):
+  Name: CatLibrary.Cat`2.op_Addition(CatLibrary.Cat{`0,`1},System.Int32)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.op_Subtraction(CatLibrary.Cat{`0,`1},System.Int32):
+  Name: CatLibrary.Cat`2.op_Subtraction(CatLibrary.Cat{`0,`1},System.Int32)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom:
+  Name: CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.Item(System.String):
+  Name: CatLibrary.Cat`2.Item(System.String)
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.ownEat:
+  Name: CatLibrary.Cat`2.ownEat
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.isHealthy:
+  Name: CatLibrary.Cat`2.isHealthy
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Cat`2.Name:
+  Name: CatLibrary.Cat`2.Name
+  Href: CatLibrary.Cat`2.yaml
+  YamlPath: CatLibrary.Cat`2.yaml
+CatLibrary.Tom:
+  Name: CatLibrary.Tom
+  Href: CatLibrary.Tom.yaml
+  YamlPath: CatLibrary.Tom.yaml
+CatLibrary.ICatExtension:
+  Name: CatLibrary.ICatExtension
+  Href: CatLibrary.ICatExtension.yaml
+  YamlPath: CatLibrary.ICatExtension.yaml
+CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64):
+  Name: CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64)
+  Href: CatLibrary.ICatExtension.yaml
+  YamlPath: CatLibrary.ICatExtension.yaml
+CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String):
+  Name: CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String)
+  Href: CatLibrary.ICatExtension.yaml
+  YamlPath: CatLibrary.ICatExtension.yaml
+CatLibrary.MRefNormalDelegate:
+  Name: CatLibrary.MRefNormalDelegate
+  Href: CatLibrary.MRefNormalDelegate.yaml
+  YamlPath: CatLibrary.MRefNormalDelegate.yaml
+CatLibrary.MRefDelegate`3:
+  Name: CatLibrary.MRefDelegate`3
+  Href: CatLibrary.MRefDelegate`3.yaml
+  YamlPath: CatLibrary.MRefDelegate`3.yaml
+CatLibrary.FakeDelegate`1:
+  Name: CatLibrary.FakeDelegate`1
+  Href: CatLibrary.FakeDelegate`1.yaml
+  YamlPath: CatLibrary.FakeDelegate`1.yaml
+MRef:
+  Name: MRef
+  Href: MRef.yaml
+  YamlPath: MRef.yaml
+MRef.Demo:
+  Name: MRef.Demo
+  Href: MRef.Demo.yaml
+  YamlPath: MRef.Demo.yaml
+MRef.Demo.Enumeration:
+  Name: MRef.Demo.Enumeration
+  Href: MRef.Demo.Enumeration.yaml
+  YamlPath: MRef.Demo.Enumeration.yaml
+MRef.Demo.Enumeration.ColorType:
+  Name: MRef.Demo.Enumeration.ColorType
+  Href: MRef.Demo.Enumeration.ColorType.yaml
+  YamlPath: MRef.Demo.Enumeration.ColorType.yaml
+MRef.Demo.Enumeration.ColorType.Red:
+  Name: MRef.Demo.Enumeration.ColorType.Red
+  Href: MRef.Demo.Enumeration.ColorType.yaml
+  YamlPath: MRef.Demo.Enumeration.ColorType.yaml
+MRef.Demo.Enumeration.ColorType.Blue:
+  Name: MRef.Demo.Enumeration.ColorType.Blue
+  Href: MRef.Demo.Enumeration.ColorType.yaml
+  YamlPath: MRef.Demo.Enumeration.ColorType.yaml
+MRef.Demo.Enumeration.ColorType.Yellow:
+  Name: MRef.Demo.Enumeration.ColorType.Yellow
+  Href: MRef.Demo.Enumeration.ColorType.yaml
+  YamlPath: MRef.Demo.Enumeration.ColorType.yaml

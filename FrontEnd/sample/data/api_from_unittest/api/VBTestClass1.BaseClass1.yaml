@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-180-g7a6962d
-  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-187-gbbbb1be
+  path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 42
 summary: This is the BaseClass
 syntax:
@@ -26,13 +26,13 @@ items:
   href: VBTestClass1.BaseClass1.yaml
   language: VB
   name:
-    VB: BaseClass1.WithDeclarationKeyword(CounterSampleCalculator)
+    VB: Public MustOverride Function WithDeclarationKeyword(keyword As CounterSampleCalculator) As Date
   qualifiedName:
-    VB: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+    VB: Public MustOverride Function WithDeclarationKeyword(keyword As System.Diagnostics.CounterSampleCalculator) As Date
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_57_22/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 43
   syntax:
     content:
