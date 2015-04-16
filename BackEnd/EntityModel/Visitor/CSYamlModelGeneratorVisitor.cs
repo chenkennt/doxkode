@@ -15,6 +15,14 @@ namespace DocAsCode.EntityModel
         {
         }
 
+        public override YamlItemViewModel DefaultVisit(ISymbol symbol)
+        {
+            var item = base.DefaultVisit(symbol);
+            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpShortErrorMessageFormat) } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
+            return item;
+        }
+
         public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;
