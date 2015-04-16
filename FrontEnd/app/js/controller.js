@@ -175,9 +175,9 @@
 
     });
 
-    function getMdItemIndex(item, tocPath, mdPath, mdCopy) {
+    function getMdItemIndex(item, tocPath, mdPath, mdInitial, mdResolved) {
         var itemHref = (tocPath || '') + '/' + item.href;
-        contentService.getMarkdownContent(itemHref).then(
+        return contentService.getMarkdownContent(itemHref).then(
                function (res) {
                 var snippet = res;
                 if (item.referenceStartLine != null && item.referenceEndLine != null) {
@@ -187,12 +187,15 @@
                         snippet += lines[i];
                     }
                 }
-                var md = $scope.partialModel.mdContent;
-                md = md.replace(mdCopy.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
-                $scope.partialModel.mdContent = md;
+                return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
             });
     }
 
+    function makeThenFunction(item, tocPath, mdPath, mdInitial){
+      return function(md){ return getMdItemIndex(item, tocPath, mdPath, mdInitial, md);};
+    }
+    // TODO: move to directive?
+    // BUG? method's binding works? looks like not
     function mdIndexWatcher(path) {
         if ($scope.mdIndex && $scope.partialModel) {
             var mdPath = $scope.mdIndex[$scope.partialModel.id];
@@ -204,12 +207,16 @@
                     var getMdIndex = contentService.getMarkdownContent(href).then(
                       function(result) {
                           var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-                          $scope.partialModel.mdContent = md;
                           if (mdPath.items) {
+                              var promise = contentService.valueHttpWrapper(md);
                               for (var i = 0; i < mdPath.items.length; i++) {
                                   var item = mdPath.items[i];
-                                  getMdItemIndex(item, tocPath, mdPath, md);
+                                  promise = promise.then(makeThenFunction(item, tocPath, mdPath, md));
                               }
+                              promise.then(function(md){$scope.partialModel.mdContent = md;});
+                          }
+                          else{
+                              $scope.partialModel.mdContent = md;
                           }
                       });
                 }

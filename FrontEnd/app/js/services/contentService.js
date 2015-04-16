@@ -18,6 +18,7 @@
       return deferred.promise;
     }
 
+    this.valueHttpWrapper = valueHttpWrapper;
     this.getNavBar = function(){
       return $http.get(constants.TocFile)
       .then(getYamlResponse);

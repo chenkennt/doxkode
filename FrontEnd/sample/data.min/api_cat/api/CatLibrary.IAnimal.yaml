@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-181-g3851df9
-  path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    description: v0.3-188-g01636d6
+  path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
   startLine: 15
 summary: This is basic interface of all animal.
 syntax:
@@ -26,7 +26,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 21
   summary: Name of Animal.
   syntax:
@@ -47,7 +47,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 28
   summary: Return specific number animal's name.
   syntax:
@@ -68,7 +68,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 33
   summary: Animal's eat method.
   syntax:
@@ -86,7 +86,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 40
   summary: Overload method of eat. This define the animal eat by which tool.
   syntax:
@@ -110,7 +110,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-16 21_08_38/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 47
   summary: Feed the animal with some food
   syntax:

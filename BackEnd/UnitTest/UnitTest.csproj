@@ -124,6 +124,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <None Include="Assets\Markdown\AboutCodeSnippet.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\Markdown\About.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
