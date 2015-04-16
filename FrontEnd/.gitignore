@@ -1,6 +1,7 @@
 logs/*
 **/dist/*
 sample/host/*
+sample/host.min/*
 debug/*
 release/*
 !.gitkeep

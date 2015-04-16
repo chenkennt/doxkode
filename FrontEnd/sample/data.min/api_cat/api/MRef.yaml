@@ -1,0 +1,14 @@
+id: MRef
+href: MRef.yaml
+name:
+  CSharp: MRef
+qualifiedName:
+  CSharp: MRef
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-181-g3851df9
+  path: TestResults/Deploy_lianwei 2015-04-16 16_55_01/Out/Assets/TestClass1/CatLibrary/Class1.cs
+  startLine: 335
