@@ -190,10 +190,16 @@ namespace DocAsCode.BuildMeta
 
         private static Dictionary<string, int> referencedFileLengthCache = new Dictionary<string, int>();
 
+        /// <summary>
+        /// Extrac code snippet from markdown files.
+        /// Code snippet syntax: {{"relativePath/sourceFilename"}} or {{"relativePath/sourceFilename"[startline-endline]}}
+        /// where starline and endline should be integers and are both optional,
+        /// the default values for which are 1 and the fileLength.
+        /// </summary>
+        /// <param name="section"></param>
+        /// <param name="referenceFolder"></param>
         private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
         {
-            // Code snippet syntax: {{"relativePath/sourceFilename"}} or {{"relativePath/sourceFilename"[startline-endline]}}
-            // where starline and endline should be integers and are both optional, the default values for which are 1 and the fileLength.
             var ReferenceRegex = new Regex(@"{{\s*""(?<source>\S*?)""\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
             MatchCollection matches = ReferenceRegex.Matches(section.MarkdownContent);
 

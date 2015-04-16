@@ -260,24 +260,6 @@
             });
     }
 
-    //function mdIndexWatcher(path) {
-    //  if ($scope.mdIndex && $scope.partialModel) {
-    //    var mdPath = $scope.mdIndex[$scope.partialModel.id];
-    //    if (mdPath) {
-    //      if (mdPath.href) {
-    //        $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
-    //        var tocPath = urlService.getPathInfo($location.path()).tocPath;
-    //        var href = (tocPath || '') + '/' + mdPath.href;
-    //        var getMdIndex = contentService.getMarkdownContent(href).then(
-    //          function(result) {
-    //            var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-    //            $scope.partialModel.mdContent = md;
-    //          });
-    //      }
-    //    }
-    //  }
-    //}
-
     function mdIndexWatcher(path) {
         if ($scope.mdIndex && $scope.partialModel) {
             var mdPath = $scope.mdIndex[$scope.partialModel.id];
