@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ActionResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ActionResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: ActionResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ActionResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

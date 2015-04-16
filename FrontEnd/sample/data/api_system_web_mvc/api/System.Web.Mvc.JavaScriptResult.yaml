@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.JavaScriptResult.Script
   href: System.Web.Mvc.JavaScriptResult.yaml
   name:
-    CSharp: Script
+    CSharp: JavaScriptResult.Script
   qualifiedName:
     CSharp: System.Web.Mvc.JavaScriptResult.Script
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.JavaScriptResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.JavaScriptResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: JavaScriptResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.JavaScriptResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -55,9 +55,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -92,9 +92,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -134,9 +134,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -171,9 +171,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -213,9 +213,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string)
   type: Method
   source:
     remote: *o0
@@ -250,9 +250,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -297,9 +297,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -344,9 +344,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, string, string, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, string, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -406,9 +406,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: LinkExtensions.ActionLink(HtmlHelper, string, string, string, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -468,9 +468,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -500,9 +500,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -532,9 +532,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -564,9 +564,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -601,9 +601,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -638,9 +638,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -675,9 +675,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -712,9 +712,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -754,9 +754,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -796,9 +796,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, string, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, string, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -853,9 +853,9 @@ items:
 - id: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LinkExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: LinkExtensions.RouteLink(HtmlHelper, string, string, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LinkExtensions.RouteLink(System.Web.Mvc.HtmlHelper, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

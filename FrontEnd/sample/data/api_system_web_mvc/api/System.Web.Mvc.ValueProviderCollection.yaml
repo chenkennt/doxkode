@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.#ctor
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: ValueProviderCollection
+    CSharp: ValueProviderCollection.ValueProviderCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.ValueProviderCollection
+    CSharp: System.Web.Mvc.ValueProviderCollection.ValueProviderCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.IValueProvider})
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: ValueProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IValueProvider})
+    CSharp: ValueProviderCollection.ValueProviderCollection(IList<IValueProvider>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.ValueProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IValueProvider})
+    CSharp: System.Web.Mvc.ValueProviderCollection.ValueProviderCollection(System.Collections.Generic.IList<System.Web.Mvc.IValueProvider>)
   type: Constructor
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.ContainsPrefix(System.String)
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: ContainsPrefix
+    CSharp: ValueProviderCollection.ContainsPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.ContainsPrefix(System.String)
+    CSharp: System.Web.Mvc.ValueProviderCollection.ContainsPrefix(string)
   type: Method
   source:
     remote: *o0
@@ -87,9 +87,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.GetValue(System.String)
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: GetValue
+    CSharp: ValueProviderCollection.GetValue(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.GetValue(System.String)
+    CSharp: System.Web.Mvc.ValueProviderCollection.GetValue(string)
   type: Method
   source:
     remote: *o0
@@ -109,9 +109,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.GetValue(System.String,System.Boolean)
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: GetValue
+    CSharp: ValueProviderCollection.GetValue(string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.GetValue(System.String,System.Boolean)
+    CSharp: System.Web.Mvc.ValueProviderCollection.GetValue(string, bool)
   type: Method
   source:
     remote: *o0
@@ -136,9 +136,9 @@ items:
 - id: System.Web.Mvc.ValueProviderCollection.GetKeysFromPrefix(System.String)
   href: System.Web.Mvc.ValueProviderCollection.yaml
   name:
-    CSharp: GetKeysFromPrefix
+    CSharp: ValueProviderCollection.GetKeysFromPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderCollection.GetKeysFromPrefix(System.String)
+    CSharp: System.Web.Mvc.ValueProviderCollection.GetKeysFromPrefix(string)
   type: Method
   source:
     remote: *o0

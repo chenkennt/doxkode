@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.AuthorizeAttribute.Roles
   href: System.Web.Mvc.AuthorizeAttribute.yaml
   name:
-    CSharp: Roles
+    CSharp: AuthorizeAttribute.Roles
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizeAttribute.Roles
   type: Property
@@ -49,7 +49,7 @@ items:
 - id: System.Web.Mvc.AuthorizeAttribute.TypeId
   href: System.Web.Mvc.AuthorizeAttribute.yaml
   name:
-    CSharp: TypeId
+    CSharp: AuthorizeAttribute.TypeId
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizeAttribute.TypeId
   type: Property
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.AuthorizeAttribute.Users
   href: System.Web.Mvc.AuthorizeAttribute.yaml
   name:
-    CSharp: Users
+    CSharp: AuthorizeAttribute.Users
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizeAttribute.Users
   type: Property
@@ -89,7 +89,7 @@ items:
 - id: System.Web.Mvc.AuthorizeAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   href: System.Web.Mvc.AuthorizeAttribute.yaml
   name:
-    CSharp: OnAuthorization
+    CSharp: AuthorizeAttribute.OnAuthorization(AuthorizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizeAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   type: Method

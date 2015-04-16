@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Get
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Get
+    CSharp: HttpVerbs.Get
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Get
   type: Field
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Post
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Post
+    CSharp: HttpVerbs.Post
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Post
   type: Field
@@ -57,7 +57,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Put
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Put
+    CSharp: HttpVerbs.Put
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Put
   type: Field
@@ -71,7 +71,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Delete
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Delete
+    CSharp: HttpVerbs.Delete
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Delete
   type: Field
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Head
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Head
+    CSharp: HttpVerbs.Head
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Head
   type: Field
@@ -99,7 +99,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Patch
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Patch
+    CSharp: HttpVerbs.Patch
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Patch
   type: Field
@@ -113,7 +113,7 @@ items:
 - id: System.Web.Mvc.HttpVerbs.Options
   href: System.Web.Mvc.HttpVerbs.yaml
   name:
-    CSharp: Options
+    CSharp: HttpVerbs.Options
   qualifiedName:
     CSharp: System.Web.Mvc.HttpVerbs.Options
   type: Field

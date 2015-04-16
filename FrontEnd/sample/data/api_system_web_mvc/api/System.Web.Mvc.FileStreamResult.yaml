@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.FileStreamResult.#ctor(System.IO.Stream,System.String)
   href: System.Web.Mvc.FileStreamResult.yaml
   name:
-    CSharp: FileStreamResult(System.IO.Stream,System.String)
+    CSharp: FileStreamResult.FileStreamResult(Stream, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.FileStreamResult.FileStreamResult(System.IO.Stream,System.String)
+    CSharp: System.Web.Mvc.FileStreamResult.FileStreamResult(System.IO.Stream, string)
   type: Constructor
   source:
     remote: *o0
@@ -56,7 +56,7 @@ items:
 - id: System.Web.Mvc.FileStreamResult.FileStream
   href: System.Web.Mvc.FileStreamResult.yaml
   name:
-    CSharp: FileStream
+    CSharp: FileStreamResult.FileStream
   qualifiedName:
     CSharp: System.Web.Mvc.FileStreamResult.FileStream
   type: Property

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ExpressionHelper.GetExpressionText(System.String)
   href: System.Web.Mvc.ExpressionHelper.yaml
   name:
-    CSharp: GetExpressionText
+    CSharp: ExpressionHelper.GetExpressionText(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ExpressionHelper.GetExpressionText(System.String)
+    CSharp: System.Web.Mvc.ExpressionHelper.GetExpressionText(string)
   type: Method
   source:
     remote: *o0
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.ExpressionHelper.GetExpressionText(System.Linq.Expressions.LambdaExpression)
   href: System.Web.Mvc.ExpressionHelper.yaml
   name:
-    CSharp: GetExpressionText
+    CSharp: ExpressionHelper.GetExpressionText(LambdaExpression)
   qualifiedName:
     CSharp: System.Web.Mvc.ExpressionHelper.GetExpressionText(System.Linq.Expressions.LambdaExpression)
   type: Method

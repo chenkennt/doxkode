@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.ActionDescriptor
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: ParameterDescriptor.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterDescriptor.ActionDescriptor
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.BindingInfo
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: BindingInfo
+    CSharp: ParameterDescriptor.BindingInfo
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterDescriptor.BindingInfo
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.DefaultValue
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: DefaultValue
+    CSharp: ParameterDescriptor.DefaultValue
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterDescriptor.DefaultValue
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.ParameterName
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: ParameterName
+    CSharp: ParameterDescriptor.ParameterName
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterDescriptor.ParameterName
   type: Property
@@ -103,7 +103,7 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.ParameterType
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: ParameterType
+    CSharp: ParameterDescriptor.ParameterType
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterDescriptor.ParameterType
   type: Property
@@ -123,9 +123,9 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ParameterDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -144,9 +144,9 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ParameterDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ParameterDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -170,9 +170,9 @@ items:
 - id: System.Web.Mvc.ParameterDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.ParameterDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ParameterDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ParameterDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ParameterDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

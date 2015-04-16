@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.#ctor(System.Object,System.String,System.Globalization.CultureInfo)
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: ValueProviderResult(System.Object,System.String,System.Globalization.CultureInfo)
+    CSharp: ValueProviderResult.ValueProviderResult(object, string, CultureInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderResult.ValueProviderResult(System.Object,System.String,System.Globalization.CultureInfo)
+    CSharp: System.Web.Mvc.ValueProviderResult.ValueProviderResult(object, string, System.Globalization.CultureInfo)
   type: Constructor
   source:
     remote: *o0
@@ -55,7 +55,7 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.AttemptedValue
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: AttemptedValue
+    CSharp: ValueProviderResult.AttemptedValue
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderResult.AttemptedValue
   type: Property
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.Culture
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: Culture
+    CSharp: ValueProviderResult.Culture
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderResult.Culture
   type: Property
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.RawValue
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: RawValue
+    CSharp: ValueProviderResult.RawValue
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderResult.RawValue
   type: Property
@@ -115,7 +115,7 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.ConvertTo(System.Type)
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: ConvertTo
+    CSharp: ValueProviderResult.ConvertTo(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderResult.ConvertTo(System.Type)
   type: Method
@@ -137,9 +137,9 @@ items:
 - id: System.Web.Mvc.ValueProviderResult.ConvertTo(System.Type,System.Globalization.CultureInfo)
   href: System.Web.Mvc.ValueProviderResult.yaml
   name:
-    CSharp: ConvertTo
+    CSharp: ValueProviderResult.ConvertTo(Type, CultureInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderResult.ConvertTo(System.Type,System.Globalization.CultureInfo)
+    CSharp: System.Web.Mvc.ValueProviderResult.ConvertTo(System.Type, System.Globalization.CultureInfo)
   type: Method
   source:
     remote: *o0

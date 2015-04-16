@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.RouteEntry.#ctor(System.String,System.Web.Routing.Route)
   href: System.Web.Mvc.Routing.RouteEntry.yaml
   name:
-    CSharp: RouteEntry(System.String,System.Web.Routing.Route)
+    CSharp: RouteEntry.RouteEntry(string, Route)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.RouteEntry.RouteEntry(System.String,System.Web.Routing.Route)
+    CSharp: System.Web.Mvc.Routing.RouteEntry.RouteEntry(string, System.Web.Routing.Route)
   type: Constructor
   source:
     remote: *o0
@@ -54,7 +54,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteEntry.Name
   href: System.Web.Mvc.Routing.RouteEntry.yaml
   name:
-    CSharp: Name
+    CSharp: RouteEntry.Name
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteEntry.Name
   type: Property
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteEntry.Route
   href: System.Web.Mvc.Routing.RouteEntry.yaml
   name:
-    CSharp: Route
+    CSharp: RouteEntry.Route
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteEntry.Route
   type: Property

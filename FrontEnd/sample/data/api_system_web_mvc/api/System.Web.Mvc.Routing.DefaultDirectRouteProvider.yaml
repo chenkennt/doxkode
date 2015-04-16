@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Routing.DefaultDirectRouteProvider.GetDirectRoutes(System.Web.Mvc.ControllerDescriptor,System.Collections.Generic.IReadOnlyList{System.Web.Mvc.ActionDescriptor},System.Web.Mvc.Routing.IInlineConstraintResolver)
   href: System.Web.Mvc.Routing.DefaultDirectRouteProvider.yaml
   name:
-    CSharp: GetDirectRoutes
+    CSharp: DefaultDirectRouteProvider.GetDirectRoutes(ControllerDescriptor, IReadOnlyList<ActionDescriptor>, IInlineConstraintResolver)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.DefaultDirectRouteProvider.GetDirectRoutes(System.Web.Mvc.ControllerDescriptor,System.Collections.Generic.IReadOnlyList{System.Web.Mvc.ActionDescriptor},System.Web.Mvc.Routing.IInlineConstraintResolver)
+    CSharp: System.Web.Mvc.Routing.DefaultDirectRouteProvider.GetDirectRoutes(System.Web.Mvc.ControllerDescriptor, System.Collections.Generic.IReadOnlyList<System.Web.Mvc.ActionDescriptor>, System.Web.Mvc.Routing.IInlineConstraintResolver)
   type: Method
   source:
     remote: *o0

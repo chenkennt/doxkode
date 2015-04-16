@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.Html5DateRenderingMode.CurrentCulture
   href: System.Web.Mvc.Html5DateRenderingMode.yaml
   name:
-    CSharp: CurrentCulture
+    CSharp: Html5DateRenderingMode.CurrentCulture
   qualifiedName:
     CSharp: System.Web.Mvc.Html5DateRenderingMode.CurrentCulture
   type: Field
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.Html5DateRenderingMode.Rfc3339
   href: System.Web.Mvc.Html5DateRenderingMode.yaml
   name:
-    CSharp: Rfc3339
+    CSharp: Html5DateRenderingMode.Rfc3339
   qualifiedName:
     CSharp: System.Web.Mvc.Html5DateRenderingMode.Rfc3339
   type: Field

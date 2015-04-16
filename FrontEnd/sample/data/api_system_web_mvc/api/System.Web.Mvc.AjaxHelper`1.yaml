@@ -1,9 +1,9 @@
 id: System.Web.Mvc.AjaxHelper`1
 href: System.Web.Mvc.AjaxHelper`1.yaml
 name:
-  CSharp: AjaxHelper`1
+  CSharp: AjaxHelper<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.AjaxHelper`1
+  CSharp: System.Web.Mvc.AjaxHelper<TModel>
 type: Class
 source:
   remote: &o0
@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.AjaxHelper`1.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
   href: System.Web.Mvc.AjaxHelper`1.yaml
   name:
-    CSharp: AjaxHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: AjaxHelper<TModel>.AjaxHelper(ViewContext, IViewDataContainer)
   qualifiedName:
-    CSharp: System.Web.Mvc.AjaxHelper`1.AjaxHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: System.Web.Mvc.AjaxHelper<TModel>.AjaxHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer)
   type: Constructor
   source:
     remote: *o0
@@ -53,9 +53,9 @@ items:
 - id: System.Web.Mvc.AjaxHelper`1.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.AjaxHelper`1.yaml
   name:
-    CSharp: AjaxHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: AjaxHelper<TModel>.AjaxHelper(ViewContext, IViewDataContainer, RouteCollection)
   qualifiedName:
-    CSharp: System.Web.Mvc.AjaxHelper`1.AjaxHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: System.Web.Mvc.AjaxHelper<TModel>.AjaxHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer, System.Web.Routing.RouteCollection)
   type: Constructor
   source:
     remote: *o0
@@ -85,9 +85,9 @@ items:
 - id: System.Web.Mvc.AjaxHelper`1.ViewBag
   href: System.Web.Mvc.AjaxHelper`1.yaml
   name:
-    CSharp: ViewBag
+    CSharp: AjaxHelper<TModel>.ViewBag
   qualifiedName:
-    CSharp: System.Web.Mvc.AjaxHelper`1.ViewBag
+    CSharp: System.Web.Mvc.AjaxHelper<TModel>.ViewBag
   type: Property
   source:
     remote: *o0
@@ -103,9 +103,9 @@ items:
 - id: System.Web.Mvc.AjaxHelper`1.ViewData
   href: System.Web.Mvc.AjaxHelper`1.yaml
   name:
-    CSharp: ViewData
+    CSharp: AjaxHelper<TModel>.ViewData
   qualifiedName:
-    CSharp: System.Web.Mvc.AjaxHelper`1.ViewData
+    CSharp: System.Web.Mvc.AjaxHelper<TModel>.ViewData
   type: Property
   source:
     remote: *o0

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelValidator.IsRequired
   href: System.Web.Mvc.ModelValidator.yaml
   name:
-    CSharp: IsRequired
+    CSharp: ModelValidator.IsRequired
   qualifiedName:
     CSharp: System.Web.Mvc.ModelValidator.IsRequired
   type: Property
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ModelValidator.GetClientValidationRules
   href: System.Web.Mvc.ModelValidator.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: ModelValidator.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidator.GetClientValidationRules
+    CSharp: System.Web.Mvc.ModelValidator.GetClientValidationRules()
   type: Method
   source:
     remote: *o0
@@ -60,9 +60,9 @@ items:
 - id: System.Web.Mvc.ModelValidator.GetModelValidator(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ModelValidator.yaml
   name:
-    CSharp: GetModelValidator
+    CSharp: ModelValidator.GetModelValidator(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidator.GetModelValidator(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.ModelValidator.GetModelValidator(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0
@@ -87,9 +87,9 @@ items:
 - id: System.Web.Mvc.ModelValidator.Validate(System.Object)
   href: System.Web.Mvc.ModelValidator.yaml
   name:
-    CSharp: Validate
+    CSharp: ModelValidator.Validate(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidator.Validate(System.Object)
+    CSharp: System.Web.Mvc.ModelValidator.Validate(object)
   type: Method
   source:
     remote: *o0

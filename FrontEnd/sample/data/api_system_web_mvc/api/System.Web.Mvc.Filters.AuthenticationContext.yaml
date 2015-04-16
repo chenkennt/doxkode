@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationContext.#ctor
   href: System.Web.Mvc.Filters.AuthenticationContext.yaml
   name:
-    CSharp: AuthenticationContext
+    CSharp: AuthenticationContext.AuthenticationContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.Filters.AuthenticationContext.AuthenticationContext
+    CSharp: System.Web.Mvc.Filters.AuthenticationContext.AuthenticationContext()
   type: Constructor
   source:
     remote: *o0
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Security.Principal.IPrincipal)
   href: System.Web.Mvc.Filters.AuthenticationContext.yaml
   name:
-    CSharp: AuthenticationContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Security.Principal.IPrincipal)
+    CSharp: AuthenticationContext.AuthenticationContext(ControllerContext, ActionDescriptor, IPrincipal)
   qualifiedName:
-    CSharp: System.Web.Mvc.Filters.AuthenticationContext.AuthenticationContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Security.Principal.IPrincipal)
+    CSharp: System.Web.Mvc.Filters.AuthenticationContext.AuthenticationContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor, System.Security.Principal.IPrincipal)
   type: Constructor
   source:
     remote: *o0
@@ -81,7 +81,7 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationContext.ActionDescriptor
   href: System.Web.Mvc.Filters.AuthenticationContext.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: AuthenticationContext.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.AuthenticationContext.ActionDescriptor
   type: Property
@@ -102,7 +102,7 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationContext.Principal
   href: System.Web.Mvc.Filters.AuthenticationContext.yaml
   name:
-    CSharp: Principal
+    CSharp: AuthenticationContext.Principal
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.AuthenticationContext.Principal
   type: Property
@@ -123,7 +123,7 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationContext.Result
   href: System.Web.Mvc.Filters.AuthenticationContext.yaml
   name:
-    CSharp: Result
+    CSharp: AuthenticationContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.AuthenticationContext.Result
   type: Property

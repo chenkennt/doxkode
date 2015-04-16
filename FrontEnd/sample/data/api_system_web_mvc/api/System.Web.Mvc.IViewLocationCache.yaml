@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IViewLocationCache.GetViewLocation(System.Web.HttpContextBase,System.String)
   href: System.Web.Mvc.IViewLocationCache.yaml
   name:
-    CSharp: GetViewLocation
+    CSharp: IViewLocationCache.GetViewLocation(HttpContextBase, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewLocationCache.GetViewLocation(System.Web.HttpContextBase,System.String)
+    CSharp: System.Web.Mvc.IViewLocationCache.GetViewLocation(System.Web.HttpContextBase, string)
   type: Method
   source:
     remote: *o0
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.IViewLocationCache.InsertViewLocation(System.Web.HttpContextBase,System.String,System.String)
   href: System.Web.Mvc.IViewLocationCache.yaml
   name:
-    CSharp: InsertViewLocation
+    CSharp: IViewLocationCache.InsertViewLocation(HttpContextBase, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewLocationCache.InsertViewLocation(System.Web.HttpContextBase,System.String,System.String)
+    CSharp: System.Web.Mvc.IViewLocationCache.InsertViewLocation(System.Web.HttpContextBase, string, string)
   type: Method
   source:
     remote: *o0

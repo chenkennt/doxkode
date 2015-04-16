@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.StringLengthAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.StringLengthAttribute)
   href: System.Web.Mvc.StringLengthAttributeAdapter.yaml
   name:
-    CSharp: StringLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.StringLengthAttribute)
+    CSharp: StringLengthAttributeAdapter.StringLengthAttributeAdapter(ModelMetadata, ControllerContext, StringLengthAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.StringLengthAttributeAdapter.StringLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.StringLengthAttribute)
+    CSharp: System.Web.Mvc.StringLengthAttributeAdapter.StringLengthAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.StringLengthAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.StringLengthAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.StringLengthAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: StringLengthAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.StringLengthAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.StringLengthAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

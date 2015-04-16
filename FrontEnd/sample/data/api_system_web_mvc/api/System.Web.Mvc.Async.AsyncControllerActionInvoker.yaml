@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(System.Web.Mvc.ControllerContext,System.String,System.AsyncCallback,System.Object)
   href: System.Web.Mvc.Async.AsyncControllerActionInvoker.yaml
   name:
-    CSharp: BeginInvokeAction
+    CSharp: AsyncControllerActionInvoker.BeginInvokeAction(ControllerContext, string, AsyncCallback, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(System.Web.Mvc.ControllerContext,System.String,System.AsyncCallback,System.Object)
+    CSharp: System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeAction(System.Web.Mvc.ControllerContext, string, System.AsyncCallback, object)
   type: Method
   source:
     remote: *o0
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(System.IAsyncResult)
   href: System.Web.Mvc.Async.AsyncControllerActionInvoker.yaml
   name:
-    CSharp: EndInvokeAction
+    CSharp: AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(System.IAsyncResult)
   type: Method

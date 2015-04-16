@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.#ctor(System.String,System.String,System.Collections.Generic.IReadOnlyCollection{System.Web.Mvc.ActionDescriptor},System.Web.Mvc.Routing.IInlineConstraintResolver,System.Boolean)
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: DirectRouteFactoryContext(System.String,System.String,System.Collections.Generic.IReadOnlyCollection{System.Web.Mvc.ActionDescriptor},System.Web.Mvc.Routing.IInlineConstraintResolver,System.Boolean)
+    CSharp: DirectRouteFactoryContext.DirectRouteFactoryContext(string, string, IReadOnlyCollection<ActionDescriptor>, IInlineConstraintResolver, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.DirectRouteFactoryContext(System.String,System.String,System.Collections.Generic.IReadOnlyCollection{System.Web.Mvc.ActionDescriptor},System.Web.Mvc.Routing.IInlineConstraintResolver,System.Boolean)
+    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.DirectRouteFactoryContext(string, string, System.Collections.Generic.IReadOnlyCollection<System.Web.Mvc.ActionDescriptor>, System.Web.Mvc.Routing.IInlineConstraintResolver, bool)
   type: Constructor
   source:
     remote: *o0
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.AreaPrefix
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: AreaPrefix
+    CSharp: DirectRouteFactoryContext.AreaPrefix
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.AreaPrefix
   type: Property
@@ -93,7 +93,7 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.ControllerPrefix
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: ControllerPrefix
+    CSharp: DirectRouteFactoryContext.ControllerPrefix
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.ControllerPrefix
   type: Property
@@ -114,7 +114,7 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.Actions
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: Actions
+    CSharp: DirectRouteFactoryContext.Actions
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.Actions
   type: Property
@@ -135,7 +135,7 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.InlineConstraintResolver
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: InlineConstraintResolver
+    CSharp: DirectRouteFactoryContext.InlineConstraintResolver
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.InlineConstraintResolver
   type: Property
@@ -156,7 +156,7 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.TargetIsAction
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: TargetIsAction
+    CSharp: DirectRouteFactoryContext.TargetIsAction
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.TargetIsAction
   type: Property
@@ -177,9 +177,9 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(System.String)
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: CreateBuilder
+    CSharp: DirectRouteFactoryContext.CreateBuilder(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(System.String)
+    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(string)
   type: Method
   source:
     remote: *o0
@@ -202,9 +202,9 @@ items:
 - id: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(System.String,System.Web.Mvc.Routing.IInlineConstraintResolver)
   href: System.Web.Mvc.Routing.DirectRouteFactoryContext.yaml
   name:
-    CSharp: CreateBuilder
+    CSharp: DirectRouteFactoryContext.CreateBuilder(string, IInlineConstraintResolver)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(System.String,System.Web.Mvc.Routing.IInlineConstraintResolver)
+    CSharp: System.Web.Mvc.Routing.DirectRouteFactoryContext.CreateBuilder(string, System.Web.Mvc.Routing.IInlineConstraintResolver)
   type: Method
   source:
     remote: *o0

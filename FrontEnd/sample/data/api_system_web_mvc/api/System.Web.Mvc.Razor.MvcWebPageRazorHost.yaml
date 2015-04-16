@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.Razor.MvcWebPageRazorHost.#ctor(System.String,System.String)
   href: System.Web.Mvc.Razor.MvcWebPageRazorHost.yaml
   name:
-    CSharp: MvcWebPageRazorHost(System.String,System.String)
+    CSharp: MvcWebPageRazorHost.MvcWebPageRazorHost(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Razor.MvcWebPageRazorHost.MvcWebPageRazorHost(System.String,System.String)
+    CSharp: System.Web.Mvc.Razor.MvcWebPageRazorHost.MvcWebPageRazorHost(string, string)
   type: Constructor
   source:
     remote: *o0
@@ -56,7 +56,7 @@ items:
 - id: System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeGenerator(System.Web.Razor.Generator.RazorCodeGenerator)
   href: System.Web.Mvc.Razor.MvcWebPageRazorHost.yaml
   name:
-    CSharp: DecorateCodeGenerator
+    CSharp: MvcWebPageRazorHost.DecorateCodeGenerator(RazorCodeGenerator)
   qualifiedName:
     CSharp: System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeGenerator(System.Web.Razor.Generator.RazorCodeGenerator)
   type: Method
@@ -78,7 +78,7 @@ items:
 - id: System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeParser(System.Web.Razor.Parser.ParserBase)
   href: System.Web.Mvc.Razor.MvcWebPageRazorHost.yaml
   name:
-    CSharp: DecorateCodeParser
+    CSharp: MvcWebPageRazorHost.DecorateCodeParser(ParserBase)
   qualifiedName:
     CSharp: System.Web.Mvc.Razor.MvcWebPageRazorHost.DecorateCodeParser(System.Web.Razor.Parser.ParserBase)
   type: Method

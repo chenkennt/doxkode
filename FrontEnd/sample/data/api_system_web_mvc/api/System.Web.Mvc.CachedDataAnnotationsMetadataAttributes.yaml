@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.#ctor(System.Attribute[])
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: CachedDataAnnotationsMetadataAttributes(System.Attribute[])
+    CSharp: CachedDataAnnotationsMetadataAttributes.CachedDataAnnotationsMetadataAttributes(Attribute[])
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.CachedDataAnnotationsMetadataAttributes(System.Attribute[])
   type: Constructor
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DataType
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: DataType
+    CSharp: CachedDataAnnotationsMetadataAttributes.DataType
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DataType
   type: Property
@@ -65,7 +65,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Display
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: Display
+    CSharp: CachedDataAnnotationsMetadataAttributes.Display
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Display
   type: Property
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayColumn
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: DisplayColumn
+    CSharp: CachedDataAnnotationsMetadataAttributes.DisplayColumn
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayColumn
   type: Property
@@ -105,7 +105,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayFormat
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: DisplayFormat
+    CSharp: CachedDataAnnotationsMetadataAttributes.DisplayFormat
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayFormat
   type: Property
@@ -125,7 +125,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayName
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: DisplayName
+    CSharp: CachedDataAnnotationsMetadataAttributes.DisplayName
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.DisplayName
   type: Property
@@ -145,7 +145,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Editable
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: Editable
+    CSharp: CachedDataAnnotationsMetadataAttributes.Editable
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Editable
   type: Property
@@ -165,7 +165,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.HiddenInput
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: HiddenInput
+    CSharp: CachedDataAnnotationsMetadataAttributes.HiddenInput
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.HiddenInput
   type: Property
@@ -185,7 +185,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.ReadOnly
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: ReadOnly
+    CSharp: CachedDataAnnotationsMetadataAttributes.ReadOnly
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.ReadOnly
   type: Property
@@ -205,7 +205,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Required
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: Required
+    CSharp: CachedDataAnnotationsMetadataAttributes.Required
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.Required
   type: Property
@@ -225,7 +225,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.ScaffoldColumn
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: ScaffoldColumn
+    CSharp: CachedDataAnnotationsMetadataAttributes.ScaffoldColumn
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.ScaffoldColumn
   type: Property
@@ -245,7 +245,7 @@ items:
 - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.UIHint
   href: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
   name:
-    CSharp: UIHint
+    CSharp: CachedDataAnnotationsMetadataAttributes.UIHint
   qualifiedName:
     CSharp: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.UIHint
   type: Property

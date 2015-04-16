@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IViewDataContainer.ViewData
   href: System.Web.Mvc.IViewDataContainer.yaml
   name:
-    CSharp: ViewData
+    CSharp: IViewDataContainer.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.IViewDataContainer.ViewData
   type: Property

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.#ctor
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: UrlHelper
+    CSharp: UrlHelper.UrlHelper()
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.UrlHelper
+    CSharp: System.Web.Mvc.UrlHelper.UrlHelper()
   type: Constructor
   source:
     remote: *o0
@@ -41,7 +41,7 @@ items:
 - id: System.Web.Mvc.UrlHelper.#ctor(System.Web.Routing.RequestContext)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: UrlHelper(System.Web.Routing.RequestContext)
+    CSharp: UrlHelper.UrlHelper(RequestContext)
   qualifiedName:
     CSharp: System.Web.Mvc.UrlHelper.UrlHelper(System.Web.Routing.RequestContext)
   type: Constructor
@@ -63,9 +63,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.#ctor(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: UrlHelper(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection)
+    CSharp: UrlHelper.UrlHelper(RequestContext, RouteCollection)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.UrlHelper(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection)
+    CSharp: System.Web.Mvc.UrlHelper.UrlHelper(System.Web.Routing.RequestContext, System.Web.Routing.RouteCollection)
   type: Constructor
   source:
     remote: *o0
@@ -90,7 +90,7 @@ items:
 - id: System.Web.Mvc.UrlHelper.RequestContext
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RequestContext
+    CSharp: UrlHelper.RequestContext
   qualifiedName:
     CSharp: System.Web.Mvc.UrlHelper.RequestContext
   type: Property
@@ -110,7 +110,7 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteCollection
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteCollection
+    CSharp: UrlHelper.RouteCollection
   qualifiedName:
     CSharp: System.Web.Mvc.UrlHelper.RouteCollection
   type: Property
@@ -130,9 +130,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action()
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action
+    CSharp: System.Web.Mvc.UrlHelper.Action()
   type: Method
   source:
     remote: *o0
@@ -147,9 +147,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string)
   type: Method
   source:
     remote: *o0
@@ -169,9 +169,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.Object)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.Object)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, object)
   type: Method
   source:
     remote: *o0
@@ -196,9 +196,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -223,9 +223,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string)
   type: Method
   source:
     remote: *o0
@@ -250,9 +250,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Object)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string, object)
   type: Method
   source:
     remote: *o0
@@ -282,9 +282,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -314,9 +314,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string, RouteValueDictionary, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string, System.Web.Routing.RouteValueDictionary, string)
   type: Method
   source:
     remote: *o0
@@ -351,9 +351,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Object,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string, object, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Object,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string, object, string)
   type: Method
   source:
     remote: *o0
@@ -388,9 +388,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary,System.String,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Action
+    CSharp: UrlHelper.Action(string, string, RouteValueDictionary, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Action(System.String,System.String,System.Web.Routing.RouteValueDictionary,System.String,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Action(string, string, System.Web.Routing.RouteValueDictionary, string, string)
   type: Method
   source:
     remote: *o0
@@ -430,9 +430,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Content(System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Content
+    CSharp: UrlHelper.Content(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Content(System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Content(string)
   type: Method
   source:
     remote: *o0
@@ -452,9 +452,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.GenerateContentUrl(System.String,System.Web.HttpContextBase)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: GenerateContentUrl
+    CSharp: UrlHelper.GenerateContentUrl(string, HttpContextBase)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.GenerateContentUrl(System.String,System.Web.HttpContextBase)
+    CSharp: System.Web.Mvc.UrlHelper.GenerateContentUrl(string, System.Web.HttpContextBase)
   type: Method
   source:
     remote: *o0
@@ -479,9 +479,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.Encode(System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: Encode
+    CSharp: UrlHelper.Encode(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.Encode(System.String)
+    CSharp: System.Web.Mvc.UrlHelper.Encode(string)
   type: Method
   source:
     remote: *o0
@@ -501,9 +501,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.GenerateUrl(System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Boolean)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: GenerateUrl
+    CSharp: UrlHelper.GenerateUrl(string, string, string, string, string, string, RouteValueDictionary, RouteCollection, RequestContext, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.GenerateUrl(System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Boolean)
+    CSharp: System.Web.Mvc.UrlHelper.GenerateUrl(string, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteCollection, System.Web.Routing.RequestContext, bool)
   type: Method
   source:
     remote: *o0
@@ -568,9 +568,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.GenerateUrl(System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Boolean)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: GenerateUrl
+    CSharp: UrlHelper.GenerateUrl(string, string, string, RouteValueDictionary, RouteCollection, RequestContext, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.GenerateUrl(System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Boolean)
+    CSharp: System.Web.Mvc.UrlHelper.GenerateUrl(string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteCollection, System.Web.Routing.RequestContext, bool)
   type: Method
   source:
     remote: *o0
@@ -620,9 +620,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.IsLocalUrl(System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: IsLocalUrl
+    CSharp: UrlHelper.IsLocalUrl(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.IsLocalUrl(System.String)
+    CSharp: System.Web.Mvc.UrlHelper.IsLocalUrl(string)
   type: Method
   source:
     remote: *o0
@@ -642,9 +642,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.Object)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.Object)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(object)
   type: Method
   source:
     remote: *o0
@@ -664,7 +664,7 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(RouteValueDictionary)
   qualifiedName:
     CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.Web.Routing.RouteValueDictionary)
   type: Method
@@ -686,9 +686,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.String)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(string)
   type: Method
   source:
     remote: *o0
@@ -708,9 +708,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Object)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Object)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(string, object)
   type: Method
   source:
     remote: *o0
@@ -735,9 +735,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -762,9 +762,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Object,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(string, object, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Object,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(string, object, string)
   type: Method
   source:
     remote: *o0
@@ -794,9 +794,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Web.Routing.RouteValueDictionary,System.String,System.String)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: RouteUrl
+    CSharp: UrlHelper.RouteUrl(string, RouteValueDictionary, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(System.String,System.Web.Routing.RouteValueDictionary,System.String,System.String)
+    CSharp: System.Web.Mvc.UrlHelper.RouteUrl(string, System.Web.Routing.RouteValueDictionary, string, string)
   type: Method
   source:
     remote: *o0
@@ -831,9 +831,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.HttpRouteUrl(System.String,System.Object)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: HttpRouteUrl
+    CSharp: UrlHelper.HttpRouteUrl(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.HttpRouteUrl(System.String,System.Object)
+    CSharp: System.Web.Mvc.UrlHelper.HttpRouteUrl(string, object)
   type: Method
   source:
     remote: *o0
@@ -858,9 +858,9 @@ items:
 - id: System.Web.Mvc.UrlHelper.HttpRouteUrl(System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.UrlHelper.yaml
   name:
-    CSharp: HttpRouteUrl
+    CSharp: UrlHelper.HttpRouteUrl(string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlHelper.HttpRouteUrl(System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.UrlHelper.HttpRouteUrl(string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0

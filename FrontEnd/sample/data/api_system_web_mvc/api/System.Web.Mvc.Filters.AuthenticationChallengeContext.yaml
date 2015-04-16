@@ -30,9 +30,9 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationChallengeContext.#ctor
   href: System.Web.Mvc.Filters.AuthenticationChallengeContext.yaml
   name:
-    CSharp: AuthenticationChallengeContext
+    CSharp: AuthenticationChallengeContext.AuthenticationChallengeContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.AuthenticationChallengeContext
+    CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.AuthenticationChallengeContext()
   type: Constructor
   source:
     remote: *o0
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationChallengeContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Web.Mvc.ActionResult)
   href: System.Web.Mvc.Filters.AuthenticationChallengeContext.yaml
   name:
-    CSharp: AuthenticationChallengeContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Web.Mvc.ActionResult)
+    CSharp: AuthenticationChallengeContext.AuthenticationChallengeContext(ControllerContext, ActionDescriptor, ActionResult)
   qualifiedName:
-    CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.AuthenticationChallengeContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Web.Mvc.ActionResult)
+    CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.AuthenticationChallengeContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor, System.Web.Mvc.ActionResult)
   type: Constructor
   source:
     remote: *o0
@@ -84,7 +84,7 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationChallengeContext.ActionDescriptor
   href: System.Web.Mvc.Filters.AuthenticationChallengeContext.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: AuthenticationChallengeContext.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.ActionDescriptor
   type: Property
@@ -105,7 +105,7 @@ items:
 - id: System.Web.Mvc.Filters.AuthenticationChallengeContext.Result
   href: System.Web.Mvc.Filters.AuthenticationChallengeContext.yaml
   name:
-    CSharp: Result
+    CSharp: AuthenticationChallengeContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.AuthenticationChallengeContext.Result
   type: Property

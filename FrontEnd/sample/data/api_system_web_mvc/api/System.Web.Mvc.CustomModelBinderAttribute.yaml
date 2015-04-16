@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.CustomModelBinderAttribute.GetBinder
   href: System.Web.Mvc.CustomModelBinderAttribute.yaml
   name:
-    CSharp: GetBinder
+    CSharp: CustomModelBinderAttribute.GetBinder()
   qualifiedName:
-    CSharp: System.Web.Mvc.CustomModelBinderAttribute.GetBinder
+    CSharp: System.Web.Mvc.CustomModelBinderAttribute.GetBinder()
   type: Method
   source:
     remote: *o0

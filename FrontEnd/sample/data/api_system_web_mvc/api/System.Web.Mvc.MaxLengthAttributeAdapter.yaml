@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.MaxLengthAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MaxLengthAttribute)
   href: System.Web.Mvc.MaxLengthAttributeAdapter.yaml
   name:
-    CSharp: MaxLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MaxLengthAttribute)
+    CSharp: MaxLengthAttributeAdapter.MaxLengthAttributeAdapter(ModelMetadata, ControllerContext, MaxLengthAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.MaxLengthAttributeAdapter.MaxLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MaxLengthAttribute)
+    CSharp: System.Web.Mvc.MaxLengthAttributeAdapter.MaxLengthAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.MaxLengthAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.MaxLengthAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.MaxLengthAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: MaxLengthAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.MaxLengthAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.MaxLengthAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

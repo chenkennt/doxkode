@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.ClientDataTypeModelValidatorProvider.ResourceClassKey
   href: System.Web.Mvc.ClientDataTypeModelValidatorProvider.yaml
   name:
-    CSharp: ResourceClassKey
+    CSharp: ClientDataTypeModelValidatorProvider.ResourceClassKey
   qualifiedName:
     CSharp: System.Web.Mvc.ClientDataTypeModelValidatorProvider.ResourceClassKey
   type: Property
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.ClientDataTypeModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ClientDataTypeModelValidatorProvider.yaml
   name:
-    CSharp: GetValidators
+    CSharp: ClientDataTypeModelValidatorProvider.GetValidators(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ClientDataTypeModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.ClientDataTypeModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

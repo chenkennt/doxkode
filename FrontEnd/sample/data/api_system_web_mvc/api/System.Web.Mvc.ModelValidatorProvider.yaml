@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ModelValidatorProvider.yaml
   name:
-    CSharp: GetValidators
+    CSharp: ModelValidatorProvider.GetValidators(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.ModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

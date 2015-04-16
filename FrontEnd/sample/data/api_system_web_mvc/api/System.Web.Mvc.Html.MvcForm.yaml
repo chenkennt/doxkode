@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.Html.MvcForm.#ctor(System.Web.HttpResponseBase)
   href: System.Web.Mvc.Html.MvcForm.yaml
   name:
-    CSharp: MvcForm(System.Web.HttpResponseBase)
+    CSharp: MvcForm.MvcForm(HttpResponseBase)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.MvcForm.MvcForm(System.Web.HttpResponseBase)
   type: Constructor
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.Html.MvcForm.#ctor(System.Web.Mvc.ViewContext)
   href: System.Web.Mvc.Html.MvcForm.yaml
   name:
-    CSharp: MvcForm(System.Web.Mvc.ViewContext)
+    CSharp: MvcForm.MvcForm(ViewContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.MvcForm.MvcForm(System.Web.Mvc.ViewContext)
   type: Constructor
@@ -67,9 +67,9 @@ items:
 - id: System.Web.Mvc.Html.MvcForm.Dispose
   href: System.Web.Mvc.Html.MvcForm.yaml
   name:
-    CSharp: Dispose
+    CSharp: MvcForm.Dispose()
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.MvcForm.Dispose
+    CSharp: System.Web.Mvc.Html.MvcForm.Dispose()
   type: Method
   source:
     remote: *o0
@@ -84,9 +84,9 @@ items:
 - id: System.Web.Mvc.Html.MvcForm.EndForm
   href: System.Web.Mvc.Html.MvcForm.yaml
   name:
-    CSharp: EndForm
+    CSharp: MvcForm.EndForm()
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.MvcForm.EndForm
+    CSharp: System.Web.Mvc.Html.MvcForm.EndForm()
   type: Method
   source:
     remote: *o0

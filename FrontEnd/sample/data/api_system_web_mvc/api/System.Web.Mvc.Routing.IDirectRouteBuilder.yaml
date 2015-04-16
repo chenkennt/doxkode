@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Name
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Name
+    CSharp: IDirectRouteBuilder.Name
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Name
   type: Property
@@ -41,7 +41,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Template
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Template
+    CSharp: IDirectRouteBuilder.Template
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Template
   type: Property
@@ -62,7 +62,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Defaults
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Defaults
+    CSharp: IDirectRouteBuilder.Defaults
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Defaults
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Constraints
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Constraints
+    CSharp: IDirectRouteBuilder.Constraints
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Constraints
   type: Property
@@ -104,7 +104,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.DataTokens
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: DataTokens
+    CSharp: IDirectRouteBuilder.DataTokens
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.DataTokens
   type: Property
@@ -125,7 +125,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Order
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Order
+    CSharp: IDirectRouteBuilder.Order
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Order
   type: Property
@@ -146,7 +146,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Precedence
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Precedence
+    CSharp: IDirectRouteBuilder.Precedence
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Precedence
   type: Property
@@ -167,7 +167,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Actions
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Actions
+    CSharp: IDirectRouteBuilder.Actions
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Actions
   type: Property
@@ -188,7 +188,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.TargetIsAction
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: TargetIsAction
+    CSharp: IDirectRouteBuilder.TargetIsAction
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.TargetIsAction
   type: Property
@@ -209,9 +209,9 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteBuilder.Build
   href: System.Web.Mvc.Routing.IDirectRouteBuilder.yaml
   name:
-    CSharp: Build
+    CSharp: IDirectRouteBuilder.Build()
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Build
+    CSharp: System.Web.Mvc.Routing.IDirectRouteBuilder.Build()
   type: Method
   source:
     remote: *o0

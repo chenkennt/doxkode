@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelMetadata.#ctor(System.Web.Mvc.DataAnnotationsModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String,System.ComponentModel.DataAnnotations.DisplayColumnAttribute)
   href: System.Web.Mvc.DataAnnotationsModelMetadata.yaml
   name:
-    CSharp: DataAnnotationsModelMetadata(System.Web.Mvc.DataAnnotationsModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String,System.ComponentModel.DataAnnotations.DisplayColumnAttribute)
+    CSharp: DataAnnotationsModelMetadata.DataAnnotationsModelMetadata(DataAnnotationsModelMetadataProvider, Type, Func<object>, Type, string, DisplayColumnAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelMetadata.DataAnnotationsModelMetadata(System.Web.Mvc.DataAnnotationsModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String,System.ComponentModel.DataAnnotations.DisplayColumnAttribute)
+    CSharp: System.Web.Mvc.DataAnnotationsModelMetadata.DataAnnotationsModelMetadata(System.Web.Mvc.DataAnnotationsModelMetadataProvider, System.Type, System.Func<object>, System.Type, string, System.ComponentModel.DataAnnotations.DisplayColumnAttribute)
   type: Constructor
   source:
     remote: *o0

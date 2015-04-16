@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.ControllerName
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: ControllerName
+    CSharp: ControllerDescriptor.ControllerName
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerDescriptor.ControllerName
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.ControllerType
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: ControllerType
+    CSharp: ControllerDescriptor.ControllerType
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerDescriptor.ControllerType
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.UniqueId
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: UniqueId
+    CSharp: ControllerDescriptor.UniqueId
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerDescriptor.UniqueId
   type: Property
@@ -83,9 +83,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: FindAction
+    CSharp: ControllerDescriptor.FindAction(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.ControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext, string)
   type: Method
   source:
     remote: *o0
@@ -110,9 +110,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.GetCanonicalActions
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: GetCanonicalActions
+    CSharp: ControllerDescriptor.GetCanonicalActions()
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.GetCanonicalActions
+    CSharp: System.Web.Mvc.ControllerDescriptor.GetCanonicalActions()
   type: Method
   source:
     remote: *o0
@@ -126,9 +126,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ControllerDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -147,9 +147,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ControllerDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ControllerDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -173,9 +173,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.GetFilterAttributes(System.Boolean)
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: GetFilterAttributes
+    CSharp: ControllerDescriptor.GetFilterAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.GetFilterAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ControllerDescriptor.GetFilterAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -195,9 +195,9 @@ items:
 - id: System.Web.Mvc.ControllerDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.ControllerDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ControllerDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ControllerDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

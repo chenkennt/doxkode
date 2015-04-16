@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.ActionFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)
   href: System.Web.Mvc.ActionFilterAttribute.yaml
   name:
-    CSharp: OnActionExecuting
+    CSharp: ActionFilterAttribute.OnActionExecuting(ActionExecutingContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ActionFilterAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)
   type: Method
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.ActionFilterAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)
   href: System.Web.Mvc.ActionFilterAttribute.yaml
   name:
-    CSharp: OnActionExecuted
+    CSharp: ActionFilterAttribute.OnActionExecuted(ActionExecutedContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ActionFilterAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)
   type: Method
@@ -73,7 +73,7 @@ items:
 - id: System.Web.Mvc.ActionFilterAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   href: System.Web.Mvc.ActionFilterAttribute.yaml
   name:
-    CSharp: OnResultExecuting
+    CSharp: ActionFilterAttribute.OnResultExecuting(ResultExecutingContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ActionFilterAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   type: Method
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.ActionFilterAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   href: System.Web.Mvc.ActionFilterAttribute.yaml
   name:
-    CSharp: OnResultExecuted
+    CSharp: ActionFilterAttribute.OnResultExecuted(ResultExecutedContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ActionFilterAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   type: Method

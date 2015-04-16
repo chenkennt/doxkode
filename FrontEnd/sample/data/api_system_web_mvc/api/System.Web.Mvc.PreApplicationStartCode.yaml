@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.PreApplicationStartCode.Start
   href: System.Web.Mvc.PreApplicationStartCode.yaml
   name:
-    CSharp: Start
+    CSharp: PreApplicationStartCode.Start()
   qualifiedName:
-    CSharp: System.Web.Mvc.PreApplicationStartCode.Start
+    CSharp: System.Web.Mvc.PreApplicationStartCode.Start()
   type: Method
   source:
     remote: *o0

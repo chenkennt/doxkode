@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ExceptionContext.#ctor
   href: System.Web.Mvc.ExceptionContext.yaml
   name:
-    CSharp: ExceptionContext
+    CSharp: ExceptionContext.ExceptionContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.ExceptionContext.ExceptionContext
+    CSharp: System.Web.Mvc.ExceptionContext.ExceptionContext()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ExceptionContext.#ctor(System.Web.Mvc.ControllerContext,System.Exception)
   href: System.Web.Mvc.ExceptionContext.yaml
   name:
-    CSharp: ExceptionContext(System.Web.Mvc.ControllerContext,System.Exception)
+    CSharp: ExceptionContext.ExceptionContext(ControllerContext, Exception)
   qualifiedName:
-    CSharp: System.Web.Mvc.ExceptionContext.ExceptionContext(System.Web.Mvc.ControllerContext,System.Exception)
+    CSharp: System.Web.Mvc.ExceptionContext.ExceptionContext(System.Web.Mvc.ControllerContext, System.Exception)
   type: Constructor
   source:
     remote: *o0
@@ -70,7 +70,7 @@ items:
 - id: System.Web.Mvc.ExceptionContext.Exception
   href: System.Web.Mvc.ExceptionContext.yaml
   name:
-    CSharp: Exception
+    CSharp: ExceptionContext.Exception
   qualifiedName:
     CSharp: System.Web.Mvc.ExceptionContext.Exception
   type: Property
@@ -90,7 +90,7 @@ items:
 - id: System.Web.Mvc.ExceptionContext.ExceptionHandled
   href: System.Web.Mvc.ExceptionContext.yaml
   name:
-    CSharp: ExceptionHandled
+    CSharp: ExceptionContext.ExceptionHandled
   qualifiedName:
     CSharp: System.Web.Mvc.ExceptionContext.ExceptionHandled
   type: Property
@@ -110,7 +110,7 @@ items:
 - id: System.Web.Mvc.ExceptionContext.Result
   href: System.Web.Mvc.ExceptionContext.yaml
   name:
-    CSharp: Result
+    CSharp: ExceptionContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.ExceptionContext.Result
   type: Property

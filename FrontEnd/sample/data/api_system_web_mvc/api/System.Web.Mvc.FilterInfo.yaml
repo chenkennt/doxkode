@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.FilterInfo.#ctor
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: FilterInfo
+    CSharp: FilterInfo.FilterInfo()
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterInfo.FilterInfo
+    CSharp: System.Web.Mvc.FilterInfo.FilterInfo()
   type: Constructor
   source:
     remote: *o0
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.FilterInfo.#ctor(System.Collections.Generic.IEnumerable{System.Web.Mvc.Filter})
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: FilterInfo(System.Collections.Generic.IEnumerable{System.Web.Mvc.Filter})
+    CSharp: FilterInfo.FilterInfo(IEnumerable<Filter>)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterInfo.FilterInfo(System.Collections.Generic.IEnumerable{System.Web.Mvc.Filter})
+    CSharp: System.Web.Mvc.FilterInfo.FilterInfo(System.Collections.Generic.IEnumerable<System.Web.Mvc.Filter>)
   type: Constructor
   source:
     remote: *o0
@@ -62,7 +62,7 @@ items:
 - id: System.Web.Mvc.FilterInfo.ActionFilters
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: ActionFilters
+    CSharp: FilterInfo.ActionFilters
   qualifiedName:
     CSharp: System.Web.Mvc.FilterInfo.ActionFilters
   type: Property
@@ -82,7 +82,7 @@ items:
 - id: System.Web.Mvc.FilterInfo.AuthenticationFilters
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: AuthenticationFilters
+    CSharp: FilterInfo.AuthenticationFilters
   qualifiedName:
     CSharp: System.Web.Mvc.FilterInfo.AuthenticationFilters
   type: Property
@@ -102,7 +102,7 @@ items:
 - id: System.Web.Mvc.FilterInfo.AuthorizationFilters
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: AuthorizationFilters
+    CSharp: FilterInfo.AuthorizationFilters
   qualifiedName:
     CSharp: System.Web.Mvc.FilterInfo.AuthorizationFilters
   type: Property
@@ -122,7 +122,7 @@ items:
 - id: System.Web.Mvc.FilterInfo.ExceptionFilters
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: ExceptionFilters
+    CSharp: FilterInfo.ExceptionFilters
   qualifiedName:
     CSharp: System.Web.Mvc.FilterInfo.ExceptionFilters
   type: Property
@@ -142,7 +142,7 @@ items:
 - id: System.Web.Mvc.FilterInfo.ResultFilters
   href: System.Web.Mvc.FilterInfo.yaml
   name:
-    CSharp: ResultFilters
+    CSharp: FilterInfo.ResultFilters
   qualifiedName:
     CSharp: System.Web.Mvc.FilterInfo.ResultFilters
   type: Property

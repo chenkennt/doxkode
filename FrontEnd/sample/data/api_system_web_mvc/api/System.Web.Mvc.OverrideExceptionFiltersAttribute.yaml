@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.OverrideExceptionFiltersAttribute.FiltersToOverride
   href: System.Web.Mvc.OverrideExceptionFiltersAttribute.yaml
   name:
-    CSharp: FiltersToOverride
+    CSharp: OverrideExceptionFiltersAttribute.FiltersToOverride
   qualifiedName:
     CSharp: System.Web.Mvc.OverrideExceptionFiltersAttribute.FiltersToOverride
   type: Property

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.AjaxRequestExtensions.IsAjaxRequest(System.Web.HttpRequestBase)
   href: System.Web.Mvc.AjaxRequestExtensions.yaml
   name:
-    CSharp: IsAjaxRequest
+    CSharp: AjaxRequestExtensions.IsAjaxRequest(HttpRequestBase)
   qualifiedName:
     CSharp: System.Web.Mvc.AjaxRequestExtensions.IsAjaxRequest(System.Web.HttpRequestBase)
   type: Method

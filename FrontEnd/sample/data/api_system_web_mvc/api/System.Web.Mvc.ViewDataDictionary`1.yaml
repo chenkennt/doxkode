@@ -1,9 +1,9 @@
 id: System.Web.Mvc.ViewDataDictionary`1
 href: System.Web.Mvc.ViewDataDictionary`1.yaml
 name:
-  CSharp: ViewDataDictionary`1
+  CSharp: ViewDataDictionary<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.ViewDataDictionary`1
+  CSharp: System.Web.Mvc.ViewDataDictionary<TModel>
 type: Class
 source:
   remote: &o0
@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary`1.#ctor
   href: System.Web.Mvc.ViewDataDictionary`1.yaml
   name:
-    CSharp: ViewDataDictionary`1
+    CSharp: ViewDataDictionary<TModel>.ViewDataDictionary()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary`1.ViewDataDictionary`1
+    CSharp: System.Web.Mvc.ViewDataDictionary<TModel>.ViewDataDictionary()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary`1.#ctor(`0)
   href: System.Web.Mvc.ViewDataDictionary`1.yaml
   name:
-    CSharp: ViewDataDictionary`1(`0)
+    CSharp: ViewDataDictionary<TModel>.ViewDataDictionary(TModel)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary`1.ViewDataDictionary`1(`0)
+    CSharp: System.Web.Mvc.ViewDataDictionary<TModel>.ViewDataDictionary(TModel)
   type: Constructor
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary`1.#ctor(System.Web.Mvc.ViewDataDictionary)
   href: System.Web.Mvc.ViewDataDictionary`1.yaml
   name:
-    CSharp: ViewDataDictionary`1(System.Web.Mvc.ViewDataDictionary)
+    CSharp: ViewDataDictionary<TModel>.ViewDataDictionary(ViewDataDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary`1.ViewDataDictionary`1(System.Web.Mvc.ViewDataDictionary)
+    CSharp: System.Web.Mvc.ViewDataDictionary<TModel>.ViewDataDictionary(System.Web.Mvc.ViewDataDictionary)
   type: Constructor
   source:
     remote: *o0
@@ -87,9 +87,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary`1.Model
   href: System.Web.Mvc.ViewDataDictionary`1.yaml
   name:
-    CSharp: Model
+    CSharp: ViewDataDictionary<TModel>.Model
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary`1.Model
+    CSharp: System.Web.Mvc.ViewDataDictionary<TModel>.Model
   type: Property
   source:
     remote: *o0
@@ -107,9 +107,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary`1.ModelMetadata
   href: System.Web.Mvc.ViewDataDictionary`1.yaml
   name:
-    CSharp: ModelMetadata
+    CSharp: ViewDataDictionary<TModel>.ModelMetadata
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary`1.ModelMetadata
+    CSharp: System.Web.Mvc.ViewDataDictionary<TModel>.ModelMetadata
   type: Property
   source:
     remote: *o0

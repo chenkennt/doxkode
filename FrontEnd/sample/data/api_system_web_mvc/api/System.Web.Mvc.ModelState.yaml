@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelState.Value
   href: System.Web.Mvc.ModelState.yaml
   name:
-    CSharp: Value
+    CSharp: ModelState.Value
   qualifiedName:
     CSharp: System.Web.Mvc.ModelState.Value
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ModelState.Errors
   href: System.Web.Mvc.ModelState.yaml
   name:
-    CSharp: Errors
+    CSharp: ModelState.Errors
   qualifiedName:
     CSharp: System.Web.Mvc.ModelState.Errors
   type: Property

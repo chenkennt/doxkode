@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IEnumerableValueProvider.GetKeysFromPrefix(System.String)
   href: System.Web.Mvc.IEnumerableValueProvider.yaml
   name:
-    CSharp: GetKeysFromPrefix
+    CSharp: IEnumerableValueProvider.GetKeysFromPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IEnumerableValueProvider.GetKeysFromPrefix(System.String)
+    CSharp: System.Web.Mvc.IEnumerableValueProvider.GetKeysFromPrefix(string)
   type: Method
   source:
     remote: *o0

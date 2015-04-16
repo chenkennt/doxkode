@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: GetVirtualPathForArea
+    CSharp: RouteCollectionExtensions.GetVirtualPathForArea(RouteCollection, RequestContext, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection, System.Web.Routing.RequestContext, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -55,9 +55,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: GetVirtualPathForArea
+    CSharp: RouteCollectionExtensions.GetVirtualPathForArea(RouteCollection, RequestContext, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection,System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.GetVirtualPathForArea(System.Web.Routing.RouteCollection, System.Web.Routing.RequestContext, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -92,9 +92,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: IgnoreRoute
+    CSharp: RouteCollectionExtensions.IgnoreRoute(RouteCollection, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection, string)
   type: Method
   source:
     remote: *o0
@@ -119,9 +119,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String,System.Object)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: IgnoreRoute
+    CSharp: RouteCollectionExtensions.IgnoreRoute(RouteCollection, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection,System.String,System.Object)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection, string, object)
   type: Method
   source:
     remote: *o0
@@ -151,9 +151,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string)
   type: Method
   source:
     remote: *o0
@@ -183,9 +183,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -220,9 +220,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -262,9 +262,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.String[])
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.String[])
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, string[])
   type: Method
   source:
     remote: *o0
@@ -299,9 +299,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.String[])
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string, object, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.String[])
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, object, string[])
   type: Method
   source:
     remote: *o0
@@ -341,9 +341,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object,System.String[])
   href: System.Web.Mvc.RouteCollectionExtensions.yaml
   name:
-    CSharp: MapRoute
+    CSharp: RouteCollectionExtensions.MapRoute(RouteCollection, string, string, object, object, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object,System.String[])
+    CSharp: System.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, object, object, string[])
   type: Method
   source:
     remote: *o0

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean)
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string, bool)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string, bool, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string, bool, object)
   type: Method
   source:
     remote: *o0
@@ -119,9 +119,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -151,9 +151,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -183,9 +183,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputExtensions.CheckBox(HtmlHelper, string, bool, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBox(System.Web.Mvc.HtmlHelper, string, bool, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -220,9 +220,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBoxFor
+    CSharp: InputExtensions.CheckBoxFor<TModel>(HtmlHelper<TModel>, Expression<Func<TModel, bool>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor<TModel>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, bool>>)
   type: Method
   source:
     remote: *o0
@@ -247,9 +247,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBoxFor
+    CSharp: InputExtensions.CheckBoxFor<TModel>(HtmlHelper<TModel>, Expression<Func<TModel, bool>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor<TModel>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, bool>>, object)
   type: Method
   source:
     remote: *o0
@@ -279,9 +279,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: CheckBoxFor
+    CSharp: InputExtensions.CheckBoxFor<TModel>(HtmlHelper<TModel>, Expression<Func<TModel, bool>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.CheckBoxFor<TModel>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, bool>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -311,9 +311,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Hidden
+    CSharp: InputExtensions.Hidden(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -338,9 +338,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Hidden
+    CSharp: InputExtensions.Hidden(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -370,9 +370,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Hidden
+    CSharp: InputExtensions.Hidden(HtmlHelper, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -407,9 +407,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Hidden
+    CSharp: InputExtensions.Hidden(HtmlHelper, string, object, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string, object, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -444,9 +444,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: HiddenFor
+    CSharp: InputExtensions.HiddenFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -471,9 +471,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: HiddenFor
+    CSharp: InputExtensions.HiddenFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object)
   type: Method
   source:
     remote: *o0
@@ -503,9 +503,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: HiddenFor
+    CSharp: InputExtensions.HiddenFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.HiddenFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -535,9 +535,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Password
+    CSharp: InputExtensions.Password(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -562,9 +562,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Password
+    CSharp: InputExtensions.Password(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -594,9 +594,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Password
+    CSharp: InputExtensions.Password(HtmlHelper, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -631,9 +631,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: Password
+    CSharp: InputExtensions.Password(HtmlHelper, string, object, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.Password(System.Web.Mvc.HtmlHelper, string, object, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -668,9 +668,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: PasswordFor
+    CSharp: InputExtensions.PasswordFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -695,9 +695,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: PasswordFor
+    CSharp: InputExtensions.PasswordFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object)
   type: Method
   source:
     remote: *o0
@@ -727,9 +727,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: PasswordFor
+    CSharp: InputExtensions.PasswordFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.PasswordFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -759,9 +759,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -791,9 +791,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -828,9 +828,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -865,9 +865,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object, bool)
   type: Method
   source:
     remote: *o0
@@ -902,9 +902,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object, bool, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object, bool, object)
   type: Method
   source:
     remote: *o0
@@ -944,9 +944,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButton
+    CSharp: InputExtensions.RadioButton(HtmlHelper, string, object, bool, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButton(System.Web.Mvc.HtmlHelper, string, object, bool, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -986,9 +986,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButtonFor
+    CSharp: InputExtensions.RadioButtonFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object)
   type: Method
   source:
     remote: *o0
@@ -1018,9 +1018,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButtonFor
+    CSharp: InputExtensions.RadioButtonFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object, object)
   type: Method
   source:
     remote: *o0
@@ -1055,9 +1055,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: RadioButtonFor
+    CSharp: InputExtensions.RadioButtonFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.RadioButtonFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1092,9 +1092,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -1119,9 +1119,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -1151,9 +1151,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object, string)
   type: Method
   source:
     remote: *o0
@@ -1188,9 +1188,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -1225,9 +1225,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object, string, object)
   type: Method
   source:
     remote: *o0
@@ -1267,9 +1267,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1304,9 +1304,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBox
+    CSharp: InputExtensions.TextBox(HtmlHelper, string, object, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBox(System.Web.Mvc.HtmlHelper, string, object, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1346,9 +1346,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -1373,9 +1373,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, string)
   type: Method
   source:
     remote: *o0
@@ -1405,9 +1405,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, object)
   type: Method
   source:
     remote: *o0
@@ -1437,9 +1437,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, string, object)
   type: Method
   source:
     remote: *o0
@@ -1474,9 +1474,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1506,9 +1506,9 @@ items:
 - id: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.InputExtensions.yaml
   name:
-    CSharp: TextBoxFor
+    CSharp: InputExtensions.TextBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.InputExtensions.TextBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

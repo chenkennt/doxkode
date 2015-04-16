@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.HttpRequestExtensions.GetHttpMethodOverride(System.Web.HttpRequestBase)
   href: System.Web.Mvc.HttpRequestExtensions.yaml
   name:
-    CSharp: GetHttpMethodOverride
+    CSharp: HttpRequestExtensions.GetHttpMethodOverride(HttpRequestBase)
   qualifiedName:
     CSharp: System.Web.Mvc.HttpRequestExtensions.GetHttpMethodOverride(System.Web.HttpRequestBase)
   type: Method

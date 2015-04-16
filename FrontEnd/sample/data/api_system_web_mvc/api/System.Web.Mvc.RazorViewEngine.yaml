@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.RazorViewEngine.#ctor
   href: System.Web.Mvc.RazorViewEngine.yaml
   name:
-    CSharp: RazorViewEngine
+    CSharp: RazorViewEngine.RazorViewEngine()
   qualifiedName:
-    CSharp: System.Web.Mvc.RazorViewEngine.RazorViewEngine
+    CSharp: System.Web.Mvc.RazorViewEngine.RazorViewEngine()
   type: Constructor
   source:
     remote: *o0
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.RazorViewEngine.#ctor(System.Web.Mvc.IViewPageActivator)
   href: System.Web.Mvc.RazorViewEngine.yaml
   name:
-    CSharp: RazorViewEngine(System.Web.Mvc.IViewPageActivator)
+    CSharp: RazorViewEngine.RazorViewEngine(IViewPageActivator)
   qualifiedName:
     CSharp: System.Web.Mvc.RazorViewEngine.RazorViewEngine(System.Web.Mvc.IViewPageActivator)
   type: Constructor

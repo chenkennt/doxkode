@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.FormMethod.Get
   href: System.Web.Mvc.FormMethod.yaml
   name:
-    CSharp: Get
+    CSharp: FormMethod.Get
   qualifiedName:
     CSharp: System.Web.Mvc.FormMethod.Get
   type: Field
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.FormMethod.Post
   href: System.Web.Mvc.FormMethod.yaml
   name:
-    CSharp: Post
+    CSharp: FormMethod.Post
   qualifiedName:
     CSharp: System.Web.Mvc.FormMethod.Post
   type: Field

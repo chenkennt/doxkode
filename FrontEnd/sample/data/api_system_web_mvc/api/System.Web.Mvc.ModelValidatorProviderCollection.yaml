@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ModelValidatorProviderCollection.#ctor
   href: System.Web.Mvc.ModelValidatorProviderCollection.yaml
   name:
-    CSharp: ModelValidatorProviderCollection
+    CSharp: ModelValidatorProviderCollection.ModelValidatorProviderCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.ModelValidatorProviderCollection
+    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.ModelValidatorProviderCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ModelValidatorProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.ModelValidatorProvider})
   href: System.Web.Mvc.ModelValidatorProviderCollection.yaml
   name:
-    CSharp: ModelValidatorProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.ModelValidatorProvider})
+    CSharp: ModelValidatorProviderCollection.ModelValidatorProviderCollection(IList<ModelValidatorProvider>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.ModelValidatorProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.ModelValidatorProvider})
+    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.ModelValidatorProviderCollection(System.Collections.Generic.IList<System.Web.Mvc.ModelValidatorProvider>)
   type: Constructor
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.ModelValidatorProviderCollection.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ModelValidatorProviderCollection.yaml
   name:
-    CSharp: GetValidators
+    CSharp: ModelValidatorProviderCollection.GetValidators(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.ModelValidatorProviderCollection.GetValidators(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.FileContentResult.#ctor(System.Byte[],System.String)
   href: System.Web.Mvc.FileContentResult.yaml
   name:
-    CSharp: FileContentResult(System.Byte[],System.String)
+    CSharp: FileContentResult.FileContentResult(byte[], string)
   qualifiedName:
-    CSharp: System.Web.Mvc.FileContentResult.FileContentResult(System.Byte[],System.String)
+    CSharp: System.Web.Mvc.FileContentResult.FileContentResult(byte[], string)
   type: Constructor
   source:
     remote: *o0
@@ -56,7 +56,7 @@ items:
 - id: System.Web.Mvc.FileContentResult.FileContents
   href: System.Web.Mvc.FileContentResult.yaml
   name:
-    CSharp: FileContents
+    CSharp: FileContentResult.FileContents
   qualifiedName:
     CSharp: System.Web.Mvc.FileContentResult.FileContents
   type: Property

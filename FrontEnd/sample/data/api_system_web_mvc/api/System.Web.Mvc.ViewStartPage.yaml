@@ -32,7 +32,7 @@ items:
 - id: System.Web.Mvc.ViewStartPage.Html
   href: System.Web.Mvc.ViewStartPage.yaml
   name:
-    CSharp: Html
+    CSharp: ViewStartPage.Html
   qualifiedName:
     CSharp: System.Web.Mvc.ViewStartPage.Html
   type: Property
@@ -52,7 +52,7 @@ items:
 - id: System.Web.Mvc.ViewStartPage.Url
   href: System.Web.Mvc.ViewStartPage.yaml
   name:
-    CSharp: Url
+    CSharp: ViewStartPage.Url
   qualifiedName:
     CSharp: System.Web.Mvc.ViewStartPage.Url
   type: Property
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.ViewStartPage.ViewContext
   href: System.Web.Mvc.ViewStartPage.yaml
   name:
-    CSharp: ViewContext
+    CSharp: ViewStartPage.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.ViewStartPage.ViewContext
   type: Property

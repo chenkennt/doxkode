@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: Value
+    CSharp: ValueExtensions.Value(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: Value
+    CSharp: ValueExtensions.Value(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.ValueExtensions.Value(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.ValueFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: ValueFor
+    CSharp: ValueExtensions.ValueFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -109,9 +109,9 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.ValueFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: ValueFor
+    CSharp: ValueExtensions.ValueFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
+    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, string)
   type: Method
   source:
     remote: *o0
@@ -141,7 +141,7 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.ValueForModel(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: ValueForModel
+    CSharp: ValueExtensions.ValueForModel(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.ValueExtensions.ValueForModel(System.Web.Mvc.HtmlHelper)
   type: Method
@@ -163,9 +163,9 @@ items:
 - id: System.Web.Mvc.Html.ValueExtensions.ValueForModel(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.ValueExtensions.yaml
   name:
-    CSharp: ValueForModel
+    CSharp: ValueExtensions.ValueForModel(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueForModel(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.ValueExtensions.ValueForModel(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0

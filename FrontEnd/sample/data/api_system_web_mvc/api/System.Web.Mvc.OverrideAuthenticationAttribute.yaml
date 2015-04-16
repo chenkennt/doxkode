@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.OverrideAuthenticationAttribute.FiltersToOverride
   href: System.Web.Mvc.OverrideAuthenticationAttribute.yaml
   name:
-    CSharp: FiltersToOverride
+    CSharp: OverrideAuthenticationAttribute.FiltersToOverride
   qualifiedName:
     CSharp: System.Web.Mvc.OverrideAuthenticationAttribute.FiltersToOverride
   type: Property

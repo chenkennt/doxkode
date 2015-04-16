@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IExceptionFilter.OnException(System.Web.Mvc.ExceptionContext)
   href: System.Web.Mvc.IExceptionFilter.yaml
   name:
-    CSharp: OnException
+    CSharp: IExceptionFilter.OnException(ExceptionContext)
   qualifiedName:
     CSharp: System.Web.Mvc.IExceptionFilter.OnException(System.Web.Mvc.ExceptionContext)
   type: Method

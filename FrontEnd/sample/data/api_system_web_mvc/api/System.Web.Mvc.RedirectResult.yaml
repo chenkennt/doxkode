@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.RedirectResult.#ctor(System.String)
   href: System.Web.Mvc.RedirectResult.yaml
   name:
-    CSharp: RedirectResult(System.String)
+    CSharp: RedirectResult.RedirectResult(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RedirectResult.RedirectResult(System.String)
+    CSharp: System.Web.Mvc.RedirectResult.RedirectResult(string)
   type: Constructor
   source:
     remote: *o0
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.RedirectResult.#ctor(System.String,System.Boolean)
   href: System.Web.Mvc.RedirectResult.yaml
   name:
-    CSharp: RedirectResult(System.String,System.Boolean)
+    CSharp: RedirectResult.RedirectResult(string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.RedirectResult.RedirectResult(System.String,System.Boolean)
+    CSharp: System.Web.Mvc.RedirectResult.RedirectResult(string, bool)
   type: Constructor
   source:
     remote: *o0
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.RedirectResult.Permanent
   href: System.Web.Mvc.RedirectResult.yaml
   name:
-    CSharp: Permanent
+    CSharp: RedirectResult.Permanent
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectResult.Permanent
   type: Property
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.RedirectResult.Url
   href: System.Web.Mvc.RedirectResult.yaml
   name:
-    CSharp: Url
+    CSharp: RedirectResult.Url
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectResult.Url
   type: Property
@@ -115,7 +115,7 @@ items:
 - id: System.Web.Mvc.RedirectResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.RedirectResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: RedirectResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

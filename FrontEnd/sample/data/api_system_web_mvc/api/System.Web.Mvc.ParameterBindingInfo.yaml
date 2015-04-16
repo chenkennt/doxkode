@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ParameterBindingInfo.Binder
   href: System.Web.Mvc.ParameterBindingInfo.yaml
   name:
-    CSharp: Binder
+    CSharp: ParameterBindingInfo.Binder
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterBindingInfo.Binder
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ParameterBindingInfo.Exclude
   href: System.Web.Mvc.ParameterBindingInfo.yaml
   name:
-    CSharp: Exclude
+    CSharp: ParameterBindingInfo.Exclude
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterBindingInfo.Exclude
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.ParameterBindingInfo.Include
   href: System.Web.Mvc.ParameterBindingInfo.yaml
   name:
-    CSharp: Include
+    CSharp: ParameterBindingInfo.Include
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterBindingInfo.Include
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.ParameterBindingInfo.Prefix
   href: System.Web.Mvc.ParameterBindingInfo.yaml
   name:
-    CSharp: Prefix
+    CSharp: ParameterBindingInfo.Prefix
   qualifiedName:
     CSharp: System.Web.Mvc.ParameterBindingInfo.Prefix
   type: Property

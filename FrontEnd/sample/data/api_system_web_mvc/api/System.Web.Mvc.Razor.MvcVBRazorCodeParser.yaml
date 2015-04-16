@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.Razor.MvcVBRazorCodeParser.#ctor
   href: System.Web.Mvc.Razor.MvcVBRazorCodeParser.yaml
   name:
-    CSharp: MvcVBRazorCodeParser
+    CSharp: MvcVBRazorCodeParser.MvcVBRazorCodeParser()
   qualifiedName:
-    CSharp: System.Web.Mvc.Razor.MvcVBRazorCodeParser.MvcVBRazorCodeParser
+    CSharp: System.Web.Mvc.Razor.MvcVBRazorCodeParser.MvcVBRazorCodeParser()
   type: Constructor
   source:
     remote: *o0

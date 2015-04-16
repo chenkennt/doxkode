@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ValueProviderFactoryCollection.#ctor
   href: System.Web.Mvc.ValueProviderFactoryCollection.yaml
   name:
-    CSharp: ValueProviderFactoryCollection
+    CSharp: ValueProviderFactoryCollection.ValueProviderFactoryCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderFactoryCollection.ValueProviderFactoryCollection
+    CSharp: System.Web.Mvc.ValueProviderFactoryCollection.ValueProviderFactoryCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ValueProviderFactoryCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.ValueProviderFactory})
   href: System.Web.Mvc.ValueProviderFactoryCollection.yaml
   name:
-    CSharp: ValueProviderFactoryCollection(System.Collections.Generic.IList{System.Web.Mvc.ValueProviderFactory})
+    CSharp: ValueProviderFactoryCollection.ValueProviderFactoryCollection(IList<ValueProviderFactory>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderFactoryCollection.ValueProviderFactoryCollection(System.Collections.Generic.IList{System.Web.Mvc.ValueProviderFactory})
+    CSharp: System.Web.Mvc.ValueProviderFactoryCollection.ValueProviderFactoryCollection(System.Collections.Generic.IList<System.Web.Mvc.ValueProviderFactory>)
   type: Constructor
   source:
     remote: *o0
@@ -65,7 +65,7 @@ items:
 - id: System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ValueProviderFactoryCollection.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: ValueProviderFactoryCollection.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

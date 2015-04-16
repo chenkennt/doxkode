@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ViewContext.#ctor
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ViewContext
+    CSharp: ViewContext.ViewContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewContext.ViewContext
+    CSharp: System.Web.Mvc.ViewContext.ViewContext()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ViewContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView,System.Web.Mvc.ViewDataDictionary,System.Web.Mvc.TempDataDictionary,System.IO.TextWriter)
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ViewContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView,System.Web.Mvc.ViewDataDictionary,System.Web.Mvc.TempDataDictionary,System.IO.TextWriter)
+    CSharp: ViewContext.ViewContext(ControllerContext, IView, ViewDataDictionary, TempDataDictionary, TextWriter)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewContext.ViewContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView,System.Web.Mvc.ViewDataDictionary,System.Web.Mvc.TempDataDictionary,System.IO.TextWriter)
+    CSharp: System.Web.Mvc.ViewContext.ViewContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.IView, System.Web.Mvc.ViewDataDictionary, System.Web.Mvc.TempDataDictionary, System.IO.TextWriter)
   type: Constructor
   source:
     remote: *o0
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.ViewContext.ClientValidationEnabled
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ClientValidationEnabled
+    CSharp: ViewContext.ClientValidationEnabled
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.ClientValidationEnabled
   type: Property
@@ -105,7 +105,7 @@ items:
 - id: System.Web.Mvc.ViewContext.FormContext
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: FormContext
+    CSharp: ViewContext.FormContext
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.FormContext
   type: Property
@@ -125,7 +125,7 @@ items:
 - id: System.Web.Mvc.ViewContext.TempData
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: TempData
+    CSharp: ViewContext.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.TempData
   type: Property
@@ -145,7 +145,7 @@ items:
 - id: System.Web.Mvc.ViewContext.UnobtrusiveJavaScriptEnabled
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: UnobtrusiveJavaScriptEnabled
+    CSharp: ViewContext.UnobtrusiveJavaScriptEnabled
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.UnobtrusiveJavaScriptEnabled
   type: Property
@@ -165,7 +165,7 @@ items:
 - id: System.Web.Mvc.ViewContext.ValidationSummaryMessageElement
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ValidationSummaryMessageElement
+    CSharp: ViewContext.ValidationSummaryMessageElement
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.ValidationSummaryMessageElement
   type: Property
@@ -189,7 +189,7 @@ items:
 - id: System.Web.Mvc.ViewContext.ValidationMessageElement
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ValidationMessageElement
+    CSharp: ViewContext.ValidationMessageElement
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.ValidationMessageElement
   type: Property
@@ -213,7 +213,7 @@ items:
 - id: System.Web.Mvc.ViewContext.View
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: View
+    CSharp: ViewContext.View
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.View
   type: Property
@@ -233,7 +233,7 @@ items:
 - id: System.Web.Mvc.ViewContext.ViewBag
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ViewContext.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.ViewBag
   type: Property
@@ -251,7 +251,7 @@ items:
 - id: System.Web.Mvc.ViewContext.ViewData
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewContext.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.ViewData
   type: Property
@@ -271,7 +271,7 @@ items:
 - id: System.Web.Mvc.ViewContext.Writer
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: Writer
+    CSharp: ViewContext.Writer
   qualifiedName:
     CSharp: System.Web.Mvc.ViewContext.Writer
   type: Property
@@ -291,9 +291,9 @@ items:
 - id: System.Web.Mvc.ViewContext.OutputClientValidation
   href: System.Web.Mvc.ViewContext.yaml
   name:
-    CSharp: OutputClientValidation
+    CSharp: ViewContext.OutputClientValidation()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewContext.OutputClientValidation
+    CSharp: System.Web.Mvc.ViewContext.OutputClientValidation()
   type: Method
   source:
     remote: *o0

@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IAuthorizationFilter.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   href: System.Web.Mvc.IAuthorizationFilter.yaml
   name:
-    CSharp: OnAuthorization
+    CSharp: IAuthorizationFilter.OnAuthorization(AuthorizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.IAuthorizationFilter.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   type: Method

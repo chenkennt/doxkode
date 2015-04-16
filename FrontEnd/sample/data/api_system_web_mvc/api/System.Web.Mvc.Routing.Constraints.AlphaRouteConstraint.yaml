@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.AlphaRouteConstraint.#ctor
   href: System.Web.Mvc.Routing.Constraints.AlphaRouteConstraint.yaml
   name:
-    CSharp: AlphaRouteConstraint
+    CSharp: AlphaRouteConstraint.AlphaRouteConstraint()
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.AlphaRouteConstraint.AlphaRouteConstraint
+    CSharp: System.Web.Mvc.Routing.Constraints.AlphaRouteConstraint.AlphaRouteConstraint()
   type: Constructor
   source:
     remote: *o0

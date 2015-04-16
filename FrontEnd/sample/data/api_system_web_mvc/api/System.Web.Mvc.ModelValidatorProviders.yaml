@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelValidatorProviders.Providers
   href: System.Web.Mvc.ModelValidatorProviders.yaml
   name:
-    CSharp: Providers
+    CSharp: ModelValidatorProviders.Providers
   qualifiedName:
     CSharp: System.Web.Mvc.ModelValidatorProviders.Providers
   type: Property

@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.JQueryFormValueProvider.#ctor(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.JQueryFormValueProvider.yaml
   name:
-    CSharp: JQueryFormValueProvider(System.Web.Mvc.ControllerContext)
+    CSharp: JQueryFormValueProvider.JQueryFormValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.JQueryFormValueProvider.JQueryFormValueProvider(System.Web.Mvc.ControllerContext)
   type: Constructor

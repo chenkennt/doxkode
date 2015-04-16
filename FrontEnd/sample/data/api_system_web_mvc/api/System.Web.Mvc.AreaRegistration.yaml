@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.AreaRegistration.AreaName
   href: System.Web.Mvc.AreaRegistration.yaml
   name:
-    CSharp: AreaName
+    CSharp: AreaRegistration.AreaName
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistration.AreaName
   type: Property
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.AreaRegistration.RegisterAllAreas
   href: System.Web.Mvc.AreaRegistration.yaml
   name:
-    CSharp: RegisterAllAreas
+    CSharp: AreaRegistration.RegisterAllAreas()
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistration.RegisterAllAreas
+    CSharp: System.Web.Mvc.AreaRegistration.RegisterAllAreas()
   type: Method
   source:
     remote: *o0
@@ -60,9 +60,9 @@ items:
 - id: System.Web.Mvc.AreaRegistration.RegisterAllAreas(System.Object)
   href: System.Web.Mvc.AreaRegistration.yaml
   name:
-    CSharp: RegisterAllAreas
+    CSharp: AreaRegistration.RegisterAllAreas(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistration.RegisterAllAreas(System.Object)
+    CSharp: System.Web.Mvc.AreaRegistration.RegisterAllAreas(object)
   type: Method
   source:
     remote: *o0
@@ -82,7 +82,7 @@ items:
 - id: System.Web.Mvc.AreaRegistration.RegisterArea(System.Web.Mvc.AreaRegistrationContext)
   href: System.Web.Mvc.AreaRegistration.yaml
   name:
-    CSharp: RegisterArea
+    CSharp: AreaRegistration.RegisterArea(AreaRegistrationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistration.RegisterArea(System.Web.Mvc.AreaRegistrationContext)
   type: Method

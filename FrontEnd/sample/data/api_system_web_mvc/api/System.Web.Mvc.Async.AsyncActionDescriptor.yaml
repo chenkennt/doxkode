@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.Async.AsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object},System.AsyncCallback,System.Object)
   href: System.Web.Mvc.Async.AsyncActionDescriptor.yaml
   name:
-    CSharp: BeginExecute
+    CSharp: AsyncActionDescriptor.BeginExecute(ControllerContext, IDictionary<string, object>, AsyncCallback, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.AsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object},System.AsyncCallback,System.Object)
+    CSharp: System.Web.Mvc.Async.AsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>, System.AsyncCallback, object)
   type: Method
   source:
     remote: *o0
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncActionDescriptor.EndExecute(System.IAsyncResult)
   href: System.Web.Mvc.Async.AsyncActionDescriptor.yaml
   name:
-    CSharp: EndExecute
+    CSharp: AsyncActionDescriptor.EndExecute(IAsyncResult)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncActionDescriptor.EndExecute(System.IAsyncResult)
   type: Method
@@ -85,9 +85,9 @@ items:
 - id: System.Web.Mvc.Async.AsyncActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Async.AsyncActionDescriptor.yaml
   name:
-    CSharp: Execute
+    CSharp: AsyncActionDescriptor.Execute(ControllerContext, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.AsyncActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Async.AsyncActionDescriptor.Execute(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.#ctor(System.Reflection.ParameterInfo,System.Web.Mvc.ActionDescriptor)
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: ReflectedParameterDescriptor(System.Reflection.ParameterInfo,System.Web.Mvc.ActionDescriptor)
+    CSharp: ReflectedParameterDescriptor.ReflectedParameterDescriptor(ParameterInfo, ActionDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ReflectedParameterDescriptor(System.Reflection.ParameterInfo,System.Web.Mvc.ActionDescriptor)
+    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ReflectedParameterDescriptor(System.Reflection.ParameterInfo, System.Web.Mvc.ActionDescriptor)
   type: Constructor
   source:
     remote: *o0
@@ -53,7 +53,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.ActionDescriptor
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: ReflectedParameterDescriptor.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ActionDescriptor
   type: Property
@@ -73,7 +73,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.BindingInfo
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: BindingInfo
+    CSharp: ReflectedParameterDescriptor.BindingInfo
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.BindingInfo
   type: Property
@@ -93,7 +93,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.DefaultValue
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: DefaultValue
+    CSharp: ReflectedParameterDescriptor.DefaultValue
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.DefaultValue
   type: Property
@@ -113,7 +113,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.ParameterInfo
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: ParameterInfo
+    CSharp: ReflectedParameterDescriptor.ParameterInfo
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ParameterInfo
   type: Property
@@ -133,7 +133,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.ParameterName
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: ParameterName
+    CSharp: ReflectedParameterDescriptor.ParameterName
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ParameterName
   type: Property
@@ -153,7 +153,7 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.ParameterType
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: ParameterType
+    CSharp: ReflectedParameterDescriptor.ParameterType
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedParameterDescriptor.ParameterType
   type: Property
@@ -173,9 +173,9 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedParameterDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -194,9 +194,9 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedParameterDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -220,9 +220,9 @@ items:
 - id: System.Web.Mvc.ReflectedParameterDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.ReflectedParameterDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ReflectedParameterDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedParameterDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

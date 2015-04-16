@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.Async.IAsyncManagerContainer.AsyncManager
   href: System.Web.Mvc.Async.IAsyncManagerContainer.yaml
   name:
-    CSharp: AsyncManager
+    CSharp: IAsyncManagerContainer.AsyncManager
   qualifiedName:
     CSharp: System.Web.Mvc.Async.IAsyncManagerContainer.AsyncManager
   type: Property

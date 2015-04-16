@@ -30,9 +30,9 @@ items:
 - id: System.Web.Mvc.RouteAttribute.#ctor
   href: System.Web.Mvc.RouteAttribute.yaml
   name:
-    CSharp: RouteAttribute
+    CSharp: RouteAttribute.RouteAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteAttribute.RouteAttribute
+    CSharp: System.Web.Mvc.RouteAttribute.RouteAttribute()
   type: Constructor
   source:
     remote: *o0
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.RouteAttribute.#ctor(System.String)
   href: System.Web.Mvc.RouteAttribute.yaml
   name:
-    CSharp: RouteAttribute(System.String)
+    CSharp: RouteAttribute.RouteAttribute(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteAttribute.RouteAttribute(System.String)
+    CSharp: System.Web.Mvc.RouteAttribute.RouteAttribute(string)
   type: Constructor
   source:
     remote: *o0
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.RouteAttribute.Name
   href: System.Web.Mvc.RouteAttribute.yaml
   name:
-    CSharp: Name
+    CSharp: RouteAttribute.Name
   qualifiedName:
     CSharp: System.Web.Mvc.RouteAttribute.Name
   type: Property
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.RouteAttribute.Order
   href: System.Web.Mvc.RouteAttribute.yaml
   name:
-    CSharp: Order
+    CSharp: RouteAttribute.Order
   qualifiedName:
     CSharp: System.Web.Mvc.RouteAttribute.Order
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.RouteAttribute.Template
   href: System.Web.Mvc.RouteAttribute.yaml
   name:
-    CSharp: Template
+    CSharp: RouteAttribute.Template
   qualifiedName:
     CSharp: System.Web.Mvc.RouteAttribute.Template
   type: Property

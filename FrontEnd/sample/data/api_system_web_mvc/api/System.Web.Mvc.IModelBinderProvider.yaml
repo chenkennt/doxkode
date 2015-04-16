@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IModelBinderProvider.GetBinder(System.Type)
   href: System.Web.Mvc.IModelBinderProvider.yaml
   name:
-    CSharp: GetBinder
+    CSharp: IModelBinderProvider.GetBinder(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.IModelBinderProvider.GetBinder(System.Type)
   type: Method

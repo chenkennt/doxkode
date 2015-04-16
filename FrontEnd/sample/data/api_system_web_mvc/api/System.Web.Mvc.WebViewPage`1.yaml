@@ -1,9 +1,9 @@
 id: System.Web.Mvc.WebViewPage`1
 href: System.Web.Mvc.WebViewPage`1.yaml
 name:
-  CSharp: WebViewPage`1
+  CSharp: WebViewPage<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.WebViewPage`1
+  CSharp: System.Web.Mvc.WebViewPage<TModel>
 type: Class
 source:
   remote: &o0
@@ -35,9 +35,9 @@ items:
 - id: System.Web.Mvc.WebViewPage`1.Ajax
   href: System.Web.Mvc.WebViewPage`1.yaml
   name:
-    CSharp: Ajax
+    CSharp: WebViewPage<TModel>.Ajax
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage`1.Ajax
+    CSharp: System.Web.Mvc.WebViewPage<TModel>.Ajax
   type: Property
   source:
     remote: *o0
@@ -55,9 +55,9 @@ items:
 - id: System.Web.Mvc.WebViewPage`1.Html
   href: System.Web.Mvc.WebViewPage`1.yaml
   name:
-    CSharp: Html
+    CSharp: WebViewPage<TModel>.Html
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage`1.Html
+    CSharp: System.Web.Mvc.WebViewPage<TModel>.Html
   type: Property
   source:
     remote: *o0
@@ -75,9 +75,9 @@ items:
 - id: System.Web.Mvc.WebViewPage`1.Model
   href: System.Web.Mvc.WebViewPage`1.yaml
   name:
-    CSharp: Model
+    CSharp: WebViewPage<TModel>.Model
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage`1.Model
+    CSharp: System.Web.Mvc.WebViewPage<TModel>.Model
   type: Property
   source:
     remote: *o0
@@ -95,9 +95,9 @@ items:
 - id: System.Web.Mvc.WebViewPage`1.ViewData
   href: System.Web.Mvc.WebViewPage`1.yaml
   name:
-    CSharp: ViewData
+    CSharp: WebViewPage<TModel>.ViewData
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage`1.ViewData
+    CSharp: System.Web.Mvc.WebViewPage<TModel>.ViewData
   type: Property
   source:
     remote: *o0
@@ -115,9 +115,9 @@ items:
 - id: System.Web.Mvc.WebViewPage`1.InitHelpers
   href: System.Web.Mvc.WebViewPage`1.yaml
   name:
-    CSharp: InitHelpers
+    CSharp: WebViewPage<TModel>.InitHelpers()
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage`1.InitHelpers
+    CSharp: System.Web.Mvc.WebViewPage<TModel>.InitHelpers()
   type: Method
   source:
     remote: *o0

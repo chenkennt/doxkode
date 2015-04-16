@@ -58,7 +58,7 @@
   - id: System.Web.Mvc.CachedAssociatedMetadataProvider`1
     href: api/System.Web.Mvc.CachedAssociatedMetadataProvider`1.yaml
     name:
-      CSharp: CachedAssociatedMetadataProvider`1
+      CSharp: CachedAssociatedMetadataProvider<TModelMetadata>
   - id: System.Web.Mvc.CachedDataAnnotationsMetadataAttributes
     href: api/System.Web.Mvc.CachedDataAnnotationsMetadataAttributes.yaml
     name:
@@ -74,7 +74,7 @@
   - id: System.Web.Mvc.CachedModelMetadata`1
     href: api/System.Web.Mvc.CachedModelMetadata`1.yaml
     name:
-      CSharp: CachedModelMetadata`1
+      CSharp: CachedModelMetadata<TPrototypeCache>
   - id: System.Web.Mvc.CancellationTokenModelBinder
     href: api/System.Web.Mvc.CancellationTokenModelBinder.yaml
     name:
@@ -258,7 +258,7 @@
   - id: System.Web.Mvc.WebViewPage`1
     href: api/System.Web.Mvc.WebViewPage`1.yaml
     name:
-      CSharp: WebViewPage`1
+      CSharp: WebViewPage<TModel>
   - id: System.Web.Mvc.HttpNotFoundResult
     href: api/System.Web.Mvc.HttpNotFoundResult.yaml
     name:
@@ -410,7 +410,7 @@
   - id: System.Web.Mvc.DictionaryValueProvider`1
     href: api/System.Web.Mvc.DictionaryValueProvider`1.yaml
     name:
-      CSharp: DictionaryValueProvider`1
+      CSharp: DictionaryValueProvider<TValue>
   - id: System.Web.Mvc.NameValueCollectionValueProvider
     href: api/System.Web.Mvc.NameValueCollectionValueProvider.yaml
     name:
@@ -470,7 +470,7 @@
   - id: System.Web.Mvc.DataAnnotationsModelValidator`1
     href: api/System.Web.Mvc.DataAnnotationsModelValidator`1.yaml
     name:
-      CSharp: DataAnnotationsModelValidator`1
+      CSharp: DataAnnotationsModelValidator<TAttribute>
   - id: System.Web.Mvc.EmptyModelValidatorProvider
     href: api/System.Web.Mvc.EmptyModelValidatorProvider.yaml
     name:
@@ -618,11 +618,11 @@
   - id: System.Web.Mvc.AjaxHelper`1
     href: api/System.Web.Mvc.AjaxHelper`1.yaml
     name:
-      CSharp: AjaxHelper`1
+      CSharp: AjaxHelper<TModel>
   - id: System.Web.Mvc.HtmlHelper`1
     href: api/System.Web.Mvc.HtmlHelper`1.yaml
     name:
-      CSharp: HtmlHelper`1
+      CSharp: HtmlHelper<TModel>
   - id: System.Web.Mvc.AjaxRequestExtensions
     href: api/System.Web.Mvc.AjaxRequestExtensions.yaml
     name:
@@ -646,7 +646,7 @@
   - id: System.Web.Mvc.ViewTemplateUserControl`1
     href: api/System.Web.Mvc.ViewTemplateUserControl`1.yaml
     name:
-      CSharp: ViewTemplateUserControl`1
+      CSharp: ViewTemplateUserControl<TModel>
   - id: System.Web.Mvc.ViewType
     href: api/System.Web.Mvc.ViewType.yaml
     name:
@@ -874,7 +874,7 @@
   - id: System.Web.Mvc.ViewDataDictionary`1
     href: api/System.Web.Mvc.ViewDataDictionary`1.yaml
     name:
-      CSharp: ViewDataDictionary`1
+      CSharp: ViewDataDictionary<TModel>
   - id: System.Web.Mvc.EmptyResult
     href: api/System.Web.Mvc.EmptyResult.yaml
     name:
@@ -970,7 +970,7 @@
   - id: System.Web.Mvc.ViewMasterPage`1
     href: api/System.Web.Mvc.ViewMasterPage`1.yaml
     name:
-      CSharp: ViewMasterPage`1
+      CSharp: ViewMasterPage<TModel>
   - id: System.Web.Mvc.ViewPage
     href: api/System.Web.Mvc.ViewPage.yaml
     name:
@@ -978,7 +978,7 @@
   - id: System.Web.Mvc.ViewPage`1
     href: api/System.Web.Mvc.ViewPage`1.yaml
     name:
-      CSharp: ViewPage`1
+      CSharp: ViewPage<TModel>
   - id: System.Web.Mvc.ViewResult
     href: api/System.Web.Mvc.ViewResult.yaml
     name:
@@ -994,7 +994,7 @@
   - id: System.Web.Mvc.ViewUserControl`1
     href: api/System.Web.Mvc.ViewUserControl`1.yaml
     name:
-      CSharp: ViewUserControl`1
+      CSharp: ViewUserControl<TModel>
   - id: System.Web.Mvc.VirtualPathProviderViewEngine
     href: api/System.Web.Mvc.VirtualPathProviderViewEngine.yaml
     name:

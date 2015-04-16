@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.DisplayTextExtensions.DisplayText(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.DisplayTextExtensions.yaml
   name:
-    CSharp: DisplayText
+    CSharp: DisplayTextExtensions.DisplayText(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.DisplayTextExtensions.DisplayText(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.DisplayTextExtensions.DisplayText(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.DisplayTextExtensions.DisplayTextFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.DisplayTextExtensions.yaml
   name:
-    CSharp: DisplayTextFor
+    CSharp: DisplayTextExtensions.DisplayTextFor<TModel, TResult>(HtmlHelper<TModel>, Expression<Func<TModel, TResult>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.DisplayTextExtensions.DisplayTextFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.DisplayTextExtensions.DisplayTextFor<TModel, TResult>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TResult>>)
   type: Method
   source:
     remote: *o0

@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.ChildActionValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ChildActionValueProviderFactory.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: ChildActionValueProviderFactory.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ChildActionValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.#ctor
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: AsyncManager
+    CSharp: AsyncManager.AsyncManager()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.AsyncManager.AsyncManager
+    CSharp: System.Web.Mvc.Async.AsyncManager.AsyncManager()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.#ctor(System.Threading.SynchronizationContext)
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: AsyncManager(System.Threading.SynchronizationContext)
+    CSharp: AsyncManager.AsyncManager(SynchronizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.AsyncManager(System.Threading.SynchronizationContext)
   type: Constructor
@@ -62,7 +62,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.Finished
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: Finished
+    CSharp: AsyncManager.Finished
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.Finished
   type: Event
@@ -76,7 +76,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.OutstandingOperations
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: OutstandingOperations
+    CSharp: AsyncManager.OutstandingOperations
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.OutstandingOperations
   type: Property
@@ -96,7 +96,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.Parameters
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: Parameters
+    CSharp: AsyncManager.Parameters
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.Parameters
   type: Property
@@ -116,7 +116,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.Timeout
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: Timeout
+    CSharp: AsyncManager.Timeout
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.Timeout
   type: Property
@@ -137,9 +137,9 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.Finish
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: Finish
+    CSharp: AsyncManager.Finish()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.AsyncManager.Finish
+    CSharp: System.Web.Mvc.Async.AsyncManager.Finish()
   type: Method
   source:
     remote: *o0
@@ -158,7 +158,7 @@ items:
 - id: System.Web.Mvc.Async.AsyncManager.Sync(System.Action)
   href: System.Web.Mvc.Async.AsyncManager.yaml
   name:
-    CSharp: Sync
+    CSharp: AsyncManager.Sync(Action)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.AsyncManager.Sync(System.Action)
   type: Method

@@ -20,9 +20,9 @@ items:
 - id: System.Web.Mvc.IValueProvider.ContainsPrefix(System.String)
   href: System.Web.Mvc.IValueProvider.yaml
   name:
-    CSharp: ContainsPrefix
+    CSharp: IValueProvider.ContainsPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IValueProvider.ContainsPrefix(System.String)
+    CSharp: System.Web.Mvc.IValueProvider.ContainsPrefix(string)
   type: Method
   source:
     remote: *o0
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.IValueProvider.GetValue(System.String)
   href: System.Web.Mvc.IValueProvider.yaml
   name:
-    CSharp: GetValue
+    CSharp: IValueProvider.GetValue(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IValueProvider.GetValue(System.String)
+    CSharp: System.Web.Mvc.IValueProvider.GetValue(string)
   type: Method
   source:
     remote: *o0

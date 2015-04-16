@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IRouteWithArea.Area
   href: System.Web.Mvc.IRouteWithArea.yaml
   name:
-    CSharp: Area
+    CSharp: IRouteWithArea.Area
   qualifiedName:
     CSharp: System.Web.Mvc.IRouteWithArea.Area
   type: Property

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.UrlParameter.Optional
   href: System.Web.Mvc.UrlParameter.yaml
   name:
-    CSharp: Optional
+    CSharp: UrlParameter.Optional
   qualifiedName:
     CSharp: System.Web.Mvc.UrlParameter.Optional
   type: Field
@@ -37,9 +37,9 @@ items:
 - id: System.Web.Mvc.UrlParameter.ToString
   href: System.Web.Mvc.UrlParameter.yaml
   name:
-    CSharp: ToString
+    CSharp: UrlParameter.ToString()
   qualifiedName:
-    CSharp: System.Web.Mvc.UrlParameter.ToString
+    CSharp: System.Web.Mvc.UrlParameter.ToString()
   type: Method
   source:
     remote: *o0

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.Filter.DefaultOrder
   href: System.Web.Mvc.Filter.yaml
   name:
-    CSharp: DefaultOrder
+    CSharp: Filter.DefaultOrder
   qualifiedName:
     CSharp: System.Web.Mvc.Filter.DefaultOrder
   type: Field
@@ -37,9 +37,9 @@ items:
 - id: System.Web.Mvc.Filter.#ctor(System.Object,System.Web.Mvc.FilterScope,System.Nullable{System.Int32})
   href: System.Web.Mvc.Filter.yaml
   name:
-    CSharp: Filter(System.Object,System.Web.Mvc.FilterScope,System.Nullable{System.Int32})
+    CSharp: Filter.Filter(object, FilterScope, int?)
   qualifiedName:
-    CSharp: System.Web.Mvc.Filter.Filter(System.Object,System.Web.Mvc.FilterScope,System.Nullable{System.Int32})
+    CSharp: System.Web.Mvc.Filter.Filter(object, System.Web.Mvc.FilterScope, int?)
   type: Constructor
   source:
     remote: *o0
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.Filter.Instance
   href: System.Web.Mvc.Filter.yaml
   name:
-    CSharp: Instance
+    CSharp: Filter.Instance
   qualifiedName:
     CSharp: System.Web.Mvc.Filter.Instance
   type: Property
@@ -89,7 +89,7 @@ items:
 - id: System.Web.Mvc.Filter.Order
   href: System.Web.Mvc.Filter.yaml
   name:
-    CSharp: Order
+    CSharp: Filter.Order
   qualifiedName:
     CSharp: System.Web.Mvc.Filter.Order
   type: Property
@@ -109,7 +109,7 @@ items:
 - id: System.Web.Mvc.Filter.Scope
   href: System.Web.Mvc.Filter.yaml
   name:
-    CSharp: Scope
+    CSharp: Filter.Scope
   qualifiedName:
     CSharp: System.Web.Mvc.Filter.Scope
   type: Property

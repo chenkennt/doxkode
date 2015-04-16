@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -114,9 +114,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -146,9 +146,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -183,9 +183,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: Action
+    CSharp: ChildActionExtensions.Action(HtmlHelper, string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.Action(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -220,9 +220,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -247,9 +247,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -279,9 +279,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -311,9 +311,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -343,9 +343,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -380,9 +380,9 @@ items:
 - id: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.ChildActionExtensions.yaml
   name:
-    CSharp: RenderAction
+    CSharp: ChildActionExtensions.RenderAction(HtmlHelper, string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.ChildActionExtensions.RenderAction(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0

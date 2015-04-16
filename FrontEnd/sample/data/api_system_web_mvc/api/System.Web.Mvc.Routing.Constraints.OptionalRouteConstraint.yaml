@@ -24,7 +24,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.#ctor(System.Web.Routing.IRouteConstraint)
   href: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.yaml
   name:
-    CSharp: OptionalRouteConstraint(System.Web.Routing.IRouteConstraint)
+    CSharp: OptionalRouteConstraint.OptionalRouteConstraint(IRouteConstraint)
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.OptionalRouteConstraint(System.Web.Routing.IRouteConstraint)
   type: Constructor
@@ -48,7 +48,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.InnerConstraint
   href: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.yaml
   name:
-    CSharp: InnerConstraint
+    CSharp: OptionalRouteConstraint.InnerConstraint
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.InnerConstraint
   type: Property
@@ -69,9 +69,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: OptionalRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.OptionalRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

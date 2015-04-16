@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.RequireHttpsAttribute.#ctor
   href: System.Web.Mvc.RequireHttpsAttribute.yaml
   name:
-    CSharp: RequireHttpsAttribute
+    CSharp: RequireHttpsAttribute.RequireHttpsAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.RequireHttpsAttribute.RequireHttpsAttribute
+    CSharp: System.Web.Mvc.RequireHttpsAttribute.RequireHttpsAttribute()
   type: Constructor
   source:
     remote: *o0
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.RequireHttpsAttribute.#ctor(System.Boolean)
   href: System.Web.Mvc.RequireHttpsAttribute.yaml
   name:
-    CSharp: RequireHttpsAttribute(System.Boolean)
+    CSharp: RequireHttpsAttribute.RequireHttpsAttribute(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.RequireHttpsAttribute.RequireHttpsAttribute(System.Boolean)
+    CSharp: System.Web.Mvc.RequireHttpsAttribute.RequireHttpsAttribute(bool)
   type: Constructor
   source:
     remote: *o0
@@ -70,7 +70,7 @@ items:
 - id: System.Web.Mvc.RequireHttpsAttribute.Permanent
   href: System.Web.Mvc.RequireHttpsAttribute.yaml
   name:
-    CSharp: Permanent
+    CSharp: RequireHttpsAttribute.Permanent
   qualifiedName:
     CSharp: System.Web.Mvc.RequireHttpsAttribute.Permanent
   type: Property
@@ -91,7 +91,7 @@ items:
 - id: System.Web.Mvc.RequireHttpsAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   href: System.Web.Mvc.RequireHttpsAttribute.yaml
   name:
-    CSharp: OnAuthorization
+    CSharp: RequireHttpsAttribute.OnAuthorization(AuthorizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.RequireHttpsAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   type: Method

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.DefaultModelBinder.ResourceClassKey
   href: System.Web.Mvc.DefaultModelBinder.yaml
   name:
-    CSharp: ResourceClassKey
+    CSharp: DefaultModelBinder.ResourceClassKey
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultModelBinder.ResourceClassKey
   type: Property
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.DefaultModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
   href: System.Web.Mvc.DefaultModelBinder.yaml
   name:
-    CSharp: BindModel
+    CSharp: DefaultModelBinder.BindModel(ControllerContext, ModelBindingContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
+    CSharp: System.Web.Mvc.DefaultModelBinder.BindModel(System.Web.Mvc.ControllerContext, System.Web.Mvc.ModelBindingContext)
   type: Method
   source:
     remote: *o0

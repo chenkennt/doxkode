@@ -1,9 +1,9 @@
 id: System.Web.Mvc.ViewMasterPage`1
 href: System.Web.Mvc.ViewMasterPage`1.yaml
 name:
-  CSharp: ViewMasterPage`1
+  CSharp: ViewMasterPage<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.ViewMasterPage`1
+  CSharp: System.Web.Mvc.ViewMasterPage<TModel>
 type: Class
 source:
   remote: &o0
@@ -38,9 +38,9 @@ items:
 - id: System.Web.Mvc.ViewMasterPage`1.Ajax
   href: System.Web.Mvc.ViewMasterPage`1.yaml
   name:
-    CSharp: Ajax
+    CSharp: ViewMasterPage<TModel>.Ajax
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewMasterPage`1.Ajax
+    CSharp: System.Web.Mvc.ViewMasterPage<TModel>.Ajax
   type: Property
   source:
     remote: *o0
@@ -58,9 +58,9 @@ items:
 - id: System.Web.Mvc.ViewMasterPage`1.Html
   href: System.Web.Mvc.ViewMasterPage`1.yaml
   name:
-    CSharp: Html
+    CSharp: ViewMasterPage<TModel>.Html
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewMasterPage`1.Html
+    CSharp: System.Web.Mvc.ViewMasterPage<TModel>.Html
   type: Property
   source:
     remote: *o0
@@ -78,9 +78,9 @@ items:
 - id: System.Web.Mvc.ViewMasterPage`1.Model
   href: System.Web.Mvc.ViewMasterPage`1.yaml
   name:
-    CSharp: Model
+    CSharp: ViewMasterPage<TModel>.Model
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewMasterPage`1.Model
+    CSharp: System.Web.Mvc.ViewMasterPage<TModel>.Model
   type: Property
   source:
     remote: *o0
@@ -98,9 +98,9 @@ items:
 - id: System.Web.Mvc.ViewMasterPage`1.ViewData
   href: System.Web.Mvc.ViewMasterPage`1.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewMasterPage<TModel>.ViewData
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewMasterPage`1.ViewData
+    CSharp: System.Web.Mvc.ViewMasterPage<TModel>.ViewData
   type: Property
   source:
     remote: *o0

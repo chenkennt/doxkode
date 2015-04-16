@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.ChildActionOnlyAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   href: System.Web.Mvc.ChildActionOnlyAttribute.yaml
   name:
-    CSharp: OnAuthorization
+    CSharp: ChildActionOnlyAttribute.OnAuthorization(AuthorizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ChildActionOnlyAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   type: Method

@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ViewEngineCollection.#ctor
   href: System.Web.Mvc.ViewEngineCollection.yaml
   name:
-    CSharp: ViewEngineCollection
+    CSharp: ViewEngineCollection.ViewEngineCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineCollection.ViewEngineCollection
+    CSharp: System.Web.Mvc.ViewEngineCollection.ViewEngineCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ViewEngineCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.IViewEngine})
   href: System.Web.Mvc.ViewEngineCollection.yaml
   name:
-    CSharp: ViewEngineCollection(System.Collections.Generic.IList{System.Web.Mvc.IViewEngine})
+    CSharp: ViewEngineCollection.ViewEngineCollection(IList<IViewEngine>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineCollection.ViewEngineCollection(System.Collections.Generic.IList{System.Web.Mvc.IViewEngine})
+    CSharp: System.Web.Mvc.ViewEngineCollection.ViewEngineCollection(System.Collections.Generic.IList<System.Web.Mvc.IViewEngine>)
   type: Constructor
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.ViewEngineCollection.FindPartialView(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.ViewEngineCollection.yaml
   name:
-    CSharp: FindPartialView
+    CSharp: ViewEngineCollection.FindPartialView(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineCollection.FindPartialView(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.ViewEngineCollection.FindPartialView(System.Web.Mvc.ControllerContext, string)
   type: Method
   source:
     remote: *o0
@@ -92,9 +92,9 @@ items:
 - id: System.Web.Mvc.ViewEngineCollection.FindView(System.Web.Mvc.ControllerContext,System.String,System.String)
   href: System.Web.Mvc.ViewEngineCollection.yaml
   name:
-    CSharp: FindView
+    CSharp: ViewEngineCollection.FindView(ControllerContext, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineCollection.FindView(System.Web.Mvc.ControllerContext,System.String,System.String)
+    CSharp: System.Web.Mvc.ViewEngineCollection.FindView(System.Web.Mvc.ControllerContext, string, string)
   type: Method
   source:
     remote: *o0

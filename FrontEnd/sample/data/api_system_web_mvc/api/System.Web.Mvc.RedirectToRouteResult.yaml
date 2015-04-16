@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.#ctor(System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: RedirectToRouteResult(System.Web.Routing.RouteValueDictionary)
+    CSharp: RedirectToRouteResult.RedirectToRouteResult(RouteValueDictionary)
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectToRouteResult.RedirectToRouteResult(System.Web.Routing.RouteValueDictionary)
   type: Constructor
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.#ctor(System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: RedirectToRouteResult(System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: RedirectToRouteResult.RedirectToRouteResult(string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.RedirectToRouteResult.RedirectToRouteResult(System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.RedirectToRouteResult.RedirectToRouteResult(string, System.Web.Routing.RouteValueDictionary)
   type: Constructor
   source:
     remote: *o0
@@ -75,9 +75,9 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.#ctor(System.String,System.Web.Routing.RouteValueDictionary,System.Boolean)
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: RedirectToRouteResult(System.String,System.Web.Routing.RouteValueDictionary,System.Boolean)
+    CSharp: RedirectToRouteResult.RedirectToRouteResult(string, RouteValueDictionary, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.RedirectToRouteResult.RedirectToRouteResult(System.String,System.Web.Routing.RouteValueDictionary,System.Boolean)
+    CSharp: System.Web.Mvc.RedirectToRouteResult.RedirectToRouteResult(string, System.Web.Routing.RouteValueDictionary, bool)
   type: Constructor
   source:
     remote: *o0
@@ -107,7 +107,7 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.Permanent
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: Permanent
+    CSharp: RedirectToRouteResult.Permanent
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectToRouteResult.Permanent
   type: Property
@@ -127,7 +127,7 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.RouteName
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: RouteName
+    CSharp: RedirectToRouteResult.RouteName
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectToRouteResult.RouteName
   type: Property
@@ -147,7 +147,7 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.RouteValues
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: RouteValues
+    CSharp: RedirectToRouteResult.RouteValues
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectToRouteResult.RouteValues
   type: Property
@@ -167,7 +167,7 @@ items:
 - id: System.Web.Mvc.RedirectToRouteResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.RedirectToRouteResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: RedirectToRouteResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.RedirectToRouteResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

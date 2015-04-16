@@ -1,9 +1,9 @@
 id: System.Web.Mvc.CachedModelMetadata`1
 href: System.Web.Mvc.CachedModelMetadata`1.yaml
 name:
-  CSharp: CachedModelMetadata`1
+  CSharp: CachedModelMetadata<TPrototypeCache>
 qualifiedName:
-  CSharp: System.Web.Mvc.CachedModelMetadata`1
+  CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>
 type: Class
 source:
   remote: &o0
@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.ConvertEmptyStringToNull
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: ConvertEmptyStringToNull
+    CSharp: CachedModelMetadata<TPrototypeCache>.ConvertEmptyStringToNull
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.ConvertEmptyStringToNull
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.ConvertEmptyStringToNull
   type: Property
   source:
     remote: *o0
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.DataTypeName
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: DataTypeName
+    CSharp: CachedModelMetadata<TPrototypeCache>.DataTypeName
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.DataTypeName
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.DataTypeName
   type: Property
   source:
     remote: *o0
@@ -66,9 +66,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.Description
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: Description
+    CSharp: CachedModelMetadata<TPrototypeCache>.Description
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.Description
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.Description
   type: Property
   source:
     remote: *o0
@@ -86,9 +86,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.DisplayFormatString
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: DisplayFormatString
+    CSharp: CachedModelMetadata<TPrototypeCache>.DisplayFormatString
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.DisplayFormatString
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.DisplayFormatString
   type: Property
   source:
     remote: *o0
@@ -106,9 +106,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.DisplayName
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: DisplayName
+    CSharp: CachedModelMetadata<TPrototypeCache>.DisplayName
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.DisplayName
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.DisplayName
   type: Property
   source:
     remote: *o0
@@ -126,9 +126,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.EditFormatString
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: EditFormatString
+    CSharp: CachedModelMetadata<TPrototypeCache>.EditFormatString
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.EditFormatString
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.EditFormatString
   type: Property
   source:
     remote: *o0
@@ -146,9 +146,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.HideSurroundingHtml
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: HideSurroundingHtml
+    CSharp: CachedModelMetadata<TPrototypeCache>.HideSurroundingHtml
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.HideSurroundingHtml
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.HideSurroundingHtml
   type: Property
   source:
     remote: *o0
@@ -166,9 +166,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.HtmlEncode
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: HtmlEncode
+    CSharp: CachedModelMetadata<TPrototypeCache>.HtmlEncode
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.HtmlEncode
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.HtmlEncode
   type: Property
   source:
     remote: *o0
@@ -186,9 +186,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.IsReadOnly
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: IsReadOnly
+    CSharp: CachedModelMetadata<TPrototypeCache>.IsReadOnly
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.IsReadOnly
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.IsReadOnly
   type: Property
   source:
     remote: *o0
@@ -206,9 +206,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.IsRequired
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: IsRequired
+    CSharp: CachedModelMetadata<TPrototypeCache>.IsRequired
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.IsRequired
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.IsRequired
   type: Property
   source:
     remote: *o0
@@ -226,9 +226,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.NullDisplayText
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: NullDisplayText
+    CSharp: CachedModelMetadata<TPrototypeCache>.NullDisplayText
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.NullDisplayText
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.NullDisplayText
   type: Property
   source:
     remote: *o0
@@ -246,9 +246,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.Order
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: Order
+    CSharp: CachedModelMetadata<TPrototypeCache>.Order
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.Order
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.Order
   type: Property
   source:
     remote: *o0
@@ -266,9 +266,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.ShortDisplayName
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: ShortDisplayName
+    CSharp: CachedModelMetadata<TPrototypeCache>.ShortDisplayName
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.ShortDisplayName
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.ShortDisplayName
   type: Property
   source:
     remote: *o0
@@ -286,9 +286,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.ShowForDisplay
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: ShowForDisplay
+    CSharp: CachedModelMetadata<TPrototypeCache>.ShowForDisplay
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.ShowForDisplay
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.ShowForDisplay
   type: Property
   source:
     remote: *o0
@@ -306,9 +306,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.ShowForEdit
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: ShowForEdit
+    CSharp: CachedModelMetadata<TPrototypeCache>.ShowForEdit
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.ShowForEdit
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.ShowForEdit
   type: Property
   source:
     remote: *o0
@@ -326,9 +326,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.SimpleDisplayText
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: SimpleDisplayText
+    CSharp: CachedModelMetadata<TPrototypeCache>.SimpleDisplayText
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.SimpleDisplayText
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.SimpleDisplayText
   type: Property
   source:
     remote: *o0
@@ -346,9 +346,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.TemplateHint
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: TemplateHint
+    CSharp: CachedModelMetadata<TPrototypeCache>.TemplateHint
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.TemplateHint
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.TemplateHint
   type: Property
   source:
     remote: *o0
@@ -366,9 +366,9 @@ items:
 - id: System.Web.Mvc.CachedModelMetadata`1.Watermark
   href: System.Web.Mvc.CachedModelMetadata`1.yaml
   name:
-    CSharp: Watermark
+    CSharp: CachedModelMetadata<TPrototypeCache>.Watermark
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedModelMetadata`1.Watermark
+    CSharp: System.Web.Mvc.CachedModelMetadata<TPrototypeCache>.Watermark
   type: Property
   source:
     remote: *o0

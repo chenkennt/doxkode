@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ControllerContext.#ctor
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: ControllerContext
+    CSharp: ControllerContext.ControllerContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerContext.ControllerContext
+    CSharp: System.Web.Mvc.ControllerContext.ControllerContext()
   type: Constructor
   source:
     remote: *o0
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.ControllerContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData,System.Web.Mvc.ControllerBase)
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: ControllerContext(System.Web.HttpContextBase,System.Web.Routing.RouteData,System.Web.Mvc.ControllerBase)
+    CSharp: ControllerContext.ControllerContext(HttpContextBase, RouteData, ControllerBase)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerContext.ControllerContext(System.Web.HttpContextBase,System.Web.Routing.RouteData,System.Web.Mvc.ControllerBase)
+    CSharp: System.Web.Mvc.ControllerContext.ControllerContext(System.Web.HttpContextBase, System.Web.Routing.RouteData, System.Web.Mvc.ControllerBase)
   type: Constructor
   source:
     remote: *o0
@@ -72,9 +72,9 @@ items:
 - id: System.Web.Mvc.ControllerContext.#ctor(System.Web.Routing.RequestContext,System.Web.Mvc.ControllerBase)
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: ControllerContext(System.Web.Routing.RequestContext,System.Web.Mvc.ControllerBase)
+    CSharp: ControllerContext.ControllerContext(RequestContext, ControllerBase)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerContext.ControllerContext(System.Web.Routing.RequestContext,System.Web.Mvc.ControllerBase)
+    CSharp: System.Web.Mvc.ControllerContext.ControllerContext(System.Web.Routing.RequestContext, System.Web.Mvc.ControllerBase)
   type: Constructor
   source:
     remote: *o0
@@ -99,7 +99,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.Controller
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: Controller
+    CSharp: ControllerContext.Controller
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.Controller
   type: Property
@@ -119,7 +119,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.DisplayMode
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: DisplayMode
+    CSharp: ControllerContext.DisplayMode
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.DisplayMode
   type: Property
@@ -139,7 +139,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.HttpContext
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: HttpContext
+    CSharp: ControllerContext.HttpContext
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.HttpContext
   type: Property
@@ -159,7 +159,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.IsChildAction
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: IsChildAction
+    CSharp: ControllerContext.IsChildAction
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.IsChildAction
   type: Property
@@ -179,7 +179,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.ParentActionViewContext
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: ParentActionViewContext
+    CSharp: ControllerContext.ParentActionViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.ParentActionViewContext
   type: Property
@@ -199,7 +199,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.RequestContext
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: RequestContext
+    CSharp: ControllerContext.RequestContext
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.RequestContext
   type: Property
@@ -219,7 +219,7 @@ items:
 - id: System.Web.Mvc.ControllerContext.RouteData
   href: System.Web.Mvc.ControllerContext.yaml
   name:
-    CSharp: RouteData
+    CSharp: ControllerContext.RouteData
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerContext.RouteData
   type: Property

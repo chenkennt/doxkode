@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.ITempDataProvider.LoadTempData(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ITempDataProvider.yaml
   name:
-    CSharp: LoadTempData
+    CSharp: ITempDataProvider.LoadTempData(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ITempDataProvider.LoadTempData(System.Web.Mvc.ControllerContext)
   type: Method
@@ -41,9 +41,9 @@ items:
 - id: System.Web.Mvc.ITempDataProvider.SaveTempData(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.ITempDataProvider.yaml
   name:
-    CSharp: SaveTempData
+    CSharp: ITempDataProvider.SaveTempData(ControllerContext, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ITempDataProvider.SaveTempData(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.ITempDataProvider.SaveTempData(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

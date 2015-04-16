@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)
   href: System.Web.Mvc.IViewEngine.yaml
   name:
-    CSharp: FindPartialView
+    CSharp: IViewEngine.FindPartialView(ControllerContext, string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)
+    CSharp: System.Web.Mvc.IViewEngine.FindPartialView(System.Web.Mvc.ControllerContext, string, bool)
   type: Method
   source:
     remote: *o0
@@ -51,9 +51,9 @@ items:
 - id: System.Web.Mvc.IViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)
   href: System.Web.Mvc.IViewEngine.yaml
   name:
-    CSharp: FindView
+    CSharp: IViewEngine.FindView(ControllerContext, string, string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)
+    CSharp: System.Web.Mvc.IViewEngine.FindView(System.Web.Mvc.ControllerContext, string, string, bool)
   type: Method
   source:
     remote: *o0
@@ -88,9 +88,9 @@ items:
 - id: System.Web.Mvc.IViewEngine.ReleaseView(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView)
   href: System.Web.Mvc.IViewEngine.yaml
   name:
-    CSharp: ReleaseView
+    CSharp: IViewEngine.ReleaseView(ControllerContext, IView)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewEngine.ReleaseView(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView)
+    CSharp: System.Web.Mvc.IViewEngine.ReleaseView(System.Web.Mvc.ControllerContext, System.Web.Mvc.IView)
   type: Method
   source:
     remote: *o0

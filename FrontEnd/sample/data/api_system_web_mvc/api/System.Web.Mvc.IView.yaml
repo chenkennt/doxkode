@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IView.Render(System.Web.Mvc.ViewContext,System.IO.TextWriter)
   href: System.Web.Mvc.IView.yaml
   name:
-    CSharp: Render
+    CSharp: IView.Render(ViewContext, TextWriter)
   qualifiedName:
-    CSharp: System.Web.Mvc.IView.Render(System.Web.Mvc.ViewContext,System.IO.TextWriter)
+    CSharp: System.Web.Mvc.IView.Render(System.Web.Mvc.ViewContext, System.IO.TextWriter)
   type: Method
   source:
     remote: *o0

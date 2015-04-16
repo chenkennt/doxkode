@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ValidatableObjectAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ValidatableObjectAdapter.yaml
   name:
-    CSharp: ValidatableObjectAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: ValidatableObjectAdapter.ValidatableObjectAdapter(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValidatableObjectAdapter.ValidatableObjectAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.ValidatableObjectAdapter.ValidatableObjectAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Constructor
   source:
     remote: *o0
@@ -53,9 +53,9 @@ items:
 - id: System.Web.Mvc.ValidatableObjectAdapter.Validate(System.Object)
   href: System.Web.Mvc.ValidatableObjectAdapter.yaml
   name:
-    CSharp: Validate
+    CSharp: ValidatableObjectAdapter.Validate(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValidatableObjectAdapter.Validate(System.Object)
+    CSharp: System.Web.Mvc.ValidatableObjectAdapter.Validate(object)
   type: Method
   source:
     remote: *o0

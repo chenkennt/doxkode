@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperties(System.Object,System.Type)
   href: System.Web.Mvc.AssociatedMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForProperties
+    CSharp: AssociatedMetadataProvider.GetMetadataForProperties(object, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperties(System.Object,System.Type)
+    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperties(object, System.Type)
   type: Method
   source:
     remote: *o0
@@ -53,9 +53,9 @@ items:
 - id: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
   href: System.Web.Mvc.AssociatedMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForProperty
+    CSharp: AssociatedMetadataProvider.GetMetadataForProperty(Func<object>, Type, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
+    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForProperty(System.Func<object>, System.Type, string)
   type: Method
   source:
     remote: *o0
@@ -85,9 +85,9 @@ items:
 - id: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)
   href: System.Web.Mvc.AssociatedMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForType
+    CSharp: AssociatedMetadataProvider.GetMetadataForType(Func<object>, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)
+    CSharp: System.Web.Mvc.AssociatedMetadataProvider.GetMetadataForType(System.Func<object>, System.Type)
   type: Method
   source:
     remote: *o0

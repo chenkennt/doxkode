@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.JsonRequestBehavior.AllowGet
   href: System.Web.Mvc.JsonRequestBehavior.yaml
   name:
-    CSharp: AllowGet
+    CSharp: JsonRequestBehavior.AllowGet
   qualifiedName:
     CSharp: System.Web.Mvc.JsonRequestBehavior.AllowGet
   type: Field
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.JsonRequestBehavior.DenyGet
   href: System.Web.Mvc.JsonRequestBehavior.yaml
   name:
-    CSharp: DenyGet
+    CSharp: JsonRequestBehavior.DenyGet
   qualifiedName:
     CSharp: System.Web.Mvc.JsonRequestBehavior.DenyGet
   type: Field

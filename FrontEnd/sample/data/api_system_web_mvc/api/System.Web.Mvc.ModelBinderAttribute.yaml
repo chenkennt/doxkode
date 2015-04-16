@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.ModelBinderAttribute.#ctor(System.Type)
   href: System.Web.Mvc.ModelBinderAttribute.yaml
   name:
-    CSharp: ModelBinderAttribute(System.Type)
+    CSharp: ModelBinderAttribute.ModelBinderAttribute(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelBinderAttribute.ModelBinderAttribute(System.Type)
   type: Constructor
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.ModelBinderAttribute.BinderType
   href: System.Web.Mvc.ModelBinderAttribute.yaml
   name:
-    CSharp: BinderType
+    CSharp: ModelBinderAttribute.BinderType
   qualifiedName:
     CSharp: System.Web.Mvc.ModelBinderAttribute.BinderType
   type: Property
@@ -71,9 +71,9 @@ items:
 - id: System.Web.Mvc.ModelBinderAttribute.GetBinder
   href: System.Web.Mvc.ModelBinderAttribute.yaml
   name:
-    CSharp: GetBinder
+    CSharp: ModelBinderAttribute.GetBinder()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelBinderAttribute.GetBinder
+    CSharp: System.Web.Mvc.ModelBinderAttribute.GetBinder()
   type: Method
   source:
     remote: *o0

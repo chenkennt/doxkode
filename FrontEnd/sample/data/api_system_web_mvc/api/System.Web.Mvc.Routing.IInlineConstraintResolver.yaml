@@ -20,9 +20,9 @@ items:
 - id: System.Web.Mvc.Routing.IInlineConstraintResolver.ResolveConstraint(System.String)
   href: System.Web.Mvc.Routing.IInlineConstraintResolver.yaml
   name:
-    CSharp: ResolveConstraint
+    CSharp: IInlineConstraintResolver.ResolveConstraint(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.IInlineConstraintResolver.ResolveConstraint(System.String)
+    CSharp: System.Web.Mvc.Routing.IInlineConstraintResolver.ResolveConstraint(string)
   type: Method
   source:
     remote: *o0

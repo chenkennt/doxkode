@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ValueProviderFactory.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: ValueProviderFactory.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

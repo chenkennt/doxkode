@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.DependencyResolver.#ctor
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: DependencyResolver
+    CSharp: DependencyResolver.DependencyResolver()
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolver.DependencyResolver
+    CSharp: System.Web.Mvc.DependencyResolver.DependencyResolver()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.DependencyResolver.Current
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: Current
+    CSharp: DependencyResolver.Current
   qualifiedName:
     CSharp: System.Web.Mvc.DependencyResolver.Current
   type: Property
@@ -60,7 +60,7 @@ items:
 - id: System.Web.Mvc.DependencyResolver.InnerCurrent
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: InnerCurrent
+    CSharp: DependencyResolver.InnerCurrent
   qualifiedName:
     CSharp: System.Web.Mvc.DependencyResolver.InnerCurrent
   type: Property
@@ -80,7 +80,7 @@ items:
 - id: System.Web.Mvc.DependencyResolver.SetResolver(System.Web.Mvc.IDependencyResolver)
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: SetResolver
+    CSharp: DependencyResolver.SetResolver(IDependencyResolver)
   qualifiedName:
     CSharp: System.Web.Mvc.DependencyResolver.SetResolver(System.Web.Mvc.IDependencyResolver)
   type: Method
@@ -102,9 +102,9 @@ items:
 - id: System.Web.Mvc.DependencyResolver.SetResolver(System.Object)
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: SetResolver
+    CSharp: DependencyResolver.SetResolver(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolver.SetResolver(System.Object)
+    CSharp: System.Web.Mvc.DependencyResolver.SetResolver(object)
   type: Method
   source:
     remote: *o0
@@ -124,9 +124,9 @@ items:
 - id: System.Web.Mvc.DependencyResolver.SetResolver(System.Func{System.Type,System.Object},System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Object}})
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: SetResolver
+    CSharp: DependencyResolver.SetResolver(Func<Type, object>, Func<Type, IEnumerable<object>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolver.SetResolver(System.Func{System.Type,System.Object},System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Object}})
+    CSharp: System.Web.Mvc.DependencyResolver.SetResolver(System.Func<System.Type, object>, System.Func<System.Type, System.Collections.Generic.IEnumerable<object>>)
   type: Method
   source:
     remote: *o0
@@ -151,7 +151,7 @@ items:
 - id: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Web.Mvc.IDependencyResolver)
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: InnerSetResolver
+    CSharp: DependencyResolver.InnerSetResolver(IDependencyResolver)
   qualifiedName:
     CSharp: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Web.Mvc.IDependencyResolver)
   type: Method
@@ -173,9 +173,9 @@ items:
 - id: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Object)
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: InnerSetResolver
+    CSharp: DependencyResolver.InnerSetResolver(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Object)
+    CSharp: System.Web.Mvc.DependencyResolver.InnerSetResolver(object)
   type: Method
   source:
     remote: *o0
@@ -195,9 +195,9 @@ items:
 - id: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Func{System.Type,System.Object},System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Object}})
   href: System.Web.Mvc.DependencyResolver.yaml
   name:
-    CSharp: InnerSetResolver
+    CSharp: DependencyResolver.InnerSetResolver(Func<Type, object>, Func<Type, IEnumerable<object>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Func{System.Type,System.Object},System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Object}})
+    CSharp: System.Web.Mvc.DependencyResolver.InnerSetResolver(System.Func<System.Type, object>, System.Func<System.Type, System.Collections.Generic.IEnumerable<object>>)
   type: Method
   source:
     remote: *o0

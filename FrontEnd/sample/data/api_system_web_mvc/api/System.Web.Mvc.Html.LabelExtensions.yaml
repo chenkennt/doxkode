@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -114,9 +114,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -146,9 +146,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -183,9 +183,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: Label
+    CSharp: LabelExtensions.Label(HtmlHelper, string, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -220,9 +220,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>)
   type: Method
   source:
     remote: *o0
@@ -247,9 +247,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)
   type: Method
   source:
     remote: *o0
@@ -279,9 +279,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, object)
   type: Method
   source:
     remote: *o0
@@ -311,9 +311,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -343,9 +343,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string, object)
   type: Method
   source:
     remote: *o0
@@ -380,9 +380,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelFor
+    CSharp: LabelExtensions.LabelFor<TModel, TValue>(HtmlHelper<TModel>, Expression<Func<TModel, TValue>>, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -417,7 +417,7 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper)
   type: Method
@@ -439,9 +439,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -466,9 +466,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper, object)
   type: Method
   source:
     remote: *o0
@@ -493,9 +493,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -520,9 +520,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -552,9 +552,9 @@ items:
 - id: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.LabelExtensions.yaml
   name:
-    CSharp: LabelForModel
+    CSharp: LabelExtensions.LabelForModel(HtmlHelper, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.LabelExtensions.LabelForModel(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

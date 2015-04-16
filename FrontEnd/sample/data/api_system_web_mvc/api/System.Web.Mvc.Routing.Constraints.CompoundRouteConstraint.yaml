@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.#ctor(System.Collections.Generic.IList{System.Web.Routing.IRouteConstraint})
   href: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.yaml
   name:
-    CSharp: CompoundRouteConstraint(System.Collections.Generic.IList{System.Web.Routing.IRouteConstraint})
+    CSharp: CompoundRouteConstraint.CompoundRouteConstraint(IList<IRouteConstraint>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.CompoundRouteConstraint(System.Collections.Generic.IList{System.Web.Routing.IRouteConstraint})
+    CSharp: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.CompoundRouteConstraint(System.Collections.Generic.IList<System.Web.Routing.IRouteConstraint>)
   type: Constructor
   source:
     remote: *o0
@@ -48,7 +48,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.Constraints
   href: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.yaml
   name:
-    CSharp: Constraints
+    CSharp: CompoundRouteConstraint.Constraints
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.Constraints
   type: Property
@@ -69,9 +69,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: CompoundRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.CompoundRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

@@ -2,8 +2,12 @@
   <!--article-content-->
   <article class="">
     <div id="article-header">
-      <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">Improve this Doc</a>
-      <a class="btn pull-right" ng-href={{::ViewSource()}}> View Source</a>
+      <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">
+        <span class="glyphicon glyphicon-edit">&nbsp;</span>Improve this Doc
+      </a>
+      <a class="btn pull-right" ng-href={{::ViewSource()}}>
+        <span class="glyphicon glyphicon-eye-open">&nbsp;</span>View Source
+      </a>
       <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
       <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
       <section>
@@ -37,9 +41,16 @@
           <!--<div class="" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">-->
           <div class="item-section">
             <div class="item-header">
-              <a class="item-toggle" ng-click="item.isCollapsed = !item.isCollapsed">
-                <div class="pull-right" ng-show = "item.isCollapsed">Hide</div>
-                <div class="pull-right" ng-show = "!item.isCollapsed">Show</div>
+              <div class="pull-right">
+                <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
+                <span ng-if="model.mdHref">
+                  <span class="divider-brand">|</span>
+                  <a ng-href="{{model.mdHref}}">Improve this Doc</a>
+                </span>
+              </div>
+              <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
+                <!--<div class="pull-right" ng-show="item.showDetail">Hide</div>
+                <div class="pull-right" ng-show="!item.showDetail">Show</div>-->
                 <div class="item-title" ng-if="::item.name.CSharp">
                   {{::item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
                 </div>
@@ -66,10 +77,8 @@
             <a class="section-member-detail" ng-click="showDetail=!showDetail; GetDetail($event)">
                 details
             </a>-->
-            <div class="item-collapsible" collapse="!item.isCollapsed">
-              <div class="">
-                <div class="markdown">{{::item.mdContent}}</div>
-              </div>
+            <div class="item-collapsible" ng-show="item.showDetail">
+              <div class="markdown">{{::item.mdContent}}</div>
               <div class="" ng-if="::item.syntax">
                 <div class="declaration">
                   <h5>Declaration</h5>

@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: AddImplicitRequiredAttributeForValueTypes
+    CSharp: DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes
   type: Property
@@ -63,9 +63,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapter(System.Type,System.Type)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterAdapter
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterAdapter(Type, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapter(System.Type,System.Type)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapter(System.Type, System.Type)
   type: Method
   source:
     remote: *o0
@@ -90,9 +90,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapterFactory(System.Type,System.Web.Mvc.DataAnnotationsModelValidationFactory)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterAdapterFactory
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterAdapterFactory(Type, DataAnnotationsModelValidationFactory)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapterFactory(System.Type,System.Web.Mvc.DataAnnotationsModelValidationFactory)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterAdapterFactory(System.Type, System.Web.Mvc.DataAnnotationsModelValidationFactory)
   type: Method
   source:
     remote: *o0
@@ -117,7 +117,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapter(System.Type)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterDefaultAdapter
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterDefaultAdapter(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapter(System.Type)
   type: Method
@@ -139,7 +139,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapterFactory(System.Web.Mvc.DataAnnotationsModelValidationFactory)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterDefaultAdapterFactory
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterDefaultAdapterFactory(DataAnnotationsModelValidationFactory)
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultAdapterFactory(System.Web.Mvc.DataAnnotationsModelValidationFactory)
   type: Method
@@ -161,9 +161,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter(System.Type,System.Type)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterValidatableObjectAdapter
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter(Type, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter(System.Type,System.Type)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapter(System.Type, System.Type)
   type: Method
   source:
     remote: *o0
@@ -198,9 +198,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory(System.Type,System.Web.Mvc.DataAnnotationsValidatableObjectAdapterFactory)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterValidatableObjectAdapterFactory
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory(Type, DataAnnotationsValidatableObjectAdapterFactory)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory(System.Type,System.Web.Mvc.DataAnnotationsValidatableObjectAdapterFactory)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterValidatableObjectAdapterFactory(System.Type, System.Web.Mvc.DataAnnotationsValidatableObjectAdapterFactory)
   type: Method
   source:
     remote: *o0
@@ -229,7 +229,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapter(System.Type)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterDefaultValidatableObjectAdapter
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapter(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapter(System.Type)
   type: Method
@@ -261,7 +261,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapterFactory(System.Web.Mvc.DataAnnotationsValidatableObjectAdapterFactory)
   href: System.Web.Mvc.DataAnnotationsModelValidatorProvider.yaml
   name:
-    CSharp: RegisterDefaultValidatableObjectAdapterFactory
+    CSharp: DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapterFactory(DataAnnotationsValidatableObjectAdapterFactory)
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidatorProvider.RegisterDefaultValidatableObjectAdapterFactory(System.Web.Mvc.DataAnnotationsValidatableObjectAdapterFactory)
   type: Method

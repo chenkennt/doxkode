@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.DefaultControllerFactory.#ctor
   href: System.Web.Mvc.DefaultControllerFactory.yaml
   name:
-    CSharp: DefaultControllerFactory
+    CSharp: DefaultControllerFactory.DefaultControllerFactory()
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultControllerFactory.DefaultControllerFactory
+    CSharp: System.Web.Mvc.DefaultControllerFactory.DefaultControllerFactory()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.DefaultControllerFactory.#ctor(System.Web.Mvc.IControllerActivator)
   href: System.Web.Mvc.DefaultControllerFactory.yaml
   name:
-    CSharp: DefaultControllerFactory(System.Web.Mvc.IControllerActivator)
+    CSharp: DefaultControllerFactory.DefaultControllerFactory(IControllerActivator)
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultControllerFactory.DefaultControllerFactory(System.Web.Mvc.IControllerActivator)
   type: Constructor
@@ -62,9 +62,9 @@ items:
 - id: System.Web.Mvc.DefaultControllerFactory.CreateController(System.Web.Routing.RequestContext,System.String)
   href: System.Web.Mvc.DefaultControllerFactory.yaml
   name:
-    CSharp: CreateController
+    CSharp: DefaultControllerFactory.CreateController(RequestContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultControllerFactory.CreateController(System.Web.Routing.RequestContext,System.String)
+    CSharp: System.Web.Mvc.DefaultControllerFactory.CreateController(System.Web.Routing.RequestContext, string)
   type: Method
   source:
     remote: *o0
@@ -89,7 +89,7 @@ items:
 - id: System.Web.Mvc.DefaultControllerFactory.ReleaseController(System.Web.Mvc.IController)
   href: System.Web.Mvc.DefaultControllerFactory.yaml
   name:
-    CSharp: ReleaseController
+    CSharp: DefaultControllerFactory.ReleaseController(IController)
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultControllerFactory.ReleaseController(System.Web.Mvc.IController)
   type: Method

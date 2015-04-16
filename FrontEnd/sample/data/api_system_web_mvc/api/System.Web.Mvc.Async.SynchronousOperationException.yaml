@@ -35,9 +35,9 @@ items:
 - id: System.Web.Mvc.Async.SynchronousOperationException.#ctor
   href: System.Web.Mvc.Async.SynchronousOperationException.yaml
   name:
-    CSharp: SynchronousOperationException
+    CSharp: SynchronousOperationException.SynchronousOperationException()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException
+    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException()
   type: Constructor
   source:
     remote: *o0
@@ -52,9 +52,9 @@ items:
 - id: System.Web.Mvc.Async.SynchronousOperationException.#ctor(System.String)
   href: System.Web.Mvc.Async.SynchronousOperationException.yaml
   name:
-    CSharp: SynchronousOperationException(System.String)
+    CSharp: SynchronousOperationException.SynchronousOperationException(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException(System.String)
+    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException(string)
   type: Constructor
   source:
     remote: *o0
@@ -74,9 +74,9 @@ items:
 - id: System.Web.Mvc.Async.SynchronousOperationException.#ctor(System.String,System.Exception)
   href: System.Web.Mvc.Async.SynchronousOperationException.yaml
   name:
-    CSharp: SynchronousOperationException(System.String,System.Exception)
+    CSharp: SynchronousOperationException.SynchronousOperationException(string, Exception)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException(System.String,System.Exception)
+    CSharp: System.Web.Mvc.Async.SynchronousOperationException.SynchronousOperationException(string, System.Exception)
   type: Constructor
   source:
     remote: *o0

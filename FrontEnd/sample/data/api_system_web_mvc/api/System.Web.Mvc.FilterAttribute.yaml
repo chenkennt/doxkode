@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.FilterAttribute.AllowMultiple
   href: System.Web.Mvc.FilterAttribute.yaml
   name:
-    CSharp: AllowMultiple
+    CSharp: FilterAttribute.AllowMultiple
   qualifiedName:
     CSharp: System.Web.Mvc.FilterAttribute.AllowMultiple
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.FilterAttribute.Order
   href: System.Web.Mvc.FilterAttribute.yaml
   name:
-    CSharp: Order
+    CSharp: FilterAttribute.Order
   qualifiedName:
     CSharp: System.Web.Mvc.FilterAttribute.Order
   type: Property

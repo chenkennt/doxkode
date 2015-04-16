@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable)
+    CSharp: SelectList.SelectList(IEnumerable)
   qualifiedName:
     CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable)
   type: Constructor
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.Object)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.Object)
+    CSharp: SelectList.SelectList(IEnumerable, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.Object)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, object)
   type: Constructor
   source:
     remote: *o0
@@ -75,9 +75,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.Object,System.Collections.IEnumerable)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.Object,System.Collections.IEnumerable)
+    CSharp: SelectList.SelectList(IEnumerable, object, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.Object,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, object, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -120,9 +120,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String)
+    CSharp: SelectList.SelectList(IEnumerable, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string)
   type: Constructor
   source:
     remote: *o0
@@ -152,9 +152,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.Object)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String,System.Object)
+    CSharp: SelectList.SelectList(IEnumerable, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string, object)
   type: Constructor
   source:
     remote: *o0
@@ -189,9 +189,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object)
+    CSharp: SelectList.SelectList(IEnumerable, string, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string, string, object)
   type: Constructor
   source:
     remote: *o0
@@ -252,9 +252,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.Object,System.Collections.IEnumerable)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String,System.Object,System.Collections.IEnumerable)
+    CSharp: SelectList.SelectList(IEnumerable, string, string, object, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String,System.Object,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string, object, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -315,9 +315,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable)
+    CSharp: SelectList.SelectList(IEnumerable, string, string, string, object, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string, string, object, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -389,9 +389,9 @@ items:
 - id: System.Web.Mvc.SelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: SelectList.SelectList(IEnumerable, string, string, string, object, IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Object,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.SelectList.SelectList(System.Collections.IEnumerable, string, string, string, object, System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -472,7 +472,7 @@ items:
 - id: System.Web.Mvc.SelectList.SelectedValue
   href: System.Web.Mvc.SelectList.yaml
   name:
-    CSharp: SelectedValue
+    CSharp: SelectList.SelectedValue
   qualifiedName:
     CSharp: System.Web.Mvc.SelectList.SelectedValue
   type: Property

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationInputCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationInputCssClassName
+    CSharp: HtmlHelper.ValidationInputCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationInputCssClassName
   type: Field
@@ -37,7 +37,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationInputValidCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationInputValidCssClassName
+    CSharp: HtmlHelper.ValidationInputValidCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationInputValidCssClassName
   type: Field
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationMessageCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationMessageCssClassName
+    CSharp: HtmlHelper.ValidationMessageCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationMessageCssClassName
   type: Field
@@ -65,7 +65,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationMessageValidCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationMessageValidCssClassName
+    CSharp: HtmlHelper.ValidationMessageValidCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationMessageValidCssClassName
   type: Field
@@ -79,7 +79,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationSummaryCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationSummaryCssClassName
+    CSharp: HtmlHelper.ValidationSummaryCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationSummaryCssClassName
   type: Field
@@ -93,7 +93,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationSummaryValidCssClassName
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationSummaryValidCssClassName
+    CSharp: HtmlHelper.ValidationSummaryValidCssClassName
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationSummaryValidCssClassName
   type: Field
@@ -107,9 +107,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: HtmlHelper(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: HtmlHelper.HtmlHelper(ViewContext, IViewDataContainer)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.HtmlHelper(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: System.Web.Mvc.HtmlHelper.HtmlHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer)
   type: Constructor
   source:
     remote: *o0
@@ -134,9 +134,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: HtmlHelper(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: HtmlHelper.HtmlHelper(ViewContext, IViewDataContainer, RouteCollection)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.HtmlHelper(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: System.Web.Mvc.HtmlHelper.HtmlHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer, System.Web.Routing.RouteCollection)
   type: Constructor
   source:
     remote: *o0
@@ -166,7 +166,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ClientValidationEnabled
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ClientValidationEnabled
+    CSharp: HtmlHelper.ClientValidationEnabled
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ClientValidationEnabled
   type: Property
@@ -186,7 +186,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.IdAttributeDotReplacement
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: IdAttributeDotReplacement
+    CSharp: HtmlHelper.IdAttributeDotReplacement
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.IdAttributeDotReplacement
   type: Property
@@ -206,7 +206,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.RouteCollection
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: RouteCollection
+    CSharp: HtmlHelper.RouteCollection
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.RouteCollection
   type: Property
@@ -226,7 +226,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.UnobtrusiveJavaScriptEnabled
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: UnobtrusiveJavaScriptEnabled
+    CSharp: HtmlHelper.UnobtrusiveJavaScriptEnabled
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.UnobtrusiveJavaScriptEnabled
   type: Property
@@ -246,7 +246,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationSummaryMessageElement
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationSummaryMessageElement
+    CSharp: HtmlHelper.ValidationSummaryMessageElement
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationSummaryMessageElement
   type: Property
@@ -270,7 +270,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ValidationMessageElement
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ValidationMessageElement
+    CSharp: HtmlHelper.ValidationMessageElement
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ValidationMessageElement
   type: Property
@@ -294,7 +294,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ViewBag
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ViewBag
+    CSharp: HtmlHelper.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ViewBag
   type: Property
@@ -312,7 +312,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ViewContext
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ViewContext
+    CSharp: HtmlHelper.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ViewContext
   type: Property
@@ -332,7 +332,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ViewData
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ViewData
+    CSharp: HtmlHelper.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ViewData
   type: Property
@@ -352,7 +352,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ViewDataContainer
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ViewDataContainer
+    CSharp: HtmlHelper.ViewDataContainer
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.ViewDataContainer
   type: Property
@@ -372,9 +372,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AnonymousObjectToHtmlAttributes(System.Object)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AnonymousObjectToHtmlAttributes
+    CSharp: HtmlHelper.AnonymousObjectToHtmlAttributes(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AnonymousObjectToHtmlAttributes(System.Object)
+    CSharp: System.Web.Mvc.HtmlHelper.AnonymousObjectToHtmlAttributes(object)
   type: Method
   source:
     remote: *o0
@@ -400,9 +400,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AntiForgeryToken
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AntiForgeryToken
+    CSharp: HtmlHelper.AntiForgeryToken()
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken
+    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken()
   type: Method
   source:
     remote: *o0
@@ -417,7 +417,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.Html5DateRenderingMode
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: Html5DateRenderingMode
+    CSharp: HtmlHelper.Html5DateRenderingMode
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.Html5DateRenderingMode
   type: Property
@@ -441,9 +441,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AntiForgeryToken(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AntiForgeryToken
+    CSharp: HtmlHelper.AntiForgeryToken(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken(string)
   type: Method
   source:
     remote: *o0
@@ -463,9 +463,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AntiForgeryToken(System.String,System.String,System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AntiForgeryToken
+    CSharp: HtmlHelper.AntiForgeryToken(string, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken(System.String,System.String,System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.AntiForgeryToken(string, string, string)
   type: Method
   source:
     remote: *o0
@@ -495,9 +495,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AttributeEncode(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AttributeEncode
+    CSharp: HtmlHelper.AttributeEncode(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AttributeEncode(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.AttributeEncode(string)
   type: Method
   source:
     remote: *o0
@@ -517,9 +517,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.AttributeEncode(System.Object)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: AttributeEncode
+    CSharp: HtmlHelper.AttributeEncode(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.AttributeEncode(System.Object)
+    CSharp: System.Web.Mvc.HtmlHelper.AttributeEncode(object)
   type: Method
   source:
     remote: *o0
@@ -539,9 +539,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.EnableClientValidation
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: EnableClientValidation
+    CSharp: HtmlHelper.EnableClientValidation()
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.EnableClientValidation
+    CSharp: System.Web.Mvc.HtmlHelper.EnableClientValidation()
   type: Method
   source:
     remote: *o0
@@ -556,9 +556,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.EnableClientValidation(System.Boolean)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: EnableClientValidation
+    CSharp: HtmlHelper.EnableClientValidation(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.EnableClientValidation(System.Boolean)
+    CSharp: System.Web.Mvc.HtmlHelper.EnableClientValidation(bool)
   type: Method
   source:
     remote: *o0
@@ -578,9 +578,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: EnableUnobtrusiveJavaScript
+    CSharp: HtmlHelper.EnableUnobtrusiveJavaScript()
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript
+    CSharp: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript()
   type: Method
   source:
     remote: *o0
@@ -595,9 +595,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript(System.Boolean)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: EnableUnobtrusiveJavaScript
+    CSharp: HtmlHelper.EnableUnobtrusiveJavaScript(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript(System.Boolean)
+    CSharp: System.Web.Mvc.HtmlHelper.EnableUnobtrusiveJavaScript(bool)
   type: Method
   source:
     remote: *o0
@@ -617,9 +617,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.Encode(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: Encode
+    CSharp: HtmlHelper.Encode(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.Encode(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.Encode(string)
   type: Method
   source:
     remote: *o0
@@ -639,9 +639,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.Encode(System.Object)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: Encode
+    CSharp: HtmlHelper.Encode(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.Encode(System.Object)
+    CSharp: System.Web.Mvc.HtmlHelper.Encode(object)
   type: Method
   source:
     remote: *o0
@@ -661,9 +661,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.FormatValue(System.Object,System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: FormatValue
+    CSharp: HtmlHelper.FormatValue(object, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.FormatValue(System.Object,System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.FormatValue(object, string)
   type: Method
   source:
     remote: *o0
@@ -688,9 +688,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateIdFromName(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateIdFromName
+    CSharp: HtmlHelper.GenerateIdFromName(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateIdFromName(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateIdFromName(string)
   type: Method
   source:
     remote: *o0
@@ -710,9 +710,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateIdFromName(System.String,System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateIdFromName
+    CSharp: HtmlHelper.GenerateIdFromName(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateIdFromName(System.String,System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateIdFromName(string, string)
   type: Method
   source:
     remote: *o0
@@ -737,9 +737,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateLink
+    CSharp: HtmlHelper.GenerateLink(RequestContext, RouteCollection, string, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext, System.Web.Routing.RouteCollection, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -794,9 +794,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateLink
+    CSharp: HtmlHelper.GenerateLink(RequestContext, RouteCollection, string, string, string, string, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateLink(System.Web.Routing.RequestContext, System.Web.Routing.RouteCollection, string, string, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -866,9 +866,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateRouteLink
+    CSharp: HtmlHelper.GenerateRouteLink(RequestContext, RouteCollection, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext, System.Web.Routing.RouteCollection, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -913,9 +913,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GenerateRouteLink
+    CSharp: HtmlHelper.GenerateRouteLink(RequestContext, RouteCollection, string, string, string, string, string, RouteValueDictionary, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext,System.Web.Routing.RouteCollection,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.HtmlHelper.GenerateRouteLink(System.Web.Routing.RequestContext, System.Web.Routing.RouteCollection, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -975,7 +975,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GetFormMethodString(System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GetFormMethodString
+    CSharp: HtmlHelper.GetFormMethodString(FormMethod)
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.GetFormMethodString(System.Web.Mvc.FormMethod)
   type: Method
@@ -997,7 +997,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GetInputTypeString(System.Web.Mvc.InputType)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GetInputTypeString
+    CSharp: HtmlHelper.GetInputTypeString(InputType)
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.GetInputTypeString(System.Web.Mvc.InputType)
   type: Method
@@ -1019,9 +1019,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GetUnobtrusiveValidationAttributes
+    CSharp: HtmlHelper.GetUnobtrusiveValidationAttributes(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(string)
   type: Method
   source:
     remote: *o0
@@ -1041,9 +1041,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(System.String,System.Web.Mvc.ModelMetadata)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: GetUnobtrusiveValidationAttributes
+    CSharp: HtmlHelper.GetUnobtrusiveValidationAttributes(string, ModelMetadata)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(System.String,System.Web.Mvc.ModelMetadata)
+    CSharp: System.Web.Mvc.HtmlHelper.GetUnobtrusiveValidationAttributes(string, System.Web.Mvc.ModelMetadata)
   type: Method
   source:
     remote: *o0
@@ -1068,7 +1068,7 @@ items:
 - id: System.Web.Mvc.HtmlHelper.HttpMethodOverride(System.Web.Mvc.HttpVerbs)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: HttpMethodOverride
+    CSharp: HtmlHelper.HttpMethodOverride(HttpVerbs)
   qualifiedName:
     CSharp: System.Web.Mvc.HtmlHelper.HttpMethodOverride(System.Web.Mvc.HttpVerbs)
   type: Method
@@ -1090,9 +1090,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.HttpMethodOverride(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: HttpMethodOverride
+    CSharp: HtmlHelper.HttpMethodOverride(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.HttpMethodOverride(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.HttpMethodOverride(string)
   type: Method
   source:
     remote: *o0
@@ -1112,9 +1112,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.Raw(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: Raw
+    CSharp: HtmlHelper.Raw(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.Raw(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.Raw(string)
   type: Method
   source:
     remote: *o0
@@ -1140,9 +1140,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.Raw(System.Object)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: Raw
+    CSharp: HtmlHelper.Raw(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.Raw(System.Object)
+    CSharp: System.Web.Mvc.HtmlHelper.Raw(object)
   type: Method
   source:
     remote: *o0
@@ -1168,9 +1168,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.SetValidationSummaryMessageElement(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: SetValidationSummaryMessageElement
+    CSharp: HtmlHelper.SetValidationSummaryMessageElement(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.SetValidationSummaryMessageElement(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.SetValidationSummaryMessageElement(string)
   type: Method
   source:
     remote: *o0
@@ -1194,9 +1194,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.SetValidationMessageElement(System.String)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: SetValidationMessageElement
+    CSharp: HtmlHelper.SetValidationMessageElement(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.SetValidationMessageElement(System.String)
+    CSharp: System.Web.Mvc.HtmlHelper.SetValidationMessageElement(string)
   type: Method
   source:
     remote: *o0
@@ -1220,9 +1220,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper.ObjectToDictionary(System.Object)
   href: System.Web.Mvc.HtmlHelper.yaml
   name:
-    CSharp: ObjectToDictionary
+    CSharp: HtmlHelper.ObjectToDictionary(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper.ObjectToDictionary(System.Object)
+    CSharp: System.Web.Mvc.HtmlHelper.ObjectToDictionary(object)
   type: Method
   source:
     remote: *o0

@@ -35,9 +35,9 @@ items:
 - id: System.Web.Mvc.NoAsyncTimeoutAttribute.#ctor
   href: System.Web.Mvc.NoAsyncTimeoutAttribute.yaml
   name:
-    CSharp: NoAsyncTimeoutAttribute
+    CSharp: NoAsyncTimeoutAttribute.NoAsyncTimeoutAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.NoAsyncTimeoutAttribute.NoAsyncTimeoutAttribute
+    CSharp: System.Web.Mvc.NoAsyncTimeoutAttribute.NoAsyncTimeoutAttribute()
   type: Constructor
   source:
     remote: *o0

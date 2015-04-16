@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.HandleErrorAttribute.ExceptionType
   href: System.Web.Mvc.HandleErrorAttribute.yaml
   name:
-    CSharp: ExceptionType
+    CSharp: HandleErrorAttribute.ExceptionType
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorAttribute.ExceptionType
   type: Property
@@ -49,7 +49,7 @@ items:
 - id: System.Web.Mvc.HandleErrorAttribute.Master
   href: System.Web.Mvc.HandleErrorAttribute.yaml
   name:
-    CSharp: Master
+    CSharp: HandleErrorAttribute.Master
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorAttribute.Master
   type: Property
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.HandleErrorAttribute.TypeId
   href: System.Web.Mvc.HandleErrorAttribute.yaml
   name:
-    CSharp: TypeId
+    CSharp: HandleErrorAttribute.TypeId
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorAttribute.TypeId
   type: Property
@@ -89,7 +89,7 @@ items:
 - id: System.Web.Mvc.HandleErrorAttribute.View
   href: System.Web.Mvc.HandleErrorAttribute.yaml
   name:
-    CSharp: View
+    CSharp: HandleErrorAttribute.View
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorAttribute.View
   type: Property
@@ -109,7 +109,7 @@ items:
 - id: System.Web.Mvc.HandleErrorAttribute.OnException(System.Web.Mvc.ExceptionContext)
   href: System.Web.Mvc.HandleErrorAttribute.yaml
   name:
-    CSharp: OnException
+    CSharp: HandleErrorAttribute.OnException(ExceptionContext)
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorAttribute.OnException(System.Web.Mvc.ExceptionContext)
   type: Method
