@@ -18,7 +18,7 @@
   'use strict';
 
   function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-    NG_PAGES, NG_VERSION, NG_ITEMTYPES, styleProvider, contentService, urlService, docsMarkdownService) {
+    NG_PAGES, NG_VERSION, NG_ITEMTYPES, styleProvider, contentService, urlService) {
     $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
 
     // TODO: Hacky, need change, how to bind this if move it to styleProvider?
@@ -48,76 +48,9 @@
       };
     };
 
-    var md = (function() {
-      marked.setOptions({
-        gfm: true,
-        pedantic: false,
-        sanitize: true
-      });
-
-      var toHtml = function(markdown) {
-        if (!markdown)
-          return '';
-
-        return marked(markdown);
-      };
-      return {
-        toHtml: toHtml
-      };
-    }());
-    //This is used to convert all the markdown content into html when the page is loaded
-    //But I just finished it in jquery, maybe someone can change it into angularjs style
-    $scope.finishLoading = function() {
-      $timeout(function() {
-        //declaration
-        var declarationElement = $("div.declaration-content").html(function() {
-          var language = $(this).attr("ng-language");
-          return '<pre><code class="lang-' + language + '">' + $(this).context.innerText + '</code></pre>';
-        }).each(function(i, block) {
-          hljs.highlightBlock(block);
-        });
-        //markdown
-        var markdownElement = $("div.markdown").html(function() {
-          var html = md.toHtml($(this).text());
-          return html;
-        });
-        markdownElement.find("code").each(function(i, block) {
-          // use highlight.js to highlight code
-          hljs.highlightBlock(block);
-          // Add try button
-          block = block.parentNode;
-          var wrapper = document.createElement("div");
-          wrapper.className = "codewrapper";
-          wrapper.innerHTML = '<div class="trydiv"><span class="tryspan">Try this code</span></div>';
-          wrapper.childNodes[0].childNodes[0].onclick = function() {
-            docsMarkdownService.tryCode(true, block.innerText);
-          };
-          block.parentNode.replaceChild(wrapper, block);
-          wrapper.appendChild(block);
-        });
-        markdownElement.find("code").each(function(i, block) {
-          var url = block.attributes['href'] && block.attributes['href'].value;
-          if (!url) return;
-          if (!urlService.isAbsoluteUrl(url))
-            block.attributes['href'].value = urlService.getHref($scope, $location.path(), url);
-        });
-        markdownElement.find("code").each(function(i, block) {
-          var url = block.attributes['src'] && block.attributes['src'].value;
-          if (!url) return;
-          if (!urlService.isAbsoluteUrl(url))
-            block.attributes['src'].value = urlService.getAbsolutePath($location.path(), url);
-        });
-      }, 1, false);
-    };
-
     $scope.getNumber = function(num) {
       return new Array(num + 1);
     };
-
-    /*$scope.GetDetail = function(e) {
-      var display = e.target.nextElementSibling.style.display;
-      e.target.nextElementSibling.style.display = (display === 'block') ? 'none' : 'block';
-    };*/
 
     $scope.ViewSource = function() {
       return urlService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
@@ -368,7 +301,7 @@
   angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.styleProvider', 'docascode.directives'])
     .controller('DocsController', [
       '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES','styleProvider', 'contentService', 'urlService', 'docsMarkdownService',
+      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES','styleProvider', 'contentService', 'urlService',
       DocsCtrl
     ]);
 

@@ -13,6 +13,17 @@ namespace DocAsCode.EntityModel
         {
         }
 
+        public override YamlItemViewModel DefaultVisit(ISymbol symbol)
+        {
+            var item = base.DefaultVisit(symbol);
+            if (item != null)
+            {
+                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.VB, symbol.ToDisplayString(SymbolDisplayFormat.VisualBasicShortErrorMessageFormat) } };
+                item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.VB, symbol.ToDisplayString(SymbolDisplayFormat.VisualBasicErrorMessageFormat) } };
+            }
+            return item;
+        }
+
         public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;

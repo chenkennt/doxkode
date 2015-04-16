@@ -148,6 +148,12 @@
     <None Include="Assets\TestClass1\TestClass2\Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Assets\TestClass1\CatLibrary\Class1.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\TestClass1\CatLibrary\Properties\AssemblyInfo.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="CommonUtiiltyUnitTest.cs" />
     <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataUnitTest.cs" />
@@ -214,6 +220,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TestClass1\VBTestClass1\My Project\Resources.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\TestClass1\CatLibrary\CatLibrary.csproj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

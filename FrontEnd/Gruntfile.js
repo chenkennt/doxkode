@@ -32,6 +32,7 @@ module.exports = function(grunt) {
         //'app/js/search-worker.js',
         'app/js/services/contentService.js',
         'app/js/services/styleProvider.js',
+        'app/js/services/csplayService.js',
         'app/js/services/urlService.js',
         'app/js/app.js',
         'app/js/bootstrap.js',
@@ -90,26 +91,44 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-        files: [
-            'Gruntfile.js',
-            'app/js/*.js',
-            'app/js/services/*.js',
-            'app/css/*.css',
-            'app/css/**/*.css',
-            'app/css/*.css',
-            'app/css/*.less',
-            'app/css/**/*.less',
-            'app/template/*.tmpl',
-            'app/index.tmpl',
-            'sample/data/**/*.*',
-        ],
-        tasks: ['jshint', 'test']
+        test: {
+            files: [
+                'Gruntfile.js',
+                'app/js/*.js',
+                'app/js/services/*.js',
+                'app/css/*.css',
+                'app/css/**/*.css',
+                'app/css/*.css',
+                'app/css/*.less',
+                'app/css/**/*.less',
+                'app/template/*.tmpl',
+                'app/index.tmpl',
+                'sample/data/**/*.*',
+            ],
+            tasks: ['jshint', 'test']
+        },
+        'test.min': {
+            files: [
+                'Gruntfile.js',
+                'app/js/*.js',
+                'app/js/services/*.js',
+                'app/css/*.css',
+                'app/css/**/*.css',
+                'app/css/*.css',
+                'app/css/*.less',
+                'app/css/**/*.less',
+                'app/template/*.tmpl',
+                'app/index.tmpl',
+                'sample/data.min/**/*.*',
+            ],
+            tasks: ['jshint', 'test.min']
+        }
     },
     connect: {
       debug: {
         options: {
           port: 8000,
-          hostname: '0.0.0.0',
+          hostname: 'localhost',
           base: './sample/host/debug',
           keepalive: true
         }
@@ -117,11 +136,27 @@ module.exports = function(grunt) {
       release: {
         options: {
           port: 8001,
-          hostname: '0.0.0.0',
+          hostname: 'localhost',
           base: './sample/host/release',
           keepalive: true
         }
       },
+      'debug.min': {
+        options: {
+          port: 8002,
+          hostname: 'localhost',
+          base: './sample/host.min/debug',
+          keepalive: true
+        }
+      },
+      'release.min': {
+        options: {
+          port: 8003,
+          hostname: 'localhost',
+          base: './sample/host.min/release',
+          keepalive: true
+        }
+      }
     },
     less: {
         dev: {
@@ -184,7 +219,8 @@ module.exports = function(grunt) {
     clean: {
         debug: ['debug/'],
         release: ['release/'],
-        test: ['sample/host/**']
+        test: ['sample/host/**'],
+        'test.min': ['sample/host.min']
     },
     copy: {
         debug: {
@@ -224,6 +260,14 @@ module.exports = function(grunt) {
             {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/debug' },
             {expand: true, src: ['**'], cwd: 'release/', dest: 'sample/host/release' },
             {expand: true, src: ['**'], cwd: 'sample/data/', dest: 'sample/host/release' },
+          ]
+        },
+        'test.min': {
+          files: [
+            {expand: true, src: ['**'], cwd: 'debug/', dest: 'sample/host.min/debug' },
+            {expand: true, src: ['**'], cwd: 'sample/data.min/', dest: 'sample/host.min/debug' },
+            {expand: true, src: ['**'], cwd: 'release/', dest: 'sample/host.min/release' },
+            {expand: true, src: ['**'], cwd: 'sample/data.min/', dest: 'sample/host.min/release' },
           ]
         },
         vsix: {
@@ -284,7 +328,9 @@ module.exports = function(grunt) {
     grunt.registerTask('testinline', [ 'debuginline', 'releaseinline', 'clean:test', 'copy:test']);
     grunt.registerTask('vsix', [ 'release', 'copy:vsix']);
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
-    grunt.registerTask('default', ['debug']);
     grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:debug' ]);
     grunt.registerTask('serverrelease', [ 'release', 'copy:test', 'connect:release' ]);
+    grunt.registerTask('test.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min', 'connect:debug.min']);
+    grunt.registerTask('test.release.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min', 'connect:release.min']);
+    grunt.registerTask('default', ['test.min']);
 };

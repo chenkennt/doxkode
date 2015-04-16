@@ -11,10 +11,9 @@
       <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
       <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
       <section>
-        <div class="markdown">{{::model.summary}}</div>
+        <markdown ng-model="model.summary"></markdown>
       </section>
       <section>
-        <!--div class="markdown">{{::model.summary}}</div-->
         <markdown ng-model="model.mdContent"></markdown>
       </section>
       <section id="metadata_table" class="inheritance">
@@ -71,7 +70,7 @@
               </div>
             </div>-->
             <div class="item-summary">
-              <div class="markdown">{{::item.summary}}</div>
+              <markdown ng-model="item.summary"></markdown>
             </div>
             <!--<a class="section-member-detail-before"  ng-init="showDetail=false"  ng-show="showDetail"> - </a>
             <a class="section-member-detail-before" ng-show="!showDetail"> + </a>
@@ -79,12 +78,11 @@
                 details
             </a>-->
             <div class="item-collapsible" ng-show="item.showDetail">
-              <div class="markdown">{{::item.mdContent}}</div>
+              <markdown ng-model="item.mdContent"></markdown>
               <div class="" ng-if="::item.syntax">
                 <div class="declaration">
                   <h5>Declaration</h5>
-                    <div class="declaration-content sudo-pre" ng-if="::item.syntax.content.CSharp" ng-language="csharp">{{::item.syntax.content.CSharp}}</div>
-                    <div class="declaration-content sudo-pre" ng-if="::(!item.syntax.content.CSharp && item.syntax.content.VB)" ng-language="vb">{{::item.syntax.content.VB}}</div>
+                    <pre><code class="sudo-pre" ng-model="item.syntax.content"></code></pre>
                 </div>
                 <div class="parameters" ng-if="::(item.syntax.parameters && item.type == 'Property')" >
                   <h5>Property Value</h5>
@@ -96,7 +94,7 @@
                       <td>
                         <div class="">
                           <p class="">
-                            <div class="markdown">{{::par.description}}</div>
+                            <markdown ng-model="par.description"></markdown>
                           </p>
                         </div>
                       </td>
@@ -116,7 +114,7 @@
                       <td>
                         <div class="definition">
                           <p class="para">
-                              <div class="markdown">{{::par.description}}</div>
+                              <markdown ng-model="par.description"></markdown>
                           </p>
                         </div>
                       </td>
@@ -133,7 +131,7 @@
                       <td>
                         <div class="definition">
                           <p class="para">
-                            <div class="markdown">{{::item.syntax.return.description}}</div>
+                              <markdown ng-model="item.syntax.return.description"></markdown>
                           </p>
                         </div>
                       </td>
