@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-178-g5311e7b
-  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-180-g7a6962d
+  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 898
 syntax:
   content:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 907
   summary: extension method
   syntax:

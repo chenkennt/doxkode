@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-178-g5311e7b
-  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-180-g7a6962d
+  path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 805
 summary: Struct ContainersRefType
 syntax:
@@ -33,7 +33,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 811
   summary: ColorCount
   syntax:
@@ -48,7 +48,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 843
   summary: GetColorCount
   syntax:
@@ -69,7 +69,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 861
   summary: >-
     ContainersRefTypeNonRefMethod
@@ -95,7 +95,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 879
   syntax:
     content:
@@ -109,7 +109,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 881
   syntax:
     content:
@@ -131,7 +131,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_45_03/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 882
   syntax:
     content:
