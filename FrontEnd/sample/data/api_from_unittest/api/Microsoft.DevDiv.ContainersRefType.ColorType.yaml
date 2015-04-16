@@ -1,7 +1,7 @@
 id: Microsoft.DevDiv.ContainersRefType.ColorType
 href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
 name:
-  CSharp: ColorType
+  CSharp: ContainersRefType.ColorType
 qualifiedName:
   CSharp: Microsoft.DevDiv.ContainersRefType.ColorType
 type: Enum
@@ -9,9 +9,9 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 797
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 817
 summary: Enumeration ColorType
 syntax:
   content:
@@ -30,14 +30,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ColorType.Red
   href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
   name:
-    CSharp: Red
+    CSharp: ContainersRefType.ColorType.Red
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Red
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 802
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 822
   summary: red
   syntax:
     content:
@@ -45,14 +45,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
   href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
   name:
-    CSharp: Blue
+    CSharp: ContainersRefType.ColorType.Blue
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 806
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 826
   summary: blue
   syntax:
     content:
@@ -60,14 +60,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
   href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
   name:
-    CSharp: Yellow
+    CSharp: ContainersRefType.ColorType.Yellow
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 810
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 830
   summary: yellow
   syntax:
     content:

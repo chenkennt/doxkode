@@ -1,0 +1,67 @@
+id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+name:
+  CSharp: EventInfoArgs
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+type: Class
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 764
+syntax:
+  content:
+    CSharp: public class EventInfoArgs
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: System.EventArgs
+  name: System.EventArgs
+  isExternal: true
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+  name:
+    CSharp: EventInfoArgs.EventInfoArgs(string)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventInfoArgs(string)
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 766
+  syntax:
+    content:
+      CSharp: public EventInfoArgs(string eventProperty)
+    parameters:
+    - id: eventProperty
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+  name:
+    CSharp: EventInfoArgs.EventProperty
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 771
+  syntax:
+    content:
+      CSharp: public string EventProperty { get; private set; }
+    parameters:
+    - id: EventProperty
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true

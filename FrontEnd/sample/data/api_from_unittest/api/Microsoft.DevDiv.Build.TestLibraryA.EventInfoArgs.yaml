@@ -9,9 +9,9 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 744
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 764
 syntax:
   content:
     CSharp: public class EventInfoArgs
@@ -26,14 +26,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
   href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
   name:
-    CSharp: EventInfoArgs(System.String)
+    CSharp: EventInfoArgs.EventInfoArgs(string)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventInfoArgs(System.String)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventInfoArgs(string)
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 746
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 766
   syntax:
     content:
       CSharp: public EventInfoArgs(string eventProperty)
@@ -48,14 +48,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
   href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
   name:
-    CSharp: EventProperty
+    CSharp: EventInfoArgs.EventProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 751
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 771
   syntax:
     content:
       CSharp: public string EventProperty { get; private set; }

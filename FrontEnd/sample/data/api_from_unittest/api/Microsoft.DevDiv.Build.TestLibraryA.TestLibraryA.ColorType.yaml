@@ -1,7 +1,7 @@
 id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
 href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
 name:
-  CSharp: ColorType
+  CSharp: TestLibraryA.ColorType
 qualifiedName:
   CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
 type: Enum
@@ -9,10 +9,10 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
   startLine: 39
-summary: This is an **ENUM**
+summary: This is an **ENUM** [System.Tuple](#)
 syntax:
   content:
     CSharp: public enum ColorType
@@ -30,13 +30,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
   href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
   name:
-    CSharp: Red
+    CSharp: TestLibraryA.ColorType.Red
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 39
   syntax:
     content:
@@ -44,13 +44,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
   href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
   name:
-    CSharp: Blue
+    CSharp: TestLibraryA.ColorType.Blue
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 39
   syntax:
     content:
@@ -58,13 +58,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Yellow
   href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
   name:
-    CSharp: Yellow
+    CSharp: TestLibraryA.ColorType.Yellow
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Yellow
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
     startLine: 39
   syntax:
     content:

@@ -1,0 +1,52 @@
+VBTestClass1:
+  Name: VBTestClass1
+  Href: VBTestClass1.yaml
+  YamlPath: VBTestClass1.yaml
+VBTestClass1.Class1:
+  Name: VBTestClass1.Class1
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.ValueClass:
+  Name: VBTestClass1.Class1.ValueClass
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Keyword:
+  Name: VBTestClass1.Class1.Keyword
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Value(System.String):
+  Name: VBTestClass1.Class1.Value(System.String)
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.BaseClass1:
+  Name: VBTestClass1.BaseClass1
+  Href: VBTestClass1.BaseClass1.yaml
+  YamlPath: VBTestClass1.BaseClass1.yaml
+VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  Href: VBTestClass1.BaseClass1.yaml
+  YamlPath: VBTestClass1.BaseClass1.yaml
+VBTestClass1.My:
+  Name: VBTestClass1.My
+  Href: VBTestClass1.My.yaml
+  YamlPath: VBTestClass1.My.yaml
+VBTestClass1.My.Resources:
+  Name: VBTestClass1.My.Resources
+  Href: VBTestClass1.My.Resources.yaml
+  YamlPath: VBTestClass1.My.Resources.yaml
+My:
+  Name: My
+  Href: My.yaml
+  YamlPath: My.yaml
+Microsoft:
+  Name: Microsoft
+  Href: Microsoft.yaml
+  YamlPath: Microsoft.yaml
+Microsoft.VisualBasic:
+  Name: Microsoft.VisualBasic
+  Href: Microsoft.VisualBasic.yaml
+  YamlPath: Microsoft.VisualBasic.yaml

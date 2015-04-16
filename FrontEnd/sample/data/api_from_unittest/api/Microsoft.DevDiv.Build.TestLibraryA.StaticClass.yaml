@@ -9,9 +9,9 @@ source:
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 771
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 791
 syntax:
   content:
     CSharp: public static class StaticClass

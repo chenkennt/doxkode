@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 19
 syntax:
   content:
@@ -23,13 +23,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
   href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   name:
-    CSharp: ParamC
+    CSharp: TestLibraryB.ParamC
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 25
   syntax:
     content:
@@ -43,13 +43,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
   href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   name:
-    CSharp: AddMethod
+    CSharp: TestLibraryB.AddMethod()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 34
   syntax:
     content:
@@ -60,13 +60,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
   href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   name:
-    CSharp: eventHandler
+    CSharp: TestLibraryB.eventHandler
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 40
   syntax:
     content:
@@ -74,13 +74,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
   href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   name:
-    CSharp: add_eventHandler
+    CSharp: TestLibraryB.eventHandler.add
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler.add
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 42
   syntax:
     content:
@@ -96,13 +96,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
   href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
   name:
-    CSharp: remove_eventHandler
+    CSharp: TestLibraryB.eventHandler.remove
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler.remove
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 43
   syntax:
     content:

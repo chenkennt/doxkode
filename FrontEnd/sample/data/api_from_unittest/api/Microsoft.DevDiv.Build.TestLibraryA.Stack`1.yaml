@@ -1,17 +1,17 @@
 id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
 href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
 name:
-  CSharp: Stack`1
+  CSharp: Stack<T>
 qualifiedName:
-  CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>
 type: Class
 source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 53
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 73
 summary: test
 syntax:
   content:
@@ -24,42 +24,42 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: StackIntField
+    CSharp: Stack<T>.StackIntField
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackIntField
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 55
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 75
   syntax:
     content:
       CSharp: StackIntField
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: StackStaticField
+    CSharp: Stack<T>.StackStaticField
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackStaticField
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 57
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 77
   syntax:
     content:
       CSharp: StackStaticField
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: StackStaticProperty
+    CSharp: Stack<T>.StackStaticProperty
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackStaticProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 59
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 79
   syntax:
     content:
       CSharp: public static int StackStaticProperty { get; set; }
@@ -72,14 +72,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: StackIntProperty
+    CSharp: Stack<T>.StackIntProperty
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackIntProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 61
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 81
   syntax:
     content:
       CSharp: public int StackIntProperty { get; set; }
@@ -92,14 +92,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: AddAbstract
+    CSharp: Stack<T>.AddAbstract()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.AddAbstract()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 63
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 83
   syntax:
     content:
       CSharp: public abstract void AddAbstract();
@@ -109,14 +109,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: AddAbstract
+    CSharp: Stack<T>.AddAbstract(string, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.AddAbstract(string, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 65
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 85
   syntax:
     content:
       CSharp: public abstract void AddAbstract(string name, int num);
@@ -136,14 +136,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: OverLoadMethod
+    CSharp: Stack<T>.OverLoadMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.OverLoadMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 71
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 91
   summary: Overload method a
   syntax:
     content:
@@ -160,14 +160,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
   name:
-    CSharp: OverLoadMethod
+    CSharp: Stack<T>.OverLoadMethod(int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.OverLoadMethod(int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 76
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 96
   syntax:
     content:
       CSharp: public void OverLoadMethod(int A, int B)

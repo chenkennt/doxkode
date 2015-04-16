@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 309
 syntax:
   content:
@@ -26,13 +26,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.#ctor
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: Derived
+    CSharp: Derived.Derived()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Derived
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Derived()
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 311
   syntax:
     content:
@@ -43,13 +43,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AbstractProperty
+    CSharp: Derived.AbstractProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 320
   syntax:
     content:
@@ -63,13 +63,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AbstractProperty2
+    CSharp: Derived.AbstractProperty2
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 332
   syntax:
     content:
@@ -83,13 +83,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualProperty
+    CSharp: Derived.VirtualProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 334
   syntax:
     content:
@@ -103,13 +103,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualIntProperty
+    CSharp: Derived.VirtualIntProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 336
   syntax:
     content:
@@ -123,13 +123,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualLongProperty
+    CSharp: Derived.VirtualLongProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 338
   syntax:
     content:
@@ -143,13 +143,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: StaticProperty
+    CSharp: Derived.StaticProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 340
   syntax:
     content:
@@ -163,13 +163,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: ParamC
+    CSharp: Derived.ParamC
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 342
   syntax:
     content:
@@ -183,13 +183,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AbstractMethod
+    CSharp: Derived.AbstractMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 354
   syntax:
     content:
@@ -205,13 +205,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AbstractMethod
+    CSharp: Derived.AbstractMethod(int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 356
   syntax:
     content:
@@ -232,13 +232,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualMethod
+    CSharp: Derived.VirtualMethod(int, int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(int, int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 358
   syntax:
     content:
@@ -264,13 +264,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualMethod
+    CSharp: Derived.VirtualMethod(int, int, int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(int, int, int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 360
   syntax:
     content:
@@ -301,13 +301,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: VirtualNonSealedMethod
+    CSharp: Derived.VirtualNonSealedMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 362
   syntax:
     content:
@@ -323,13 +323,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AddMethod
+    CSharp: Derived.AddMethod()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 364
   syntax:
     content:
@@ -340,13 +340,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: AddMethod
+    CSharp: Derived.AddMethod(Dictionary<List<int>, string>, List<long>, string)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary<System.Collections.Generic.List<int>, string>, System.Collections.Generic.List<long>, string)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 366
   syntax:
     content:
@@ -372,13 +372,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: eventHandler
+    CSharp: Derived.eventHandler
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 368
   syntax:
     content:
@@ -386,13 +386,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: Handler
+    CSharp: Derived.Handler(object, EventInfoArgs)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(object, Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 370
   syntax:
     content:
@@ -413,13 +413,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
   name:
-    CSharp: CreateInstance
+    CSharp: Derived.CreateInstance<T>(T)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance<T>(T)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 372
   syntax:
     content:

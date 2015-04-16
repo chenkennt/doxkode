@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 42
 summary: This is the BaseClass
 syntax:
@@ -26,13 +26,13 @@ items:
   href: VBTestClass1.BaseClass1.yaml
   language: VB
   name:
-    VB: WithDeclarationKeyword
+    VB: BaseClass1.WithDeclarationKeyword(CounterSampleCalculator)
   qualifiedName:
     VB: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 43
   syntax:
     content:

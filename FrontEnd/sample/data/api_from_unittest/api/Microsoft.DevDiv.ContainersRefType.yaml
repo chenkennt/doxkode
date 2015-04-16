@@ -9,9 +9,9 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 785
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 805
 summary: Struct ContainersRefType
 syntax:
   content:
@@ -27,14 +27,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ColorCount
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: ColorCount
+    CSharp: ContainersRefType.ColorCount
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.ColorCount
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 791
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 811
   summary: ColorCount
   syntax:
     content:
@@ -42,14 +42,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.GetColorCount
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: GetColorCount
+    CSharp: ContainersRefType.GetColorCount
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.GetColorCount
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 823
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 843
   summary: GetColorCount
   syntax:
     content:
@@ -63,14 +63,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: ContainersRefTypeNonRefMethod
+    CSharp: ContainersRefType.ContainersRefTypeNonRefMethod(params object[])
   qualifiedName:
-    CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
+    CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(params object[])
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 841
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 861
   summary: >-
     ContainersRefTypeNonRefMethod
 
@@ -89,28 +89,28 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: ContainersRefTypeEventHandler
+    CSharp: ContainersRefType.ContainersRefTypeEventHandler
   qualifiedName:
     CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 859
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 879
   syntax:
     content:
       CSharp: public event EventHandler ContainersRefTypeEventHandler { add { } remove { } }
 - id: Microsoft.DevDiv.ContainersRefType.add_ContainersRefTypeEventHandler(System.EventHandler)
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: add_ContainersRefTypeEventHandler
+    CSharp: ContainersRefType.ContainersRefTypeEventHandler.add
   qualifiedName:
-    CSharp: Microsoft.DevDiv.ContainersRefType.add_ContainersRefTypeEventHandler(System.EventHandler)
+    CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler.add
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 861
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 881
   syntax:
     content:
       CSharp: add { }
@@ -125,14 +125,14 @@ items:
 - id: Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler)
   href: Microsoft.DevDiv.ContainersRefType.yaml
   name:
-    CSharp: remove_ContainersRefTypeEventHandler
+    CSharp: ContainersRefType.ContainersRefTypeEventHandler.remove
   qualifiedName:
-    CSharp: Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler)
+    CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler.remove
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 862
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 882
   syntax:
     content:
       CSharp: remove { }

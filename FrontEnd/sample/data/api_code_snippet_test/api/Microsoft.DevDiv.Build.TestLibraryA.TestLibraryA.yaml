@@ -1,0 +1,72 @@
+id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+name:
+  CSharp: TestLibraryA
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+type: Class
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 34
+summary: Partial class is not currently *supported*...
+syntax:
+  content:
+    CSharp: public partial class TestLibraryA
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetTuple``1(System.Tuple{System.String,System.Tuple{``0,``0}})
+  href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+  name:
+    CSharp: TestLibraryA.GetTuple<T>(Tuple<string, Tuple<T, T>>)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetTuple<T>(System.Tuple<string, System.Tuple<T, T>>)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 51
+  summary: This is a Tuple
+  syntax:
+    content:
+      CSharp: 'public Tuple<string, T> GetTuple<T>(Tuple<string, Tuple<T, T>> a)where T : class'
+    parameters:
+    - id: a
+      type:
+        id: System.Tuple{System.String,System.Tuple{``0,``0}}
+        name: System.Tuple{System.String,System.Tuple{``0,``0}}
+        isExternal: true
+    return:
+      id: Tuple
+      description: A
+- id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetInt(System.Tuple{System.String,System.Int32})
+  href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+  name:
+    CSharp: TestLibraryA.GetInt(Tuple<string, int>)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetInt(System.Tuple<string, int>)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 61
+  summary: Get k
+  syntax:
+    content:
+      CSharp: public Tuple<string, int> GetInt(Tuple<string, int> a)
+    parameters:
+    - id: a
+      type:
+        id: System.Tuple{System.String,System.Int32}
+        name: System.Tuple{System.String,System.Int32}
+        isExternal: true
+      description: a
+    return:
+      id: Tuple
+      description: a

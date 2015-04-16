@@ -1,10 +1,31 @@
 Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB:
   id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/Markdown/About.md
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/Markdown/About.md
   href: md/Assets_Markdown_About.md
   startLine: 64
-  endLine: 799
-  remote:
+  endLine: 870
+  remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
+    description: v0.3-178-g5311e7b
+  items:
+  - id: ../TestClass1/TestClass1/Class1.cs[20-46]
+    path: TestResults\Deploy_t-hax 2015-04-16 17_34_08\Out\Assets\Markdown\..\TestClass1\TestClass1\Class1.cs
+    href: reference\TestResults_Deploy_t-hax 2015-04-16 17_34_08_Out_Assets_Markdown_.._TestClass1_TestClass1_Class1.cs
+    startLine: 345
+    endLine: 391
+    referenceStartLine: 20
+    referenceEndLine: 46
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2:
+  id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/Markdown/About.md
+  href: md/Assets_Markdown_About.md
+  startLine: 936
+  endLine: 1082
+  remote: *o0
+  items:
+  - id: ../TestClass1/TestClass1/Class1.cs
+    path: TestResults\Deploy_t-hax 2015-04-16 17_34_08\Out\Assets\Markdown\..\TestClass1\TestClass1\Class1.cs
+    href: reference\TestResults_Deploy_t-hax 2015-04-16 17_34_08_Out_Assets_Markdown_.._TestClass1_TestClass1_Class1.cs
+    startLine: 1038
+    endLine: 1077

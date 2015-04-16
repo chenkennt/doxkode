@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 267
 syntax:
   content:
@@ -23,13 +23,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: AbstractProperty
+    CSharp: Abstract.AbstractProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 269
   syntax:
     content:
@@ -43,13 +43,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: AbstractProperty2
+    CSharp: Abstract.AbstractProperty2
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 272
   syntax:
     content:
@@ -63,13 +63,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualProperty
+    CSharp: Abstract.VirtualProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 274
   syntax:
     content:
@@ -83,13 +83,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualIntProperty
+    CSharp: Abstract.VirtualIntProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 276
   syntax:
     content:
@@ -103,13 +103,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualLongProperty
+    CSharp: Abstract.VirtualLongProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 278
   syntax:
     content:
@@ -123,13 +123,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: PrivateGetProperty
+    CSharp: Abstract.PrivateGetProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 280
   syntax:
     content:
@@ -143,13 +143,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: PrivateSetProperty
+    CSharp: Abstract.PrivateSetProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 282
   syntax:
     content:
@@ -163,13 +163,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: PublicIntProperty
+    CSharp: Abstract.PublicIntProperty
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 284
   syntax:
     content:
@@ -183,13 +183,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: AbstractMethod
+    CSharp: Abstract.AbstractMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 298
   syntax:
     content:
@@ -205,13 +205,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: AbstractMethod
+    CSharp: Abstract.AbstractMethod(int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 300
   syntax:
     content:
@@ -232,13 +232,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualMethod
+    CSharp: Abstract.VirtualMethod(int, int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(int, int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 302
   syntax:
     content:
@@ -264,13 +264,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualMethod
+    CSharp: Abstract.VirtualMethod(int, int, int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(int, int, int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 304
   syntax:
     content:
@@ -301,13 +301,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
   name:
-    CSharp: VirtualNonSealedMethod
+    CSharp: Abstract.VirtualNonSealedMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 306
   syntax:
     content:

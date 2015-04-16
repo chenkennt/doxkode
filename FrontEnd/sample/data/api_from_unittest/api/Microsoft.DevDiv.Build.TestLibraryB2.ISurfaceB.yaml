@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 179
 syntax:
   content:
@@ -19,13 +19,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Foo
+    CSharp: ISurfaceB.Foo()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 181
   syntax:
     content:
@@ -36,13 +36,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: FooB
+    CSharp: ISurfaceB.FooB()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 183
   syntax:
     content:
@@ -53,13 +53,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64)
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Fun
+    CSharp: ISurfaceB.Fun(long)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(long)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 185
   syntax:
     content:
@@ -75,13 +75,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: OverrideFun
+    CSharp: ISurfaceB.OverrideFun()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 187
   syntax:
     content:
@@ -92,13 +92,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String)
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: SameNumParaFunc
+    CSharp: ISurfaceB.SameNumParaFunc(long, string)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(long, string)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 189
   syntax:
     content:
@@ -119,13 +119,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: PropertyB
+    CSharp: ISurfaceB.PropertyB
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 191
   syntax:
     content:
@@ -139,13 +139,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Property
+    CSharp: ISurfaceB.Property
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 193
   syntax:
     content:
@@ -159,13 +159,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64)
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Item
+    CSharp: ISurfaceB.this[string, long]
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.this[string, long]
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 195
   syntax:
     content:
@@ -179,13 +179,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String)
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Item
+    CSharp: ISurfaceB.this[string]
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.this[string]
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 197
   syntax:
     content:
@@ -199,13 +199,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[])
   href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
   name:
-    CSharp: Item
+    CSharp: ISurfaceB.this[string, params object[]]
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[])
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.this[string, params object[]]
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 199
   syntax:
     content:

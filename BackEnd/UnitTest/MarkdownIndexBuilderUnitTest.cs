@@ -39,7 +39,7 @@ namespace UnitTest
                 }
             }
 
-            Assert.AreEqual(3, indexes.Count);
+            Assert.AreEqual(4, indexes.Count);
             Assert.AreEqual(2, itemCount);
             Assert.AreNotEqual(ResultLevel.Error, result.ResultLevel);
         }

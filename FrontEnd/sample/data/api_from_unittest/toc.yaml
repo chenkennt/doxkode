@@ -19,19 +19,19 @@
   - id: Microsoft.DevDiv.ContainersRefType.ColorType
     href: api/Microsoft.DevDiv.ContainersRefType.ColorType.yaml
     name:
-      CSharp: ColorType
+      CSharp: ContainersRefType.ColorType
   - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
     href: api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.yaml
     name:
-      CSharp: ContainersRefTypeDelegate
+      CSharp: ContainersRefType.ContainersRefTypeDelegate
   - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
     href: api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.yaml
     name:
-      CSharp: ContainersRefTypeChildInterface
+      CSharp: ContainersRefType.ContainersRefTypeChildInterface
   - id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
     href: api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.yaml
     name:
-      CSharp: ContainersRefTypeChild
+      CSharp: ContainersRefType.ContainersRefTypeChild
   - id: Microsoft.DevDiv.ExplicitLayoutClass
     href: api/Microsoft.DevDiv.ExplicitLayoutClass.yaml
     name:
@@ -48,11 +48,11 @@
   - id: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
     href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
     name:
-      CSharp: ColorType
+      CSharp: TestLibraryA.ColorType
   - id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
     name:
-      CSharp: Stack`1
+      CSharp: Stack<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
     href: api/Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
     name:
@@ -68,11 +68,11 @@
   - id: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3
     href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3.yaml
     name:
-      CSharp: LinkedListInterface`3
+      CSharp: LinkedListInterface<K, T, L>
   - id: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1.yaml
     name:
-      CSharp: LinkedListInterface2`1
+      CSharp: LinkedListInterface2<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
     href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yaml
     name:
@@ -80,19 +80,19 @@
   - id: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1.yaml
     name:
-      CSharp: StackDelegate`1
+      CSharp: StackDelegate<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1.yaml
     name:
-      CSharp: StackIntDelegate`1
+      CSharp: StackIntDelegate<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3.yaml
     name:
-      CSharp: StackTemplateDelegate`3
+      CSharp: StackTemplateDelegate<K, T, L>
   - id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
     name:
-      CSharp: StackChild`1
+      CSharp: StackChild<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface
     href: api/Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
     name:
@@ -104,7 +104,7 @@
   - id: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3
     href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
     name:
-      CSharp: LinkedList`3
+      CSharp: LinkedList<K, T, L>
   - id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
     href: api/Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
     name:
@@ -112,7 +112,7 @@
   - id: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
     name:
-      CSharp: StackSealedChild`1
+      CSharp: StackSealedChild<T>
   - id: Microsoft.DevDiv.Build.TestLibraryA.StaticClass
     href: api/Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yaml
     name:
@@ -166,7 +166,7 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
     href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
     name:
-      CSharp: TestTemplatesImplementsList`4
+      CSharp: TestTemplatesImplementsList<K, T, L, M>
   - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
     href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
     name:
@@ -174,7 +174,7 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
     href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
     name:
-      CSharp: ChangedEventHandler
+      CSharp: TestElementsStruct.ChangedEventHandler
   - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct
     href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
     name:
@@ -182,7 +182,7 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct
     href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
     name:
-      CSharp: TestSubStruct
+      CSharp: TestContainerStruct.TestSubStruct
 - id: Microsoft.DevDiv.Build.TestLibraryB2
   href: api/Microsoft.DevDiv.Build.TestLibraryB2.yaml
   name:
@@ -211,11 +211,11 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
     name:
-      CSharp: InnerClass
+      CSharp: OuterClass.InnerClass
   - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
     name:
-      CSharp: InnerClassReturn
+      CSharp: OuterClass.InnerClass.InnerClassReturn
   - id: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
     name:
@@ -231,11 +231,11 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
     name:
-      CSharp: delegateFunc`4
+      CSharp: delegateFunc<T1, T2, T3, TResult>
   - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
     name:
-      CSharp: delegateFunc`2
+      CSharp: delegateFunc<T1, T2>
   - id: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
     name:
@@ -247,11 +247,11 @@
   - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
     name:
-      CSharp: boolClass
+      CSharp: CaseSensitiveClass.boolClass
   - id: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
     name:
-      CSharp: BoolClass
+      CSharp: CaseSensitiveClass.BoolClass
   - id: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
     href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
     name:

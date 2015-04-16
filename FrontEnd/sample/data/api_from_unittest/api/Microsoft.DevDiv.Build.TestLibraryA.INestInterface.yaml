@@ -9,9 +9,9 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 601
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 621
 summary: see cref = "Microsoft.DevDiv.Build.TestLibraryA.ISurface"
 syntax:
   content:
@@ -20,14 +20,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamB
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: ParamB
+    CSharp: INestInterface.ParamB
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamB
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 604
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 624
   syntax:
     content:
       CSharp: int ParamB { get; set; }
@@ -40,14 +40,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamC
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: ParamC
+    CSharp: INestInterface.ParamC
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamC
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 605
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 625
   syntax:
     content:
       CSharp: new long ParamC { set; }
@@ -60,14 +60,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MinusMethod
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: MinusMethod
+    CSharp: INestInterface.MinusMethod()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MinusMethod
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MinusMethod()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 608
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 628
   syntax:
     content:
       CSharp: void MinusMethod();
@@ -77,14 +77,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: MultiplyMethod
+    CSharp: INestInterface.MultiplyMethod()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 609
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 629
   syntax:
     content:
       CSharp: void MultiplyMethod();
@@ -94,14 +94,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: MultiplyMethod
+    CSharp: INestInterface.MultiplyMethod(int, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(int, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 618
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 638
   summary: Multiply method
   syntax:
     content:
@@ -124,14 +124,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
   name:
-    CSharp: MultiplyMethod
+    CSharp: INestInterface.MultiplyMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 621
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 641
   syntax:
     content:
       CSharp: int MultiplyMethod(int a);

@@ -10,8 +10,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
   startLine: 3
 summary: This is summary from vb class...
 syntax:
@@ -29,13 +29,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: ValueClass
+    VB: Class1.ValueClass
   qualifiedName:
     VB: VBTestClass1.Class1.ValueClass
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 11
   summary: This is a *Value* type
   syntax:
@@ -45,13 +45,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Keyword
+    VB: Class1.Keyword
   qualifiedName:
     VB: VBTestClass1.Class1.Keyword
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 13
   syntax:
     content:
@@ -66,13 +66,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: WithDeclarationKeyword
+    VB: Class1.WithDeclarationKeyword(CounterSampleCalculator)
   qualifiedName:
     VB: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 23
   summary: What is **Sub**?
   syntax:
@@ -90,13 +90,13 @@ items:
   href: VBTestClass1.Class1.yaml
   language: VB
   name:
-    VB: Value
+    VB: Class1.Value(String)
   qualifiedName:
-    VB: VBTestClass1.Class1.Value(System.String)
+    VB: VBTestClass1.Class1.Value(String)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 34
   summary: This is a *Function*
   syntax:

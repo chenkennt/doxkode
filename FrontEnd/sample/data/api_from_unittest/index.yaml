@@ -1,0 +1,1060 @@
+Microsoft:
+  Name: Microsoft
+  Href: Microsoft.yaml
+  YamlPath: Microsoft.yaml
+Microsoft.DevDev:
+  Name: Microsoft.DevDev
+  Href: Microsoft.DevDev.yaml
+  YamlPath: Microsoft.DevDev.yaml
+Microsoft.DevDev.Build:
+  Name: Microsoft.DevDev.Build
+  Href: Microsoft.DevDev.Build.yaml
+  YamlPath: Microsoft.DevDev.Build.yaml
+Microsoft.DevDev.Build.PropertyOverload:
+  Name: Microsoft.DevDev.Build.PropertyOverload
+  Href: Microsoft.DevDev.Build.PropertyOverload.yaml
+  YamlPath: Microsoft.DevDev.Build.PropertyOverload.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty:
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+  Href: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+  YamlPath: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.Int32):
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.Int32)
+  Href: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+  YamlPath: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.String):
+  Name: Microsoft.DevDev.Build.PropertyOverload.TestProperty.Item(System.String)
+  Href: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+  YamlPath: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yaml
+Microsoft.DevDiv:
+  Name: Microsoft.DevDiv
+  Href: Microsoft.DevDiv.yaml
+  YamlPath: Microsoft.DevDiv.yaml
+Microsoft.DevDiv.ContainersRefType:
+  Name: Microsoft.DevDiv.ContainersRefType
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.ColorCount:
+  Name: Microsoft.DevDiv.ContainersRefType.ColorCount
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.GetColorCount:
+  Name: Microsoft.DevDiv.ContainersRefType.GetColorCount
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[]):
+  Name: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeNonRefMethod(System.Object[])
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler:
+  Name: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeEventHandler
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.add_ContainersRefTypeEventHandler(System.EventHandler):
+  Name: Microsoft.DevDiv.ContainersRefType.add_ContainersRefTypeEventHandler(System.EventHandler)
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler):
+  Name: Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler)
+  Href: Microsoft.DevDiv.ContainersRefType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.yaml
+Microsoft.DevDiv.ContainersRefType.ColorType:
+  Name: Microsoft.DevDiv.ContainersRefType.ColorType
+  Href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+Microsoft.DevDiv.ContainersRefType.ColorType.Red:
+  Name: Microsoft.DevDiv.ContainersRefType.ColorType.Red
+  Href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+Microsoft.DevDiv.ContainersRefType.ColorType.Blue:
+  Name: Microsoft.DevDiv.ContainersRefType.ColorType.Blue
+  Href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+Microsoft.DevDiv.ContainersRefType.ColorType.Yellow:
+  Name: Microsoft.DevDiv.ContainersRefType.ColorType.Yellow
+  Href: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ColorType.yaml
+Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate:
+  Name: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate
+  Href: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.yaml
+Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface:
+  Name: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+  Href: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.yaml
+Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild:
+  Name: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild
+  Href: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.yaml
+  YamlPath: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.yaml
+Microsoft.DevDiv.ExplicitLayoutClass:
+  Name: Microsoft.DevDiv.ExplicitLayoutClass
+  Href: Microsoft.DevDiv.ExplicitLayoutClass.yaml
+  YamlPath: Microsoft.DevDiv.ExplicitLayoutClass.yaml
+Microsoft.DevDiv.Build:
+  Name: Microsoft.DevDiv.Build
+  Href: Microsoft.DevDiv.Build.yaml
+  YamlPath: Microsoft.DevDiv.Build.yaml
+Microsoft.DevDiv.Build.TestLibraryA:
+  Name: Microsoft.DevDiv.Build.TestLibraryA
+  Href: Microsoft.DevDiv.Build.TestLibraryA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetTuple``1(System.Tuple{System.String,System.Tuple{``0,``0}}):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetTuple``1(System.Tuple{System.String,System.Tuple{``0,``0}})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetInt(System.Tuple{System.String,System.Int32}):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.GetInt(System.Tuple{System.String,System.Int32})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Red
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Blue
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Yellow:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.Yellow
+  Href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.DerivedClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass
+  Href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.AbstractProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.AbstractProperty2
+  Href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.VirtualProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.StaticProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.StaticProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ISurface:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicStaticField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicStaticField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicConstField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicConstField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicReadonlyField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicReadonlyField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticReadonlyField:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticReadonlyField
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicListString:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicListString
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicDic_IntList:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicDic_IntList
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicList_Dic_ListArray:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicList_Dic_ListArray
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Item(System.String,System.Int32,System.String,System.String,System.Object[]):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Item(System.String,System.Int32,System.String,System.String,System.Object[])
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticListStringProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticListStringProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Dic_IntListProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Dic_IntListProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.List_Dic_ListArray:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.List_Dic_ListArray
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.IntRefProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.IntRefProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32,System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32,System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Double)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.String,System.Int32,System.String,System.String@,System.Object[])
+: Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.String,System.Int32,System.String,System.String@,System.Object[])
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.Int64)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicActionEvent:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicActionEvent
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.add_publicActionEvent(System.Action{System.Object,System.Int32}):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.add_publicActionEvent(System.Action{System.Object,System.Int32})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.remove_publicActionEvent(System.Action{System.Object,System.Int32}):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.remove_publicActionEvent(System.Action{System.Object,System.Int32})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamB:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamB
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.ParamC
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MinusMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MinusMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.MultiplyMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA
+  Href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int64}}},System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int64}}})
+: Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int64}}},System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int64}}})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(`0):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(`0)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int32,`1):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int32,`1)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Char,System.Collections.Generic.Dictionary{System.Int32,System.String})
+: Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Char,System.Collections.Generic.Dictionary{System.Int32,System.String})
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int32,System.Int32@):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int32,System.Int32@)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+? Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int16,System.Int64,System.Single,System.UInt16,System.UInt32,System.UInt64)
+: Name: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.#ctor(System.Int16,System.Int64,System.Single,System.UInt16,System.UInt32,System.UInt64)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yaml
+Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  Href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract(System.String,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract(System.String,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
+Microsoft.DevDiv.Build.TestLibraryA.StaticClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryA.StaticClass
+  Href: Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yaml
+CustomExtensionMethods:
+  Name: CustomExtensionMethods
+  Href: CustomExtensionMethods.yaml
+  YamlPath: CustomExtensionMethods.yaml
+CustomExtensionMethods.stringExtension:
+  Name: CustomExtensionMethods.stringExtension
+  Href: CustomExtensionMethods.stringExtension.yaml
+  YamlPath: CustomExtensionMethods.stringExtension.yaml
+CustomExtensionMethods.stringExtension.WordCount(System.String):
+  Name: CustomExtensionMethods.stringExtension.WordCount(System.String)
+  Href: CustomExtensionMethods.stringExtension.yaml
+  YamlPath: CustomExtensionMethods.stringExtension.yaml
+Microsoft.DevDiv.Build.TestLibraryB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB
+  Href: Microsoft.DevDiv.Build.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.ParamC
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.AddMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.eventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+? Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+? Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+: Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MultiplyMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MultiplyMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MinusMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.MinusMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.TestAdd(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.testStr
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Hours
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.GetMessage
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.val
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.Changed
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.setEvent
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct:
+  Name: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct
+  Href: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yaml
+Microsoft.DevDiv.Build.TestLibraryB2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Foo
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.FooB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Fun(System.Int64)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.OverrideFun
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.SameNumParaFunc(System.Int64,System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.PropertyB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Property
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Int64)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[]):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.Item(System.String,System.Object[])
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[]):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[])
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.FooD:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.FooD
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.PropertyB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.otherEventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.otherEventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.a:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.a
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractProperty2
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualIntProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualLongProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateGetProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PrivateSetProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.PublicIntProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.AbstractMethod(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.VirtualNonSealedMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractProperty2
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualIntProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualLongProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.StaticProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.ParamC
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AbstractMethod(System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualMethod(System.Int32,System.Int32,System.Int32,System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.VirtualNonSealedMethod(System.Int32)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+? Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
+: Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.AddMethod(System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.String},System.Collections.Generic.List{System.Int64},System.String)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.eventHandler
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.Handler(System.Object,Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0):
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.Derived.CreateInstance``1(``0)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.Derived.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.#ctor:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.#ctor
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+? Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc(Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass,Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass)
+: Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc(Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass,Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass)
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitiveFunc
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitivefunc:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.CaseSensitivefunc
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolProperty:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolProperty
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolField:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolField
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolField:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolField
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yaml
+Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass:
+  Name: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass
+  Href: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+  YamlPath: Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yaml
+VBTestClass1:
+  Name: VBTestClass1
+  Href: VBTestClass1.yaml
+  YamlPath: VBTestClass1.yaml
+VBTestClass1.Class1:
+  Name: VBTestClass1.Class1
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.ValueClass:
+  Name: VBTestClass1.Class1.ValueClass
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Keyword:
+  Name: VBTestClass1.Class1.Keyword
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.Class1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.Class1.Value(System.String):
+  Name: VBTestClass1.Class1.Value(System.String)
+  Href: VBTestClass1.Class1.yaml
+  YamlPath: VBTestClass1.Class1.yaml
+VBTestClass1.BaseClass1:
+  Name: VBTestClass1.BaseClass1
+  Href: VBTestClass1.BaseClass1.yaml
+  YamlPath: VBTestClass1.BaseClass1.yaml
+VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator):
+  Name: VBTestClass1.BaseClass1.WithDeclarationKeyword(System.Diagnostics.CounterSampleCalculator)
+  Href: VBTestClass1.BaseClass1.yaml
+  YamlPath: VBTestClass1.BaseClass1.yaml
+VBTestClass1.My:
+  Name: VBTestClass1.My
+  Href: VBTestClass1.My.yaml
+  YamlPath: VBTestClass1.My.yaml
+VBTestClass1.My.Resources:
+  Name: VBTestClass1.My.Resources
+  Href: VBTestClass1.My.Resources.yaml
+  YamlPath: VBTestClass1.My.Resources.yaml
+My:
+  Name: My
+  Href: My.yaml
+  YamlPath: My.yaml
+Microsoft.VisualBasic:
+  Name: Microsoft.VisualBasic
+  Href: Microsoft.VisualBasic.yaml
+  YamlPath: Microsoft.VisualBasic.yaml

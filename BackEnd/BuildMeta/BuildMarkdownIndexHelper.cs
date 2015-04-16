@@ -157,6 +157,7 @@ namespace DocAsCode.BuildMeta
                     if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                     {
                         lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
+                        lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
                         ExtractReferenceFromMdSection(ref lastSection, referenceFolder);
                         sections.Add(lastSection);
                     }
@@ -225,6 +226,7 @@ namespace DocAsCode.BuildMeta
                     string sourceFile = Path.Combine(Path.GetDirectoryName(section.Path), source.Replace('/', '\\'));
                     item.Path = sourceFile;
                     string destFile = Path.Combine(referenceFolder, sourceFile.ToValidFilePath());
+                    sourceFile = Path.Combine(section.Remote.LocalWorkingDirectory, sourceFile);
 
                     if (!referencedFileLengthCache.ContainsKey(destFile))
                     {

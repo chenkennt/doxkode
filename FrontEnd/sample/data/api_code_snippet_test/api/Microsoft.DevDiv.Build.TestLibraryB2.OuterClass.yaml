@@ -1,0 +1,21 @@
+id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yaml
+name:
+  CSharp: OuterClass
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass
+type: Class
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass1/Class1.cs
+  startLine: 235
+syntax:
+  content:
+    CSharp: public class OuterClass
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true

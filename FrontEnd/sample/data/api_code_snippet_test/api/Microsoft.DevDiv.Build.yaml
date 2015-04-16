@@ -1,0 +1,14 @@
+id: Microsoft.DevDiv.Build
+href: Microsoft.DevDiv.Build.yaml
+name:
+  CSharp: Build
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build
+type: Namespace
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 26

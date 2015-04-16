@@ -1,0 +1,17 @@
+id: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+href: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.yaml
+name:
+  CSharp: ContainersRefType.ContainersRefTypeChildInterface
+qualifiedName:
+  CSharp: Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface
+type: Interface
+source:
+  remote:
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 867
+syntax:
+  content:
+    CSharp: public interface ContainersRefTypeChildInterface

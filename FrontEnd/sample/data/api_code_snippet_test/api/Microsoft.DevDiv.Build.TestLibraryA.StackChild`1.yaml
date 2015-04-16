@@ -1,0 +1,593 @@
+id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+name:
+  CSharp: StackChild<T>
+qualifiedName:
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>
+type: Class
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 215
+syntax:
+  content:
+    CSharp: public class StackChild<T>
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.Stack{`0}
+  name: Stack
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack{`0}
+items:
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicStaticField
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicStaticField
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicStaticField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 218
+  syntax:
+    content:
+      CSharp: publicStaticField
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicConstField
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicConstField
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicConstField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 230
+  summary: public field [Microsoft.DevDiv.Build.TestLibraryA.Stack`1](Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yaml)
+  syntax:
+    content:
+      CSharp: publicConstField
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicReadonlyField
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.PublicReadonlyField
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.PublicReadonlyField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 233
+  syntax:
+    content:
+      CSharp: PublicReadonlyField
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticReadonlyField
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.PublicStaticReadonlyField
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.PublicStaticReadonlyField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 235
+  syntax:
+    content:
+      CSharp: PublicStaticReadonlyField
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicListString
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicListString
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicListString
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 238
+  syntax:
+    content:
+      CSharp: publicListString
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicDic_IntList
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicDic_IntList
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicDic_IntList
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 239
+  syntax:
+    content:
+      CSharp: publicDic_IntList
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicList_Dic_ListArray
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicList_Dic_ListArray
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicList_Dic_ListArray
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 240
+  syntax:
+    content:
+      CSharp: publicList_Dic_ListArray
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.PublicStaticProperty
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.PublicStaticProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 243
+  syntax:
+    content:
+      CSharp: '[ComVisible(true)] public static string PublicStaticProperty { get; set; }'
+    parameters:
+    - id: PublicStaticProperty
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Item(System.String,System.Int32,System.String,System.String,System.Object[])
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.this[string, int, string, string, params object[]]
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.this[string, int, string, string, params object[]]
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 293
+  syntax:
+    content:
+      CSharp: public string this[string name, int num, string tech, string level, params object[] scores] { get; protected set; }
+    parameters:
+    - id: this[]
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.PublicStaticListStringProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.PublicStaticListStringProperty
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.PublicStaticListStringProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 305
+  syntax:
+    content:
+      CSharp: public static List<string> PublicStaticListStringProperty { get; set; }
+    parameters:
+    - id: PublicStaticListStringProperty
+      type:
+        id: System.Collections.Generic.List{System.String}
+        name: System.Collections.Generic.List{System.String}
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.Dic_IntListProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.Dic_IntListProperty
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.Dic_IntListProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 307
+  syntax:
+    content:
+      CSharp: public Dictionary<int, List<long>> Dic_IntListProperty { get; }
+    parameters:
+    - id: Dic_IntListProperty
+      type:
+        id: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int64}}
+        name: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int64}}
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.List_Dic_ListArray
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.List_Dic_ListArray
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.List_Dic_ListArray
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 315
+  syntax:
+    content:
+      CSharp: public List<Dictionary<List<int>, Array>> List_Dic_ListArray { set; }
+    parameters:
+    - id: List_Dic_ListArray
+      type:
+        id: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.Array}}
+        name: System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.Int32},System.Array}}
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.#ctor
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.StackChild()
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.StackChild()
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 324
+  syntax:
+    content:
+      CSharp: public StackChild()
+    parameters: []
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.IntRefProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.IntRefProperty
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.IntRefProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 329
+  syntax:
+    content:
+      CSharp: public Dictionary<int[], double[]> IntRefProperty { get; set; }
+    parameters:
+    - id: IntRefProperty
+      type:
+        id: System.Collections.Generic.Dictionary{System.Int32[],System.Double[]}
+        name: System.Collections.Generic.Dictionary{System.Int32[],System.Double[]}
+        isExternal: true
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.AddAbstract()
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.AddAbstract()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 365
+  syntax:
+    content:
+      CSharp: public sealed override void AddAbstract()
+    parameters: []
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.AddAbstract(string, int)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.AddAbstract(string, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 369
+  syntax:
+    content:
+      CSharp: public override void AddAbstract(string name, int num)
+    parameters:
+    - id: name
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: num
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddAbstract(System.String,System.Int32,System.String)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.AddAbstract(string, int, string)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.AddAbstract(string, int, string)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 374
+  syntax:
+    content:
+      CSharp: public void AddAbstract(string name, int num, string level)
+    parameters:
+    - id: name
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: num
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: level
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.OverLoadMethod(int, int)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.OverLoadMethod(int, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 379
+  syntax:
+    content:
+      CSharp: new public void OverLoadMethod(int A, int B)
+    parameters:
+    - id: A
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: B
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.OverLoadMethod(System.Int32,System.Int32,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.OverLoadMethod(int, int, int)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.OverLoadMethod(int, int, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 392
+  summary: check overload
+  syntax:
+    content:
+      CSharp: public void OverLoadMethod(int A, int B, int C)
+    parameters:
+    - id: A
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+      description: Used to indicate number
+    - id: B
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+      description: Used to indicate number
+    - id: C
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+      description: Used to indicate number
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.operator +(StackChild<T>, int)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.operator +(Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 397
+  syntax:
+    content:
+      CSharp: public static int operator +(StackChild<T> lsc, int rsc) { return (lsc.privateField + rsc); }
+    parameters:
+    - id: lsc
+      type:
+        id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+        name: StackChild
+        href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+    - id: rsc
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Int32
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.op_Addition(Microsoft.DevDiv.Build.TestLibraryA.StackChild{`0},System.Double)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.operator +(StackChild<T>, double)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.operator +(Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>, double)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 403
+  syntax:
+    content:
+      CSharp: public static int operator +(StackChild<T> lsc, double rsc) { return (lsc.privateField + (int)rsc); }
+    parameters:
+    - id: lsc
+      type:
+        id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+        name: StackChild
+        href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+    - id: rsc
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+    return:
+      id: Int32
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.String,System.Int32,System.String,System.String@,System.Object[])
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.AddPublic<K, TA, L>(string, int, string, out string, params object[])
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.AddPublic<K, TA, L>(string, int, string, out string, params object[])
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 473
+  summary: >-
+    fist text under summary codeinline italic word int
+
+    Sprint67's development comment test
+
+    Template italic method
+
+    text between para with no para tag
+
+    para withone line descriptionitalic between para with no para tagtwo line of description. One typeparamref
+
+    parameter. here's languageKeyword in.
+
+    last text in summary with no para tag
+  syntax:
+    content:
+      CSharp: 'public static int AddPublic<K, TA, L>(string name, int num, string tech, out string level, params object[] scores)where K : class, IComparable, ICollection<List<string>>, IComparable<L> where TA : struct where L : TestLibraryA, IEnumerable<long>'
+    parameters:
+    - id: name
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: num
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: tech
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: level
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: scores
+      type:
+        id: System.Array
+        name: System.Array
+        isExternal: true
+    return:
+      id: Int32
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.AddPublic``3(System.Int64)
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.AddPublic<K, TA, L>(long)
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.AddPublic<K, TA, L>(long)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 490
+  summary: overload method AddPublic
+  syntax:
+    content:
+      CSharp: public static int AddPublic<K, TA, L>(long a)
+    parameters:
+    - id: a
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+      description: used to indicate number
+    return:
+      id: Int32
+      description: static int
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.publicActionEvent
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicActionEvent
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicActionEvent
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 609
+  syntax:
+    content:
+      CSharp: public event Action<object, int> publicActionEvent { add { } remove { } }
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.add_publicActionEvent(System.Action{System.Object,System.Int32})
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicActionEvent.add
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicActionEvent.add
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 611
+  syntax:
+    content:
+      CSharp: add { }
+    parameters:
+    - id: value
+      type:
+        id: System.Action{System.Object,System.Int32}
+        name: System.Action{System.Object,System.Int32}
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.remove_publicActionEvent(System.Action{System.Object,System.Int32})
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yaml
+  name:
+    CSharp: StackChild<T>.publicActionEvent.remove
+  qualifiedName:
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackChild<T>.publicActionEvent.remove
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 612
+  syntax:
+    content:
+      CSharp: remove { }
+    parameters:
+    - id: value
+      type:
+        id: System.Action{System.Object,System.Int32}
+        name: System.Action{System.Object,System.Int32}
+        isExternal: true
+    return:
+      id: Void

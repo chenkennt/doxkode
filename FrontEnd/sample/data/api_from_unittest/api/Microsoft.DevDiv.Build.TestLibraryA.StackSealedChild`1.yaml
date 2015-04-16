@@ -1,17 +1,17 @@
 id: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
 href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
 name:
-  CSharp: StackSealedChild`1
+  CSharp: StackSealedChild<T>
 qualifiedName:
-  CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
+  CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild<T>
 type: Class
 source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-  startLine: 755
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 775
 syntax:
   content:
     CSharp: public sealed class StackSealedChild<T>
@@ -26,14 +26,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract
   href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
   name:
-    CSharp: AddAbstract
+    CSharp: StackSealedChild<T>.AddAbstract()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild<T>.AddAbstract()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 759
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 779
   syntax:
     content:
       CSharp: public override void AddAbstract()
@@ -43,14 +43,14 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract(System.String,System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yaml
   name:
-    CSharp: AddAbstract
+    CSharp: StackSealedChild<T>.AddAbstract(string, int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.AddAbstract(System.String,System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild<T>.AddAbstract(string, int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 763
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 783
   syntax:
     content:
       CSharp: public override void AddAbstract(string name, int num)

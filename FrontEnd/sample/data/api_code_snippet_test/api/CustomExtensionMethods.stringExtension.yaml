@@ -1,0 +1,47 @@
+id: CustomExtensionMethods.stringExtension
+href: CustomExtensionMethods.stringExtension.yaml
+name:
+  CSharp: stringExtension
+qualifiedName:
+  CSharp: CustomExtensionMethods.stringExtension
+type: Class
+source:
+  remote: &o0
+    branch: develop
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+  startLine: 898
+syntax:
+  content:
+    CSharp: public static class stringExtension
+inheritance:
+- id: System.Object
+  name: System.Object
+  isExternal: true
+items:
+- id: CustomExtensionMethods.stringExtension.WordCount(System.String)
+  href: CustomExtensionMethods.stringExtension.yaml
+  name:
+    CSharp: stringExtension.WordCount(string)
+  qualifiedName:
+    CSharp: CustomExtensionMethods.stringExtension.WordCount(string)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_t-hax 2015-04-16 17_28_38/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 907
+  summary: extension method
+  syntax:
+    content:
+      CSharp: public static int WordCount(this String str)
+    parameters:
+    - id: str
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+      description: this
+    return:
+      id: Int32
+      description: int

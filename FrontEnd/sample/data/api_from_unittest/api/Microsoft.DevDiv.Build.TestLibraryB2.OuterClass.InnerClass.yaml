@@ -1,7 +1,7 @@
 id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
 href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
 name:
-  CSharp: InnerClass
+  CSharp: OuterClass.InnerClass
 qualifiedName:
   CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass
 type: Class
@@ -9,8 +9,8 @@ source:
   remote: &o0
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-64-ge0510d3
-  path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    description: v0.3-178-g5311e7b
+  path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 237
 syntax:
   content:
@@ -23,13 +23,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: InnerClass
+    CSharp: OuterClass.InnerClass.InnerClass()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClass
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClass()
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 244
   syntax:
     content:
@@ -40,13 +40,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.#ctor(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: InnerClass(System.Int32)
+    CSharp: OuterClass.InnerClass.InnerClass(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClass(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClass(int)
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 246
   syntax:
     content:
@@ -62,13 +62,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: AddMethod
+    CSharp: OuterClass.InnerClass.AddMethod()
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod()
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 248
   syntax:
     content:
@@ -79,13 +79,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32)
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: AddMethod
+    CSharp: OuterClass.InnerClass.AddMethod(int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 253
   syntax:
     content:
@@ -101,13 +101,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@)
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: AddMethod
+    CSharp: OuterClass.InnerClass.AddMethod(int, ref int)
   qualifiedName:
-    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(System.Int32,System.Int32@)
+    CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.AddMethod(int, ref int)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 255
   syntax:
     content:
@@ -128,13 +128,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: filedA
+    CSharp: OuterClass.InnerClass.filedA
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.filedA
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 257
   syntax:
     content:
@@ -142,13 +142,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: fieldB
+    CSharp: OuterClass.InnerClass.fieldB
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.fieldB
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 259
   syntax:
     content:
@@ -156,13 +156,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: PropertyA
+    CSharp: OuterClass.InnerClass.PropertyA
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyA
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 261
   syntax:
     content:
@@ -176,13 +176,13 @@ items:
 - id: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB
   href: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yaml
   name:
-    CSharp: PropertyB
+    CSharp: OuterClass.InnerClass.PropertyB
   qualifiedName:
     CSharp: Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.PropertyB
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-03-30 14_04_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    path: TestResults/Deploy_t-hax 2015-04-16 17_34_08/Out/Assets/TestClass1/TestClass1/Class1.cs
     startLine: 263
   syntax:
     content:
