@@ -157,7 +157,7 @@ namespace DocAsCode.BuildMeta
                     if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                     {
                         lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
-                        TryExtractReference(ref lastSection, referenceFolder);
+                        ExtractReferenceFromMdSection(ref lastSection, referenceFolder);
                         sections.Add(lastSection);
                     }
                 }
@@ -175,7 +175,7 @@ namespace DocAsCode.BuildMeta
                 {
                     lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
                 }
-                TryExtractReference(ref lastSection, referenceFolder);
+                ExtractReferenceFromMdSection(ref lastSection, referenceFolder);
                 sections.Add(lastSection);
             }
 
@@ -198,7 +198,7 @@ namespace DocAsCode.BuildMeta
         /// </summary>
         /// <param name="section"></param>
         /// <param name="referenceFolder"></param>
-        private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
+        private static void ExtractReferenceFromMdSection(ref MarkdownIndex section, string referenceFolder)
         {
             var ReferenceRegex = new Regex(@"{{\s*""(?<source>\S*?)""\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
             MatchCollection matches = ReferenceRegex.Matches(section.MarkdownContent);
