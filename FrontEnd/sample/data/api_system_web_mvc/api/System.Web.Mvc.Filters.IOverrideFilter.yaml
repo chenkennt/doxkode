@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Filters.IOverrideFilter.FiltersToOverride
   href: System.Web.Mvc.Filters.IOverrideFilter.yaml
   name:
-    CSharp: FiltersToOverride
+    CSharp: IOverrideFilter.FiltersToOverride
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.IOverrideFilter.FiltersToOverride
   type: Property

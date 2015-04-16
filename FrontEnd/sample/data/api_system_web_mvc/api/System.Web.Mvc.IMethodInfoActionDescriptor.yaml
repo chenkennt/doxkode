@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.IMethodInfoActionDescriptor.MethodInfo
   href: System.Web.Mvc.IMethodInfoActionDescriptor.yaml
   name:
-    CSharp: MethodInfo
+    CSharp: IMethodInfoActionDescriptor.MethodInfo
   qualifiedName:
     CSharp: System.Web.Mvc.IMethodInfoActionDescriptor.MethodInfo
   type: Property

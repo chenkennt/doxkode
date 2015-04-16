@@ -35,7 +35,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.Ajax
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: Ajax
+    CSharp: ViewMasterPage.Ajax
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.Ajax
   type: Property
@@ -55,7 +55,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.Html
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: Html
+    CSharp: ViewMasterPage.Html
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.Html
   type: Property
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.Model
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: Model
+    CSharp: ViewMasterPage.Model
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.Model
   type: Property
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.TempData
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: TempData
+    CSharp: ViewMasterPage.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.TempData
   type: Property
@@ -115,7 +115,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.Url
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: Url
+    CSharp: ViewMasterPage.Url
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.Url
   type: Property
@@ -135,7 +135,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.ViewBag
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ViewMasterPage.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.ViewBag
   type: Property
@@ -153,7 +153,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.ViewContext
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: ViewContext
+    CSharp: ViewMasterPage.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.ViewContext
   type: Property
@@ -173,7 +173,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.ViewData
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewMasterPage.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.ViewData
   type: Property
@@ -193,7 +193,7 @@ items:
 - id: System.Web.Mvc.ViewMasterPage.Writer
   href: System.Web.Mvc.ViewMasterPage.yaml
   name:
-    CSharp: Writer
+    CSharp: ViewMasterPage.Writer
   qualifiedName:
     CSharp: System.Web.Mvc.ViewMasterPage.Writer
   type: Property

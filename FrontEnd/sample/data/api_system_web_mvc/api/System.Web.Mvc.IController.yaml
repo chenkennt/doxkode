@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IController.Execute(System.Web.Routing.RequestContext)
   href: System.Web.Mvc.IController.yaml
   name:
-    CSharp: Execute
+    CSharp: IController.Execute(RequestContext)
   qualifiedName:
     CSharp: System.Web.Mvc.IController.Execute(System.Web.Routing.RequestContext)
   type: Method

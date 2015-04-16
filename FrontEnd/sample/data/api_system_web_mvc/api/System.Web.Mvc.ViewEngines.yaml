@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ViewEngines.Engines
   href: System.Web.Mvc.ViewEngines.yaml
   name:
-    CSharp: Engines
+    CSharp: ViewEngines.Engines
   qualifiedName:
     CSharp: System.Web.Mvc.ViewEngines.Engines
   type: Property

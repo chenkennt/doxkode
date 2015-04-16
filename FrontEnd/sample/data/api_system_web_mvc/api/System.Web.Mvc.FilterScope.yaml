@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.FilterScope.First
   href: System.Web.Mvc.FilterScope.yaml
   name:
-    CSharp: First
+    CSharp: FilterScope.First
   qualifiedName:
     CSharp: System.Web.Mvc.FilterScope.First
   type: Field
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.FilterScope.Global
   href: System.Web.Mvc.FilterScope.yaml
   name:
-    CSharp: Global
+    CSharp: FilterScope.Global
   qualifiedName:
     CSharp: System.Web.Mvc.FilterScope.Global
   type: Field
@@ -57,7 +57,7 @@ items:
 - id: System.Web.Mvc.FilterScope.Controller
   href: System.Web.Mvc.FilterScope.yaml
   name:
-    CSharp: Controller
+    CSharp: FilterScope.Controller
   qualifiedName:
     CSharp: System.Web.Mvc.FilterScope.Controller
   type: Field
@@ -71,7 +71,7 @@ items:
 - id: System.Web.Mvc.FilterScope.Action
   href: System.Web.Mvc.FilterScope.yaml
   name:
-    CSharp: Action
+    CSharp: FilterScope.Action
   qualifiedName:
     CSharp: System.Web.Mvc.FilterScope.Action
   type: Field
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.FilterScope.Last
   href: System.Web.Mvc.FilterScope.yaml
   name:
-    CSharp: Last
+    CSharp: FilterScope.Last
   qualifiedName:
     CSharp: System.Web.Mvc.FilterScope.Last
   type: Field

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelBinderProviders.BinderProviders
   href: System.Web.Mvc.ModelBinderProviders.yaml
   name:
-    CSharp: BinderProviders
+    CSharp: ModelBinderProviders.BinderProviders
   qualifiedName:
     CSharp: System.Web.Mvc.ModelBinderProviders.BinderProviders
   type: Property

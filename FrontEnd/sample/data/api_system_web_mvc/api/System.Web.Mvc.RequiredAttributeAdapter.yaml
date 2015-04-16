@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.RequiredAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RequiredAttribute)
   href: System.Web.Mvc.RequiredAttributeAdapter.yaml
   name:
-    CSharp: RequiredAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RequiredAttribute)
+    CSharp: RequiredAttributeAdapter.RequiredAttributeAdapter(ModelMetadata, ControllerContext, RequiredAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.RequiredAttributeAdapter.RequiredAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RequiredAttribute)
+    CSharp: System.Web.Mvc.RequiredAttributeAdapter.RequiredAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.RequiredAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.RequiredAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.RequiredAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: RequiredAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.RequiredAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.RequiredAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

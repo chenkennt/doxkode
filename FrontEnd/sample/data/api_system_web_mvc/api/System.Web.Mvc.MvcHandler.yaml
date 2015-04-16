@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.MvcHandler.MvcVersionHeaderName
   href: System.Web.Mvc.MvcHandler.yaml
   name:
-    CSharp: MvcVersionHeaderName
+    CSharp: MvcHandler.MvcVersionHeaderName
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHandler.MvcVersionHeaderName
   type: Field
@@ -37,7 +37,7 @@ items:
 - id: System.Web.Mvc.MvcHandler.#ctor(System.Web.Routing.RequestContext)
   href: System.Web.Mvc.MvcHandler.yaml
   name:
-    CSharp: MvcHandler(System.Web.Routing.RequestContext)
+    CSharp: MvcHandler.MvcHandler(RequestContext)
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHandler.MvcHandler(System.Web.Routing.RequestContext)
   type: Constructor
@@ -59,7 +59,7 @@ items:
 - id: System.Web.Mvc.MvcHandler.DisableMvcResponseHeader
   href: System.Web.Mvc.MvcHandler.yaml
   name:
-    CSharp: DisableMvcResponseHeader
+    CSharp: MvcHandler.DisableMvcResponseHeader
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHandler.DisableMvcResponseHeader
   type: Property
@@ -79,7 +79,7 @@ items:
 - id: System.Web.Mvc.MvcHandler.RequestContext
   href: System.Web.Mvc.MvcHandler.yaml
   name:
-    CSharp: RequestContext
+    CSharp: MvcHandler.RequestContext
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHandler.RequestContext
   type: Property

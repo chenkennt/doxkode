@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.ActionNameAttribute.#ctor(System.String)
   href: System.Web.Mvc.ActionNameAttribute.yaml
   name:
-    CSharp: ActionNameAttribute(System.String)
+    CSharp: ActionNameAttribute.ActionNameAttribute(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionNameAttribute.ActionNameAttribute(System.String)
+    CSharp: System.Web.Mvc.ActionNameAttribute.ActionNameAttribute(string)
   type: Constructor
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.ActionNameAttribute.Name
   href: System.Web.Mvc.ActionNameAttribute.yaml
   name:
-    CSharp: Name
+    CSharp: ActionNameAttribute.Name
   qualifiedName:
     CSharp: System.Web.Mvc.ActionNameAttribute.Name
   type: Property
@@ -71,9 +71,9 @@ items:
 - id: System.Web.Mvc.ActionNameAttribute.IsValidName(System.Web.Mvc.ControllerContext,System.String,System.Reflection.MethodInfo)
   href: System.Web.Mvc.ActionNameAttribute.yaml
   name:
-    CSharp: IsValidName
+    CSharp: ActionNameAttribute.IsValidName(ControllerContext, string, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionNameAttribute.IsValidName(System.Web.Mvc.ControllerContext,System.String,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.ActionNameAttribute.IsValidName(System.Web.Mvc.ControllerContext, string, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

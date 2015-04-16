@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.#ctor(System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: ReflectedAsyncActionDescriptor(System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
+    CSharp: ReflectedAsyncActionDescriptor.ReflectedAsyncActionDescriptor(MethodInfo, MethodInfo, string, ControllerDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ReflectedAsyncActionDescriptor(System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ReflectedAsyncActionDescriptor(System.Reflection.MethodInfo, System.Reflection.MethodInfo, string, System.Web.Mvc.ControllerDescriptor)
   type: Constructor
   source:
     remote: *o0
@@ -66,7 +66,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ActionName
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: ActionName
+    CSharp: ReflectedAsyncActionDescriptor.ActionName
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ActionName
   type: Property
@@ -86,7 +86,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.AsyncMethodInfo
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: AsyncMethodInfo
+    CSharp: ReflectedAsyncActionDescriptor.AsyncMethodInfo
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.AsyncMethodInfo
   type: Property
@@ -106,7 +106,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.CompletedMethodInfo
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: CompletedMethodInfo
+    CSharp: ReflectedAsyncActionDescriptor.CompletedMethodInfo
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.CompletedMethodInfo
   type: Property
@@ -126,7 +126,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ControllerDescriptor
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: ControllerDescriptor
+    CSharp: ReflectedAsyncActionDescriptor.ControllerDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.ControllerDescriptor
   type: Property
@@ -146,7 +146,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.MethodInfo
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: MethodInfo
+    CSharp: ReflectedAsyncActionDescriptor.MethodInfo
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.MethodInfo
   type: Property
@@ -166,7 +166,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.UniqueId
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: UniqueId
+    CSharp: ReflectedAsyncActionDescriptor.UniqueId
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.UniqueId
   type: Property
@@ -186,9 +186,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object},System.AsyncCallback,System.Object)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: BeginExecute
+    CSharp: ReflectedAsyncActionDescriptor.BeginExecute(ControllerContext, IDictionary<string, object>, AsyncCallback, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object},System.AsyncCallback,System.Object)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.BeginExecute(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>, System.AsyncCallback, object)
   type: Method
   source:
     remote: *o0
@@ -223,7 +223,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.EndExecute(System.IAsyncResult)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: EndExecute
+    CSharp: ReflectedAsyncActionDescriptor.EndExecute(IAsyncResult)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.EndExecute(System.IAsyncResult)
   type: Method
@@ -245,9 +245,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedAsyncActionDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -266,9 +266,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedAsyncActionDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -292,9 +292,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetFilterAttributes(System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: GetFilterAttributes
+    CSharp: ReflectedAsyncActionDescriptor.GetFilterAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetFilterAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetFilterAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -314,9 +314,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetParameters
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: GetParameters
+    CSharp: ReflectedAsyncActionDescriptor.GetParameters()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetParameters
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetParameters()
   type: Method
   source:
     remote: *o0
@@ -330,9 +330,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetSelectors
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: GetSelectors
+    CSharp: ReflectedAsyncActionDescriptor.GetSelectors()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetSelectors
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.GetSelectors()
   type: Method
   source:
     remote: *o0
@@ -347,9 +347,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ReflectedAsyncActionDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper)
   type: Method
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, object)
   type: Method
   source:
     remote: *o0
@@ -72,9 +72,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -99,9 +99,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -131,9 +131,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, object)
   type: Method
   source:
     remote: *o0
@@ -168,9 +168,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -205,9 +205,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -242,9 +242,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, object, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, object, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -284,9 +284,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, RouteValueDictionary, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -326,9 +326,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, FormMethod, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Mvc.FormMethod, object)
   type: Method
   source:
     remote: *o0
@@ -368,9 +368,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, FormMethod, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Mvc.FormMethod, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -410,9 +410,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Web.Mvc.FormMethod,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, object, FormMethod, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.Web.Mvc.FormMethod,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, object, System.Web.Mvc.FormMethod, object)
   type: Method
   source:
     remote: *o0
@@ -457,9 +457,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: FormExtensions.BeginForm(HtmlHelper, string, string, RouteValueDictionary, FormMethod, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.FormMethod, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -504,9 +504,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, object)
   type: Method
   source:
     remote: *o0
@@ -531,9 +531,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -558,9 +558,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -585,9 +585,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -617,9 +617,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, RouteValueDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary)
   type: Method
   source:
     remote: *o0
@@ -649,9 +649,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -681,9 +681,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, object, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, object, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -718,9 +718,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, RouteValueDictionary, FormMethod)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.FormMethod)
   type: Method
   source:
     remote: *o0
@@ -755,9 +755,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, FormMethod, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Mvc.FormMethod, object)
   type: Method
   source:
     remote: *o0
@@ -792,9 +792,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, FormMethod, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Mvc.FormMethod, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -829,9 +829,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.FormMethod,System.Object)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, object, FormMethod, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.FormMethod,System.Object)
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, object, System.Web.Mvc.FormMethod, object)
   type: Method
   source:
     remote: *o0
@@ -871,9 +871,9 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: FormExtensions.BeginRouteForm(HtmlHelper, string, RouteValueDictionary, FormMethod, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.FormMethod,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.FormExtensions.BeginRouteForm(System.Web.Mvc.HtmlHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.FormMethod, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -913,7 +913,7 @@ items:
 - id: System.Web.Mvc.Html.FormExtensions.EndForm(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.FormExtensions.yaml
   name:
-    CSharp: EndForm
+    CSharp: FormExtensions.EndForm(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.FormExtensions.EndForm(System.Web.Mvc.HtmlHelper)
   type: Method

@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.RouteAreaAttribute.#ctor
   href: System.Web.Mvc.RouteAreaAttribute.yaml
   name:
-    CSharp: RouteAreaAttribute
+    CSharp: RouteAreaAttribute.RouteAreaAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteAreaAttribute.RouteAreaAttribute
+    CSharp: System.Web.Mvc.RouteAreaAttribute.RouteAreaAttribute()
   type: Constructor
   source:
     remote: *o0
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.RouteAreaAttribute.#ctor(System.String)
   href: System.Web.Mvc.RouteAreaAttribute.yaml
   name:
-    CSharp: RouteAreaAttribute(System.String)
+    CSharp: RouteAreaAttribute.RouteAreaAttribute(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteAreaAttribute.RouteAreaAttribute(System.String)
+    CSharp: System.Web.Mvc.RouteAreaAttribute.RouteAreaAttribute(string)
   type: Constructor
   source:
     remote: *o0
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.RouteAreaAttribute.AreaName
   href: System.Web.Mvc.RouteAreaAttribute.yaml
   name:
-    CSharp: AreaName
+    CSharp: RouteAreaAttribute.AreaName
   qualifiedName:
     CSharp: System.Web.Mvc.RouteAreaAttribute.AreaName
   type: Property
@@ -96,7 +96,7 @@ items:
 - id: System.Web.Mvc.RouteAreaAttribute.AreaPrefix
   href: System.Web.Mvc.RouteAreaAttribute.yaml
   name:
-    CSharp: AreaPrefix
+    CSharp: RouteAreaAttribute.AreaPrefix
   qualifiedName:
     CSharp: System.Web.Mvc.RouteAreaAttribute.AreaPrefix
   type: Property

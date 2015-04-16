@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.#ctor(System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: ReflectedActionDescriptor(System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
+    CSharp: ReflectedActionDescriptor.ReflectedActionDescriptor(MethodInfo, string, ControllerDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.ReflectedActionDescriptor(System.Reflection.MethodInfo,System.String,System.Web.Mvc.ControllerDescriptor)
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.ReflectedActionDescriptor(System.Reflection.MethodInfo, string, System.Web.Mvc.ControllerDescriptor)
   type: Constructor
   source:
     remote: *o0
@@ -58,7 +58,7 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.ActionName
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: ActionName
+    CSharp: ReflectedActionDescriptor.ActionName
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedActionDescriptor.ActionName
   type: Property
@@ -78,7 +78,7 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.ControllerDescriptor
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: ControllerDescriptor
+    CSharp: ReflectedActionDescriptor.ControllerDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedActionDescriptor.ControllerDescriptor
   type: Property
@@ -98,7 +98,7 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.MethodInfo
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: MethodInfo
+    CSharp: ReflectedActionDescriptor.MethodInfo
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedActionDescriptor.MethodInfo
   type: Property
@@ -118,7 +118,7 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.UniqueId
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: UniqueId
+    CSharp: ReflectedActionDescriptor.UniqueId
   qualifiedName:
     CSharp: System.Web.Mvc.ReflectedActionDescriptor.UniqueId
   type: Property
@@ -138,9 +138,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: Execute
+    CSharp: ReflectedActionDescriptor.Execute(ControllerContext, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.Execute(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -165,9 +165,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedActionDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -186,9 +186,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedActionDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -212,9 +212,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.GetFilterAttributes(System.Boolean)
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: GetFilterAttributes
+    CSharp: ReflectedActionDescriptor.GetFilterAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetFilterAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetFilterAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -234,9 +234,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.GetParameters
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: GetParameters
+    CSharp: ReflectedActionDescriptor.GetParameters()
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetParameters
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetParameters()
   type: Method
   source:
     remote: *o0
@@ -250,9 +250,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.GetSelectors
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: GetSelectors
+    CSharp: ReflectedActionDescriptor.GetSelectors()
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetSelectors
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.GetSelectors()
   type: Method
   source:
     remote: *o0
@@ -267,9 +267,9 @@ items:
 - id: System.Web.Mvc.ReflectedActionDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.ReflectedActionDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ReflectedActionDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ReflectedActionDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ReflectedActionDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

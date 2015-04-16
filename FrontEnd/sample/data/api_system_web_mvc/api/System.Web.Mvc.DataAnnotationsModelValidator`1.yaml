@@ -1,9 +1,9 @@
 id: System.Web.Mvc.DataAnnotationsModelValidator`1
 href: System.Web.Mvc.DataAnnotationsModelValidator`1.yaml
 name:
-  CSharp: DataAnnotationsModelValidator`1
+  CSharp: DataAnnotationsModelValidator<TAttribute>
 qualifiedName:
-  CSharp: System.Web.Mvc.DataAnnotationsModelValidator`1
+  CSharp: System.Web.Mvc.DataAnnotationsModelValidator<TAttribute>
 type: Class
 source:
   remote: &o0
@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidator`1.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,`0)
   href: System.Web.Mvc.DataAnnotationsModelValidator`1.yaml
   name:
-    CSharp: DataAnnotationsModelValidator`1(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,`0)
+    CSharp: DataAnnotationsModelValidator<TAttribute>.DataAnnotationsModelValidator(ModelMetadata, ControllerContext, TAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidator`1.DataAnnotationsModelValidator`1(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,`0)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidator<TAttribute>.DataAnnotationsModelValidator(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, TAttribute)
   type: Constructor
   source:
     remote: *o0

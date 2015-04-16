@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.InputType.CheckBox
   href: System.Web.Mvc.InputType.yaml
   name:
-    CSharp: CheckBox
+    CSharp: InputType.CheckBox
   qualifiedName:
     CSharp: System.Web.Mvc.InputType.CheckBox
   type: Field
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.InputType.Hidden
   href: System.Web.Mvc.InputType.yaml
   name:
-    CSharp: Hidden
+    CSharp: InputType.Hidden
   qualifiedName:
     CSharp: System.Web.Mvc.InputType.Hidden
   type: Field
@@ -57,7 +57,7 @@ items:
 - id: System.Web.Mvc.InputType.Password
   href: System.Web.Mvc.InputType.yaml
   name:
-    CSharp: Password
+    CSharp: InputType.Password
   qualifiedName:
     CSharp: System.Web.Mvc.InputType.Password
   type: Field
@@ -71,7 +71,7 @@ items:
 - id: System.Web.Mvc.InputType.Radio
   href: System.Web.Mvc.InputType.yaml
   name:
-    CSharp: Radio
+    CSharp: InputType.Radio
   qualifiedName:
     CSharp: System.Web.Mvc.InputType.Radio
   type: Field
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.InputType.Text
   href: System.Web.Mvc.InputType.yaml
   name:
-    CSharp: Text
+    CSharp: InputType.Text
   qualifiedName:
     CSharp: System.Web.Mvc.InputType.Text
   type: Field

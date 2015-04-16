@@ -32,7 +32,7 @@ items:
 - id: System.Web.Mvc.ViewPage.Ajax
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: Ajax
+    CSharp: ViewPage.Ajax
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.Ajax
   type: Property
@@ -52,7 +52,7 @@ items:
 - id: System.Web.Mvc.ViewPage.Html
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: Html
+    CSharp: ViewPage.Html
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.Html
   type: Property
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.ViewPage.MasterLocation
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: MasterLocation
+    CSharp: ViewPage.MasterLocation
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.MasterLocation
   type: Property
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.ViewPage.Model
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: Model
+    CSharp: ViewPage.Model
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.Model
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.ViewPage.TempData
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: TempData
+    CSharp: ViewPage.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.TempData
   type: Property
@@ -132,7 +132,7 @@ items:
 - id: System.Web.Mvc.ViewPage.Url
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: Url
+    CSharp: ViewPage.Url
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.Url
   type: Property
@@ -152,7 +152,7 @@ items:
 - id: System.Web.Mvc.ViewPage.ViewBag
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ViewPage.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.ViewBag
   type: Property
@@ -170,7 +170,7 @@ items:
 - id: System.Web.Mvc.ViewPage.ViewContext
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: ViewContext
+    CSharp: ViewPage.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.ViewContext
   type: Property
@@ -190,7 +190,7 @@ items:
 - id: System.Web.Mvc.ViewPage.ViewData
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewPage.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.ViewData
   type: Property
@@ -210,7 +210,7 @@ items:
 - id: System.Web.Mvc.ViewPage.Writer
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: Writer
+    CSharp: ViewPage.Writer
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.Writer
   type: Property
@@ -230,9 +230,9 @@ items:
 - id: System.Web.Mvc.ViewPage.InitHelpers
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: InitHelpers
+    CSharp: ViewPage.InitHelpers()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewPage.InitHelpers
+    CSharp: System.Web.Mvc.ViewPage.InitHelpers()
   type: Method
   source:
     remote: *o0
@@ -247,7 +247,7 @@ items:
 - id: System.Web.Mvc.ViewPage.ProcessRequest(System.Web.HttpContext)
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: ProcessRequest
+    CSharp: ViewPage.ProcessRequest(HttpContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.ProcessRequest(System.Web.HttpContext)
   type: Method
@@ -269,7 +269,7 @@ items:
 - id: System.Web.Mvc.ViewPage.RenderView(System.Web.Mvc.ViewContext)
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: RenderView
+    CSharp: ViewPage.RenderView(ViewContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.RenderView(System.Web.Mvc.ViewContext)
   type: Method
@@ -291,7 +291,7 @@ items:
 - id: System.Web.Mvc.ViewPage.SetTextWriter(System.IO.TextWriter)
   href: System.Web.Mvc.ViewPage.yaml
   name:
-    CSharp: SetTextWriter
+    CSharp: ViewPage.SetTextWriter(TextWriter)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewPage.SetTextWriter(System.IO.TextWriter)
   type: Method

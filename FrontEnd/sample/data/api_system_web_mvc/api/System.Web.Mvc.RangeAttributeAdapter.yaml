@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.RangeAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RangeAttribute)
   href: System.Web.Mvc.RangeAttributeAdapter.yaml
   name:
-    CSharp: RangeAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RangeAttribute)
+    CSharp: RangeAttributeAdapter.RangeAttributeAdapter(ModelMetadata, ControllerContext, RangeAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.RangeAttributeAdapter.RangeAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RangeAttribute)
+    CSharp: System.Web.Mvc.RangeAttributeAdapter.RangeAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.RangeAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.RangeAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.RangeAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: RangeAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.RangeAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.RangeAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

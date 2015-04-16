@@ -1,9 +1,9 @@
 id: System.Web.Mvc.HtmlHelper`1
 href: System.Web.Mvc.HtmlHelper`1.yaml
 name:
-  CSharp: HtmlHelper`1
+  CSharp: HtmlHelper<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.HtmlHelper`1
+  CSharp: System.Web.Mvc.HtmlHelper<TModel>
 type: Class
 source:
   remote: &o0
@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper`1.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
   href: System.Web.Mvc.HtmlHelper`1.yaml
   name:
-    CSharp: HtmlHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: HtmlHelper<TModel>.HtmlHelper(ViewContext, IViewDataContainer)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper`1.HtmlHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer)
+    CSharp: System.Web.Mvc.HtmlHelper<TModel>.HtmlHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer)
   type: Constructor
   source:
     remote: *o0
@@ -53,9 +53,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper`1.#ctor(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.HtmlHelper`1.yaml
   name:
-    CSharp: HtmlHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: HtmlHelper<TModel>.HtmlHelper(ViewContext, IViewDataContainer, RouteCollection)
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper`1.HtmlHelper`1(System.Web.Mvc.ViewContext,System.Web.Mvc.IViewDataContainer,System.Web.Routing.RouteCollection)
+    CSharp: System.Web.Mvc.HtmlHelper<TModel>.HtmlHelper(System.Web.Mvc.ViewContext, System.Web.Mvc.IViewDataContainer, System.Web.Routing.RouteCollection)
   type: Constructor
   source:
     remote: *o0
@@ -85,9 +85,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper`1.ViewBag
   href: System.Web.Mvc.HtmlHelper`1.yaml
   name:
-    CSharp: ViewBag
+    CSharp: HtmlHelper<TModel>.ViewBag
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper`1.ViewBag
+    CSharp: System.Web.Mvc.HtmlHelper<TModel>.ViewBag
   type: Property
   source:
     remote: *o0
@@ -103,9 +103,9 @@ items:
 - id: System.Web.Mvc.HtmlHelper`1.ViewData
   href: System.Web.Mvc.HtmlHelper`1.yaml
   name:
-    CSharp: ViewData
+    CSharp: HtmlHelper<TModel>.ViewData
   qualifiedName:
-    CSharp: System.Web.Mvc.HtmlHelper`1.ViewData
+    CSharp: System.Web.Mvc.HtmlHelper<TModel>.ViewData
   type: Property
   source:
     remote: *o0

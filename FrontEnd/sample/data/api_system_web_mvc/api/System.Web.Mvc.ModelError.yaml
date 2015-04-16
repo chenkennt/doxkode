@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelError.#ctor(System.Exception)
   href: System.Web.Mvc.ModelError.yaml
   name:
-    CSharp: ModelError(System.Exception)
+    CSharp: ModelError.ModelError(Exception)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelError.ModelError(System.Exception)
   type: Constructor
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.ModelError.#ctor(System.Exception,System.String)
   href: System.Web.Mvc.ModelError.yaml
   name:
-    CSharp: ModelError(System.Exception,System.String)
+    CSharp: ModelError.ModelError(Exception, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelError.ModelError(System.Exception,System.String)
+    CSharp: System.Web.Mvc.ModelError.ModelError(System.Exception, string)
   type: Constructor
   source:
     remote: *o0
@@ -72,9 +72,9 @@ items:
 - id: System.Web.Mvc.ModelError.#ctor(System.String)
   href: System.Web.Mvc.ModelError.yaml
   name:
-    CSharp: ModelError(System.String)
+    CSharp: ModelError.ModelError(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelError.ModelError(System.String)
+    CSharp: System.Web.Mvc.ModelError.ModelError(string)
   type: Constructor
   source:
     remote: *o0
@@ -94,7 +94,7 @@ items:
 - id: System.Web.Mvc.ModelError.Exception
   href: System.Web.Mvc.ModelError.yaml
   name:
-    CSharp: Exception
+    CSharp: ModelError.Exception
   qualifiedName:
     CSharp: System.Web.Mvc.ModelError.Exception
   type: Property
@@ -114,7 +114,7 @@ items:
 - id: System.Web.Mvc.ModelError.ErrorMessage
   href: System.Web.Mvc.ModelError.yaml
   name:
-    CSharp: ErrorMessage
+    CSharp: ModelError.ErrorMessage
   qualifiedName:
     CSharp: System.Web.Mvc.ModelError.ErrorMessage
   type: Property

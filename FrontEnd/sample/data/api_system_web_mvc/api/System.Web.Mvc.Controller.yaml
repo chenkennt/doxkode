@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.Controller.Resolver
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Resolver
+    CSharp: Controller.Resolver
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Resolver
   type: Property
@@ -50,7 +50,7 @@ items:
 - id: System.Web.Mvc.Controller.AsyncManager
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: AsyncManager
+    CSharp: Controller.AsyncManager
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.AsyncManager
   type: Property
@@ -70,7 +70,7 @@ items:
 - id: System.Web.Mvc.Controller.ActionInvoker
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: ActionInvoker
+    CSharp: Controller.ActionInvoker
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.ActionInvoker
   type: Property
@@ -90,7 +90,7 @@ items:
 - id: System.Web.Mvc.Controller.HttpContext
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: HttpContext
+    CSharp: Controller.HttpContext
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.HttpContext
   type: Property
@@ -110,7 +110,7 @@ items:
 - id: System.Web.Mvc.Controller.ModelState
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: ModelState
+    CSharp: Controller.ModelState
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.ModelState
   type: Property
@@ -130,7 +130,7 @@ items:
 - id: System.Web.Mvc.Controller.Profile
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Profile
+    CSharp: Controller.Profile
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Profile
   type: Property
@@ -150,7 +150,7 @@ items:
 - id: System.Web.Mvc.Controller.Request
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Request
+    CSharp: Controller.Request
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Request
   type: Property
@@ -170,7 +170,7 @@ items:
 - id: System.Web.Mvc.Controller.Response
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Response
+    CSharp: Controller.Response
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Response
   type: Property
@@ -190,7 +190,7 @@ items:
 - id: System.Web.Mvc.Controller.RouteData
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: RouteData
+    CSharp: Controller.RouteData
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.RouteData
   type: Property
@@ -210,7 +210,7 @@ items:
 - id: System.Web.Mvc.Controller.Server
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Server
+    CSharp: Controller.Server
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Server
   type: Property
@@ -230,7 +230,7 @@ items:
 - id: System.Web.Mvc.Controller.Session
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Session
+    CSharp: Controller.Session
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Session
   type: Property
@@ -250,7 +250,7 @@ items:
 - id: System.Web.Mvc.Controller.TempDataProvider
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: TempDataProvider
+    CSharp: Controller.TempDataProvider
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.TempDataProvider
   type: Property
@@ -270,7 +270,7 @@ items:
 - id: System.Web.Mvc.Controller.Url
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Url
+    CSharp: Controller.Url
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.Url
   type: Property
@@ -290,7 +290,7 @@ items:
 - id: System.Web.Mvc.Controller.User
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: User
+    CSharp: Controller.User
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.User
   type: Property
@@ -310,7 +310,7 @@ items:
 - id: System.Web.Mvc.Controller.ViewEngineCollection
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: ViewEngineCollection
+    CSharp: Controller.ViewEngineCollection
   qualifiedName:
     CSharp: System.Web.Mvc.Controller.ViewEngineCollection
   type: Property
@@ -330,9 +330,9 @@ items:
 - id: System.Web.Mvc.Controller.Dispose
   href: System.Web.Mvc.Controller.yaml
   name:
-    CSharp: Dispose
+    CSharp: Controller.Dispose()
   qualifiedName:
-    CSharp: System.Web.Mvc.Controller.Dispose
+    CSharp: System.Web.Mvc.Controller.Dispose()
   type: Method
   source:
     remote: *o0

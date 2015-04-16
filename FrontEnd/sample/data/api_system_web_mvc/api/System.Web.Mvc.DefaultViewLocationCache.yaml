@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.Null
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: 
+    CSharp: DefaultViewLocationCache.Null
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultViewLocationCache.Null
   type: Field
@@ -37,9 +37,9 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.#ctor
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: DefaultViewLocationCache
+    CSharp: DefaultViewLocationCache.DefaultViewLocationCache()
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultViewLocationCache.DefaultViewLocationCache
+    CSharp: System.Web.Mvc.DefaultViewLocationCache.DefaultViewLocationCache()
   type: Constructor
   source:
     remote: *o0
@@ -54,7 +54,7 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.#ctor(System.TimeSpan)
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: DefaultViewLocationCache(System.TimeSpan)
+    CSharp: DefaultViewLocationCache.DefaultViewLocationCache(TimeSpan)
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultViewLocationCache.DefaultViewLocationCache(System.TimeSpan)
   type: Constructor
@@ -76,7 +76,7 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.TimeSpan
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: TimeSpan
+    CSharp: DefaultViewLocationCache.TimeSpan
   qualifiedName:
     CSharp: System.Web.Mvc.DefaultViewLocationCache.TimeSpan
   type: Property
@@ -96,9 +96,9 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.GetViewLocation(System.Web.HttpContextBase,System.String)
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: GetViewLocation
+    CSharp: DefaultViewLocationCache.GetViewLocation(HttpContextBase, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultViewLocationCache.GetViewLocation(System.Web.HttpContextBase,System.String)
+    CSharp: System.Web.Mvc.DefaultViewLocationCache.GetViewLocation(System.Web.HttpContextBase, string)
   type: Method
   source:
     remote: *o0
@@ -123,9 +123,9 @@ items:
 - id: System.Web.Mvc.DefaultViewLocationCache.InsertViewLocation(System.Web.HttpContextBase,System.String,System.String)
   href: System.Web.Mvc.DefaultViewLocationCache.yaml
   name:
-    CSharp: InsertViewLocation
+    CSharp: DefaultViewLocationCache.InsertViewLocation(HttpContextBase, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.DefaultViewLocationCache.InsertViewLocation(System.Web.HttpContextBase,System.String,System.String)
+    CSharp: System.Web.Mvc.DefaultViewLocationCache.InsertViewLocation(System.Web.HttpContextBase, string, string)
   type: Method
   source:
     remote: *o0

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.#ctor(System.String,System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: AreaRegistrationContext(System.String,System.Web.Routing.RouteCollection)
+    CSharp: AreaRegistrationContext.AreaRegistrationContext(string, RouteCollection)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.AreaRegistrationContext(System.String,System.Web.Routing.RouteCollection)
+    CSharp: System.Web.Mvc.AreaRegistrationContext.AreaRegistrationContext(string, System.Web.Routing.RouteCollection)
   type: Constructor
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.#ctor(System.String,System.Web.Routing.RouteCollection,System.Object)
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: AreaRegistrationContext(System.String,System.Web.Routing.RouteCollection,System.Object)
+    CSharp: AreaRegistrationContext.AreaRegistrationContext(string, RouteCollection, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.AreaRegistrationContext(System.String,System.Web.Routing.RouteCollection,System.Object)
+    CSharp: System.Web.Mvc.AreaRegistrationContext.AreaRegistrationContext(string, System.Web.Routing.RouteCollection, object)
   type: Constructor
   source:
     remote: *o0
@@ -82,7 +82,7 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.AreaName
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: AreaName
+    CSharp: AreaRegistrationContext.AreaName
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistrationContext.AreaName
   type: Property
@@ -102,7 +102,7 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.Namespaces
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: Namespaces
+    CSharp: AreaRegistrationContext.Namespaces
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistrationContext.Namespaces
   type: Property
@@ -122,7 +122,7 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.Routes
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: Routes
+    CSharp: AreaRegistrationContext.Routes
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistrationContext.Routes
   type: Property
@@ -142,7 +142,7 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.State
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: State
+    CSharp: AreaRegistrationContext.State
   qualifiedName:
     CSharp: System.Web.Mvc.AreaRegistrationContext.State
   type: Property
@@ -162,9 +162,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String)
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String)
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string)
   type: Method
   source:
     remote: *o0
@@ -189,9 +189,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object)
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object)
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, object)
   type: Method
   source:
     remote: *o0
@@ -221,9 +221,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.Object)
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string, object, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.Object)
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, object, object)
   type: Method
   source:
     remote: *o0
@@ -258,9 +258,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.String[])
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.String[])
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, string[])
   type: Method
   source:
     remote: *o0
@@ -290,9 +290,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.String[])
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string, object, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.String[])
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, object, string[])
   type: Method
   source:
     remote: *o0
@@ -327,9 +327,9 @@ items:
 - id: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.Object,System.String[])
   href: System.Web.Mvc.AreaRegistrationContext.yaml
   name:
-    CSharp: MapRoute
+    CSharp: AreaRegistrationContext.MapRoute(string, string, object, object, string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(System.String,System.String,System.Object,System.Object,System.String[])
+    CSharp: System.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, object, object, string[])
   type: Method
   source:
     remote: *o0

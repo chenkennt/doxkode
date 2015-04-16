@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.AreaMasterLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: AreaMasterLocationFormats
+    CSharp: VirtualPathProviderViewEngine.AreaMasterLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.AreaMasterLocationFormats
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.AreaPartialViewLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: AreaPartialViewLocationFormats
+    CSharp: VirtualPathProviderViewEngine.AreaPartialViewLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.AreaPartialViewLocationFormats
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.AreaViewLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: AreaViewLocationFormats
+    CSharp: VirtualPathProviderViewEngine.AreaViewLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.AreaViewLocationFormats
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.FileExtensions
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: FileExtensions
+    CSharp: VirtualPathProviderViewEngine.FileExtensions
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.FileExtensions
   type: Property
@@ -103,7 +103,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.MasterLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: MasterLocationFormats
+    CSharp: VirtualPathProviderViewEngine.MasterLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.MasterLocationFormats
   type: Property
@@ -123,7 +123,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.PartialViewLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: PartialViewLocationFormats
+    CSharp: VirtualPathProviderViewEngine.PartialViewLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.PartialViewLocationFormats
   type: Property
@@ -143,7 +143,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.ViewLocationCache
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: ViewLocationCache
+    CSharp: VirtualPathProviderViewEngine.ViewLocationCache
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.ViewLocationCache
   type: Property
@@ -163,7 +163,7 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.ViewLocationFormats
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: ViewLocationFormats
+    CSharp: VirtualPathProviderViewEngine.ViewLocationFormats
   qualifiedName:
     CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.ViewLocationFormats
   type: Property
@@ -183,9 +183,9 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: FindPartialView
+    CSharp: VirtualPathProviderViewEngine.FindPartialView(ControllerContext, string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.FindPartialView(System.Web.Mvc.ControllerContext,System.String,System.Boolean)
+    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.FindPartialView(System.Web.Mvc.ControllerContext, string, bool)
   type: Method
   source:
     remote: *o0
@@ -215,9 +215,9 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: FindView
+    CSharp: VirtualPathProviderViewEngine.FindView(ControllerContext, string, string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.FindView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean)
+    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.FindView(System.Web.Mvc.ControllerContext, string, string, bool)
   type: Method
   source:
     remote: *o0
@@ -252,9 +252,9 @@ items:
 - id: System.Web.Mvc.VirtualPathProviderViewEngine.ReleaseView(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView)
   href: System.Web.Mvc.VirtualPathProviderViewEngine.yaml
   name:
-    CSharp: ReleaseView
+    CSharp: VirtualPathProviderViewEngine.ReleaseView(ControllerContext, IView)
   qualifiedName:
-    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.ReleaseView(System.Web.Mvc.ControllerContext,System.Web.Mvc.IView)
+    CSharp: System.Web.Mvc.VirtualPathProviderViewEngine.ReleaseView(System.Web.Mvc.ControllerContext, System.Web.Mvc.IView)
   type: Method
   source:
     remote: *o0

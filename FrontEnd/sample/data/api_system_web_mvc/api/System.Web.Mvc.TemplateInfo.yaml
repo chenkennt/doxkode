@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.TemplateInfo.FormattedModelValue
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: FormattedModelValue
+    CSharp: TemplateInfo.FormattedModelValue
   qualifiedName:
     CSharp: System.Web.Mvc.TemplateInfo.FormattedModelValue
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.TemplateInfo.HtmlFieldPrefix
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: HtmlFieldPrefix
+    CSharp: TemplateInfo.HtmlFieldPrefix
   qualifiedName:
     CSharp: System.Web.Mvc.TemplateInfo.HtmlFieldPrefix
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.TemplateInfo.TemplateDepth
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: TemplateDepth
+    CSharp: TemplateInfo.TemplateDepth
   qualifiedName:
     CSharp: System.Web.Mvc.TemplateInfo.TemplateDepth
   type: Property
@@ -83,9 +83,9 @@ items:
 - id: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldId(System.String)
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: GetFullHtmlFieldId
+    CSharp: TemplateInfo.GetFullHtmlFieldId(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldId(System.String)
+    CSharp: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldId(string)
   type: Method
   source:
     remote: *o0
@@ -105,9 +105,9 @@ items:
 - id: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldName(System.String)
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: GetFullHtmlFieldName
+    CSharp: TemplateInfo.GetFullHtmlFieldName(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldName(System.String)
+    CSharp: System.Web.Mvc.TemplateInfo.GetFullHtmlFieldName(string)
   type: Method
   source:
     remote: *o0
@@ -127,7 +127,7 @@ items:
 - id: System.Web.Mvc.TemplateInfo.Visited(System.Web.Mvc.ModelMetadata)
   href: System.Web.Mvc.TemplateInfo.yaml
   name:
-    CSharp: Visited
+    CSharp: TemplateInfo.Visited(ModelMetadata)
   qualifiedName:
     CSharp: System.Web.Mvc.TemplateInfo.Visited(System.Web.Mvc.ModelMetadata)
   type: Method

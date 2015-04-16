@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ViewEngineResult.#ctor(System.Collections.Generic.IEnumerable{System.String})
   href: System.Web.Mvc.ViewEngineResult.yaml
   name:
-    CSharp: ViewEngineResult(System.Collections.Generic.IEnumerable{System.String})
+    CSharp: ViewEngineResult.ViewEngineResult(IEnumerable<string>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineResult.ViewEngineResult(System.Collections.Generic.IEnumerable{System.String})
+    CSharp: System.Web.Mvc.ViewEngineResult.ViewEngineResult(System.Collections.Generic.IEnumerable<string>)
   type: Constructor
   source:
     remote: *o0
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.ViewEngineResult.#ctor(System.Web.Mvc.IView,System.Web.Mvc.IViewEngine)
   href: System.Web.Mvc.ViewEngineResult.yaml
   name:
-    CSharp: ViewEngineResult(System.Web.Mvc.IView,System.Web.Mvc.IViewEngine)
+    CSharp: ViewEngineResult.ViewEngineResult(IView, IViewEngine)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewEngineResult.ViewEngineResult(System.Web.Mvc.IView,System.Web.Mvc.IViewEngine)
+    CSharp: System.Web.Mvc.ViewEngineResult.ViewEngineResult(System.Web.Mvc.IView, System.Web.Mvc.IViewEngine)
   type: Constructor
   source:
     remote: *o0
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.ViewEngineResult.SearchedLocations
   href: System.Web.Mvc.ViewEngineResult.yaml
   name:
-    CSharp: SearchedLocations
+    CSharp: ViewEngineResult.SearchedLocations
   qualifiedName:
     CSharp: System.Web.Mvc.ViewEngineResult.SearchedLocations
   type: Property
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.ViewEngineResult.View
   href: System.Web.Mvc.ViewEngineResult.yaml
   name:
-    CSharp: View
+    CSharp: ViewEngineResult.View
   qualifiedName:
     CSharp: System.Web.Mvc.ViewEngineResult.View
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.ViewEngineResult.ViewEngine
   href: System.Web.Mvc.ViewEngineResult.yaml
   name:
-    CSharp: ViewEngine
+    CSharp: ViewEngineResult.ViewEngine
   qualifiedName:
     CSharp: System.Web.Mvc.ViewEngineResult.ViewEngine
   type: Property

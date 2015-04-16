@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.FormValueProviderFactory.#ctor
   href: System.Web.Mvc.FormValueProviderFactory.yaml
   name:
-    CSharp: FormValueProviderFactory
+    CSharp: FormValueProviderFactory.FormValueProviderFactory()
   qualifiedName:
-    CSharp: System.Web.Mvc.FormValueProviderFactory.FormValueProviderFactory
+    CSharp: System.Web.Mvc.FormValueProviderFactory.FormValueProviderFactory()
   type: Constructor
   source:
     remote: *o0
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.FormValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.FormValueProviderFactory.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: FormValueProviderFactory.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.FormValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.FormValueProvider.#ctor(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.FormValueProvider.yaml
   name:
-    CSharp: FormValueProvider(System.Web.Mvc.ControllerContext)
+    CSharp: FormValueProvider.FormValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.FormValueProvider.FormValueProvider(System.Web.Mvc.ControllerContext)
   type: Constructor

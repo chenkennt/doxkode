@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Routing.IRouteInfoProvider.Name
   href: System.Web.Mvc.Routing.IRouteInfoProvider.yaml
   name:
-    CSharp: Name
+    CSharp: IRouteInfoProvider.Name
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IRouteInfoProvider.Name
   type: Property
@@ -41,7 +41,7 @@ items:
 - id: System.Web.Mvc.Routing.IRouteInfoProvider.Template
   href: System.Web.Mvc.Routing.IRouteInfoProvider.yaml
   name:
-    CSharp: Template
+    CSharp: IRouteInfoProvider.Template
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IRouteInfoProvider.Template
   type: Property

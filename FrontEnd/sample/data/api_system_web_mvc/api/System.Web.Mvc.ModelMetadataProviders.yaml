@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelMetadataProviders.Current
   href: System.Web.Mvc.ModelMetadataProviders.yaml
   name:
-    CSharp: Current
+    CSharp: ModelMetadataProviders.Current
   qualifiedName:
     CSharp: System.Web.Mvc.ModelMetadataProviders.Current
   type: Property

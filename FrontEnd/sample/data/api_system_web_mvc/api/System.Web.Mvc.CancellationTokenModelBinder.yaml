@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.CancellationTokenModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
   href: System.Web.Mvc.CancellationTokenModelBinder.yaml
   name:
-    CSharp: BindModel
+    CSharp: CancellationTokenModelBinder.BindModel(ControllerContext, ModelBindingContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.CancellationTokenModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
+    CSharp: System.Web.Mvc.CancellationTokenModelBinder.BindModel(System.Web.Mvc.ControllerContext, System.Web.Mvc.ModelBindingContext)
   type: Method
   source:
     remote: *o0

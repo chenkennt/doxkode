@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.RoutePrefixAttribute.#ctor(System.String)
   href: System.Web.Mvc.RoutePrefixAttribute.yaml
   name:
-    CSharp: RoutePrefixAttribute(System.String)
+    CSharp: RoutePrefixAttribute.RoutePrefixAttribute(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.RoutePrefixAttribute.RoutePrefixAttribute(System.String)
+    CSharp: System.Web.Mvc.RoutePrefixAttribute.RoutePrefixAttribute(string)
   type: Constructor
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.RoutePrefixAttribute.Prefix
   href: System.Web.Mvc.RoutePrefixAttribute.yaml
   name:
-    CSharp: Prefix
+    CSharp: RoutePrefixAttribute.Prefix
   qualifiedName:
     CSharp: System.Web.Mvc.RoutePrefixAttribute.Prefix
   type: Property

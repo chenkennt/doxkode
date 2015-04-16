@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.NonActionAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
   href: System.Web.Mvc.NonActionAttribute.yaml
   name:
-    CSharp: IsValidForRequest
+    CSharp: NonActionAttribute.IsValidForRequest(ControllerContext, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.NonActionAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.NonActionAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

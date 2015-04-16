@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.MvcHtmlString.Empty
   href: System.Web.Mvc.MvcHtmlString.yaml
   name:
-    CSharp: Empty
+    CSharp: MvcHtmlString.Empty
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHtmlString.Empty
   type: Field
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.MvcHtmlString.#ctor(System.String)
   href: System.Web.Mvc.MvcHtmlString.yaml
   name:
-    CSharp: MvcHtmlString(System.String)
+    CSharp: MvcHtmlString.MvcHtmlString(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.MvcHtmlString.MvcHtmlString(System.String)
+    CSharp: System.Web.Mvc.MvcHtmlString.MvcHtmlString(string)
   type: Constructor
   source:
     remote: *o0
@@ -62,9 +62,9 @@ items:
 - id: System.Web.Mvc.MvcHtmlString.Create(System.String)
   href: System.Web.Mvc.MvcHtmlString.yaml
   name:
-    CSharp: Create
+    CSharp: MvcHtmlString.Create(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.MvcHtmlString.Create(System.String)
+    CSharp: System.Web.Mvc.MvcHtmlString.Create(string)
   type: Method
   source:
     remote: *o0
@@ -84,7 +84,7 @@ items:
 - id: System.Web.Mvc.MvcHtmlString.IsNullOrEmpty(System.Web.Mvc.MvcHtmlString)
   href: System.Web.Mvc.MvcHtmlString.yaml
   name:
-    CSharp: IsNullOrEmpty
+    CSharp: MvcHtmlString.IsNullOrEmpty(MvcHtmlString)
   qualifiedName:
     CSharp: System.Web.Mvc.MvcHtmlString.IsNullOrEmpty(System.Web.Mvc.MvcHtmlString)
   type: Method

@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.Async.IAsyncController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)
   href: System.Web.Mvc.Async.IAsyncController.yaml
   name:
-    CSharp: BeginExecute
+    CSharp: IAsyncController.BeginExecute(RequestContext, AsyncCallback, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.IAsyncController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)
+    CSharp: System.Web.Mvc.Async.IAsyncController.BeginExecute(System.Web.Routing.RequestContext, System.AsyncCallback, object)
   type: Method
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.Async.IAsyncController.EndExecute(System.IAsyncResult)
   href: System.Web.Mvc.Async.IAsyncController.yaml
   name:
-    CSharp: EndExecute
+    CSharp: IAsyncController.EndExecute(IAsyncResult)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.IAsyncController.EndExecute(System.IAsyncResult)
   type: Method

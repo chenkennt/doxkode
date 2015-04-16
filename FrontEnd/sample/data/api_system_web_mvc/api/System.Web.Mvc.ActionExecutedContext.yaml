@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.#ctor
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: ActionExecutedContext
+    CSharp: ActionExecutedContext.ActionExecutedContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionExecutedContext.ActionExecutedContext
+    CSharp: System.Web.Mvc.ActionExecutedContext.ActionExecutedContext()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Boolean,System.Exception)
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: ActionExecutedContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Boolean,System.Exception)
+    CSharp: ActionExecutedContext.ActionExecutedContext(ControllerContext, ActionDescriptor, bool, Exception)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionExecutedContext.ActionExecutedContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Boolean,System.Exception)
+    CSharp: System.Web.Mvc.ActionExecutedContext.ActionExecutedContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor, bool, System.Exception)
   type: Constructor
   source:
     remote: *o0
@@ -80,7 +80,7 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.ActionDescriptor
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: ActionExecutedContext.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutedContext.ActionDescriptor
   type: Property
@@ -100,7 +100,7 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.Canceled
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: Canceled
+    CSharp: ActionExecutedContext.Canceled
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutedContext.Canceled
   type: Property
@@ -120,7 +120,7 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.Exception
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: Exception
+    CSharp: ActionExecutedContext.Exception
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutedContext.Exception
   type: Property
@@ -140,7 +140,7 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.ExceptionHandled
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: ExceptionHandled
+    CSharp: ActionExecutedContext.ExceptionHandled
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutedContext.ExceptionHandled
   type: Property
@@ -160,7 +160,7 @@ items:
 - id: System.Web.Mvc.ActionExecutedContext.Result
   href: System.Web.Mvc.ActionExecutedContext.yaml
   name:
-    CSharp: Result
+    CSharp: ActionExecutedContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutedContext.Result
   type: Property

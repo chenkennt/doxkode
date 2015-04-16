@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.FieldValidationMetadata.FieldName
   href: System.Web.Mvc.FieldValidationMetadata.yaml
   name:
-    CSharp: FieldName
+    CSharp: FieldValidationMetadata.FieldName
   qualifiedName:
     CSharp: System.Web.Mvc.FieldValidationMetadata.FieldName
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.FieldValidationMetadata.ReplaceValidationMessageContents
   href: System.Web.Mvc.FieldValidationMetadata.yaml
   name:
-    CSharp: ReplaceValidationMessageContents
+    CSharp: FieldValidationMetadata.ReplaceValidationMessageContents
   qualifiedName:
     CSharp: System.Web.Mvc.FieldValidationMetadata.ReplaceValidationMessageContents
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.FieldValidationMetadata.ValidationMessageId
   href: System.Web.Mvc.FieldValidationMetadata.yaml
   name:
-    CSharp: ValidationMessageId
+    CSharp: FieldValidationMetadata.ValidationMessageId
   qualifiedName:
     CSharp: System.Web.Mvc.FieldValidationMetadata.ValidationMessageId
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.FieldValidationMetadata.ValidationRules
   href: System.Web.Mvc.FieldValidationMetadata.yaml
   name:
-    CSharp: ValidationRules
+    CSharp: FieldValidationMetadata.ValidationRules
   qualifiedName:
     CSharp: System.Web.Mvc.FieldValidationMetadata.ValidationRules
   type: Property

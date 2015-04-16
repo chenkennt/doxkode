@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthentication(System.Web.Mvc.Filters.AuthenticationContext)
   href: System.Web.Mvc.Filters.IAuthenticationFilter.yaml
   name:
-    CSharp: OnAuthentication
+    CSharp: IAuthenticationFilter.OnAuthentication(AuthenticationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthentication(System.Web.Mvc.Filters.AuthenticationContext)
   type: Method
@@ -44,7 +44,7 @@ items:
 - id: System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthenticationChallenge(System.Web.Mvc.Filters.AuthenticationChallengeContext)
   href: System.Web.Mvc.Filters.IAuthenticationFilter.yaml
   name:
-    CSharp: OnAuthenticationChallenge
+    CSharp: IAuthenticationFilter.OnAuthenticationChallenge(AuthenticationChallengeContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Filters.IAuthenticationFilter.OnAuthenticationChallenge(System.Web.Mvc.Filters.AuthenticationChallengeContext)
   type: Method

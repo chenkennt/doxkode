@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.#ctor(System.String)
   href: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.yaml
   name:
-    CSharp: RegexRouteConstraint(System.String)
+    CSharp: RegexRouteConstraint.RegexRouteConstraint(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.RegexRouteConstraint(System.String)
+    CSharp: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.RegexRouteConstraint(string)
   type: Constructor
   source:
     remote: *o0
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.Pattern
   href: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.yaml
   name:
-    CSharp: Pattern
+    CSharp: RegexRouteConstraint.Pattern
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.Pattern
   type: Property
@@ -67,9 +67,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: RegexRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.RegexRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

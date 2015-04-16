@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection)
   href: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.yaml
   name:
-    CSharp: MapMvcAttributeRoutes
+    CSharp: RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(RouteCollection)
   qualifiedName:
     CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection)
   type: Method
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IInlineConstraintResolver)
   href: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.yaml
   name:
-    CSharp: MapMvcAttributeRoutes
+    CSharp: RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(RouteCollection, IInlineConstraintResolver)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IInlineConstraintResolver)
+    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection, System.Web.Mvc.Routing.IInlineConstraintResolver)
   type: Method
   source:
     remote: *o0
@@ -75,9 +75,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IDirectRouteProvider)
   href: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.yaml
   name:
-    CSharp: MapMvcAttributeRoutes
+    CSharp: RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(RouteCollection, IDirectRouteProvider)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IDirectRouteProvider)
+    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection, System.Web.Mvc.Routing.IDirectRouteProvider)
   type: Method
   source:
     remote: *o0
@@ -104,9 +104,9 @@ items:
 - id: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IInlineConstraintResolver,System.Web.Mvc.Routing.IDirectRouteProvider)
   href: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.yaml
   name:
-    CSharp: MapMvcAttributeRoutes
+    CSharp: RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(RouteCollection, IInlineConstraintResolver, IDirectRouteProvider)
   qualifiedName:
-    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection,System.Web.Mvc.Routing.IInlineConstraintResolver,System.Web.Mvc.Routing.IDirectRouteProvider)
+    CSharp: System.Web.Mvc.RouteCollectionAttributeRoutingExtensions.MapMvcAttributeRoutes(System.Web.Routing.RouteCollection, System.Web.Mvc.Routing.IInlineConstraintResolver, System.Web.Mvc.Routing.IDirectRouteProvider)
   type: Method
   source:
     remote: *o0

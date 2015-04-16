@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.ConstraintMap
   href: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.yaml
   name:
-    CSharp: ConstraintMap
+    CSharp: DefaultInlineConstraintResolver.ConstraintMap
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.ConstraintMap
   type: Property
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.ResolveConstraint(System.String)
   href: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.yaml
   name:
-    CSharp: ResolveConstraint
+    CSharp: DefaultInlineConstraintResolver.ResolveConstraint(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.ResolveConstraint(System.String)
+    CSharp: System.Web.Mvc.Routing.DefaultInlineConstraintResolver.ResolveConstraint(string)
   type: Method
   source:
     remote: *o0

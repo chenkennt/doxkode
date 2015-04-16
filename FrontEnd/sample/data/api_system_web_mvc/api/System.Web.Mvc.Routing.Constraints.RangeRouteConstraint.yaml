@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.#ctor(System.Int64,System.Int64)
   href: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.yaml
   name:
-    CSharp: RangeRouteConstraint(System.Int64,System.Int64)
+    CSharp: RangeRouteConstraint.RangeRouteConstraint(long, long)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.RangeRouteConstraint(System.Int64,System.Int64)
+    CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.RangeRouteConstraint(long, long)
   type: Constructor
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Min
   href: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.yaml
   name:
-    CSharp: Min
+    CSharp: RangeRouteConstraint.Min
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Min
   type: Property
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Max
   href: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.yaml
   name:
-    CSharp: Max
+    CSharp: RangeRouteConstraint.Max
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Max
   type: Property
@@ -93,9 +93,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: RangeRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.RangeRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

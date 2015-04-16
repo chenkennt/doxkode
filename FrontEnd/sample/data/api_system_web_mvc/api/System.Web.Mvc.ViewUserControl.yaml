@@ -32,7 +32,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.Ajax
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: Ajax
+    CSharp: ViewUserControl.Ajax
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.Ajax
   type: Property
@@ -52,7 +52,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.Html
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: Html
+    CSharp: ViewUserControl.Html
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.Html
   type: Property
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.Model
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: Model
+    CSharp: ViewUserControl.Model
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.Model
   type: Property
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.TempData
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: TempData
+    CSharp: ViewUserControl.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.TempData
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.Url
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: Url
+    CSharp: ViewUserControl.Url
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.Url
   type: Property
@@ -132,7 +132,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.ViewBag
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ViewUserControl.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.ViewBag
   type: Property
@@ -150,7 +150,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.ViewContext
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: ViewContext
+    CSharp: ViewUserControl.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.ViewContext
   type: Property
@@ -170,7 +170,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.ViewData
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewUserControl.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.ViewData
   type: Property
@@ -190,7 +190,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.ViewDataKey
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: ViewDataKey
+    CSharp: ViewUserControl.ViewDataKey
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.ViewDataKey
   type: Property
@@ -210,7 +210,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.Writer
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: Writer
+    CSharp: ViewUserControl.Writer
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.Writer
   type: Property
@@ -230,7 +230,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.RenderView(System.Web.Mvc.ViewContext)
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: RenderView
+    CSharp: ViewUserControl.RenderView(ViewContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.RenderView(System.Web.Mvc.ViewContext)
   type: Method
@@ -252,7 +252,7 @@ items:
 - id: System.Web.Mvc.ViewUserControl.SetTextWriter(System.IO.TextWriter)
   href: System.Web.Mvc.ViewUserControl.yaml
   name:
-    CSharp: SetTextWriter
+    CSharp: ViewUserControl.SetTextWriter(TextWriter)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewUserControl.SetTextWriter(System.IO.TextWriter)
   type: Method

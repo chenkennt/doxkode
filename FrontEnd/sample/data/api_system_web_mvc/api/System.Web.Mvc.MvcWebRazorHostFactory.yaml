@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.MvcWebRazorHostFactory.CreateHost(System.String,System.String)
   href: System.Web.Mvc.MvcWebRazorHostFactory.yaml
   name:
-    CSharp: CreateHost
+    CSharp: MvcWebRazorHostFactory.CreateHost(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.MvcWebRazorHostFactory.CreateHost(System.String,System.String)
+    CSharp: System.Web.Mvc.MvcWebRazorHostFactory.CreateHost(string, string)
   type: Method
   source:
     remote: *o0

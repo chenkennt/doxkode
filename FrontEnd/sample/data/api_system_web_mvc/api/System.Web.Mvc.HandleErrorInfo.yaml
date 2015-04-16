@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.HandleErrorInfo.#ctor(System.Exception,System.String,System.String)
   href: System.Web.Mvc.HandleErrorInfo.yaml
   name:
-    CSharp: HandleErrorInfo(System.Exception,System.String,System.String)
+    CSharp: HandleErrorInfo.HandleErrorInfo(Exception, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HandleErrorInfo.HandleErrorInfo(System.Exception,System.String,System.String)
+    CSharp: System.Web.Mvc.HandleErrorInfo.HandleErrorInfo(System.Exception, string, string)
   type: Constructor
   source:
     remote: *o0
@@ -55,7 +55,7 @@ items:
 - id: System.Web.Mvc.HandleErrorInfo.ActionName
   href: System.Web.Mvc.HandleErrorInfo.yaml
   name:
-    CSharp: ActionName
+    CSharp: HandleErrorInfo.ActionName
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorInfo.ActionName
   type: Property
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.HandleErrorInfo.ControllerName
   href: System.Web.Mvc.HandleErrorInfo.yaml
   name:
-    CSharp: ControllerName
+    CSharp: HandleErrorInfo.ControllerName
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorInfo.ControllerName
   type: Property
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.HandleErrorInfo.Exception
   href: System.Web.Mvc.HandleErrorInfo.yaml
   name:
-    CSharp: Exception
+    CSharp: HandleErrorInfo.Exception
   qualifiedName:
     CSharp: System.Web.Mvc.HandleErrorInfo.Exception
   type: Property

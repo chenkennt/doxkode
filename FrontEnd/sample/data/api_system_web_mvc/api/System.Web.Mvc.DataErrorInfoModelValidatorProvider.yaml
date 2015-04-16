@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.DataErrorInfoModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.DataErrorInfoModelValidatorProvider.yaml
   name:
-    CSharp: GetValidators
+    CSharp: DataErrorInfoModelValidatorProvider.GetValidators(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataErrorInfoModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.DataErrorInfoModelValidatorProvider.GetValidators(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

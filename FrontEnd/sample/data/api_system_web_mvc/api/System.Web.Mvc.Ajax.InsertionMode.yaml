@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.Ajax.InsertionMode.Replace
   href: System.Web.Mvc.Ajax.InsertionMode.yaml
   name:
-    CSharp: Replace
+    CSharp: InsertionMode.Replace
   qualifiedName:
     CSharp: System.Web.Mvc.Ajax.InsertionMode.Replace
   type: Field
@@ -44,7 +44,7 @@ items:
 - id: System.Web.Mvc.Ajax.InsertionMode.InsertBefore
   href: System.Web.Mvc.Ajax.InsertionMode.yaml
   name:
-    CSharp: InsertBefore
+    CSharp: InsertionMode.InsertBefore
   qualifiedName:
     CSharp: System.Web.Mvc.Ajax.InsertionMode.InsertBefore
   type: Field
@@ -59,7 +59,7 @@ items:
 - id: System.Web.Mvc.Ajax.InsertionMode.InsertAfter
   href: System.Web.Mvc.Ajax.InsertionMode.yaml
   name:
-    CSharp: InsertAfter
+    CSharp: InsertionMode.InsertAfter
   qualifiedName:
     CSharp: System.Web.Mvc.Ajax.InsertionMode.InsertAfter
   type: Field
@@ -74,7 +74,7 @@ items:
 - id: System.Web.Mvc.Ajax.InsertionMode.ReplaceWith
   href: System.Web.Mvc.Ajax.InsertionMode.yaml
   name:
-    CSharp: ReplaceWith
+    CSharp: InsertionMode.ReplaceWith
   qualifiedName:
     CSharp: System.Web.Mvc.Ajax.InsertionMode.ReplaceWith
   type: Field

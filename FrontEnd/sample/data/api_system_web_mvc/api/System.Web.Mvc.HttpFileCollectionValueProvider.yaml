@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.HttpFileCollectionValueProvider.#ctor(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.HttpFileCollectionValueProvider.yaml
   name:
-    CSharp: HttpFileCollectionValueProvider(System.Web.Mvc.ControllerContext)
+    CSharp: HttpFileCollectionValueProvider.HttpFileCollectionValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.HttpFileCollectionValueProvider.HttpFileCollectionValueProvider(System.Web.Mvc.ControllerContext)
   type: Constructor

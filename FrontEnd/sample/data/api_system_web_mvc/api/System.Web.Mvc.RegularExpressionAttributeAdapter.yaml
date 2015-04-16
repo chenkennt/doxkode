@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.RegularExpressionAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RegularExpressionAttribute)
   href: System.Web.Mvc.RegularExpressionAttributeAdapter.yaml
   name:
-    CSharp: RegularExpressionAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RegularExpressionAttribute)
+    CSharp: RegularExpressionAttributeAdapter.RegularExpressionAttributeAdapter(ModelMetadata, ControllerContext, RegularExpressionAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.RegularExpressionAttributeAdapter.RegularExpressionAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.RegularExpressionAttribute)
+    CSharp: System.Web.Mvc.RegularExpressionAttributeAdapter.RegularExpressionAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.RegularExpressionAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.RegularExpressionAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.RegularExpressionAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: RegularExpressionAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.RegularExpressionAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.RegularExpressionAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

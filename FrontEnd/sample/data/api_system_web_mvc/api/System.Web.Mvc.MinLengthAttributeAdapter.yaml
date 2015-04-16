@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.MinLengthAttributeAdapter.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MinLengthAttribute)
   href: System.Web.Mvc.MinLengthAttributeAdapter.yaml
   name:
-    CSharp: MinLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MinLengthAttribute)
+    CSharp: MinLengthAttributeAdapter.MinLengthAttributeAdapter(ModelMetadata, ControllerContext, MinLengthAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.MinLengthAttributeAdapter.MinLengthAttributeAdapter(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.MinLengthAttribute)
+    CSharp: System.Web.Mvc.MinLengthAttributeAdapter.MinLengthAttributeAdapter(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.MinLengthAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -64,9 +64,9 @@ items:
 - id: System.Web.Mvc.MinLengthAttributeAdapter.GetClientValidationRules
   href: System.Web.Mvc.MinLengthAttributeAdapter.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: MinLengthAttributeAdapter.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.MinLengthAttributeAdapter.GetClientValidationRules
+    CSharp: System.Web.Mvc.MinLengthAttributeAdapter.GetClientValidationRules()
   type: Method
   source:
     remote: *o0

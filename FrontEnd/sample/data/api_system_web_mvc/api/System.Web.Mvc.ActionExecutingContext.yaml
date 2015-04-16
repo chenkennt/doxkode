@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ActionExecutingContext.#ctor
   href: System.Web.Mvc.ActionExecutingContext.yaml
   name:
-    CSharp: ActionExecutingContext
+    CSharp: ActionExecutingContext.ActionExecutingContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionExecutingContext.ActionExecutingContext
+    CSharp: System.Web.Mvc.ActionExecutingContext.ActionExecutingContext()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ActionExecutingContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.ActionExecutingContext.yaml
   name:
-    CSharp: ActionExecutingContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: ActionExecutingContext.ActionExecutingContext(ControllerContext, ActionDescriptor, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionExecutingContext.ActionExecutingContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.ActionExecutingContext.ActionExecutingContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor, System.Collections.Generic.IDictionary<string, object>)
   type: Constructor
   source:
     remote: *o0
@@ -75,7 +75,7 @@ items:
 - id: System.Web.Mvc.ActionExecutingContext.ActionDescriptor
   href: System.Web.Mvc.ActionExecutingContext.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: ActionExecutingContext.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutingContext.ActionDescriptor
   type: Property
@@ -95,7 +95,7 @@ items:
 - id: System.Web.Mvc.ActionExecutingContext.ActionParameters
   href: System.Web.Mvc.ActionExecutingContext.yaml
   name:
-    CSharp: ActionParameters
+    CSharp: ActionExecutingContext.ActionParameters
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutingContext.ActionParameters
   type: Property
@@ -115,7 +115,7 @@ items:
 - id: System.Web.Mvc.ActionExecutingContext.Result
   href: System.Web.Mvc.ActionExecutingContext.yaml
   name:
-    CSharp: Result
+    CSharp: ActionExecutingContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.ActionExecutingContext.Result
   type: Property

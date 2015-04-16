@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.WebFormViewEngine.#ctor
   href: System.Web.Mvc.WebFormViewEngine.yaml
   name:
-    CSharp: WebFormViewEngine
+    CSharp: WebFormViewEngine.WebFormViewEngine()
   qualifiedName:
-    CSharp: System.Web.Mvc.WebFormViewEngine.WebFormViewEngine
+    CSharp: System.Web.Mvc.WebFormViewEngine.WebFormViewEngine()
   type: Constructor
   source:
     remote: *o0
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.WebFormViewEngine.#ctor(System.Web.Mvc.IViewPageActivator)
   href: System.Web.Mvc.WebFormViewEngine.yaml
   name:
-    CSharp: WebFormViewEngine(System.Web.Mvc.IViewPageActivator)
+    CSharp: WebFormViewEngine.WebFormViewEngine(IViewPageActivator)
   qualifiedName:
     CSharp: System.Web.Mvc.WebFormViewEngine.WebFormViewEngine(System.Web.Mvc.IViewPageActivator)
   type: Constructor

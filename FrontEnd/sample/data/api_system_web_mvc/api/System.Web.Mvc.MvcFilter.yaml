@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.MvcFilter.AllowMultiple
   href: System.Web.Mvc.MvcFilter.yaml
   name:
-    CSharp: AllowMultiple
+    CSharp: MvcFilter.AllowMultiple
   qualifiedName:
     CSharp: System.Web.Mvc.MvcFilter.AllowMultiple
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.MvcFilter.Order
   href: System.Web.Mvc.MvcFilter.yaml
   name:
-    CSharp: Order
+    CSharp: MvcFilter.Order
   qualifiedName:
     CSharp: System.Web.Mvc.MvcFilter.Order
   type: Property

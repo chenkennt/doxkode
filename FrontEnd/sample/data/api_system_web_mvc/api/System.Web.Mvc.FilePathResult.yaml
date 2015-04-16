@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.FilePathResult.#ctor(System.String,System.String)
   href: System.Web.Mvc.FilePathResult.yaml
   name:
-    CSharp: FilePathResult(System.String,System.String)
+    CSharp: FilePathResult.FilePathResult(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilePathResult.FilePathResult(System.String,System.String)
+    CSharp: System.Web.Mvc.FilePathResult.FilePathResult(string, string)
   type: Constructor
   source:
     remote: *o0
@@ -56,7 +56,7 @@ items:
 - id: System.Web.Mvc.FilePathResult.FileName
   href: System.Web.Mvc.FilePathResult.yaml
   name:
-    CSharp: FileName
+    CSharp: FilePathResult.FileName
   qualifiedName:
     CSharp: System.Web.Mvc.FilePathResult.FileName
   type: Property

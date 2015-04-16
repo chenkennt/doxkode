@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IViewPageActivator.Create(System.Web.Mvc.ControllerContext,System.Type)
   href: System.Web.Mvc.IViewPageActivator.yaml
   name:
-    CSharp: Create
+    CSharp: IViewPageActivator.Create(ControllerContext, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.IViewPageActivator.Create(System.Web.Mvc.ControllerContext,System.Type)
+    CSharp: System.Web.Mvc.IViewPageActivator.Create(System.Web.Mvc.ControllerContext, System.Type)
   type: Method
   source:
     remote: *o0

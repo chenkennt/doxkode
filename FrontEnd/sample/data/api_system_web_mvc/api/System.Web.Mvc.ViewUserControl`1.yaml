@@ -1,9 +1,9 @@
 id: System.Web.Mvc.ViewUserControl`1
 href: System.Web.Mvc.ViewUserControl`1.yaml
 name:
-  CSharp: ViewUserControl`1
+  CSharp: ViewUserControl<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.ViewUserControl`1
+  CSharp: System.Web.Mvc.ViewUserControl<TModel>
 type: Class
 source:
   remote: &o0
@@ -35,9 +35,9 @@ items:
 - id: System.Web.Mvc.ViewUserControl`1.Ajax
   href: System.Web.Mvc.ViewUserControl`1.yaml
   name:
-    CSharp: Ajax
+    CSharp: ViewUserControl<TModel>.Ajax
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewUserControl`1.Ajax
+    CSharp: System.Web.Mvc.ViewUserControl<TModel>.Ajax
   type: Property
   source:
     remote: *o0
@@ -55,9 +55,9 @@ items:
 - id: System.Web.Mvc.ViewUserControl`1.Html
   href: System.Web.Mvc.ViewUserControl`1.yaml
   name:
-    CSharp: Html
+    CSharp: ViewUserControl<TModel>.Html
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewUserControl`1.Html
+    CSharp: System.Web.Mvc.ViewUserControl<TModel>.Html
   type: Property
   source:
     remote: *o0
@@ -75,9 +75,9 @@ items:
 - id: System.Web.Mvc.ViewUserControl`1.Model
   href: System.Web.Mvc.ViewUserControl`1.yaml
   name:
-    CSharp: Model
+    CSharp: ViewUserControl<TModel>.Model
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewUserControl`1.Model
+    CSharp: System.Web.Mvc.ViewUserControl<TModel>.Model
   type: Property
   source:
     remote: *o0
@@ -95,9 +95,9 @@ items:
 - id: System.Web.Mvc.ViewUserControl`1.ViewData
   href: System.Web.Mvc.ViewUserControl`1.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewUserControl<TModel>.ViewData
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewUserControl`1.ViewData
+    CSharp: System.Web.Mvc.ViewUserControl<TModel>.ViewData
   type: Property
   source:
     remote: *o0

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.BuildManagerCompiledView.ViewPath
   href: System.Web.Mvc.BuildManagerCompiledView.yaml
   name:
-    CSharp: ViewPath
+    CSharp: BuildManagerCompiledView.ViewPath
   qualifiedName:
     CSharp: System.Web.Mvc.BuildManagerCompiledView.ViewPath
   type: Property
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.BuildManagerCompiledView.Render(System.Web.Mvc.ViewContext,System.IO.TextWriter)
   href: System.Web.Mvc.BuildManagerCompiledView.yaml
   name:
-    CSharp: Render
+    CSharp: BuildManagerCompiledView.Render(ViewContext, TextWriter)
   qualifiedName:
-    CSharp: System.Web.Mvc.BuildManagerCompiledView.Render(System.Web.Mvc.ViewContext,System.IO.TextWriter)
+    CSharp: System.Web.Mvc.BuildManagerCompiledView.Render(System.Web.Mvc.ViewContext, System.IO.TextWriter)
   type: Method
   source:
     remote: *o0

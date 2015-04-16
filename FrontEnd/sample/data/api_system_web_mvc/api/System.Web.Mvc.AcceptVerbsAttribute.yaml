@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.AcceptVerbsAttribute.#ctor(System.Web.Mvc.HttpVerbs)
   href: System.Web.Mvc.AcceptVerbsAttribute.yaml
   name:
-    CSharp: AcceptVerbsAttribute(System.Web.Mvc.HttpVerbs)
+    CSharp: AcceptVerbsAttribute.AcceptVerbsAttribute(HttpVerbs)
   qualifiedName:
     CSharp: System.Web.Mvc.AcceptVerbsAttribute.AcceptVerbsAttribute(System.Web.Mvc.HttpVerbs)
   type: Constructor
@@ -51,9 +51,9 @@ items:
 - id: System.Web.Mvc.AcceptVerbsAttribute.#ctor(System.String[])
   href: System.Web.Mvc.AcceptVerbsAttribute.yaml
   name:
-    CSharp: AcceptVerbsAttribute(System.String[])
+    CSharp: AcceptVerbsAttribute.AcceptVerbsAttribute(params string[])
   qualifiedName:
-    CSharp: System.Web.Mvc.AcceptVerbsAttribute.AcceptVerbsAttribute(System.String[])
+    CSharp: System.Web.Mvc.AcceptVerbsAttribute.AcceptVerbsAttribute(params string[])
   type: Constructor
   source:
     remote: *o0
@@ -73,7 +73,7 @@ items:
 - id: System.Web.Mvc.AcceptVerbsAttribute.Verbs
   href: System.Web.Mvc.AcceptVerbsAttribute.yaml
   name:
-    CSharp: Verbs
+    CSharp: AcceptVerbsAttribute.Verbs
   qualifiedName:
     CSharp: System.Web.Mvc.AcceptVerbsAttribute.Verbs
   type: Property
@@ -93,9 +93,9 @@ items:
 - id: System.Web.Mvc.AcceptVerbsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
   href: System.Web.Mvc.AcceptVerbsAttribute.yaml
   name:
-    CSharp: IsValidForRequest
+    CSharp: AcceptVerbsAttribute.IsValidForRequest(ControllerContext, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.AcceptVerbsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.AcceptVerbsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

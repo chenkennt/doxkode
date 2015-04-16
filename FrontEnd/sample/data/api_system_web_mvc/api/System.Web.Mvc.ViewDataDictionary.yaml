@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.#ctor
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ViewDataDictionary
+    CSharp: ViewDataDictionary.ViewDataDictionary()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.ViewDataDictionary
+    CSharp: System.Web.Mvc.ViewDataDictionary.ViewDataDictionary()
   type: Constructor
   source:
     remote: *o0
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.#ctor(System.Object)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ViewDataDictionary(System.Object)
+    CSharp: ViewDataDictionary.ViewDataDictionary(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.ViewDataDictionary(System.Object)
+    CSharp: System.Web.Mvc.ViewDataDictionary.ViewDataDictionary(object)
   type: Constructor
   source:
     remote: *o0
@@ -62,7 +62,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.#ctor(System.Web.Mvc.ViewDataDictionary)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ViewDataDictionary(System.Web.Mvc.ViewDataDictionary)
+    CSharp: ViewDataDictionary.ViewDataDictionary(ViewDataDictionary)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.ViewDataDictionary(System.Web.Mvc.ViewDataDictionary)
   type: Constructor
@@ -84,7 +84,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Count
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Count
+    CSharp: ViewDataDictionary.Count
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.Count
   type: Property
@@ -104,7 +104,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.IsReadOnly
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: IsReadOnly
+    CSharp: ViewDataDictionary.IsReadOnly
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.IsReadOnly
   type: Property
@@ -124,7 +124,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Keys
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Keys
+    CSharp: ViewDataDictionary.Keys
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.Keys
   type: Property
@@ -144,7 +144,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Model
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Model
+    CSharp: ViewDataDictionary.Model
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.Model
   type: Property
@@ -164,7 +164,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.ModelMetadata
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ModelMetadata
+    CSharp: ViewDataDictionary.ModelMetadata
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.ModelMetadata
   type: Property
@@ -184,7 +184,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.ModelState
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ModelState
+    CSharp: ViewDataDictionary.ModelState
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.ModelState
   type: Property
@@ -204,7 +204,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.TemplateInfo
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: TemplateInfo
+    CSharp: ViewDataDictionary.TemplateInfo
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.TemplateInfo
   type: Property
@@ -224,7 +224,7 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Values
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Values
+    CSharp: ViewDataDictionary.Values
   qualifiedName:
     CSharp: System.Web.Mvc.ViewDataDictionary.Values
   type: Property
@@ -244,9 +244,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Item(System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Item
+    CSharp: ViewDataDictionary.this[string]
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Item(System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.this[string]
   type: Property
   source:
     remote: *o0
@@ -264,9 +264,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ViewDataDictionary.Add(KeyValuePair<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    CSharp: System.Web.Mvc.ViewDataDictionary.Add(System.Collections.Generic.KeyValuePair<string, object>)
   type: Method
   source:
     remote: *o0
@@ -286,9 +286,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Add(System.String,System.Object)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ViewDataDictionary.Add(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Add(System.String,System.Object)
+    CSharp: System.Web.Mvc.ViewDataDictionary.Add(string, object)
   type: Method
   source:
     remote: *o0
@@ -313,9 +313,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Clear
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Clear
+    CSharp: ViewDataDictionary.Clear()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Clear
+    CSharp: System.Web.Mvc.ViewDataDictionary.Clear()
   type: Method
   source:
     remote: *o0
@@ -330,9 +330,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Contains
+    CSharp: ViewDataDictionary.Contains(KeyValuePair<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    CSharp: System.Web.Mvc.ViewDataDictionary.Contains(System.Collections.Generic.KeyValuePair<string, object>)
   type: Method
   source:
     remote: *o0
@@ -352,9 +352,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.ContainsKey(System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: ContainsKey
+    CSharp: ViewDataDictionary.ContainsKey(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.ContainsKey(System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.ContainsKey(string)
   type: Method
   source:
     remote: *o0
@@ -374,9 +374,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: CopyTo
+    CSharp: ViewDataDictionary.CopyTo(KeyValuePair<string, object>[], int)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+    CSharp: System.Web.Mvc.ViewDataDictionary.CopyTo(System.Collections.Generic.KeyValuePair<string, object>[], int)
   type: Method
   source:
     remote: *o0
@@ -401,9 +401,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Eval(System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Eval
+    CSharp: ViewDataDictionary.Eval(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Eval(System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.Eval(string)
   type: Method
   source:
     remote: *o0
@@ -423,9 +423,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Eval(System.String,System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Eval
+    CSharp: ViewDataDictionary.Eval(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Eval(System.String,System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.Eval(string, string)
   type: Method
   source:
     remote: *o0
@@ -450,9 +450,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.GetEnumerator
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: ViewDataDictionary.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.GetEnumerator
+    CSharp: System.Web.Mvc.ViewDataDictionary.GetEnumerator()
   type: Method
   source:
     remote: *o0
@@ -467,9 +467,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.GetViewDataInfo(System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: GetViewDataInfo
+    CSharp: ViewDataDictionary.GetViewDataInfo(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.GetViewDataInfo(System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.GetViewDataInfo(string)
   type: Method
   source:
     remote: *o0
@@ -489,9 +489,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ViewDataDictionary.Remove(KeyValuePair<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    CSharp: System.Web.Mvc.ViewDataDictionary.Remove(System.Collections.Generic.KeyValuePair<string, object>)
   type: Method
   source:
     remote: *o0
@@ -511,9 +511,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.Remove(System.String)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ViewDataDictionary.Remove(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.Remove(System.String)
+    CSharp: System.Web.Mvc.ViewDataDictionary.Remove(string)
   type: Method
   source:
     remote: *o0
@@ -533,9 +533,9 @@ items:
 - id: System.Web.Mvc.ViewDataDictionary.TryGetValue(System.String,System.Object@)
   href: System.Web.Mvc.ViewDataDictionary.yaml
   name:
-    CSharp: TryGetValue
+    CSharp: ViewDataDictionary.TryGetValue(string, out object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ViewDataDictionary.TryGetValue(System.String,System.Object@)
+    CSharp: System.Web.Mvc.ViewDataDictionary.TryGetValue(string, out object)
   type: Method
   source:
     remote: *o0

@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.FileResult.ContentType
   href: System.Web.Mvc.FileResult.yaml
   name:
-    CSharp: ContentType
+    CSharp: FileResult.ContentType
   qualifiedName:
     CSharp: System.Web.Mvc.FileResult.ContentType
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.FileResult.FileDownloadName
   href: System.Web.Mvc.FileResult.yaml
   name:
-    CSharp: FileDownloadName
+    CSharp: FileResult.FileDownloadName
   qualifiedName:
     CSharp: System.Web.Mvc.FileResult.FileDownloadName
   type: Property
@@ -66,7 +66,7 @@ items:
 - id: System.Web.Mvc.FileResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.FileResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: FileResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.FileResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

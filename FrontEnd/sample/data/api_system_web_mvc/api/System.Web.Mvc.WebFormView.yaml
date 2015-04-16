@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.WebFormView.#ctor(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.WebFormView.yaml
   name:
-    CSharp: WebFormView(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: WebFormView.WebFormView(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext, string)
   type: Constructor
   source:
     remote: *o0
@@ -53,9 +53,9 @@ items:
 - id: System.Web.Mvc.WebFormView.#ctor(System.Web.Mvc.ControllerContext,System.String,System.String)
   href: System.Web.Mvc.WebFormView.yaml
   name:
-    CSharp: WebFormView(System.Web.Mvc.ControllerContext,System.String,System.String)
+    CSharp: WebFormView.WebFormView(ControllerContext, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext,System.String,System.String)
+    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext, string, string)
   type: Constructor
   source:
     remote: *o0
@@ -85,9 +85,9 @@ items:
 - id: System.Web.Mvc.WebFormView.#ctor(System.Web.Mvc.ControllerContext,System.String,System.String,System.Web.Mvc.IViewPageActivator)
   href: System.Web.Mvc.WebFormView.yaml
   name:
-    CSharp: WebFormView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Web.Mvc.IViewPageActivator)
+    CSharp: WebFormView.WebFormView(ControllerContext, string, string, IViewPageActivator)
   qualifiedName:
-    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Web.Mvc.IViewPageActivator)
+    CSharp: System.Web.Mvc.WebFormView.WebFormView(System.Web.Mvc.ControllerContext, string, string, System.Web.Mvc.IViewPageActivator)
   type: Constructor
   source:
     remote: *o0
@@ -122,7 +122,7 @@ items:
 - id: System.Web.Mvc.WebFormView.MasterPath
   href: System.Web.Mvc.WebFormView.yaml
   name:
-    CSharp: MasterPath
+    CSharp: WebFormView.MasterPath
   qualifiedName:
     CSharp: System.Web.Mvc.WebFormView.MasterPath
   type: Property

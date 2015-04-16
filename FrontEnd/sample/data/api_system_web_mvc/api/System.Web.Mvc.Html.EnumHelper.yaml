@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.IsValidForEnumHelper(System.Type)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: IsValidForEnumHelper
+    CSharp: EnumHelper.IsValidForEnumHelper(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.EnumHelper.IsValidForEnumHelper(System.Type)
   type: Method
@@ -58,7 +58,7 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.IsValidForEnumHelper(System.Web.Mvc.ModelMetadata)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: IsValidForEnumHelper
+    CSharp: EnumHelper.IsValidForEnumHelper(ModelMetadata)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.EnumHelper.IsValidForEnumHelper(System.Web.Mvc.ModelMetadata)
   type: Method
@@ -93,7 +93,7 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Type)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: GetSelectList
+    CSharp: EnumHelper.GetSelectList(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Type)
   type: Method
@@ -121,7 +121,7 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Web.Mvc.ModelMetadata)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: GetSelectList
+    CSharp: EnumHelper.GetSelectList(ModelMetadata)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Web.Mvc.ModelMetadata)
   type: Method
@@ -149,9 +149,9 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Type,System.Enum)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: GetSelectList
+    CSharp: EnumHelper.GetSelectList(Type, Enum)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Type,System.Enum)
+    CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Type, System.Enum)
   type: Method
   source:
     remote: *o0
@@ -190,9 +190,9 @@ items:
 - id: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Web.Mvc.ModelMetadata,System.Enum)
   href: System.Web.Mvc.Html.EnumHelper.yaml
   name:
-    CSharp: GetSelectList
+    CSharp: EnumHelper.GetSelectList(ModelMetadata, Enum)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Web.Mvc.ModelMetadata,System.Enum)
+    CSharp: System.Web.Mvc.Html.EnumHelper.GetSelectList(System.Web.Mvc.ModelMetadata, System.Enum)
   type: Method
   source:
     remote: *o0

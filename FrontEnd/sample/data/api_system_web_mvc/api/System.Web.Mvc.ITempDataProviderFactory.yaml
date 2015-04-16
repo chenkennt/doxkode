@@ -20,9 +20,9 @@ items:
 - id: System.Web.Mvc.ITempDataProviderFactory.CreateInstance
   href: System.Web.Mvc.ITempDataProviderFactory.yaml
   name:
-    CSharp: CreateInstance
+    CSharp: ITempDataProviderFactory.CreateInstance()
   qualifiedName:
-    CSharp: System.Web.Mvc.ITempDataProviderFactory.CreateInstance
+    CSharp: System.Web.Mvc.ITempDataProviderFactory.CreateInstance()
   type: Method
   source:
     remote: *o0

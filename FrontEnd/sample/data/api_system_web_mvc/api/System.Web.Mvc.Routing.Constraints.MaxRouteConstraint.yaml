@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.#ctor(System.Int64)
   href: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.yaml
   name:
-    CSharp: MaxRouteConstraint(System.Int64)
+    CSharp: MaxRouteConstraint.MaxRouteConstraint(long)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.MaxRouteConstraint(System.Int64)
+    CSharp: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.MaxRouteConstraint(long)
   type: Constructor
   source:
     remote: *o0
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.Max
   href: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.yaml
   name:
-    CSharp: Max
+    CSharp: MaxRouteConstraint.Max
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.Max
   type: Property
@@ -67,9 +67,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: MaxRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.MaxRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

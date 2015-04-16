@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.NameValueCollectionExtensions.yaml
   name:
-    CSharp: CopyTo
+    CSharp: NameValueCollectionExtensions.CopyTo(NameValueCollection, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)
   href: System.Web.Mvc.NameValueCollectionExtensions.yaml
   name:
-    CSharp: CopyTo
+    CSharp: NameValueCollectionExtensions.CopyTo(NameValueCollection, IDictionary<string, object>, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)
+    CSharp: System.Web.Mvc.NameValueCollectionExtensions.CopyTo(System.Collections.Specialized.NameValueCollection, System.Collections.Generic.IDictionary<string, object>, bool)
   type: Method
   source:
     remote: *o0

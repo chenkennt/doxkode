@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.AuthorizationContext.#ctor
   href: System.Web.Mvc.AuthorizationContext.yaml
   name:
-    CSharp: AuthorizationContext
+    CSharp: AuthorizationContext.AuthorizationContext()
   qualifiedName:
-    CSharp: System.Web.Mvc.AuthorizationContext.AuthorizationContext
+    CSharp: System.Web.Mvc.AuthorizationContext.AuthorizationContext()
   type: Constructor
   source:
     remote: *o0
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.AuthorizationContext.#ctor(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.AuthorizationContext.yaml
   name:
-    CSharp: AuthorizationContext(System.Web.Mvc.ControllerContext)
+    CSharp: AuthorizationContext.AuthorizationContext(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizationContext.AuthorizationContext(System.Web.Mvc.ControllerContext)
   type: Constructor
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.AuthorizationContext.#ctor(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
   href: System.Web.Mvc.AuthorizationContext.yaml
   name:
-    CSharp: AuthorizationContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
+    CSharp: AuthorizationContext.AuthorizationContext(ControllerContext, ActionDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.AuthorizationContext.AuthorizationContext(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
+    CSharp: System.Web.Mvc.AuthorizationContext.AuthorizationContext(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor)
   type: Constructor
   source:
     remote: *o0
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.AuthorizationContext.ActionDescriptor
   href: System.Web.Mvc.AuthorizationContext.yaml
   name:
-    CSharp: ActionDescriptor
+    CSharp: AuthorizationContext.ActionDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizationContext.ActionDescriptor
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.AuthorizationContext.Result
   href: System.Web.Mvc.AuthorizationContext.yaml
   name:
-    CSharp: Result
+    CSharp: AuthorizationContext.Result
   qualifiedName:
     CSharp: System.Web.Mvc.AuthorizationContext.Result
   type: Property

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Completed
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Completed
+    CSharp: OperationCounter.Completed
   qualifiedName:
     CSharp: System.Web.Mvc.Async.OperationCounter.Completed
   type: Event
@@ -37,7 +37,7 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Count
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Count
+    CSharp: OperationCounter.Count
   qualifiedName:
     CSharp: System.Web.Mvc.Async.OperationCounter.Count
   type: Property
@@ -57,9 +57,9 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Decrement
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Decrement
+    CSharp: OperationCounter.Decrement()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.OperationCounter.Decrement
+    CSharp: System.Web.Mvc.Async.OperationCounter.Decrement()
   type: Method
   source:
     remote: *o0
@@ -74,9 +74,9 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Decrement(System.Int32)
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Decrement
+    CSharp: OperationCounter.Decrement(int)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.OperationCounter.Decrement(System.Int32)
+    CSharp: System.Web.Mvc.Async.OperationCounter.Decrement(int)
   type: Method
   source:
     remote: *o0
@@ -96,9 +96,9 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Increment
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Increment
+    CSharp: OperationCounter.Increment()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.OperationCounter.Increment
+    CSharp: System.Web.Mvc.Async.OperationCounter.Increment()
   type: Method
   source:
     remote: *o0
@@ -113,9 +113,9 @@ items:
 - id: System.Web.Mvc.Async.OperationCounter.Increment(System.Int32)
   href: System.Web.Mvc.Async.OperationCounter.yaml
   name:
-    CSharp: Increment
+    CSharp: OperationCounter.Increment(int)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.OperationCounter.Increment(System.Int32)
+    CSharp: System.Web.Mvc.Async.OperationCounter.Increment(int)
   type: Method
   source:
     remote: *o0

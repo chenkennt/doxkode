@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.HiddenInputAttribute.#ctor
   href: System.Web.Mvc.HiddenInputAttribute.yaml
   name:
-    CSharp: HiddenInputAttribute
+    CSharp: HiddenInputAttribute.HiddenInputAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.HiddenInputAttribute.HiddenInputAttribute
+    CSharp: System.Web.Mvc.HiddenInputAttribute.HiddenInputAttribute()
   type: Constructor
   source:
     remote: *o0
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.HiddenInputAttribute.DisplayValue
   href: System.Web.Mvc.HiddenInputAttribute.yaml
   name:
-    CSharp: DisplayValue
+    CSharp: HiddenInputAttribute.DisplayValue
   qualifiedName:
     CSharp: System.Web.Mvc.HiddenInputAttribute.DisplayValue
   type: Property

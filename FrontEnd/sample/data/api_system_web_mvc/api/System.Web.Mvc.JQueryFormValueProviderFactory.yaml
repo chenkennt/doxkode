@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.JQueryFormValueProviderFactory.#ctor
   href: System.Web.Mvc.JQueryFormValueProviderFactory.yaml
   name:
-    CSharp: JQueryFormValueProviderFactory
+    CSharp: JQueryFormValueProviderFactory.JQueryFormValueProviderFactory()
   qualifiedName:
-    CSharp: System.Web.Mvc.JQueryFormValueProviderFactory.JQueryFormValueProviderFactory
+    CSharp: System.Web.Mvc.JQueryFormValueProviderFactory.JQueryFormValueProviderFactory()
   type: Constructor
   source:
     remote: *o0
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.JQueryFormValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.JQueryFormValueProviderFactory.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: JQueryFormValueProviderFactory.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.JQueryFormValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

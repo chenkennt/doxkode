@@ -63,7 +63,7 @@
       </div>
       <div class="subnav navbar navbar-default">
         <div class="container">
-            <div class="expand-all pull-right">
+            <div ng-if="partialModel.items" class="expand-all pull-right">
               <a ng-click = "expandAll(true);">Expand All</a>
               <span class="divider">|</span>
               <a ng-click = "expandAll(false);">Collapse All</a>
@@ -128,8 +128,6 @@
           <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" onload="finishLoading()" autoscroll></div>
       </div>
     </div>
-    <!--
-    comment out footer as it is currently having display issue-->
     <footer>
       <div class="grad-bottom"></div>
       <div class="footer">

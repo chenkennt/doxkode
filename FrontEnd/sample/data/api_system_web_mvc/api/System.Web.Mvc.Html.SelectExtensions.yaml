@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, string)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>)
   type: Method
   source:
     remote: *o0
@@ -114,9 +114,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, object)
   type: Method
   source:
     remote: *o0
@@ -151,9 +151,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -188,9 +188,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string)
   type: Method
   source:
     remote: *o0
@@ -225,9 +225,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string, object)
   type: Method
   source:
     remote: *o0
@@ -267,9 +267,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownList
+    CSharp: SelectExtensions.DropDownList(HtmlHelper, string, IEnumerable<SelectListItem>, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownList(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -309,9 +309,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>)
   type: Method
   source:
     remote: *o0
@@ -341,9 +341,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, object)
   type: Method
   source:
     remote: *o0
@@ -378,9 +378,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -415,9 +415,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string)
   type: Method
   source:
     remote: *o0
@@ -452,9 +452,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string, object)
   type: Method
   source:
     remote: *o0
@@ -494,9 +494,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: DropDownListFor
+    CSharp: SelectExtensions.DropDownListFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.DropDownListFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -536,9 +536,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>)
   type: Method
   source:
     remote: *o0
@@ -563,9 +563,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>, object)
   type: Method
   source:
     remote: *o0
@@ -595,9 +595,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -627,9 +627,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>, string)
   type: Method
   source:
     remote: *o0
@@ -659,9 +659,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>, string, object)
   type: Method
   source:
     remote: *o0
@@ -696,9 +696,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: EnumDropDownListFor
+    CSharp: SelectExtensions.EnumDropDownListFor<TModel, TEnum>(HtmlHelper<TModel>, Expression<Func<TModel, TEnum>>, string, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.EnumDropDownListFor<TModel, TEnum>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TEnum>>, string, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -733,9 +733,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBox
+    CSharp: SelectExtensions.ListBox(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -760,9 +760,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBox
+    CSharp: SelectExtensions.ListBox(HtmlHelper, string, IEnumerable<SelectListItem>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>)
   type: Method
   source:
     remote: *o0
@@ -792,9 +792,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBox
+    CSharp: SelectExtensions.ListBox(HtmlHelper, string, IEnumerable<SelectListItem>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, object)
   type: Method
   source:
     remote: *o0
@@ -829,9 +829,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBox
+    CSharp: SelectExtensions.ListBox(HtmlHelper, string, IEnumerable<SelectListItem>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper,System.String,System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBox(System.Web.Mvc.HtmlHelper, string, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -866,9 +866,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBoxFor
+    CSharp: SelectExtensions.ListBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>)
   type: Method
   source:
     remote: *o0
@@ -898,9 +898,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBoxFor
+    CSharp: SelectExtensions.ListBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, object)
   type: Method
   source:
     remote: *o0
@@ -935,9 +935,9 @@ items:
 - id: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Html.SelectExtensions.yaml
   name:
-    CSharp: ListBoxFor
+    CSharp: SelectExtensions.ListBoxFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>, IEnumerable<SelectListItem>, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Html.SelectExtensions.ListBoxFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>, System.Collections.Generic.IEnumerable<System.Web.Mvc.SelectListItem>, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

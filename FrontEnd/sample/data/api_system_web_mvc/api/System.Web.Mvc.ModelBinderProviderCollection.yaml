@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.ModelBinderProviderCollection.#ctor
   href: System.Web.Mvc.ModelBinderProviderCollection.yaml
   name:
-    CSharp: ModelBinderProviderCollection
+    CSharp: ModelBinderProviderCollection.ModelBinderProviderCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelBinderProviderCollection.ModelBinderProviderCollection
+    CSharp: System.Web.Mvc.ModelBinderProviderCollection.ModelBinderProviderCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.ModelBinderProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.IModelBinderProvider})
   href: System.Web.Mvc.ModelBinderProviderCollection.yaml
   name:
-    CSharp: ModelBinderProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IModelBinderProvider})
+    CSharp: ModelBinderProviderCollection.ModelBinderProviderCollection(IList<IModelBinderProvider>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelBinderProviderCollection.ModelBinderProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IModelBinderProvider})
+    CSharp: System.Web.Mvc.ModelBinderProviderCollection.ModelBinderProviderCollection(System.Collections.Generic.IList<System.Web.Mvc.IModelBinderProvider>)
   type: Constructor
   source:
     remote: *o0
@@ -65,7 +65,7 @@ items:
 - id: System.Web.Mvc.ModelBinderProviderCollection.GetBinder(System.Type)
   href: System.Web.Mvc.ModelBinderProviderCollection.yaml
   name:
-    CSharp: GetBinder
+    CSharp: ModelBinderProviderCollection.GetBinder(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelBinderProviderCollection.GetBinder(System.Type)
   type: Method

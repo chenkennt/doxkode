@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.SessionStateAttribute.#ctor(System.Web.SessionState.SessionStateBehavior)
   href: System.Web.Mvc.SessionStateAttribute.yaml
   name:
-    CSharp: SessionStateAttribute(System.Web.SessionState.SessionStateBehavior)
+    CSharp: SessionStateAttribute.SessionStateAttribute(SessionStateBehavior)
   qualifiedName:
     CSharp: System.Web.Mvc.SessionStateAttribute.SessionStateAttribute(System.Web.SessionState.SessionStateBehavior)
   type: Constructor
@@ -48,7 +48,7 @@ items:
 - id: System.Web.Mvc.SessionStateAttribute.Behavior
   href: System.Web.Mvc.SessionStateAttribute.yaml
   name:
-    CSharp: Behavior
+    CSharp: SessionStateAttribute.Behavior
   qualifiedName:
     CSharp: System.Web.Mvc.SessionStateAttribute.Behavior
   type: Property

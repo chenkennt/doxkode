@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IClientValidatable.GetClientValidationRules(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.IClientValidatable.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: IClientValidatable.GetClientValidationRules(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.IClientValidatable.GetClientValidationRules(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.IClientValidatable.GetClientValidationRules(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

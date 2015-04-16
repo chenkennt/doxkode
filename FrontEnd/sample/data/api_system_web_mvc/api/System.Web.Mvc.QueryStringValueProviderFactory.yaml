@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.QueryStringValueProviderFactory.#ctor
   href: System.Web.Mvc.QueryStringValueProviderFactory.yaml
   name:
-    CSharp: QueryStringValueProviderFactory
+    CSharp: QueryStringValueProviderFactory.QueryStringValueProviderFactory()
   qualifiedName:
-    CSharp: System.Web.Mvc.QueryStringValueProviderFactory.QueryStringValueProviderFactory
+    CSharp: System.Web.Mvc.QueryStringValueProviderFactory.QueryStringValueProviderFactory()
   type: Constructor
   source:
     remote: *o0
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.QueryStringValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.QueryStringValueProviderFactory.yaml
   name:
-    CSharp: GetValueProvider
+    CSharp: QueryStringValueProviderFactory.GetValueProvider(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.QueryStringValueProviderFactory.GetValueProvider(System.Web.Mvc.ControllerContext)
   type: Method

@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Routing.IDirectRouteFactory.CreateRoute(System.Web.Mvc.Routing.DirectRouteFactoryContext)
   href: System.Web.Mvc.Routing.IDirectRouteFactory.yaml
   name:
-    CSharp: CreateRoute
+    CSharp: IDirectRouteFactory.CreateRoute(DirectRouteFactoryContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IDirectRouteFactory.CreateRoute(System.Web.Mvc.Routing.DirectRouteFactoryContext)
   type: Method

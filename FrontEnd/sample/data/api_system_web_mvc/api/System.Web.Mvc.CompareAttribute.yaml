@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.CompareAttribute.#ctor(System.String)
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: CompareAttribute(System.String)
+    CSharp: CompareAttribute.CompareAttribute(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.CompareAttribute.CompareAttribute(System.String)
+    CSharp: System.Web.Mvc.CompareAttribute.CompareAttribute(string)
   type: Constructor
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.CompareAttribute.OtherProperty
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: OtherProperty
+    CSharp: CompareAttribute.OtherProperty
   qualifiedName:
     CSharp: System.Web.Mvc.CompareAttribute.OtherProperty
   type: Property
@@ -71,7 +71,7 @@ items:
 - id: System.Web.Mvc.CompareAttribute.OtherPropertyDisplayName
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: OtherPropertyDisplayName
+    CSharp: CompareAttribute.OtherPropertyDisplayName
   qualifiedName:
     CSharp: System.Web.Mvc.CompareAttribute.OtherPropertyDisplayName
   type: Property
@@ -91,9 +91,9 @@ items:
 - id: System.Web.Mvc.CompareAttribute.FormatErrorMessage(System.String)
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: FormatErrorMessage
+    CSharp: CompareAttribute.FormatErrorMessage(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.CompareAttribute.FormatErrorMessage(System.String)
+    CSharp: System.Web.Mvc.CompareAttribute.FormatErrorMessage(string)
   type: Method
   source:
     remote: *o0
@@ -113,9 +113,9 @@ items:
 - id: System.Web.Mvc.CompareAttribute.FormatPropertyForClientValidation(System.String)
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: FormatPropertyForClientValidation
+    CSharp: CompareAttribute.FormatPropertyForClientValidation(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.CompareAttribute.FormatPropertyForClientValidation(System.String)
+    CSharp: System.Web.Mvc.CompareAttribute.FormatPropertyForClientValidation(string)
   type: Method
   source:
     remote: *o0
@@ -135,9 +135,9 @@ items:
 - id: System.Web.Mvc.CompareAttribute.GetClientValidationRules(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.CompareAttribute.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: CompareAttribute.GetClientValidationRules(ModelMetadata, ControllerContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.CompareAttribute.GetClientValidationRules(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext)
+    CSharp: System.Web.Mvc.CompareAttribute.GetClientValidationRules(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext)
   type: Method
   source:
     remote: *o0

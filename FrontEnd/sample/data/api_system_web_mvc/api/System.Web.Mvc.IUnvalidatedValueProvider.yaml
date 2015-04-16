@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IUnvalidatedValueProvider.GetValue(System.String,System.Boolean)
   href: System.Web.Mvc.IUnvalidatedValueProvider.yaml
   name:
-    CSharp: GetValue
+    CSharp: IUnvalidatedValueProvider.GetValue(string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.IUnvalidatedValueProvider.GetValue(System.String,System.Boolean)
+    CSharp: System.Web.Mvc.IUnvalidatedValueProvider.GetValue(string, bool)
   type: Method
   source:
     remote: *o0

@@ -1,9 +1,9 @@
 id: System.Web.Mvc.CachedAssociatedMetadataProvider`1
 href: System.Web.Mvc.CachedAssociatedMetadataProvider`1.yaml
 name:
-  CSharp: CachedAssociatedMetadataProvider`1
+  CSharp: CachedAssociatedMetadataProvider<TModelMetadata>
 qualifiedName:
-  CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider`1
+  CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider<TModelMetadata>
 type: Class
 source:
   remote: &o0
@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
   href: System.Web.Mvc.CachedAssociatedMetadataProvider`1.yaml
   name:
-    CSharp: GetMetadataForProperty
+    CSharp: CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForProperty(Func<object>, Type, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
+    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForProperty(System.Func<object>, System.Type, string)
   type: Method
   source:
     remote: *o0
@@ -61,9 +61,9 @@ items:
 - id: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForProperties(System.Object,System.Type)
   href: System.Web.Mvc.CachedAssociatedMetadataProvider`1.yaml
   name:
-    CSharp: GetMetadataForProperties
+    CSharp: CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForProperties(object, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForProperties(System.Object,System.Type)
+    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForProperties(object, System.Type)
   type: Method
   source:
     remote: *o0
@@ -88,9 +88,9 @@ items:
 - id: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForType(System.Func{System.Object},System.Type)
   href: System.Web.Mvc.CachedAssociatedMetadataProvider`1.yaml
   name:
-    CSharp: GetMetadataForType
+    CSharp: CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForType(Func<object>, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider`1.GetMetadataForType(System.Func{System.Object},System.Type)
+    CSharp: System.Web.Mvc.CachedAssociatedMetadataProvider<TModelMetadata>.GetMetadataForType(System.Func<object>, System.Type)
   type: Method
   source:
     remote: *o0

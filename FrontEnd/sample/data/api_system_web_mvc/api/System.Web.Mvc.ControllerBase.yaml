@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.ControllerContext
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: ControllerContext
+    CSharp: ControllerBase.ControllerContext
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.ControllerContext
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.TempData
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: TempData
+    CSharp: ControllerBase.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.TempData
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.ValidateRequest
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: ValidateRequest
+    CSharp: ControllerBase.ValidateRequest
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.ValidateRequest
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.ValueProvider
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: ValueProvider
+    CSharp: ControllerBase.ValueProvider
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.ValueProvider
   type: Property
@@ -103,7 +103,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.ViewBag
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ControllerBase.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.ViewBag
   type: Property
@@ -121,7 +121,7 @@ items:
 - id: System.Web.Mvc.ControllerBase.ViewData
   href: System.Web.Mvc.ControllerBase.yaml
   name:
-    CSharp: ViewData
+    CSharp: ControllerBase.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBase.ViewData
   type: Property

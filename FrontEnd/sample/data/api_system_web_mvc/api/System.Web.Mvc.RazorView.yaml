@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.RazorView.#ctor(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String})
   href: System.Web.Mvc.RazorView.yaml
   name:
-    CSharp: RazorView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String})
+    CSharp: RazorView.RazorView(ControllerContext, string, string, bool, IEnumerable<string>)
   qualifiedName:
-    CSharp: System.Web.Mvc.RazorView.RazorView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String})
+    CSharp: System.Web.Mvc.RazorView.RazorView(System.Web.Mvc.ControllerContext, string, string, bool, System.Collections.Generic.IEnumerable<string>)
   type: Constructor
   source:
     remote: *o0
@@ -68,9 +68,9 @@ items:
 - id: System.Web.Mvc.RazorView.#ctor(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Web.Mvc.IViewPageActivator)
   href: System.Web.Mvc.RazorView.yaml
   name:
-    CSharp: RazorView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Web.Mvc.IViewPageActivator)
+    CSharp: RazorView.RazorView(ControllerContext, string, string, bool, IEnumerable<string>, IViewPageActivator)
   qualifiedName:
-    CSharp: System.Web.Mvc.RazorView.RazorView(System.Web.Mvc.ControllerContext,System.String,System.String,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Web.Mvc.IViewPageActivator)
+    CSharp: System.Web.Mvc.RazorView.RazorView(System.Web.Mvc.ControllerContext, string, string, bool, System.Collections.Generic.IEnumerable<string>, System.Web.Mvc.IViewPageActivator)
   type: Constructor
   source:
     remote: *o0
@@ -115,7 +115,7 @@ items:
 - id: System.Web.Mvc.RazorView.LayoutPath
   href: System.Web.Mvc.RazorView.yaml
   name:
-    CSharp: LayoutPath
+    CSharp: RazorView.LayoutPath
   qualifiedName:
     CSharp: System.Web.Mvc.RazorView.LayoutPath
   type: Property
@@ -135,7 +135,7 @@ items:
 - id: System.Web.Mvc.RazorView.RunViewStartPages
   href: System.Web.Mvc.RazorView.yaml
   name:
-    CSharp: RunViewStartPages
+    CSharp: RazorView.RunViewStartPages
   qualifiedName:
     CSharp: System.Web.Mvc.RazorView.RunViewStartPages
   type: Property
@@ -155,7 +155,7 @@ items:
 - id: System.Web.Mvc.RazorView.ViewStartFileExtensions
   href: System.Web.Mvc.RazorView.yaml
   name:
-    CSharp: ViewStartFileExtensions
+    CSharp: RazorView.ViewStartFileExtensions
   qualifiedName:
     CSharp: System.Web.Mvc.RazorView.ViewStartFileExtensions
   type: Property

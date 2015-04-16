@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.HttpHeadAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
   href: System.Web.Mvc.HttpHeadAttribute.yaml
   name:
-    CSharp: IsValidForRequest
+    CSharp: HttpHeadAttribute.IsValidForRequest(ControllerContext, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.HttpHeadAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.HttpHeadAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

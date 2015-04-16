@@ -27,9 +27,9 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.#ctor
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: RouteBuilder
+    CSharp: RouteBuilder.RouteBuilder()
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.RouteBuilder.RouteBuilder
+    CSharp: System.Web.Mvc.Routing.RouteBuilder.RouteBuilder()
   type: Constructor
   source:
     remote: *o0
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.#ctor(System.Web.Mvc.Routing.IInlineConstraintResolver)
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: RouteBuilder(System.Web.Mvc.Routing.IInlineConstraintResolver)
+    CSharp: RouteBuilder.RouteBuilder(IInlineConstraintResolver)
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteBuilder.RouteBuilder(System.Web.Mvc.Routing.IInlineConstraintResolver)
   type: Constructor
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.ConstraintResolver
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: ConstraintResolver
+    CSharp: RouteBuilder.ConstraintResolver
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteBuilder.ConstraintResolver
   type: Property
@@ -89,9 +89,9 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.String,System.Web.Mvc.ControllerDescriptor)
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: BuildDirectRoute
+    CSharp: RouteBuilder.BuildDirectRoute(string, ControllerDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.String,System.Web.Mvc.ControllerDescriptor)
+    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(string, System.Web.Mvc.ControllerDescriptor)
   type: Method
   source:
     remote: *o0
@@ -120,9 +120,9 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Reflection.MethodInfo,System.String)
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: BuildDirectRoute
+    CSharp: RouteBuilder.BuildDirectRoute(string, IEnumerable<string>, string, string, MethodInfo, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Reflection.MethodInfo,System.String)
+    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(string, System.Collections.Generic.IEnumerable<string>, string, string, System.Reflection.MethodInfo, string)
   type: Method
   source:
     remote: *o0
@@ -174,9 +174,9 @@ items:
 - id: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.String,System.Reflection.MethodInfo)
   href: System.Web.Mvc.Routing.RouteBuilder.yaml
   name:
-    CSharp: BuildDirectRoute
+    CSharp: RouteBuilder.BuildDirectRoute(RouteValueDictionary, RouteValueDictionary, RouteValueDictionary, string, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.String,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.Routing.RouteBuilder.BuildDirectRoute(System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteValueDictionary, string, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

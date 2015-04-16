@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.Model
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: Model
+    CSharp: ViewResultBase.Model
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.Model
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.TempData
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: TempData
+    CSharp: ViewResultBase.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.TempData
   type: Property
@@ -66,7 +66,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.View
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: View
+    CSharp: ViewResultBase.View
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.View
   type: Property
@@ -86,7 +86,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.ViewBag
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: ViewBag
+    CSharp: ViewResultBase.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.ViewBag
   type: Property
@@ -104,7 +104,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.ViewData
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: ViewData
+    CSharp: ViewResultBase.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.ViewData
   type: Property
@@ -124,7 +124,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.ViewEngineCollection
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: ViewEngineCollection
+    CSharp: ViewResultBase.ViewEngineCollection
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.ViewEngineCollection
   type: Property
@@ -144,7 +144,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.ViewName
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: ViewName
+    CSharp: ViewResultBase.ViewName
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.ViewName
   type: Property
@@ -164,7 +164,7 @@ items:
 - id: System.Web.Mvc.ViewResultBase.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ViewResultBase.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: ViewResultBase.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResultBase.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

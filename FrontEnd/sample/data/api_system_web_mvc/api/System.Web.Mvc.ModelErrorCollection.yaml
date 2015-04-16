@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.ModelErrorCollection.Add(System.Exception)
   href: System.Web.Mvc.ModelErrorCollection.yaml
   name:
-    CSharp: Add
+    CSharp: ModelErrorCollection.Add(Exception)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelErrorCollection.Add(System.Exception)
   type: Method
@@ -48,9 +48,9 @@ items:
 - id: System.Web.Mvc.ModelErrorCollection.Add(System.String)
   href: System.Web.Mvc.ModelErrorCollection.yaml
   name:
-    CSharp: Add
+    CSharp: ModelErrorCollection.Add(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelErrorCollection.Add(System.String)
+    CSharp: System.Web.Mvc.ModelErrorCollection.Add(string)
   type: Method
   source:
     remote: *o0

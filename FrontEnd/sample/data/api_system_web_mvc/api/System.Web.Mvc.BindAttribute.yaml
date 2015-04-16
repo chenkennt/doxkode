@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.BindAttribute.Exclude
   href: System.Web.Mvc.BindAttribute.yaml
   name:
-    CSharp: Exclude
+    CSharp: BindAttribute.Exclude
   qualifiedName:
     CSharp: System.Web.Mvc.BindAttribute.Exclude
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.BindAttribute.Include
   href: System.Web.Mvc.BindAttribute.yaml
   name:
-    CSharp: Include
+    CSharp: BindAttribute.Include
   qualifiedName:
     CSharp: System.Web.Mvc.BindAttribute.Include
   type: Property
@@ -66,7 +66,7 @@ items:
 - id: System.Web.Mvc.BindAttribute.Prefix
   href: System.Web.Mvc.BindAttribute.yaml
   name:
-    CSharp: Prefix
+    CSharp: BindAttribute.Prefix
   qualifiedName:
     CSharp: System.Web.Mvc.BindAttribute.Prefix
   type: Property
@@ -86,9 +86,9 @@ items:
 - id: System.Web.Mvc.BindAttribute.IsPropertyAllowed(System.String)
   href: System.Web.Mvc.BindAttribute.yaml
   name:
-    CSharp: IsPropertyAllowed
+    CSharp: BindAttribute.IsPropertyAllowed(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.BindAttribute.IsPropertyAllowed(System.String)
+    CSharp: System.Web.Mvc.BindAttribute.IsPropertyAllowed(string)
   type: Method
   source:
     remote: *o0

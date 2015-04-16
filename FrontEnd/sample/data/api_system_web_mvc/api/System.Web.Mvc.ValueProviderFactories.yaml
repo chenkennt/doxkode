@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ValueProviderFactories.Factories
   href: System.Web.Mvc.ValueProviderFactories.yaml
   name:
-    CSharp: Factories
+    CSharp: ValueProviderFactories.Factories
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderFactories.Factories
   type: Property

@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.ContentResult.Content
   href: System.Web.Mvc.ContentResult.yaml
   name:
-    CSharp: Content
+    CSharp: ContentResult.Content
   qualifiedName:
     CSharp: System.Web.Mvc.ContentResult.Content
   type: Property
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.ContentResult.ContentEncoding
   href: System.Web.Mvc.ContentResult.yaml
   name:
-    CSharp: ContentEncoding
+    CSharp: ContentResult.ContentEncoding
   qualifiedName:
     CSharp: System.Web.Mvc.ContentResult.ContentEncoding
   type: Property
@@ -66,7 +66,7 @@ items:
 - id: System.Web.Mvc.ContentResult.ContentType
   href: System.Web.Mvc.ContentResult.yaml
   name:
-    CSharp: ContentType
+    CSharp: ContentResult.ContentType
   qualifiedName:
     CSharp: System.Web.Mvc.ContentResult.ContentType
   type: Property
@@ -86,7 +86,7 @@ items:
 - id: System.Web.Mvc.ContentResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ContentResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: ContentResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ContentResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

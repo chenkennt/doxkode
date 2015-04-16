@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelValidationResult.MemberName
   href: System.Web.Mvc.ModelValidationResult.yaml
   name:
-    CSharp: MemberName
+    CSharp: ModelValidationResult.MemberName
   qualifiedName:
     CSharp: System.Web.Mvc.ModelValidationResult.MemberName
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ModelValidationResult.Message
   href: System.Web.Mvc.ModelValidationResult.yaml
   name:
-    CSharp: Message
+    CSharp: ModelValidationResult.Message
   qualifiedName:
     CSharp: System.Web.Mvc.ModelValidationResult.Message
   type: Property

@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.ViewResult.MasterName
   href: System.Web.Mvc.ViewResult.yaml
   name:
-    CSharp: MasterName
+    CSharp: ViewResult.MasterName
   qualifiedName:
     CSharp: System.Web.Mvc.ViewResult.MasterName
   type: Property

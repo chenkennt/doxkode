@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.OverrideResultFiltersAttribute.FiltersToOverride
   href: System.Web.Mvc.OverrideResultFiltersAttribute.yaml
   name:
-    CSharp: FiltersToOverride
+    CSharp: OverrideResultFiltersAttribute.FiltersToOverride
   qualifiedName:
     CSharp: System.Web.Mvc.OverrideResultFiltersAttribute.FiltersToOverride
   type: Property

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.FilterProviders.Providers
   href: System.Web.Mvc.FilterProviders.yaml
   name:
-    CSharp: Providers
+    CSharp: FilterProviders.Providers
   qualifiedName:
     CSharp: System.Web.Mvc.FilterProviders.Providers
   type: Property

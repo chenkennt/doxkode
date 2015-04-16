@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -60,9 +60,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -102,9 +102,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -149,9 +149,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -191,9 +191,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -238,9 +238,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -280,9 +280,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -327,9 +327,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -379,9 +379,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -426,9 +426,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -478,9 +478,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, string, string, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, string, string, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -545,9 +545,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: ActionLink
+    CSharp: AjaxExtensions.ActionLink(AjaxHelper, string, string, string, string, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.ActionLink(System.Web.Mvc.AjaxHelper, string, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -612,9 +612,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -639,9 +639,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -671,9 +671,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -708,9 +708,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -750,9 +750,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -787,9 +787,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -829,9 +829,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -866,9 +866,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -908,9 +908,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -955,9 +955,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -997,9 +997,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginForm
+    CSharp: AjaxExtensions.BeginForm(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginForm(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1044,9 +1044,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: AjaxExtensions.BeginRouteForm(AjaxHelper, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1076,9 +1076,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: AjaxExtensions.BeginRouteForm(AjaxHelper, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1113,9 +1113,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: AjaxExtensions.BeginRouteForm(AjaxHelper, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -1155,9 +1155,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: AjaxExtensions.BeginRouteForm(AjaxHelper, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1192,9 +1192,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: BeginRouteForm
+    CSharp: AjaxExtensions.BeginRouteForm(AjaxHelper, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.BeginRouteForm(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1234,7 +1234,7 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.GlobalizationScript(System.Web.Mvc.AjaxHelper)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: GlobalizationScript
+    CSharp: AjaxExtensions.GlobalizationScript(AjaxHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Ajax.AjaxExtensions.GlobalizationScript(System.Web.Mvc.AjaxHelper)
   type: Method
@@ -1256,9 +1256,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.GlobalizationScript(System.Web.Mvc.AjaxHelper,System.Globalization.CultureInfo)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: GlobalizationScript
+    CSharp: AjaxExtensions.GlobalizationScript(AjaxHelper, CultureInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.GlobalizationScript(System.Web.Mvc.AjaxHelper,System.Globalization.CultureInfo)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.GlobalizationScript(System.Web.Mvc.AjaxHelper, System.Globalization.CultureInfo)
   type: Method
   source:
     remote: *o0
@@ -1283,9 +1283,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1320,9 +1320,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -1362,9 +1362,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1399,9 +1399,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1441,9 +1441,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1478,9 +1478,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -1520,9 +1520,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1562,9 +1562,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, object, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1604,9 +1604,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, object, AjaxOptions, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Object,System.Web.Mvc.Ajax.AjaxOptions,System.Object)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, object, System.Web.Mvc.Ajax.AjaxOptions, object)
   type: Method
   source:
     remote: *o0
@@ -1651,9 +1651,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions)
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions)
   type: Method
   source:
     remote: *o0
@@ -1693,9 +1693,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -1740,9 +1740,9 @@ items:
 - id: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.Ajax.AjaxExtensions.yaml
   name:
-    CSharp: RouteLink
+    CSharp: AjaxExtensions.RouteLink(AjaxHelper, string, string, string, string, string, RouteValueDictionary, AjaxOptions, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper,System.String,System.String,System.String,System.String,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Mvc.Ajax.AjaxOptions,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.Ajax.AjaxExtensions.RouteLink(System.Web.Mvc.AjaxHelper, string, string, string, string, string, System.Web.Routing.RouteValueDictionary, System.Web.Mvc.Ajax.AjaxOptions, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0

@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable)
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable)
   type: Constructor
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -72,9 +72,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -117,9 +117,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string)
   type: Constructor
   source:
     remote: *o0
@@ -149,9 +149,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -186,9 +186,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, string)
   type: Constructor
   source:
     remote: *o0
@@ -240,9 +240,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -303,9 +303,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, string, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, string, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -366,9 +366,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, string, IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, string, System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -440,9 +440,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.#ctor(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: MultiSelectList.MultiSelectList(IEnumerable, string, string, string, IEnumerable, IEnumerable, IEnumerable)
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IEnumerable)
+    CSharp: System.Web.Mvc.MultiSelectList.MultiSelectList(System.Collections.IEnumerable, string, string, string, System.Collections.IEnumerable, System.Collections.IEnumerable, System.Collections.IEnumerable)
   type: Constructor
   source:
     remote: *o0
@@ -523,7 +523,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.DataGroupField
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: DataGroupField
+    CSharp: MultiSelectList.DataGroupField
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.DataGroupField
   type: Property
@@ -544,7 +544,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.DataTextField
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: DataTextField
+    CSharp: MultiSelectList.DataTextField
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.DataTextField
   type: Property
@@ -564,7 +564,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.DataValueField
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: DataValueField
+    CSharp: MultiSelectList.DataValueField
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.DataValueField
   type: Property
@@ -584,7 +584,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.DisabledGroups
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: DisabledGroups
+    CSharp: MultiSelectList.DisabledGroups
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.DisabledGroups
   type: Property
@@ -605,7 +605,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.DisabledValues
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: DisabledValues
+    CSharp: MultiSelectList.DisabledValues
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.DisabledValues
   type: Property
@@ -626,7 +626,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.Items
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: Items
+    CSharp: MultiSelectList.Items
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.Items
   type: Property
@@ -646,7 +646,7 @@ items:
 - id: System.Web.Mvc.MultiSelectList.SelectedValues
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: SelectedValues
+    CSharp: MultiSelectList.SelectedValues
   qualifiedName:
     CSharp: System.Web.Mvc.MultiSelectList.SelectedValues
   type: Property
@@ -666,9 +666,9 @@ items:
 - id: System.Web.Mvc.MultiSelectList.GetEnumerator
   href: System.Web.Mvc.MultiSelectList.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: MultiSelectList.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.MultiSelectList.GetEnumerator
+    CSharp: System.Web.Mvc.MultiSelectList.GetEnumerator()
   type: Method
   source:
     remote: *o0

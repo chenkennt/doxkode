@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.#ctor(System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
+    CSharp: NameValueCollectionValueProvider.NameValueCollectionValueProvider(NameValueCollection, CultureInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection, System.Globalization.CultureInfo)
   type: Constructor
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.#ctor(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
+    CSharp: NameValueCollectionValueProvider.NameValueCollectionValueProvider(NameValueCollection, NameValueCollection, CultureInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.Globalization.CultureInfo)
   type: Constructor
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.#ctor(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo,System.Boolean)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo,System.Boolean)
+    CSharp: NameValueCollectionValueProvider.NameValueCollectionValueProvider(NameValueCollection, NameValueCollection, CultureInfo, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo,System.Boolean)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.NameValueCollectionValueProvider(System.Collections.Specialized.NameValueCollection, System.Collections.Specialized.NameValueCollection, System.Globalization.CultureInfo, bool)
   type: Constructor
   source:
     remote: *o0
@@ -129,9 +129,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.ContainsPrefix(System.String)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: ContainsPrefix
+    CSharp: NameValueCollectionValueProvider.ContainsPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.ContainsPrefix(System.String)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.ContainsPrefix(string)
   type: Method
   source:
     remote: *o0
@@ -151,9 +151,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(System.String)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: GetValue
+    CSharp: NameValueCollectionValueProvider.GetValue(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(System.String)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(string)
   type: Method
   source:
     remote: *o0
@@ -173,9 +173,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(System.String,System.Boolean)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: GetValue
+    CSharp: NameValueCollectionValueProvider.GetValue(string, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(System.String,System.Boolean)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetValue(string, bool)
   type: Method
   source:
     remote: *o0
@@ -200,9 +200,9 @@ items:
 - id: System.Web.Mvc.NameValueCollectionValueProvider.GetKeysFromPrefix(System.String)
   href: System.Web.Mvc.NameValueCollectionValueProvider.yaml
   name:
-    CSharp: GetKeysFromPrefix
+    CSharp: NameValueCollectionValueProvider.GetKeysFromPrefix(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetKeysFromPrefix(System.String)
+    CSharp: System.Web.Mvc.NameValueCollectionValueProvider.GetKeysFromPrefix(string)
   type: Method
   source:
     remote: *o0

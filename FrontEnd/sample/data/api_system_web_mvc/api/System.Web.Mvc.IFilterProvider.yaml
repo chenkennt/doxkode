@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IFilterProvider.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
   href: System.Web.Mvc.IFilterProvider.yaml
   name:
-    CSharp: GetFilters
+    CSharp: IFilterProvider.GetFilters(ControllerContext, ActionDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.IFilterProvider.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
+    CSharp: System.Web.Mvc.IFilterProvider.GetFilters(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor)
   type: Method
   source:
     remote: *o0

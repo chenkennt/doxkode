@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.HttpPutAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
   href: System.Web.Mvc.HttpPutAttribute.yaml
   name:
-    CSharp: IsValidForRequest
+    CSharp: HttpPutAttribute.IsValidForRequest(ControllerContext, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.HttpPutAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.HttpPutAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

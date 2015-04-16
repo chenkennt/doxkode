@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.JsonResult.#ctor
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: JsonResult
+    CSharp: JsonResult.JsonResult()
   qualifiedName:
-    CSharp: System.Web.Mvc.JsonResult.JsonResult
+    CSharp: System.Web.Mvc.JsonResult.JsonResult()
   type: Constructor
   source:
     remote: *o0
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.JsonResult.ContentEncoding
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: ContentEncoding
+    CSharp: JsonResult.ContentEncoding
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.ContentEncoding
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.JsonResult.ContentType
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: ContentType
+    CSharp: JsonResult.ContentType
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.ContentType
   type: Property
@@ -83,7 +83,7 @@ items:
 - id: System.Web.Mvc.JsonResult.Data
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: Data
+    CSharp: JsonResult.Data
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.Data
   type: Property
@@ -103,7 +103,7 @@ items:
 - id: System.Web.Mvc.JsonResult.JsonRequestBehavior
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: JsonRequestBehavior
+    CSharp: JsonResult.JsonRequestBehavior
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.JsonRequestBehavior
   type: Property
@@ -123,7 +123,7 @@ items:
 - id: System.Web.Mvc.JsonResult.MaxJsonLength
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: MaxJsonLength
+    CSharp: JsonResult.MaxJsonLength
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.MaxJsonLength
   type: Property
@@ -144,7 +144,7 @@ items:
 - id: System.Web.Mvc.JsonResult.RecursionLimit
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: RecursionLimit
+    CSharp: JsonResult.RecursionLimit
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.RecursionLimit
   type: Property
@@ -165,7 +165,7 @@ items:
 - id: System.Web.Mvc.JsonResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.JsonResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: JsonResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.JsonResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

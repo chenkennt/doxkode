@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.HttpUnauthorizedResult.#ctor
   href: System.Web.Mvc.HttpUnauthorizedResult.yaml
   name:
-    CSharp: HttpUnauthorizedResult
+    CSharp: HttpUnauthorizedResult.HttpUnauthorizedResult()
   qualifiedName:
-    CSharp: System.Web.Mvc.HttpUnauthorizedResult.HttpUnauthorizedResult
+    CSharp: System.Web.Mvc.HttpUnauthorizedResult.HttpUnauthorizedResult()
   type: Constructor
   source:
     remote: *o0
@@ -46,9 +46,9 @@ items:
 - id: System.Web.Mvc.HttpUnauthorizedResult.#ctor(System.String)
   href: System.Web.Mvc.HttpUnauthorizedResult.yaml
   name:
-    CSharp: HttpUnauthorizedResult(System.String)
+    CSharp: HttpUnauthorizedResult.HttpUnauthorizedResult(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.HttpUnauthorizedResult.HttpUnauthorizedResult(System.String)
+    CSharp: System.Web.Mvc.HttpUnauthorizedResult.HttpUnauthorizedResult(string)
   type: Constructor
   source:
     remote: *o0

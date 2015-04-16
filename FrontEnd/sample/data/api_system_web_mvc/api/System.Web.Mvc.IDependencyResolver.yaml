@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IDependencyResolver.GetService(System.Type)
   href: System.Web.Mvc.IDependencyResolver.yaml
   name:
-    CSharp: GetService
+    CSharp: IDependencyResolver.GetService(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.IDependencyResolver.GetService(System.Type)
   type: Method
@@ -41,7 +41,7 @@ items:
 - id: System.Web.Mvc.IDependencyResolver.GetServices(System.Type)
   href: System.Web.Mvc.IDependencyResolver.yaml
   name:
-    CSharp: GetServices
+    CSharp: IDependencyResolver.GetServices(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.IDependencyResolver.GetServices(System.Type)
   type: Method

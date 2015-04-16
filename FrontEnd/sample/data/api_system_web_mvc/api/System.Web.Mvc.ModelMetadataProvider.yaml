@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperties(System.Object,System.Type)
   href: System.Web.Mvc.ModelMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForProperties
+    CSharp: ModelMetadataProvider.GetMetadataForProperties(object, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperties(System.Object,System.Type)
+    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperties(object, System.Type)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
   href: System.Web.Mvc.ModelMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForProperty
+    CSharp: ModelMetadataProvider.GetMetadataForProperty(Func<object>, Type, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)
+    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForProperty(System.Func<object>, System.Type, string)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.ModelMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)
   href: System.Web.Mvc.ModelMetadataProvider.yaml
   name:
-    CSharp: GetMetadataForType
+    CSharp: ModelMetadataProvider.GetMetadataForType(Func<object>, Type)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)
+    CSharp: System.Web.Mvc.ModelMetadataProvider.GetMetadataForType(System.Func<object>, System.Type)
   type: Method
   source:
     remote: *o0

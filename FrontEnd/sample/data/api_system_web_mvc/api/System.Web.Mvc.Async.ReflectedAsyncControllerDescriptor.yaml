@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.#ctor(System.Type)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: ReflectedAsyncControllerDescriptor(System.Type)
+    CSharp: ReflectedAsyncControllerDescriptor.ReflectedAsyncControllerDescriptor(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.ReflectedAsyncControllerDescriptor(System.Type)
   type: Constructor
@@ -48,7 +48,7 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.ControllerType
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: ControllerType
+    CSharp: ReflectedAsyncControllerDescriptor.ControllerType
   qualifiedName:
     CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.ControllerType
   type: Property
@@ -68,9 +68,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: FindAction
+    CSharp: ReflectedAsyncControllerDescriptor.FindAction(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(System.Web.Mvc.ControllerContext, string)
   type: Method
   source:
     remote: *o0
@@ -95,9 +95,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCanonicalActions
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: GetCanonicalActions
+    CSharp: ReflectedAsyncControllerDescriptor.GetCanonicalActions()
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCanonicalActions
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCanonicalActions()
   type: Method
   source:
     remote: *o0
@@ -111,9 +111,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedAsyncControllerDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -132,9 +132,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ReflectedAsyncControllerDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -158,9 +158,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetFilterAttributes(System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: GetFilterAttributes
+    CSharp: ReflectedAsyncControllerDescriptor.GetFilterAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetFilterAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.GetFilterAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -180,9 +180,9 @@ items:
 - id: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ReflectedAsyncControllerDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

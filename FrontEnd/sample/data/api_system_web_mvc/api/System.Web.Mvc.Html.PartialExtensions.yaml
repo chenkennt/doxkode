@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.PartialExtensions.yaml
   name:
-    CSharp: Partial
+    CSharp: PartialExtensions.Partial(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.ViewDataDictionary)
   href: System.Web.Mvc.Html.PartialExtensions.yaml
   name:
-    CSharp: Partial
+    CSharp: PartialExtensions.Partial(HtmlHelper, string, ViewDataDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.ViewDataDictionary)
+    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper, string, System.Web.Mvc.ViewDataDictionary)
   type: Method
   source:
     remote: *o0
@@ -82,9 +82,9 @@ items:
 - id: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Object)
   href: System.Web.Mvc.Html.PartialExtensions.yaml
   name:
-    CSharp: Partial
+    CSharp: PartialExtensions.Partial(HtmlHelper, string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Object)
+    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper, string, object)
   type: Method
   source:
     remote: *o0
@@ -114,9 +114,9 @@ items:
 - id: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.ViewDataDictionary)
   href: System.Web.Mvc.Html.PartialExtensions.yaml
   name:
-    CSharp: Partial
+    CSharp: PartialExtensions.Partial(HtmlHelper, string, object, ViewDataDictionary)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.Web.Mvc.ViewDataDictionary)
+    CSharp: System.Web.Mvc.Html.PartialExtensions.Partial(System.Web.Mvc.HtmlHelper, string, object, System.Web.Mvc.ViewDataDictionary)
   type: Method
   source:
     remote: *o0

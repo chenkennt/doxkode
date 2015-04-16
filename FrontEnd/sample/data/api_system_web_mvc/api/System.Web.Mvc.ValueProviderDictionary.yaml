@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.#ctor(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: ValueProviderDictionary(System.Web.Mvc.ControllerContext)
+    CSharp: ValueProviderDictionary.ValueProviderDictionary(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.ValueProviderDictionary(System.Web.Mvc.ControllerContext)
   type: Constructor
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.ControllerContext
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: ControllerContext
+    CSharp: ValueProviderDictionary.ControllerContext
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.ControllerContext
   type: Property
@@ -65,7 +65,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Count
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Count
+    CSharp: ValueProviderDictionary.Count
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.Count
   type: Property
@@ -85,7 +85,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.IsReadOnly
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: IsReadOnly
+    CSharp: ValueProviderDictionary.IsReadOnly
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.IsReadOnly
   type: Property
@@ -105,7 +105,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Keys
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Keys
+    CSharp: ValueProviderDictionary.Keys
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.Keys
   type: Property
@@ -125,9 +125,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Item(System.String)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Item
+    CSharp: ValueProviderDictionary.this[string]
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Item(System.String)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.this[string]
   type: Property
   source:
     remote: *o0
@@ -145,7 +145,7 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Values
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Values
+    CSharp: ValueProviderDictionary.Values
   qualifiedName:
     CSharp: System.Web.Mvc.ValueProviderDictionary.Values
   type: Property
@@ -165,9 +165,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ValueProviderDictionary.Add(KeyValuePair<string, ValueProviderResult>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ValueProviderResult>)
   type: Method
   source:
     remote: *o0
@@ -187,9 +187,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Add(System.String,System.Object)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ValueProviderDictionary.Add(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(System.String,System.Object)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(string, object)
   type: Method
   source:
     remote: *o0
@@ -214,9 +214,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Add(System.String,System.Web.Mvc.ValueProviderResult)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ValueProviderDictionary.Add(string, ValueProviderResult)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(System.String,System.Web.Mvc.ValueProviderResult)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Add(string, System.Web.Mvc.ValueProviderResult)
   type: Method
   source:
     remote: *o0
@@ -241,9 +241,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Clear
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Clear
+    CSharp: ValueProviderDictionary.Clear()
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Clear
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Clear()
   type: Method
   source:
     remote: *o0
@@ -258,9 +258,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Contains
+    CSharp: ValueProviderDictionary.Contains(KeyValuePair<string, ValueProviderResult>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Contains(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ValueProviderResult>)
   type: Method
   source:
     remote: *o0
@@ -280,9 +280,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.ContainsKey(System.String)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: ContainsKey
+    CSharp: ValueProviderDictionary.ContainsKey(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.ContainsKey(System.String)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.ContainsKey(string)
   type: Method
   source:
     remote: *o0
@@ -302,9 +302,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult}[],System.Int32)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: CopyTo
+    CSharp: ValueProviderDictionary.CopyTo(KeyValuePair<string, ValueProviderResult>[], int)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult}[],System.Int32)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.CopyTo(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ValueProviderResult>[], int)
   type: Method
   source:
     remote: *o0
@@ -329,9 +329,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.GetEnumerator
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: ValueProviderDictionary.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.GetEnumerator
+    CSharp: System.Web.Mvc.ValueProviderDictionary.GetEnumerator()
   type: Method
   source:
     remote: *o0
@@ -346,9 +346,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ValueProviderDictionary.Remove(KeyValuePair<string, ValueProviderResult>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ValueProviderResult})
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Remove(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ValueProviderResult>)
   type: Method
   source:
     remote: *o0
@@ -368,9 +368,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.Remove(System.String)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ValueProviderDictionary.Remove(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.Remove(System.String)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.Remove(string)
   type: Method
   source:
     remote: *o0
@@ -390,9 +390,9 @@ items:
 - id: System.Web.Mvc.ValueProviderDictionary.TryGetValue(System.String,System.Web.Mvc.ValueProviderResult@)
   href: System.Web.Mvc.ValueProviderDictionary.yaml
   name:
-    CSharp: TryGetValue
+    CSharp: ValueProviderDictionary.TryGetValue(string, out ValueProviderResult)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValueProviderDictionary.TryGetValue(System.String,System.Web.Mvc.ValueProviderResult@)
+    CSharp: System.Web.Mvc.ValueProviderDictionary.TryGetValue(string, out System.Web.Mvc.ValueProviderResult)
   type: Method
   source:
     remote: *o0

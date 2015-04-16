@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.ValidateInputAttribute.#ctor(System.Boolean)
   href: System.Web.Mvc.ValidateInputAttribute.yaml
   name:
-    CSharp: ValidateInputAttribute(System.Boolean)
+    CSharp: ValidateInputAttribute.ValidateInputAttribute(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ValidateInputAttribute.ValidateInputAttribute(System.Boolean)
+    CSharp: System.Web.Mvc.ValidateInputAttribute.ValidateInputAttribute(bool)
   type: Constructor
   source:
     remote: *o0
@@ -51,7 +51,7 @@ items:
 - id: System.Web.Mvc.ValidateInputAttribute.EnableValidation
   href: System.Web.Mvc.ValidateInputAttribute.yaml
   name:
-    CSharp: EnableValidation
+    CSharp: ValidateInputAttribute.EnableValidation
   qualifiedName:
     CSharp: System.Web.Mvc.ValidateInputAttribute.EnableValidation
   type: Property
@@ -71,7 +71,7 @@ items:
 - id: System.Web.Mvc.ValidateInputAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   href: System.Web.Mvc.ValidateInputAttribute.yaml
   name:
-    CSharp: OnAuthorization
+    CSharp: ValidateInputAttribute.OnAuthorization(AuthorizationContext)
   qualifiedName:
     CSharp: System.Web.Mvc.ValidateInputAttribute.OnAuthorization(System.Web.Mvc.AuthorizationContext)
   type: Method

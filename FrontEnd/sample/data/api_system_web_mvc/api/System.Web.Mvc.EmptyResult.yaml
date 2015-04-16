@@ -26,7 +26,7 @@ items:
 - id: System.Web.Mvc.EmptyResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.EmptyResult.yaml
   name:
-    CSharp: ExecuteResult
+    CSharp: EmptyResult.ExecuteResult(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.EmptyResult.ExecuteResult(System.Web.Mvc.ControllerContext)
   type: Method

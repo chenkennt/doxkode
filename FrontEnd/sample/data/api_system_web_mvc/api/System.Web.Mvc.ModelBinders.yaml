@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ModelBinders.Binders
   href: System.Web.Mvc.ModelBinders.yaml
   name:
-    CSharp: Binders
+    CSharp: ModelBinders.Binders
   qualifiedName:
     CSharp: System.Web.Mvc.ModelBinders.Binders
   type: Property

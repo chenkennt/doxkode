@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.GlobalFilters.Filters
   href: System.Web.Mvc.GlobalFilters.yaml
   name:
-    CSharp: Filters
+    CSharp: GlobalFilters.Filters
   qualifiedName:
     CSharp: System.Web.Mvc.GlobalFilters.Filters
   type: Property

@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.MvcRouteHandler.#ctor
   href: System.Web.Mvc.MvcRouteHandler.yaml
   name:
-    CSharp: MvcRouteHandler
+    CSharp: MvcRouteHandler.MvcRouteHandler()
   qualifiedName:
-    CSharp: System.Web.Mvc.MvcRouteHandler.MvcRouteHandler
+    CSharp: System.Web.Mvc.MvcRouteHandler.MvcRouteHandler()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.MvcRouteHandler.#ctor(System.Web.Mvc.IControllerFactory)
   href: System.Web.Mvc.MvcRouteHandler.yaml
   name:
-    CSharp: MvcRouteHandler(System.Web.Mvc.IControllerFactory)
+    CSharp: MvcRouteHandler.MvcRouteHandler(IControllerFactory)
   qualifiedName:
     CSharp: System.Web.Mvc.MvcRouteHandler.MvcRouteHandler(System.Web.Mvc.IControllerFactory)
   type: Constructor

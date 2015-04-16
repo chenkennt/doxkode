@@ -29,7 +29,7 @@ items:
 - id: System.Web.Mvc.SelectListGroup.Disabled
   href: System.Web.Mvc.SelectListGroup.yaml
   name:
-    CSharp: Disabled
+    CSharp: SelectListGroup.Disabled
   qualifiedName:
     CSharp: System.Web.Mvc.SelectListGroup.Disabled
   type: Property
@@ -50,7 +50,7 @@ items:
 - id: System.Web.Mvc.SelectListGroup.Name
   href: System.Web.Mvc.SelectListGroup.yaml
   name:
-    CSharp: Name
+    CSharp: SelectListGroup.Name
   qualifiedName:
     CSharp: System.Web.Mvc.SelectListGroup.Name
   type: Property

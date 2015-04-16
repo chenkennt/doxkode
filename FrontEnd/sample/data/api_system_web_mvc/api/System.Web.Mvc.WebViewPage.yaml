@@ -32,7 +32,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.Context
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: Context
+    CSharp: WebViewPage.Context
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.Context
   type: Property
@@ -52,7 +52,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.Html
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: Html
+    CSharp: WebViewPage.Html
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.Html
   type: Property
@@ -72,7 +72,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.Ajax
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: Ajax
+    CSharp: WebViewPage.Ajax
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.Ajax
   type: Property
@@ -92,7 +92,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.Model
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: Model
+    CSharp: WebViewPage.Model
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.Model
   type: Property
@@ -112,7 +112,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.TempData
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: TempData
+    CSharp: WebViewPage.TempData
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.TempData
   type: Property
@@ -132,7 +132,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.Url
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: Url
+    CSharp: WebViewPage.Url
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.Url
   type: Property
@@ -152,7 +152,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.ViewBag
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: ViewBag
+    CSharp: WebViewPage.ViewBag
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.ViewBag
   type: Property
@@ -170,7 +170,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.ViewContext
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: ViewContext
+    CSharp: WebViewPage.ViewContext
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.ViewContext
   type: Property
@@ -190,7 +190,7 @@ items:
 - id: System.Web.Mvc.WebViewPage.ViewData
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: ViewData
+    CSharp: WebViewPage.ViewData
   qualifiedName:
     CSharp: System.Web.Mvc.WebViewPage.ViewData
   type: Property
@@ -210,9 +210,9 @@ items:
 - id: System.Web.Mvc.WebViewPage.ExecutePageHierarchy
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: ExecutePageHierarchy
+    CSharp: WebViewPage.ExecutePageHierarchy()
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage.ExecutePageHierarchy
+    CSharp: System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
   type: Method
   source:
     remote: *o0
@@ -227,9 +227,9 @@ items:
 - id: System.Web.Mvc.WebViewPage.InitHelpers
   href: System.Web.Mvc.WebViewPage.yaml
   name:
-    CSharp: InitHelpers
+    CSharp: WebViewPage.InitHelpers()
   qualifiedName:
-    CSharp: System.Web.Mvc.WebViewPage.InitHelpers
+    CSharp: System.Web.Mvc.WebViewPage.InitHelpers()
   type: Method
   source:
     remote: *o0

@@ -27,7 +27,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.Template
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: Template
+    CSharp: RouteFactoryAttribute.Template
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.Template
   type: Property
@@ -48,7 +48,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.Name
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: Name
+    CSharp: RouteFactoryAttribute.Name
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.Name
   type: Property
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.Order
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: Order
+    CSharp: RouteFactoryAttribute.Order
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.Order
   type: Property
@@ -90,7 +90,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.Defaults
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: Defaults
+    CSharp: RouteFactoryAttribute.Defaults
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.Defaults
   type: Property
@@ -111,7 +111,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.Constraints
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: Constraints
+    CSharp: RouteFactoryAttribute.Constraints
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.Constraints
   type: Property
@@ -132,7 +132,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.DataTokens
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: DataTokens
+    CSharp: RouteFactoryAttribute.DataTokens
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.DataTokens
   type: Property
@@ -153,7 +153,7 @@ items:
 - id: System.Web.Mvc.Routing.RouteFactoryAttribute.CreateRoute(System.Web.Mvc.Routing.DirectRouteFactoryContext)
   href: System.Web.Mvc.Routing.RouteFactoryAttribute.yaml
   name:
-    CSharp: CreateRoute
+    CSharp: RouteFactoryAttribute.CreateRoute(DirectRouteFactoryContext)
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.RouteFactoryAttribute.CreateRoute(System.Web.Mvc.Routing.DirectRouteFactoryContext)
   type: Method

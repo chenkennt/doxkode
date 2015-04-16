@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.FilterProviderCollection.#ctor
   href: System.Web.Mvc.FilterProviderCollection.yaml
   name:
-    CSharp: FilterProviderCollection
+    CSharp: FilterProviderCollection.FilterProviderCollection()
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterProviderCollection.FilterProviderCollection
+    CSharp: System.Web.Mvc.FilterProviderCollection.FilterProviderCollection()
   type: Constructor
   source:
     remote: *o0
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.FilterProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.Mvc.IFilterProvider})
   href: System.Web.Mvc.FilterProviderCollection.yaml
   name:
-    CSharp: FilterProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IFilterProvider})
+    CSharp: FilterProviderCollection.FilterProviderCollection(IList<IFilterProvider>)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterProviderCollection.FilterProviderCollection(System.Collections.Generic.IList{System.Web.Mvc.IFilterProvider})
+    CSharp: System.Web.Mvc.FilterProviderCollection.FilterProviderCollection(System.Collections.Generic.IList<System.Web.Mvc.IFilterProvider>)
   type: Constructor
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.FilterProviderCollection.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
   href: System.Web.Mvc.FilterProviderCollection.yaml
   name:
-    CSharp: GetFilters
+    CSharp: FilterProviderCollection.GetFilters(ControllerContext, ActionDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterProviderCollection.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
+    CSharp: System.Web.Mvc.FilterProviderCollection.GetFilters(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor)
   type: Method
   source:
     remote: *o0

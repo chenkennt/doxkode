@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.#ctor
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: ModelStateDictionary
+    CSharp: ModelStateDictionary.ModelStateDictionary()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.ModelStateDictionary
+    CSharp: System.Web.Mvc.ModelStateDictionary.ModelStateDictionary()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.#ctor(System.Web.Mvc.ModelStateDictionary)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: ModelStateDictionary(System.Web.Mvc.ModelStateDictionary)
+    CSharp: ModelStateDictionary.ModelStateDictionary(ModelStateDictionary)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.ModelStateDictionary(System.Web.Mvc.ModelStateDictionary)
   type: Constructor
@@ -62,7 +62,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Count
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Count
+    CSharp: ModelStateDictionary.Count
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.Count
   type: Property
@@ -82,7 +82,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.IsReadOnly
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: IsReadOnly
+    CSharp: ModelStateDictionary.IsReadOnly
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.IsReadOnly
   type: Property
@@ -102,7 +102,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.IsValid
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: IsValid
+    CSharp: ModelStateDictionary.IsValid
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.IsValid
   type: Property
@@ -122,7 +122,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Keys
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Keys
+    CSharp: ModelStateDictionary.Keys
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.Keys
   type: Property
@@ -142,7 +142,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Values
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Values
+    CSharp: ModelStateDictionary.Values
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.Values
   type: Property
@@ -162,9 +162,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Item(System.String)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Item
+    CSharp: ModelStateDictionary.this[string]
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Item(System.String)
+    CSharp: System.Web.Mvc.ModelStateDictionary.this[string]
   type: Property
   source:
     remote: *o0
@@ -182,9 +182,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ModelStateDictionary.Add(KeyValuePair<string, ModelState>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
+    CSharp: System.Web.Mvc.ModelStateDictionary.Add(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ModelState>)
   type: Method
   source:
     remote: *o0
@@ -204,9 +204,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Add(System.String,System.Web.Mvc.ModelState)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: ModelStateDictionary.Add(string, ModelState)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Add(System.String,System.Web.Mvc.ModelState)
+    CSharp: System.Web.Mvc.ModelStateDictionary.Add(string, System.Web.Mvc.ModelState)
   type: Method
   source:
     remote: *o0
@@ -231,9 +231,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.AddModelError(System.String,System.Exception)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: AddModelError
+    CSharp: ModelStateDictionary.AddModelError(string, Exception)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.AddModelError(System.String,System.Exception)
+    CSharp: System.Web.Mvc.ModelStateDictionary.AddModelError(string, System.Exception)
   type: Method
   source:
     remote: *o0
@@ -258,9 +258,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.AddModelError(System.String,System.String)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: AddModelError
+    CSharp: ModelStateDictionary.AddModelError(string, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.AddModelError(System.String,System.String)
+    CSharp: System.Web.Mvc.ModelStateDictionary.AddModelError(string, string)
   type: Method
   source:
     remote: *o0
@@ -285,9 +285,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Clear
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Clear
+    CSharp: ModelStateDictionary.Clear()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Clear
+    CSharp: System.Web.Mvc.ModelStateDictionary.Clear()
   type: Method
   source:
     remote: *o0
@@ -302,9 +302,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Contains
+    CSharp: ModelStateDictionary.Contains(KeyValuePair<string, ModelState>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
+    CSharp: System.Web.Mvc.ModelStateDictionary.Contains(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ModelState>)
   type: Method
   source:
     remote: *o0
@@ -324,9 +324,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.ContainsKey(System.String)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: ContainsKey
+    CSharp: ModelStateDictionary.ContainsKey(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.ContainsKey(System.String)
+    CSharp: System.Web.Mvc.ModelStateDictionary.ContainsKey(string)
   type: Method
   source:
     remote: *o0
@@ -346,9 +346,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState}[],System.Int32)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: CopyTo
+    CSharp: ModelStateDictionary.CopyTo(KeyValuePair<string, ModelState>[], int)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState}[],System.Int32)
+    CSharp: System.Web.Mvc.ModelStateDictionary.CopyTo(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ModelState>[], int)
   type: Method
   source:
     remote: *o0
@@ -373,9 +373,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.GetEnumerator
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: ModelStateDictionary.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.GetEnumerator
+    CSharp: System.Web.Mvc.ModelStateDictionary.GetEnumerator()
   type: Method
   source:
     remote: *o0
@@ -390,9 +390,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.IsValidField(System.String)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: IsValidField
+    CSharp: ModelStateDictionary.IsValidField(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.IsValidField(System.String)
+    CSharp: System.Web.Mvc.ModelStateDictionary.IsValidField(string)
   type: Method
   source:
     remote: *o0
@@ -412,7 +412,7 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Merge(System.Web.Mvc.ModelStateDictionary)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Merge
+    CSharp: ModelStateDictionary.Merge(ModelStateDictionary)
   qualifiedName:
     CSharp: System.Web.Mvc.ModelStateDictionary.Merge(System.Web.Mvc.ModelStateDictionary)
   type: Method
@@ -434,9 +434,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ModelStateDictionary.Remove(KeyValuePair<string, ModelState>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState})
+    CSharp: System.Web.Mvc.ModelStateDictionary.Remove(System.Collections.Generic.KeyValuePair<string, System.Web.Mvc.ModelState>)
   type: Method
   source:
     remote: *o0
@@ -456,9 +456,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.Remove(System.String)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: ModelStateDictionary.Remove(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.Remove(System.String)
+    CSharp: System.Web.Mvc.ModelStateDictionary.Remove(string)
   type: Method
   source:
     remote: *o0
@@ -478,9 +478,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.SetModelValue(System.String,System.Web.Mvc.ValueProviderResult)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: SetModelValue
+    CSharp: ModelStateDictionary.SetModelValue(string, ValueProviderResult)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.SetModelValue(System.String,System.Web.Mvc.ValueProviderResult)
+    CSharp: System.Web.Mvc.ModelStateDictionary.SetModelValue(string, System.Web.Mvc.ValueProviderResult)
   type: Method
   source:
     remote: *o0
@@ -505,9 +505,9 @@ items:
 - id: System.Web.Mvc.ModelStateDictionary.TryGetValue(System.String,System.Web.Mvc.ModelState@)
   href: System.Web.Mvc.ModelStateDictionary.yaml
   name:
-    CSharp: TryGetValue
+    CSharp: ModelStateDictionary.TryGetValue(string, out ModelState)
   qualifiedName:
-    CSharp: System.Web.Mvc.ModelStateDictionary.TryGetValue(System.String,System.Web.Mvc.ModelState@)
+    CSharp: System.Web.Mvc.ModelStateDictionary.TryGetValue(string, out System.Web.Mvc.ModelState)
   type: Method
   source:
     remote: *o0

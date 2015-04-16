@@ -26,9 +26,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidator.#ctor(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.ValidationAttribute)
   href: System.Web.Mvc.DataAnnotationsModelValidator.yaml
   name:
-    CSharp: DataAnnotationsModelValidator(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.ValidationAttribute)
+    CSharp: DataAnnotationsModelValidator.DataAnnotationsModelValidator(ModelMetadata, ControllerContext, ValidationAttribute)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.DataAnnotationsModelValidator(System.Web.Mvc.ModelMetadata,System.Web.Mvc.ControllerContext,System.ComponentModel.DataAnnotations.ValidationAttribute)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.DataAnnotationsModelValidator(System.Web.Mvc.ModelMetadata, System.Web.Mvc.ControllerContext, System.ComponentModel.DataAnnotations.ValidationAttribute)
   type: Constructor
   source:
     remote: *o0
@@ -58,7 +58,7 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidator.IsRequired
   href: System.Web.Mvc.DataAnnotationsModelValidator.yaml
   name:
-    CSharp: IsRequired
+    CSharp: DataAnnotationsModelValidator.IsRequired
   qualifiedName:
     CSharp: System.Web.Mvc.DataAnnotationsModelValidator.IsRequired
   type: Property
@@ -78,9 +78,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidator.GetClientValidationRules
   href: System.Web.Mvc.DataAnnotationsModelValidator.yaml
   name:
-    CSharp: GetClientValidationRules
+    CSharp: DataAnnotationsModelValidator.GetClientValidationRules()
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.GetClientValidationRules
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.GetClientValidationRules()
   type: Method
   source:
     remote: *o0
@@ -95,9 +95,9 @@ items:
 - id: System.Web.Mvc.DataAnnotationsModelValidator.Validate(System.Object)
   href: System.Web.Mvc.DataAnnotationsModelValidator.yaml
   name:
-    CSharp: Validate
+    CSharp: DataAnnotationsModelValidator.Validate(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.Validate(System.Object)
+    CSharp: System.Web.Mvc.DataAnnotationsModelValidator.Validate(object)
   type: Method
   source:
     remote: *o0

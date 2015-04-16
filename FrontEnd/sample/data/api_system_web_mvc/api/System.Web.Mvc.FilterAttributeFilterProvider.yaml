@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.FilterAttributeFilterProvider.#ctor
   href: System.Web.Mvc.FilterAttributeFilterProvider.yaml
   name:
-    CSharp: FilterAttributeFilterProvider
+    CSharp: FilterAttributeFilterProvider.FilterAttributeFilterProvider()
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.FilterAttributeFilterProvider
+    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.FilterAttributeFilterProvider()
   type: Constructor
   source:
     remote: *o0
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.FilterAttributeFilterProvider.#ctor(System.Boolean)
   href: System.Web.Mvc.FilterAttributeFilterProvider.yaml
   name:
-    CSharp: FilterAttributeFilterProvider(System.Boolean)
+    CSharp: FilterAttributeFilterProvider.FilterAttributeFilterProvider(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.FilterAttributeFilterProvider(System.Boolean)
+    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.FilterAttributeFilterProvider(bool)
   type: Constructor
   source:
     remote: *o0
@@ -62,9 +62,9 @@ items:
 - id: System.Web.Mvc.FilterAttributeFilterProvider.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
   href: System.Web.Mvc.FilterAttributeFilterProvider.yaml
   name:
-    CSharp: GetFilters
+    CSharp: FilterAttributeFilterProvider.GetFilters(ControllerContext, ActionDescriptor)
   qualifiedName:
-    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.GetFilters(System.Web.Mvc.ControllerContext,System.Web.Mvc.ActionDescriptor)
+    CSharp: System.Web.Mvc.FilterAttributeFilterProvider.GetFilters(System.Web.Mvc.ControllerContext, System.Web.Mvc.ActionDescriptor)
   type: Method
   source:
     remote: *o0

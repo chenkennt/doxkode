@@ -19,9 +19,9 @@ items:
 - id: System.Web.Mvc.IActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.IActionInvoker.yaml
   name:
-    CSharp: InvokeAction
+    CSharp: IActionInvoker.InvokeAction(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.IActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.IActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext, string)
   type: Method
   source:
     remote: *o0

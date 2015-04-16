@@ -1,9 +1,9 @@
 id: System.Web.Mvc.ViewTemplateUserControl`1
 href: System.Web.Mvc.ViewTemplateUserControl`1.yaml
 name:
-  CSharp: ViewTemplateUserControl`1
+  CSharp: ViewTemplateUserControl<TModel>
 qualifiedName:
-  CSharp: System.Web.Mvc.ViewTemplateUserControl`1
+  CSharp: System.Web.Mvc.ViewTemplateUserControl<TModel>
 type: Class
 source:
   remote:

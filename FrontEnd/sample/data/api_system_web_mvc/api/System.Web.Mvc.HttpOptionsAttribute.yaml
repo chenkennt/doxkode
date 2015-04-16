@@ -29,9 +29,9 @@ items:
 - id: System.Web.Mvc.HttpOptionsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
   href: System.Web.Mvc.HttpOptionsAttribute.yaml
   name:
-    CSharp: IsValidForRequest
+    CSharp: HttpOptionsAttribute.IsValidForRequest(ControllerContext, MethodInfo)
   qualifiedName:
-    CSharp: System.Web.Mvc.HttpOptionsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext,System.Reflection.MethodInfo)
+    CSharp: System.Web.Mvc.HttpOptionsAttribute.IsValidForRequest(System.Web.Mvc.ControllerContext, System.Reflection.MethodInfo)
   type: Method
   source:
     remote: *o0

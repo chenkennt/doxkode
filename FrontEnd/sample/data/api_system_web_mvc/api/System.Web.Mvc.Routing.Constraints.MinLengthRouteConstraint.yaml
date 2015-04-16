@@ -24,9 +24,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.#ctor(System.Int32)
   href: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.yaml
   name:
-    CSharp: MinLengthRouteConstraint(System.Int32)
+    CSharp: MinLengthRouteConstraint.MinLengthRouteConstraint(int)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.MinLengthRouteConstraint(System.Int32)
+    CSharp: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.MinLengthRouteConstraint(int)
   type: Constructor
   source:
     remote: *o0
@@ -46,7 +46,7 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.MinLength
   href: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.yaml
   name:
-    CSharp: MinLength
+    CSharp: MinLengthRouteConstraint.MinLength
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.MinLength
   type: Property
@@ -67,9 +67,9 @@ items:
 - id: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
   href: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.yaml
   name:
-    CSharp: Match
+    CSharp: MinLengthRouteConstraint.Match(HttpContextBase, Route, string, RouteValueDictionary, RouteDirection)
   qualifiedName:
-    CSharp: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)
+    CSharp: System.Web.Mvc.Routing.Constraints.MinLengthRouteConstraint.Match(System.Web.HttpContextBase, System.Web.Routing.Route, string, System.Web.Routing.RouteValueDictionary, System.Web.Routing.RouteDirection)
   type: Method
   source:
     remote: *o0

@@ -30,7 +30,7 @@ items:
 - id: System.Web.Mvc.AreaReference.UseCurrent
   href: System.Web.Mvc.AreaReference.yaml
   name:
-    CSharp: UseCurrent
+    CSharp: AreaReference.UseCurrent
   qualifiedName:
     CSharp: System.Web.Mvc.AreaReference.UseCurrent
   type: Field
@@ -45,7 +45,7 @@ items:
 - id: System.Web.Mvc.AreaReference.UseRoot
   href: System.Web.Mvc.AreaReference.yaml
   name:
-    CSharp: UseRoot
+    CSharp: AreaReference.UseRoot
   qualifiedName:
     CSharp: System.Web.Mvc.AreaReference.UseRoot
   type: Field

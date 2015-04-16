@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.ActionName
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: ActionName
+    CSharp: ActionDescriptor.ActionName
   qualifiedName:
     CSharp: System.Web.Mvc.ActionDescriptor.ActionName
   type: Property
@@ -43,7 +43,7 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.ControllerDescriptor
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: ControllerDescriptor
+    CSharp: ActionDescriptor.ControllerDescriptor
   qualifiedName:
     CSharp: System.Web.Mvc.ActionDescriptor.ControllerDescriptor
   type: Property
@@ -63,7 +63,7 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.UniqueId
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: UniqueId
+    CSharp: ActionDescriptor.UniqueId
   qualifiedName:
     CSharp: System.Web.Mvc.ActionDescriptor.UniqueId
   type: Property
@@ -83,9 +83,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: Execute
+    CSharp: ActionDescriptor.Execute(ControllerContext, IDictionary<string, object>)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.Execute(System.Web.Mvc.ControllerContext,System.Collections.Generic.IDictionary{System.String,System.Object})
+    CSharp: System.Web.Mvc.ActionDescriptor.Execute(System.Web.Mvc.ControllerContext, System.Collections.Generic.IDictionary<string, object>)
   type: Method
   source:
     remote: *o0
@@ -110,9 +110,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(System.Boolean)
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ActionDescriptor.GetCustomAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -131,9 +131,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetCustomAttributes
+    CSharp: ActionDescriptor.GetCustomAttributes(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ActionDescriptor.GetCustomAttributes(System.Type, bool)
   type: Method
   source:
     remote: *o0
@@ -157,9 +157,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetFilterAttributes(System.Boolean)
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetFilterAttributes
+    CSharp: ActionDescriptor.GetFilterAttributes(bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetFilterAttributes(System.Boolean)
+    CSharp: System.Web.Mvc.ActionDescriptor.GetFilterAttributes(bool)
   type: Method
   source:
     remote: *o0
@@ -179,9 +179,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetFilters
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetFilters
+    CSharp: ActionDescriptor.GetFilters()
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetFilters
+    CSharp: System.Web.Mvc.ActionDescriptor.GetFilters()
   type: Method
   source:
     remote: *o0
@@ -196,9 +196,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetParameters
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetParameters
+    CSharp: ActionDescriptor.GetParameters()
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetParameters
+    CSharp: System.Web.Mvc.ActionDescriptor.GetParameters()
   type: Method
   source:
     remote: *o0
@@ -212,9 +212,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.GetSelectors
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: GetSelectors
+    CSharp: ActionDescriptor.GetSelectors()
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.GetSelectors
+    CSharp: System.Web.Mvc.ActionDescriptor.GetSelectors()
   type: Method
   source:
     remote: *o0
@@ -229,9 +229,9 @@ items:
 - id: System.Web.Mvc.ActionDescriptor.IsDefined(System.Type,System.Boolean)
   href: System.Web.Mvc.ActionDescriptor.yaml
   name:
-    CSharp: IsDefined
+    CSharp: ActionDescriptor.IsDefined(Type, bool)
   qualifiedName:
-    CSharp: System.Web.Mvc.ActionDescriptor.IsDefined(System.Type,System.Boolean)
+    CSharp: System.Web.Mvc.ActionDescriptor.IsDefined(System.Type, bool)
   type: Method
   source:
     remote: *o0

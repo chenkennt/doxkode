@@ -20,7 +20,7 @@ items:
 - id: System.Web.Mvc.Routing.IRoutePrefix.Prefix
   href: System.Web.Mvc.Routing.IRoutePrefix.yaml
   name:
-    CSharp: Prefix
+    CSharp: IRoutePrefix.Prefix
   qualifiedName:
     CSharp: System.Web.Mvc.Routing.IRoutePrefix.Prefix
   type: Property

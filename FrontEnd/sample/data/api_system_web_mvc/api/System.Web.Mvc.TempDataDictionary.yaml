@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.#ctor
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: TempDataDictionary
+    CSharp: TempDataDictionary.TempDataDictionary()
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.TempDataDictionary
+    CSharp: System.Web.Mvc.TempDataDictionary.TempDataDictionary()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Count
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Count
+    CSharp: TempDataDictionary.Count
   qualifiedName:
     CSharp: System.Web.Mvc.TempDataDictionary.Count
   type: Property
@@ -60,7 +60,7 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Keys
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Keys
+    CSharp: TempDataDictionary.Keys
   qualifiedName:
     CSharp: System.Web.Mvc.TempDataDictionary.Keys
   type: Property
@@ -80,7 +80,7 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Values
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Values
+    CSharp: TempDataDictionary.Values
   qualifiedName:
     CSharp: System.Web.Mvc.TempDataDictionary.Values
   type: Property
@@ -100,9 +100,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Item(System.String)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Item
+    CSharp: TempDataDictionary.this[string]
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Item(System.String)
+    CSharp: System.Web.Mvc.TempDataDictionary.this[string]
   type: Property
   source:
     remote: *o0
@@ -120,9 +120,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Keep
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Keep
+    CSharp: TempDataDictionary.Keep()
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Keep
+    CSharp: System.Web.Mvc.TempDataDictionary.Keep()
   type: Method
   source:
     remote: *o0
@@ -137,9 +137,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Keep(System.String)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Keep
+    CSharp: TempDataDictionary.Keep(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Keep(System.String)
+    CSharp: System.Web.Mvc.TempDataDictionary.Keep(string)
   type: Method
   source:
     remote: *o0
@@ -159,9 +159,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Load(System.Web.Mvc.ControllerContext,System.Web.Mvc.ITempDataProvider)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Load
+    CSharp: TempDataDictionary.Load(ControllerContext, ITempDataProvider)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Load(System.Web.Mvc.ControllerContext,System.Web.Mvc.ITempDataProvider)
+    CSharp: System.Web.Mvc.TempDataDictionary.Load(System.Web.Mvc.ControllerContext, System.Web.Mvc.ITempDataProvider)
   type: Method
   source:
     remote: *o0
@@ -186,9 +186,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Peek(System.String)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Peek
+    CSharp: TempDataDictionary.Peek(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Peek(System.String)
+    CSharp: System.Web.Mvc.TempDataDictionary.Peek(string)
   type: Method
   source:
     remote: *o0
@@ -208,9 +208,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Save(System.Web.Mvc.ControllerContext,System.Web.Mvc.ITempDataProvider)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Save
+    CSharp: TempDataDictionary.Save(ControllerContext, ITempDataProvider)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Save(System.Web.Mvc.ControllerContext,System.Web.Mvc.ITempDataProvider)
+    CSharp: System.Web.Mvc.TempDataDictionary.Save(System.Web.Mvc.ControllerContext, System.Web.Mvc.ITempDataProvider)
   type: Method
   source:
     remote: *o0
@@ -235,9 +235,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Add(System.String,System.Object)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Add
+    CSharp: TempDataDictionary.Add(string, object)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Add(System.String,System.Object)
+    CSharp: System.Web.Mvc.TempDataDictionary.Add(string, object)
   type: Method
   source:
     remote: *o0
@@ -262,9 +262,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Clear
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Clear
+    CSharp: TempDataDictionary.Clear()
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Clear
+    CSharp: System.Web.Mvc.TempDataDictionary.Clear()
   type: Method
   source:
     remote: *o0
@@ -279,9 +279,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.ContainsKey(System.String)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: ContainsKey
+    CSharp: TempDataDictionary.ContainsKey(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.ContainsKey(System.String)
+    CSharp: System.Web.Mvc.TempDataDictionary.ContainsKey(string)
   type: Method
   source:
     remote: *o0
@@ -301,9 +301,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.ContainsValue(System.Object)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: ContainsValue
+    CSharp: TempDataDictionary.ContainsValue(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.ContainsValue(System.Object)
+    CSharp: System.Web.Mvc.TempDataDictionary.ContainsValue(object)
   type: Method
   source:
     remote: *o0
@@ -323,9 +323,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.GetEnumerator
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: TempDataDictionary.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.GetEnumerator
+    CSharp: System.Web.Mvc.TempDataDictionary.GetEnumerator()
   type: Method
   source:
     remote: *o0
@@ -340,9 +340,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.Remove(System.String)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: Remove
+    CSharp: TempDataDictionary.Remove(string)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.Remove(System.String)
+    CSharp: System.Web.Mvc.TempDataDictionary.Remove(string)
   type: Method
   source:
     remote: *o0
@@ -362,9 +362,9 @@ items:
 - id: System.Web.Mvc.TempDataDictionary.TryGetValue(System.String,System.Object@)
   href: System.Web.Mvc.TempDataDictionary.yaml
   name:
-    CSharp: TryGetValue
+    CSharp: TempDataDictionary.TryGetValue(string, out object)
   qualifiedName:
-    CSharp: System.Web.Mvc.TempDataDictionary.TryGetValue(System.String,System.Object@)
+    CSharp: System.Web.Mvc.TempDataDictionary.TryGetValue(string, out object)
   type: Method
   source:
     remote: *o0

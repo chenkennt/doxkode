@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ByteArrayModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
   href: System.Web.Mvc.ByteArrayModelBinder.yaml
   name:
-    CSharp: BindModel
+    CSharp: ByteArrayModelBinder.BindModel(ControllerContext, ModelBindingContext)
   qualifiedName:
-    CSharp: System.Web.Mvc.ByteArrayModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)
+    CSharp: System.Web.Mvc.ByteArrayModelBinder.BindModel(System.Web.Mvc.ControllerContext, System.Web.Mvc.ModelBindingContext)
   type: Method
   source:
     remote: *o0

@@ -32,9 +32,9 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.#ctor
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OutputCacheAttribute
+    CSharp: OutputCacheAttribute.OutputCacheAttribute()
   qualifiedName:
-    CSharp: System.Web.Mvc.OutputCacheAttribute.OutputCacheAttribute
+    CSharp: System.Web.Mvc.OutputCacheAttribute.OutputCacheAttribute()
   type: Constructor
   source:
     remote: *o0
@@ -49,7 +49,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.CacheProfile
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: CacheProfile
+    CSharp: OutputCacheAttribute.CacheProfile
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.CacheProfile
   type: Property
@@ -69,7 +69,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.ChildActionCache
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: ChildActionCache
+    CSharp: OutputCacheAttribute.ChildActionCache
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.ChildActionCache
   type: Property
@@ -89,7 +89,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.Duration
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: Duration
+    CSharp: OutputCacheAttribute.Duration
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.Duration
   type: Property
@@ -109,7 +109,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.Location
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: Location
+    CSharp: OutputCacheAttribute.Location
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.Location
   type: Property
@@ -129,7 +129,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.NoStore
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: NoStore
+    CSharp: OutputCacheAttribute.NoStore
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.NoStore
   type: Property
@@ -149,7 +149,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.SqlDependency
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: SqlDependency
+    CSharp: OutputCacheAttribute.SqlDependency
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.SqlDependency
   type: Property
@@ -169,7 +169,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.VaryByContentEncoding
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: VaryByContentEncoding
+    CSharp: OutputCacheAttribute.VaryByContentEncoding
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.VaryByContentEncoding
   type: Property
@@ -189,7 +189,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.VaryByCustom
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: VaryByCustom
+    CSharp: OutputCacheAttribute.VaryByCustom
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.VaryByCustom
   type: Property
@@ -209,7 +209,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.VaryByHeader
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: VaryByHeader
+    CSharp: OutputCacheAttribute.VaryByHeader
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.VaryByHeader
   type: Property
@@ -229,7 +229,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.VaryByParam
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: VaryByParam
+    CSharp: OutputCacheAttribute.VaryByParam
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.VaryByParam
   type: Property
@@ -249,7 +249,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.IsChildActionCacheActive(System.Web.Mvc.ControllerContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: IsChildActionCacheActive
+    CSharp: OutputCacheAttribute.IsChildActionCacheActive(ControllerContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.IsChildActionCacheActive(System.Web.Mvc.ControllerContext)
   type: Method
@@ -271,7 +271,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OnActionExecuted
+    CSharp: OutputCacheAttribute.OnActionExecuted(ActionExecutedContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)
   type: Method
@@ -293,7 +293,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OnActionExecuting
+    CSharp: OutputCacheAttribute.OnActionExecuting(ActionExecutingContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)
   type: Method
@@ -315,7 +315,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.OnException(System.Web.Mvc.ExceptionContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OnException
+    CSharp: OutputCacheAttribute.OnException(ExceptionContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.OnException(System.Web.Mvc.ExceptionContext)
   type: Method
@@ -337,7 +337,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OnResultExecuting
+    CSharp: OutputCacheAttribute.OnResultExecuting(ResultExecutingContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   type: Method
@@ -359,7 +359,7 @@ items:
 - id: System.Web.Mvc.OutputCacheAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   href: System.Web.Mvc.OutputCacheAttribute.yaml
   name:
-    CSharp: OnResultExecuted
+    CSharp: OutputCacheAttribute.OnResultExecuted(ResultExecutedContext)
   qualifiedName:
     CSharp: System.Web.Mvc.OutputCacheAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   type: Method

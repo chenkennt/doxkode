@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.DependencyResolverExtensions.GetService``1(System.Web.Mvc.IDependencyResolver)
   href: System.Web.Mvc.DependencyResolverExtensions.yaml
   name:
-    CSharp: GetService
+    CSharp: DependencyResolverExtensions.GetService<TService>(IDependencyResolver)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolverExtensions.GetService``1(System.Web.Mvc.IDependencyResolver)
+    CSharp: System.Web.Mvc.DependencyResolverExtensions.GetService<TService>(System.Web.Mvc.IDependencyResolver)
   type: Method
   source:
     remote: *o0
@@ -45,9 +45,9 @@ items:
 - id: System.Web.Mvc.DependencyResolverExtensions.GetServices``1(System.Web.Mvc.IDependencyResolver)
   href: System.Web.Mvc.DependencyResolverExtensions.yaml
   name:
-    CSharp: GetServices
+    CSharp: DependencyResolverExtensions.GetServices<TService>(IDependencyResolver)
   qualifiedName:
-    CSharp: System.Web.Mvc.DependencyResolverExtensions.GetServices``1(System.Web.Mvc.IDependencyResolver)
+    CSharp: System.Web.Mvc.DependencyResolverExtensions.GetServices<TService>(System.Web.Mvc.IDependencyResolver)
   type: Method
   source:
     remote: *o0

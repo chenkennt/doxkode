@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.#ctor
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: ControllerBuilder
+    CSharp: ControllerBuilder.ControllerBuilder()
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerBuilder.ControllerBuilder
+    CSharp: System.Web.Mvc.ControllerBuilder.ControllerBuilder()
   type: Constructor
   source:
     remote: *o0
@@ -40,7 +40,7 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.Current
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: Current
+    CSharp: ControllerBuilder.Current
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBuilder.Current
   type: Property
@@ -60,7 +60,7 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.DefaultNamespaces
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: DefaultNamespaces
+    CSharp: ControllerBuilder.DefaultNamespaces
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBuilder.DefaultNamespaces
   type: Property
@@ -80,9 +80,9 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.GetControllerFactory
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: GetControllerFactory
+    CSharp: ControllerBuilder.GetControllerFactory()
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerBuilder.GetControllerFactory
+    CSharp: System.Web.Mvc.ControllerBuilder.GetControllerFactory()
   type: Method
   source:
     remote: *o0
@@ -97,7 +97,7 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.SetControllerFactory(System.Web.Mvc.IControllerFactory)
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: SetControllerFactory
+    CSharp: ControllerBuilder.SetControllerFactory(IControllerFactory)
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBuilder.SetControllerFactory(System.Web.Mvc.IControllerFactory)
   type: Method
@@ -119,7 +119,7 @@ items:
 - id: System.Web.Mvc.ControllerBuilder.SetControllerFactory(System.Type)
   href: System.Web.Mvc.ControllerBuilder.yaml
   name:
-    CSharp: SetControllerFactory
+    CSharp: ControllerBuilder.SetControllerFactory(Type)
   qualifiedName:
     CSharp: System.Web.Mvc.ControllerBuilder.SetControllerFactory(System.Type)
   type: Method

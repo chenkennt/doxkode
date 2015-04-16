@@ -23,7 +23,7 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Count
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Count
+    CSharp: GlobalFilterCollection.Count
   qualifiedName:
     CSharp: System.Web.Mvc.GlobalFilterCollection.Count
   type: Property
@@ -43,9 +43,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Add(System.Object)
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Add
+    CSharp: GlobalFilterCollection.Add(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.Add(System.Object)
+    CSharp: System.Web.Mvc.GlobalFilterCollection.Add(object)
   type: Method
   source:
     remote: *o0
@@ -65,9 +65,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Add(System.Object,System.Int32)
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Add
+    CSharp: GlobalFilterCollection.Add(object, int)
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.Add(System.Object,System.Int32)
+    CSharp: System.Web.Mvc.GlobalFilterCollection.Add(object, int)
   type: Method
   source:
     remote: *o0
@@ -92,9 +92,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Clear
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Clear
+    CSharp: GlobalFilterCollection.Clear()
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.Clear
+    CSharp: System.Web.Mvc.GlobalFilterCollection.Clear()
   type: Method
   source:
     remote: *o0
@@ -109,9 +109,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Contains(System.Object)
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Contains
+    CSharp: GlobalFilterCollection.Contains(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.Contains(System.Object)
+    CSharp: System.Web.Mvc.GlobalFilterCollection.Contains(object)
   type: Method
   source:
     remote: *o0
@@ -131,9 +131,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.GetEnumerator
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: GetEnumerator
+    CSharp: GlobalFilterCollection.GetEnumerator()
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.GetEnumerator
+    CSharp: System.Web.Mvc.GlobalFilterCollection.GetEnumerator()
   type: Method
   source:
     remote: *o0
@@ -148,9 +148,9 @@ items:
 - id: System.Web.Mvc.GlobalFilterCollection.Remove(System.Object)
   href: System.Web.Mvc.GlobalFilterCollection.yaml
   name:
-    CSharp: Remove
+    CSharp: GlobalFilterCollection.Remove(object)
   qualifiedName:
-    CSharp: System.Web.Mvc.GlobalFilterCollection.Remove(System.Object)
+    CSharp: System.Web.Mvc.GlobalFilterCollection.Remove(object)
   type: Method
   source:
     remote: *o0

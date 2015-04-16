@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.ControllerActionInvoker.#ctor
   href: System.Web.Mvc.ControllerActionInvoker.yaml
   name:
-    CSharp: ControllerActionInvoker
+    CSharp: ControllerActionInvoker.ControllerActionInvoker()
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerActionInvoker.ControllerActionInvoker
+    CSharp: System.Web.Mvc.ControllerActionInvoker.ControllerActionInvoker()
   type: Constructor
   source:
     remote: *o0
@@ -40,9 +40,9 @@ items:
 - id: System.Web.Mvc.ControllerActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext,System.String)
   href: System.Web.Mvc.ControllerActionInvoker.yaml
   name:
-    CSharp: InvokeAction
+    CSharp: ControllerActionInvoker.InvokeAction(ControllerContext, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.ControllerActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext,System.String)
+    CSharp: System.Web.Mvc.ControllerActionInvoker.InvokeAction(System.Web.Mvc.ControllerContext, string)
   type: Method
   source:
     remote: *o0

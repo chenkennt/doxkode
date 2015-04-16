@@ -19,7 +19,7 @@ items:
 - id: System.Web.Mvc.IResultFilter.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   href: System.Web.Mvc.IResultFilter.yaml
   name:
-    CSharp: OnResultExecuting
+    CSharp: IResultFilter.OnResultExecuting(ResultExecutingContext)
   qualifiedName:
     CSharp: System.Web.Mvc.IResultFilter.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)
   type: Method
@@ -41,7 +41,7 @@ items:
 - id: System.Web.Mvc.IResultFilter.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   href: System.Web.Mvc.IResultFilter.yaml
   name:
-    CSharp: OnResultExecuted
+    CSharp: IResultFilter.OnResultExecuted(ResultExecutedContext)
   qualifiedName:
     CSharp: System.Web.Mvc.IResultFilter.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)
   type: Method

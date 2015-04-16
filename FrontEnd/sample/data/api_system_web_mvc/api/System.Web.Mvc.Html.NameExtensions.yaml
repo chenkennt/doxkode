@@ -23,9 +23,9 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.Id(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: Id
+    CSharp: NameExtensions.Id(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.NameExtensions.Id(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.NameExtensions.Id(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -50,9 +50,9 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.IdFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: IdFor
+    CSharp: NameExtensions.IdFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.NameExtensions.IdFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.NameExtensions.IdFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -77,7 +77,7 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.IdForModel(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: IdForModel
+    CSharp: NameExtensions.IdForModel(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.NameExtensions.IdForModel(System.Web.Mvc.HtmlHelper)
   type: Method
@@ -99,9 +99,9 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.Name(System.Web.Mvc.HtmlHelper,System.String)
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: Name
+    CSharp: NameExtensions.Name(HtmlHelper, string)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.NameExtensions.Name(System.Web.Mvc.HtmlHelper,System.String)
+    CSharp: System.Web.Mvc.Html.NameExtensions.Name(System.Web.Mvc.HtmlHelper, string)
   type: Method
   source:
     remote: *o0
@@ -126,9 +126,9 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.NameFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: NameFor
+    CSharp: NameExtensions.NameFor<TModel, TProperty>(HtmlHelper<TModel>, Expression<Func<TModel, TProperty>>)
   qualifiedName:
-    CSharp: System.Web.Mvc.Html.NameExtensions.NameFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
+    CSharp: System.Web.Mvc.Html.NameExtensions.NameFor<TModel, TProperty>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TProperty>>)
   type: Method
   source:
     remote: *o0
@@ -153,7 +153,7 @@ items:
 - id: System.Web.Mvc.Html.NameExtensions.NameForModel(System.Web.Mvc.HtmlHelper)
   href: System.Web.Mvc.Html.NameExtensions.yaml
   name:
-    CSharp: NameForModel
+    CSharp: NameExtensions.NameForModel(HtmlHelper)
   qualifiedName:
     CSharp: System.Web.Mvc.Html.NameExtensions.NameForModel(System.Web.Mvc.HtmlHelper)
   type: Method
