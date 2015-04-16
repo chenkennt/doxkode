@@ -3,6 +3,7 @@ install python 2.** as grunt requires it.
 
 Step2. 
 run *npm install* to install required nodejs components
+**NOTE** append --msvs_version=2015 if VCBuild.exe error throws
 
 Step3.
 

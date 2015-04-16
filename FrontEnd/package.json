@@ -30,5 +30,8 @@
     "postinstall": "bower install",
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "dependencies": {
+    "karma": "^0.12.31"
   }
 }
