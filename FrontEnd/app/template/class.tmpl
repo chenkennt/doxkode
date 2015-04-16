@@ -10,7 +10,8 @@
         <div class="markdown">{{::model.summary}}</div>
       </section>
       <section>
-        <div class="markdown">{{::model.mdContent}}</div>
+        <!--div class="markdown">{{::model.summary}}</div-->
+        <markdown ng-model="model.mdContent"></markdown>
       </section>
       <section id="metadata_table" class="inheritance">
         <div class="" ng-if="::model.inheritance">

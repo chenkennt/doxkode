@@ -192,7 +192,9 @@ namespace DocAsCode.BuildMeta
 
         private static void TryExtractReference(ref MarkdownIndex section, string referenceFolder)
         {
-            var ReferenceRegex = new Regex(@"{{\s*“(?<source>\S*?)”\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
+            // Code snippet syntax: {{"relativePath/sourceFilename"}} or {{"relativePath/sourceFilename"[startline-endline]}}
+            // where starline and endline should be integers and are both optional, the default values for which are 1 and the fileLength.
+            var ReferenceRegex = new Regex(@"{{\s*""(?<source>\S*?)""\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline);
             MatchCollection matches = ReferenceRegex.Matches(section.MarkdownContent);
 
             if(matches.Count > 0)
@@ -218,14 +220,17 @@ namespace DocAsCode.BuildMeta
                     item.Path = sourceFile;
                     string destFile = Path.Combine(referenceFolder, sourceFile.ToValidFilePath());
 
-                    try
+                    if (!referencedFileLengthCache.ContainsKey(destFile))
                     {
-                        File.Copy(sourceFile, destFile, true);
-                    }
-                    catch (Exception e)
-                    {
-                        ParseResult.WriteToConsole(ResultLevel.Error, "Unable to copy referenced file {0} to output directory {1}: {2}", sourceFile, referenceFolder, e.Message);
-                        continue;
+                        try
+                        {
+                            File.Copy(sourceFile, destFile, true);
+                        }
+                        catch (Exception e)
+                        {
+                            ParseResult.WriteToConsole(ResultLevel.Error, "Unable to copy referenced file {0} to output directory {1}: {2}", sourceFile, referenceFolder, e.Message);
+                            continue;
+                        }
                     }
 
                     item.ContentStartIndex = section.ContentStartIndex + match.Index;

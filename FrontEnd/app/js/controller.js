@@ -242,24 +242,65 @@
 
     });
 
-    function mdIndexWatcher(path) {
-      if ($scope.mdIndex && $scope.partialModel) {
-        var mdPath = $scope.mdIndex[$scope.partialModel.id];
-        if (mdPath) {
-          if (mdPath.href) {
-            $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
-            var tocPath = urlService.getPathInfo($location.path()).tocPath;
-            var href = (tocPath || '') + '/' + mdPath.href;
-            var getMdIndex = contentService.getMarkdownContent(href).then(
-              function(result) {
-                var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+    function getMdItemIndex(item, tocPath, mdPath, mdCopy) {
+        var itemHref = (tocPath || '') + '/' + item.href;
+        contentService.getMarkdownContent(itemHref).then(
+               function (res) {
+                var snippet = res;
+                if (item.referenceStartLine != null && item.referenceEndLine != null) {
+                    var lines = snippet.split('\n');
+                    snippet = "";
+                    for (var i = item.referenceStartLine - 1; i < item.referenceEndLine; i++) {
+                        snippet += lines[i];
+                    }
+                }
+                var md = $scope.partialModel.mdContent;
+                md = md.replace(mdCopy.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
                 $scope.partialModel.mdContent = md;
-              });
-          }
-        }
-      }
+            });
     }
 
+    //function mdIndexWatcher(path) {
+    //  if ($scope.mdIndex && $scope.partialModel) {
+    //    var mdPath = $scope.mdIndex[$scope.partialModel.id];
+    //    if (mdPath) {
+    //      if (mdPath.href) {
+    //        $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+    //        var tocPath = urlService.getPathInfo($location.path()).tocPath;
+    //        var href = (tocPath || '') + '/' + mdPath.href;
+    //        var getMdIndex = contentService.getMarkdownContent(href).then(
+    //          function(result) {
+    //            var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+    //            $scope.partialModel.mdContent = md;
+    //          });
+    //      }
+    //    }
+    //  }
+    //}
+
+    function mdIndexWatcher(path) {
+        if ($scope.mdIndex && $scope.partialModel) {
+            var mdPath = $scope.mdIndex[$scope.partialModel.id];
+            if (mdPath) {
+                if (mdPath.href) {
+                    $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+                    var tocPath = urlService.getPathInfo($location.path()).tocPath;
+                    var href = (tocPath || '') + '/' + mdPath.href;
+                    var getMdIndex = contentService.getMarkdownContent(href).then(
+                      function(result) {
+                          var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                          $scope.partialModel.mdContent = md;
+                          if (mdPath.items) {
+                              for (var i = 0; i < mdPath.items.length; i++) {
+                                  var item = mdPath.items[i];
+                                  getMdItemIndex(item, tocPath, mdPath, md);
+                              }
+                          }
+                      });
+                }
+            }
+        }
+    }
 
     function breadCrumbWatcher(currentGroup, currentPage, currentPath) {
       // breadcrumb generation logic

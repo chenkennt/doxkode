@@ -18,19 +18,30 @@ namespace UnitTest
     public class MarkdownIndexBuilderUnitTest
     {
         [TestMethod]
-        [DeploymentItem("Assets/Markdown/About.md")]
+        [DeploymentItem("Assets/Markdown/About.md", "Assets/Markdown")]
+        [DeploymentItem("Assets/TestClass1/TestClass1/Class1.cs", "Assets/TestClass1/TestClass1")]
         public void TestMarkdownIndexBuilder()
         {
-            const string markdownFile = "About.md";
+            const string markdownFile = "Assets/Markdown/About.md";
             List<MarkdownIndex> indexes;
-            var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, null, out indexes);
+            var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, "reference", null, out indexes);
+            int itemCount = 0;
             foreach(var index in indexes)
             {
                 Console.WriteLine(index);
+                if (index.Items != null)
+                {
+                    foreach (var item in index.Items)
+                    {
+                        itemCount++;
+                        Console.WriteLine(item);
+                    }
+                }
             }
 
             Assert.AreEqual(3, indexes.Count);
-            Assert.AreEqual(ResultLevel.Warn, result.ResultLevel, result.Message);
+            Assert.AreEqual(2, itemCount);
+            Assert.AreNotEqual(ResultLevel.Error, result.ResultLevel);
         }
     }
 }

@@ -13,6 +13,13 @@ public class Program
         }
     }
 ```
+```csharp
+{{"../TestClass1/TestClass1/Class1.cs"[20-46]}}
+```
+
+```csharp
+{{"../TestClass1/TestClass1/Class1.cs"}}
+```
 
 ---
 id: Class1

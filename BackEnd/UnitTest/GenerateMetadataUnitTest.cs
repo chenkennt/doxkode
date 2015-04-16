@@ -46,7 +46,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             //Assert.Fail();
@@ -67,7 +67,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md",  "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             // Assert.Fail();
@@ -88,7 +88,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             //Assert.Fail();
