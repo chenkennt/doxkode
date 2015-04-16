@@ -30,6 +30,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
         //'app/js/search-worker.js',
+        'app/js/services/contentService.js',
+        'app/js/services/styleProvider.js',
+        'app/js/services/urlService.js',
         'app/js/app.js',
         'app/js/bootstrap.js',
         'app/js/constants.js',
@@ -37,7 +40,6 @@ module.exports = function(grunt) {
         'app/js/directives.js',
         'app/js/errors.js',
         'app/js/pages-data.js',
-        'app/js/service.js',
         'app/js/util.js',
         'app/js/versions-data.js',
         'app/js/versions.js',
@@ -79,43 +81,10 @@ module.exports = function(grunt) {
         "//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js",
         "//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js",
     ],
-    /* make it use .jshintrc */
     jshint: {
         options: {
-            curly: false,
-            eqeqeq: true,
-            immed: true,
-            latedef: true,
-            newcap: true,
-            noarg: true,
-            sub: true,
-            undef: true,
-            unused: false,
-            boss: true,
-            eqnull: true,
-            browser: true,
-            globals: {
-                ace: true,
-                $: true,
-                csplay: true,
-                angular: true,
-                jsyaml: true,
-                jQuery: true,
-                marked: true,
-                google: true,
-                hljs: true,
-                /* leaflet.js*/
-                L: true,
-                console: true,
-                MDwiki: true,
-                Prism: true,
-                alert: true,
-                Hogan: true
-            }
+            jshintrc: '.jshintrc'
         },
-        /*gruntfile: {
-            src: 'Gruntfile.js'
-        },*/
         js: {
             src: ['app/js/*.js', 'app/js/**/*.js', '!app/js/marked.js']
         }
@@ -124,6 +93,7 @@ module.exports = function(grunt) {
         files: [
             'Gruntfile.js',
             'app/js/*.js',
+            'app/js/services/*.js',
             'app/css/*.css',
             'app/css/**/*.css',
             'app/css/*.css',
