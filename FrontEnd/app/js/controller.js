@@ -199,20 +199,20 @@
         partialModel.model = data;
       } else {
         var items = data.items;
-        var references = data.references;
+        var references = data.references || [];
 
         // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
         var item = items[0];
-        if (item.children){
+        references = items.slice(1).concat(references || []);
           var children = [];
           for(var i = 0, l = item.children.length; i < l; i++) {
-            var matched = items.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
+            var matched = references.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
             if (matched.uid){
               children.push(matched);
             }
           }
           item.items = children;
-        }
+
         partialModel.model = item;
         partialModel.title = item.name;
         if (item.type.toLowerCase() === 'namespace') {

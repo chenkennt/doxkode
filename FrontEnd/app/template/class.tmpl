@@ -8,8 +8,7 @@
       <a class="btn pull-right" ng-href={{::getViewSourceHref()}}>
         <span class="glyphicon glyphicon-eye-open">&nbsp;</span>View Source
       </a>
-      <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
-      <h1 ng-if="::(!model.name.CSharp && model.name.VB)">{{::model.type}} {{::model.name.VB}}</h1>
+      <h1>{{::model.type}} {{::model.name}}</h1>
       <section>
         <markdown ng-model="model.summary"></markdown>
       </section>
@@ -48,11 +47,8 @@
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
-                <div class="item-title" ng-if="::item.name.CSharp">
-                  {{::item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
-                </div>
-                <div class="item-title" ng-if="::(!item.name.CSharp && item.name.VB)">
-                  {{::item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+                <div class="item-title"
+                  {{::item.name.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
                 </div>
               </a>
             </div>
