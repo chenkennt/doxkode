@@ -10,7 +10,7 @@
     function provider() {
         this.YamlExtension = '.yml';
         this.MdExtension = '.md';
-        this.YamlRegexExp = /\.yaml$/;
+        this.YamlRegexExp = /\.yml$/;
         this.MdRegexExp = /\.md$/;
         this.MdOrYamlRegexExp = /(\.yml$)|(\.md$)/;
         this.MdIndexFile = 'md' + this.YamlExtension;

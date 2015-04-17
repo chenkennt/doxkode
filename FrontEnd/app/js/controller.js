@@ -149,9 +149,13 @@
           // If end with .md
           if ((/\.md$/g).test(path)) {
             $scope.contentType = 'md';
-            $scope.partialModel = {};
-            $scope.title = path;
-            $scope.partialPath = path;
+
+            var partialModel = {
+              path: path,
+              title: path,
+            };
+
+            $scope.partialModel = partialModel;
           } else if ((docConstants.YamlRegexExp).test(path)) {
             $scope.contentType = 'yaml';
             // if is yaml
@@ -161,24 +165,13 @@
             });
 
             contentService.getContent(path).then(function(data) {
-                var model = $scope.partialModel = data;
-                if (model instanceof Array) {
-                  // toc list
-                  $scope.partialPath = 'template' + '/tocpage.tmpl';
-                } else {
-                  $scope.title = model.id;
-                  if (model.type.toLowerCase() === 'namespace') {
-                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, model.items);
-                    $scope.partialPath = 'template' + '/namespace.tmpl';
-                  } else {
-                    $scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, model.items);
-                    $scope.partialPath = 'template' + '/class.tmpl';
-                  }
-                }
+                $scope.partialModel = partialModelHandler(data);
               }).catch(
               function() {
+                $scope.partialModel = {
+                  path : 'template/error404.tmpl',
+                };
                 $scope.breadcrumb = [];
-                $scope.partialPath = 'template/error404.tmpl';
               }
             );
           } else {
@@ -186,14 +179,58 @@
             $scope.partialPath = path;
           }
         }
-
       } else {
         if ($scope.navbar && $scope.navbar.length > 0) {
           $location.url($scope.navbar[0].href);
         }
       }
-
     });
+
+    function partialModelHandler(data) {
+      var partialModel = {
+        model: undefined,
+        path: undefined,
+        title: undefined,
+        itemtypes: undefined,
+      };
+      if (data instanceof Array) {
+        // toc list
+        partialModel.path = 'template' + '/tocpage.tmpl';
+        partialModel.model = data;
+      } else {
+        var items = data.items;
+        var references = data.references;
+
+        // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
+        var item = items[0];
+        if (item.children){
+          var children = [];
+          for(var i = 0, l = item.children.length; i < l; i++) {
+            var matched = items.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
+            if (matched.uid){
+              children.push(matched);
+            }
+          }
+          item.items = children;
+        }
+        partialModel.model = item;
+        partialModel.title = item.name;
+        if (item.type.toLowerCase() === 'namespace') {
+          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, item.items);
+          partialModel.path = 'template' + '/namespace.tmpl';
+        } else {
+          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, item.items);
+          partialModel.path = 'template' + '/class.tmpl';
+        }
+      }
+      return partialModel;
+    }
+
+    function getItemWithSameUidFunction(child){
+      return function(x) {
+              return x.uid === child;
+            };
+    }
 
     function getMdItemIndex(item, tocPath, mdPath, mdInitial, mdResolved) {
         var itemHref = (tocPath || '') + '/' + item.href;
@@ -264,14 +301,14 @@
       }
       if (currentGroup) {
         breadcrumb.push({
-          name: currentGroup.id,
+          name: currentGroup.name,
           url: currentGroup.href
         });
 
         // If toc does not exist, use navbar's title
         if (currentPage) {
           breadcrumb.push({
-            name: currentPage.id,
+            name: currentPage.name,
             url: currentPage.href
           });
         }

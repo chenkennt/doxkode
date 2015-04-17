@@ -21,7 +21,7 @@
       </section>
     </div>
     <section id="article-body">
-      <div class="" ng-repeat="itemtype in itemtypes" >
+      <div class="" ng-repeat="itemtype in partialModel.itemtypes" >
         <h3 class="" ng-if="itemtype.show">{{itemtype.description}}</h3>
         <table ng-if="itemtype.show">
           <tr ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
