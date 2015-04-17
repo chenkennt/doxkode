@@ -17,15 +17,15 @@
 (function() {
   'use strict';
 
-  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives'])
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.constants'])
     .controller('DocsController', [
       '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService',
+      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
       DocsCtrl
     ]);
 
   function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService) {
+    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService, docConstants) {
 
     /**********************************
      Initialize
@@ -126,7 +126,7 @@
           });
     });
 
-    // #a/b/c!d/e/f => a/b/c/toc.yaml as toc, d/e/f as content
+    // #a/b/c!d/e/f => a/b/c/toc.yml as toc, d/e/f as content
     $scope.$watch(function docsPathWatch() {
       return $location.path();
     }, function docsPathWatchAction(path) {
@@ -152,7 +152,7 @@
             $scope.partialModel = {};
             $scope.title = path;
             $scope.partialPath = path;
-          } else if ((/\.yaml$/g).test(path)) {
+          } else if ((docConstants.YamlRegexExp).test(path)) {
             $scope.contentType = 'yaml';
             // if is yaml
             // 1. try get md.yaml from the same path as toc, or current path if toc is not there
@@ -257,7 +257,7 @@
         })[0] || {};
 
         breadcrumb.push({
-          name: navName.id,
+          name: navName.name,
           // use '/#/' to indicate this is a nav link...
           url: '/#/' + currentNav
         });

@@ -8,7 +8,13 @@
     'use strict';
      /*jshint validthis:true */
     function provider() {
-        this.TocFile = 'toc.yaml'; // docConstants.TocFile
+        this.YamlExtension = '.yml';
+        this.MdExtension = '.md';
+        this.YamlRegexExp = /\.yaml$/;
+        this.MdRegexExp = /\.md$/;
+        this.MdOrYamlRegexExp = /(\.yml$)|(\.md$)/;
+        this.MdIndexFile = 'md' + this.YamlExtension;
+        this.TocFile = 'toc' + this.YamlExtension; // docConstants.TocFile
         this.TocAndFileUrlSeperator = '!'; // docConstants.TocAndFileUrlSeperator
     }
 

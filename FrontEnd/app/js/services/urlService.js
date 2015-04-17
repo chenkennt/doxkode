@@ -60,8 +60,8 @@
       // seperate toc and content with !
       var index = currentPath.indexOf(docConstants.TocAndFileUrlSeperator);
       if (index < 0) {
-        // If it ends with .md/.yaml, render it without toc
-        if ((/(\.yaml$)|(\.md$)/g).test(currentPath)) {
+        // If it ends with .md/.yml, render it without toc
+        if ((docConstants.MdOrYamlRegexExp).test(currentPath)) {
           return {
             contentPath: currentPath
           };
@@ -212,7 +212,7 @@
     this.getMdContent = function($scope, path, mdIndexCache) {
       if (!path) return;
       var pathInfo = this.getPathInfo(path);
-      var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+      var mdPath = normalizeUrl((pathInfo.tocPath || '') + '/' + docConstants.MdIndexFile);
 
       if (mdPath) {
         var tempMdIndex = mdIndexCache.get(mdPath);
