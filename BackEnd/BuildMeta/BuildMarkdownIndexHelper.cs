@@ -13,14 +13,14 @@ namespace DocAsCode.BuildMeta
     {
         private static readonly Dictionary<string, int> ReferencedFileLengthCache = new Dictionary<string, int>();
 
-        public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName, string referenceFolderName)
+        public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, MetadataItem> apiList, string workingDirectory, string mdFolderName, string referenceFolderName)
         {
             Dictionary<string, MarkdownIndex> table = new Dictionary<string, MarkdownIndex>();
 
             foreach(var file in markdownFilePathList.Distinct())
             {
                 List<MarkdownIndex> indics;
-                IndexYamlItemViewModel item;
+                MetadataItem item;
                 string apiFolder = Path.Combine(workingDirectory, mdFolderName);
                 string referenceFolder = Path.Combine(workingDirectory, referenceFolderName);
                 if (Directory.Exists(apiFolder))
@@ -97,7 +97,7 @@ namespace DocAsCode.BuildMeta
         /// <param name="yamlHandler"></param>
         /// <param name="markdown"></param>
         /// <returns></returns>
-        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, string referenceFolder, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
+        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, string referenceFolder, Func<MetadataItem, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
         {
             var gitDetail = GitUtility.GetGitDetail(markdownFilePath);
             if (string.IsNullOrEmpty(resolvedContent)) resolvedContent = File.ReadAllText(markdownFilePath);
@@ -122,13 +122,13 @@ namespace DocAsCode.BuildMeta
                 var match = matches[i];
                 string content = match.Groups["content"].Value;
 
-                YamlItemViewModel viewModel;
+                MetadataItem viewModel;
                 // Content to yaml
                 try
                 {
                     using (StringReader reader = new StringReader(content))
                     {
-                        viewModel = YamlUtility.Deserialize<YamlItemViewModel>(reader);
+                        viewModel = YamlUtility.Deserialize<MetadataItem>(reader);
 
                         if (string.IsNullOrEmpty(viewModel.Name))
                         {

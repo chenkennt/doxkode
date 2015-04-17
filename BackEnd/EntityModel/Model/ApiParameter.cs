@@ -1,6 +1,6 @@
 ﻿namespace DocAsCode.EntityModel
 {
-    public class YamlItemParameterViewModel
+    public class ApiParameter
     {
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }

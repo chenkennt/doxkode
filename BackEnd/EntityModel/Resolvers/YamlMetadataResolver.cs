@@ -19,27 +19,21 @@ namespace DocAsCode.EntityModel
             new BuildToc(),
         };
 
-        // Folder structure
-        // toc.yaml # toc containing all the namespaces
-        // api.yaml # id-yaml mapping
-        // api/{id}.yaml # items
-        public const string YamlExtension = ".yaml";
-
         /// <summary>
         /// TODO: input Namespace list instead
         /// </summary>
         /// <param name="allMembers"></param>
         /// <returns></returns>
-        public static YamlViewModel ResolveMetadata(Dictionary<string, YamlItemViewModel> allMembers, string apiFolder)
+        public static MetadataModel ResolveMetadata(Dictionary<string, MetadataItem> allMembers, string apiFolder)
         {
-            YamlViewModel viewModel = new YamlViewModel();
-            viewModel.IndexYamlViewModel = new Dictionary<string, IndexYamlItemViewModel>();
-            viewModel.TocYamlViewModel = new YamlItemViewModel()
+            MetadataModel viewModel = new MetadataModel();
+            viewModel.Indexer = new Dictionary<string, MetadataItem>();
+            viewModel.TocYamlViewModel = new MetadataItem()
             {
                 Type = MemberType.Toc,
                 Items = allMembers.Where(s => s.Value.Type == MemberType.Namespace).Select(s => s.Value).ToList(),
             };
-            viewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
+            viewModel.Members = new List<MetadataItem>();
             ResolverContext context = new ResolverContext { ApiFolder = apiFolder };
             var result = ExecutePipeline(viewModel, context);
 
@@ -47,7 +41,7 @@ namespace DocAsCode.EntityModel
             return viewModel;
         }
 
-        public static ParseResult ExecutePipeline(YamlViewModel yaml, ResolverContext context)
+        public static ParseResult ExecutePipeline(MetadataModel yaml, ResolverContext context)
         {
             ParseResult result = new ParseResult(ResultLevel.Success);
             foreach(var pipeline in pipelines)

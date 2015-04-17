@@ -129,6 +129,7 @@
     <Compile Include="Model\MemberType.cs" />
     <Compile Include="Model\ParseResult.cs" />
     <Compile Include="Model\LayoutItem.cs" />
+    <Compile Include="Model\MetadataItem.cs" />
     <Compile Include="Resolvers\NormalizeSyntax.cs" />
     <Compile Include="Resolvers\ResolveGitPath.cs" />
     <Compile Include="Resolvers\ResolveLink.cs" />
@@ -140,6 +141,8 @@
     <Compile Include="Resolvers\ResolverContext.cs" />
     <Compile Include="Resolvers\IResolverPipeline.cs" />
     <Compile Include="Resolvers\BuildToc.cs" />
+    <Compile Include="ViewModel\OnePageViewModel.cs" />
+    <Compile Include="ViewModel\YamlViewModel.cs" />
     <Compile Include="Visitor\VisitorHelper.cs" />
     <Compile Include="Visitor\CSYamlModelGeneratorVisitor.cs" />
     <Compile Include="Visitor\VBYamlModelGeneratorVisitor.cs" />
@@ -147,13 +150,12 @@
     <Compile Include="Resolvers\YamlMetadataResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
-    <Compile Include="Model\YamlItemParameterViewModel.cs" />
+    <Compile Include="Model\ApiParameter.cs" />
     <Compile Include="Model\SourceDetail.cs" />
     <Compile Include="Model\SyntaxDetail.cs" />
     <Compile Include="Model\ItemType.cs" />
-    <Compile Include="Model\IndexYamlItemViewModel.cs" />
-    <Compile Include="Model\YamlItemViewModel.cs" />
-    <Compile Include="Model\YamlViewModel.cs" />
+    <Compile Include="ViewModel\ItemViewModel.cs" />
+    <Compile Include="Model\MetadataModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

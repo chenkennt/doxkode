@@ -7,7 +7,7 @@ namespace DocAsCode.EntityModel
 {
     public class ResolveGitPath : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
             // Moved to Metadata Visitor
             return new ParseResult(ResultLevel.Success);

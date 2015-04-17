@@ -8,6 +8,6 @@ namespace DocAsCode.EntityModel
 {
     public static class Constants
     {
-        public const string YamlExtension = ".yaml";
+        public const string YamlExtension = ".yml";
     }
 }

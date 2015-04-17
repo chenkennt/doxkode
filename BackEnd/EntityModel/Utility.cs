@@ -52,7 +52,7 @@ namespace DocAsCode.EntityModel
         // self written link should be ended with a whitespace
         public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")", RegexOptions.Compiled);
 
-        public static string ResolveToMarkdownLink(Dictionary<string, IndexYamlItemViewModel> dict, string input)
+        public static string ResolveToMarkdownLink(Dictionary<string, MetadataItem> dict, string input)
         {
             return LinkParser.ResolveText(dict, input, s =>
                  string.Format("[{0}]({1})", s.Name, s.Href), s => string.Format("[{0}](#)", s)
@@ -316,18 +316,28 @@ namespace DocAsCode.EntityModel
             return type == MemberType.Namespace || type == MemberType.Class || type == MemberType.Enum || type == MemberType.Delegate || type == MemberType.Interface || type == MemberType.Struct;
         }
 
-        public static YamlItemViewModel Shrink(this YamlItemViewModel item)
+        /// <summary>
+        /// Allow multiple items in one yml file
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static bool AllowMultipleItems(this MemberType type)
         {
-            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            return type == MemberType.Toc || type == MemberType.Class || type == MemberType.Enum || type == MemberType.Delegate || type == MemberType.Interface || type == MemberType.Struct;
+        }
+
+        public static MetadataItem Shrink(this MetadataItem item)
+        {
+            MetadataItem shrinkedItem = new MetadataItem();
             shrinkedItem.Name = item.Name;
             shrinkedItem.Summary = item.Summary;
             shrinkedItem.Type = item.Type;
             shrinkedItem.Href = item.Href;
             return shrinkedItem;
         }
-        public static YamlItemViewModel ShrinkToSimpleToc(this YamlItemViewModel item)
+        public static MetadataItem ShrinkToSimpleToc(this MetadataItem item)
         {
-            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            MetadataItem shrinkedItem = new MetadataItem();
             shrinkedItem.Name = item.Name;
             shrinkedItem.DisplayNames = item.DisplayNames;
 
@@ -345,7 +355,7 @@ namespace DocAsCode.EntityModel
                 {
                     if (shrinkedItem.Items == null)
                     {
-                        shrinkedItem.Items = new List<YamlItemViewModel>();
+                        shrinkedItem.Items = new List<MetadataItem>();
                     }
 
                     if (i.IsInvalid) continue;
@@ -363,9 +373,9 @@ namespace DocAsCode.EntityModel
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        public static YamlItemViewModel ShrinkToSimpleTocWithNamespaceNotEmpty(this YamlItemViewModel item)
+        public static MetadataItem ShrinkToSimpleTocWithNamespaceNotEmpty(this MetadataItem item)
         {
-            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            MetadataItem shrinkedItem = new MetadataItem();
             shrinkedItem.Name = item.Name;
             shrinkedItem.DisplayNames = item.DisplayNames;
 
@@ -380,7 +390,7 @@ namespace DocAsCode.EntityModel
                     {
                         if (shrinkedItem.Items == null)
                         {
-                            shrinkedItem.Items = new List<YamlItemViewModel>();
+                            shrinkedItem.Items = new List<MetadataItem>();
                         }
 
                         if (i.IsInvalid) continue;
@@ -398,14 +408,14 @@ namespace DocAsCode.EntityModel
             return shrinkedItem;
         }
 
-        public static YamlItemViewModel ShrinkChildren(this YamlItemViewModel item)
+        public static MetadataItem ShrinkChildren(this MetadataItem item)
         {
             if (item.Items == null)
             {
                 return item;
             }
-            YamlItemViewModel shrinkedItem = (YamlItemViewModel)item.Clone();
-            shrinkedItem.Items = new List<YamlItemViewModel>();
+            MetadataItem shrinkedItem = (MetadataItem)item.Clone();
+            shrinkedItem.Items = new List<MetadataItem>();
             foreach(var i in item.Items)
             {
                 if (i.IsInvalid) continue;

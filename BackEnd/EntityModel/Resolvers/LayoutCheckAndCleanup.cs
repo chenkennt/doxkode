@@ -11,7 +11,7 @@ namespace DocAsCode.EntityModel
         /// </summary>
         /// <param name="allMembers"></param>
         /// <returns></returns>
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
             ParseResult overall = new ParseResult(ResultLevel.Success);
             StringBuilder message = new StringBuilder();
@@ -29,7 +29,7 @@ namespace DocAsCode.EntityModel
             return overall;
         }
 
-        private ParseResult CheckNamespaces(YamlItemViewModel member)
+        private ParseResult CheckNamespaces(MetadataItem member)
         {
             ParseResult overall = new ParseResult(ResultLevel.Success);
             StringBuilder message = new StringBuilder();
@@ -73,7 +73,7 @@ namespace DocAsCode.EntityModel
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        private ParseResult CheckNamespaceMembers(YamlItemViewModel member)
+        private ParseResult CheckNamespaceMembers(MetadataItem member)
         {
             ParseResult overall = new ParseResult(ResultLevel.Success);
             StringBuilder message = new StringBuilder();
@@ -119,7 +119,7 @@ namespace DocAsCode.EntityModel
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        private ParseResult CheckNamespaceMembersMembers(YamlItemViewModel member)
+        private ParseResult CheckNamespaceMembersMembers(MetadataItem member)
         {
             ParseResult overall = new ParseResult(ResultLevel.Success);
             StringBuilder message = new StringBuilder();

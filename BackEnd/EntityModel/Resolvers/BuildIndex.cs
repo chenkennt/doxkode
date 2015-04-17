@@ -4,9 +4,9 @@ namespace DocAsCode.EntityModel
 {
     public class BuildIndex : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;
@@ -15,14 +15,14 @@ namespace DocAsCode.EntityModel
                 {
                     if (member.Type != MemberType.Toc)
                     {
-                        IndexYamlItemViewModel item;
-                        if (yaml.IndexYamlViewModel.TryGetValue(member.Name, out item))
+                        MetadataItem item;
+                        if (yaml.Indexer.TryGetValue(member.Name, out item))
                         {
-                            ParseResult.WriteToConsole(ResultLevel.Error, "{0} already exists in {1}, the duplicate one {2} will be ignored", member.Name, item.YamlPath, member.Href);
+                            ParseResult.WriteToConsole(ResultLevel.Error, "{0} already exists in {1}, the duplicate one {2} will be ignored", member.Name, item.Href, member.Href);
                         }
                         else
                         {
-                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, Href = member.Href, YamlPath = member.Href});
+                            yaml.Indexer.Add(member.Name, new MetadataItem { Name = member.Name, Href = member.Href });
                         }
                     }
 

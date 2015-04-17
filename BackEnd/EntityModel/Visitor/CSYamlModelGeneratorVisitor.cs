@@ -28,7 +28,7 @@ namespace DocAsCode.EntityModel
         {
         }
 
-        public override YamlItemViewModel DefaultVisit(ISymbol symbol)
+        public override MetadataItem DefaultVisit(ISymbol symbol)
         {
             var item = base.DefaultVisit(symbol);
             if (item != null)

@@ -45,8 +45,8 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md", "reference");
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             //Assert.Fail();
@@ -66,8 +66,8 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md",  "reference");
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md",  "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             //Assert.Fail();
@@ -87,8 +87,8 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md", "reference");
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             //Assert.Fail();
@@ -110,8 +110,8 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/AboutCodeSnippet.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md", "reference");
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             Assert.Fail();

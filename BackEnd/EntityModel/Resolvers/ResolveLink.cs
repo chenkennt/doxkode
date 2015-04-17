@@ -5,11 +5,11 @@ namespace DocAsCode.EntityModel
 {
     public class ResolveLink : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
-            var index = yaml.IndexYamlViewModel;
+            var index = yaml.Indexer;
 
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;
@@ -37,7 +37,7 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string ResolveText(Dictionary<string, IndexYamlItemViewModel> dict, string input)
+        private static string ResolveText(Dictionary<string, MetadataItem> dict, string input)
         {
             if (string.IsNullOrEmpty(input)) return null;
             return LinkParser.ResolveToMarkdownLink(dict, input);

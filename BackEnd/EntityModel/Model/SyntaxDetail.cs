@@ -8,9 +8,9 @@ namespace DocAsCode.EntityModel
         public Dictionary<SyntaxLanguage, string> Content { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "parameters")]
-        public List<YamlItemParameterViewModel> Parameters { get; set; }
+        public List<ApiParameter> Parameters { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "return")]
-        public YamlItemParameterViewModel Return { get; set; }
+        public ApiParameter Return { get; set; }
     }
 }

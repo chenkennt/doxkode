@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DocAsCode.EntityModel
 {
-    public class YamlItemViewModel : ICloneable
+    public class MetadataItem : ICloneable
     {
         [YamlDotNet.Serialization.YamlIgnore]
         public bool IsInvalid { get; set; }
@@ -27,7 +27,7 @@ namespace DocAsCode.EntityModel
         public Dictionary<SyntaxLanguage, string> DisplayQualifiedNames { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "parent")]
-        public string ParentName { get; set; }
+        public MetadataItem Parent { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "type")]
         public MemberType Type { get; set; }
@@ -56,7 +56,7 @@ namespace DocAsCode.EntityModel
         public List<ItemType> ItemTypes { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "items")]
-        public List<YamlItemViewModel> Items { get; set; }
+        public List<MetadataItem> Items { get; set; }
 
         public override string ToString()
         {

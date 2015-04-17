@@ -6,9 +6,9 @@ namespace DocAsCode.EntityModel
 {
     public class ResolvePath : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;
@@ -21,7 +21,7 @@ namespace DocAsCode.EntityModel
                         {
                             if (!s.IsExternalPath)
                             {
-                                s.Href = ResolveInternalLink(yaml.IndexYamlViewModel, s.Name);
+                                s.Href = ResolveInternalLink(yaml.Indexer, s.Name);
                             }
                         });
                     }
@@ -33,14 +33,14 @@ namespace DocAsCode.EntityModel
                             Debug.Assert(s.Type != null);
                             if (s.Type != null && !s.Type.IsExternalPath)
                             {
-                                s.Type.Href = ResolveInternalLink(yaml.IndexYamlViewModel, s.Type.Name);
+                                s.Type.Href = ResolveInternalLink(yaml.Indexer, s.Type.Name);
                             }
                         });
                     }
 
                     if (current.Syntax != null && current.Syntax.Return != null && current.Syntax.Return.Type != null)
                     {
-                        current.Syntax.Return.Type.Href = ResolveInternalLink(yaml.IndexYamlViewModel, current.Syntax.Return.Type.Name);
+                        current.Syntax.Return.Type.Href = ResolveInternalLink(yaml.Indexer, current.Syntax.Return.Type.Name);
                     }
 
                     return Task.FromResult(true);
@@ -50,12 +50,12 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string ResolveInternalLink(Dictionary<string, IndexYamlItemViewModel> index, string name)
+        private static string ResolveInternalLink(Dictionary<string, MetadataItem> index, string name)
         {
             Debug.Assert(!string.IsNullOrEmpty(name));
             if (string.IsNullOrEmpty(name)) return name;
 
-            IndexYamlItemViewModel item;
+            MetadataItem item;
             if (index.TryGetValue(name, out item))
             {
                 return item.Href;

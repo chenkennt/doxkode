@@ -30,7 +30,7 @@
             return true;
         }
 
-        public static void FeedComments(YamlItemViewModel item)
+        public static void FeedComments(MetadataItem item)
         {
             if (string.IsNullOrEmpty(item.RawComment)) return;
             item.Summary = TripleSlashCommentParser.GetSummary(item.RawComment, true);
@@ -97,7 +97,7 @@
 
             return null;
         }
-        public static YamlItemParameterViewModel GetParameterDescription(ISymbol symbol, YamlItemViewModel item, bool isReturn)
+        public static ApiParameter GetParameterDescription(ISymbol symbol, MetadataItem item, bool isReturn)
         {
             SourceDetail id = null;
             string raw = item.RawComment;
@@ -132,7 +132,7 @@
             string comment = isReturn ? TripleSlashCommentParser.GetReturns(raw, true) :
                 TripleSlashCommentParser.GetParam(raw, name, true);
 
-            return new YamlItemParameterViewModel() { Name = name, Type = id, Description = comment };
+            return new ApiParameter() { Name = name, Type = id, Description = comment };
         }
 
         public static SourceDetail GetSourceDetail(ISymbol symbol)

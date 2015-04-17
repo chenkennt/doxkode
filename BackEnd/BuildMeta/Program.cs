@@ -17,9 +17,9 @@ namespace DocAsCode.BuildMeta
     {
         static int Main(string[] args)
         {
-            const string DefaultTocFileName = "toc.yaml";
-            const string DefaultIndexFileName = "index.yaml";
-            const string DefaultMarkdownFileName = "md.yaml";
+            const string DefaultTocFileName = "toc.yml";
+            const string DefaultIndexFileName = "index.yml";
+            const string DefaultMarkdownFileName = "md.yml";
             const string DefaultMdFolderName = "md";
             const string DefaultReferenceFolderName = "reference";
             const string DefaultApiFolderName = "api";

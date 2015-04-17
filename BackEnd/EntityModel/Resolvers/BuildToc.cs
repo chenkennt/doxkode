@@ -6,11 +6,11 @@
 
     public class BuildToc : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
             yaml.TocYamlViewModel = yaml.TocYamlViewModel.ShrinkToSimpleTocWithNamespaceNotEmpty();
             // Comparing to toc files, yaml files are all in api folder
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;

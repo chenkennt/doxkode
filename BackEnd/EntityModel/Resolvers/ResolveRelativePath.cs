@@ -5,9 +5,9 @@ namespace DocAsCode.EntityModel
 {
     public class ResolveRelativePath : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;

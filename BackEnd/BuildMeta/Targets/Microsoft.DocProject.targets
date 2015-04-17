@@ -73,7 +73,7 @@
   <!-- TODO: to clean up all the files not in .csproj? -->
   <Target Name="CleanupExistingOutput">
     <ItemGroup>
-      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yaml" />
+      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yml" />
     </ItemGroup>
     <!-- Cleanup existing docmta -->
     <Delete Files="@(OutputApiFiles)" ContinueOnError="true" />

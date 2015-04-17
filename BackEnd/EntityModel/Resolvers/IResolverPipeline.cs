@@ -2,6 +2,6 @@
 {
     public interface IResolverPipeline
     {
-        ParseResult Run(YamlViewModel yaml, ResolverContext context);
+        ParseResult Run(MetadataModel yaml, ResolverContext context);
     }
 }

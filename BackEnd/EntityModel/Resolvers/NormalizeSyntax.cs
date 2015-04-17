@@ -7,11 +7,11 @@ namespace DocAsCode.EntityModel
 {
     public class NormalizeSyntax : IResolverPipeline
     {
-        public ParseResult Run(YamlViewModel yaml, ResolverContext context)
+        public ParseResult Run(MetadataModel yaml, ResolverContext context)
         {
-            var index = yaml.IndexYamlViewModel;
+            var index = yaml.Indexer;
 
-            TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+            TreeIterator.PreorderAsync<MetadataItem>(yaml.TocYamlViewModel, null,
                 (s) =>
                 {
                     if (s.IsInvalid) return null;

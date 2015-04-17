@@ -7,11 +7,11 @@
 
     using Microsoft.CodeAnalysis;
 
-    public abstract class YamlModelGeneratorVisitor : SymbolVisitor<YamlItemViewModel>
+    public abstract class YamlModelGeneratorVisitor : SymbolVisitor<MetadataItem>
     {
-        private YamlItemViewModel parent = new YamlItemViewModel();
-        private YamlItemViewModel currentNamespace = new YamlItemViewModel();
-        private YamlItemViewModel currentAssembly = new YamlItemViewModel();
+        private MetadataItem parent = new MetadataItem();
+        private MetadataItem currentNamespace = new MetadataItem();
+        private MetadataItem currentAssembly = new MetadataItem();
         private readonly SyntaxLanguage language;
         public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
         {
@@ -20,10 +20,10 @@
 
         public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
 
-        public override YamlItemViewModel DefaultVisit(ISymbol symbol)
+        public override MetadataItem DefaultVisit(ISymbol symbol)
         {
             if (!VisitorHelper.CanVisit(symbol)) return null;
-            var item = new YamlItemViewModel
+            var item = new MetadataItem
             {
                 Name = VisitorHelper.GetId(symbol),
                 RawComment = symbol.GetDocumentationCommentXml(),
@@ -36,7 +36,7 @@
             return item;
         }
 
-        public override YamlItemViewModel VisitAssembly(IAssemblySymbol symbol)
+        public override MetadataItem VisitAssembly(IAssemblySymbol symbol)
         {
             var item = this.DefaultVisit(symbol);
             if (item == null) return null;
@@ -52,7 +52,7 @@
             return item;
         }
 
-        public override YamlItemViewModel VisitNamespace(INamespaceSymbol symbol)
+        public override MetadataItem VisitNamespace(INamespaceSymbol symbol)
         {
             var item = this.DefaultVisit(symbol);
             if (item == null) return null;
@@ -63,7 +63,7 @@
             {
                 if (this.currentAssembly.Items == null)
                 {
-                    this.currentAssembly.Items = new List<YamlItemViewModel>();
+                    this.currentAssembly.Items = new List<MetadataItem>();
                 }
 
                 this.currentAssembly.Items.Add(item);
@@ -83,7 +83,7 @@
             return item;
         }
 
-        public override YamlItemViewModel VisitNamedType(INamedTypeSymbol symbol)
+        public override MetadataItem VisitNamedType(INamedTypeSymbol symbol)
         {
             var item = this.DefaultVisit(symbol);
             if (item == null) return null;
@@ -120,7 +120,7 @@
             {
                 if (this.currentNamespace.Items == null)
                 {
-                    this.currentNamespace.Items = new List<YamlItemViewModel>();
+                    this.currentNamespace.Items = new List<MetadataItem>();
                 }
 
                 this.currentNamespace.Items.Add(item);
@@ -155,7 +155,7 @@
             return item;
         }
 
-        public override YamlItemViewModel VisitMethod(IMethodSymbol symbol)
+        public override MetadataItem VisitMethod(IMethodSymbol symbol)
         {
             var item = this.AddYamlItem(symbol);
             if (item == null) return null;
@@ -169,7 +169,7 @@
 
             if (item.Syntax.Parameters == null)
             {
-                item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
+                item.Syntax.Parameters = new List<ApiParameter>();
             }
 
             foreach (var i in symbol.Parameters)
@@ -183,17 +183,17 @@
             return item;
         }
 
-        public override YamlItemViewModel VisitField(IFieldSymbol symbol)
+        public override MetadataItem VisitField(IFieldSymbol symbol)
         {
             return this.AddYamlItem(symbol);
         }
 
-        public override YamlItemViewModel VisitEvent(IEventSymbol symbol)
+        public override MetadataItem VisitEvent(IEventSymbol symbol)
         {
             return this.AddYamlItem(symbol);
         }
 
-        public override YamlItemViewModel VisitProperty(IPropertySymbol symbol)
+        public override MetadataItem VisitProperty(IPropertySymbol symbol)
         {
             var item = this.AddYamlItem(symbol);
             if (item == null) return null;
@@ -205,7 +205,7 @@
 
             if (item.Syntax.Parameters == null)
             {
-                item.Syntax.Parameters = new List<YamlItemParameterViewModel>();
+                item.Syntax.Parameters = new List<ApiParameter>();
             }
 
             var param = VisitorHelper.GetParameterDescription(symbol, item, false);
@@ -262,7 +262,7 @@
             }
         }
 
-        private YamlItemViewModel AddYamlItem(ISymbol symbol)
+        private MetadataItem AddYamlItem(ISymbol symbol)
         {
             var item = this.DefaultVisit(symbol);
             if (item == null) return null;
@@ -308,7 +308,7 @@
             {
                 if (this.parent.Items == null)
                 {
-                    this.parent.Items = new List<YamlItemViewModel>();
+                    this.parent.Items = new List<MetadataItem>();
                 }
 
                 this.parent.Items.Add(item);
