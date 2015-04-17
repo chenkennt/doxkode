@@ -31,7 +31,6 @@ module.exports = function(grunt) {
     ownJsFiles: [
         //'app/js/search-worker.js',
         'app/js/services/contentService.js',
-        'app/js/services/styleProvider.js',
         'app/js/services/csplayService.js',
         'app/js/services/urlService.js',
         'app/js/app.js',
@@ -330,7 +329,7 @@ module.exports = function(grunt) {
     grunt.registerTask('vsixdebug', [ 'debug', 'copy:vsix_debug']);
     grunt.registerTask('server', [ 'debug', 'copy:test', 'connect:debug' ]);
     grunt.registerTask('serverrelease', [ 'release', 'copy:test', 'connect:release' ]);
-    grunt.registerTask('test.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min', 'connect:debug.min']);
-    grunt.registerTask('test.release.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min', 'connect:release.min']);
+    grunt.registerTask('test.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min']);
+    grunt.registerTask('test.release.min', [ 'debug', 'release', 'clean:test.min', 'copy:test.min']);
     grunt.registerTask('default', ['test.min']);
 };

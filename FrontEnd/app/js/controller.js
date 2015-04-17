@@ -17,27 +17,55 @@
 (function() {
   'use strict';
 
-  function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-    NG_PAGES, NG_VERSION, NG_ITEMTYPES, styleProvider, contentService, urlService) {
-    $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives'])
+    .controller('DocsController', [
+      '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
+      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService',
+      DocsCtrl
+    ]);
 
-    // TODO: Hacky, need change, how to bind this if move it to styleProvider?
-    $scope.tocClass = function(navItem) {
-      var tocClass = {
+  function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
+    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService) {
+
+    /**********************************
+     Initialize
+     **********************************/
+
+    $scope.versionNumber = angular.version.full;
+    $scope.version = angular.version.full + "  " + angular.version.codeName;
+    $scope.loading = 0;
+    $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
+    $scope.tocClass = tocClass;
+    $scope.navClass = navClass;
+
+    $scope.expandAll = expandAll;
+    $scope.getViewSourceHref = getViewSourceHref;
+    $scope.getTocHref = getTocHref;
+    $scope.getBreadCrumbHref =getBreadCrumbHref;
+    $scope.getNavHref = getNavHref;
+    $scope.getLinkHref = getLinkHref;
+
+    $scope.getNumber = function(num) { return new Array(num + 1); };
+
+    /****************************************
+     element ng-class related Implementation
+     ****************************************/
+    function tocClass(navItem) {
+      /* jshint validthis: true */
+      var current = {
         current: navItem.href && this.pathInfo.contentPath === navItem.href,
         'nav-index-section': navItem.type === 'section'
       };
-      if (tocClass.current === true) {
+      if (current.current === true) {
         $scope.navGroup = this.navGroup;
         $scope.navItem = this.navItem;
       }
 
-      return tocClass;
-    };
+      return current;
+    }
 
-    $scope.gridClass = styleProvider.gridClass;
-
-    $scope.navClass = function(navItem) {
+    function navClass(navItem) {
+      /* jshint validthis: true */
       var navPath;
       if (this.pathInfo) {
         navPath = urlService.normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
@@ -46,57 +74,49 @@
       return {
         current: navPath && navPath === navItem.href,
       };
-    };
+    }
 
-    $scope.getNumber = function(num) {
-      return new Array(num + 1);
-    };
-
-    $scope.ViewSource = function() {
+    /**************************************
+     element button related Implementation
+     **************************************/
+    function getViewSourceHref(){
+      /* jshint validthis: true */
       return urlService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
-    };
-
-    $scope.ImproveThisDoc = function() {
-      return $scope.partialModel.mdContent;
-    };
+    }
 
     // expand / collapse all logic for model items
-    $scope.expandAll = function(state) {
+    function expandAll(state) {
       if ($scope.partialModel.items) {
         $scope.partialModel.items.forEach(function(e) {
           e.showDetail = state;
         });
       }
-    };
+    }
 
     // Href relative to current toc file
-    $scope.GetTocHref = function(url) {
+    function getTocHref(url) {
       if (!$scope.toc) return '';
       return urlService.getHref($scope, $scope.toc.path, url);
-    };
+    }
 
     // Href relative to current toc file
-    $scope.GetBreadCrumbHref = function(url) {
+    function getBreadCrumbHref(url) {
       // For navbar url, no need to calculate relative path from toc
       if (url && url.indexOf('/#/') === 0) return url;
       if (!$scope.toc) return '';
       return urlService.getHref($scope, $scope.toc.path, url);
-    };
+    }
 
-    $scope.GetNavHref = function(url) {
+    function getNavHref(url) {
       if (urlService.isAbsoluteUrl(url)) return url;
       if (!url) return '';
       return '#' + url;
-    };
+    }
 
     // Href relative to current file
-    $scope.GetLinkHref = function(url) {
+    function getLinkHref(url) {
       return urlService.getHref($scope, $location.path(), url);
-    };
-
-    $scope.$on('$includeContentLoaded', function() {
-      // Add post actions when ng-include updated
-    });
+    }
 
     contentService.getNavBar().then(function(data) {
       $scope.navbar = data;
@@ -296,20 +316,6 @@
       }
     });
 
-    /**********************************
-     Initialize
-     ***********************************/
-
-    $scope.versionNumber = angular.version.full;
-    $scope.version = angular.version.full + "  " + angular.version.codeName;
-    $scope.loading = 0;
   }
-
-  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.styleProvider', 'docascode.directives'])
-    .controller('DocsController', [
-      '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES','styleProvider', 'contentService', 'urlService',
-      DocsCtrl
-    ]);
 
 })();

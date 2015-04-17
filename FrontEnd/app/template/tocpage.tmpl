@@ -1,7 +1,7 @@
 <table>
   <tr ng-repeat="item in model">
       <td>
-          <a ng-href="{{GetTocHref(item.href)}}">
+          <a ng-href="{{getTocHref(item.href)}}">
               {{item.id.replace(model.id + '.', '')}}
           </a>
       </td>

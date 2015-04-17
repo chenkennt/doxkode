@@ -12,6 +12,7 @@
   <meta name="fragment" content="!">
   <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
 <<%
     var mode = compileConfig.mode;
     var config = compileConfig.config;
@@ -161,6 +162,7 @@
 %>>
 </head>
 <body>
+
   <div id="console">
     <div id="player"></div>
       <button id="run" class="btn">Run</button>
@@ -197,7 +199,7 @@
             </div>
             <ul class="breadcrumb">
               <li ng-repeat="crumb in breadcrumb">
-                <a ng-href="{{GetBreadCrumbHref(crumb.url)}}">{{crumb.name}}</a>
+                <a ng-href="{{::getBreadCrumbHref(crumb.url)}}">{{::crumb.name}}</a>
               </li>
             </ul>
         </div>
@@ -249,7 +251,7 @@
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
         <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
-      <div ng-class="gridClass(toc)" class="article">
+      <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
         <div id="loading" ng-show="loading">Loading...</div>
         <div markdown ng-if="contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
           <div ng-if="contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
@@ -268,5 +270,6 @@
       </div>
     </footer>
   </div>
+
 </body>
 </html>

@@ -5,7 +5,7 @@
       <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">
         <span class="glyphicon glyphicon-edit">&nbsp;</span>Improve this Doc
       </a>
-      <a class="btn pull-right" ng-href={{::ViewSource()}}>
+      <a class="btn pull-right" ng-href={{::getViewSourceHref()}}>
         <span class="glyphicon glyphicon-eye-open">&nbsp;</span>View Source
       </a>
       <h1 ng-if="::model.name.CSharp">{{::model.type}} {{::model.name.CSharp}}</h1>
@@ -23,7 +23,7 @@
           <div class="">
             <div ng-repeat="inhe in ::model.inheritance">
               <span ng-repeat="i in ::getNumber($index) track by $index"></span>↳
-              <a ng-href="{{::GetLinkHref(inhe.href)}}">{{::inhe.id}}</a>
+              <a ng-href="{{::getLinkHref(inhe.href)}}">{{::inhe.id}}</a>
             </div>
             <div class="">
               <span ng-repeat="i in ::getNumber(model.inheritance.length) track by $index"></span>↳
@@ -38,45 +38,27 @@
       <div class="" ng-repeat="itemtype in ::itemtypes">
         <h3 class="" ng-if="::itemtype.show">{{::itemtype.description}}</h3>
         <div class=""  ng-repeat="item in ::model.items" ng-if="::(item.type == itemtype.name)">
-          <!--<div class="" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">-->
           <div class="item-section">
             <div class="item-header">
               <div class="pull-right">
-                <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
+                <a ng-href="{{::getViewSourceHref(item.source.startLine)}}">View Source</a>
                 <span ng-if="model.mdHref">
                   <span class="divider-brand">|</span>
                   <a ng-href="{{model.mdHref}}">Improve this Doc</a>
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
-                <!--<div class="pull-right" ng-show="item.showDetail">Hide</div>
-                <div class="pull-right" ng-show="!item.showDetail">Show</div>-->
                 <div class="item-title" ng-if="::item.name.CSharp">
                   {{::item.name.CSharp.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
                 </div>
                 <div class="item-title" ng-if="::(!item.name.CSharp && item.name.VB)">
                   {{::item.name.VB.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
                 </div>
-                <!--<span class="minus-icon" ng-show = "showDetail"></span>
-                <span class="plus-icon" ng-show = "!showDetail"></span>-->
               </a>
             </div>
-            <!--<div class="view-source btn" ng-show="showBtn">
-              <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
-            </div>
-            <div class="improve-this-doc btn btn-primary" ng-show="showBtn">
-              <div ng-if="model.mdHref" class="improve-this-doc btn btn-primary">
-                <a ng-href="{{model.mdHref}}">Improve this Doc</a>
-              </div>
-            </div>-->
             <div class="item-summary">
               <markdown ng-model="item.summary"></markdown>
             </div>
-            <!--<a class="section-member-detail-before"  ng-init="showDetail=false"  ng-show="showDetail"> - </a>
-            <a class="section-member-detail-before" ng-show="!showDetail"> + </a>
-            <a class="section-member-detail" ng-click="showDetail=!showDetail; GetDetail($event)">
-                details
-            </a>-->
             <div class="item-collapsible" ng-show="item.showDetail">
               <markdown ng-model="item.mdContent"></markdown>
               <div class="" ng-if="::item.syntax">
@@ -89,7 +71,7 @@
                   <table>
                     <tr ng-repeat="par in ::item.syntax.parameters">
                       <td scope="row">
-                        <a ng-href="{{::GetLinkHref(par.type.href)}}">{{::par.type.id}}</a>
+                        <a ng-href="{{::getLinkHref(par.type.href)}}">{{::par.type.id}}</a>
                       </td>
                       <td>
                         <div class="">
@@ -106,7 +88,7 @@
                   <table>
                     <tr ng-repeat="par in ::item.syntax.parameters">
                       <td scope="row">
-                        <a ng-href="{{::GetLinkHref(par.type.href)}}">{{::par.type.id}}</a>
+                        <a ng-href="{{::getLinkHref(par.type.href)}}">{{::par.type.id}}</a>
                       </td>
                       <td scope="row">
                         <em class="term">{{::par.id}}</em>
@@ -126,7 +108,7 @@
                   <table>
                     <tr>
                       <td scope="row">
-                        <a ng-href="{{::GetLinkHref(item.syntax.return.type.href)}}">{{::item.syntax.return.id}}</a>
+                        <a ng-href="{{::getLinkHref(item.syntax.return.type.href)}}">{{::item.syntax.return.id}}</a>
                       </td>
                       <td>
                         <div class="definition">
