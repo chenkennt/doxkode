@@ -3,7 +3,7 @@
   <article class="">
     <div id="article-header">
       <a ng-if="model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">Improve this Doc</a>
-      <a class="btn pull-right" ng-href={{::viewSource()}}> View Source</a>
+      <a class="btn pull-right" ng-href={{::getViewSourceHref()}}> View Source</a>
       <h1 class="">
         {{model.type}} {{model.name.CSharp}}
       </h1>
