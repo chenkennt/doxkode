@@ -1,6 +1,6 @@
-﻿- id: Home
+﻿- name: Home
   href: articles/index.md
-- id: Article With TOC
+- name: Article With TOC
   href: articles/withtoc
-- id: Cat Test API
+- name: Cat Test API
   href: api_cat
