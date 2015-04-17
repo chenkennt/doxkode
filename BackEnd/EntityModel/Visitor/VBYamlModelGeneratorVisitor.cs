@@ -9,6 +9,19 @@ namespace DocAsCode.EntityModel
 {
     public class VBYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
+        private readonly SymbolDisplayFormat ShortFormat = new SymbolDisplayFormat(
+            SymbolDisplayGlobalNamespaceStyle.Omitted,
+            SymbolDisplayTypeQualificationStyle.NameOnly,
+            SymbolDisplayGenericsOptions.IncludeTypeParameters,
+            SymbolDisplayMemberOptions.IncludeExplicitInterface | SymbolDisplayMemberOptions.IncludeParameters,
+            SymbolDisplayDelegateStyle.NameOnly,
+            SymbolDisplayExtensionMethodStyle.Default,
+            SymbolDisplayParameterOptions.IncludeType | SymbolDisplayParameterOptions.IncludeParamsRefOut,
+            SymbolDisplayPropertyStyle.NameOnly,
+            SymbolDisplayLocalOptions.None,
+            SymbolDisplayKindOptions.None,
+            SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
+
         public VBYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.VB)
         {
         }
@@ -18,7 +31,7 @@ namespace DocAsCode.EntityModel
             var item = base.DefaultVisit(symbol);
             if (item != null)
             {
-                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.VB, symbol.ToDisplayString(SymbolDisplayFormat.VisualBasicShortErrorMessageFormat) } };
+                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.VB, symbol.ToDisplayString(ShortFormat) } };
                 item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.VB, symbol.ToDisplayString(SymbolDisplayFormat.VisualBasicErrorMessageFormat) } };
             }
             return item;

@@ -3,7 +3,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using DocAsCode.Utility;
+using System.Text.RegularExpressions;
 
 namespace DocAsCode.EntityModel
 {
@@ -11,6 +11,19 @@ namespace DocAsCode.EntityModel
 
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
+        private readonly SymbolDisplayFormat ShortFormat = new SymbolDisplayFormat(
+            SymbolDisplayGlobalNamespaceStyle.Omitted,
+            SymbolDisplayTypeQualificationStyle.NameOnly,
+            SymbolDisplayGenericsOptions.IncludeTypeParameters,
+            SymbolDisplayMemberOptions.IncludeExplicitInterface | SymbolDisplayMemberOptions.IncludeParameters,
+            SymbolDisplayDelegateStyle.NameOnly,
+            SymbolDisplayExtensionMethodStyle.Default,
+            SymbolDisplayParameterOptions.IncludeType | SymbolDisplayParameterOptions.IncludeParamsRefOut,
+            SymbolDisplayPropertyStyle.NameOnly,
+            SymbolDisplayLocalOptions.None,
+            SymbolDisplayKindOptions.None,
+            SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
+
         public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
         {
         }
@@ -20,7 +33,7 @@ namespace DocAsCode.EntityModel
             var item = base.DefaultVisit(symbol);
             if (item != null)
             {
-                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpShortErrorMessageFormat) } };
+                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(ShortFormat) } };
                 item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
             }
             return item;
@@ -177,6 +190,12 @@ namespace DocAsCode.EntityModel
                     };
                 case MemberType.Event:
                     {
+                        var syntax = syntaxNode as EventDeclarationSyntax;
+                        if (syntax != null)
+                        {
+                            syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
+                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
+                        }
                         break;
                     };
                 case MemberType.Property:
