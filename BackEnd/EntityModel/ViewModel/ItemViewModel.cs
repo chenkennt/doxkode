@@ -6,27 +6,6 @@ namespace DocAsCode.EntityModel
 {
     public class ItemViewModel : Dictionary<string, object>
     {
-        private static List<string> FullMetadataList = new List<string>
-                                                           {
-                                                               "uid",
-                                                               "href",
-                                                               "name",
-                                                               "fullName",
-                                                               "type",
-                                                               "source",
-                                                               "summary",
-                                                               "syntax",
-                                                               "inheritance",
-                                                               "parent",
-                                                               "id",
-                                                               "children",
-                                                           };
-
-        private static List<string> LiteMetadataList = new List<string>
-                                                           {
-                                                               "uid", "href", "name", "type", "summary"
-                                                           };
-
         public ItemViewModel() : base()
         {
             
@@ -49,18 +28,7 @@ namespace DocAsCode.EntityModel
             }
         }
 
-        public static ItemViewModel Convert(MetadataItem item)
-        {
-            return Convert(item, FullMetadataList);
-        }
-
-
-        public static ItemViewModel LiteConvert(MetadataItem item)
-        {
-            return Convert(item, LiteMetadataList);
-        }
-
-        private static ItemViewModel Convert(MetadataItem item, List<string> keys)
+        public static ItemViewModel Convert(MetadataItem item, List<string> keys)
         {
             ItemViewModel viewModel = new ItemViewModel();
             keys.ForEach(s => viewModel.AddMetadataPair(s, item));

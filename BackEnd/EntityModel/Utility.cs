@@ -323,7 +323,7 @@ namespace DocAsCode.EntityModel
         /// <returns></returns>
         public static bool AllowMultipleItems(this MemberType type)
         {
-            return type == MemberType.Toc || type == MemberType.Class || type == MemberType.Enum || type == MemberType.Delegate || type == MemberType.Interface || type == MemberType.Struct;
+            return type == MemberType.Class || type == MemberType.Enum || type == MemberType.Delegate || type == MemberType.Interface || type == MemberType.Struct;
         }
 
         public static MetadataItem Shrink(this MetadataItem item)
@@ -378,7 +378,7 @@ namespace DocAsCode.EntityModel
             MetadataItem shrinkedItem = new MetadataItem();
             shrinkedItem.Name = item.Name;
             shrinkedItem.DisplayNames = item.DisplayNames;
-
+            shrinkedItem.Type = item.Type;
             shrinkedItem.Href = item.Href;
             shrinkedItem.Items = null;
 

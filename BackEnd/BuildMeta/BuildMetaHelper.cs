@@ -402,18 +402,19 @@ namespace DocAsCode.BuildMeta
         private static ParseResult ResolveAndExportYamlMetadata(Dictionary<string, MetadataItem> allMembers, string folder, string indexFileName, string tocFileName, string apiFolder)
         {
             var model = YamlMetadataResolver.ResolveMetadata(allMembers, apiFolder);
-            // 1. generate toc.yaml
+            // 1. generate toc.yml
             model.TocYamlViewModel.Href = tocFileName;
             model.TocYamlViewModel.Type = MemberType.Toc;
 
-            var tocViewModel = OnePageViewModel.Convert(model.TocYamlViewModel).Items;
+            // TOC do not change
+            var tocViewModel = TocViewModel.Convert(model.TocYamlViewModel);
             string tocFilePath = Path.Combine(folder, tocFileName);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
                 YamlUtility.Serialize(sw, tocViewModel);
             }
 
-            // 2. generate api.yaml
+            // 2. generate api.yml
             string indexFilePath = Path.Combine(folder, indexFileName);
             using (StreamWriter sw = new StreamWriter(indexFilePath))
             {
