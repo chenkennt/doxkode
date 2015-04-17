@@ -11,6 +11,8 @@ namespace DocAsCode.BuildMeta
 {
     public class BuildMarkdownIndexHelper
     {
+        private static readonly Dictionary<string, int> ReferencedFileLengthCache = new Dictionary<string, int>();
+
         public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName, string referenceFolderName)
         {
             Dictionary<string, MarkdownIndex> table = new Dictionary<string, MarkdownIndex>();
@@ -31,7 +33,7 @@ namespace DocAsCode.BuildMeta
                 }
 
                 string destFileName = Path.Combine(apiFolder, file.ToValidFilePath());
-                string resolvedContent = string.Empty;
+                string resolvedContent;
                 try
                 {
                     string input = File.ReadAllText(file);
@@ -90,6 +92,9 @@ namespace DocAsCode.BuildMeta
         /// Not doing duplication check here, do it outside
         /// </summary>
         /// <param name="markdownFilePath"></param>
+        /// <param name="resolvedContent"></param>
+        /// <param name="referenceFolder"></param>
+        /// <param name="yamlHandler"></param>
         /// <param name="markdown"></param>
         /// <returns></returns>
         public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, string referenceFolder, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
@@ -189,7 +194,6 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static Dictionary<string, int> referencedFileLengthCache = new Dictionary<string, int>();
 
         /// <summary>
         /// Extrac code snippet from markdown files.
@@ -228,7 +232,7 @@ namespace DocAsCode.BuildMeta
                     string destFile = Path.Combine(referenceFolder, sourceFile.ToValidFilePath());
                     sourceFile = Path.Combine(section.Remote.LocalWorkingDirectory, sourceFile);
 
-                    if (!referencedFileLengthCache.ContainsKey(destFile))
+                    if (!ReferencedFileLengthCache.ContainsKey(destFile))
                     {
                         try
                         {
@@ -261,10 +265,10 @@ namespace DocAsCode.BuildMeta
                             }
 
                             int fileLength;
-                            if(!referencedFileLengthCache.TryGetValue(destFile, out fileLength))
+                            if(!ReferencedFileLengthCache.TryGetValue(destFile, out fileLength))
                             {
                                 fileLength = File.ReadLines(destFile).Count();
-                                referencedFileLengthCache.Add(destFile, fileLength);
+                                ReferencedFileLengthCache.Add(destFile, fileLength);
                             }
 
                             if (string.IsNullOrEmpty(lines[1]))
