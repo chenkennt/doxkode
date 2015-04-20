@@ -6,12 +6,12 @@ items:
   type: Class
   source:
     remote: &o0
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 10
-  summary: Class to test property
+  summary: 'Class to test property in *BaseClass* to be inherited by: [Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA](#)  .'
   syntax:
     content:
       CSharp: public class TestProperty
@@ -30,7 +30,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 12
   syntax:
     content:
@@ -49,7 +49,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 18
   syntax:
     content:

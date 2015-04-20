@@ -6,10 +6,10 @@ items:
   type: Class
   source:
     remote: &o0
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 42
   summary: This is the BaseClass
   syntax:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 43
   syntax:
     content:

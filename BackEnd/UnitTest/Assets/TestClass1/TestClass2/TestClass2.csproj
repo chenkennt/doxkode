@@ -49,10 +49,6 @@
       <Project>{d10fa863-a24c-4a2e-b861-6b5ed9688e6d}</Project>
       <Name>BaseClassForTestClass1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestClass1\TestClass1.csproj">
-      <Project>{4f84505b-ddf3-40a4-9f19-164b7a77acbe}</Project>
-      <Name>TestClass1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

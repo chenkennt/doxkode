@@ -18,122 +18,11 @@
     href: api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.yml
   - name: ExplicitLayoutClass
     href: api/Microsoft.DevDiv.ExplicitLayoutClass.yml
-- name: TestLibraryA
-  href: api/Microsoft.DevDiv.Build.TestLibraryA.yml
-  items:
-  - name: TestLibraryA
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yml
-  - name: ColorType
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yml
-  - name: Stack<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
-  - name: AbstractClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
-  - name: DerivedClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yml
-  - name: ISurface
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
-  - name: LinkedListInterface<K, T, L>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3.yml
-  - name: LinkedListInterface2<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1.yml
-  - name: LinkedListInterface3
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yml
-  - name: StackDelegate<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1.yml
-  - name: StackIntDelegate<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1.yml
-  - name: StackTemplateDelegate<K, T, L>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3.yml
-  - name: StackChild<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yml
-  - name: INestInterface
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yml
-  - name: ImplementISurface
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
-  - name: LinkedList<K, T, L>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yml
-  - name: EventInfoArgs
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yml
-  - name: StackSealedChild<T>
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yml
-  - name: StaticClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yml
 - name: CustomExtensionMethods
   href: api/CustomExtensionMethods.yml
   items:
-  - name: stringExtension
-    href: api/CustomExtensionMethods.stringExtension.yml
-- name: TestLibraryB
-  href: api/Microsoft.DevDiv.Build.TestLibraryB.yml
-  items:
-  - name: TestLibraryB
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB.yml
-  - name: TestLibraryBInterfaceBase
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryBInterfaceBase.yml
-  - name: TestLibraryB2
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yml
-  - name: TestPublicStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yml
-  - name: TestSerializableStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSerializableStruct.yml
-  - name: TestAutoStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestAutoStruct.yml
-  - name: TestSequentialStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestSequentialStruct.yml
-  - name: TestExplicitStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestExplicitStruct.yml
-  - name: TestTemplatesImplementsList<K, T, L, M>
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestTemplatesImplementsList`4.yml
-  - name: TestElementsStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.yml
-  - name: ChangedEventHandler
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestElementsStruct.ChangedEventHandler.yml
-  - name: TestContainerStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.yml
-  - name: TestSubStruct
-    href: api/Microsoft.DevDiv.Build.TestLibraryB.TestContainerStruct.TestSubStruct.yml
-- name: TestLibraryB2
-  href: api/Microsoft.DevDiv.Build.TestLibraryB2.yml
-  items:
-  - name: ISurfaceA
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
-  - name: ISurfaceB
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceB.yml
-  - name: ISurfaceC
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
-  - name: ISurfaceD
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceD.yml
-  - name: OuterClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.yml
-  - name: InnerClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.yml
-  - name: InnerClassReturn
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.OuterClass.InnerClass.InnerClassReturn.yml
-  - name: Abstract
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.Abstract.yml
-  - name: Derived
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.Derived.yml
-  - name: ContainersRefTypeDelegate
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ContainersRefTypeDelegate.yml
-  - name: delegateFunc<T1, T2, T3, TResult>
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`4.yml
-  - name: delegateFunc<T1, T2>
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc`2.yml
-  - name: delegateFunc
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.delegateFunc.yml
-  - name: CaseSensitiveClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.yml
-  - name: boolClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.boolClass.yml
-  - name: BoolClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.CaseSensitiveClass.BoolClass.yml
-  - name: PrivateCtorSealedClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorSealedClass.yml
-  - name: PrivateCtorClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.PrivateCtorClass.yml
-  - name: ProtectedCtorClass
-    href: api/Microsoft.DevDiv.Build.TestLibraryB2.ProtectedCtorClass.yml
+  - name: StringExtension
+    href: api/CustomExtensionMethods.StringExtension.yml
 - name: VBTestClass1
   href: api/VBTestClass1.yml
   items:
@@ -152,6 +41,8 @@
     href: api/CatLibrary.Cat`2.yml
   - name: Tom
     href: api/CatLibrary.Tom.yml
+  - name: TomFromBaseClass
+    href: api/CatLibrary.TomFromBaseClass.yml
   - name: ICatExtension
     href: api/CatLibrary.ICatExtension.yml
   - name: MRefNormalDelegate

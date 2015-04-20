@@ -6,16 +6,17 @@ items:
   type: Namespace
   source:
     remote:
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 895
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    startLine: 123
   id: CustomExtensionMethods
   children:
-  - CustomExtensionMethods.stringExtension
+  - CustomExtensionMethods.StringExtension
 references:
-- uid: CustomExtensionMethods.stringExtension
-  href: CustomExtensionMethods.stringExtension.yml
-  name: stringExtension
+- uid: CustomExtensionMethods.StringExtension
+  href: CustomExtensionMethods.StringExtension.yml
+  name: StringExtension
   type: Class
+  summary: '**Where** should `extension` method go? It is the extension method for [System.String](#).'

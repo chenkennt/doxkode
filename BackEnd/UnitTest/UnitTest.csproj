@@ -139,18 +139,6 @@
     <None Include="Assets\TestClass1\BaseClassForTestClass1\Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Assets\TestClass1\TestClass1\Class1.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\TestClass1\TestClass1\Properties\AssemblyInfo.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\TestClass1\TestClass2\Class1.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\TestClass1\TestClass2\Properties\AssemblyInfo.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Assets\TestClass1\CatLibrary\Class1.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -189,12 +177,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Assets\TestClass1\TestClass1.sln">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\TestClass1\TestClass1\TestClass1.csproj">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Assets\TestClass1\TestClass2\TestClass2.csproj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

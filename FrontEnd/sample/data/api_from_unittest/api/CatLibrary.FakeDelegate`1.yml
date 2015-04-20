@@ -6,11 +6,11 @@ items:
   type: Delegate
   source:
     remote:
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/CatLibrary/Class1.cs
-    startLine: 332
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    startLine: 349
   summary: Fake delegate
   syntax:
     content:

@@ -37,7 +37,7 @@ namespace UnitTest
         [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll")]
         public async Task TestGenereateMetadataAsync_Solution_Overall()
         {
-            string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\TestClass1\TestClass1.csproj" };
+            string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\CatLibrary\CatLibrary.csproj" };
             string fileList = "filelist.list";
             File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
             string outputList = "obj/inter.list";
@@ -50,27 +50,6 @@ namespace UnitTest
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             Assert.Fail();
-        }
-
-        [TestMethod]
-        [DeploymentItem("Assets", "Assets")]
-        [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.dll")]
-        [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll")]
-        public async Task TestGenereateMetadataAsync_CsharpProject()
-        {
-            string[] slnPath = new string[] { @"Assets\TestClass1\TestClass2\TestClass2.csproj" };
-            string fileList = "filelist.list";
-            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
-            string outputList = Path.GetRandomFileName() + ".list";
-            string outputDirectory = "output";
-            string mdList = "md.list";
-            File.WriteAllText(mdList, "Assets/Markdown/About.md");
-            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md",  "reference");
-            Console.WriteLine(Path.GetFullPath(outputDirectory));
-            Assert.IsTrue(Directory.Exists(outputDirectory));
-            //Assert.Fail();
         }
 
         [TestMethod]

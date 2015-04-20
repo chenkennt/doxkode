@@ -6,10 +6,10 @@ items:
   type: Namespace
   source:
     remote:
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 6
   id: CatLibrary
   children:
@@ -17,6 +17,7 @@ items:
   - CatLibrary.ICat
   - CatLibrary.Cat`2
   - CatLibrary.Tom
+  - CatLibrary.TomFromBaseClass
   - CatLibrary.ICatExtension
   - CatLibrary.MRefNormalDelegate
   - CatLibrary.MRefDelegate`3
@@ -42,6 +43,11 @@ references:
   name: Tom
   type: Class
   summary: Tom class is only inherit from Object. Not any member inside itself.
+- uid: CatLibrary.TomFromBaseClass
+  href: CatLibrary.TomFromBaseClass.yml
+  name: TomFromBaseClass
+  type: Class
+  summary: '*TomFromBaseClass* inherits from @'
 - uid: CatLibrary.ICatExtension
   href: CatLibrary.ICatExtension.yml
   name: ICatExtension

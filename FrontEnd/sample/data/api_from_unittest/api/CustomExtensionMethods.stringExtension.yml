@@ -1,35 +1,36 @@
 items:
-- uid: CustomExtensionMethods.stringExtension
-  href: CustomExtensionMethods.stringExtension.yml
-  name: stringExtension
-  fullName: CustomExtensionMethods.stringExtension
+- uid: CustomExtensionMethods.StringExtension
+  href: CustomExtensionMethods.StringExtension.yml
+  name: StringExtension
+  fullName: CustomExtensionMethods.StringExtension
   type: Class
   source:
     remote: &o0
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-204-gf2e69c4
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 898
+      description: v0.3.0-12-ga4e8640
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    startLine: 129
+  summary: '**Where** should `extension` method go? It is the extension method for [System.String](#).'
   syntax:
     content:
-      CSharp: public static class stringExtension
+      CSharp: public static class StringExtension
   inheritance:
   - id: System.Object
     name: System.Object
     isExternal: true
-  id: CustomExtensionMethods.stringExtension
+  id: CustomExtensionMethods.StringExtension
   children:
-  - CustomExtensionMethods.stringExtension.WordCount(System.String)
-- uid: CustomExtensionMethods.stringExtension.WordCount(System.String)
-  href: CustomExtensionMethods.stringExtension.yml
+  - CustomExtensionMethods.StringExtension.WordCount(System.String)
+- uid: CustomExtensionMethods.StringExtension.WordCount(System.String)
+  href: CustomExtensionMethods.StringExtension.yml
   name: WordCount(string)
-  fullName: CustomExtensionMethods.stringExtension.WordCount(string)
+  fullName: CustomExtensionMethods.StringExtension.WordCount(string)
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
-    startLine: 907
+    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    startLine: 138
   summary: extension method
   syntax:
     content:
@@ -44,4 +45,4 @@ items:
     return:
       id: Int32
       description: int
-  id: CustomExtensionMethods.stringExtension.WordCount(System.String)
+  id: CustomExtensionMethods.StringExtension.WordCount(System.String)
