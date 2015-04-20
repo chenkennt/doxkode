@@ -204,6 +204,7 @@
         // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
         var item = items[0];
         references = items.slice(1).concat(references || []);
+        if (item.children){
           var children = [];
           for(var i = 0, l = item.children.length; i < l; i++) {
             var matched = references.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
@@ -212,6 +213,7 @@
             }
           }
           item.items = children;
+        }
 
         partialModel.model = item;
         partialModel.title = item.name;
