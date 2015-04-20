@@ -22,11 +22,11 @@
           <div class="">
             <div ng-repeat="inhe in ::model.inheritance">
               <span ng-repeat="i in ::getNumber($index) track by $index"></span>↳
-              <a ng-href="{{::getLinkHref(inhe.href)}}">{{::inhe.id}}</a>
+              <a ng-href="{{::getLinkHref(inhe.href)}}">{{::inhe.name}}</a>
             </div>
             <div class="">
               <span ng-repeat="i in ::getNumber(model.inheritance.length) track by $index"></span>↳
-              <a>{{::model.id}}</a>
+              <a>{{::model.name}}</a>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
-                <div class="item-title"
-                  {{::item.name.replace(',', ', ').replace(',', ', ').replace(',', ', ')}}
+                <div class="item-title">
+                  {{item.name}}
                 </div>
               </a>
             </div>

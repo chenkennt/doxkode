@@ -27,7 +27,7 @@
           <tr ng-repeat="item in model.items" ng-show="item.type==itemtype.name">
             <td>
               <a href="{{::getLinkHref(item.href)}}">
-                {{item.id.replace(model.id + '.', '')}}
+                {{item.name}}
               </a>
             </td>
             <td>
