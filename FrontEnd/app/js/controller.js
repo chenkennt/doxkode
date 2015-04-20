@@ -86,8 +86,9 @@
 
     // expand / collapse all logic for model items
     function expandAll(state) {
-      if ($scope.partialModel.items) {
-        $scope.partialModel.items.forEach(function(e) {
+      var partialModel = $scope.partialModel? $scope.partialModel.model : null;
+      if (partialModel && partialModel.items) {
+        partialModel.items.forEach(function(e) {
           e.showDetail = state;
         });
       }
