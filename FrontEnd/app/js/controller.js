@@ -257,10 +257,12 @@
     // BUG? method's binding works? looks like not
     function mdIndexWatcher(path) {
         if ($scope.mdIndex && $scope.partialModel) {
-            var mdPath = $scope.mdIndex[$scope.partialModel.id];
+          var partialModel = $scope.partialModel.model;
+          if (partialModel){
+            var mdPath = $scope.mdIndex[partialModel.id];
             if (mdPath) {
                 if (mdPath.href) {
-                    $scope.partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+                    partialModel.mdHref = urlService.getRemoteUrl(mdPath);
                     var tocPath = urlService.getPathInfo($location.path()).tocPath;
                     var href = (tocPath || '') + '/' + mdPath.href;
                     var getMdIndex = contentService.getMarkdownContent(href).then(
@@ -272,14 +274,17 @@
                                   var item = mdPath.items[i];
                                   promise = promise.then(makeThenFunction(item, tocPath, mdPath, md));
                               }
-                              promise.then(function(md){$scope.partialModel.mdContent = md;});
+                              promise.then(function(md){
+                                partialModel.mdContent = md;
+                              });
                           }
                           else{
-                              $scope.partialModel.mdContent = md;
+                              partialModel.mdContent = md;
                           }
                       });
                 }
             }
+          }
         }
     }
 

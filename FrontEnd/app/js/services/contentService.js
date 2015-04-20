@@ -65,7 +65,7 @@
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
       var pathInfo = urlService.getPathInfo(path);
-      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + 'md.yaml');
+      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + constants.MdIndexFile);
 
       if (path) {
         tempMdIndex = mdIndexCache.get(path);
