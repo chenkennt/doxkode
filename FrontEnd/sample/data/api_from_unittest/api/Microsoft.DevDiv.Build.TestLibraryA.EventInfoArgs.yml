@@ -1,0 +1,67 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yml
+  name: EventInfoArgs
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  type: Class
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 764
+  syntax:
+    content:
+      CSharp: public class EventInfoArgs
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  - id: System.EventArgs
+    name: System.EventArgs
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
+  - Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yml
+  name: EventInfoArgs(string)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventInfoArgs(string)
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 766
+  syntax:
+    content:
+      CSharp: public EventInfoArgs(string eventProperty)
+    parameters:
+    - id: eventProperty
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.#ctor(System.String)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yml
+  name: EventProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 771
+  syntax:
+    content:
+      CSharp: public string EventProperty { get; private set; }
+    parameters:
+    - id: EventProperty
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.EventProperty

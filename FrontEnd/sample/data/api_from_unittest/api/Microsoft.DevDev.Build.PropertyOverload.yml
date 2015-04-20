@@ -1,0 +1,22 @@
+items:
+- uid: Microsoft.DevDev.Build.PropertyOverload
+  href: Microsoft.DevDev.Build.PropertyOverload.yml
+  name: PropertyOverload
+  fullName: Microsoft.DevDev.Build.PropertyOverload
+  type: Namespace
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 5
+  id: Microsoft.DevDev.Build.PropertyOverload
+  children:
+  - Microsoft.DevDev.Build.PropertyOverload.TestProperty
+references:
+- uid: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+  href: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yml
+  name: TestProperty
+  type: Class
+  summary: Class to test property

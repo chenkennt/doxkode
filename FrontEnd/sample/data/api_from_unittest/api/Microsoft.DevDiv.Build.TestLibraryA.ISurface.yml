@@ -1,0 +1,73 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
+  name: ISurface
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  type: Interface
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 163
+  summary: base interface ISurface
+  syntax:
+    content:
+      CSharp: public interface ISurface
+  id: Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC
+  - Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod
+  - Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC
+  href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
+  name: ParamC
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 169
+  summary: property ParamC
+  syntax:
+    content:
+      CSharp: long ParamC { get; }
+    parameters:
+    - id: ParamC
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.ISurface.ParamC
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod
+  href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
+  name: AddMethod()
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 175
+  summary: AddMethod
+  syntax:
+    content:
+      CSharp: void AddMethod();
+    parameters: []
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ISurface.AddMethod
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler
+  href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
+  name: eventHandler
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 181
+  summary: event
+  syntax:
+    content:
+      CSharp: eventHandler
+  id: Microsoft.DevDiv.Build.TestLibraryA.ISurface.eventHandler

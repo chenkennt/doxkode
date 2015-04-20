@@ -1,0 +1,142 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: AbstractClass
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  type: Class
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 102
+  syntax:
+    content:
+      CSharp: public abstract class AbstractClass
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: AbstractProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 104
+  syntax:
+    content:
+      CSharp: '[ComVisible(true)] public abstract int AbstractProperty { get; set; }'
+    parameters:
+    - id: AbstractProperty
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: AbstractProperty2
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 107
+  syntax:
+    content:
+      CSharp: public abstract Dictionary<List<string>, List<long>> AbstractProperty2 { get; set; }
+    parameters:
+    - id: AbstractProperty2
+      type:
+        id: System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Int64}}
+        name: System.Collections.Generic.Dictionary{System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Int64}}
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.AbstractProperty2
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: VirtualProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 109
+  syntax:
+    content:
+      CSharp: public virtual List<double> VirtualProperty { get; set; }
+    parameters:
+    - id: VirtualProperty
+      type:
+        id: System.Collections.Generic.List{System.Double}
+        name: System.Collections.Generic.List{System.Double}
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.VirtualProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: PrivateGetProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 111
+  syntax:
+    content:
+      CSharp: public ushort PrivateGetProperty { private get; set; }
+    parameters:
+    - id: PrivateGetProperty
+      type:
+        id: System.UInt16
+        name: System.UInt16
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateGetProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: PrivateSetProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 113
+  syntax:
+    content:
+      CSharp: public ulong PrivateSetProperty { get; private set; }
+    parameters:
+    - id: PrivateSetProperty
+      type:
+        id: System.UInt64
+        name: System.UInt64
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PrivateSetProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: PublicIntProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 115
+  syntax:
+    content:
+      CSharp: public int PublicIntProperty { get; private set; }
+    parameters:
+    - id: PublicIntProperty
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.PublicIntProperty

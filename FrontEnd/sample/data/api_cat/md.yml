@@ -1,0 +1,23 @@
+CatLibrary.IAnimal:
+  id: CatLibrary.IAnimal
+  path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/Markdown/AboutCodeSnippet.md
+  href: md/Assets_Markdown_AboutCodeSnippet.md
+  startLine: 34
+  endLine: 1001
+  remote:
+    branch: YamlFlattern
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: v0.3-201-gf3555b6
+  items:
+  - id: ../TestClass1/CatLibrary/Class1.cs[20-46]
+    path: TestResults\Deploy_lianwei 2015-04-20 12_00_23\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-20 12_00_23_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
+    startLine: 315
+    endLine: 361
+    referenceStartLine: 20
+    referenceEndLine: 46
+  - id: ../TestClass1/TestClass1/Class1.cs
+    path: TestResults\Deploy_lianwei 2015-04-20 12_00_23\Out\Assets\Markdown\..\TestClass1\TestClass1\Class1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-20 12_00_23_Out_Assets_Markdown_.._TestClass1_TestClass1_Class1.cs
+    startLine: 957
+    endLine: 996

@@ -1,0 +1,17 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
+  href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yml
+  name: LinkedListInterface3
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
+  type: Interface
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 198
+  syntax:
+    content:
+      CSharp: public interface LinkedListInterface3
+  id: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3

@@ -1,4 +1,10 @@
 #Version Note
+## lianwei@4/20/2015
+1. Change yaml file extension from .yaml to standard .yml
+2. Change toc.yaml to use name-href pair
+3. Flat yaml layout according to doc/metadata_format_spec.md
+
+
 ##v0.3-125-g704ed13 lianwei@4/13/2015
 1. Use *Csharp Website* as *Documentation Website*'s template, move the *DocProjectVsix* and related *ConfigPublish* and *PublishDoc* projects into *Backup* folder
 2. Add *Install.csproj* in folder *Install* to manage generating **docascode.msi**

@@ -1,0 +1,186 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: Stack<T>
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>
+  type: Class
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 73
+  summary: test
+  syntax:
+    content:
+      CSharp: public abstract class Stack<T>
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: StackIntField
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackIntField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 75
+  syntax:
+    content:
+      CSharp: StackIntField
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntField
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: StackStaticField
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackStaticField
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 77
+  syntax:
+    content:
+      CSharp: StackStaticField
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticField
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: StackStaticProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackStaticProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 79
+  syntax:
+    content:
+      CSharp: public static int StackStaticProperty { get; set; }
+    parameters:
+    - id: StackStaticProperty
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackStaticProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: StackIntProperty
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.StackIntProperty
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 81
+  syntax:
+    content:
+      CSharp: public int StackIntProperty { get; set; }
+    parameters:
+    - id: StackIntProperty
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.StackIntProperty
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: AddAbstract()
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.AddAbstract()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 83
+  syntax:
+    content:
+      CSharp: public abstract void AddAbstract();
+    parameters: []
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: AddAbstract(string, int)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.AddAbstract(string, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 85
+  syntax:
+    content:
+      CSharp: public abstract void AddAbstract(string name, int num);
+    parameters:
+    - id: name
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: num
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.AddAbstract(System.String,System.Int32)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: OverLoadMethod(int)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.OverLoadMethod(int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 91
+  summary: Overload method a
+  syntax:
+    content:
+      CSharp: public void OverLoadMethod(int A)
+    parameters:
+    - id: A
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+      description: The input
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: OverLoadMethod(int, int)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.Stack<T>.OverLoadMethod(int, int)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 96
+  syntax:
+    content:
+      CSharp: public void OverLoadMethod(int A, int B)
+    parameters:
+    - id: A
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: B
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.OverLoadMethod(System.Int32,System.Int32)

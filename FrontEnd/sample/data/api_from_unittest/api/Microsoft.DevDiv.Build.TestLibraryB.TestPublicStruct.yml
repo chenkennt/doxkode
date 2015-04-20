@@ -1,0 +1,24 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct.yml
+  name: TestPublicStruct
+  fullName: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct
+  type: Struct
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 64
+  syntax:
+    content:
+      CSharp: public struct TestPublicStruct
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  - id: System.ValueType
+    name: System.ValueType
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB.TestPublicStruct

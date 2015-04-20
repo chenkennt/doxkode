@@ -1,0 +1,21 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+  href: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2.yml
+  name: TestLibraryB2
+  fullName: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2
+  type: Class
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 54
+  syntax:
+    content:
+      CSharp: public class TestLibraryB2
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB.TestLibraryB2

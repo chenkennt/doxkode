@@ -1,0 +1,14 @@
+items:
+- uid: VBTestClass1.My.Resources
+  href: VBTestClass1.My.Resources.yml
+  name: Resources
+  fullName: VBTestClass1.My.Resources
+  type: Namespace
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/VBTestClass1/My Project/Resources.Designer.vb
+    startLine: 14
+  id: VBTestClass1.My.Resources

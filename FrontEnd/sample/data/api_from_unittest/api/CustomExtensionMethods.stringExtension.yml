@@ -1,0 +1,47 @@
+items:
+- uid: CustomExtensionMethods.stringExtension
+  href: CustomExtensionMethods.stringExtension.yml
+  name: stringExtension
+  fullName: CustomExtensionMethods.stringExtension
+  type: Class
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 898
+  syntax:
+    content:
+      CSharp: public static class stringExtension
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: CustomExtensionMethods.stringExtension
+  children:
+  - CustomExtensionMethods.stringExtension.WordCount(System.String)
+- uid: CustomExtensionMethods.stringExtension.WordCount(System.String)
+  href: CustomExtensionMethods.stringExtension.yml
+  name: WordCount(string)
+  fullName: CustomExtensionMethods.stringExtension.WordCount(string)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 907
+  summary: extension method
+  syntax:
+    content:
+      CSharp: public static int WordCount(this String str)
+    parameters:
+    - id: str
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+      description: this
+    return:
+      id: Int32
+      description: int
+  id: CustomExtensionMethods.stringExtension.WordCount(System.String)

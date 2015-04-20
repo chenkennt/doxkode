@@ -1,0 +1,245 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: ISurfaceC
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  type: Interface
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 202
+  syntax:
+    content:
+      CSharp: public interface ISurfaceC
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double)
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double)
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64)
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double)
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String)
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[])
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: Foo()
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 204
+  syntax:
+    content:
+      CSharp: new double Foo();
+    parameters: []
+    return:
+      id: Double
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Foo
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: FooC()
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 206
+  syntax:
+    content:
+      CSharp: double FooC();
+    parameters: []
+    return:
+      id: Double
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.FooC
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double)
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: Fun(double)
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(double)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 208
+  syntax:
+    content:
+      CSharp: double Fun(double a);
+    parameters:
+    - id: a
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+    return:
+      id: Double
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Double)
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double)
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: Fun(long, double)
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(long, double)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 209
+  syntax:
+    content:
+      CSharp: double Fun(long a, double b);
+    parameters:
+    - id: a
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+    - id: b
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+    return:
+      id: Double
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Fun(System.Int64,System.Double)
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: OverrideFun()
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 211
+  syntax:
+    content:
+      CSharp: new double OverrideFun();
+    parameters: []
+    return:
+      id: Double
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.OverrideFun
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64)
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: SameNumParaFunc(string, long)
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(string, long)
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 213
+  syntax:
+    content:
+      CSharp: long SameNumParaFunc(string b, long a);
+    parameters:
+    - id: b
+      type:
+        id: System.String
+        name: System.String
+        isExternal: true
+    - id: a
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+    return:
+      id: Int64
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.SameNumParaFunc(System.String,System.Int64)
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: PropertyC
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 215
+  syntax:
+    content:
+      CSharp: double PropertyC { get; set; }
+    parameters:
+    - id: PropertyC
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.PropertyC
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: Property
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 217
+  syntax:
+    content:
+      CSharp: new double Property { get; set; }
+    parameters:
+    - id: Property
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Property
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double)
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: this[string, double]
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.this[string, double]
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 219
+  syntax:
+    content:
+      CSharp: double this[string a, double b] { get; set; }
+    parameters:
+    - id: this[]
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Double)
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String)
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: this[string]
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.this[string]
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 221
+  syntax:
+    content:
+      CSharp: new double this[string a] { get; set; }
+    parameters:
+    - id: this[]
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String)
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[])
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.yml
+  name: this[string, object, params object[]]
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.this[string, object, params object[]]
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 223
+  syntax:
+    content:
+      CSharp: double this[string a, object b, params object[] c] { get; set; }
+    parameters:
+    - id: this[]
+      type:
+        id: System.Double
+        name: System.Double
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceC.Item(System.String,System.Object,System.Object[])

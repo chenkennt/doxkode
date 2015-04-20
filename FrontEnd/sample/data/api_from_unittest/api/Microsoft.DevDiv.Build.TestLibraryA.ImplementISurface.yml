@@ -1,0 +1,245 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ImplementISurface
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  type: Class
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 645
+  syntax:
+    content:
+      CSharp: public sealed class ImplementISurface
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32)
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32,System.Int32)
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: b
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b
+  type: Field
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 648
+  syntax:
+    content:
+      CSharp: b
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.b
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: AddMethod()
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 657
+  syntax:
+    content:
+      CSharp: public void AddMethod()
+    parameters: []
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.AddMethod
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ImplementISurface()
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ImplementISurface()
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 671
+  summary: Class Implements ISurface
+  syntax:
+    content:
+      CSharp: public ImplementISurface()
+    parameters: []
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ImplementISurface(int, int)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ImplementISurface(int, int)
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 678
+  syntax:
+    content:
+      CSharp: public ImplementISurface(int a, int b)
+    parameters:
+    - id: a
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: b
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32,System.Int32)
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ImplementISurface(int, int, int)
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ImplementISurface(int, int, int)
+  type: Constructor
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 685
+  syntax:
+    content:
+      CSharp: public ImplementISurface(int a, int b, int c)
+    parameters:
+    - id: a
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: b
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    - id: c
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.#ctor(System.Int32,System.Int32,System.Int32)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: MultiMethod()
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 692
+  syntax:
+    content:
+      CSharp: '[ComVisible(true)] [CLSCompliant(false)] public void MultiMethod()'
+    parameters: []
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.MultiMethod
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: eventHandler
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 700
+  syntax:
+    content:
+      CSharp: public event EventHandler<EventInfoArgs> eventHandler;
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: eventHandler.add
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler.add
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 702
+  syntax:
+    content:
+      CSharp: add { eventHandler += value; }
+    parameters:
+    - id: value
+      type:
+        id: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        name: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.add_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: eventHandler.remove
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.eventHandler.remove
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 706
+  syntax:
+    content:
+      CSharp: remove { eventHandler -= value; }
+    parameters:
+    - id: value
+      type:
+        id: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        name: System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs}
+        isExternal: true
+    return:
+      id: Void
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.remove_eventHandler(System.EventHandler{Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs})
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ParamC
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 713
+  syntax:
+    content:
+      CSharp: public long ParamC { get; }
+    parameters:
+    - id: ParamC
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamC
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ParamA
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 721
+  syntax:
+    content:
+      CSharp: public long ParamA { set; }
+    parameters:
+    - id: ParamA
+      type:
+        id: System.Int64
+        name: System.Int64
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.ParamA

@@ -1,0 +1,106 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: ISurfaceA
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  type: Interface
+  source:
+    remote: &o0
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 168
+  syntax:
+    content:
+      CSharp: public interface ISurfaceA
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+  - Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: Foo()
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 170
+  syntax:
+    content:
+      CSharp: int Foo();
+    parameters: []
+    return:
+      id: Int32
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Foo
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: FooA()
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA()
+  type: Method
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 171
+  syntax:
+    content:
+      CSharp: int FooA();
+    parameters: []
+    return:
+      id: Int32
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.FooA
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: PropertyA
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 173
+  syntax:
+    content:
+      CSharp: int PropertyA { get; }
+    parameters:
+    - id: PropertyA
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.PropertyA
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: Property
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+  type: Property
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 174
+  syntax:
+    content:
+      CSharp: int Property { get; }
+    parameters:
+    - id: Property
+      type:
+        id: System.Int32
+        name: System.Int32
+        isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.Property
+- uid: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
+  href: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.yml
+  name: otherEventHandler
+  fullName: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler
+  type: Event
+  source:
+    remote: *o0
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass1/Class1.cs
+    startLine: 176
+  syntax:
+    content:
+      CSharp: otherEventHandler
+  id: Microsoft.DevDiv.Build.TestLibraryB2.ISurfaceA.otherEventHandler

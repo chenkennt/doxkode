@@ -1,0 +1,21 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StaticClass
+  href: Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yml
+  name: StaticClass
+  fullName: Microsoft.DevDiv.Build.TestLibraryA.StaticClass
+  type: Class
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 791
+  syntax:
+    content:
+      CSharp: public static class StaticClass
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.Build.TestLibraryA.StaticClass

@@ -1,0 +1,21 @@
+items:
+- uid: Microsoft.DevDiv.ExplicitLayoutClass
+  href: Microsoft.DevDiv.ExplicitLayoutClass.yml
+  name: ExplicitLayoutClass
+  fullName: Microsoft.DevDiv.ExplicitLayoutClass
+  type: Class
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 887
+  syntax:
+    content:
+      CSharp: public class ExplicitLayoutClass
+  inheritance:
+  - id: System.Object
+    name: System.Object
+    isExternal: true
+  id: Microsoft.DevDiv.ExplicitLayoutClass

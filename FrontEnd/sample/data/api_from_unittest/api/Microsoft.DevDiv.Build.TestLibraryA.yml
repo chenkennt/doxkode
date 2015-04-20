@@ -1,0 +1,116 @@
+items:
+- uid: Microsoft.DevDiv.Build.TestLibraryA
+  href: Microsoft.DevDiv.Build.TestLibraryA.yml
+  name: TestLibraryA
+  fullName: Microsoft.DevDiv.Build.TestLibraryA
+  type: Namespace
+  source:
+    remote:
+      branch: YamlFlattern
+      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+      description: v0.3-204-gf2e69c4
+    path: TestResults/Deploy_lianwei 2015-04-20 13_33_03/Out/Assets/TestClass1/TestClass2/Class1.cs
+    startLine: 26
+  id: Microsoft.DevDiv.Build.TestLibraryA
+  children:
+  - Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+  - Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+  - Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  - Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  - Microsoft.DevDiv.Build.TestLibraryA.DerivedClass
+  - Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  - Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3
+  - Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1
+  - Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
+  - Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1
+  - Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1
+  - Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3
+  - Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+  - Microsoft.DevDiv.Build.TestLibraryA.INestInterface
+  - Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  - Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3
+  - Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  - Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
+  - Microsoft.DevDiv.Build.TestLibraryA.StaticClass
+references:
+- uid: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA
+  href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.yml
+  name: TestLibraryA
+  type: Class
+  summary: Partial class is not currently *supported*...
+- uid: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType
+  href: Microsoft.DevDiv.Build.TestLibraryA.TestLibraryA.ColorType.yml
+  name: ColorType
+  type: Enum
+  summary: This is an **ENUM** [System.Tuple](#)
+- uid: Microsoft.DevDiv.Build.TestLibraryA.Stack`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.Stack`1.yml
+  name: Stack<T>
+  type: Class
+  summary: test
+- uid: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass
+  href: Microsoft.DevDiv.Build.TestLibraryA.AbstractClass.yml
+  name: AbstractClass
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass
+  href: Microsoft.DevDiv.Build.TestLibraryA.DerivedClass.yml
+  name: DerivedClass
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ISurface
+  href: Microsoft.DevDiv.Build.TestLibraryA.ISurface.yml
+  name: ISurface
+  type: Interface
+  summary: base interface ISurface
+- uid: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3
+  href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface`3.yml
+  name: LinkedListInterface<K, T, L>
+  type: Interface
+- uid: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface2`1.yml
+  name: LinkedListInterface2<T>
+  type: Interface
+- uid: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3
+  href: Microsoft.DevDiv.Build.TestLibraryA.LinkedListInterface3.yml
+  name: LinkedListInterface3
+  type: Interface
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackDelegate`1.yml
+  name: StackDelegate<T>
+  type: Delegate
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackIntDelegate`1.yml
+  name: StackIntDelegate<T>
+  type: Delegate
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackTemplateDelegate`3.yml
+  name: StackTemplateDelegate<K, T, L>
+  type: Delegate
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackChild`1.yml
+  name: StackChild<T>
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.INestInterface
+  href: Microsoft.DevDiv.Build.TestLibraryA.INestInterface.yml
+  name: INestInterface
+  type: Interface
+  summary: see cref = "Microsoft.DevDiv.Build.TestLibraryA.ISurface"
+- uid: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface
+  href: Microsoft.DevDiv.Build.TestLibraryA.ImplementISurface.yml
+  name: ImplementISurface
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3
+  href: Microsoft.DevDiv.Build.TestLibraryA.LinkedList`3.yml
+  name: LinkedList<K, T, L>
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs
+  href: Microsoft.DevDiv.Build.TestLibraryA.EventInfoArgs.yml
+  name: EventInfoArgs
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1
+  href: Microsoft.DevDiv.Build.TestLibraryA.StackSealedChild`1.yml
+  name: StackSealedChild<T>
+  type: Class
+- uid: Microsoft.DevDiv.Build.TestLibraryA.StaticClass
+  href: Microsoft.DevDiv.Build.TestLibraryA.StaticClass.yml
+  name: StaticClass
+  type: Class

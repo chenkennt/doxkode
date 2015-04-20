@@ -49,7 +49,7 @@ namespace UnitTest
             await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
-            //Assert.Fail();
+            Assert.Fail();
         }
 
         [TestMethod]
