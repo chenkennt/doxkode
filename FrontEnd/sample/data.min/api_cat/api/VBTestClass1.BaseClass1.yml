@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-17-gf1557bf
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+      description: v0.3.0-18-g495212f
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 42
   summary: This is the BaseClass
   syntax:
@@ -29,7 +29,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 43
   syntax:
     content:

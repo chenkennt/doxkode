@@ -145,7 +145,7 @@
             var syntaxRef = symbol.DeclaringSyntaxReferences.LastOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
-                return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
+                return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly?.Name };
             }
 
             var syntaxNode = syntaxRef.GetSyntax();

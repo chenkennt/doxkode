@@ -165,7 +165,10 @@
                 item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
             }
 
-            item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
+            if (!symbol.ReturnsVoid)
+            {
+                item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
+            }
 
             if (item.Syntax.Parameters == null)
             {

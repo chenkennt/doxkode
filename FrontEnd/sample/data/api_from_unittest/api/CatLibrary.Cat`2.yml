@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-17-gf1557bf
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3.0-18-g495212f
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 112
   summary: 'Here''s main class of this Demo.You can see mostly type of article within this class and you for more detail, please see the remarks.this class is a template class. It has two Generic parameter. they are:  and .The extension method of this class can refer to  class'
   syntax:
@@ -42,15 +42,13 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 121
   summary: Default constructor.
   syntax:
     content:
       CSharp: public Cat()
     parameters: []
-    return:
-      id: Void
   id: CatLibrary.Cat`2.#ctor
 - uid: CatLibrary.Cat`2.#ctor(`0)
   href: CatLibrary.Cat`2.yml
@@ -59,7 +57,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 127
   summary: Constructor with one generic parameter.
   syntax:
@@ -72,8 +70,6 @@ items:
         name: T
         href: T
       description: This parameter type defined by class.
-    return:
-      id: Void
   id: CatLibrary.Cat`2.#ctor(`0)
 - uid: CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean)
   href: CatLibrary.Cat`2.yml
@@ -82,7 +78,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 136
   summary: It's a complex constructor. The parameter will have some attributes.
   syntax:
@@ -113,8 +109,6 @@ items:
         name: System.Boolean
         isExternal: true
       description: It's an in parameter.
-    return:
-      id: Void
   id: CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean)
 - uid: CatLibrary.Cat`2.CalculateFood(System.DateTime)
   href: CatLibrary.Cat`2.yml
@@ -123,7 +117,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 144
   summary: It's a method with complex return type.
   syntax:
@@ -147,7 +141,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 152
   summary: This method have attribute above it.
   syntax:
@@ -172,8 +166,6 @@ items:
         name: System.Boolean
         isExternal: true
       description: Hint whether this cat has cheat mode.
-    return:
-      id: Void
   id: CatLibrary.Cat`2.Jump(`0,`1,System.Boolean@)
 - uid: CatLibrary.Cat`2.Equals(System.Object)
   href: CatLibrary.Cat`2.yml
@@ -182,7 +174,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 163
   summary: Override the method of Object.Equals(object obj).
   syntax:
@@ -206,7 +198,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 171
   summary: It's an unsafe method.
   syntax:
@@ -234,7 +226,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 180
   summary: Addition operator of this class.
   syntax:
@@ -264,7 +256,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 185
   summary: Similar with operaotr +, refer to that topic.
   syntax:
@@ -291,7 +283,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 193
   summary: >-
     Expilicit operator of this class.
@@ -318,7 +310,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 201
   summary: This is index property of Cat. You can see that the visibility is different between get and set method.
   syntax:
@@ -338,7 +330,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 220
   summary: Eat event of this cat
   syntax:
@@ -352,7 +344,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 228
   summary: Field with attribute.
   syntax:
@@ -366,7 +358,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 252
   summary: EII property.
   syntax:

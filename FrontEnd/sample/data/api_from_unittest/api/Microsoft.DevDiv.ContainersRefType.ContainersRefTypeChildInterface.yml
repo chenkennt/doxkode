@@ -8,8 +8,8 @@ items:
     remote:
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-17-gf1557bf
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+      description: v0.3.0-18-g495212f
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 95
   syntax:
     content:

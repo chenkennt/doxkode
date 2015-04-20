@@ -7,8 +7,8 @@
     <ProjectGuid>{AA8AA0EE-C15B-4539-87DC-A2472E80EC2B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTest</RootNamespace>
-    <AssemblyName>UnitTest</AssemblyName>
+    <RootNamespace>Docascode.UnitTest</RootNamespace>
+    <AssemblyName>Docascode.UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -146,8 +146,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Compile Include="CommonUtiiltyUnitTest.cs" />
-    <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataUnitTest.cs" />
+    <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
+    <Compile Include="GenerateMetadataE2eUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Assets\TestClass1\VBTestClass1\My Project\Settings.settings">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

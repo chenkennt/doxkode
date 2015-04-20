@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-17-gf1557bf
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3.0-18-g495212f
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 15
   summary: This is basic interface of all animal.
   syntax:
@@ -29,7 +29,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 21
   summary: Name of Animal.
   syntax:
@@ -49,7 +49,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 28
   summary: Return specific number animal's name.
   syntax:
@@ -69,15 +69,13 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 33
   summary: Animal's eat method.
   syntax:
     content:
       CSharp: void Eat();
     parameters: []
-    return:
-      id: Void
   id: CatLibrary.IAnimal.Eat
 - uid: CatLibrary.IAnimal.Eat``1(``0)
   href: CatLibrary.IAnimal.yml
@@ -86,7 +84,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 40
   summary: Overload method of eat. This define the animal eat by which tool.
   syntax:
@@ -99,8 +97,6 @@ items:
         name: Tool
         href: Tool
       description: Tool name.
-    return:
-      id: Void
   id: CatLibrary.IAnimal.Eat``1(``0)
 - uid: CatLibrary.IAnimal.Eat(System.String)
   href: CatLibrary.IAnimal.yml
@@ -109,7 +105,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 47
   summary: Feed the animal with some food
   syntax:
@@ -122,6 +118,4 @@ items:
         name: System.String
         isExternal: true
       description: Food to eat
-    return:
-      id: Void
   id: CatLibrary.IAnimal.Eat(System.String)

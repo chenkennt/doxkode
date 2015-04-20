@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-17-gf1557bf
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+      description: v0.3.0-18-g495212f
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 33
   summary: Struct ContainersRefType
   syntax:
@@ -37,7 +37,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 39
   summary: ColorCount
   syntax:
@@ -51,7 +51,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 71
   summary: GetColorCount
   syntax:
@@ -71,7 +71,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 89
   summary: >-
     ContainersRefTypeNonRefMethod
@@ -96,7 +96,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 107
   syntax:
     content:
@@ -109,7 +109,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 109
   syntax:
     content:
@@ -120,8 +120,6 @@ items:
         id: System.EventHandler
         name: System.EventHandler
         isExternal: true
-    return:
-      id: Void
   id: Microsoft.DevDiv.ContainersRefType.add_ContainersRefTypeEventHandler(System.EventHandler)
 - uid: Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler)
   href: Microsoft.DevDiv.ContainersRefType.yml
@@ -130,7 +128,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 110
   syntax:
     content:
@@ -141,6 +139,4 @@ items:
         id: System.EventHandler
         name: System.EventHandler
         isExternal: true
-    return:
-      id: Void
   id: Microsoft.DevDiv.ContainersRefType.remove_ContainersRefTypeEventHandler(System.EventHandler)

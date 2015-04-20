@@ -197,7 +197,8 @@ namespace DocAsCode.BuildMeta
                     }
 
                     string projectFilePath;
-                    var projectMetadata = await GenerateYamlMetadataAsync(project);
+                    var compilation = await project.GetCompilationAsync();
+                    var projectMetadata = GenerateYamlMetadata(compilation);
                     var result = TryExportYamlMetadataFile(projectMetadata, outputFolder, UriKind.Absolute, out projectFilePath);
                     if (result.ResultLevel == ResultLevel.Success)
                     {
@@ -336,28 +337,27 @@ namespace DocAsCode.BuildMeta
         }
 
 
-        private static async Task<MetadataItem> GenerateYamlMetadataAsync(Project project)
+        internal static MetadataItem GenerateYamlMetadata(Compilation compilation)
         {
-            if (project == null)
+            if (compilation == null)
             {
                 return null;
             }
 
-            var compilation = await project.GetCompilationAsync();
             object visitorContext = new object();
             YamlModelGeneratorVisitor visitor;
-            if (project.Language == "Visual Basic")
+            if (compilation.Language == "Visual Basic")
             {
                 visitor = new VBYamlModelGeneratorVisitor(visitorContext);
             }
-            else if (project.Language == "C#")
+            else if (compilation.Language == "C#")
             {
                 visitor = new CSYamlModelGeneratorVisitor(visitorContext);
             }
             else
             {
-                Debug.Assert(false, "Language not supported: " + project.Language);
-                ParseResult.WriteToConsole(ResultLevel.Error, "Language not supported: " + project.Language);
+                Debug.Assert(false, "Language not supported: " + compilation.Language);
+                ParseResult.WriteToConsole(ResultLevel.Error, "Language not supported: " + compilation.Language);
                 return null;
             }
 
