@@ -2,7 +2,8 @@
 {
     using System;
 
-    using LibGit2Sharp;
+    using GitSharp;
+    using GitSharp.Commands;
 
     using YamlDotNet.Serialization;
 
@@ -53,27 +54,20 @@
             if (string.IsNullOrEmpty(path)) return detail;
             try
             {
-                var repoPath = Repository.Discover(path);
+                var repoPath = Repository.FindRepository(path);
                 if (string.IsNullOrEmpty(repoPath)) return detail;
 
                 var repo = new Repository(repoPath);
 
                 detail = new GitDetail();
-
                 // Convert to forward slash
-                detail.LocalWorkingDirectory = repo.Info.WorkingDirectory.BackSlashToForwardSlash();
+                detail.LocalWorkingDirectory = repo.WorkingDirectory.BackSlashToForwardSlash();
                 if (repo.Head == null) return detail;
-                var remote = repo.Head.Remote;
-                if (remote == null) return detail;
-                detail.RemoteRepositoryUrl = remote.Url;
-                detail.RemoteBranch = repo.Head.UpstreamBranchCanonicalName;
-                var hrefHeadIndex = detail.RemoteBranch.IndexOf("refs/heads/");
-                if (hrefHeadIndex > -1)
-                {
-                    detail.RemoteBranch = detail.RemoteBranch.Substring(hrefHeadIndex + 11);
-                }
-
-                detail.Description = repo.Describe(repo.Lookup<Commit>(repo.Head.Tip.Sha));
+                
+                var branch = repo.CurrentBranch;
+                detail.RemoteRepositoryUrl = repo.Config["remote.origin.url"];
+                detail.RemoteBranch = branch.Name;
+                detail.Description = repo.Head.CurrentCommit.ShortHash;
             }
             catch (Exception e)
             {
