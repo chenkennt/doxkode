@@ -330,6 +330,7 @@ namespace DocAsCode.EntityModel
         {
             MetadataItem shrinkedItem = new MetadataItem();
             shrinkedItem.Name = item.Name;
+
             shrinkedItem.Summary = item.Summary;
             shrinkedItem.Type = item.Type;
             shrinkedItem.Href = item.Href;
@@ -403,31 +404,6 @@ namespace DocAsCode.EntityModel
             if (item.Type == MemberType.Namespace)
             {
                 if (shrinkedItem.Items == null || shrinkedItem.Items.Count == 0) return null;
-            }
-
-            return shrinkedItem;
-        }
-
-        public static MetadataItem ShrinkChildren(this MetadataItem item)
-        {
-            if (item.Items == null)
-            {
-                return item;
-            }
-            MetadataItem shrinkedItem = (MetadataItem)item.Clone();
-            shrinkedItem.Items = new List<MetadataItem>();
-            foreach(var i in item.Items)
-            {
-                if (i.IsInvalid) continue;
-
-                if (item.Type == MemberType.Namespace)
-                {
-                    shrinkedItem.Items.Add(i.Shrink());
-                }
-                else
-                {
-                    shrinkedItem.Items.Add(i);
-                }
             }
 
             return shrinkedItem;

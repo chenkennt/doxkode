@@ -8,8 +8,8 @@ items:
     remote:
       branch: YamlFlattern
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-195-ga2c5338
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3-201-gf3555b6
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 335
   id: MRef.Demo.Enumeration
   children:
@@ -17,6 +17,6 @@ items:
 references:
 - uid: MRef.Demo.Enumeration.ColorType
   href: MRef.Demo.Enumeration.ColorType.yml
-  name: MRef.Demo.Enumeration.ColorType
+  name: ColorType
   type: Enum
   summary: Enumeration ColorType

@@ -15,7 +15,7 @@ namespace DocAsCode.EntityModel
                 {
                     if (member.Type != MemberType.Toc)
                     {
-                        yaml.Members.Add(member.ShrinkChildren());
+                        yaml.Members.Add(member);
                     }
 
                     return Task.FromResult(true);

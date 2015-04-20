@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: YamlFlattern
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-195-ga2c5338
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3-201-gf3555b6
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 53
   summary: Cat's interface
   syntax:
@@ -25,7 +25,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 59
   summary: eat event of cat. Every cat must implement this event.
   syntax:

@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: YamlFlattern
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-195-ga2c5338
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3-201-gf3555b6
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 358
   summary: Enumeration ColorType
   syntax:
@@ -37,7 +37,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 363
   summary: this color is red
   syntax:
@@ -51,7 +51,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 367
   summary: blue like river
   syntax:
@@ -65,7 +65,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-17 20_56_29/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 371
   summary: yellow comes from desert
   syntax:
