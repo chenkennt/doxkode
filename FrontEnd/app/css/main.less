@@ -3,7 +3,7 @@
 //========================================
 @brand-color: #6f0101;
 @brand-highlight: #b52e31;
-@grey: #999;
+@grey: #777;
 @grey-highlight: #000;
 @font-default: 'Segoe UI', Tahoma, Helvetica, sans-serif;
 @font-semibold: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
@@ -166,6 +166,11 @@ header .nav {
   margin-left: -15px;
 }
 
+// spacing issues with breadcrumb
+.breadcrumb>li+li:before {
+  content: "\00a0/";
+}
+
 //========================================
 //  side nav bar
 //========================================
@@ -183,7 +188,7 @@ header .nav {
 }
 
 // in desktop mode TOC is always shown
-.sidenav .nav.ng-hide {
+.sidenav-lvl-1.ng-hide {
   display: block!important;
 }
 
@@ -198,28 +203,51 @@ header .nav {
   text-decoration: inherit;
 }
 
+.sidenav .nav > li > a.sidenav-expand {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidenav-expand > .caret {
+  margin-left: 0px;
+  margin-top: -2px;
+}
+
+.sidenav-expand > .caret-side {
+  border-left: 4px solid;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  margin-left: 4px;
+  margin-top: -4px;
+}
+
 .sidenav-heading {
   font-family: @font-semibold;
 }
 
-.sidenav .sidenav-lvl-1 > li {
-    margin-bottom: 15px;
-}
-
-/* second lvl navbar grey text */
-
-.sidenav .sidenav-lvl-2 > li > a {
+.sidenav .nav > li > a {
   color: @grey;
 }
 
-.sidenav .sidenav-lvl-2 > li > a:hover,
-.sidenav .sidenav-lvl-2 > li > a:focus {
+.sidenav .nav > li > a:hover,
+.sidenav .nav > li > a:focus {
   color: @grey-highlight;
 }
 
 // highlight selected
 .sidenav .nav > li.current > a {
   color: @brand-highlight;
+}
+
+.sidenav-lvl-1 > li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sidenav-lvl-2 {
+  margin-top: 5px;
 }
 
 .toc-toggle {
@@ -232,7 +260,7 @@ header .nav {
 //========================================
 
 .article {
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -449,11 +477,11 @@ footer {
     padding-bottom: 15px;
   }
 
-  .sidenav .sidenav-lvl-2 > li {
+  .sidenav-lvl-2 > li {
     display: inline-block;
   }
 
-  .sidenav .sidenav-lvl-2 > li:after {
+  .sidenav-lvl-2 > li:after {
     margin-left: -3px;
     margin-right: 5px;
     content: ", ";
@@ -475,7 +503,7 @@ footer {
   }
 
   // in phone mode TOC can be hidden
-  .sidenav .nav.ng-hide {
+  .sidenav-lvl-1.ng-hide {
     display: none!important;
   }
 }
