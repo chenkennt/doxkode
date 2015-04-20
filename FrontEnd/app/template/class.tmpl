@@ -22,7 +22,7 @@
           <div class="">
             <div ng-repeat="inhe in ::model.inheritance">
               <span ng-repeat="i in ::getNumber($index) track by $index"></span>↳
-              <a ng-href="{{::getLinkHref(inhe.href)}}">{{::inhe.name}}</a>
+              <a ng-href="{{::getLinkHref(inhe.href)}}">{{::inhe.id}}</a>
             </div>
             <div class="">
               <span ng-repeat="i in ::getNumber(model.inheritance.length) track by $index"></span>↳
