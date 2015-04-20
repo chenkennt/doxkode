@@ -11,6 +11,7 @@ namespace DocAsCode.EntityModel
     {
         private static List<string> TocMetadataList = new List<string>
                                                            {
+                                                               "uid",
                                                                "name",
                                                                "href",
                                                            };

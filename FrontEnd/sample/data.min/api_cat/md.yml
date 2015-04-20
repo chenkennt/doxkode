@@ -1,23 +1,23 @@
-CatLibrary.IAnimal:
-  id: CatLibrary.IAnimal
-  path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/Markdown/AboutCodeSnippet.md
-  href: md/Assets_Markdown_AboutCodeSnippet.md
-  startLine: 34
-  endLine: 1001
+Microsoft.DevDev.Build.PropertyOverload.TestProperty:
+  id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
+  path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/Markdown/About.md
+  href: md/Assets_Markdown_About.md
+  startLine: 68
+  endLine: 1029
   remote:
-    branch: YamlFlattern
+    branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3-201-gf3555b6
+    description: v0.3.0-17-gf1557bf
   items:
   - id: ../TestClass1/CatLibrary/Class1.cs[20-46]
-    path: TestResults\Deploy_lianwei 2015-04-20 12_00_23\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
-    href: reference\TestResults_Deploy_lianwei 2015-04-20 12_00_23_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
-    startLine: 315
-    endLine: 361
+    path: TestResults\Deploy_lianwei 2015-04-20 15_05_50\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-20 15_05_50_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
+    startLine: 349
+    endLine: 395
     referenceStartLine: 20
     referenceEndLine: 46
-  - id: ../TestClass1/TestClass1/Class1.cs
-    path: TestResults\Deploy_lianwei 2015-04-20 12_00_23\Out\Assets\Markdown\..\TestClass1\TestClass1\Class1.cs
-    href: reference\TestResults_Deploy_lianwei 2015-04-20 12_00_23_Out_Assets_Markdown_.._TestClass1_TestClass1_Class1.cs
-    startLine: 957
-    endLine: 996
+  - id: ../TestClass1/CatLibrary/Class1.cs
+    path: TestResults\Deploy_lianwei 2015-04-20 15_05_50\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-20 15_05_50_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
+    startLine: 985
+    endLine: 1024

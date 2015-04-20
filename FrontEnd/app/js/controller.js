@@ -309,7 +309,7 @@
       }
       if (currentGroup) {
         breadcrumb.push({
-          name: currentGroup.name,
+          name: currentGroup.uid,
           url: currentGroup.href
         });
 

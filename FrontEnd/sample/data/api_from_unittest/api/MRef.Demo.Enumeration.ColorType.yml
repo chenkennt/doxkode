@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-12-ga4e8640
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3.0-17-gf1557bf
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 375
   summary: Enumeration ColorType
   syntax:
@@ -37,7 +37,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 380
   summary: this color is red
   syntax:
@@ -51,7 +51,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 384
   summary: blue like river
   syntax:
@@ -65,7 +65,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 388
   summary: yellow comes from desert
   syntax:

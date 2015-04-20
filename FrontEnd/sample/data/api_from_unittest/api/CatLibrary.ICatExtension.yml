@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-12-ga4e8640
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: v0.3.0-17-gf1557bf
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 302
   summary: >-
     It's the class that contains ICat interface's extension method.
@@ -33,7 +33,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 309
   summary: Extension method hint that how long the cat can sleep.
   syntax:
@@ -62,7 +62,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 14_34_46/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 316
   summary: Extension method to let cat play
   syntax:

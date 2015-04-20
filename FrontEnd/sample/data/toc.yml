@@ -14,7 +14,5 @@
   href: api_corefx
 - name: Test Case API
   href: api_from_unittest
-- name: Cat Test API
-  href: api_cat
 - name: External
   href: http://www.bing.com

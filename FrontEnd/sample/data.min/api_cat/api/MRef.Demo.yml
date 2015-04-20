@@ -6,9 +6,9 @@ items:
   type: Namespace
   source:
     remote:
-      branch: YamlFlattern
+      branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3-201-gf3555b6
-    path: TestResults/Deploy_lianwei 2015-04-20 12_00_23/Out/Assets/TestClass1/CatLibrary/Class1.cs
-    startLine: 335
+      description: v0.3.0-17-gf1557bf
+    path: TestResults/Deploy_lianwei 2015-04-20 15_05_50/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    startLine: 352
   id: MRef.Demo

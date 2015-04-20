@@ -5,7 +5,7 @@
       <span ng-hide="isCollapsed" class="caret"></span>
       <span ng-hide="!isCollapsed" class="caret caret-side"></span>
     </a>
-    <a ng-href="{{getTocHref(navGroup.href)}}" class="sidenav-heading">{{ navGroup.name }}</a>
+    <a ng-href="{{getTocHref(navGroup.href)}}" class="sidenav-heading">{{ navGroup.uid }}</a>
     <div collapse="isCollapsed">
       <ul ng-if="navGroup.items" class="nav nav-stacked sidenav-lvl-2">
         <li ng-repeat="navItem in navGroup.items track by $index" ng-class="tocClass(navItem)">
