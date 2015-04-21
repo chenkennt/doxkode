@@ -8,6 +8,8 @@
 @font-default: 'Segoe UI', Tahoma, Helvetica, sans-serif;
 @font-semibold: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
 @font-light: 'Segoe UI Light', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+@filter-box-background: #EEE;
+@filter-box-foreground: #666;
 
 //========================================
 //  basic style overrides
@@ -255,6 +257,24 @@ header .nav {
   margin-bottom: 10px;
 }
 
+.toc-filter{
+  border-radius: 6px;
+  margin: 3px 0 3px 8px;
+  background: @filter-box-background;
+  color: @filter-box-foreground;
+  padding: 5px;
+}
+
+.toc-filter > .filter-toc {
+  border: 0;
+  background: @filter-box-background;
+  color: @filter-box-foreground;
+}
+
+.toc-filter > input:focus {
+  outline: 0;
+}
+
 //========================================
 //  article
 //========================================
@@ -279,8 +299,8 @@ header .nav {
 }
 
 .item-header {
-  background-color: #faf0f0; 
-  padding: 5px 10px; 
+  background-color: #faf0f0;
+  padding: 5px 10px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
