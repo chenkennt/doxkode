@@ -14,6 +14,12 @@
 //========================================
 //  basic style overrides
 //========================================
+// Disable IE10's Text Input Action Icons: http://stackoverflow.com/questions/10842665/internet-explorer-10-windows-8-remove-text-input-and-password-action-icons
+::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
 html, body {
   font-family: @font-default;
   height: 100%;
@@ -269,6 +275,7 @@ header .nav {
   border: 0;
   background: @filter-box-background;
   color: @filter-box-foreground;
+  margin: -2px;
 }
 
 .toc-filter > input:focus {
