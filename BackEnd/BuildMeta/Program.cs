@@ -2,7 +2,7 @@ using System;
 using DocAsCode.Utility;
 using DocAsCode.EntityModel;
 
-namespace DocAsCode.BuildMeta
+namespace DocAsCode.EntityModel
 {
     [Flags]
     enum BuildTarget

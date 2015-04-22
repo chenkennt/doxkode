@@ -8,25 +8,29 @@ namespace DocAsCode.EntityModel.MarkdownIndexer
         // Order matters
         static List<IIndexerPipeline> pipelines = new List<IIndexerPipeline>()
         {
+            new MarkdownFileLoader(),
+            new ApiReferenceParser(),
+            new CodeSnippetParser(),
+            new FullTextIndexer(), // TODO: Ignore the text if it contains YAML HEADER?
+            new YamlHeaderParser(),
+            new IndexFileSaver(),
         };
 
         /// <summary>
         /// Save to **.md.map
         /// </summary>
-        /// <param name="allMembers"></param>
-        /// <param name="apiFolder"></param>
+        /// <param name="context"></param>
         /// <returns></returns>
-        public static MarkdownIndex ResolveMetadata(Dictionary<string, IIndexerPipeline> allMembers, string apiFolder)
+        public static MapFileItemViewModel Exec(IndexerContext context)
         {
-            MarkdownIndex viewModel = new MarkdownIndex();
-            IndexerContext context = new IndexerContext();
+            MapFileItemViewModel viewModel = new MapFileItemViewModel();
             var result = ExecutePipeline(viewModel, context);
 
             result.WriteToConsole();
             return viewModel;
         }
 
-        private static ParseResult ExecutePipeline(MarkdownIndex index, IndexerContext context)
+        private static ParseResult ExecutePipeline(MapFileItemViewModel index, IndexerContext context)
         {
             ParseResult result = new ParseResult(ResultLevel.Success);
             foreach(var pipeline in pipelines)

@@ -11,6 +11,8 @@ using System.Xml.XPath;
 
 namespace DocAsCode.EntityModel
 {
+    using System.Linq;
+
     public static class TreeIterator
     {
         public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task<bool>> action)
@@ -102,6 +104,69 @@ namespace DocAsCode.EntityModel
             return input;
         }
 
+        public static IList<MatchDetail> Select(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return null;
+            var linkFromCref = LinkFromCrefRegex.Matches(input);
+            var details = Merge(linkFromCref, input, null);
+            var linkFromSelfWritten = LinkFromSelfWrittenRegex.Matches(input);
+            details = Merge(linkFromSelfWritten, input, details);
+            return details.Values.ToList();
+        }
+
+        private static Dictionary<string, MatchDetail> Merge(MatchCollection collection, string input, Dictionary<string, MatchDetail> details)
+        {
+            if (details == null)
+            {
+                details = new Dictionary<string, MatchDetail>();
+            }
+
+            foreach (Match item in collection)
+            {
+                MatchSingleDetail detail = SelectSingle(item, input);
+                MatchDetail existingDetail;
+                if (details.TryGetValue(detail.Id, out existingDetail))
+                {
+                    existingDetail.Locations.Add(detail.Location);
+                }
+                else
+                {
+                    existingDetail = new MatchDetail { Id = detail.Id, Locations = new List<Location> { detail.Location }, Raw = detail.Raw, };
+                    details.Add(existingDetail.Id, existingDetail);
+                }
+            }
+
+            return details;
+        } 
+
+        private static MatchSingleDetail SelectSingle(Match match, string input)
+        {
+            string id = match.Groups["content"].Value;
+            int index = match.Groups["content"].Index;
+            var before = input.Substring(0, index);
+            int line = before.Split('\n').Length - 1; // Start from 0
+            var start = before.LastIndexOf('\n') + 1;
+            int span = index - start;
+            // For a valid commentid, remove the first 2 characters
+            if (CommentIdRegex.IsMatch(id))
+            {
+                id = id.Substring(2);
+            }
+
+            return new MatchSingleDetail { Id = id, Raw = match.Groups[0].Value, Location = new Location() { Column = span, Line = line } };
+
+        }
+
+        /// <summary>
+        /// TODO: Change according to the spec
+        /// 0. \@ to escape @
+        /// 1. support simple @abc
+        /// 2. support @'abc' where abc should not be ''
+        /// 3. support @"abc" where abc can be any chars
+        /// </summary>
+        /// <param name="match"></param>
+        /// <param name="replaceHandler"></param>
+        /// <returns></returns>
         private static string LinkResolver(Match match, Func<string, string> replaceHandler)
         {
             string id = match.Groups["content"].Value;
@@ -127,6 +192,54 @@ namespace DocAsCode.EntityModel
             }
 
             return match.Value;
+        }
+    }
+
+
+
+    public class Location
+    {
+        public int Line { get; set; }
+        public int Column { get; set; }
+    }
+
+    public class MatchDetail
+    {
+        public List<Location> Locations { get; set; }
+
+        /// <summary>
+        /// The content matching the regular expression, e.g. @ABC
+        /// </summary>
+        public string Raw { get; set; }
+
+        /// <summary>
+        /// The Id from regular expression's content group, e.g. ABC from @ABC
+        /// </summary>
+        public string Id { get; set; }
+
+        public override int GetHashCode()
+        {
+            return string.IsNullOrEmpty(Id) ? string.Empty.GetHashCode() : Id.GetHashCode();
+        }
+    }
+
+    public class MatchSingleDetail
+    {
+        public Location Location { get; set; }
+
+        /// <summary>
+        /// The content matching the regular expression, e.g. @ABC
+        /// </summary>
+        public string Raw { get; set; }
+
+        /// <summary>
+        /// The Id from regular expression's content group, e.g. ABC from @ABC
+        /// </summary>
+        public string Id { get; set; }
+
+        public override int GetHashCode()
+        {
+            return string.IsNullOrEmpty(Id) ? string.Empty.GetHashCode() : Id.GetHashCode();
         }
     }
 

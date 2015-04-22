@@ -2,6 +2,6 @@
 {
     public interface IIndexerPipeline
     {
-        ParseResult Run(MarkdownIndex yaml, IndexerContext context);
+        ParseResult Run(MapFileItemViewModel item, IndexerContext context);
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DocAsCode.BuildMeta;
+
 using System.IO;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -23,15 +23,15 @@ namespace UnitTest
         public void TestMarkdownIndexBuilder()
         {
             const string markdownFile = "Assets/Markdown/About.md";
-            List<MarkdownIndex> indexes;
+            List<MapFileItemViewModel> indexes;
             var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, "reference", null, out indexes);
             int itemCount = 0;
             foreach(var index in indexes)
             {
                 Console.WriteLine(index);
-                if (index.Items != null)
+                if (index.References != null)
                 {
-                    foreach (var item in index.Items)
+                    foreach (var item in index.References)
                     {
                         itemCount++;
                         Console.WriteLine(item);

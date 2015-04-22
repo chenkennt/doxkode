@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using DocAsCode.EntityModel;
 using System.Diagnostics;
 
-namespace DocAsCode.BuildMeta
+namespace DocAsCode.EntityModel
 {
+    using DocAsCode.EntityModel.MarkdownIndexer;
+
     public static class BuildMetaHelper
     {
         private static readonly MSBuildWorkspace Workspace = MSBuildWorkspace.Create();
@@ -456,7 +458,19 @@ namespace DocAsCode.BuildMeta
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                Dictionary<string, MarkdownIndex> mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName, referenceFolderName);
+                // TODO: parse in, how to keep .md.map file name unique if the file is copied to a centralized folder？
+                // TODO: thougth.1: copy all the md files with the folder structrue to the output folder?
+                string markdownIndexOutputFolder = "";
+                foreach (var mdFile in mdFiles.Distinct())
+                {
+                    IndexerContext context = new IndexerContext
+                                                 {
+                                                     ExternalApiIndex = indexViewModel, MarkdownFilePath = mdFile, OutputFolder = markdownIndexOutputFolder
+                                                 };
+                    var result = MarkdownIndexer.MarkdownIndexer.Exec(context);
+                }
+
+                Dictionary<string, MapFileItemViewModel> mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName, referenceFolderName);
                 if (mdresult.Any())
                 {
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);

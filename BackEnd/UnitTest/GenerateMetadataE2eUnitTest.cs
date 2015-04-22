@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DocAsCode.BuildMeta;
+
 using System.IO;
 using System.Threading.Tasks;
 using DocAsCode.Utility;
