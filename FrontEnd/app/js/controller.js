@@ -19,13 +19,11 @@
 
   angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.constants'])
     .controller('DocsController', [
-      '$scope', '$http', '$q', '$rootScope', '$location', '$window', '$cookies', '$timeout',
-      'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
+      '$scope', '$location', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
       DocsCtrl
     ]);
 
-  function DocsCtrl($scope, $http, $q, $rootScope, $location, $window, $cookies, $timeout,
-    NG_PAGES, NG_VERSION, NG_ITEMTYPES, contentService, urlService, docConstants) {
+  function DocsCtrl($scope, $location, NG_ITEMTYPES, contentService, urlService, docConstants) {
 
     /**********************************
      Initialize
@@ -34,7 +32,7 @@
     $scope.versionNumber = angular.version.full;
     $scope.version = angular.version.full + "  " + angular.version.codeName;
     $scope.loading = 0;
-    $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
+    $scope.docsVersion = 'latest';
     $scope.tocClass = tocClass;
     $scope.navClass = navClass;
 

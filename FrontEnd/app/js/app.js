@@ -4,16 +4,13 @@
 */
 angular.module('docsApp', [
   'ngRoute',
-  'ngCookies',
   'ngSanitize',
-  'docascode.controller',
-  'versionsData',
-  'pagesData',
   'itemTypes',
-  'docascode.directives',
-  'errors',
-  'versions',
+
   'bootstrap',
   'ui.bootstrap',
   'ui.bootstrap.dropdown',
+  
+  'docascode.controller',
+  'docascode.directives',
 ]);
