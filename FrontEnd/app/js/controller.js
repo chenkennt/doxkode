@@ -69,9 +69,14 @@
         navPath = urlService.normalizeUrl(this.pathInfo.tocPath || this.pathInfo.contentPath);
       }
 
-      return {
+      var current = {
         current: navPath && navPath === navItem.href,
       };
+
+      if (current.current === true){
+        $scope.currentNavItem = navItem;
+      }
+      return current;
     }
 
     /**************************************
@@ -176,8 +181,14 @@
 
         path = urlService.getContentFilePath(pathInfo);
         if (path) {
+          // If is toc.yml and home page exists, set to $scope and return
+          // TODO: refactor using ngRoute
+          if ((docConstants.TocYamlRegexExp).test(path)){
+            if (loadHomepage($scope.currentNavItem)) return;
+          }
+
           // If end with .md
-          if ((/\.md$/g).test(path)) {
+          if ((docConstants.MdRegexExp).test(path)) {
             $scope.contentType = 'md';
 
             var partialModel = {
@@ -215,6 +226,14 @@
         }
       }
     });
+
+    function loadHomepage(navItem){
+      if (!navItem || !navItem.homepage) return false;
+      if (!$scope.partialModel) $scope.partialModel = {};
+      $scope.partialModel.path = navItem.homepage;
+      $scope.contentType = 'md';
+      return true;
+    }
 
     function partialModelHandler(data) {
       var partialModel = {
@@ -318,27 +337,20 @@
         }
     }
 
-    function breadCrumbWatcher(currentGroup, currentPage, currentPath) {
+    function breadCrumbWatcher(currentGroup, currentPage, currentNavItem) {
       // breadcrumb generation logic
       var breadcrumb = $scope.breadcrumb = [];
-      var pathInfo = urlService.getPathInfo(currentPath);
 
-      var currentNav = urlService.normalizeUrl(pathInfo.tocPath || pathInfo.contentPath);
-      var navbar = $scope.navbar;
-      if (currentNav && navbar) {
-        var navName = navbar.filter(function(x) {
-          return urlService.normalizeUrl(x.href) === currentNav;
-        })[0] || {};
-
+      if (currentNavItem) {
         breadcrumb.push({
-          name: navName.name,
+          name: currentNavItem.name,
           // use '/#/' to indicate this is a nav link...
-          url: '/#/' + currentNav
+          url: '/#/' + currentNavItem.href
         });
       }
       if (currentGroup) {
         breadcrumb.push({
-          name: currentGroup.uid,
+          name: currentGroup.uid || currentGroup.name,
           url: currentGroup.href
         });
 
@@ -356,25 +368,25 @@
       return $scope.partialModel;
     }, function() {
       mdIndexWatcher();
-      breadCrumbWatcher($scope.navGroup, $scope.navItem, $location.path());
+      breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
     });
 
     $scope.$watch(function modelWatch() {
-      return $scope.navbar;
+      return $scope.currentNavItem;
     }, function(navbar) {
-      breadCrumbWatcher($scope.navGroup, $scope.navItem, $location.path());
+      breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.navGroup;
     }, function(navGroup) {
-      breadCrumbWatcher(navGroup, $scope.navItem, $location.path());
+      breadCrumbWatcher(navGroup, $scope.navItem, $scope.currentNavItem);
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.navItem;
     }, function(navItem) {
-      breadCrumbWatcher($scope.navGroup, navItem, $location.path());
+      breadCrumbWatcher($scope.navGroup, navItem, $scope.currentNavItem);
     });
 
     $scope.$watch(function modelWatch() {
@@ -390,6 +402,9 @@
       }
     });
 
+    $scope.$watch(function modelWatch() {
+      return $scope.currentNavItem;
+    }, loadHomepage);
   }
 
 })();
