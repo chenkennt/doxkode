@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-18-g495212f
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+      description: f06ffe28
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 3
   summary: This is summary from vb class...
   syntax:
@@ -35,7 +35,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 11
   summary: This is a *Value* type
   syntax:
@@ -49,7 +49,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 13
   syntax:
     content:
@@ -68,7 +68,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 23
   summary: What is **Sub**?
   syntax:
@@ -90,7 +90,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/Class1.vb
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/VBTestClass1/Class1.vb
     startLine: 34
   summary: This is a *Function*
   syntax:

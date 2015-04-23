@@ -5,12 +5,7 @@ items:
   fullName: VBTestClass1
   type: Namespace
   source:
-    remote:
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-18-g495212f
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/VBTestClass1/My Project/Settings.Designer.vb
-    startLine: 10
+    path: C:\Users\lianwei\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.vb
   id: VBTestClass1
   children:
   - VBTestClass1.Class1

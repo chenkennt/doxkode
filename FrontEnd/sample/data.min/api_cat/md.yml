@@ -1,23 +1,32 @@
-Microsoft.DevDev.Build.PropertyOverload.TestProperty:
-  id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
-  path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/Markdown/About.md
-  href: md/Assets_Markdown_About.md
-  startLine: 68
-  endLine: 1029
+CatLibrary.IAnimal:
+  id: CatLibrary.IAnimal
+  path: TestResults/Deploy_lianwei 2015-04-23 20_34_39/Out/Assets/Markdown/AboutCodeSnippet.md
+  href: md/Assets_Markdown_AboutCodeSnippet.md
+  startLine: 31
+  endLine: 1176
   remote:
     branch: develop
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: v0.3.0-18-g495212f
+    description: f06ffe28
   items:
-  - id: ../TestClass1/CatLibrary/Class1.cs[20-46]
-    path: TestResults\Deploy_lianwei 2015-04-20 16_47_54\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
-    href: reference\TestResults_Deploy_lianwei 2015-04-20 16_47_54_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
-    startLine: 349
-    endLine: 395
-    referenceStartLine: 20
-    referenceEndLine: 46
-  - id: ../TestClass1/CatLibrary/Class1.cs
-    path: TestResults\Deploy_lianwei 2015-04-20 16_47_54\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
-    href: reference\TestResults_Deploy_lianwei 2015-04-20 16_47_54_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
-    startLine: 985
-    endLine: 1024
+  - id: ../TestClass1/CatLibrary/Class1.cs[10-15]
+    path: TestResults\Deploy_lianwei 2015-04-23 20_34_39\Out\Assets\Markdown\..\TestClass1\CatLibrary\Class1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-23 20_34_39_Out_Assets_Markdown_.._TestClass1_CatLibrary_Class1.cs
+    startLine: 329
+    endLine: 375
+    referenceStartLine: 10
+    referenceEndLine: 15
+  - id: ../TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs[126-144]
+    path: TestResults\Deploy_lianwei 2015-04-23 20_34_39\Out\Assets\Markdown\..\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+    href: reference\TestResults_Deploy_lianwei 2015-04-23 20_34_39_Out_Assets_Markdown_.._TestClass1_BaseClassForTestClass1_BaseClassForTestClass1.cs
+    startLine: 424
+    endLine: 497
+    referenceStartLine: 126
+    referenceEndLine: 144
+  - id: ../TestClass1/VBTestClass1/Class1.vb[1-5]
+    path: TestResults\Deploy_lianwei 2015-04-23 20_34_39\Out\Assets\Markdown\..\TestClass1\VBTestClass1\Class1.vb
+    href: reference\TestResults_Deploy_lianwei 2015-04-23 20_34_39_Out_Assets_Markdown_.._TestClass1_VBTestClass1_Class1.vb
+    startLine: 509
+    endLine: 554
+    referenceStartLine: 1
+    referenceEndLine: 5

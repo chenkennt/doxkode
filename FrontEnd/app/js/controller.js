@@ -269,11 +269,11 @@
       return contentService.getMarkdownContent(itemHref).then(
         function(res) {
           var snippet = res;
-          var startLine = item.referenceStartLine ? item.referenceStartLine : 0;
+          var startLine = item.referenceStartLine ? item.referenceStartLine : 1;
           var lines = snippet.split('\n');
-          var endLine = item.referenceEndLine ? item.referenceEndLine : lines.length - 1;
+          var endLine = item.referenceEndLine ? item.referenceEndLine : lines.length;
           snippet = "";
-          for (var i = startLine; i <= endLine; i++) {
+          for (var i = startLine - 1; i < endLine; i++) {
             snippet += lines[i] + '\n';
           }
           return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);

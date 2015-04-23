@@ -8,8 +8,8 @@ items:
     remote:
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-18-g495212f
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: f06ffe28
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 275
   summary: Tom class is only inherit from Object. Not any member inside itself.
   syntax:

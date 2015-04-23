@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-18-g495212f
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      description: f06ffe28
+    path: TestResults/Deploy_lianwei 2015-04-23 20_34_39/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 283
   summary: '*TomFromBaseClass* inherits from @'
   syntax:
@@ -21,7 +21,7 @@ items:
     isExternal: true
   - id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
     name: TestProperty
-    href: Microsoft.DevDev.Build.PropertyOverload.TestProperty.yml
+    href: Microsoft.DevDev.Build.PropertyOverload.TestProperty
   id: CatLibrary.TomFromBaseClass
   children:
   - CatLibrary.TomFromBaseClass.#ctor(System.Int32)
@@ -32,7 +32,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_34_39/Out/Assets/TestClass1/CatLibrary/Class1.cs
     startLine: 290
   summary: 'This is a #ctor with parameter'
   syntax:

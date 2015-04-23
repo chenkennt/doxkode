@@ -8,8 +8,8 @@ items:
     remote: &o0
       branch: develop
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: v0.3.0-18-g495212f
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+      description: f06ffe28
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 33
   summary: Struct ContainersRefType
   syntax:
@@ -37,7 +37,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 39
   summary: ColorCount
   syntax:
@@ -51,7 +51,7 @@ items:
   type: Property
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 71
   summary: GetColorCount
   syntax:
@@ -71,7 +71,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 89
   summary: >-
     ContainersRefTypeNonRefMethod
@@ -96,7 +96,7 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 107
   syntax:
     content:
@@ -109,7 +109,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 109
   syntax:
     content:
@@ -128,7 +128,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-20 16_47_54/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
+    path: TestResults/Deploy_lianwei 2015-04-23 20_41_49/Out/Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.cs
     startLine: 110
   syntax:
     content:
