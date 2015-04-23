@@ -394,15 +394,30 @@ module.exports = function(grunt) {
     },
     updatetest: {
       mvc: {
-        source: [ "src/System.Web.Mvc/System.Web.Mvc.csproj" ],
+        source: ["src/System.Web.Mvc/System.Web.Mvc.csproj"],
         target: "sample/data/api_system_web_mvc"
       },
-      workspace: {
-        source: [ "src/Workspaces/Core/Portable/Workspaces.csproj" ],
-        target: "sample/data/api_roslyn_workspace"
+      roslyn: {
+        source: [
+          "src/Compilers/Core/Desktop/CodeAnalysis.csproj",
+          "src/Compilers/Core/Portable/CodeAnalysis.Desktop.csproj",
+          "src/Compilers/CSharp/Desktop/CSharpCodeAnalysis.Desktop.csproj",
+          "src/Compilers/CSharp/Portable/CSharpCodeAnalysis.csproj",
+          "src/EditorFeatures/Core/EditorFeatures.csproj",
+          "src/EditorFeatures/CSharp/CSharpEditorFeatures.csproj",
+          "src/EditorFeatures/Text/TextEditorFeatures.csproj",
+          "src/Features/Core/Features.csproj",
+          "src/Features/CSharp/CSharpFeatures.csproj",
+          "src/VisualStudio/Core/Def/ServicesVisualStudio.csproj",
+          "src/Workspaces/Core/Desktop/Workspaces.Desktop.csproj",
+          "src/Workspaces/Core/Portable/Workspaces.csproj",
+          "src/Workspaces/CSharp/Desktop/CSharpWorkspace.Desktop.csproj",
+          "src/Workspaces/CSharp/Portable/CSharpWorkspace.csproj"
+        ],
+        target: "sample/data/api_roslyn"
       },
       corefx: {
-        source: [ "src/**/src/**/*.csproj" ],
+        source: ["src/**/src/**/*.csproj"],
         target: "sample/data/api_corefx"
       }
     }

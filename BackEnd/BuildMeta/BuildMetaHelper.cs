@@ -302,7 +302,10 @@ namespace DocAsCode.BuildMeta
                             }
                         }
 
-                        allMembers[ns.Name] = ns;
+                        if (!allMembers.ContainsKey(ns.Name))
+                        {
+                            allMembers.Add(ns.Name, ns);
+                        }
 
                         ns.Items?.ForEach(s =>
                             {

@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 namespace DocAsCode.EntityModel
 {
     using Microsoft.CodeAnalysis.CSharp;
+    using System.IO;
 
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
@@ -205,11 +206,26 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as PropertyDeclarationSyntax;
                         if (syntax != null)
                         {
-                            var accessorList = syntax.AccessorList.Accessors;
+                            SyntaxList<AccessorDeclarationSyntax> accessorList;
+                            if (syntax.AccessorList != null)
+                            {
+                                accessorList = syntax.AccessorList.Accessors;
+                            }
+                            else if (syntax.ExpressionBody != null)
+                            {
+                                // If it's an expression bodied property, it should have a getter accessor
+                                var getter = SyntaxFactory.AccessorDeclaration(SyntaxKind.GetAccessorDeclaration);
+                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().Add(getter);
+                            }
+                            else
+                            {
+                                throw new InvalidDataException(string.Format("Property declaration '{0}' does not have any accessor.", syntax));
+                            }
+
                             var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
                             SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
                             syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                            var simplifiedSyntax = syntax.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolon(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
                             syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
                         }
                         else

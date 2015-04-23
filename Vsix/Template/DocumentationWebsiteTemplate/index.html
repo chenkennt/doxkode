@@ -10,7 +10,7 @@
   <meta name="Description"
         content="Docascode with pure client-side JavaScript!">
   <meta name="fragment" content="!">
-  <title ng-bind-template="Docascode: {{ currentArea.name }}: {{ partialModel.title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
+  <title ng-bind-template="Docascode: {{ currentArea.name }} {{ partialModel.title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css"></link>
@@ -120,7 +120,7 @@
     </header>
 
     <div role="main" class="container">
-      <div class="sidenav" ng-if="toc">
+      <div ng-if="toc" class="grid-left sidenav">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
         <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
