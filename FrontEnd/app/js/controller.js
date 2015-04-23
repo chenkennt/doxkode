@@ -169,6 +169,7 @@
       $scope.navGroup = null;
       $scope.navItem = null;
       $scope.currentNavItem = null;
+      $scope.tocPage = false;
       if ($scope.partialModel) $scope.partialPath = null;
       var currentPage = $scope.currentPage = path; //NG_PAGES[path];
       // TODO: check if it is inside NG_PAGES
@@ -186,6 +187,7 @@
           // If is toc.yml and home page exists, set to $scope and return
           // TODO: refactor using ngRoute
           if ((docConstants.TocYamlRegexExp).test(path)){
+            $scope.tocPage = true;
             if (loadHomepage($scope.currentNavItem)) return;
           }
 
@@ -230,7 +232,7 @@
     });
 
     function loadHomepage(navItem){
-      if (!navItem || !navItem.homepage) return false;
+      if (!navItem || !navItem.homepage || !$scope.tocPage) return false;
       if (!$scope.partialModel) $scope.partialModel = {};
       $scope.partialModel.path = navItem.homepage;
       $scope.contentType = 'md';
