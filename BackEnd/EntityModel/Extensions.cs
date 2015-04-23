@@ -65,6 +65,20 @@ namespace DocAsCode.EntityModel
             serializer.Value.Serialize(writer, graph);
         }
 
+        public static void Serialize(string path, object graph)
+        {
+            var directory = Path.GetDirectoryName(path);
+            if (!string.IsNullOrEmpty(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                YamlUtility.Serialize(writer, graph);
+            }
+        }
+
         public static T Deserialize<T>(TextReader reader)
         {
             return deserializer.Value.Deserialize<T>(reader);

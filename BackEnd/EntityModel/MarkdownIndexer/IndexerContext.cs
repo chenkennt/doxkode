@@ -10,6 +10,9 @@
 
         public string MarkdownContent { get; set; }
 
-        public string OutputFolder { get; set; }
+        public string MarkdownMapFileOutputFolder { get; set; }
+
+        public string ApiMapFileOutputFolder { get; set; }
+
     }
 }

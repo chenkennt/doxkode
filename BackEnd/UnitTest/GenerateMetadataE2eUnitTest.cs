@@ -90,7 +90,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/AboutCodeSnippet.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "map", "md", "reference");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             Assert.Fail();

@@ -13,81 +13,6 @@ namespace DocAsCode.EntityModel
     {
         private static readonly Dictionary<string, int> ReferencedFileLengthCache = new Dictionary<string, int>();
 
-        public static Dictionary<string, MapFileItemViewModel> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, MetadataItem> apiList, string workingDirectory, string mdFolderName, string referenceFolderName)
-        {
-            Dictionary<string, MapFileItemViewModel> table = new Dictionary<string, MapFileItemViewModel>();
-
-            foreach(var file in markdownFilePathList.Distinct())
-            {
-                List<MapFileItemViewModel> indics;
-                MetadataItem item;
-                string apiFolder = Path.Combine(workingDirectory, mdFolderName);
-                string referenceFolder = Path.Combine(workingDirectory, referenceFolderName);
-                if (Directory.Exists(apiFolder))
-                {
-                    ParseResult.WriteToConsole(ResultLevel.Warn, "Folder {0} already exists!", apiFolder);
-                }
-                else
-                {
-                    Directory.CreateDirectory(apiFolder);
-                }
-
-                string destFileName = Path.Combine(apiFolder, file.ToValidFilePath());
-                string resolvedContent;
-                try
-                {
-                    string input = File.ReadAllText(file);
-                    resolvedContent = LinkParser.ResolveToMarkdownLink(apiList, input);
-                    File.WriteAllText(destFileName, resolvedContent);
-                }
-                catch (Exception e)
-                {
-                    ParseResult.WriteToConsole(ResultLevel.Error, "Unable to copy markdown file {0} to output directory {1}: {2}", file, apiFolder, e.Message);
-                    continue;
-                }
-
-                var result = TryParseCustomizedMarkdown(file, resolvedContent,referenceFolder, s =>
-                {
-                    if (apiList.TryGetValue(s.Name, out item))
-                    {
-                        return new ParseResult(ResultLevel.Success);
-                    }
-                    else
-                    {
-                        return new ParseResult(ResultLevel.Error, "Cannot find {0} in the documentation", s.Name);
-                    }
-                }, out indics);
-
-                if (result.ResultLevel != ResultLevel.Success)
-                {
-                    Console.Error.WriteLine(result);
-                }
-
-                foreach (var key in indics)
-                {
-                    MapFileItemViewModel saved;
-                    if (table.TryGetValue(key.Id, out saved))
-                    {
-                        ParseResult.WriteToConsole(ResultLevel.Error, "Already contains {0} in file {1}, current one {2} will be ignored.", key.Id, saved.Path, key.Path);
-                    }
-                    else
-                    {
-                        key.Href = destFileName.FormatPath(UriKind.Relative, workingDirectory);
-                        table.Add(key.Id, key);
-                        if(key.References != null)
-                        {
-                            foreach(var keyItem in key.References)
-                            {
-                                keyItem.Href = Path.Combine(referenceFolder.FormatPath(UriKind.Relative, workingDirectory), keyItem.Path.ToValidFilePath());
-                            }
-                        }
-                    }
-                }
-            }
-
-            return table;
-        }
-
         /// <summary>
         /// Not doing duplication check here, do it outside
         /// </summary>
@@ -181,7 +106,7 @@ namespace DocAsCode.EntityModel
                 {
                     lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
                 }
-                ExtractReferenceFromMdSection(ref lastSection, referenceFolder);
+                // ExtractReferenceFromMdSection(ref lastSection, referenceFolder);
                 sections.Add(lastSection);
             }
 
@@ -300,9 +225,9 @@ namespace DocAsCode.EntityModel
 
                     if (section.References == null)
                     {
-                        section.References = new List<MapFileItemViewModel>();
+                        section.References = new ReferencesViewModel();
                     }
-                    section.References.Add(item);
+                    section.References.AddItem(item);
                 }
             }
         }

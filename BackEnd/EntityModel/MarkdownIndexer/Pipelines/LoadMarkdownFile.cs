@@ -5,7 +5,7 @@
 
     using DocAsCode.Utility;
 
-    public class MarkdownFileLoader : IIndexerPipeline
+    public class LoadMarkdownFile : IIndexerPipeline
     {
         public ParseResult Run(MapFileItemViewModel item, IndexerContext context)
         {
@@ -22,6 +22,8 @@
             if (!string.IsNullOrEmpty(context.MarkdownFilePath))
             {
                 item.Remote = GitUtility.GetGitDetail(context.MarkdownFilePath);
+                item.Path = context.MarkdownFilePath;
+                item.Href = context.MarkdownFilePath;
             }
 
             return new ParseResult(ResultLevel.Success);

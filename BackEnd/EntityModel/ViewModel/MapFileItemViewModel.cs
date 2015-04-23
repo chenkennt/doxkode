@@ -4,11 +4,33 @@ using System.IO;
 
 namespace DocAsCode.EntityModel
 {
+    using System;
+
     public class MapFileViewModel : Dictionary<string, MapFileItemViewModel>
     {
     }
 
-    public class MapFileItemViewModel
+    public class ReferencesViewModel : Dictionary<string, MapFileItemViewModel>
+    {
+        /// <summary>
+        /// TODO: Any possible scenarios requires MERGE?
+        /// </summary>
+        /// <param name="item"></param>
+        public void AddItem(MapFileItemViewModel item)
+        {
+            this.Add(item.Id, item);
+        }
+
+        public void AddRange(ReferencesViewModel references)
+        {
+            foreach (var reference in references)
+            {
+                this.AddItem(reference.Value);
+            }
+        }
+    }
+
+    public class MapFileItemViewModel : ICloneable
     {
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Id { get; set; }
@@ -31,8 +53,8 @@ namespace DocAsCode.EntityModel
         /// <summary>
         /// The start line in the referencing file that define the reference
         /// </summary>
-        [YamlDotNet.Serialization.YamlIgnore]
-        public int DefinedLine { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "referenceKeys")]
+        public Dictionary<string, Section> ReferenceKeys { get; set; }
 
         [YamlDotNet.Serialization.YamlIgnore]
         public string MarkdownContent { get; set; }
@@ -53,7 +75,7 @@ namespace DocAsCode.EntityModel
         public GitDetail Remote { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "references")]
-        public List<MapFileItemViewModel> References { get; set; }
+        public ReferencesViewModel References { get; set; }
 
         /// <summary>
         /// To override yaml settings
@@ -101,6 +123,11 @@ namespace DocAsCode.EntityModel
             return this.Id.GetHashCode();
         }
 
+        public object Clone()
+        {
+            return (MapFileItemViewModel)this.MemberwiseClone();
+        }
+
         public override string ToString()
         {
             using (StringWriter writer = new StringWriter())
@@ -108,6 +135,79 @@ namespace DocAsCode.EntityModel
                 YamlUtility.Serialize(writer, this);
                 return writer.ToString();
             }
+        }
+    }
+
+    public class Section
+    {
+        /// <summary>
+        /// The raw content matching the regular expression, e.g. @ABC
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "key")]
+        public string Key { get; set; }
+
+        /// <summary>
+        /// Defines the Markdown Content Location Range
+        /// </summary>
+        [YamlDotNet.Serialization.YamlIgnore]
+        public List<Location> Locations { get; set; }
+    }
+
+    public struct Location
+    {
+        public Coordinate StartLocation { get; set; }
+
+        public Coordinate EndLocation { get; set; }
+
+        public static Location GetLocation(string input, int matchedStartIndex, int matchedLength)
+        {
+            if (matchedLength <= 0) return new Location();
+            var beforeMatch = input.Substring(0, matchedStartIndex);
+            Coordinate start = Coordinate.GetCoordinate(beforeMatch);
+
+            var matched = input.Substring(matchedStartIndex, matchedLength);
+            Coordinate startToEnd = Coordinate.GetCoordinate(matched);
+            Coordinate end = start.Add(startToEnd);
+            return new Location() { StartLocation = start, EndLocation = end };
+        }
+
+        public bool IsIn(Location wrapper)
+        {
+            return wrapper.StartLocation.CompareTo(this.StartLocation) <= 0 && wrapper.EndLocation.CompareTo(this.EndLocation) >= 0;
+        }
+    }
+
+    public struct Coordinate : IComparable<Coordinate>
+    {
+        private const char NewLineCharacter = '\n';
+
+        public int Line { get; set; }
+        public int Column { get; set; }
+
+        public readonly static Coordinate Default = new Coordinate();
+
+        public Coordinate Add(Coordinate toAdd)
+        {
+            return new Coordinate() { Line = this.Line + toAdd.Line, Column = this.Column + toAdd.Column };
+        }
+
+        public static Coordinate GetCoordinate(string content)
+        {
+            if (string.IsNullOrEmpty(content)) return Coordinate.Default;
+            int index = content.Length;
+            int line = content.Split(NewLineCharacter).Length - 1; // Start from 0
+            int lineStart = content.LastIndexOf(NewLineCharacter) + 1; // Start from 0;
+            int col = index - lineStart;
+            return new Coordinate { Line = line, Column = col };
+        }
+
+        public int CompareTo(Coordinate other)
+        {
+            if (this.Line > other.Line) return 1;
+            if (this.Line < other.Line) return -1;
+            if (this.Column > other.Column) return 1;
+            if (this.Column < other.Column) return -1;
+            return 0;
         }
     }
 }

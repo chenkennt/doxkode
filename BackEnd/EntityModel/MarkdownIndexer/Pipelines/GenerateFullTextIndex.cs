@@ -1,6 +1,6 @@
 ﻿namespace DocAsCode.EntityModel.MarkdownIndexer
 {
-    public class IndexFileSaver : IIndexerPipeline
+    public class GenerateFullTextIndex : IIndexerPipeline
     {
         public ParseResult Run(MapFileItemViewModel item, IndexerContext context)
         {

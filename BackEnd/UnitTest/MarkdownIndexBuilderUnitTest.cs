@@ -8,6 +8,8 @@ using DocAsCode.EntityModel;
 
 namespace UnitTest
 {
+    using YamlDotNet.Core;
+
     /// <summary>
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
@@ -22,9 +24,9 @@ namespace UnitTest
         [DeploymentItem("Assets/TestClass1/TestClass1/Class1.cs", "Assets/TestClass1/TestClass1")]
         public void TestMarkdownIndexBuilder()
         {
-            const string markdownFile = "Assets/Markdown/About.md";
-            List<MapFileItemViewModel> indexes;
-            var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, "reference", null, out indexes);
+            // TODO: implement
+            List<MapFileItemViewModel> indexes = new List<MapFileItemViewModel>();
+            ParseResult result =  new ParseResult(ResultLevel.Success);
             int itemCount = 0;
             foreach(var index in indexes)
             {

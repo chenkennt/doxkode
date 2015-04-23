@@ -8,12 +8,12 @@ namespace DocAsCode.EntityModel.MarkdownIndexer
         // Order matters
         static List<IIndexerPipeline> pipelines = new List<IIndexerPipeline>()
         {
-            new MarkdownFileLoader(),
-            new ApiReferenceParser(),
-            new CodeSnippetParser(),
-            new FullTextIndexer(), // TODO: Ignore the text if it contains YAML HEADER?
-            new YamlHeaderParser(),
-            new IndexFileSaver(),
+            new LoadMarkdownFile(),
+            new ResolveApiReference(),
+            new ResolveCodeSnippet(),
+            new GenerateFullTextIndex(), // TODO: Ignore the text if it contains YAML HEADER?
+            new ResolveYamlHeader(),
+            new Save(),
         };
 
         /// <summary>
@@ -21,13 +21,10 @@ namespace DocAsCode.EntityModel.MarkdownIndexer
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public static MapFileItemViewModel Exec(IndexerContext context)
+        public static ParseResult Exec(IndexerContext context)
         {
             MapFileItemViewModel viewModel = new MapFileItemViewModel();
-            var result = ExecutePipeline(viewModel, context);
-
-            result.WriteToConsole();
-            return viewModel;
+            return ExecutePipeline(viewModel, context);
         }
 
         private static ParseResult ExecutePipeline(MapFileItemViewModel index, IndexerContext context)
