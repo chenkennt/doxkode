@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0-alpha1",
+    "dependencies": {
+        "Microsoft.Framework.FileSystemGlobbing": "1.0.0-beta4",
+        "Microsoft.CodeAnalysis.CSharp.Workspaces": "1.0.0-rc2",
+        "Microsoft.Composition": "1.0.30",
+        "Microsoft.Framework.Runtime": "1.0.0-beta4",
+        "Microsoft.Framework.Runtime.Roslyn.Common": "1.0.0-beta4",
+        "System.Runtime.Extensions": "4.0.10-beta-22816"
+    },
+    "frameworks": {
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Runtime": "",
+                "System.Globalization": ""
+            }
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Runtime": "4.0.20-beta-22816"
+            }
+        }
+    }
+}
