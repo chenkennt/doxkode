@@ -265,19 +265,19 @@
     }
 
     function getMdItemIndex(item, tocPath, mdPath, mdInitial, mdResolved) {
-        var itemHref = (tocPath || '') + '/' + item.href;
-        return contentService.getMarkdownContent(itemHref).then(
-               function (res) {
-                var snippet = res;
-                if (item.referenceStartLine != null && item.referenceEndLine != null) {
-                    var lines = snippet.split('\n');
-                    snippet = "";
-                    for (var i = item.referenceStartLine - 1; i < item.referenceEndLine; i++) {
-                        snippet += lines[i];
-                    }
-                }
-                return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
-            });
+      var itemHref = (tocPath || '') + '/' + item.href;
+      return contentService.getMarkdownContent(itemHref).then(
+        function(res) {
+          var snippet = res;
+          var startLine = item.referenceStartLine ? item.referenceStartLine : 0;
+          var lines = snippet.split('\n');
+          var endLine = item.referenceEndLine ? item.referenceEndLine : lines.length - 1;
+          snippet = "";
+          for (var i = startLine; i <= endLine; i++) {
+            snippet += lines[i] + '\n';
+          }
+          return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
+        });
     }
 
     function makeThenFunction(item, tocPath, mdPath, mdInitial){
