@@ -169,7 +169,13 @@
 
             var secondeStart = splitterEnd.CompareTo(sectionEnd) < 0 ? splitterEnd : sectionEnd;
 
-            if (firstStart.CompareTo(firstEnd) < 0) sections.Add(new MarkdownSection { Location = new Location { StartLocation = firstStart, EndLocation = firstEnd } });
+            if (firstStart.CompareTo(firstEnd) < 0)
+                sections.Add(
+                    new MarkdownSection
+                        {
+                            Location = new Location { StartLocation = firstStart, EndLocation = firstEnd },
+                            Id = section.Id
+                        });
             if (secondeStart.CompareTo(secondEnd) < 0)
                 sections.Add(
                     new MarkdownSection

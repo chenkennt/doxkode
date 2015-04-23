@@ -17,7 +17,8 @@
     /// </summary>
     public static class YamlHeaderParser
     {
-        public static Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
+        private static readonly List<string> RequiredProperties = new List<string> { "uid" };
+        public static readonly Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
 
         public static IList<MatchDetail> Select(string input)
         {
@@ -37,9 +38,8 @@
 
             string content = match.Groups["content"].Value;
             Dictionary<string, object> properties;
-            List<string> required = new List<string> { "uid" };
             string message;
-            if (!TryExtractProperties(content, required, out properties, out message))
+            if (!TryExtractProperties(content, RequiredProperties, out properties, out message))
             {
                 ParseResult.WriteToConsole(ResultLevel.Error, message);
                 return null;

@@ -149,6 +149,7 @@
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataE2eUnitTest.cs" />
+    <Compile Include="MarkdownIndexerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Assets\TestClass1\VBTestClass1\My Project\Settings.settings">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
