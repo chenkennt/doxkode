@@ -168,6 +168,8 @@
       path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
       $scope.navGroup = null;
       $scope.navItem = null;
+      $scope.currentNavItem = null;
+      if ($scope.partialModel) $scope.partialPath = null;
       var currentPage = $scope.currentPage = path; //NG_PAGES[path];
       // TODO: check if it is inside NG_PAGES
       // If current page exists in NG_PAGES
@@ -369,6 +371,7 @@
     }, function() {
       mdIndexWatcher();
       breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
+      loadHomepage($scope.currentNavItem);
     });
 
     $scope.$watch(function modelWatch() {
