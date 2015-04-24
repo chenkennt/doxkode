@@ -70,9 +70,9 @@ namespace UnitTest
 
             // Check .md.map
             Assert.AreEqual(1, mdMapFileViewModel.Count);
-            var references = mdMapFileViewModel["Assets/Markdown/AboutCodeSnippet.md"].References;
+            var references = mdMapFileViewModel["assets/markdown/aboutcodesnippet.md"].References;
             Assert.AreEqual(2, references.Count);
-            var reference1 = references["../TestClass1/CatLibrary/Class1.cs[20-46]"];
+            var reference1 = references["../testclass1/catlibrary/class1.cs[20-46]"];
             Assert.IsNotNull(reference1);
             Assert.AreEqual(20, reference1.Startline);
             Assert.AreEqual(46, reference1.Endline);
@@ -80,7 +80,7 @@ namespace UnitTest
             Assert.AreEqual(1, reference1.Keys.Count);
             Assert.AreEqual(@"{{'../TestClass1/TestClass1/Class1.cs'}}", reference1.Keys[0]);
 
-            var reference2 = references["../TestClass1/TestClass1/Class1.cs[0-]"];
+            var reference2 = references["../testclass1/testclass1/class1.cs[0-]"];
             Assert.IsNotNull(reference2);
             Assert.AreEqual(0, reference2.Startline);
             Assert.AreEqual(-1, reference2.Endline);

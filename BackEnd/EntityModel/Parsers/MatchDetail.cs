@@ -7,6 +7,8 @@
 
     public class MatchDetailCollection : Dictionary<string, MatchDetail>
     {
+        public MatchDetailCollection() : base() { }
+        public MatchDetailCollection(IEqualityComparer<string> comparer) : base(comparer) { }
         public MatchDetailCollection Merge(IEnumerable<MatchSingleDetail> singleMatch)
         {
             foreach (var detail in singleMatch)

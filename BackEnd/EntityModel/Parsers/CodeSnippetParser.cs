@@ -22,7 +22,9 @@
             if (string.IsNullOrEmpty(input)) return null;
             var codeSnippet = CodeSnippetRegex.Matches(input);
             if (codeSnippet.Count == 0) return null;
-            var details = new MatchDetailCollection();
+
+            // For code snippet, id is the file path, should be case insensitive
+            var details = new MatchDetailCollection(StringComparer.OrdinalIgnoreCase);
             var singles = (from Match item in codeSnippet select SelectSingle(item, input));
             details.Merge(singles);
             return details.Values.ToList();
@@ -37,9 +39,11 @@
             var range = ExtractRange(rangeStr);
             var idWithRange = string.Format("{0}[{1}-{2}]", id, range.Item1, range.Item2 >= 0 ? range.Item2.ToString() : string.Empty);
             var location = Location.GetLocation(input, wholeMatch.Index, wholeMatch.Length);
+
+            // As code snippet is case insensitive, change the Id to lower case for further references convenience. e.g. selection in javascript
             return new MatchSingleDetail
                        {
-                           Id = idWithRange,
+                           Id = idWithRange.ToLower(),
                            Path = id,
                            MatchedSection =
                                new Section { Key = wholeMatch.Value, Locations = new List<Location> { location } },

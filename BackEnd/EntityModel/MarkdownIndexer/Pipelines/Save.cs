@@ -24,7 +24,9 @@
             if (item.CustomProperties != null && item.CustomProperties.Count == 0) item.CustomProperties = null;
 
             MapFileViewModel mapFile = new MapFileViewModel();
-            mapFile.Add(filePath.BackSlashToForwardSlash(), item);
+
+            // Normalize file path as the key
+            mapFile.Add(filePath.BackSlashToForwardSlash().ToLowerInvariant(), item);
             YamlUtility.Serialize(markdownMapFileFullPath, mapFile);
 
             return new ParseResult(ResultLevel.Success);
