@@ -6,6 +6,8 @@
     using System.Linq;
     using System.Text.RegularExpressions;
 
+    using DocAsCode.Utility;
+
     /// <summary>
     /// Match code snippet from markdown files.
     /// Code snippet syntax: {{"relativePath/sourceFilename"}} or {{"relativePath/sourceFilename"[startline-endline]}}
@@ -43,7 +45,7 @@
             // As code snippet is case insensitive, change the Id to lower case for further references convenience. e.g. selection in javascript
             return new MatchSingleDetail
                        {
-                           Id = idWithRange.ToLower(),
+                           Id = idWithRange.BackSlashToForwardSlash().ToLowerInvariant(),
                            Path = id,
                            MatchedSection =
                                new Section { Key = wholeMatch.Value, Locations = new List<Location> { location } },

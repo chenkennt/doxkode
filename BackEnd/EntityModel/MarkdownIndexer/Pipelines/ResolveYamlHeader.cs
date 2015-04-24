@@ -81,6 +81,12 @@
 
                     // Current behavior: Override existing one
                     apiMapFile[apiId] = apiMapFileSection;
+
+                    // Post-process item
+                    // if references'/overrides count is 0, set it to null
+                    if (apiMapFileSection.References != null && apiMapFileSection.References.Count == 0) apiMapFileSection.References = null;
+                    if (apiMapFileSection.CustomProperties != null && apiMapFileSection.CustomProperties.Count == 0) apiMapFileSection.CustomProperties = null;
+
                     YamlUtility.Serialize(apiMapFileFullPath, apiMapFile);
                 }
             }

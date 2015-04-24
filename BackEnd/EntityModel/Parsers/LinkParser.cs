@@ -71,7 +71,6 @@
         {
             if (string.IsNullOrEmpty(input)) return null;
             var linkFromCref = LinkFromCrefRegex.Matches(input);
-            if (linkFromCref.Count == 0) return null;
             var details = Merge(linkFromCref, input, null);
             var linkFromSelfWritten = LinkFromSelfWrittenRegex.Matches(input);
             details = Merge(linkFromSelfWritten, input, details);
