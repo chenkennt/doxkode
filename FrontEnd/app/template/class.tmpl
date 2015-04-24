@@ -48,9 +48,9 @@
             <div class="item-header">
               <div class="pull-right">
                 <a ng-href="{{::getViewSourceHref(item.source.startLine)}}">View Source</a>
-                <span ng-if="model.mdHref">
+                <span ng-if="item.mdHref">
                   <span class="divider-brand">|</span>
-                  <a ng-href="{{model.mdHref}}">Improve this Doc</a>
+                  <a ng-href="{{item.mdHref}}">Improve this Doc</a>
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
