@@ -77,10 +77,16 @@ namespace UnitTest
             var interfaceReferences = interface1.References;
             Assert.IsNotNull(interfaceReferences);
 
-            Assert.AreEqual(1, interfaceReferences.Count);
-            Assert.AreEqual(1, interfaceReferences["'../testclass1/catlibrary/class1.cs'[20-46]"].Keys.Count);
+            Assert.AreEqual(2, interfaceReferences.Count);
+            Assert.AreEqual(1, interfaceReferences["../testclass1/catlibrary/class1.cs[20-46]"].Keys.Count);
             Assert.IsNotNull(interface1.CustomProperties);
             Assert.AreEqual("This is a *TEST* for override summary @CatLibrary.FakeDelegate`1", interface1.CustomProperties["summary"]);
+
+            var interface2 = interfaceYamlMapViewModel["CatLibrary.IAnimal.Eat"];
+            Assert.IsNotNull(interface2);
+            Assert.AreEqual(32, interface2.Startline);
+            Assert.AreEqual(33, interface2.Endline);
+            Assert.IsNull(interface2.References);
 
             var catYamlMapFileName = "CatLibrary.Cat`2.yml.map";
             AssertFileExists(catYamlMapFileName, mapFiles);
@@ -90,7 +96,7 @@ namespace UnitTest
             var cat1 = catYamlMapViewModel["CatLibrary.Cat`2.CalculateFood(System.DateTime)"];
             Assert.IsNotNull(cat1);
             Assert.AreEqual(24, cat1.Startline);
-            Assert.AreEqual(41, cat1.Endline);
+            Assert.AreEqual(28, cat1.Endline);
             Assert.IsNull(cat1.References);
             Assert.IsNull(cat1.CustomProperties);
 
@@ -99,10 +105,10 @@ namespace UnitTest
             // Check CatLibrary.FakeDelegate`1.yml.map
             var delegateYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, delegateYamlMapFileName));
             Assert.AreEqual(1, delegateYamlMapViewModel.Count);
-            var delegate1 = catYamlMapViewModel["CatLibrary.FakeDelegate`1"];
+            var delegate1 = delegateYamlMapViewModel["CatLibrary.FakeDelegate`1"];
             Assert.IsNotNull(delegate1);
-            Assert.AreEqual(45, delegate1.Startline);
-            Assert.AreEqual(56, delegate1.Endline);
+            Assert.AreEqual(37, delegate1.Startline);
+            Assert.AreEqual(48, delegate1.Endline);
             var delegateReferences = delegate1.References;
             Assert.IsNotNull(delegateReferences);
 

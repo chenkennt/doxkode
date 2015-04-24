@@ -47,7 +47,8 @@
 
             var overridenProperties = RemoveRequiredProperties(properties, RequiredProperties);
 
-            var location = Location.GetLocation(input, wholeMatch.Index, wholeMatch.Length);
+            // Get one character larger then the actual match
+            var location = Location.GetLocation(input, wholeMatch.Index - 1, wholeMatch.Length + 2);
 
             return new MatchSingleDetail
                        {

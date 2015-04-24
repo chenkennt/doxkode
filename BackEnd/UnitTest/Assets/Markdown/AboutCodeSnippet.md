@@ -7,7 +7,7 @@ This is a Class description refer to @CatLibrary.FakeDelegate`1
 Starting CodeSnippet:
 ```csharp
 public class Program
-    {
+    {FakeDelegate
         static int Main(string[] args)
         {
                Console.Writeline("Hello");
@@ -21,7 +21,7 @@ public class Program
 ---
 uid: CatLibrary.Cat`2.CalculateFood(System.DateTime)
 ---
-This is not valid
+This is For Cat's function.
 
 ---
 id: CatLibrary.IAnimal.Eat

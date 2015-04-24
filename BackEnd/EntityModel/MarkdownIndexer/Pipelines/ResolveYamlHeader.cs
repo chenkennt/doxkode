@@ -62,7 +62,7 @@
                                                                      Path = item.Path,
                                                                      Remote = item.Remote,
                                                                      Startline = markdownSection.Location.StartLocation.Line + 1,
-                                                                     Endline = markdownSection.Location.EndLocation.Line, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n
+                                                                     Endline = markdownSection.Location.EndLocation.Line + 1, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n
                         References = SelectReferenceSection(references, markdownSection.Location),
                                                                      CustomProperties = yamlHeader.Properties,
                                                                  };
@@ -166,6 +166,7 @@
             var sectionEnd = section.Location.EndLocation;
             var splitterStart = splitter.StartLocation;
             var splitterEnd = splitter.EndLocation;
+            if (sectionEnd.CompareTo(splitterStart) <= 0 || sectionStart.CompareTo(splitterEnd) >= 0) return new List<MarkdownSection> { section };
 
             var firstStart = sectionStart;
 

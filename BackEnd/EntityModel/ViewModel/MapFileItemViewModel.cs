@@ -161,6 +161,8 @@ namespace DocAsCode.EntityModel
         public static Location GetLocation(string input, int matchedStartIndex, int matchedLength)
         {
             if (matchedLength <= 0) return new Location();
+            if (matchedStartIndex < 0) matchedStartIndex = 0;
+            if (matchedLength > input.Length) matchedLength = input.Length;
             var beforeMatch = input.Substring(0, matchedStartIndex);
             Coordinate start = Coordinate.GetCoordinate(beforeMatch);
 
@@ -203,10 +205,18 @@ namespace DocAsCode.EntityModel
         public static Coordinate GetCoordinate(string content)
         {
             if (string.IsNullOrEmpty(content)) return Coordinate.Default;
-            int index = content.Length;
+            int index = content.Length - 1;
             int line = content.Split(NewLineCharacter).Length - 1;
-            int lineStart = content.LastIndexOf(NewLineCharacter) + 1;
-            int col = index - lineStart;
+
+            // Remove last new line character if it is last character of the content
+            if (content[content.Length - 1] == NewLineCharacter)
+            {
+                content = content.Substring(0, content.Length - 1);
+                line = line - 1;
+                index -= 1;
+            }
+            int lineStart = content.LastIndexOf(NewLineCharacter);
+            int col = index - lineStart - 1;
             return new Coordinate { Line = line, Column = col };
         }
 
@@ -221,7 +231,7 @@ namespace DocAsCode.EntityModel
 
         public override string ToString()
         {
-            return string.Format("{line{0}, col{1}}", Line, Column);
+            return string.Format("{{line{0}, col{1}}}", Line, Column);
         }
     }
 }
