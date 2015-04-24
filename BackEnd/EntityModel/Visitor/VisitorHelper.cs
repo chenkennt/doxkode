@@ -52,7 +52,7 @@
             return str.ToString().Substring(2);
         }
 
-        public static SourceDetail GetLinkDetail(ISymbol symbol)
+        public static SourceDetail GetLinkDetail(ISymbol symbol, SymbolDisplayFormat displayFormat)
         {
             if (symbol == null)
             {
@@ -68,10 +68,9 @@
                 }
             }
 
-            string displayName = string.Empty;
+            string displayName = symbol.ToDisplayString(displayFormat);
             if (!string.IsNullOrEmpty(id) && id.Length > 2)
             {
-                displayName = id.Substring(2);
                 id = id.Substring(2);
             }
 
@@ -97,7 +96,7 @@
 
             return null;
         }
-        public static ApiParameter GetParameterDescription(ISymbol symbol, MetadataItem item, bool isReturn)
+        public static ApiParameter GetParameterDescription(ISymbol symbol, MetadataItem item, bool isReturn, SymbolDisplayFormat displayFormat)
         {
             SourceDetail id = null;
             string raw = item.RawComment;
@@ -107,7 +106,7 @@
             if (paraSymbol != null)
             {
                 // TODO: why BaseType?
-                id = GetLinkDetail(paraSymbol.Type);
+                id = GetLinkDetail(paraSymbol.Type, displayFormat);
             }
 
             // when would it be type symbol?
@@ -118,7 +117,7 @@
 
                 // TODO: check what name is
                 // name = DescriptionConstants.ReturnName;
-                id = GetLinkDetail(paraSymbol);
+                id = GetLinkDetail(typeSymbol, displayFormat);
             }
 
             var propertySymbol = symbol as IPropertySymbol;
@@ -126,7 +125,7 @@
             {
                 // TODO: check what name is
                 // name = DescriptionConstants.ReturnName;
-                id = GetLinkDetail(propertySymbol.Type);
+                id = GetLinkDetail(propertySymbol.Type, displayFormat);
             }
 
             string comment = isReturn ? TripleSlashCommentParser.GetReturns(raw, true) :

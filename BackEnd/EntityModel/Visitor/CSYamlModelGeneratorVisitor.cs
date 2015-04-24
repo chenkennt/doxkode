@@ -1,5 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -29,15 +30,20 @@ namespace DocAsCode.EntityModel
         {
         }
 
-        public override MetadataItem DefaultVisit(ISymbol symbol)
+        public override SymbolDisplayFormat ShortDisplayFormat
         {
-            var item = base.DefaultVisit(symbol);
-            if (item != null)
+            get
             {
-                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(ShortFormat) } };
-                item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
+                return ShortFormat;
             }
-            return item;
+        }
+
+        public override SymbolDisplayFormat DisplayFormat
+        {
+            get
+            {
+                return SymbolDisplayFormat.CSharpErrorMessageFormat;
+            }
         }
 
         public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)

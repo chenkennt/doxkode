@@ -13,10 +13,15 @@
         private MetadataItem currentNamespace = new MetadataItem();
         private MetadataItem currentAssembly = new MetadataItem();
         private readonly SyntaxLanguage language;
+
         public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
         {
             this.language = language;
         }
+
+        public abstract SymbolDisplayFormat ShortDisplayFormat { get; }
+
+        public abstract SymbolDisplayFormat DisplayFormat { get; }
 
         public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
 
@@ -30,6 +35,8 @@
                 Language = this.language,
             };
 
+            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(ShortDisplayFormat) } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(DisplayFormat) } };
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
 
@@ -107,7 +114,7 @@
                 item.Inheritance = new List<SourceDetail>();
                 while (type != null)
                 {
-                    SourceDetail link = VisitorHelper.GetLinkDetail(type);
+                    SourceDetail link = VisitorHelper.GetLinkDetail(type, ShortDisplayFormat);
 
                     item.Inheritance.Add(link);
                     type = type.BaseType;
@@ -167,7 +174,7 @@
 
             if (!symbol.ReturnsVoid)
             {
-                item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true);
+                item.Syntax.Return = VisitorHelper.GetParameterDescription(symbol.ReturnType, item, true, ShortDisplayFormat);
             }
 
             if (item.Syntax.Parameters == null)
@@ -177,7 +184,7 @@
 
             foreach (var i in symbol.Parameters)
             {
-                var param = VisitorHelper.GetParameterDescription(i, item, false);
+                var param = VisitorHelper.GetParameterDescription(i, item, false, ShortDisplayFormat);
                 Debug.Assert(param.Type != null);
 
                 item.Syntax.Parameters.Add(param);
@@ -211,7 +218,7 @@
                 item.Syntax.Parameters = new List<ApiParameter>();
             }
 
-            var param = VisitorHelper.GetParameterDescription(symbol, item, false);
+            var param = VisitorHelper.GetParameterDescription(symbol, item, false, ShortDisplayFormat);
             Debug.Assert(param.Type != null);
 
             item.Syntax.Parameters.Add(param);

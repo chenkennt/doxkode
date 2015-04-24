@@ -56,6 +56,41 @@ namespace Test1
             Assert.IsNull(returnValue);
         }
 
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public async Task TestGenereateMetadataAsync_CSharp_Generic()
+        {
+            string code = @"
+namespace Test1
+{
+    public class Class1<T> where T : struct
+    {
+        public TResult? Func1<TResult>(T? x) where T : struct
+        {
+            return null;
+        }
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            var function = output.Items[0].Items[0].Items[0];
+            Assert.IsNotNull(function);
+            Assert.AreEqual("Func1<TResult>(T?)", function.DisplayNames.First().Value);
+            Assert.AreEqual("Test1.Class1<T>.Func1<TResult>(T?)", function.DisplayQualifiedNames.First().Value);
+            Assert.AreEqual("Test1.Class1`1.Func1``1(System.Nullable{`0})", function.Name);
+            Assert.AreEqual(1, output.Items.Count);
+            var parameter = function.Syntax.Parameters[0];
+            Assert.AreEqual("x", parameter.Name);
+            Assert.AreEqual("System.Nullable{`0}", parameter.Type.Name);
+            Assert.IsTrue(parameter.Type.IsExternalPath);
+            Assert.IsNull(parameter.Type.Href);
+            var returnValue = function.Syntax.Return;
+            Assert.IsNotNull(returnValue);
+            Assert.IsNotNull(returnValue.Type);
+            Assert.AreEqual("System.Nullable{``0}", returnValue.Type.Name);
+            Assert.AreEqual("TResult?", returnValue.Type.DisplayName);
+        }
+
         private static Compilation CreateCompilationFromCsharpCode(string code)
         {
             var tree = SyntaxFactory.ParseSyntaxTree(code);
