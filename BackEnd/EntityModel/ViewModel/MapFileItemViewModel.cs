@@ -174,6 +174,11 @@ namespace DocAsCode.EntityModel
         {
             return wrapper.StartLocation.CompareTo(this.StartLocation) <= 0 && wrapper.EndLocation.CompareTo(this.EndLocation) >= 0;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{Start{0}, End{1}}", StartLocation, EndLocation);
+        }
     }
 
     public struct Coordinate : IComparable<Coordinate>
@@ -191,7 +196,7 @@ namespace DocAsCode.EntityModel
         }
 
         /// <summary>
-        /// Lines & Columns start at 1 to be consistent with IDE
+        /// Lines & Columns start at 0 to leverage default value, NOTE that IDE start at 1, need to +1 at the outermost
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
@@ -199,7 +204,7 @@ namespace DocAsCode.EntityModel
         {
             if (string.IsNullOrEmpty(content)) return Coordinate.Default;
             int index = content.Length;
-            int line = content.Split(NewLineCharacter).Length;
+            int line = content.Split(NewLineCharacter).Length - 1;
             int lineStart = content.LastIndexOf(NewLineCharacter) + 1;
             int col = index - lineStart;
             return new Coordinate { Line = line, Column = col };
@@ -212,6 +217,11 @@ namespace DocAsCode.EntityModel
             if (this.Column > other.Column) return 1;
             if (this.Column < other.Column) return -1;
             return 0;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{line{0}, col{1}}", Line, Column);
         }
     }
 }

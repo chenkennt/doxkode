@@ -64,11 +64,57 @@ namespace UnitTest
 
             Assert.AreEqual(4, mapFiles.Length);
 
+            // Check CatLibrary.IAnimal.yml.map
+            var interfaceYamlMapFileName = "CatLibrary.IAnimal.yml.map";
+            AssertFileExists(interfaceYamlMapFileName, mapFiles);
+
+            var interfaceYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, interfaceYamlMapFileName));
+            Assert.AreEqual(2, interfaceYamlMapViewModel.Count);
+            var interface1 = interfaceYamlMapViewModel["CatLibrary.IAnimal"];
+            Assert.IsNotNull(interface1);
+            Assert.AreEqual(5, interface1.Startline);
+            Assert.AreEqual(20, interface1.Endline);
+            var interfaceReferences = interface1.References;
+            Assert.IsNotNull(interfaceReferences);
+
+            Assert.AreEqual(1, interfaceReferences.Count);
+            Assert.AreEqual(1, interfaceReferences["'../testclass1/catlibrary/class1.cs'[20-46]"].Keys.Count);
+            Assert.IsNotNull(interface1.CustomProperties);
+            Assert.AreEqual("This is a *TEST* for override summary @CatLibrary.FakeDelegate`1", interface1.CustomProperties["summary"]);
+
+            var catYamlMapFileName = "CatLibrary.Cat`2.yml.map";
+            AssertFileExists(catYamlMapFileName, mapFiles);
+            // Check CatLibrary.Cat`2.yml.map
+            var catYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, catYamlMapFileName));
+            Assert.AreEqual(1, catYamlMapViewModel.Count);
+            var cat1 = catYamlMapViewModel["CatLibrary.Cat`2.CalculateFood(System.DateTime)"];
+            Assert.IsNotNull(cat1);
+            Assert.AreEqual(24, cat1.Startline);
+            Assert.AreEqual(41, cat1.Endline);
+            Assert.IsNull(cat1.References);
+            Assert.IsNull(cat1.CustomProperties);
+
+            var delegateYamlMapFileName = "CatLibrary.FakeDelegate`1.yml.map";
+            AssertFileExists(delegateYamlMapFileName, mapFiles);
+            // Check CatLibrary.FakeDelegate`1.yml.map
+            var delegateYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, delegateYamlMapFileName));
+            Assert.AreEqual(1, delegateYamlMapViewModel.Count);
+            var delegate1 = catYamlMapViewModel["CatLibrary.FakeDelegate`1"];
+            Assert.IsNotNull(delegate1);
+            Assert.AreEqual(45, delegate1.Startline);
+            Assert.AreEqual(56, delegate1.Endline);
+            var delegateReferences = delegate1.References;
+            Assert.IsNotNull(delegateReferences);
+
+            Assert.AreEqual(1, delegateReferences.Count);
+            Assert.AreEqual(2, delegateReferences["../testclass1/testclass1/class1.cs[0-]"].Keys.Count);
+            Assert.IsNull(cat1.CustomProperties);
+
+            // Check .md.map
             var mdMapFileName = "AboutCodeSnippet.md.map";
             AssertFileExists(mdMapFileName, mapFiles);
             var mdMapFileViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, mdMapFileName));
 
-            // Check .md.map
             Assert.AreEqual(1, mdMapFileViewModel.Count);
             var references = mdMapFileViewModel["assets/markdown/aboutcodesnippet.md"].References;
             Assert.AreEqual(3, references.Count);
@@ -89,23 +135,10 @@ namespace UnitTest
             Assert.AreEqual(@"{{""../TestClass1/TestClass1/Class1.cs""}}", reference2.Keys[0]);
             Assert.AreEqual(@"{{../TestClass1\testClass1/Class1.cs[0-]}}", reference2.Keys[1]);
 
-            var catYamlMapFileName = "CatLibrary.Cat`2.yml.map";
-            AssertFileExists(catYamlMapFileName, mapFiles);
-
             var reference3 = references["CatLibrary.FakeDelegate`1"];
             Assert.IsNotNull(reference3);
             Assert.AreEqual(1, reference3.Keys.Count);
             Assert.AreEqual("@CatLibrary.FakeDelegate`1", reference3.Keys[0]);
-
-            // Check .yml.map
-            var catYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, catYamlMapFileName));
-            Assert.AreEqual(1, catYamlMapViewModel.Count);
-            var cat1 = catYamlMapViewModel["CatLibrary.Cat`2.CalculateFood(System.DateTime)"];
-            Assert.IsNotNull(cat1);
-            Assert.AreEqual(24, cat1.Startline);
-            Assert.AreEqual(41, cat1.Endline);
-            Assert.IsNull(cat1.References);
-            Assert.IsNull(cat1.CustomProperties);
         }
 
         private static void AssertFileExists(string expectedFileName, IEnumerable<string> fileNames)

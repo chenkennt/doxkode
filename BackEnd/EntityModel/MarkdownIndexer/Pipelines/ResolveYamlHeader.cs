@@ -61,9 +61,9 @@
                                                                      Href = item.Href,
                                                                      Path = item.Path,
                                                                      Remote = item.Remote,
-                                                                     Startline = markdownSection.Location.StartLocation.Line,
-                                                                     Endline = markdownSection.Location.EndLocation.Line,
-                                                                     References = SelectReferenceSection(references, markdownSection.Location),
+                                                                     Startline = markdownSection.Location.StartLocation.Line + 1,
+                                                                     Endline = markdownSection.Location.EndLocation.Line, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n
+                        References = SelectReferenceSection(references, markdownSection.Location),
                                                                      CustomProperties = yamlHeader.Properties,
                                                                  };
                     MapFileViewModel apiMapFile;
