@@ -21,6 +21,8 @@
                                         Id = referenceId,
                                         ReferenceKeys = codeSnippet.MatchedSections,
                                         Href = path,
+                                        Startline = codeSnippet.StartLine,
+                                        Endline = codeSnippet.EndLine,
                                     };
 
                 // Api Index file only contains Id and Href

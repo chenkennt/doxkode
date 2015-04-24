@@ -18,7 +18,7 @@
     public static class YamlHeaderParser
     {
         private static readonly List<string> RequiredProperties = new List<string> { "uid" };
-        public static readonly Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
+        public static readonly Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n(?<content>.*?)\s*\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Singleline);
 
         public static IList<MatchDetail> Select(string input)
         {
@@ -45,6 +45,8 @@
                 return null;
             }
 
+            var overridenProperties = RemoveRequiredProperties(properties, RequiredProperties);
+
             var location = Location.GetLocation(input, wholeMatch.Index, wholeMatch.Length);
 
             return new MatchSingleDetail
@@ -52,8 +54,21 @@
                            Id = properties["uid"].ToString(),
                            MatchedSection =
                                new Section { Key = wholeMatch.Value, Locations = new List<Location> { location } },
-                           Properties = properties,
+                           Properties = overridenProperties,
                        };
+        }
+
+        private static Dictionary<string, object> RemoveRequiredProperties(Dictionary<string, object> properties, IEnumerable<string> requiredProperties)
+        {
+            if (properties == null) return null;
+
+            var overridenProperties = new Dictionary<string, object>(properties);
+            foreach (var requiredProperty in RequiredProperties)
+            {
+                if (requiredProperty != null) overridenProperties.Remove(requiredProperty);
+            }
+
+            return overridenProperties;
         }
 
         /// <summary>

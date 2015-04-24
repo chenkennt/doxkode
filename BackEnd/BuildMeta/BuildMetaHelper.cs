@@ -441,7 +441,7 @@
 
             // Read index
             string indexFilePath = Path.Combine(workingDirectory, indexFileName);
-            if (!File.Exists(indexFilePath)) return null;
+            if (!File.Exists(indexFilePath)) return new ParseResult(ResultLevel.Error, "Index file {0} is not found under {1}, exiting...", indexFileName, workingDirectory);
             using (StreamReader sr = new StreamReader(indexFilePath))
             {
                 indexViewModel = YamlUtility.Deserialize<Dictionary<string, MetadataItem>>(sr);

@@ -22,8 +22,8 @@
             if (!string.IsNullOrEmpty(context.MarkdownFilePath))
             {
                 item.Remote = GitUtility.GetGitDetail(context.MarkdownFilePath);
-                item.Path = context.MarkdownFilePath;
-                item.Href = context.MarkdownFilePath;
+                item.Path = context.MarkdownFilePath.BackSlashToForwardSlash();
+                item.Href = context.MarkdownFilePath.BackSlashToForwardSlash();
             }
 
             return new ParseResult(ResultLevel.Success);

@@ -8,6 +8,8 @@ using DocAsCode.EntityModel;
 
 namespace UnitTest
 {
+    using System.Linq;
+
     using YamlDotNet.Core;
 
     /// <summary>
@@ -20,30 +22,97 @@ namespace UnitTest
     public class MarkdownIndexBuilderUnitTest
     {
         [TestMethod]
-        [DeploymentItem("Assets/Markdown/About.md", "Assets/Markdown")]
-        [DeploymentItem("Assets/TestClass1/TestClass1/Class1.cs", "Assets/TestClass1/TestClass1")]
-        public void TestMarkdownIndexBuilder()
+        [DeploymentItem("Assets/index.yml/catlibrary_index.yml", "Assets/index.yml")]
+        [DeploymentItem("Assets/Markdown/AboutCodeSnippet.md", "Assets/Markdown")]
+        public async Task TestGenerateIndexForMarkdownListAsync()
         {
-            // TODO: implement
-            List<MapFileItemViewModel> indexes = new List<MapFileItemViewModel>();
-            ParseResult result =  new ParseResult(ResultLevel.Success);
-            int itemCount = 0;
-            foreach(var index in indexes)
+            // Prepare file
+            var outputFolder = "output";
+
+            var indexFile = "Assets/index.yml/catlibrary_index.yml";
+            // Index file should be @output folder... TODO: change
+            var outputIndexFile = Path.Combine(outputFolder, indexFile);
+            var outputDirectory = Path.GetDirectoryName(outputIndexFile);
+            if (!string.IsNullOrEmpty(outputDirectory))
             {
-                Console.WriteLine(index);
-                if (index.References != null)
-                {
-                    foreach (var item in index.References)
-                    {
-                        itemCount++;
-                        Console.WriteLine(item);
-                    }
-                }
+                Directory.CreateDirectory(outputDirectory);
             }
 
-            Assert.AreEqual(4, indexes.Count);
-            Assert.AreEqual(2, itemCount);
-            Assert.AreNotEqual(ResultLevel.Error, result.ResultLevel);
+            File.Copy(indexFile, outputIndexFile);
+
+            var inputMarkdownList = "Assets/Markdown/AboutCodeSnippet.md";
+            var outputMarkdownFolder = "output/md";
+            var outputMarkdownIndexFolder = "output/map";
+            var outputReferenceFolder = "output/reference";
+
+            // Call GenerateIndexForMarkdownListAsync
+            var result =
+                await
+                BuildMetaHelper.GenerateIndexForMarkdownListAsync(
+                    outputFolder,
+                    indexFile,
+                    inputMarkdownList,
+                    outputMarkdownIndexFolder,
+                    outputMarkdownFolder,
+                    outputReferenceFolder);
+            Assert.AreEqual(ResultLevel.Success, result.ResultLevel, result.Message);
+
+            // TODO: check if output/md folder & output/reference folder get created?
+            // TODO: Copy files in Program or in Targets?
+
+            var mapFiles = Directory.GetFiles(outputMarkdownIndexFolder);
+
+            Assert.AreEqual(4, mapFiles.Length);
+
+            var mdMapFileName = "AboutCodeSnippet.md.map";
+            AssertFileExists(mdMapFileName, mapFiles);
+            var mdMapFileViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, mdMapFileName));
+
+            // Check .md.map
+            Assert.AreEqual(1, mdMapFileViewModel.Count);
+            var references = mdMapFileViewModel["Assets/Markdown/AboutCodeSnippet.md"].References;
+            Assert.AreEqual(2, references.Count);
+            var reference1 = references["../TestClass1/CatLibrary/Class1.cs[20-46]"];
+            Assert.IsNotNull(reference1);
+            Assert.AreEqual(20, reference1.Startline);
+            Assert.AreEqual(46, reference1.Endline);
+            Assert.AreEqual("../TestClass1/CatLibrary/Class1.cs", reference1.Href);
+            Assert.AreEqual(1, reference1.Keys.Count);
+            Assert.AreEqual(@"{{'../TestClass1/TestClass1/Class1.cs'}}", reference1.Keys[0]);
+
+            var reference2 = references["../TestClass1/TestClass1/Class1.cs[0-]"];
+            Assert.IsNotNull(reference2);
+            Assert.AreEqual(0, reference2.Startline);
+            Assert.AreEqual(-1, reference2.Endline);
+            Assert.AreEqual("../TestClass1/CatLibrary/Class1.cs", reference2.Href);
+            Assert.AreEqual(2, reference2.Keys.Count);
+            Assert.AreEqual(@"{{""../TestClass1/TestClass1/Class1.cs""}}", reference2.Keys[0]);
+            Assert.AreEqual(@"{{../TestClass1/TestClass1/Class1.cs[0-]}}", reference2.Keys[0]);
+
+            var catYamlMapFileName = "CatLibrary.Cat`2.yml.map";
+            AssertFileExists(catYamlMapFileName, mapFiles);
+
+            // Check .yml.map
+            var catYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, catYamlMapFileName));
+            Assert.AreEqual(1, catYamlMapViewModel.Count);
+            var cat1 = catYamlMapViewModel["CatLibrary.Cat`2.CalculateFood(System.DateTime)"];
+            Assert.IsNotNull(cat1);
+            Assert.AreEqual(24, cat1.Startline);
+            Assert.AreEqual(41, cat1.Endline);
+            Assert.IsNull(cat1.References);
+            Assert.IsNull(cat1.CustomProperties);
+        }
+
+        private static void AssertFileExists(string expectedFileName, IEnumerable<string> fileNames)
+        {
+            Assert.IsTrue(
+                fileNames.Any(s => s.EndsWith(expectedFileName, StringComparison.OrdinalIgnoreCase)),
+                "map files should contain" + expectedFileName);
+        }
+
+        private static MapFileViewModel LoadMapFile(string path)
+        {
+            return YamlUtility.Deserialize<MapFileViewModel>(path);
         }
     }
 }

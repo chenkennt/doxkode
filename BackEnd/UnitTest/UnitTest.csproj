@@ -124,6 +124,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <None Include="Assets\index.yml\catlibrary_index.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\Markdown\AboutCodeSnippet.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -149,7 +152,7 @@
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataE2eUnitTest.cs" />
-    <Compile Include="MarkdownIndexerTest.cs" />
+    <Compile Include="MarkdownIndexerPipelineTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Assets\TestClass1\VBTestClass1\My Project\Settings.settings">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

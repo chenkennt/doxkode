@@ -8,7 +8,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
-    public class MarkdownIndexerTest
+    public class MarkdownIndexerPipelineTest
     {
         [TestMethod]
         public void TestResolveYamlHeader()

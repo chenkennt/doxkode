@@ -83,5 +83,11 @@ namespace DocAsCode.EntityModel
         {
             return deserializer.Value.Deserialize<T>(reader);
         }
+
+        public static T Deserialize<T>(string path)
+        {
+            using (StreamReader reader = new StreamReader(path))
+                return Deserialize<T>(reader);
+        }
     }
 }

@@ -40,8 +40,8 @@
                                             ReferenceKeys = yamlHeader.MatchedSections,
                                             Href = api.Href,
                                         };
-                    // 1. Add references to Markdown file
-                    references.AddItem(reference);
+                    // *DONOT* Add references to Markdown file
+                    // references.AddItem(reference);
 
                     // 2. Write api reference to API's map file
                     MarkdownSection markdownSection;

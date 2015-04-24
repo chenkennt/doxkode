@@ -5,6 +5,7 @@ using System.IO;
 namespace DocAsCode.EntityModel
 {
     using System;
+    using System.Linq;
 
     public class MapFileViewModel : Dictionary<string, MapFileItemViewModel>
     {
@@ -53,23 +54,21 @@ namespace DocAsCode.EntityModel
         /// <summary>
         /// The start line in the referencing file that define the reference
         /// </summary>
-        [YamlDotNet.Serialization.YamlMember(Alias = "referenceKeys")]
-        public Dictionary<string, Section> ReferenceKeys { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "Keys")]
+        public List<string> Keys
+        {
+            get
+            {
+                return this.ReferenceKeys?.Keys.ToList();
+            }
+            set
+            {
+                ReferenceKeys = value.ToDictionary(s => s, s => new Section { Key = s });
+            }
+        }
 
         [YamlDotNet.Serialization.YamlIgnore]
-        public string MarkdownContent { get; set; }
-
-        [YamlDotNet.Serialization.YamlMember(Alias = "startLine")]
-        public int ContentStartIndex { get; set; }
-
-        [YamlDotNet.Serialization.YamlMember(Alias = "endLine")]
-        public int ContentEndIndex { get; set; }
-
-        [YamlDotNet.Serialization.YamlMember(Alias = "referenceStartLine")]
-        public int ReferenceStartLine { get; set; }
-
-        [YamlDotNet.Serialization.YamlMember(Alias = "referenceEndLine")]
-        public int ReferenceEndLine { get; set; }
+        public Dictionary<string, Section> ReferenceKeys { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
         public GitDetail Remote { get; set; }
@@ -191,12 +190,17 @@ namespace DocAsCode.EntityModel
             return new Coordinate() { Line = this.Line + toAdd.Line, Column = this.Column + toAdd.Column };
         }
 
+        /// <summary>
+        /// Lines & Columns start at 1 to be consistent with IDE
+        /// </summary>
+        /// <param name="content"></param>
+        /// <returns></returns>
         public static Coordinate GetCoordinate(string content)
         {
             if (string.IsNullOrEmpty(content)) return Coordinate.Default;
             int index = content.Length;
-            int line = content.Split(NewLineCharacter).Length - 1; // Start from 0
-            int lineStart = content.LastIndexOf(NewLineCharacter) + 1; // Start from 0;
+            int line = content.Split(NewLineCharacter).Length;
+            int lineStart = content.LastIndexOf(NewLineCharacter) + 1;
             int col = index - lineStart;
             return new Coordinate { Line = line, Column = col };
         }

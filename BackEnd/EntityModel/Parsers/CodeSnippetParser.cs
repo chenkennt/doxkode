@@ -14,7 +14,8 @@
     /// </summary>
     public static class CodeSnippetParser
     {
-        public static Regex CodeSnippetRegex = new Regex(@"{{\s*""(?<source>\S*?)""\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Multiline | RegexOptions.Compiled);
+        // Use backreference, support "" and '' wrapper, or no wrapper
+        public static readonly Regex CodeSnippetRegex = new Regex(@"{{\s*([""']?)(?<source>\S*?)\1\s*(\[(?<line>\d*-\d*?)\])?\s*}}", RegexOptions.Compiled);
 
         public static IList<MatchDetail> Select(string input)
         {

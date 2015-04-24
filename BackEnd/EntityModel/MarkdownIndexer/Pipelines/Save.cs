@@ -2,6 +2,8 @@
 {
     using System.IO;
 
+    using DocAsCode.Utility;
+
     public class Save : IIndexerPipeline
     {
         public ParseResult Run(MapFileItemViewModel item, IndexerContext context)
@@ -16,8 +18,13 @@
                                            ?? string.Empty;
             string markdownMapFileFullPath = Path.Combine(markdownMapFileFolder, markdownMapFileName);
 
+            // Post-process item
+            // 1. if references'/overrides count is 0, set it to null
+            if (item.References != null && item.References.Count == 0) item.References = null;
+            if (item.CustomProperties != null && item.CustomProperties.Count == 0) item.CustomProperties = null;
+
             MapFileViewModel mapFile = new MapFileViewModel();
-            mapFile.Add(filePath, item);
+            mapFile.Add(filePath.BackSlashToForwardSlash(), item);
             YamlUtility.Serialize(markdownMapFileFullPath, mapFile);
 
             return new ParseResult(ResultLevel.Success);

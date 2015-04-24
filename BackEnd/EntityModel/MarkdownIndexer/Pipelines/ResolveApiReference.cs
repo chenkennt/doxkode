@@ -2,6 +2,8 @@
 {
     using System.Linq;
 
+    using DocAsCode.Utility;
+
     public class ResolveApiReference : IIndexerPipeline
     {
         public ParseResult Run(MapFileItemViewModel item, IndexerContext context)
@@ -24,7 +26,7 @@
                                         {
                                             Id = referenceId,
                                             ReferenceKeys = matchDetail.MatchedSections,
-                                            Href = api.Href
+                                            Href = api.Href.BackSlashToForwardSlash()
                                         };
 
                     // Api Index file only contains Id and Href
