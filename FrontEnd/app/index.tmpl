@@ -192,11 +192,6 @@
       </div>
       <div class="subnav navbar navbar-default">
         <div class="container">
-            <div ng-if="partialModel.model.items" class="expand-all pull-right">
-              <a ng-click = "expandAll(true);">Expand All</a>
-              <span class="divider">|</span>
-              <a ng-click = "expandAll(false);">Collapse All</a>
-            </div>
             <ul class="breadcrumb">
               <li ng-repeat="crumb in breadcrumb">
                 <a ng-href="{{::getBreadCrumbHref(crumb.url)}}">{{::crumb.name}}</a>

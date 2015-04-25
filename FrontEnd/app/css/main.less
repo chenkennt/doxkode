@@ -1,16 +1,15 @@
 //========================================
 //  declarations
 //========================================
-@brand-color: #6f0101;
-@brand-highlight: #b52e31;
+@brand-color: #428bca; //#6f0101; 
+@brand-highlight: #2a6496; //#b52e31;
 @grey-background: #f1f1f1;
 @grey: #666;
 @grey-highlight: #000;
+@grey-border: #ccc;
 @font-default: 'Segoe UI', Tahoma, Helvetica, sans-serif;
 @font-semibold: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
 @font-light: 'Segoe UI Light', 'Segoe UI', Tahoma, Helvetica, sans-serif;
-@filter-box-background: #EEE;
-@filter-box-foreground: #666;
 
 //========================================
 //  basic style overrides
@@ -128,12 +127,11 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 .divider {
   margin: 0 5px;
-  color: #cccccc;
+  color: @grey-border;
 }
 
-.divider-brand {
-  margin: 0 5px;
-  color: #eecccc;
+hr {
+  border-color: @grey-border;
 }
 
 //========================================
@@ -158,6 +156,10 @@ header .navbar {
   padding: 10px 0 0 15px;
 }
 
+.navbar-collapse {
+  margin: 0 -15px;
+}
+
 // bug with angularjs collapse
 .navbar-collapse.collapse {
   overflow: hidden !important;
@@ -172,19 +174,14 @@ header .navbar {
   min-height: 40px;
 }
 
-.expand-all {
+/*.expand-all {
   padding: 10px 0;
-}
+}*/
 
 .breadcrumb {
   margin: 0;
   padding: 10px 0;
   background-color: inherit;
-}
-
-// when navbar item is selected
-.topnav .nav > li.current > a {
-  color: #fff;
 }
 
 // spacing issues with breadcrumb
@@ -232,7 +229,7 @@ header .navbar {
   text-decoration: inherit;
 }
 
-.sidetoc .nav > li > a.sidenav-expand {
+.sidetoc .nav > li > a.sidetoc-expand {
   position: absolute;
   top: 0;
   left: 0;
@@ -265,8 +262,8 @@ header .navbar {
 }
 
 // highlight selected
-.sidetoc .nav > li.current > a {
-  color: @brand-highlight;
+.sidetoc .nav > li.active > a {
+  color: @brand-color;
 }
 
 .sidetoc-lvl-1 > li {
@@ -297,21 +294,27 @@ header .navbar {
 
 .toc-filter{
   border-radius: 5px;
-  //margin: 3px 0 3px 8px;
   background: #fff;
   color: @grey;
   padding: 5px;
+  position: relative;
 }
 
-.toc-filter > .filter-toc {
+.toc-filter > input {
   border: 0;
-  //background: @filter-box-background;
   color: @grey;
-  //margin: -2px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .toc-filter > input:focus {
   outline: 0;
+}
+
+.toc-filter > .filter-icon {
+  position: absolute;
+  top: 10px;
+  left: 5px;
 }
 
 //========================================
@@ -338,22 +341,27 @@ header .navbar {
 }
 
 .item-header {
-  background-color: #f8f1f1;
-  padding: 5px 10px;
+  //background-color: #f8f1f1;
+  padding: 5px 0px;
   margin-top: 10px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #eecccc;;
+  border-bottom: 1px solid @grey-border;
+}
+
+// make it so the contribute and view source links are aligned with member name
+.item-header > .pull-right {
+  line-height: 24px;
 }
 
 .item-title {
   font-size: 16px;
-  font-family: @font-light;
-  font-weight: 700;
+  font-family: @font-semibold;
+  //font-weight: 700;
 }
 
 .item-summary {
   //overflow: hidden; // animation issue workaround
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /*.item-summary p {
@@ -362,51 +370,9 @@ header .navbar {
 
 .item-collapsible {
   //overflow: hidden; // animation issue workaround
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
-
-/* expand icons */
-
-.item-toggle:hover .plus-icon, .item-toggle:focus .plus-icon,
-.item-toggle:hover .minus-icon, .item-toggle:focus .minus-icon,
-.item-toggle:hover .plus-icon:before, .item-toggle:focus .plus-icon:before,
-.item-toggle:hover .minus-icon:before, .item-toggle:focus .minus-icon:before,
-.item-toggle:hover .plus-icon:after, .item-toggle:focus .plus-icon:after,
-.item-toggle:hover .minus-icon:after, .item-toggle:focus .minus-icon:after {
-  border-color: @brand-highlight;
-}
-
-/*.plus-icon, .minus-icon {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid @brand-color;
-  display: inline-block;
-  margin-bottom: -2px;
-}
-
-.plus-icon:before, .minus-icon:before {
-  content: '';
-  width: 9px;
-  height: 1px;
-  border-top: 1px solid @brand-color;
-  display: block;
-  position: absolute;
-  margin-top: 6px;
-  margin-left: 2px;
-}
-
-.plus-icon:after {
-  content: '';
-  width: 1px;
-  height: 9px;
-  border-right: 1px solid @brand-color;
-  display: block;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 6px;
-}*/
 
 /* additional spacing fixes */
 
@@ -441,7 +407,7 @@ header .navbar {
   border-radius: 0px 4px;
   box-sizing: border-box;
   border-width: 1px;
-  border-color: #ccc;
+  border-color: @grey-border;
   text-align: center;
   padding: 2px 8px;
   background-color: white;
@@ -581,8 +547,9 @@ footer {
     display: none !important;
   }
 
+
   // hide expand / collapse all when in phone mode
-  .expand-all {
+  /*.expand-all {
     display: none;
-  }
+  }*/
 }

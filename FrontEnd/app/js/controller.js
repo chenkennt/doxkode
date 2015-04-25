@@ -51,10 +51,10 @@
     function tocClass(navItem) {
       /* jshint validthis: true */
       var current = {
-        current: navItem.href && this.pathInfo.contentPath === navItem.href,
+        active: navItem.href && this.pathInfo.contentPath === navItem.href,
         'nav-index-section': navItem.type === 'section'
       };
-      if (current.current === true) {
+      if (current.active === true) {
         $scope.navGroup = this.navGroup;
         $scope.navItem = this.navItem;
       }
@@ -70,10 +70,10 @@
       }
 
       var current = {
-        current: navPath && navPath === navItem.href,
+        active: navPath && navPath === navItem.href,
       };
 
-      if (current.current === true){
+      if (current.active === true){
         $scope.currentNavItem = navItem;
       }
       return current;
