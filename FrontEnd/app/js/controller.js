@@ -368,6 +368,7 @@
       }
     }
 
+    function bodyOffset() {
       var navHeight = $('.topnav').height() + $('.subnav').height();
       $('.sidefilter').css('top', navHeight + 'px');
       $('.sidetoc').css('top', navHeight + 60 + 'px');
@@ -380,24 +381,28 @@
       mdIndexWatcher();
       breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
       loadHomepage($scope.currentNavItem);
+      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.currentNavItem;
     }, function(navbar) {
       breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
+      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.navGroup;
     }, function(navGroup) {
       breadCrumbWatcher(navGroup, $scope.navItem, $scope.currentNavItem);
+      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.navItem;
     }, function(navItem) {
       breadCrumbWatcher($scope.navGroup, navItem, $scope.currentNavItem);
+      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
@@ -420,6 +425,7 @@
     // watch for resize and reset height of side section 
     $(window).resize(function() {
         $scope.$apply(function() {
+          bodyOffset();
         });
     });
 
