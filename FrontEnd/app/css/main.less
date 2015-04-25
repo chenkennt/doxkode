@@ -199,11 +199,11 @@ header .navbar {
 
 .sidetoc {
     position: fixed;
-    float: left;
+    //float: left;
     width: 260px;
     top: 150px;
     bottom: 0;
-    overflow-y: auto;
+    //overflow-y: auto;
     overflow-x: hidden;
     //margin-left: -15px;
     //margin-right: -15px;
@@ -284,7 +284,7 @@ header .navbar {
 
 .sidefilter {
   position: fixed;
-  z-index: 10;
+  top: 90px;
   width: 260px;
   background-color: @grey-background;
   padding: 15px;
@@ -485,7 +485,7 @@ footer {
 /* TOC display for responsive */
 
   #wrapper {
-    padding-top: 0;
+    padding-top: 0 !important; //important because of dynamically set padding inline js
   }
 
   header {
@@ -552,4 +552,8 @@ footer {
   /*.expand-all {
     display: none;
   }*/
+
+  .mobile-hide {
+    display: none;
+  }
 }

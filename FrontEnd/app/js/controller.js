@@ -368,6 +368,12 @@
       }
     }
 
+      var navHeight = $('.topnav').height() + $('.subnav').height();
+      $('.sidefilter').css('top', navHeight + 'px');
+      $('.sidetoc').css('top', navHeight + 60 + 'px');
+      $('#wrapper').css('padding-top', navHeight + 'px');
+    }
+
     $scope.$watch(function modelWatch() {
       return $scope.partialModel;
     }, function() {
@@ -410,6 +416,13 @@
     $scope.$watch(function modelWatch() {
       return $scope.currentNavItem;
     }, loadHomepage);
+
+    // watch for resize and reset height of side section 
+    $(window).resize(function() {
+        $scope.$apply(function() {
+        });
+    });
+
   }
 
 })();

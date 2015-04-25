@@ -2,10 +2,10 @@
   <!--article-content-->
   <article class="">
     <div id="article-header">
-      <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right">
+      <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right mobile-hide">
         <!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc
       </a>
-      <a class="btn pull-right" ng-href={{::getViewSourceHref()}}>
+      <a class="btn pull-right mobile-hide" ng-href={{::getViewSourceHref()}}>
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1>{{::model.type}} {{::model.name}}</h1>
@@ -49,7 +49,7 @@
         <div class=""  ng-repeat="item in ::model.items" ng-if="::(item.type == itemtype.name)">
           <div class="item-section">
             <div class="item-header">
-              <div class="pull-right">
+              <div class="pull-right mobile-hide">
                 <a ng-href="{{::getViewSourceHref(item.source.startLine)}}">View Source</a>
                 <span ng-if="item.mdHref">
                   <span class="divider">|</span>
