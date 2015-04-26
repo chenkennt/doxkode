@@ -80,7 +80,7 @@
                 block.attributes['src'].value = urlService.getAbsolutePath($location.path(), url);
             });
             angular.forEach(element.find("table"), function(block) {
-              $(block).addClass('table table-bordered table-striped');
+              $(block).addClass('table table-bordered table-striped table-condensed');
             });
           }
 
