@@ -381,21 +381,18 @@
       mdIndexWatcher();
       breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
       loadHomepage($scope.currentNavItem);
-      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.currentNavItem;
     }, function(navbar) {
       breadCrumbWatcher($scope.navGroup, $scope.navItem, $scope.currentNavItem);
-      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
       return $scope.navGroup;
     }, function(navGroup) {
       breadCrumbWatcher(navGroup, $scope.navItem, $scope.currentNavItem);
-      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {

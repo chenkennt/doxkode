@@ -244,7 +244,7 @@
     <div role="main" class="container">
       <div ng-if="toc" class="grid-left sidenav">
         <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-        <div ng-hide="tocLoading" ng-if="toc" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+        <div ng-hide="tocLoading" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
       </div>
       <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
         <div id="loading" ng-show="loading">Loading...</div>
