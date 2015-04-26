@@ -193,16 +193,14 @@
 
           // If end with .md
           if ((docConstants.MdRegexExp).test(path)) {
-            $scope.contentType = 'md';
-
             var partialModel = {
+              contentType: 'md',
               path: path,
               title: path,
             };
 
             $scope.partialModel = partialModel;
           } else if ((docConstants.YamlRegexExp).test(path)) {
-            $scope.contentType = 'yaml';
             // if is yaml
             // 1. try get md.yaml from the same path as toc, or current path if toc is not there
             contentService.getMdContent(currentPage).then(function(data){
@@ -235,7 +233,7 @@
       if (!navItem || !navItem.homepage || !$scope.tocPage) return false;
       if (!$scope.partialModel) $scope.partialModel = {};
       $scope.partialModel.path = navItem.homepage;
-      $scope.contentType = 'md';
+      $scope.partialModel.contentType = 'md';
       return true;
     }
 
@@ -245,6 +243,7 @@
         path: undefined,
         title: undefined,
         itemtypes: undefined,
+        contentType: 'yaml'
       };
       if (data instanceof Array) {
         // toc list
