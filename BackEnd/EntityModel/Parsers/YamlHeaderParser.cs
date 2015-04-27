@@ -18,7 +18,9 @@
     public static class YamlHeaderParser
     {
         private static readonly List<string> RequiredProperties = new List<string> { "uid" };
-        public static readonly Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n(?<content>.*?)\s*\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Singleline);
+
+        // If is not the end of the file, then \n should be appended to ---
+        public static readonly Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n(?<content>.*?)\s*\-\-\-((?!\n)\s)*\n|\-\-\-((?!\n)\s)*\n(?<content>.*?)\s*\-\-\-$", RegexOptions.Compiled | RegexOptions.Singleline);
 
         public static IList<MatchDetail> Select(string input)
         {

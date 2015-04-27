@@ -46,3 +46,6 @@ This is code snippet
 // Should merge with the above one in references
 {{../TestClass1\testClass1/Class1.cs[0-]}}
 ```
+---
+uid: CatLibrary.IAnimal.Eat
+---

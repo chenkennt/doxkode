@@ -162,7 +162,11 @@ namespace DocAsCode.EntityModel
         {
             if (matchedLength <= 0) return new Location();
             if (matchedStartIndex < 0) matchedStartIndex = 0;
-            if (matchedLength > input.Length) matchedLength = input.Length;
+            if (matchedStartIndex + matchedLength > input.Length)
+            {
+                matchedLength = input.Length - matchedStartIndex;
+            }
+
             var beforeMatch = input.Substring(0, matchedStartIndex);
             Coordinate start = Coordinate.GetCoordinate(beforeMatch);
 
