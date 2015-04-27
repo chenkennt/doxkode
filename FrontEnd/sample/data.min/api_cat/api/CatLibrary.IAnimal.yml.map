@@ -1,0 +1,35 @@
+CatLibrary.IAnimal:
+  id: CatLibrary.IAnimal
+  path: Assets/Markdown/AboutCodeSnippet.md
+  href: Assets/Markdown/AboutCodeSnippet.md
+  startLine: 5
+  endLine: 20
+  remote:
+    branch: Indexer1
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: 868133e7
+  references:
+    CatLibrary.FakeDelegate`1:
+      id: CatLibrary.FakeDelegate`1
+      href: CatLibrary.FakeDelegate`1.yml
+      Keys:
+      - '@CatLibrary.FakeDelegate`1'
+    ../testclass1/catlibrary/class1.cs[20-46]:
+      id: ../testclass1/catlibrary/class1.cs[20-46]
+      href: ../TestClass1/CatLibrary/Class1.cs
+      startLine: 20
+      endLine: 46
+      Keys:
+      - '{{''../TestClass1/CatLibrary/Class1.cs''[20-46]}}'
+  override:
+    summary: This is a *TEST* for override summary @CatLibrary.FakeDelegate`1
+CatLibrary.IAnimal.Eat:
+  id: CatLibrary.IAnimal.Eat
+  path: Assets/Markdown/AboutCodeSnippet.md
+  href: Assets/Markdown/AboutCodeSnippet.md
+  startLine: 32
+  endLine: 33
+  remote:
+    branch: Indexer1
+    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
+    description: 868133e7
