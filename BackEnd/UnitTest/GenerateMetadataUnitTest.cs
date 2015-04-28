@@ -72,6 +72,7 @@ namespace Test1
         }
         public IEnumerable<T> Items { get; set; }
         public event EventHandler Event1;
+        public static bool operator ==(Class1<T> x, Class1<T> y) { return false; }
     }
 }
 ";
@@ -123,6 +124,33 @@ namespace Test1
                 Assert.IsNull(event1.Syntax.Parameters);
                 Assert.IsNull(event1.Syntax.Return);
                 Assert.AreEqual("public event EventHandler Event1;", event1.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var operator1 = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(operator1);
+                Assert.AreEqual("operator ==(Class1<T>, Class1<T>)", operator1.DisplayNames.First().Value);
+                Assert.AreEqual("Test1.Class1<T>.operator ==(Test1.Class1<T>, Test1.Class1<T>)", operator1.DisplayQualifiedNames.First().Value);
+                Assert.AreEqual("Test1.Class1`1.op_Equality(Test1.Class1{`0},Test1.Class1{`0})", operator1.Name);
+                Assert.IsNotNull(operator1.Syntax.Parameters);
+
+                var parameterX = operator1.Syntax.Parameters[0];
+                Assert.AreEqual("x", parameterX.Name);
+                Assert.AreEqual("Test1.Class1`1", parameterX.Type.Name);
+                Assert.IsFalse(parameterX.Type.IsExternalPath);
+                Assert.AreEqual("", parameterX.Type.Href);
+
+                var parameterY = operator1.Syntax.Parameters[1];
+                Assert.AreEqual("y", parameterY.Name);
+                Assert.AreEqual("Test1.Class1`1", parameterY.Type.Name);
+                Assert.IsFalse(parameterY.Type.IsExternalPath);
+                Assert.AreEqual("", parameterY.Type.Href);
+
+                Assert.IsNotNull(operator1.Syntax.Return);
+                Assert.AreEqual("System.Boolean", operator1.Syntax.Return.Type.Name);
+                Assert.IsTrue(operator1.Syntax.Return.Type.IsExternalPath);
+                Assert.IsNull(operator1.Syntax.Return.Type.Href);
+
+                Assert.AreEqual("public static bool operator ==(Class1<T> x, Class1<T> y)", operator1.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 

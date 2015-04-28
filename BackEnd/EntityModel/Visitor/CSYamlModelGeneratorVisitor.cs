@@ -164,8 +164,17 @@ namespace DocAsCode.EntityModel
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();
+                            break;
                         }
-
+                        var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
+                        if (opertatorSyntax != null)
+                        {
+                            syntaxStr = opertatorSyntax.WithBody(null)
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim();
+                            break;
+                        }
                         break;
                     };
                 case MemberType.Constructor:
