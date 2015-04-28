@@ -69,10 +69,7 @@
                     MapFileViewModel apiMapFile;
                     if (File.Exists(apiMapFileFullPath))
                     {
-                        using (StreamReader reader = new StreamReader(apiMapFileFullPath))
-                        {
-                            apiMapFile = YamlUtility.Deserialize<MapFileViewModel>(reader);
-                        }
+                        apiMapFile = JsonUtility.Deserialize<MapFileViewModel>(apiMapFileFullPath);
                     }
                     else
                     {
@@ -87,7 +84,7 @@
                     if (apiMapFileSection.References != null && apiMapFileSection.References.Count == 0) apiMapFileSection.References = null;
                     if (apiMapFileSection.CustomProperties != null && apiMapFileSection.CustomProperties.Count == 0) apiMapFileSection.CustomProperties = null;
 
-                    YamlUtility.Serialize(apiMapFileFullPath, apiMapFile);
+                    JsonUtility.Serialize(apiMapFileFullPath, apiMapFile);
                 }
             }
 

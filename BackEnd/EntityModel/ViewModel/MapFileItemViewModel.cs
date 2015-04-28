@@ -7,6 +7,8 @@ namespace DocAsCode.EntityModel
     using System;
     using System.Linq;
 
+    using Newtonsoft.Json;
+
     public class MapFileViewModel : Dictionary<string, MapFileItemViewModel>
     {
     }
@@ -34,27 +36,33 @@ namespace DocAsCode.EntityModel
     public class MapFileItemViewModel : ICloneable
     {
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
+        [JsonProperty("id")]
         public string Id { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "path")]
+        [JsonProperty("path")]
         public string Path { get; set; }
 
         /// <summary>
         /// Similar to yaml, href is the location of md in the generated website, currently it is copied to md folder
         /// </summary>
         [YamlDotNet.Serialization.YamlMember(Alias = "href")]
+        [JsonProperty("href")]
         public string Href { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "startLine")]
+        [JsonProperty("startLine")]
         public int Startline { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "endLine")]
+        [JsonProperty("endLine")]
         public int Endline { get; set; }
 
         /// <summary>
         /// The start line in the referencing file that define the reference
         /// </summary>
         [YamlDotNet.Serialization.YamlMember(Alias = "Keys")]
+        [JsonProperty("Keys")]
         public List<string> Keys
         {
             get
@@ -63,23 +71,28 @@ namespace DocAsCode.EntityModel
             }
             set
             {
-                ReferenceKeys = value.ToDictionary(s => s, s => new Section { Key = s });
+                if (value != null)
+                    ReferenceKeys = value.ToDictionary(s => s, s => new Section { Key = s });
             }
         }
 
         [YamlDotNet.Serialization.YamlIgnore]
+        [JsonIgnore]
         public Dictionary<string, Section> ReferenceKeys { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
+        [JsonProperty("remote")]
         public GitDetail Remote { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "references")]
+        [JsonProperty("references")]
         public ReferencesViewModel References { get; set; }
 
         /// <summary>
         /// To override yaml settings
         /// </summary>
         [YamlDotNet.Serialization.YamlMember(Alias = "override")]
+        [JsonProperty("override")]
         public Dictionary<string, object> CustomProperties { get; set; }
 
         public override bool Equals(object obj)
@@ -143,12 +156,14 @@ namespace DocAsCode.EntityModel
         /// The raw content matching the regular expression, e.g. @ABC
         /// </summary>
         [YamlDotNet.Serialization.YamlMember(Alias = "key")]
+        [JsonProperty("key")]
         public string Key { get; set; }
 
         /// <summary>
         /// Defines the Markdown Content Location Range
         /// </summary>
         [YamlDotNet.Serialization.YamlIgnore]
+        [JsonIgnore]
         public List<Location> Locations { get; set; }
     }
 

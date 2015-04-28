@@ -27,7 +27,7 @@
 
             // Normalize file path as the key
             mapFile.Add(filePath.BackSlashToForwardSlash().ToLowerInvariant(), item);
-            YamlUtility.Serialize(markdownMapFileFullPath, mapFile);
+            JsonUtility.Serialize(markdownMapFileFullPath, mapFile);
 
             return new ParseResult(ResultLevel.Success);
         }
