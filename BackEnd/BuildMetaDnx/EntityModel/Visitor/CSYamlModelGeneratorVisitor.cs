@@ -1,6 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,7 +8,6 @@ using System.Text.RegularExpressions;
 namespace DocAsCode.EntityModel
 {
     using Microsoft.CodeAnalysis.CSharp;
-    using System.IO;
 
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
@@ -30,20 +28,15 @@ namespace DocAsCode.EntityModel
         {
         }
 
-        public override SymbolDisplayFormat ShortDisplayFormat
+        public override MetadataItem DefaultVisit(ISymbol symbol)
         {
-            get
+            var item = base.DefaultVisit(symbol);
+            if (item != null)
             {
-                return ShortFormat;
+                item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(ShortFormat) } };
+                item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat) } };
             }
-        }
-
-        public override SymbolDisplayFormat DisplayFormat
-        {
-            get
-            {
-                return SymbolDisplayFormat.CSharpErrorMessageFormat;
-            }
+            return item;
         }
 
         public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
@@ -164,17 +157,8 @@ namespace DocAsCode.EntityModel
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();
-                            break;
                         }
-                        var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
-                        if (opertatorSyntax != null)
-                        {
-                            syntaxStr = opertatorSyntax.WithBody(null)
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                            break;
-                        }
+
                         break;
                     };
                 case MemberType.Constructor:
@@ -210,14 +194,7 @@ namespace DocAsCode.EntityModel
                         if (syntax != null)
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
-                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", "");
-                            break;
-                        }
-                        var variable = syntaxNode as VariableDeclaratorSyntax;
-                        if (variable != null)
-                        {
-                            syntaxStr = variable.Parent.Parent.NormalizeWhitespace().ToString().Trim();
-                            break;
+                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
                         }
                         break;
                     };
@@ -228,27 +205,11 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as PropertyDeclarationSyntax;
                         if (syntax != null)
                         {
-                            SyntaxList<AccessorDeclarationSyntax> accessorList;
-                            if (syntax.AccessorList != null)
-                            {
-                                var accessors = syntax.AccessorList.Accessors.Where(x => !x.Modifiers.Any(SyntaxKind.PrivateKeyword) && !x.Modifiers.Any(SyntaxKind.InternalKeyword));
-                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().AddRange(accessors);
-                            }
-                            else if (syntax.ExpressionBody != null)
-                            {
-                                // If it's an expression bodied property, it should have a getter accessor
-                                var getter = SyntaxFactory.AccessorDeclaration(SyntaxKind.GetAccessorDeclaration);
-                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().Add(getter);
-                            }
-                            else
-                            {
-                                throw new InvalidDataException(string.Format("Property declaration '{0}' does not have any accessor.", syntax));
-                            }
-
+                            var accessorList = syntax.AccessorList.Accessors;
                             var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
                             SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
                             syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            var simplifiedSyntax = syntax.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
                             syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
                         }
                         else

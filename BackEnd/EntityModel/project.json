@@ -1,0 +1,27 @@
+{
+    "version": "1.0.0-alpha1",
+    "dependencies": {
+        "Utility": ""
+    },
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+                "Microsoft.CodeAnalysis.Common": "1.0.0-rc2",
+                "Microsoft.CodeAnalysis.CSharp": "1.0.0-rc2",
+                "Microsoft.CodeAnalysis.VisualBasic": "1.0.0-rc2",
+                "Newtonsoft.Json":  "6.0.8",
+                "YamlDotNet.Signed": "3.5.1"
+            },
+            "frameworkAssemblies": {
+                "Microsoft.CSharp": "",
+                "System.Core": "",
+                "System.Collections": "",
+                "System.Data": "",
+                "System.Globalization": "",
+                "System.Runtime": "",
+                "System.Threading.Tasks": "",
+                "System.Xml": ""
+            }
+        }
+    }
+}

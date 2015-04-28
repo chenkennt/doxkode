@@ -11,6 +11,7 @@
 /**/*.sln.ide/
 /DocProject/
 /TestResults/
+/.vs/
 ###############
 #  temp file  #
 ###############
@@ -19,12 +20,18 @@
 *.tmp
 *.vsprops
 *.suo
-*.ccproj.user
-*.csproj.user
-*.kproj.user
+*.user
+*.userprefs
+*.suo
+*.sln.ide
+*.cache
 .gitattributes
+.settings
 log.txt
-
+debugSettings.json
+launchSettings.json
+project.lock.json
+nuget.exe
 
 
 ############################
