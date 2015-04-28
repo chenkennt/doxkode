@@ -65,13 +65,14 @@ namespace Test1
 {
     public class Class1<T> where T : struct
     {
-        public TResult? Func1<TResult>(T? x) where T : struct
+        public TResult? Func1<TResult>(T? x, IEnumerable<T> y) where T : struct
         {
             return null;
         }
         public IEnumerable<T> Items { get; set; }
         public event EventHandler Event1;
         public static bool operator ==(Class1<T> x, Class1<T> y) { return false; }
+        public IEnumerable<T> Items2 { get; private set; }
     }
 }
 ";
@@ -81,20 +82,30 @@ namespace Test1
             {
                 var function = output.Items[0].Items[0].Items[0];
                 Assert.IsNotNull(function);
-                Assert.AreEqual("Func1<TResult>(T?)", function.DisplayNames.First().Value);
-                Assert.AreEqual("Test1.Class1<T>.Func1<TResult>(T?)", function.DisplayQualifiedNames.First().Value);
-                Assert.AreEqual("Test1.Class1`1.Func1``1(System.Nullable{`0})", function.Name);
-                var parameter = function.Syntax.Parameters[0];
-                Assert.AreEqual("x", parameter.Name);
-                Assert.AreEqual("System.Nullable{`0}", parameter.Type.Name);
-                Assert.IsTrue(parameter.Type.IsExternalPath);
-                Assert.IsNull(parameter.Type.Href);
+                Assert.AreEqual("Func1<TResult>(T?, IEnumerable<T>)", function.DisplayNames.First().Value);
+                Assert.AreEqual("Test1.Class1<T>.Func1<TResult>(T?, System.Collections.Generic.IEnumerable<T>)", function.DisplayQualifiedNames.First().Value);
+                Assert.AreEqual("Test1.Class1`1.Func1``1(System.Nullable{`0},System.Collections.Generic.IEnumerable{`0})", function.Name);
+
+                var parameterX = function.Syntax.Parameters[0];
+                Assert.AreEqual("x", parameterX.Name);
+                Assert.AreEqual("System.Nullable{`0}", parameterX.Type.Name);
+                Assert.AreEqual("T?", parameterX.Type.DisplayName);
+                Assert.IsTrue(parameterX.Type.IsExternalPath);
+                Assert.IsNull(parameterX.Type.Href);
+
+                var parameterY = function.Syntax.Parameters[1];
+                Assert.AreEqual("y", parameterY.Name);
+                Assert.AreEqual("System.Collections.Generic.IEnumerable{`0}", parameterY.Type.Name);
+                Assert.AreEqual("IEnumerable<T>", parameterY.Type.DisplayName);
+                Assert.IsTrue(parameterY.Type.IsExternalPath);
+                Assert.IsNull(parameterY.Type.Href);
+
                 var returnValue = function.Syntax.Return;
                 Assert.IsNotNull(returnValue);
                 Assert.IsNotNull(returnValue.Type);
                 Assert.AreEqual("System.Nullable{``0}", returnValue.Type.Name);
                 Assert.AreEqual("TResult?", returnValue.Type.DisplayName);
-                Assert.AreEqual(@"public TResult? Func1<TResult>(T? x)where T : struct", function.Syntax.Content[SyntaxLanguage.CSharp]);
+                Assert.AreEqual(@"public TResult? Func1<TResult>(T? x, IEnumerable<T> y)where T : struct", function.Syntax.Content[SyntaxLanguage.CSharp]);
             }
             {
                 var proptery = output.Items[0].Items[0].Items[1];
@@ -135,12 +146,14 @@ namespace Test1
                 var parameterX = operator1.Syntax.Parameters[0];
                 Assert.AreEqual("x", parameterX.Name);
                 Assert.AreEqual("Test1.Class1`1", parameterX.Type.Name);
+                Assert.AreEqual("Class1<T>", parameterX.Type.DisplayName);
                 Assert.IsFalse(parameterX.Type.IsExternalPath);
                 Assert.AreEqual("", parameterX.Type.Href);
 
                 var parameterY = operator1.Syntax.Parameters[1];
                 Assert.AreEqual("y", parameterY.Name);
                 Assert.AreEqual("Test1.Class1`1", parameterY.Type.Name);
+                Assert.AreEqual("Class1<T>", parameterY.Type.DisplayName);
                 Assert.IsFalse(parameterY.Type.IsExternalPath);
                 Assert.AreEqual("", parameterY.Type.Href);
 
@@ -150,6 +163,23 @@ namespace Test1
                 Assert.IsNull(operator1.Syntax.Return.Type.Href);
 
                 Assert.AreEqual("public static bool operator ==(Class1<T> x, Class1<T> y)", operator1.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var proptery = output.Items[0].Items[0].Items[4];
+                Assert.IsNotNull(proptery);
+                Assert.AreEqual("Items2", proptery.DisplayNames.First().Value);
+                Assert.AreEqual("Test1.Class1<T>.Items2", proptery.DisplayQualifiedNames.First().Value);
+                Assert.AreEqual("Test1.Class1`1.Items2", proptery.Name);
+                Assert.AreEqual(1, proptery.Syntax.Parameters.Count);
+                Assert.IsNull(proptery.Syntax.Return);
+                //var returnValue = proptery.Syntax.Return;
+                //Assert.IsNotNull(returnValue.Type);
+                //Assert.AreEqual("System.Collection.Generic.IEnumerable{`0}", returnValue.Type.Name);
+                //Assert.AreEqual("IEnumerable<T>", returnValue.Type.DisplayName);
+                Assert.AreEqual(@"public IEnumerable<T> Items2
+{
+    get;
+}", proptery.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 

@@ -210,7 +210,7 @@ namespace DocAsCode.EntityModel
                         if (syntax != null)
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
-                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
+                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", "");
                             break;
                         }
                         var variable = syntaxNode as VariableDeclaratorSyntax;
@@ -231,7 +231,8 @@ namespace DocAsCode.EntityModel
                             SyntaxList<AccessorDeclarationSyntax> accessorList;
                             if (syntax.AccessorList != null)
                             {
-                                accessorList = syntax.AccessorList.Accessors;
+                                var accessors = syntax.AccessorList.Accessors.Where(x => !x.Modifiers.Any(SyntaxKind.PrivateKeyword) && !x.Modifiers.Any(SyntaxKind.InternalKeyword));
+                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().AddRange(accessors);
                             }
                             else if (syntax.ExpressionBody != null)
                             {

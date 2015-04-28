@@ -88,7 +88,7 @@
                 return new SourceDetail
                 {
                     Name = id,
-                    DisplayName = symbol.Name,
+                    DisplayName = displayName,
                     IsExternalPath = false,
                     Href = syntaxNode.SyntaxTree.FilePath,
                 };
