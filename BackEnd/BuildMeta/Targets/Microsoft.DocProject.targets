@@ -8,7 +8,7 @@
     <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
     <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
     <ApiFolderPath>api/</ApiFolderPath>
-    <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
+    <TocFilePath>$(ApiFolderPath)/toc.yml</TocFilePath>
     <MarkdownIndexFilePath>md.yaml</MarkdownIndexFilePath>
     <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
     <!-- Website project's output directory is current folder, disable it as a temp workaround until a better way is found-->

@@ -97,8 +97,11 @@
     <Content Include="js\docascode.js">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="DocumentationWebsite.csproj" />
+    <None Include="DocumentationWebsite.csproj">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="DocumentationWebsiteTemplate.ico" />
+    <Content Include="logo.png" />
     <Content Include="template\class.tmpl">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -117,15 +120,15 @@
     <Content Include="template\tocpage.tmpl">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="toc.yaml">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <None Include="toc.yml" />
     <Content Include="web.config">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="DocumentationWebsiteTemplate.vstemplate" />
+    <VSTemplate Include="DocumentationWebsiteTemplate.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

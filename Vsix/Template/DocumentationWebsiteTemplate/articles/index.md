@@ -3,4 +3,4 @@
 ```
 Markdown and plaintext are both supported.
 
-Add your own conceptual files and add them to toc.yaml to take effect!
+Add your own conceptual files and add them to toc.yml to take effect!
