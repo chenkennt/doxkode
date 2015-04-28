@@ -231,7 +231,7 @@ namespace DocAsCode.EntityModel
                             var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
                             SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
                             syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolon(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
                             syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
                         }
                         else

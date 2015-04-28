@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.CodeAnalysis;
+using System.Diagnostics;
 using System.IO;
-using Microsoft.CodeAnalysis.MSBuild;
-using DocAsCode.Utility;
+using System.Linq;
 using System.Threading.Tasks;
 using DocAsCode.EntityModel;
-using System.Diagnostics;
+using DocAsCode.Utility;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.MSBuild;
+using Microsoft.CodeAnalysis.Workspaces.Dnx;
 
 namespace DocAsCode.BuildMeta
 {
@@ -171,6 +172,11 @@ namespace DocAsCode.BuildMeta
                 {
                     var project = await Workspace.OpenProjectAsync(projectFile);
                     projects.Add(project);
+                }
+                else if (Path.GetFileName(projectFile) == "project.json")
+                {
+                    var workspace = new ProjectJsonWorkspace(projectFile);
+                    projects.AddRange(workspace.CurrentSolution.Projects.Where(p => p.FilePath == projectFile));
                 }
                 else
                 {
