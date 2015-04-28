@@ -39,7 +39,7 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="toc.tmpl">toc.tmpl</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="tocpage.tmpl">tocpage.tmpl</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="false" TargetFileName="toc.yaml">toc.yaml</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="toc.yml">toc.yml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
     </Project>
   </TemplateContent>

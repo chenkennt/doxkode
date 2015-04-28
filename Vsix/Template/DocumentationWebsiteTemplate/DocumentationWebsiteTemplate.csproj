@@ -117,9 +117,7 @@
     <Content Include="template\tocpage.tmpl">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="toc.yaml">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <None Include="toc.yml" />
     <Content Include="web.config">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
