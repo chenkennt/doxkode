@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0-alpha1",
+    "dependencies": {
+        "Microsoft.CodeAnalysis.Workspaces.Dnx": ""
+    },
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+                "GitSharp": "0.3.0",
+                "LibGit2Sharp": "0.21.0.176",
+                "Microsoft.CodeAnalysis": "1.0.0-rc2",
+                "Microsoft.CodeAnalysis.CSharp.Workspaces": "1.0.0-rc2",
+                "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "1.0.0-rc2",
+                "YamlDotNet.Signed": "3.5.1",
+                "System.Runtime": "4.0.20-beta-22816"
+            },
+            "frameworkAssemblies": {
+                "Microsoft.CSharp": "",
+                "System.Core": "",
+                "System.Globalization": "",
+                "System.Threading.Tasks": ""
+            }
+        }
+    },
+    "commands": {
+        "BuildMetaDnx" : "BuildMetaDnx"
+    }
+}

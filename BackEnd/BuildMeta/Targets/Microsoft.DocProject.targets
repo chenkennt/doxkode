@@ -7,8 +7,9 @@
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
     <IntermediateOutputPath Condition=" '$(IntermediateOutputPath)' == '' ">obj/$(Configuration)</IntermediateOutputPath>
     <IntermediateFilePath>$(IntermediateOutputPath)/obj.list</IntermediateFilePath>
-    <ApiFolderPath>api/</ApiFolderPath>
-    <TocFilePath>$(ApiFolderPath)/toc.yml</TocFilePath>
+    <BuildOutputPath></BuildOutputPath>
+    <ApiFolderPath>$(BuildOutputPath)api/</ApiFolderPath>
+    <TocFilePath>$(ApiFolderPath)/toc.yaml</TocFilePath>
     <MarkdownIndexFilePath>md.yaml</MarkdownIndexFilePath>
     <PreviewPort Condition=" '$(PreviewPort)' == '' ">8002</PreviewPort>
     <!-- Website project's output directory is current folder, disable it as a temp workaround until a better way is found-->
@@ -102,7 +103,7 @@
   <Target Name ="MergeMetadata">
     <ItemGroup>
       <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
-      <OutputMetadataFiles Include="$(OutputPath)\**\*.*" />
+      <OutputMetadataFiles Include="$(BuildOutputPath)\**\*.yml" />
     </ItemGroup>
     <CallTarget Targets="CleanupExistingOutput" />
     <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
@@ -123,20 +124,28 @@
   </Target>
 
   <Target Name ="IndexMarkdown">
+    <ItemGroup>
+      <MapFiles Include="$(BuildOutputPath)\**\*.yml.map" />
+      <MapFiles Include="$(BuildOutputPath)\**\*.md.map" />
+    </ItemGroup>
     <CallTarget Targets="CleanupExistingMarkdownIndexFile" />
     <CallTarget Targets="_IndexMarkdown" />
   </Target>
 
-  <Target Name="_IndexMarkdown" Outputs="$(MarkdownIndexFilePath)">
+  <Target Name="_IndexMarkdown">
     <ItemGroup>
       <MarkdownFiles  Include="@(None)" Condition="'%(Extension)' == '.md'" />
       <MarkdownFiles  Include="@(Content)" Condition="'%(Extension)' == '.md'" />
       <MarkdownFiles  Include="@(Compile)" Condition="'%(Extension)' == '.md'" />
     </ItemGroup>
-
+    <Copy
+        SourceFiles="@(MarkdownFiles)"
+        DestinationFiles="@(MarkdownFiles->'$(BuildOutputPath)\%(RelativeDir)%(Filename)%(Extension)')"
+        />
+    
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(OutputPath), @(MarkdownFiles) => Markdown Index File -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')  /target:markdown" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',') /mdmap:&quot;&quot; /apimap:&quot;&quot; /target:markdown" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -146,12 +155,9 @@
   </Target>
 
   <Target Name="CleanupExistingMarkdownIndexFile">
-    <ItemGroup>
-      <MarkdownIndexFiles Include="$(MarkdownIndexFilePath)" />
-    </ItemGroup>
     <!-- Cleanup existing docmta -->
-    <Message Text="Deleting @(MarkdownIndexFiles)" />
-    <Delete Files="@(MarkdownIndexFiles)" ContinueOnError="true" />
+    <Message Text="Deleting @(MapFiles)" />
+    <Delete Files="@(MapFiles)" ContinueOnError="true" />
   </Target>
 
   <Target Name="PublishDoc">

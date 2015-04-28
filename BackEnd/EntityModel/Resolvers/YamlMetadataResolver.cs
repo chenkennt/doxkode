@@ -20,7 +20,8 @@ namespace DocAsCode.EntityModel
         };
 
         /// <summary>
-        /// TODO: input Namespace list instead
+        /// TODO: input Namespace list instead; 
+        /// TODO: Save to ...yml.map
         /// </summary>
         /// <param name="allMembers"></param>
         /// <returns></returns>

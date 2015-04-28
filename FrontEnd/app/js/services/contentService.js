@@ -65,7 +65,9 @@
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
       var pathInfo = urlService.getPathInfo(path);
-      path = urlService.normalizeUrl((pathInfo.tocPath || '') + '/' + constants.MdIndexFile);
+
+      if (!pathInfo.contentPath) return valueHttpWrapper(null);
+      path = urlService.getContentFilePath(pathInfo) + constants.MdIndexFile;
 
       if (path) {
         tempMdIndex = mdIndexCache.get(path);
@@ -74,7 +76,8 @@
         } else {
           return $http.get(path)
             .then(function(result) {
-              var content = getYamlResponse(result);
+              // use json format for map file as be consistent with other map files, e.g. js.map, css.map.
+              var content = result;
               mdIndexCache.put(path, content);
               return content;
             }).catch(function(result) {
@@ -96,6 +99,30 @@
   }
 
   angular.module('docascode.contentService', ['docascode.constants', 'docascode.urlService'])
+    // Post processing response not working as 404 in console is thrown out in xhr.send(post || null);
+    .factory('myInterceptor', ['$q', function($q) {
+      // Happenes after console 404
+      // http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/
+      return {
+        response: function(rejection) {
+          if (rejection.status === 404) {
+            return $q.resolve();
+          }
+
+          return $q.reject(rejection);
+        },
+        responseError: function(rejection) {
+          if (rejection.status === 404) {
+            return $q.resolve();
+          }
+
+          return $q.reject(rejection);
+        }
+      };
+    }])
+    .config(['$httpProvider', function ($httpProvider) {
+        // $httpProvider.interceptors.push('myInterceptor');
+      }])
     .factory('tocCache', ['$cacheFactory', function($cacheFactory) {
       return $cacheFactory('toc-cache');
     }])

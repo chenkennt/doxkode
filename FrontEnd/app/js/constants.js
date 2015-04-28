@@ -14,7 +14,7 @@
         this.YamlRegexExp = /\.yml$/;
         this.MdRegexExp = /\.md$/;
         this.MdOrYamlRegexExp = /(\.yml$)|(\.md$)/;
-        this.MdIndexFile = 'md' + this.YamlExtension;
+        this.MdIndexFile = '.map';
         this.TocFile = 'toc' + this.YamlExtension; // docConstants.TocFile
         this.TocAndFileUrlSeperator = '!'; // docConstants.TocAndFileUrlSeperator
     }

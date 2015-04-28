@@ -2,6 +2,8 @@
 
 namespace DocAsCode.EntityModel
 {
+    using DocAsCode.Utility;
+
     public class BuildIndex : IResolverPipeline
     {
         public ParseResult Run(MetadataModel yaml, ResolverContext context)
@@ -22,7 +24,9 @@ namespace DocAsCode.EntityModel
                         }
                         else
                         {
-                            yaml.Indexer.Add(member.Name, new MetadataItem { Name = member.Name, Href = member.Href });
+                            yaml.Indexer.Add(
+                                member.Name,
+                                new MetadataItem { Name = member.Name, Href = context.ApiFolder.ForwardSlashCombine(member.Href) });
                         }
                     }
 

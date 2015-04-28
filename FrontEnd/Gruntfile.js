@@ -56,10 +56,18 @@ module.exports = function(grunt) {
     // * ORDER OF FILES IS IMPORTANT
     // * ALWAYS ADD EACH FILE TO BOTH minified/unminified SECTIONS!
     // Move to use CDN instead
-    cssFiles: [],
-    jsFiles: [],
+    cssFiles: [
+
+    ],
+    jsFiles: [
+      'app/bower_components/jquery/dist/jquery.js',
+      'app/bower_components/angular/angular.js',
+    ],
     unminifiedCssFiles: [],
-    unminifiedJsFiles: [],
+    unminifiedJsFiles: [
+      'app/bower_components/jquery/dist/jquery.js',
+      'app/bower_components/angular/angular.js',
+    ],
     cdnCssFiles: [
       "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.2/custom/bootstrap.min.css",
@@ -68,10 +76,10 @@ module.exports = function(grunt) {
       "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
-      "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+      // "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/js-yaml/3.2.7/js-yaml.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js",
-      "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js",
+      // "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-resource.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-cookies.min.js",

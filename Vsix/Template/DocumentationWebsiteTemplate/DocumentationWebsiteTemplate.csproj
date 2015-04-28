@@ -97,11 +97,8 @@
     <Content Include="js\docascode.js">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="DocumentationWebsite.csproj">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="DocumentationWebsite.csproj" />
     <None Include="DocumentationWebsiteTemplate.ico" />
-    <Content Include="logo.png" />
     <Content Include="template\class.tmpl">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -126,9 +123,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="DocumentationWebsiteTemplate.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
+    <VSTemplate Include="DocumentationWebsiteTemplate.vstemplate" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

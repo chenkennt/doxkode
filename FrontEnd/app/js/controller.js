@@ -17,13 +17,13 @@
 (function() {
   'use strict';
 
-  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.constants'])
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.util', 'docascode.constants'])
     .controller('DocsController', [
-      '$scope', '$location', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
+      '$scope', '$location', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docUtility', 'docConstants',
       DocsCtrl
     ]);
 
-  function DocsCtrl($scope, $location, NG_ITEMTYPES, contentService, urlService, docConstants) {
+  function DocsCtrl($scope, $location, NG_ITEMTYPES, contentService, urlService, docUtility, docConstants) {
 
     /**********************************
      Initialize
@@ -290,14 +290,7 @@
       var itemHref = (tocPath || '') + '/' + item.href;
       return contentService.getMarkdownContent(itemHref).then(
         function(res) {
-          var snippet = res;
-          var startLine = item.referenceStartLine ? item.referenceStartLine : 1;
-          var lines = snippet.split('\n');
-          var endLine = item.referenceEndLine ? item.referenceEndLine : lines.length;
-          snippet = "";
-          for (var i = startLine - 1; i < endLine; i++) {
-            snippet += lines[i] + '\n';
-          }
+          var snippet = docUtility.substringLine(res, item.startLine, item.endLine);
           return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
         });
     }
@@ -311,20 +304,22 @@
         if ($scope.mdIndex && $scope.partialModel) {
           var partialModel = $scope.partialModel.model;
           if (partialModel){
-            var mdPath = $scope.mdIndex[partialModel.id];
-            if (mdPath) {
-                if (mdPath.href) {
-                    partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+            var mapItem = $scope.mdIndex[partialModel.id];
+            if (mapItem) {
+                if (mapItem.href) {
+                    partialModel.mdHref = urlService.getRemoteUrl(mapItem);
                     var tocPath = urlService.getPathInfo($location.path()).tocPath;
-                    var href = (tocPath || '') + '/' + mdPath.href;
-                    var getMdIndex = contentService.getMarkdownContent(href).then(
+                    var href = (tocPath || '') + '/' + mapItem.href;
+                    // Get markdown content
+                    contentService.getMarkdownContent(href).then(
                       function(result) {
-                          var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-                          if (mdPath.items) {
+                          var md = docUtility.substringLine(result, mapItem.startLine, mapItem.endLine);
+                          if (mapItem.references) {
                               var promise = contentService.valueHttpWrapper(md);
-                              for (var i = 0; i < mdPath.items.length; i++) {
-                                  var item = mdPath.items[i];
-                                  promise = promise.then(makeThenFunction(item, tocPath, mdPath, md));
+                              for (var i = 0; i < mapItem.items.length; i++) {
+                                  var item = mapItem.references[i];
+
+                                  promise = promise.then(makeThenFunction(item, tocPath, mapItem, md));
                               }
                               promise.then(function(md){
                                 partialModel.mdContent = md;
@@ -418,7 +413,7 @@
       return $scope.currentNavItem;
     }, loadHomepage);
 
-    // watch for resize and reset height of side section 
+    // watch for resize and reset height of side section
     $(window).resize(function() {
         $scope.$apply(function() {
           bodyOffset();

@@ -1,4 +1,7 @@
 #Version Note
+## lianwei@4/27/2015
+1. Change BuildIndex to generate map file for each .yml and .md file instead of generating one md.yml file only.
+
 ## lianwei@4/20/2015
 1. Change yaml file extension from .yaml to standard .yml
 2. Change toc.yaml to use name-href pair

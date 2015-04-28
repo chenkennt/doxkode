@@ -164,8 +164,17 @@ namespace DocAsCode.EntityModel
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();
+                            break;
                         }
-
+                        var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
+                        if (opertatorSyntax != null)
+                        {
+                            syntaxStr = opertatorSyntax.WithBody(null)
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim();
+                            break;
+                        }
                         break;
                     };
                 case MemberType.Constructor:
@@ -201,7 +210,7 @@ namespace DocAsCode.EntityModel
                         if (syntax != null)
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
-                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
+                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", "");
                             break;
                         }
                         var variable = syntaxNode as VariableDeclaratorSyntax;
@@ -222,7 +231,8 @@ namespace DocAsCode.EntityModel
                             SyntaxList<AccessorDeclarationSyntax> accessorList;
                             if (syntax.AccessorList != null)
                             {
-                                accessorList = syntax.AccessorList.Accessors;
+                                var accessors = syntax.AccessorList.Accessors.Where(x => !x.Modifiers.Any(SyntaxKind.PrivateKeyword) && !x.Modifiers.Any(SyntaxKind.InternalKeyword));
+                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().AddRange(accessors);
                             }
                             else if (syntax.ExpressionBody != null)
                             {
@@ -238,7 +248,7 @@ namespace DocAsCode.EntityModel
                             var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
                             SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
                             syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolon(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
+                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
                             syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
                         }
                         else

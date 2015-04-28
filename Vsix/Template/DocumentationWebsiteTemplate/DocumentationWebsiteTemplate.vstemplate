@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>DocumentationWebsite</Name>
@@ -44,4 +45,51 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="logo.png">logo.png</ProjectItem>
     </Project>
   </TemplateContent>
+=======
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DocumentationWebsite</Name>
+    <Description>Documentation website supported by doc-as-code project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DocumentationWebsite</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>DocumentationWebsiteTemplate.ico</Icon>
+    <PreviewImage>DocumentationWebsiteTemplate.ico</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DocumentationWebsite.csproj" File="DocumentationWebsite.csproj" ReplaceParameters="true">
+      <Folder Name="api" TargetFolderName="api">
+        <ProjectItem ReplaceParameters="false" TargetFileName="NOTE.md">NOTE.md</ProjectItem>
+      </Folder>
+      <Folder Name="articles" TargetFolderName="articles">
+        <ProjectItem ReplaceParameters="false" TargetFileName="about.md">about.md</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="index.md">index.md</ProjectItem>
+      </Folder>
+      <Folder Name="css" TargetFolderName="css">
+        <ProjectItem ReplaceParameters="true" TargetFileName="docascode.css">docascode.css</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+      <Folder Name="js" TargetFolderName="js">
+        <ProjectItem ReplaceParameters="true" TargetFileName="docascode.js">docascode.js</ProjectItem>
+      </Folder>
+      <Folder Name="template" TargetFolderName="template">
+        <ProjectItem ReplaceParameters="false" TargetFileName="class.tmpl">class.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="error404.tmpl">error404.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="namespace.tmpl">namespace.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="navbar.tmpl">navbar.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="toc.tmpl">toc.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tocpage.tmpl">tocpage.tmpl</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="toc.yml">toc.yml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+>>>>>>> origin/develop
 </VSTemplate>
