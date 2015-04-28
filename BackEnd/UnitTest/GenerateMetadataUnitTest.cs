@@ -3,7 +3,6 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    using DocAsCode.BuildMeta;
     using DocAsCode.EntityModel;
 
     using Microsoft.CodeAnalysis;
