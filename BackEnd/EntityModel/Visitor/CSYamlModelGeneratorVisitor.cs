@@ -202,6 +202,13 @@ namespace DocAsCode.EntityModel
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
                             syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
+                            break;
+                        }
+                        var variable = syntaxNode as VariableDeclaratorSyntax;
+                        if (variable != null)
+                        {
+                            syntaxStr = variable.Parent.Parent.NormalizeWhitespace().ToString().Trim();
+                            break;
                         }
                         break;
                     };
