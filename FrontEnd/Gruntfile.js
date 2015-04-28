@@ -457,6 +457,11 @@ module.exports = function(grunt) {
         source: ["src/**/src/**/*.csproj"],
         target: "sample/data/api_corefx"
       }
+    },
+    "testspec": {
+      "default": {
+        "spec": "../doc/metadata_dotnet_spec.md"
+      }
     }
   });
   grunt.fs = require('fs');
@@ -503,7 +508,6 @@ module.exports = function(grunt) {
   });
 
   var fs = require('fs');
-  var path = require('path');
   grunt.registerMultiTask('exists', 'File Existence', function() {
     grunt.util._.each(this.data, function(files) {
       files.forEach(function(file) {
@@ -512,8 +516,161 @@ module.exports = function(grunt) {
         } else {
           grunt.log.ok("Verified that required file [" + file + "] exists.");
         }
-      })
+      });
     });
+  });
+
+  grunt.registerMultiTask("testspec", function() {
+    // Delete existing data
+    grunt.file.delete("obj/testspec");
+
+    // Generate test cases
+    var marked = require("marked");
+    var source = grunt.file.read(this.data.spec);
+    var tokens = marked.lexer(source);
+    var samples = [];
+    var sample = null;
+    for (var i = 0; i < tokens.length; i++) {
+      if (tokens[i].type === "blockquote_start") {
+        if (sample !== null) {
+          grunt.fail.fatal("Blockquote inside blockquote is not supported.");
+        }
+
+        sample = {};
+        samples.push(sample);
+      } else if (tokens[i].type === "blockquote_end") {
+        sample = null;
+      }
+
+      if (sample === null) continue;
+
+      if (tokens[i].type === "paragraph" && typeof sample.name === "undefined") {
+        sample.name = tokens[i].text;
+      } else if (tokens[i].type === "code" && typeof sample[tokens[i].lang] === "undefined") {
+        sample[tokens[i].lang] = tokens[i].text;
+      }
+    }
+
+    samples.forEach(function(item, index) {
+      var folder = "obj/testspec/" + (index + 1) + "/";
+      grunt.file.write(folder + "project.json", '{"frameworks":{"dnx451":{}}}');
+      for (var key in item) {
+        if (item.hasOwnProperty(key)) {
+          switch (key) {
+            case "name":
+              grunt.file.write(folder + "name", item[key]);
+              break;
+            case "yaml":
+            case "yml":
+              grunt.file.write(folder + "baseline.yml", item[key]);
+              break;
+            case "cs":
+            case "csharp":
+              grunt.file.write(folder + "source.cs", item[key]);
+              break;
+            default:
+              grunt.log.writeln("Language " + key + " is not supported.");
+              break;
+          }
+        }
+      }
+
+      // Run buildmeta
+      grunt.task.run("exec:buildmeta:" + folder + "project.json" + ':' + folder + "output");
+    });
+
+    // Verify test result
+    grunt.task.run("verify_spec_case:obj/testspec/");
+  });
+
+  grunt.registerTask("verify_spec_case", function(testpath) {
+    var yaml = require("js-yaml");
+    var report = "# Test Case Report\n";
+    var failedCount = 0;
+    var files = grunt.file.expand(testpath + "*");
+    files.forEach(function(path, index, list) {
+      var name = grunt.file.read(path + "/name");
+      grunt.log.write("Verifying test case (" + (index + 1) + "/" + list.length + "): " + name + "...");
+
+      // Load baseline
+      var baseline = yaml.safeLoad(grunt.file.read(path + "/baseline.yml"));
+
+      // Load test result
+      var result = [];
+      grunt.file.expand(path + "/output/api/*.yml").forEach(function(file) {
+        yaml.safeLoad(grunt.file.read(file)).items.forEach(function(item) {
+          result.push(item);
+        });
+      });
+
+      // Currently supports two baseline data
+      // 1. A single item:
+      //   uid: System.String
+      //   id: String
+      // 2. A list of items:
+      //   - uid: System.String
+      //   - uid: System.Int32
+      var same = true;
+      var diffObject = function(expected, actual) {
+        var simpleActual = {};
+        for (var key in expected) {
+          if (expected.hasOwnProperty(key)) {
+            simpleActual[key] = actual[key];
+            if (JSON.stringify(expected[key]) !== JSON.stringify(actual[key])) {
+              same = false;
+            }
+          }
+        }
+
+        return simpleActual;
+      };
+
+      var actualList = [];
+      var checkObject = function(expected) {
+        var actual = result.filter(function(item) {
+          return item.uid === expected.uid;
+        });
+
+        if (actual.length == 1) {
+          actualList.push(diffObject(expected, actual[0]));
+        } else {
+          same = false;
+          actual.forEach(function(item) {
+            actualList.push(diffObject(expected, item));
+          });
+        }
+      };
+
+      if (Array.isArray(baseline)) {
+        baseline.forEach(checkObject);
+      } else {
+        checkObject(baseline);
+      }
+
+      if (same) {
+        grunt.log.ok();
+      } else {
+        grunt.log.error();
+        failedCount++;
+      }
+
+      report += "## " + (!same ? "**[FAILED]** " : "") + name + "\n";
+      report += "C#:\n```csharp\n" + grunt.file.read(path + "/source.cs") + "```\n";
+      report += "Expected YAML:\n```yaml\n" + yaml.safeDump(baseline) + "```\n";
+      report += "Actual YAML:\n```yaml\n" + yaml.safeDump(actualList.length == 1 ? actualList[0] : actualList) + "```\n";
+    });
+
+    if (failedCount == 0) {
+      grunt.log.ok("All test cases passed.");
+    }
+    else {
+      grunt.log.error(failedCount + " out of " + files.length + " cases failed.");
+      grunt.log.error("Check " + testpath + "report.html for details.");
+      var marked = require("marked");
+      var template = grunt.file.read("report.tmpl");
+      var htmlReport = grunt.template.process(template, { data: { body: marked(report) } });
+      grunt.file.write(testpath + "report.html", htmlReport);
+    }
   });
 
   grunt.registerTask('build', ['less:dev', 'exists:src', 'jshint']);
