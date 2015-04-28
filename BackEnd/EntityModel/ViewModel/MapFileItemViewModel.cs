@@ -95,6 +95,13 @@ namespace DocAsCode.EntityModel
         [JsonProperty("override")]
         public Dictionary<string, object> CustomProperties { get; set; }
 
+        /// <summary>
+        /// Message if resolve fails
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "message")]
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
         public override bool Equals(object obj)
         {
             if (obj == null)

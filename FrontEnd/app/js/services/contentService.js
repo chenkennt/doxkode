@@ -65,8 +65,9 @@
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
       var pathInfo = urlService.getPathInfo(path);
+
       if (!pathInfo.contentPath) return valueHttpWrapper(null);
-      path = pathInfo.contentPath + constants.MdIndexFile;
+      path = urlService.getContentFilePath(pathInfo) + constants.MdIndexFile;
 
       if (path) {
         tempMdIndex = mdIndexCache.get(path);
@@ -75,7 +76,8 @@
         } else {
           return $http.get(path)
             .then(function(result) {
-              var content = getYamlResponse(result);
+              // use json format for map file as be consistent with other map files, e.g. js.map, css.map.
+              var content = result;
               mdIndexCache.put(path, content);
               return content;
             }).catch(function(result) {
@@ -98,7 +100,7 @@
 
   angular.module('docascode.contentService', ['docascode.constants', 'docascode.urlService'])
     // Post processing response not working as 404 in console is thrown out in xhr.send(post || null);
-    .factory('myInterceptor', ['$q', function($q) {  
+    .factory('myInterceptor', ['$q', function($q) {
       // Happenes after console 404
       // http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/
       return {

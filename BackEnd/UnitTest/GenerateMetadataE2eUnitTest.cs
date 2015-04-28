@@ -37,40 +37,16 @@ namespace UnitTest
         [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll")]
         public async Task TestGenereateMetadataAsync_Solution_Overall()
         {
-            string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\CatLibrary\CatLibrary.csproj" };
-            string fileList = "filelist.list";
-            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
+            var projectList = @"Assets/TestClass1/TestClass1.sln, Assets\TestClass1\CatLibrary\CatLibrary.csproj";
             string outputList = "obj/inter.list";
-            string outputDirectory = "output";
-            string mdList = "md.list";
-            File.WriteAllText(mdList, "Assets/Markdown/About.md");
-            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
-            Console.WriteLine(Path.GetFullPath(outputDirectory));
-            Assert.IsTrue(Directory.Exists(outputDirectory));
+            var md = "Assets/Markdown/About.md";
+            var output = "output";
+            FileExtensions.CopyFile(md, Path.Combine(output, md));
+            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectList, outputList);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, "output", "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync("output/index.yml", Path.Combine(output, md), string.Empty, string.Empty, string.Empty);
+            Assert.IsTrue(Directory.Exists(output));
             Assert.Fail();
-        }
-
-        [TestMethod]
-        [DeploymentItem("Assets", "Assets")]
-        [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll")]
-        [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll")]
-        public async Task TestGenereateMetadataAsync_VBProject()
-        {
-            string[] slnPath = new string[] { @"Assets\TestClass1\VBTestClass1\VBTestClass1.vbproj" };
-            string fileList = "filelist.list";
-            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
-            string outputList = Path.GetRandomFileName() + ".list";
-            string outputDirectory = "output";
-            string mdList = "md.list";
-            File.WriteAllText(mdList, "Assets/Markdown/About.md");
-            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "md.yml", "md", "reference");
-            Console.WriteLine(Path.GetFullPath(outputDirectory));
-            Assert.IsTrue(Directory.Exists(outputDirectory));
-            //Assert.Fail();
         }
 
         [TestMethod]
@@ -81,18 +57,12 @@ namespace UnitTest
         [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.Desktop.dll")]
         public async Task TestGenereateMetadataAsync_CatProject_Overall()
         {
-            string[] slnPath = new string[] { @"Assets\TestClass1\CatLibrary\CatLibrary.csproj" };
-            string fileList = "filelist.list";
-            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
+            var projectList = @"Assets\TestClass1\CatLibrary\CatLibrary.csproj";
             string outputList = "obj/inter.list";
-            string outputDirectory = "output";
-            string mdList = "md.list";
-            File.WriteAllText(mdList, "Assets/Markdown/AboutCodeSnippet.md");
-            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yml", mdList, "map", "md", "reference");
-            Console.WriteLine(Path.GetFullPath(outputDirectory));
-            Assert.IsTrue(Directory.Exists(outputDirectory));
+            string mdList = "Assets/Markdown/AboutCodeSnippet.md";
+            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectList, outputList);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, "output", "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync("output/index.yml", mdList, "map", "map", "reference");
             Assert.Fail();
         }
     }

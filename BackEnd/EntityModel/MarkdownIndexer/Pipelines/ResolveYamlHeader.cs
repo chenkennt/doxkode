@@ -3,6 +3,8 @@
     using System.Collections.Generic;
     using System.IO;
 
+    using DocAsCode.Utility;
+
     public class ResolveYamlHeader : IIndexerPipeline
     {
         public ParseResult Run(MapFileItemViewModel item, IndexerContext context)
@@ -48,18 +50,24 @@
                     if (!validMarkdownSections.TryGetValue(apiId, out markdownSection)) continue;
                     
                     var apiPath = api.Href;
+                    var apiIndexPath = context.ApiIndexFilePath;
+                    var apiYamlPath = FileExtensions.GetFullPath(Path.GetDirectoryName(apiIndexPath), apiPath);
                     string apiMapFileName = Path.GetFileName(apiPath) + Constants.MapFileExtension;
-                    string apiFolder = Path.GetDirectoryName(apiPath);
+                    string apiFolder = Path.GetDirectoryName(apiYamlPath);
 
                     // Use the same folder as api.yaml if the output folder is not set
-                    string apiMapFileFolder = (string.IsNullOrEmpty(apiMapFileOutputFolder) ? apiFolder : apiMapFileOutputFolder)
-                                              ?? string.Empty;
-                    string apiMapFileFullPath = Path.Combine(apiMapFileFolder, apiMapFileName);
+                    string apiMapFileFolder = (string.IsNullOrEmpty(apiMapFileOutputFolder) ? apiFolder : apiMapFileOutputFolder);
+                    string apiMapFileFullPath = FileExtensions.GetFullPath(apiMapFileFolder, apiMapFileName);
+
+                    // Path should be the relative path from .yml to .md
+                    var markdownFilePath = Path.GetFullPath(item.Path);
+                    var indexFolder = Path.GetDirectoryName(context.ApiIndexFilePath);
+                    var apiYamlFilePath = FileExtensions.GetFullPath(indexFolder, api.Href);
+                    var relativePath = FileExtensions.MakeRelativePath(Path.GetDirectoryName(apiYamlFilePath), markdownFilePath).BackSlashToForwardSlash();
                     MapFileItemViewModel apiMapFileSection = new MapFileItemViewModel
                                                                  {
                                                                      Id = apiId,
-                                                                     Href = item.Href,
-                                                                     Path = item.Path,
+                                                                     Path = relativePath,
                                                                      Remote = item.Remote,
                                                                      Startline = markdownSection.Location.StartLocation.Line + 1,
                                                                      Endline = markdownSection.Location.EndLocation.Line + 1, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n

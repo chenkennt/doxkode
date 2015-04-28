@@ -111,21 +111,16 @@
             return await Task.Run(() => MergeYamlMetadataFromMetadataListCore(metadataList, outputFolder, indexFileName, tocFileName, apiFolder));
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputMarkdownIndexFolder, string mdFolderName, string referenceFolderName)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string inputApiIndexFilePath, string inputMarkdownListFile, string outputApiMapFileFolder, string outputMarkdownMapFileFolder, string outputReferenceFolder)
         {
-            if (string.IsNullOrWhiteSpace(workingDirectory))
-            {
-                throw new ArgumentException("output folder is required when merging metadata from metadata list");
-            }
-
             return Task.Run(() => {
-                var markdownList = GetFileList(markdownListFile);
+                var markdownList = GetFileList(inputMarkdownListFile);
                 if (markdownList == null || markdownList.Count == 0)
                 {
-                    return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", markdownListFile);
+                    return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
                 }
 
-                return TryGenerateMarkdownIndexFileCore(workingDirectory, outputMarkdownIndexFolder, metadataFileName, markdownList, mdFolderName, referenceFolderName);
+                return TryGenerateMarkdownIndexFileCore(inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);
             });
         }
 
@@ -435,33 +430,26 @@
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static ParseResult TryGenerateMarkdownIndexFileCore(string workingDirectory, string outputMarkdownIndexFolder, string indexFileName, List<string> mdFiles, string mdFolderName, string referenceFolderName)
+        private static ParseResult TryGenerateMarkdownIndexFileCore(string inputApiIndexFilePath, List<string> mdFiles, string outputMardownMapFileFolder, string outputApiMapFileFolder, string outputReferenceFolder)
         {
-            Dictionary<string, MetadataItem> indexViewModel;
-
-            // Read index
-            string indexFilePath = Path.Combine(workingDirectory, indexFileName);
-            if (!File.Exists(indexFilePath)) return new ParseResult(ResultLevel.Error, "Index file {0} is not found under {1}, exiting...", indexFileName, workingDirectory);
-            using (StreamReader sr = new StreamReader(indexFilePath))
-            {
-                indexViewModel = YamlUtility.Deserialize<Dictionary<string, MetadataItem>>(sr);
-            }
-
+           
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
                 // TODO: parse in, how to keep .md.map file name unique if the file is copied to a centralized folder？
                 // TODO: thougth.1: copy all the md files with the folder structrue to the output folder?
-                string markdownIndexOutputFolder = outputMarkdownIndexFolder;
-                string apiIndexOutputFolder = outputMarkdownIndexFolder;
+                string markdownIndexOutputFolder = outputMardownMapFileFolder;
+                string apiIndexOutputFolder = outputApiMapFileFolder;
+                string referenceOutputFolder = outputReferenceFolder;
                 foreach (var mdFile in mdFiles.Distinct())
                 {
                     IndexerContext context = new IndexerContext
                                                  {
-                                                     ExternalApiIndex = indexViewModel,
+                                                     ApiIndexFilePath = inputApiIndexFilePath,
                                                      MarkdownFilePath = mdFile,
                                                      MarkdownMapFileOutputFolder = markdownIndexOutputFolder,
                                                      ApiMapFileOutputFolder = apiIndexOutputFolder,
+                                                     ReferenceOutputFolder = referenceOutputFolder
                                                  };
                     var result = MarkdownIndexer.MarkdownIndexer.Exec(context);
                     result.WriteToConsole();

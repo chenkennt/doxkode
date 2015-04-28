@@ -22,8 +22,7 @@ namespace UnitTest
     public class MarkdownIndexBuilderUnitTest
     {
         [TestMethod]
-        [DeploymentItem("Assets/index.yml/catlibrary_index.yml", "Assets/index.yml")]
-        [DeploymentItem("Assets/Markdown/AboutCodeSnippet.md", "Assets/Markdown")]
+        [DeploymentItem("Assets", "Assets")]
         public async Task TestGenerateIndexForMarkdownListAsync()
         {
             // Prepare file
@@ -41,26 +40,24 @@ namespace UnitTest
             File.Copy(indexFile, outputIndexFile);
 
             var inputMarkdownList = "Assets/Markdown/AboutCodeSnippet.md";
-            var outputMarkdownFolder = "output/md";
-            var outputMarkdownIndexFolder = "output/map";
+            var outputMapFileFolder = "output/map";
             var outputReferenceFolder = "output/reference";
 
             // Call GenerateIndexForMarkdownListAsync
             var result =
                 await
                 BuildMetaHelper.GenerateIndexForMarkdownListAsync(
-                    outputFolder,
-                    indexFile,
+                    outputIndexFile,
                     inputMarkdownList,
-                    outputMarkdownIndexFolder,
-                    outputMarkdownFolder,
+                    outputMapFileFolder,
+                    outputMapFileFolder,
                     outputReferenceFolder);
             Assert.AreEqual(ResultLevel.Success, result.ResultLevel, result.Message);
 
             // TODO: check if output/md folder & output/reference folder get created?
             // TODO: Copy files in Program or in Targets?
 
-            var mapFiles = Directory.GetFiles(outputMarkdownIndexFolder);
+            var mapFiles = Directory.GetFiles(outputMapFileFolder);
 
             Assert.AreEqual(4, mapFiles.Length);
 
@@ -68,7 +65,7 @@ namespace UnitTest
             var interfaceYamlMapFileName = "CatLibrary.IAnimal.yml.map";
             AssertFileExists(interfaceYamlMapFileName, mapFiles);
 
-            var interfaceYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, interfaceYamlMapFileName));
+            var interfaceYamlMapViewModel = LoadMapFile(Path.Combine(outputMapFileFolder, interfaceYamlMapFileName));
             Assert.AreEqual(2, interfaceYamlMapViewModel.Count);
             var interface1 = interfaceYamlMapViewModel["CatLibrary.IAnimal"];
             Assert.IsNotNull(interface1);
@@ -91,19 +88,20 @@ namespace UnitTest
             var catYamlMapFileName = "CatLibrary.Cat`2.yml.map";
             AssertFileExists(catYamlMapFileName, mapFiles);
             // Check CatLibrary.Cat`2.yml.map
-            var catYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, catYamlMapFileName));
+            var catYamlMapViewModel = LoadMapFile(Path.Combine(outputMapFileFolder, catYamlMapFileName));
             Assert.AreEqual(1, catYamlMapViewModel.Count);
             var cat1 = catYamlMapViewModel["CatLibrary.Cat`2.CalculateFood(System.DateTime)"];
             Assert.IsNotNull(cat1);
             Assert.AreEqual(24, cat1.Startline);
             Assert.AreEqual(28, cat1.Endline);
+            Assert.AreEqual("../../../Assets/Markdown/AboutCodeSnippet.md", cat1.Path);
             Assert.IsNull(cat1.References);
             Assert.IsNull(cat1.CustomProperties);
 
             var delegateYamlMapFileName = "CatLibrary.FakeDelegate`1.yml.map";
             AssertFileExists(delegateYamlMapFileName, mapFiles);
             // Check CatLibrary.FakeDelegate`1.yml.map
-            var delegateYamlMapViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, delegateYamlMapFileName));
+            var delegateYamlMapViewModel = LoadMapFile(Path.Combine(outputMapFileFolder, delegateYamlMapFileName));
             Assert.AreEqual(1, delegateYamlMapViewModel.Count);
             var delegate1 = delegateYamlMapViewModel["CatLibrary.FakeDelegate`1"];
             Assert.IsNotNull(delegate1);
@@ -119,7 +117,7 @@ namespace UnitTest
             // Check .md.map
             var mdMapFileName = "AboutCodeSnippet.md.map";
             AssertFileExists(mdMapFileName, mapFiles);
-            var mdMapFileViewModel = LoadMapFile(Path.Combine(outputMarkdownIndexFolder, mdMapFileName));
+            var mdMapFileViewModel = LoadMapFile(Path.Combine(outputMapFileFolder, mdMapFileName));
 
             Assert.AreEqual(1, mdMapFileViewModel.Count);
             var references = mdMapFileViewModel["assets/markdown/aboutcodesnippet.md"].References;
@@ -128,18 +126,15 @@ namespace UnitTest
             Assert.IsNotNull(reference1);
             Assert.AreEqual(20, reference1.Startline);
             Assert.AreEqual(46, reference1.Endline);
-            Assert.AreEqual("../TestClass1/CatLibrary/Class1.cs", reference1.Href);
+            Assert.AreEqual("../../output/reference/.._.._Assets_TestClass1_CatLibrary_Class1.cs", reference1.Path);
             Assert.AreEqual(1, reference1.Keys.Count);
             Assert.AreEqual(@"{{'../TestClass1/CatLibrary/Class1.cs'[20-46]}}", reference1.Keys[0]);
 
             var reference2 = references["../testclass1/testclass1/class1.cs[0-]"];
             Assert.IsNotNull(reference2);
             Assert.AreEqual(0, reference2.Startline);
-            Assert.AreEqual(-1, reference2.Endline);
-            Assert.AreEqual("../TestClass1/TestClass1/Class1.cs", reference2.Href);
-            Assert.AreEqual(2, reference2.Keys.Count);
-            Assert.AreEqual(@"{{""../TestClass1/TestClass1/Class1.cs""}}", reference2.Keys[0]);
-            Assert.AreEqual(@"{{../TestClass1\testClass1/Class1.cs[0-]}}", reference2.Keys[1]);
+            Assert.AreEqual(0, reference2.Endline);
+            Assert.IsTrue(reference2.Message.EndsWith("does not exist."));
 
             var reference3 = references["CatLibrary.FakeDelegate`1"];
             Assert.IsNotNull(reference3);

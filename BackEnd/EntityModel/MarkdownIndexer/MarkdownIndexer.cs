@@ -8,6 +8,7 @@ namespace DocAsCode.EntityModel.MarkdownIndexer
         // Order matters
         static List<IIndexerPipeline> pipelines = new List<IIndexerPipeline>()
         {
+            new LoadApiIndex(),
             new LoadMarkdownFile(),
             new ResolveApiReference(),
             new ResolveCodeSnippet(),

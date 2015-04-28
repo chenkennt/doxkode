@@ -1,5 +1,6 @@
 ﻿namespace DocAsCode.EntityModel.MarkdownIndexer
 {
+    using System.IO;
     using System.Linq;
 
     using DocAsCode.Utility;
@@ -15,6 +16,7 @@
             if (links == null || links.Count == 0) return new ParseResult(ResultLevel.Info, "No Api reference found for {0}", filePath);
             if (item.References == null) item.References = new ReferencesViewModel();
             ReferencesViewModel references = item.References;
+           
             foreach (var matchDetail in links)
             {
                 var referenceId = matchDetail.Id;

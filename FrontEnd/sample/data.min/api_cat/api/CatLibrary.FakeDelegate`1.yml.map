@@ -1,18 +1,1 @@
-CatLibrary.FakeDelegate`1:
-  id: CatLibrary.FakeDelegate`1
-  path: Assets/Markdown/AboutCodeSnippet.md
-  href: Assets/Markdown/AboutCodeSnippet.md
-  startLine: 37
-  endLine: 48
-  remote:
-    branch: Indexer1
-    repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    description: 868133e7
-  references:
-    ../testclass1/testclass1/class1.cs[0-]:
-      id: ../testclass1/testclass1/class1.cs[0-]
-      href: ../TestClass1/TestClass1/Class1.cs
-      endLine: -1
-      Keys:
-      - '{{"../TestClass1/TestClass1/Class1.cs"}}'
-      - '{{../TestClass1\testClass1/Class1.cs[0-]}}'
+{"CatLibrary.FakeDelegate`1":{"id":"CatLibrary.FakeDelegate`1","path":"Assets/Markdown/AboutCodeSnippet.md","href":"Assets/Markdown/AboutCodeSnippet.md","startLine":37,"endLine":48,"remote":{"branch":"Map","repo":"https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode","key":"fe660f4d"},"references":{"../testclass1/testclass1/class1.cs[0-]":{"id":"../testclass1/testclass1/class1.cs[0-]","href":"../TestClass1/TestClass1/Class1.cs","startLine":0,"endLine":-1,"Keys":["{{\"../TestClass1/TestClass1/Class1.cs\"}}","{{../TestClass1\\testClass1/Class1.cs[0-]}}"]}}}}

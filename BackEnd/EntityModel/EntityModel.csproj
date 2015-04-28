@@ -124,6 +124,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="MarkdownIndexer\Pipelines\LoadApiIndex.cs" />
     <Compile Include="MarkdownIndexer\Pipelines\LoadMarkdownFile.cs" />
     <Compile Include="MarkdownIndexer\Pipelines\Save.cs" />
     <Compile Include="MarkdownIndexer\Pipelines\GenerateFullTextIndex.cs" />
