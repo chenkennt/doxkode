@@ -186,6 +186,38 @@ namespace DocAsCode.Utility
             return relativePath;
         }
 
+        public static string GetFullPath(string folder, string href)
+        {
+            if (string.IsNullOrEmpty(href)) return null;
+            if (string.IsNullOrEmpty(folder)) return href;
+            return Path.Combine(folder, href);
+        }
+
+        public static void CopyFile(string path, string targetPath)
+        {
+            if (string.IsNullOrEmpty(path) || string.IsNullOrEmpty(targetPath)) return;
+            var source = Path.GetFullPath(path);
+            var target = Path.GetFullPath(targetPath);
+            var targetFolder = Path.GetDirectoryName(target);
+            if (!string.IsNullOrEmpty(targetFolder) && !Directory.Exists(targetFolder))
+            {
+                Directory.CreateDirectory(targetFolder);
+            }
+
+            // TODO: works only in single thread app
+            if (!File.Exists(target))
+            {
+                try
+                {
+                    File.Copy(source, target);
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+        }
+
         /// <summary>
         /// Also change backslash to forward slash
         /// </summary>

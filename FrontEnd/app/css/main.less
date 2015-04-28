@@ -1,19 +1,18 @@
 //========================================
 //  declarations
 //========================================
-@brand-color: #6f0101;
-@brand-highlight: #b52e31;
-@grey: #777;
+@brand-color: #428bca; //#6f0101; 
+@brand-highlight: #2a6496; //#b52e31;
+@grey-background: #f1f1f1;
+@grey: #666;
 @grey-highlight: #000;
-@font-default: 'Segoe UI', Tahoma, Helvetica, sans-serif;
-@font-semibold: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
-@font-light: 'Segoe UI Light', 'Segoe UI', Tahoma, Helvetica, sans-serif;
-@filter-box-background: #EEE;
-@filter-box-foreground: #666;
+@grey-border: #ccc;
+@font: 'Segoe UI', Tahoma, Helvetica, sans-serif;
 
 //========================================
 //  basic style overrides
 //========================================
+
 // Disable IE10's Text Input Action Icons: http://stackoverflow.com/questions/10842665/internet-explorer-10-windows-8-remove-text-input-and-password-action-icons
 ::-ms-clear {
   width : 0;
@@ -21,7 +20,7 @@
 }
 
 html, body {
-  font-family: @font-default;
+  font-family: @font;
   height: 100%;
 }
 
@@ -43,23 +42,24 @@ a:hover, a:focus {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: @font-light;
-  font-weight: 700;
+  //font-family: @font-light;
+  //font-weight: 700;
 }
 
 h5, .h5 {
-  font-family: @font-semibold;
+  //font-family: @font-semibold;
 }
 
 // gradient button
 .btn {
-  font-family: @font-semibold;
+  //font-family: @font-semibold;
+  font-weight: 500;
   border: 1px solid #e5e5e5;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
-  background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
-  background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
-  background-image: -o-linear-gradient(#ffffff, #f2f2f2);
-  background-image: linear-gradient(#ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, @grey-background));
+  background-image: -webkit-linear-gradient(#ffffff, @grey-background);
+  background-image: -moz-linear-gradient(#ffffff, @grey-background);
+  background-image: -o-linear-gradient(#ffffff, @grey-background);
+  background-image: linear-gradient(#ffffff, @grey-background);
   overflow: hidden;
 }
 
@@ -88,6 +88,7 @@ table p {
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 15px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
@@ -107,6 +108,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 }
 
 /* blends header footer and content together with gradient effect */
+
 .grad-top {
   background: -webkit-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
@@ -125,12 +127,11 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 .divider {
   margin: 0 5px;
-  color: #cccccc;
+  color: @grey-border;
 }
 
-.divider-brand {
-  margin: 0 5px;
-  color: #eecccc;
+hr {
+  border-color: @grey-border;
 }
 
 //========================================
@@ -150,28 +151,37 @@ header .navbar {
   border-radius: 0;
 }
 
+.navbar-brand {
+  font-size: inherit;
+  padding: 10px 0 0 15px;
+}
+
+.navbar-collapse {
+  margin: 0 -15px;
+}
+
+// bug with angularjs collapse
+.navbar-collapse.collapse {
+  overflow: hidden !important;
+}
+
+// bug with angularjs collapse
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
+
 .subnav {
   min-height: 40px;
 }
 
-.expand-all {
+/*.expand-all {
   padding: 10px 0;
-}
+}*/
 
 .breadcrumb {
   margin: 0;
   padding: 10px 0;
   background-color: inherit;
-}
-
-// when navbar item is selected
-.topnav .nav > li.current > a {
-  color: #fff;
-}
-
-// left align nav bar
-header .nav {
-  margin-left: -15px;
 }
 
 // spacing issues with breadcrumb
@@ -182,47 +192,55 @@ header .nav {
 //========================================
 //  side nav bar
 //========================================
+
 .sidenav {
+    background-color: @grey-background;
+}
+
+.sidetoc {
     position: fixed;
-    float: left;
+    //float: left;
     width: 260px;
-    top: 90px;
+    top: 150px;
     bottom: 0;
-    overflow-y: auto;
+    //overflow-y: auto;
     overflow-x: hidden;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 15px 15px 100px 15px;
+    //margin-left: -15px;
+    //margin-right: -15px;
+    padding: 0px 15px 100px 15px;
+    background-color: @grey-background;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
 }
 
 // in desktop mode TOC is always shown
-.sidenav-lvl-1.ng-hide {
-  display: block!important;
+.sidetoggle.ng-hide {
+  display: block !important;
 }
 
-.sidenav .nav > li > a {
+.sidetoc .nav > li > a {
     display: inline;
     padding: 0;
 }
 
-.sidenav .nav > li > a:hover,
-.sidenav .nav > li > a:focus {
+.sidetoc .nav > li > a:hover,
+.sidetoc .nav > li > a:focus {
   background: none;
   text-decoration: inherit;
 }
 
-.sidenav .nav > li > a.sidenav-expand {
+.sidetoc .nav > li > a.sidetoc-expand {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.sidenav-expand > .caret {
+.sidetoc-expand > .caret {
   margin-left: 0px;
   margin-top: -2px;
 }
 
-.sidenav-expand > .caret-side {
+.sidetoc-expand > .caret-side {
   border-left: 4px solid;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
@@ -230,56 +248,74 @@ header .nav {
   margin-top: -4px;
 }
 
-.sidenav-heading {
-  font-family: @font-semibold;
+.sidetoc-heading {
+  //font-family: @font-semibold;
+  font-weight: 500;
 }
 
-.sidenav .nav > li > a {
+.sidetoc .nav > li > a {
   color: @grey;
 }
 
-.sidenav .nav > li > a:hover,
-.sidenav .nav > li > a:focus {
+.sidetoc .nav > li > a:hover,
+.sidetoc .nav > li > a:focus {
   color: @grey-highlight;
 }
 
 // highlight selected
-.sidenav .nav > li.current > a {
-  color: @brand-highlight;
+.sidetoc .nav > li.active > a {
+  color: @brand-color;
 }
 
-.sidenav-lvl-1 > li {
-  padding-left: 15px;
-  margin-bottom: 15px;
+.sidetoc-lvl-1 > li {
+  //padding-left: 15px; //for collapsible control
+  margin-bottom: 10px;
   position: relative;
 }
 
-.sidenav-lvl-2 {
+.sidetoc-lvl-2 {
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 .toc-toggle {
   display: none;
-  margin-bottom: 10px;
+  margin: 0 15px 0px 15px;
+}
+
+.sidefilter {
+  position: fixed;
+  top: 90px;
+  width: 260px;
+  background-color: @grey-background;
+  padding: 15px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
 }
 
 .toc-filter{
-  border-radius: 6px;
-  margin: 3px 0 3px 8px;
-  background: @filter-box-background;
-  color: @filter-box-foreground;
+  border-radius: 5px;
+  background: #fff;
+  color: @grey;
   padding: 5px;
+  position: relative;
 }
 
-.toc-filter > .filter-toc {
+.toc-filter > input {
   border: 0;
-  background: @filter-box-background;
-  color: @filter-box-foreground;
-  margin: -2px;
+  color: @grey;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .toc-filter > input:focus {
   outline: 0;
+}
+
+.toc-filter > .filter-icon {
+  position: absolute;
+  top: 10px;
+  left: 5px;
 }
 
 //========================================
@@ -293,7 +329,7 @@ header .nav {
 
 // content section on the right
 .article.grid-right {
-  margin-left: 270px;
+  margin-left: 280px;
 }
 
 // inheritance indentation
@@ -306,16 +342,22 @@ header .nav {
 }
 
 .item-header {
-  background-color: #faf0f0;
-  padding: 5px 10px;
+  //background-color: #f8f1f1;
+  padding: 5px 0px;
   margin-top: 10px;
   margin-bottom: 5px;
+  border-bottom: 1px solid @grey-border;
+}
+
+// make it so the contribute and view source links are aligned with member name
+.item-header > .pull-right {
+  line-height: 24px;
 }
 
 .item-title {
   font-size: 16px;
-  font-family: @font-light;
-  font-weight: 700;
+  //font-family: @font-semibold;
+  font-weight: 500;
 }
 
 .item-summary {
@@ -330,49 +372,8 @@ header .nav {
 .item-collapsible {
   //overflow: hidden; // animation issue workaround
   margin-left: 10px;
+  margin-bottom: 20px;
 }
-
-/* expand icons */
-
-.item-toggle:hover .plus-icon, .item-toggle:focus .plus-icon,
-.item-toggle:hover .minus-icon, .item-toggle:focus .minus-icon,
-.item-toggle:hover .plus-icon:before, .item-toggle:focus .plus-icon:before,
-.item-toggle:hover .minus-icon:before, .item-toggle:focus .minus-icon:before,
-.item-toggle:hover .plus-icon:after, .item-toggle:focus .plus-icon:after,
-.item-toggle:hover .minus-icon:after, .item-toggle:focus .minus-icon:after {
-  border-color: @brand-highlight;
-}
-
-/*.plus-icon, .minus-icon {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid @brand-color;
-  display: inline-block;
-  margin-bottom: -2px;
-}
-
-.plus-icon:before, .minus-icon:before {
-  content: '';
-  width: 9px;
-  height: 1px;
-  border-top: 1px solid @brand-color;
-  display: block;
-  position: absolute;
-  margin-top: 6px;
-  margin-left: 2px;
-}
-
-.plus-icon:after {
-  content: '';
-  width: 1px;
-  height: 9px;
-  border-right: 1px solid @brand-color;
-  display: block;
-  position: absolute;
-  margin-top: 2px;
-  margin-left: 6px;
-}*/
 
 /* additional spacing fixes */
 
@@ -407,7 +408,7 @@ header .nav {
   border-radius: 0px 4px;
   box-sizing: border-box;
   border-width: 1px;
-  border-color: #ccc;
+  border-color: @grey-border;
   text-align: center;
   padding: 2px 8px;
   background-color: white;
@@ -485,7 +486,7 @@ footer {
 /* TOC display for responsive */
 
   #wrapper {
-    padding-top: 0;
+    padding-top: 0 !important; //important because of dynamically set padding inline js
   }
 
   header {
@@ -497,18 +498,31 @@ footer {
   }
 
   .sidenav {
+    padding: 15px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .sidefilter {
     position: static;
     width: auto;
     float: none;
-    background-color: #efefef;
-    padding-bottom: 15px;
+    border: none;
   }
 
-  .sidenav-lvl-2 > li {
+  .sidetoc {
+    position: static;
+    width: auto;
+    float: none;
+    padding-bottom: 0px;
+    border: none;
+  }
+
+  .sidetoc-lvl-2 > li {
     display: inline-block;
   }
 
-  .sidenav-lvl-2 > li:after {
+  .sidetoc-lvl-2 > li:after {
     margin-left: -3px;
     margin-right: 5px;
     content: ", ";
@@ -530,7 +544,17 @@ footer {
   }
 
   // in phone mode TOC can be hidden
-  .sidenav-lvl-1.ng-hide {
-    display: none!important;
+  .sidetoggle.ng-hide {
+    display: none !important;
+  }
+
+
+  // hide expand / collapse all when in phone mode
+  /*.expand-all {
+    display: none;
+  }*/
+
+  .mobile-hide {
+    display: none;
   }
 }

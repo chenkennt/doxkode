@@ -17,13 +17,13 @@
 (function() {
   'use strict';
 
-  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.constants'])
+  angular.module('docascode.controller', ['docascode.contentService', 'docascode.urlService', 'docascode.directives', 'docascode.util', 'docascode.constants'])
     .controller('DocsController', [
-      '$scope', '$location', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docConstants',
+      '$scope', '$location', 'NG_ITEMTYPES', 'contentService', 'urlService', 'docUtility', 'docConstants',
       DocsCtrl
     ]);
 
-  function DocsCtrl($scope, $location, NG_ITEMTYPES, contentService, urlService, docConstants) {
+  function DocsCtrl($scope, $location, NG_ITEMTYPES, contentService, urlService, docUtility, docConstants) {
 
     /**********************************
      Initialize
@@ -51,10 +51,10 @@
     function tocClass(navItem) {
       /* jshint validthis: true */
       var current = {
-        current: navItem.href && this.pathInfo.contentPath === navItem.href,
+        active: navItem.href && this.pathInfo.contentPath === navItem.href,
         'nav-index-section': navItem.type === 'section'
       };
-      if (current.current === true) {
+      if (current.active === true) {
         $scope.navGroup = this.navGroup;
         $scope.navItem = this.navItem;
       }
@@ -70,10 +70,10 @@
       }
 
       var current = {
-        current: navPath && navPath === navItem.href,
+        active: navPath && navPath === navItem.href,
       };
 
-      if (current.current === true){
+      if (current.active === true){
         $scope.currentNavItem = navItem;
       }
       return current;
@@ -193,16 +193,14 @@
 
           // If end with .md
           if ((docConstants.MdRegexExp).test(path)) {
-            $scope.contentType = 'md';
-
             var partialModel = {
+              contentType: 'md',
               path: path,
               title: path,
             };
 
             $scope.partialModel = partialModel;
           } else if ((docConstants.YamlRegexExp).test(path)) {
-            $scope.contentType = 'yaml';
             // if is yaml
             // 1. try get md.yaml from the same path as toc, or current path if toc is not there
             contentService.getMdContent(currentPage).then(function(data){
@@ -235,7 +233,7 @@
       if (!navItem || !navItem.homepage || !$scope.tocPage) return false;
       if (!$scope.partialModel) $scope.partialModel = {};
       $scope.partialModel.path = navItem.homepage;
-      $scope.contentType = 'md';
+      $scope.partialModel.contentType = 'md';
       return true;
     }
 
@@ -245,6 +243,7 @@
         path: undefined,
         title: undefined,
         itemtypes: undefined,
+        contentType: 'yaml'
       };
       if (data instanceof Array) {
         // toc list
@@ -291,14 +290,7 @@
       var itemHref = (tocPath || '') + '/' + item.href;
       return contentService.getMarkdownContent(itemHref).then(
         function(res) {
-          var snippet = res;
-          var startLine = item.referenceStartLine ? item.referenceStartLine : 1;
-          var lines = snippet.split('\n');
-          var endLine = item.referenceEndLine ? item.referenceEndLine : lines.length;
-          snippet = "";
-          for (var i = startLine - 1; i < endLine; i++) {
-            snippet += lines[i] + '\n';
-          }
+          var snippet = docUtility.substringLine(res, item.startLine, item.endLine);
           return mdResolved.replace(mdInitial.substr(item.startLine - mdPath.startLine, item.endLine - item.startLine + 1), snippet);
         });
     }
@@ -312,20 +304,22 @@
         if ($scope.mdIndex && $scope.partialModel) {
           var partialModel = $scope.partialModel.model;
           if (partialModel){
-            var mdPath = $scope.mdIndex[partialModel.id];
-            if (mdPath) {
-                if (mdPath.href) {
-                    partialModel.mdHref = urlService.getRemoteUrl(mdPath);
+            var mapItem = $scope.mdIndex[partialModel.id];
+            if (mapItem) {
+                if (mapItem.href) {
+                    partialModel.mdHref = urlService.getRemoteUrl(mapItem);
                     var tocPath = urlService.getPathInfo($location.path()).tocPath;
-                    var href = (tocPath || '') + '/' + mdPath.href;
-                    var getMdIndex = contentService.getMarkdownContent(href).then(
+                    var href = (tocPath || '') + '/' + mapItem.href;
+                    // Get markdown content
+                    contentService.getMarkdownContent(href).then(
                       function(result) {
-                          var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-                          if (mdPath.items) {
+                          var md = docUtility.substringLine(result, mapItem.startLine, mapItem.endLine);
+                          if (mapItem.references) {
                               var promise = contentService.valueHttpWrapper(md);
-                              for (var i = 0; i < mdPath.items.length; i++) {
-                                  var item = mdPath.items[i];
-                                  promise = promise.then(makeThenFunction(item, tocPath, mdPath, md));
+                              for (var i = 0; i < mapItem.items.length; i++) {
+                                  var item = mapItem.references[i];
+
+                                  promise = promise.then(makeThenFunction(item, tocPath, mapItem, md));
                               }
                               promise.then(function(md){
                                 partialModel.mdContent = md;
@@ -368,6 +362,13 @@
       }
     }
 
+    function bodyOffset() {
+      var navHeight = $('.topnav').height() + $('.subnav').height();
+      $('.sidefilter').css('top', navHeight + 'px');
+      $('.sidetoc').css('top', navHeight + 60 + 'px');
+      $('#wrapper').css('padding-top', navHeight + 'px');
+    }
+
     $scope.$watch(function modelWatch() {
       return $scope.partialModel;
     }, function() {
@@ -392,6 +393,7 @@
       return $scope.navItem;
     }, function(navItem) {
       breadCrumbWatcher($scope.navGroup, navItem, $scope.currentNavItem);
+      bodyOffset();
     });
 
     $scope.$watch(function modelWatch() {
@@ -410,6 +412,14 @@
     $scope.$watch(function modelWatch() {
       return $scope.currentNavItem;
     }, loadHomepage);
+
+    // watch for resize and reset height of side section
+    $(window).resize(function() {
+        $scope.$apply(function() {
+          bodyOffset();
+        });
+    });
+
   }
 
 })();

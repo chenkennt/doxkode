@@ -5,21 +5,27 @@
     using GitSharp;
     using GitSharp.Commands;
 
+    using Newtonsoft.Json;
+
     using YamlDotNet.Serialization;
 
     public class GitDetail
     {
         [YamlMember(Alias = "branch")]
+        [JsonProperty("branch")]
         public string RemoteBranch { get; set; }
 
         [YamlMember(Alias = "repo")]
+        [JsonProperty("repo")]
         public string RemoteRepositoryUrl { get; set; }
 
         [YamlIgnore]
+        [JsonIgnore]
         //[YamlDotNet.Serialization.YamlMember(Alias = "local")]
         public string LocalWorkingDirectory { get; set; }
 
-        [YamlMember(Alias = "description")]
+        [JsonProperty("key")]
+        [YamlMember(Alias = "key")]
         public string Description { get; set; }
 
         public override bool Equals(object obj)

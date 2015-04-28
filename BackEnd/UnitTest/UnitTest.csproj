@@ -112,6 +112,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\System.Reflection.Metadata.1.0.18-beta\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
     </Reference>
+    <Reference Include="YamlDotNet, Version=3.5.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\YamlDotNet.Signed.3.5.1\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -126,6 +130,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <None Include="Assets\index.yml\catlibrary_index.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\Markdown\AboutCodeSnippet.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -151,6 +158,7 @@
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataE2eUnitTest.cs" />
+    <Compile Include="MarkdownIndexerPipelineTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Assets\TestClass1\VBTestClass1\My Project\Settings.settings">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

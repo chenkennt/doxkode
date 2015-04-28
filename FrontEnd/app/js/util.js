@@ -16,6 +16,20 @@
       }
       return newArray;
     };
+
+    // StartLine starts @1 to be consistent with IDE
+    this.substringLine = function(input, startline, endline){
+      if (!input || endline < 1 || startline > endline) return '';
+      var lines = input.split('\n');
+      var maxLine = lines.length;
+      startline = startline <= 1 ? 1 : startline;
+      endline = endline >= maxLine ? maxLine: endline;
+      var snippet = '';
+      for(var i = startline -1; i < endline; i++){
+        snippet += lines[i] + '\n';
+      }
+      return snippet;
+    };
   }
 
   angular.module('docascode.util', [])

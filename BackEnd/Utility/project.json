@@ -4,6 +4,7 @@
         "dnx451": {
             "dependencies": {
                 "GitSharp": "0.3.0",
+                "Newtonsoft.Json":  "6.0.8",
                 "YamlDotNet.Signed": "3.5.1"
             },
             "frameworkAssemblies": {

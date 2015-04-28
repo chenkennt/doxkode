@@ -31,7 +31,7 @@ namespace DocAsCode.EntityModel
         {
             get
             {
-                return ShortDisplayFormat;
+                return ShortFormat;
             }
         }
 

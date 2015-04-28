@@ -164,8 +164,17 @@ namespace DocAsCode.EntityModel
                                 .NormalizeWhitespace()
                                 .ToString()
                                 .Trim();
+                            break;
                         }
-
+                        var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
+                        if (opertatorSyntax != null)
+                        {
+                            syntaxStr = opertatorSyntax.WithBody(null)
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim();
+                            break;
+                        }
                         break;
                     };
                 case MemberType.Constructor:
@@ -202,6 +211,13 @@ namespace DocAsCode.EntityModel
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
                             syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", ";");
+                            break;
+                        }
+                        var variable = syntaxNode as VariableDeclaratorSyntax;
+                        if (variable != null)
+                        {
+                            syntaxStr = variable.Parent.Parent.NormalizeWhitespace().ToString().Trim();
+                            break;
                         }
                         break;
                     };
