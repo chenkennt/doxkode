@@ -24,7 +24,7 @@
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public async Task TestGenereateMetadataAsync_Csharp_FuncVoidReturn()
+        public void TestGenereateMetadataAsync_Csharp_FuncVoidReturn()
         {
             string code = @"
 namespace Test1
@@ -56,7 +56,7 @@ namespace Test1
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public async Task TestGenereateMetadataAsync_CSharp_Generic()
+        public void TestGenereateMetadataAsync_CSharp_Generic()
         {
             string code = @"
 using System.Collections.Generic
@@ -184,7 +184,7 @@ namespace Test1
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public async Task TestGenereateMetadataAsync_CSharp_Interface()
+        public void TestGenereateMetadataAsync_CSharp_Interface()
         {
             string code = @"
 namespace Test1
