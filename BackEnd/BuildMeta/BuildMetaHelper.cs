@@ -165,7 +165,7 @@ namespace DocAsCode.EntityModel
                 else if (Path.GetFileName(projectFile) == "project.json")
                 {
                     var workspace = new ProjectJsonWorkspace(projectFile);
-                    projects.AddRange(workspace.CurrentSolution.Projects.Where(p => p.FilePath == projectFile));
+                    projects.AddRange(workspace.CurrentSolution.Projects.Where(p => p.FilePath == Path.GetFullPath(projectFile)));
                 }
                 else
                 {
