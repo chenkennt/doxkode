@@ -40,7 +40,9 @@
     <Content Include="articles\about.md" />
     <Content Include="articles\index.md" />
     <Content Include="toc.yml" />
-    <Content Include="logo.png" />
+    <None Include="logo.png" />
+    <None Include=".gitignore" />
+    <None Include=".nojekyll" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />

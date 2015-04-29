@@ -76,6 +76,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="api\NOTE.md">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -97,6 +98,7 @@
     <Content Include="js\docascode.js">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include=".nojekyll" />
     <None Include="DocumentationWebsite.csproj" />
     <None Include="DocumentationWebsiteTemplate.ico" />
     <None Include="logo.png" />

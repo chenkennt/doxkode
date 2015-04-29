@@ -39,6 +39,8 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="toc.tmpl">toc.tmpl</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="tocpage.tmpl">tocpage.tmpl</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".nojekyll">.nojekyll</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="toc.yml">toc.yml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="logo.png">logo.png</ProjectItem>
