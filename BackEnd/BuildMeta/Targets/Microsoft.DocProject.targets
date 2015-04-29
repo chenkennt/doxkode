@@ -124,12 +124,12 @@
       <MarkdownFiles Include="@(Content)" Condition="'%(Extension)' == '.md'" />
       <MarkdownFiles Include="@(Compile)" Condition="'%(Extension)' == '.md'" />
       <YamlFiles Include="$(ApiFolderPath)\**\*.yml" />
+      <MapFiles Include="$(BuildOutputPath)**/*.md.map" />
+      <MapFiles Include="$(BuildOutputPath)**/*.yml.map" />
     </ItemGroup>
     <!-- Cleanup existing docmta -->
-    <Message Text="Deleting @(MarkdownFiles->'%(FullPath).map')" />
-    <Delete Files=" @(MarkdownFiles->'%(FullPath).map')" ContinueOnError="true" />
-    <Message Text="Deleting @(YamlFiles->'%(FullPath).map')" />
-    <Delete Files=" @(YamlFiles->'%(FullPath).map')" ContinueOnError="true" />
+    <Message Text="Deleting @(MapFiles->'%(FullPath)')" />
+    <Delete Files="@(MapFiles->'%(FullPath)')" ContinueOnError="true" />
   </Target>
 
   <Target Name="_IndexMarkdown" DependsOnTargets="CleanupExistingMarkdownIndexFile">
