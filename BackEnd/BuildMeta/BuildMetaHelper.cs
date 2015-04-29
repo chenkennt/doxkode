@@ -118,7 +118,7 @@ namespace DocAsCode.EntityModel
                 var markdownList = GetFileList(inputMarkdownListFile);
                 if (markdownList == null || markdownList.Count == 0)
                 {
-                    return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
+                    return new ParseResult(ResultLevel.Warn, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
                 }
 
                 return TryGenerateMarkdownIndexFileCore(inputRoot, inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);

@@ -46,6 +46,7 @@ namespace UnitTest
             var result =
                 await
                 BuildMetaHelper.GenerateIndexForMarkdownListAsync(
+                    Environment.CurrentDirectory,
                     outputIndexFile,
                     inputMarkdownList,
                     outputMapFileFolder,

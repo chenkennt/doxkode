@@ -14,9 +14,10 @@
             var inputApiIndexFilePath = context.ApiIndexFilePath;
 
             // Read index
-            if (!File.Exists(inputApiIndexFilePath))
+            if (string.IsNullOrEmpty(inputApiIndexFilePath) || !File.Exists(inputApiIndexFilePath))
             {
                 context.ExternalApiIndex = new Dictionary<string, MetadataItem>();
+                if (string.IsNullOrEmpty(inputApiIndexFilePath)) return new ParseResult(ResultLevel.Success);
                 return new ParseResult(ResultLevel.Warn, "Index file {0} for API is not found", inputApiIndexFilePath);
             }
 

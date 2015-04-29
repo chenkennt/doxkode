@@ -103,6 +103,12 @@ namespace DocAsCode.EntityModel
                 if (target.HasFlag(BuildTarget.Markdown))
                 {
                     var inputIndexFilePath = Path.Combine(outputFolder, outputIndexFile);
+                    if (string.IsNullOrEmpty(inputMarkdownList))
+                    {
+                        ParseResult.WriteToConsole(ResultLevel.Info, "No markdown file is included.");
+                        return 0;
+                    }
+
                     var result = BuildMetaHelper.GenerateIndexForMarkdownListAsync(inputRootFolder, inputIndexFilePath, inputMarkdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder).Result;
 
                     if (!string.IsNullOrEmpty(result.Message))
