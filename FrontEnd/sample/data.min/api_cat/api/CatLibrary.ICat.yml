@@ -6,10 +6,10 @@ items:
   type: Interface
   source:
     remote: &o0
-      branch: develop
-      repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      description: f06ffe28
-    path: TestResults/Deploy_lianwei 2015-04-23 20_34_39/Out/Assets/TestClass1/CatLibrary/Class1.cs
+      branch: master
+      repo: https://github.com/vicancy/CatLibrary.git
+      key: 42596848
+    path: Class1.cs
     startLine: 53
   summary: Cat's interface
   syntax:
@@ -25,10 +25,10 @@ items:
   type: Event
   source:
     remote: *o0
-    path: TestResults/Deploy_lianwei 2015-04-23 20_34_39/Out/Assets/TestClass1/CatLibrary/Class1.cs
+    path: Class1.cs
     startLine: 59
   summary: eat event of cat. Every cat must implement this event.
   syntax:
     content:
-      CSharp: eat
+      CSharp: event EventHandler eat;
   id: CatLibrary.ICat.eat

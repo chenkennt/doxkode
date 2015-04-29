@@ -234,7 +234,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
+          src: ['template/*', 'web.config', 'favicon.ico', 'logo.png'],
           cwd: 'app',
           dest: 'debug/',
           filter: 'isFile'
@@ -249,7 +249,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
+          src: ['template/*', 'web.config', 'favicon.ico', 'logo.png'],
           cwd: 'app',
           dest: 'debug/',
           filter: 'isFile'
@@ -282,7 +282,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
+          src: ['template/*', 'web.config', 'favicon.ico', 'logo.png'],
           cwd: 'app',
           dest: 'release/',
           filter: 'isFile'
@@ -297,7 +297,7 @@ module.exports = function(grunt) {
         files: [{
             expand: true,
             flatten: false,
-            src: ['template/*', 'web.config', 'favicon.ico'],
+            src: ['template/*', 'web.config', 'favicon.ico', 'logo.png'],
             cwd: 'app',
             dest: 'release/',
             filter: 'isFile'
