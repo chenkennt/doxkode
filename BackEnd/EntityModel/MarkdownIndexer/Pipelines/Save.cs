@@ -23,13 +23,18 @@
             if (item.References != null && item.References.Count == 0) item.References = null;
             if (item.CustomProperties != null && item.CustomProperties.Count == 0) item.CustomProperties = null;
 
+            if (!item.HasUsefulInfo())
+            {
+                return new ParseResult(ResultLevel.Info, "Finish processing {0}, Map file will not be generated as no neccessory info is contained", context.MarkdownFilePath);
+            }
+
             MapFileViewModel mapFile = new MapFileViewModel();
 
             // Normalize file path as the key
-            mapFile.Add(filePath.BackSlashToForwardSlash().ToLowerInvariant(), item);
+            mapFile.Add(item.Path.ToLowerInvariant(), item);
             JsonUtility.Serialize(markdownMapFileFullPath, mapFile);
 
-            return new ParseResult(ResultLevel.Success);
+            return new ParseResult(ResultLevel.Success, "Finish processing {0}, successfully generated {0}", context.MarkdownFilePath, markdownMapFileFullPath);
         }
     }
 }

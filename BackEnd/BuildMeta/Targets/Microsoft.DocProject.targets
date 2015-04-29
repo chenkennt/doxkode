@@ -17,45 +17,32 @@
   </PropertyGroup>
   <Target Name="Build">
     <CallTarget Targets="Validation" />
-
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="ConfigGithub" />
     <CallTarget Targets="GenerateMetadata" />
     <CallTarget Targets="MergeMetadata" />
     <CallTarget Targets="IndexMarkdown" />
     <CallTarget Targets="CopyWebsiteFiles" Condition="$(CopyToOutput)"/>
-
-    <!--<CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />-->
-    <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
+    <!-- <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" /> -->
+    <!-- <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" /> -->
   </Target>
   <Target Name="Validation">
     <Error Condition="'$(DocToolExtensionsPath)' == ''" Text="DocToolExtensionsPath is not set! Please set DocToolExtensionsPath to the executive path of BuildMeta.exe to continue build!" ></Error>
   </Target>
   <Target Name ="Clean">
+    <CallTarget Targets="CleanupExistingObj" />
     <CallTarget Targets="CleanupExistingOutput" />
-    <!-- TO BE IMPLEMENTED-->
+    <CallTarget Targets="CleanupExistingMarkdownIndexFile" />
   </Target>
   <Target Name ="ReBuild">
     <CallTarget Targets="Clean" />
     <CallTarget Targets="Build" />
   </Target>
-  <Target Name ="GetFrameworkPaths" />
+  <!-- <Target Name ="GetFrameworkPaths" /> -->
 
   <Target Name="CopyWebsiteFiles">
     <ItemGroup>
       <WebsiteFiles Include="@(Content)" />
-      <!--
-      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
-      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />
-      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.js'" />
-
-      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.css'" />
-      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.css'" />
-      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.css'" />-->
-      <!--   <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
-      <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.tmpl" />
-      <WebsiteFiles Include="$(MSBuildProjectDirectory)/web.config" /> -->
     </ItemGroup>
-    <!--<Copy SourceFiles="@(WebsiteFiles)"  DestinationFolder="$(OutputPath)" />-->
     <Message Text="Copying @(WebsiteFiles)" />
     <Copy
         SourceFiles="@(WebsiteFiles)"
@@ -63,31 +50,22 @@
         />
   </Target>
 
+  <!-- ************************************************************************* -->
+  <!-- *************************** GenerateMetadata Phase ********************** -->
+  <!-- ************************************************************************* -->
+  <Target Name ="GenerateMetadata" DependsOnTargets="CleanupExistingObj">
+    <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
+    <CallTarget Targets="_GenerateMetadata" />
+  </Target>
+
   <Target Name="CleanupExistingObj">
-    <ItemGroup>
-      <ObjFiles Include="$(IntermediateOutputPath)\**\*.*" />
-    </ItemGroup>
-    <!-- Cleanup existing docmta -->
-    <Delete Files="@(ObjFiles)"  ContinueOnError="true" />
-  </Target>
-
-  <!-- TODO: to clean up all the files not in .csproj? -->
-  <Target Name="CleanupExistingOutput">
-    <ItemGroup>
-      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yml" />
-    </ItemGroup>
-    <!-- Cleanup existing docmta -->
-    <Delete Files="@(OutputApiFiles)" ContinueOnError="true" />
-  </Target>
-
-  <Target Name ="GenerateMetadata">
     <ItemGroup>
       <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
     </ItemGroup>
-    <CallTarget Targets="CleanupExistingObj" />
-    <Message Text="InputProjectFiles: @(InputProjectFiles)" />
-    <CallTarget Targets="_GenerateMetadata" />
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(IntermediateOutputFiles)" ContinueOnError="true" />
   </Target>
+
   <Target Name ="_GenerateMetadata" Outputs="$(IntermediateFilePath)">
     <!-- BuildMeta.exe <ProjectFiles> /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- ProjectFiles => Generate metadata file for each project in $(IntermediateOutputPath) and list the file paths in obj.list -->
@@ -99,18 +77,26 @@
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
   </Target>
+  <!-- ************************************************************************* -->
 
-  <Target Name ="MergeMetadata">
-    <ItemGroup>
-      <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
-      <OutputMetadataFiles Include="$(ApiFolderPath)\**\*.yml" />
-    </ItemGroup>
+  <!-- ************************************************************************* -->
+  <!-- *************************** MergeMetadata Phase************************** -->
+  <!-- ************************************************************************* -->
+  <Target Name ="MergeMetadata" DependsOnTargets="CleanupExistingOutput">
     <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
-    <CallTarget Targets="CleanupExistingOutput" />
-    <Message Text="IntermediateOutputFiles: @(IntermediateOutputFiles)" />
-    <Message Text="OutputMetadataFiles: @(OutputMetadataFiles)" />
+    <Message Text="OutputApiFiles: @(OutputApiFiles)" />
     <CallTarget Targets="_MergeMetadata" Condition="Exists('$(IntermediateFilePath)')"/>
     <Warning Text="No intermediate file '$(IntermediateFilePath)' gets generated. No MergeMetadata Action will be taken." Condition="!Exists('$(IntermediateFilePath)')"/>
+  </Target>
+
+  <!-- TODO: to clean up all the files not in .csproj? -->
+  <Target Name="CleanupExistingOutput">
+    <ItemGroup>
+      <IntermediateOutputFiles Include="$(IntermediateOutputPath)\**\*.*" />
+      <OutputApiFiles Include="$(ApiFolderPath)\**\*.yml" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(OutputApiFiles)" ContinueOnError="true" />
   </Target>
 
   <Target Name ="_MergeMetadata" Outputs="$(TocFilePath)">
@@ -123,9 +109,13 @@
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
   </Target>
+  <!-- ************************************************************************* -->
 
+  <!-- ************************************************************************* -->
+  <!-- *************************** IndexMarkdown Phase ************************* -->
+  <!-- ************************************************************************* -->
   <Target Name ="IndexMarkdown" DependsOnTargets="CleanupExistingMarkdownIndexFile">
-    <CallTarget Targets="_IndexMarkdown" Condition="@(MarkdownFiles) != ''"/>
+    <CallTarget Targets="_IndexMarkdown" Condition="'@(MarkdownFiles)' != ''"/>
   </Target>
 
   <Target Name="CleanupExistingMarkdownIndexFile">
@@ -137,8 +127,9 @@
     </ItemGroup>
     <!-- Cleanup existing docmta -->
     <Message Text="Deleting @(MarkdownFiles->'%(FullPath).map')" />
+    <Delete Files=" @(MarkdownFiles->'%(FullPath).map')" ContinueOnError="true" />
     <Message Text="Deleting @(YamlFiles->'%(FullPath).map')" />
-    <!-- <Delete Files="@(MapFiles)" ContinueOnError="true" /> -->
+    <Delete Files=" @(YamlFiles->'%(FullPath).map')" ContinueOnError="true" />
   </Target>
 
   <Target Name="_IndexMarkdown" DependsOnTargets="CleanupExistingMarkdownIndexFile">
@@ -148,7 +139,7 @@
         />
     <!-- BuildMeta.exe /i:$(IntermediateOutputPath)/obj.list /target:build -->
     <!-- $(OutputPath), @(MarkdownFiles) => Markdown Index File -->
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',') /mdmap:&quot;&quot; /apimap:&quot;&quot; /target:markdown" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) /root:&quot;$(MSBuildProjectDirectory)&quot; /o:&quot;$(ApiFolderPath)&quot; /m:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',') /mdmap:&quot;&quot; /apimap:&quot;&quot; /target:markdown" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>
@@ -156,14 +147,16 @@
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
   </Target>
+  <!-- ************************************************************************* -->
 
-  <Target Name="PublishDoc">
+  <!-- Publish to GIT is currently disabled -->
+  <!-- <Target Name="PublishDoc">
     <Exec Command="$(PublishDocToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
   </Target>
 
   <Target Name="ConfigGithub">
     <Exec Command="$(ConfigPublishToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
-  </Target>
+  </Target> -->
 
   <!--<Target Name="PreviewWebsite">
     <ItemGroup>

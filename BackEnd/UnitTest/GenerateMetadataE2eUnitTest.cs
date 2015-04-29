@@ -12,7 +12,6 @@ namespace UnitTest
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
-    [DeploymentItem("NativeBinaries", "NativeBinaries")]
     public class GenerateMetadataE2eUnitTest
     {
         [TestMethod]

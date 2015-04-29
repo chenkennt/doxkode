@@ -1,5 +1,6 @@
 ﻿namespace DocAsCode.EntityModel.MarkdownIndexer
 {
+    using System;
     using System.Collections.Generic;
     using System.IO;
 
@@ -93,6 +94,7 @@
                     if (apiMapFileSection.CustomProperties != null && apiMapFileSection.CustomProperties.Count == 0) apiMapFileSection.CustomProperties = null;
 
                     JsonUtility.Serialize(apiMapFileFullPath, apiMapFile);
+                    ParseResult.WriteToConsole(ResultLevel.Success, "Successfully generated {0}.", apiMapFileFullPath);
                 }
             }
 

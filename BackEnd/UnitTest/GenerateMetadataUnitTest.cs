@@ -14,7 +14,6 @@
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
-    [DeploymentItem("NativeBinaries", "NativeBinaries")]
     [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.dll")]
     [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll")]
     [DeploymentItem("Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll")]
