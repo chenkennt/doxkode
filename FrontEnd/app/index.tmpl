@@ -193,10 +193,10 @@
     </div>
   </div>
   <div id="wrapper">
-    <header scroll-y-offset-element>
+    <header scroll-y-offset-element ng-controller="NavbarController">
       <div class="topnav navbar navbar-inverse navbar-default">
         <div class="container">
-          <div ng-repeat="model in [navbar]"  ng-include="'template/navbar.tmpl'"></div>
+          <div ng-include="'template/navbar.tmpl'"></div>
           <!-- comment out search box as it is not currently supported
           <form ng-class="{focus:focus}" class="navbar-search col-md-3 docs-search" ng-submit="submit()">
             <span class="glyphicon glyphicon-search search-icon"></span>
@@ -252,27 +252,17 @@
               </select>
             </div>
           </div>
-          <div class="grid-right">
-            <ul class="nav-breadcrumb">
-              <li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list">
-                <span class="divider"> /</span>
-                <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>-->
     </header>
 
-    <div role="main" class="container">
-      <div ng-if="toc" class="grid-left sidenav">
-        <div id="tocLoading" ng-show="tocLoading">Loading...</div>
-        <div ng-hide="tocLoading" ng-cloak ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'"></div>
+    <div role="main" class="container" ng-controller="ContainerController">
+      <div ng-if="toc" class="grid-left sidenav" ng-repeat="model in [toc.content]" ng-include="'template/toc.tmpl'">
       </div>
       <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
-        <div id="loading" ng-show="loading">Loading...</div>
-        <div markdown ng-cloak ng-if="partialModel.contentType === 'md'" ng-hide="loading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
-          <div ng-cloak ng-if="partialModel.contentType !== 'md'" ng-hide="loading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
+        <div id="contentLoading" ng-show="contentLoading">Loading...</div>
+        <div markdown ng-cloak ng-if="partialModel.contentType === 'md'" ng-hide="contentLoading" ng-include="partialModel.path" autoscroll></div>
+        <div ng-cloak ng-if="partialModel.contentType !== 'md'" ng-hide="contentLoading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
       </div>
     </div>
     <footer>

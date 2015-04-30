@@ -40,7 +40,11 @@ module.exports = function(grunt) {
       'app/js/app.js',
       'app/js/bootstrap.js',
       'app/js/constants.js',
+
       'app/js/controller.js',
+      'app/js/container.js',
+      'app/js/navbar.js',
+
       'app/js/directives.js',
       'app/js/errors.js',
       'app/js/pages-data.js',
