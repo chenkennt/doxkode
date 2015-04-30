@@ -211,6 +211,7 @@ header .navbar {
     background-color: @grey-background;
     border-left: 1px solid #e7e7e7;
     border-right: 1px solid #e7e7e7;
+    z-index: 1;
 }
 
 // in desktop mode TOC is always shown
@@ -291,6 +292,7 @@ header .navbar {
   padding: 15px;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
+  z-index: 1;
 }
 
 .toc-filter{
@@ -561,7 +563,6 @@ footer {
     display: none !important;
   }
 
-
   // hide expand / collapse all when in phone mode
   /*.expand-all {
     display: none;
@@ -570,4 +571,9 @@ footer {
   .mobile-hide {
     display: none;
   }
+  
+  .breadcrumb {
+    white-space: inherit;
+  }
+  
 }
