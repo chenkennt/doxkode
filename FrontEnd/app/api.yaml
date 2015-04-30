@@ -1,9 +1,0 @@
-name: API1
-type: toc
-items:
-  namespace1:
-    name: namespace1
-    href: api/namespace1
-  namespace2:
-    href: api/namespace2
-    name: namespace2
