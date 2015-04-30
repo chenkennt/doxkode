@@ -64,11 +64,6 @@
     this.getMdContent = function(path) {
       if (!path) return valueHttpWrapper(null);
       var tempMdIndex;
-      var pathInfo = urlService.getPathInfo(path);
-
-      if (!pathInfo.contentPath) return valueHttpWrapper(null);
-      path = urlService.getContentFilePath(pathInfo) + constants.MdIndexFile;
-
       if (path) {
         tempMdIndex = mdIndexCache.get(path);
         if (tempMdIndex !== undefined) {

@@ -119,7 +119,6 @@
         active: navPath && navPath === navItem.href,
       };
 
-
       return current;
     }
 
