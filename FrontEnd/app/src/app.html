@@ -261,7 +261,7 @@
       </div>
       <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
         <div id="contentLoading" ng-show="contentLoading">Loading...</div>
-        <markdown-page get-map="true" page-url="partialModel.path" ng-cloak ng-if="partialModel.contentType === 'md'" ng-hide="contentLoading" autoscroll></markdown-page>
+        <markdown-page get-map="true" src="partialModel.path" ng-cloak ng-if="partialModel.contentType === 'md'" ng-hide="contentLoading" autoscroll></markdown-page>
         <div ng-cloak ng-if="partialModel.contentType !== 'md'" ng-hide="contentLoading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
       </div>
     </div>

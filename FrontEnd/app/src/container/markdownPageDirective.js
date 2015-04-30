@@ -19,29 +19,29 @@
    *
    * @description Ensure that the browser scrolls when the anchor is clicked
    */
-    .directive('markdownPage', ['contentService', 'markdownService', markdownPage]);
+    .directive('markdownPage', ['contentService', 'markdownService', 'urlService', markdownPage]);
 
-  function markdownPage(contentService, markdownService) {
+  function markdownPage(contentService, markdownService, urlService) {
     var template = 
     '<div>' +
-      '<a ng-if="model.href" ng-href="{{model.href}}" class="btn pull-right mobile-hide">' +
+      '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn pull-right mobile-hide">' +
       '<!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc' +
       '</a>' +
       '<markdown></markdown>' +
      '</div>';
-    function render(element, markdownFilePath, loadMapFile) {
+    function render(scope, element, markdownFilePath, loadMapFile) {
       if (!markdownFilePath) return;
       var mapFilePath = markdownFilePath + ".map";
       console.log("Start loading map file" + mapFilePath);
-      element.html(template);
-      var wrapper = document.createElement("div");
+      angular.forEach(element.find("markdown"), function (block){
+        block.innerHTML = '';
+      });
       contentService.getMarkdownContent(markdownFilePath)
         .then(
         function (result) {
           var html = markdownService.transform(result);
-          wrapper.innerHTML = html;
           angular.forEach(element.find("markdown"), function (block) {
-            block.parentNode.replaceChild(wrapper, block);
+            block.innerHTML = html;
           });
         },
         function (result) { }
@@ -51,7 +51,16 @@
         contentService.getMdContent(mapFilePath)
           .then(
           function (result) {
-
+            var data = result.data;
+            for (var key in data) {
+              if (data.hasOwnProperty(key)) {
+                var value = data[key];
+                if (value.remote && value.remote.repo){
+                  if (!scope.markdownPageModel) scope.markdownPageModel = {};
+                  scope.markdownPageModel.href = urlService.getRemoteUrl(value, value.startLine);
+                }
+              }
+            }
           },
           function (result) { 
             
@@ -62,12 +71,15 @@
     return {
       restrict: 'E',
       replace: true,
-      priority: 200,
+      template: template,
       link: function (scope, element, attrs) {
-        if (attrs.pageUrl){
-          scope.$watch(attrs.pageUrl, function(value, oldValue){
+        if (attrs.src){
+          
+          var getMap = attrs.getMap === "true";
+          var localScope = scope;
+          scope.$watch(attrs.src, function(value, oldValue){
             if (value === undefined) return;
-            render(element, value, scope.getMap);
+            render(localScope, element, value, getMap);
           });
         }
       }
