@@ -252,6 +252,12 @@
 
       return '#' + this.getContentUrl({tocPath:tocPath, contentPath:path});
     };
+    
+    // Href relative to current file
+    this.getPageHref = function(currentPath, targetUrl) {
+      var pathInfo = this.getPathInfo(currentPath);
+      return this.getHref(pathInfo.tocPath, pathInfo.contentPath, targetUrl);
+    };
   }
 
   angular.module('docascode.urlService', ['docascode.constants', 'docascode.util'])

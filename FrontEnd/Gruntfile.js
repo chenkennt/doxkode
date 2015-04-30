@@ -37,6 +37,7 @@ module.exports = function(grunt) {
       'app/src/services/contentService.js',
       'app/src/services/csplayService.js',
       'app/src/services/urlService.js',
+      'app/src/services/markdownService.js',
       'app/src/app.js',
       'app/src/util/bootstrap.js',
       'app/src/util/constants.js',
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
       'app/src/navbar/navbar.js',
 
       'app/src/util/directives.js',
+      'app/src/container/markdownPageDirective.js',
       'app/src/util/pages-data.js',
       'app/src/util/util.js',
       'app/src/util/versions-data.js',
@@ -105,7 +107,9 @@ module.exports = function(grunt) {
         files: [
           'Gruntfile.js',
           'app/src/*.*',
+          'app/src/**/*.*',
           'app/content/*.*',
+          'app/content/**/*.*',
           'app/*.*',
           'sample/data/**/*.*',
         ],
@@ -115,7 +119,9 @@ module.exports = function(grunt) {
         files: [
           'Gruntfile.js',
           'app/src/*.*',
+          'app/src/**/*.*',
           'app/content/*.*',
+          'app/content/**/*.*',
           'app/*.*',
           'sample/data.min/**/*.*',
         ],
