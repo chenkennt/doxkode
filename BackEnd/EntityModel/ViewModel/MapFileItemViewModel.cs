@@ -102,6 +102,13 @@ namespace DocAsCode.EntityModel
         [JsonProperty("message")]
         public string Message { get; set; }
 
+        public bool HasUsefulInfo()
+        {
+            return
+                !(string.IsNullOrEmpty(Message) && CustomProperties == null && References == null
+                  && (Remote == null || string.IsNullOrEmpty(Remote.RemoteRepositoryUrl)) && ReferenceKeys == null);
+        }
+
         public override bool Equals(object obj)
         {
             if (obj == null)

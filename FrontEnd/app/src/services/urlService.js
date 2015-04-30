@@ -15,6 +15,10 @@
       return newArray.join('/');
     }
 
+    function urlAreEqual(thisUrl, thatUrl){
+      return normalizeUrl(thisUrl) === normalizeUrl(thatUrl);
+    }
+
     this.isAbsoluteUrl = function(url) {
       if (!url) return false;
       var r = new RegExp('^(?:[a-z]+:)?//', 'i');
@@ -22,6 +26,7 @@
     };
 
     this.normalizeUrl = normalizeUrl;
+    this.urlAreEqual = urlAreEqual;
 
     this.getRemoteUrl = function(item, startLine) {
       if (item && item.remote && item.remote.repo) {
@@ -126,6 +131,7 @@
     };
 
     this.getAbsolutePath = function(currentUrl, relative) {
+      if (!currentUrl) return relative;
       var pathInfo = this.getPathInfo(currentUrl);
       if (!pathInfo) return '';
       var current = this.getContentFilePath(pathInfo);
@@ -238,14 +244,13 @@
       }
     };
 
-    this.getHref = function($scope, current, url) {
-      if (this.isAbsoluteUrl(url)) return url;
-      if (!url) return '';
+    this.getHref = function(tocPath, sourcePageHref, targetPageHref) {
+      if (this.isAbsoluteUrl(targetPageHref)) return targetPageHref;
+      if (!targetPageHref) return '';
+      // TODO: if path is : /#/toc1!../a.md => toc should be toc1/toc.yml?
+      var path = this.getAbsolutePath(sourcePageHref, targetPageHref);
 
-      var path = this.getAbsolutePath(current, url);
-      var pathInfo = this.getPathInfoFromContentPath($scope.navbar, path);
-
-      return '#' + this.getContentUrl(pathInfo);
+      return '#' + this.getContentUrl({tocPath:tocPath, contentPath:path});
     };
   }
 

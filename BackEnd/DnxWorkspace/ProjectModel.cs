@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Versioning;
 using Microsoft.Framework.Runtime;
+using Microsoft.Framework.Runtime.Caching;
+using Microsoft.Framework.Runtime.Compilation;
 using Microsoft.Framework.Runtime.Roslyn;
 using DnxProject = Microsoft.Framework.Runtime.Project;
 

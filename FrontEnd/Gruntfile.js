@@ -5,7 +5,7 @@ var createIndex = function(grunt, config, mode) {
   // Doesn't seem to be useful... comment for now to unblock build
   // var templatesString = grunt.file.read('tmp/templates.html');
   // grunt.config.set('templatesString', templatesString);
-  // register the task name in global scope so we can access it in the .tmpl file
+  // register the task name in global scope so we can access it in the template file
   grunt.config.set('compileConfig', {
     mode: mode,
     config: config
@@ -34,19 +34,22 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     ownJsFiles: [
       //'app/js/search-worker.js',
-      'app/js/services/contentService.js',
-      'app/js/services/csplayService.js',
-      'app/js/services/urlService.js',
-      'app/js/app.js',
-      'app/js/bootstrap.js',
-      'app/js/constants.js',
-      'app/js/controller.js',
-      'app/js/directives.js',
-      'app/js/errors.js',
-      'app/js/pages-data.js',
-      'app/js/util.js',
-      'app/js/versions-data.js',
-      'app/js/versions.js',
+      'app/src/services/contentService.js',
+      'app/src/services/csplayService.js',
+      'app/src/services/urlService.js',
+      'app/src/app.js',
+      'app/src/util/bootstrap.js',
+      'app/src/util/constants.js',
+
+      'app/src/controller.js',
+      'app/src/container/container.js',
+      'app/src/navbar/navbar.js',
+
+      'app/src/util/directives.js',
+      'app/src/util/pages-data.js',
+      'app/src/util/util.js',
+      'app/src/util/versions-data.js',
+      'app/src/util/versions.js',
     ],
     ownCssFiles: [
       'app/bower_components/highlightjs/styles/vs.css',
@@ -94,22 +97,16 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc'
       },
       js: {
-        src: ['app/js/*.js', 'app/js/**/*.js', '!app/js/marked.js']
+        src: ['app/src/*.js', 'app/src/**/*.js', '!app/src/marked.js']
       }
     },
     watch: {
       test: {
         files: [
           'Gruntfile.js',
-          'app/js/*.js',
-          'app/js/services/*.js',
-          'app/css/*.css',
-          'app/css/**/*.css',
-          'app/css/*.css',
-          'app/css/*.less',
-          'app/css/**/*.less',
-          'app/template/*.tmpl',
-          'app/index.tmpl',
+          'app/src/*.*',
+          'app/content/*.*',
+          'app/*.*',
           'sample/data/**/*.*',
         ],
         tasks: ['jshint', 'test']
@@ -117,15 +114,9 @@ module.exports = function(grunt) {
       'test.min': {
         files: [
           'Gruntfile.js',
-          'app/js/*.js',
-          'app/js/services/*.js',
-          'app/css/*.css',
-          'app/css/**/*.css',
-          'app/css/*.css',
-          'app/css/*.less',
-          'app/css/**/*.less',
-          'app/template/*.tmpl',
-          'app/index.tmpl',
+          'app/src/*.*',
+          'app/content/*.*',
+          'app/*.*',
           'sample/data.min/**/*.*',
         ],
         tasks: ['jshint', 'test.min']
@@ -171,7 +162,7 @@ module.exports = function(grunt) {
           compress: false,
         },
         files: {
-          'tmp/main.css': 'app/css/*.less',
+          'tmp/main.css': 'app/content/css/*.less',
         },
       }
     },
@@ -209,11 +200,11 @@ module.exports = function(grunt) {
     },
     index: {
       release: {
-        template: 'app/index.tmpl',
+        template: 'app/src/app.html',
         dest: 'tmp/docascode.html',
       },
       debug: {
-        template: 'app/index.tmpl',
+        template: 'app/src/app.html',
         dest: 'tmp/docascode-debug.html'
       }
     },
@@ -234,9 +225,16 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
-          cwd: 'app',
+          src: ['web.config', 'favicon.ico', 'logo.png'],
+          cwd: 'app/content',
           dest: 'debug/',
+          filter: 'isFile'
+        }, {
+          expand: true,
+          flatten: true,
+          src: ['src/**/*.html'],
+          cwd: 'app',
+          dest: 'debug/template/',
           filter: 'isFile'
         }, {
           expand: false,
@@ -249,9 +247,16 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
-          cwd: 'app',
+          src: ['web.config', 'favicon.ico', 'logo.png'],
+          cwd: 'app/content',
           dest: 'debug/',
+          filter: 'isFile'
+        }, {
+          expand: true,
+          flatten: true,
+          src: ['src/**/*.html'],
+          cwd: 'app',
+          dest: 'debug/template/',
           filter: 'isFile'
         }, {
           expand: false,
@@ -282,9 +287,16 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: false,
-          src: ['template/*', 'web.config', 'favicon.ico'],
-          cwd: 'app',
+          src: ['web.config', 'favicon.ico', 'logo.png'],
+          cwd: 'app/content',
           dest: 'release/',
+          filter: 'isFile'
+        }, {
+          expand: true,
+          flatten: true,
+          src: ['src/**/*.html'],
+          cwd: 'app',
+          dest: 'release/template/',
           filter: 'isFile'
         }, {
           expand: false,
@@ -295,13 +307,20 @@ module.exports = function(grunt) {
       },
       release_ref: {
         files: [{
-            expand: true,
-            flatten: false,
-            src: ['template/*', 'web.config', 'favicon.ico'],
-            cwd: 'app',
-            dest: 'release/',
-            filter: 'isFile'
-          }, {
+          expand: true,
+          flatten: false,
+          src: ['web.config', 'favicon.ico', 'logo.png'],
+          cwd: 'app/content',
+          dest: 'release/',
+          filter: 'isFile'
+        }, {
+          expand: true,
+          flatten: true,
+          src: ['src/**/*.html'],
+          cwd: 'app',
+          dest: 'release/template/',
+          filter: 'isFile'
+        }, {
             expand: false,
             flatten: true,
             src: ['<%= index.release.dest %>'],

@@ -1,120 +1,120 @@
 CatLibrary:
   id: CatLibrary
-  href: CatLibrary.yml
+  href: api/CatLibrary.yml
 CatLibrary.IAnimal:
   id: CatLibrary.IAnimal
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.IAnimal.Name:
   id: CatLibrary.IAnimal.Name
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.IAnimal.Item(System.Int32):
   id: CatLibrary.IAnimal.Item(System.Int32)
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.IAnimal.Eat:
   id: CatLibrary.IAnimal.Eat
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.IAnimal.Eat``1(``0):
   id: CatLibrary.IAnimal.Eat``1(``0)
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.IAnimal.Eat(System.String):
   id: CatLibrary.IAnimal.Eat(System.String)
-  href: CatLibrary.IAnimal.yml
+  href: api/CatLibrary.IAnimal.yml
 CatLibrary.ICat:
   id: CatLibrary.ICat
-  href: CatLibrary.ICat.yml
+  href: api/CatLibrary.ICat.yml
 CatLibrary.ICat.eat:
   id: CatLibrary.ICat.eat
-  href: CatLibrary.ICat.yml
+  href: api/CatLibrary.ICat.yml
 CatLibrary.Cat`2:
   id: CatLibrary.Cat`2
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.#ctor:
   id: CatLibrary.Cat`2.#ctor
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.#ctor(`0):
   id: CatLibrary.Cat`2.#ctor(`0)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean):
   id: CatLibrary.Cat`2.#ctor(System.String,System.Int32@,System.String,System.Boolean)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.CalculateFood(System.DateTime):
   id: CatLibrary.Cat`2.CalculateFood(System.DateTime)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.Jump(`0,`1,System.Boolean@):
   id: CatLibrary.Cat`2.Jump(`0,`1,System.Boolean@)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.Equals(System.Object):
   id: CatLibrary.Cat`2.Equals(System.Object)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.GetTailLength(System.Int32*,System.Object[]):
   id: CatLibrary.Cat`2.GetTailLength(System.Int32*,System.Object[])
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.op_Addition(CatLibrary.Cat{`0,`1},System.Int32):
   id: CatLibrary.Cat`2.op_Addition(CatLibrary.Cat{`0,`1},System.Int32)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.op_Subtraction(CatLibrary.Cat{`0,`1},System.Int32):
   id: CatLibrary.Cat`2.op_Subtraction(CatLibrary.Cat{`0,`1},System.Int32)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom:
   id: CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.Item(System.String):
   id: CatLibrary.Cat`2.Item(System.String)
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.ownEat:
   id: CatLibrary.Cat`2.ownEat
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.isHealthy:
   id: CatLibrary.Cat`2.isHealthy
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.Name:
   id: CatLibrary.Cat`2.Name
-  href: CatLibrary.Cat`2.yml
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Tom:
   id: CatLibrary.Tom
-  href: CatLibrary.Tom.yml
+  href: api/CatLibrary.Tom.yml
 CatLibrary.TomFromBaseClass:
   id: CatLibrary.TomFromBaseClass
-  href: CatLibrary.TomFromBaseClass.yml
+  href: api/CatLibrary.TomFromBaseClass.yml
 CatLibrary.TomFromBaseClass.#ctor(System.Int32):
   id: CatLibrary.TomFromBaseClass.#ctor(System.Int32)
-  href: CatLibrary.TomFromBaseClass.yml
+  href: api/CatLibrary.TomFromBaseClass.yml
 CatLibrary.ICatExtension:
   id: CatLibrary.ICatExtension
-  href: CatLibrary.ICatExtension.yml
+  href: api/CatLibrary.ICatExtension.yml
 CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64):
   id: CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64)
-  href: CatLibrary.ICatExtension.yml
+  href: api/CatLibrary.ICatExtension.yml
 CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String):
   id: CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String)
-  href: CatLibrary.ICatExtension.yml
+  href: api/CatLibrary.ICatExtension.yml
 CatLibrary.MRefNormalDelegate:
   id: CatLibrary.MRefNormalDelegate
-  href: CatLibrary.MRefNormalDelegate.yml
+  href: api/CatLibrary.MRefNormalDelegate.yml
 CatLibrary.MRefDelegate`3:
   id: CatLibrary.MRefDelegate`3
-  href: CatLibrary.MRefDelegate`3.yml
+  href: api/CatLibrary.MRefDelegate`3.yml
 CatLibrary.FakeDelegate`1:
   id: CatLibrary.FakeDelegate`1
-  href: CatLibrary.FakeDelegate`1.yml
+  href: api/CatLibrary.FakeDelegate`1.yml
 MRef:
   id: MRef
-  href: MRef.yml
+  href: api/MRef.yml
 MRef.Demo:
   id: MRef.Demo
-  href: MRef.Demo.yml
+  href: api/MRef.Demo.yml
 MRef.Demo.Enumeration:
   id: MRef.Demo.Enumeration
-  href: MRef.Demo.Enumeration.yml
+  href: api/MRef.Demo.Enumeration.yml
 MRef.Demo.Enumeration.ColorType:
   id: MRef.Demo.Enumeration.ColorType
-  href: MRef.Demo.Enumeration.ColorType.yml
+  href: api/MRef.Demo.Enumeration.ColorType.yml
 MRef.Demo.Enumeration.ColorType.Red:
   id: MRef.Demo.Enumeration.ColorType.Red
-  href: MRef.Demo.Enumeration.ColorType.yml
+  href: api/MRef.Demo.Enumeration.ColorType.yml
 MRef.Demo.Enumeration.ColorType.Blue:
   id: MRef.Demo.Enumeration.ColorType.Blue
-  href: MRef.Demo.Enumeration.ColorType.yml
+  href: api/MRef.Demo.Enumeration.ColorType.yml
 MRef.Demo.Enumeration.ColorType.Yellow:
   id: MRef.Demo.Enumeration.ColorType.Yellow
-  href: MRef.Demo.Enumeration.ColorType.yml
+  href: api/MRef.Demo.Enumeration.ColorType.yml

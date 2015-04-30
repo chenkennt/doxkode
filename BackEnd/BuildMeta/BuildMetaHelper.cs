@@ -112,16 +112,16 @@ namespace DocAsCode.EntityModel
             return await Task.Run(() => MergeYamlMetadataFromMetadataListCore(metadataList, outputFolder, indexFileName, tocFileName, apiFolder));
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string inputApiIndexFilePath, string inputMarkdownListFile, string outputApiMapFileFolder, string outputMarkdownMapFileFolder, string outputReferenceFolder)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string inputRoot, string inputApiIndexFilePath, string inputMarkdownListFile, string outputApiMapFileFolder, string outputMarkdownMapFileFolder, string outputReferenceFolder)
         {
             return Task.Run(() => {
                 var markdownList = GetFileList(inputMarkdownListFile);
                 if (markdownList == null || markdownList.Count == 0)
                 {
-                    return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
+                    return new ParseResult(ResultLevel.Warn, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
                 }
 
-                return TryGenerateMarkdownIndexFileCore(inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);
+                return TryGenerateMarkdownIndexFileCore(inputRoot, inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);
             });
         }
 
@@ -165,7 +165,7 @@ namespace DocAsCode.EntityModel
                 else if (Path.GetFileName(projectFile) == "project.json")
                 {
                     var workspace = new ProjectJsonWorkspace(projectFile);
-                    projects.AddRange(workspace.CurrentSolution.Projects.Where(p => p.FilePath == projectFile));
+                    projects.AddRange(workspace.CurrentSolution.Projects.Where(p => p.FilePath == Path.GetFullPath(projectFile)));
                 }
                 else
                 {
@@ -436,14 +436,11 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static ParseResult TryGenerateMarkdownIndexFileCore(string inputApiIndexFilePath, List<string> mdFiles, string outputMardownMapFileFolder, string outputApiMapFileFolder, string outputReferenceFolder)
+        private static ParseResult TryGenerateMarkdownIndexFileCore(string inputRoot, string inputApiIndexFilePath, List<string> mdFiles, string outputMardownMapFileFolder, string outputApiMapFileFolder, string outputReferenceFolder)
         {
-           
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                // TODO: parse in, how to keep .md.map file name unique if the file is copied to a centralized folder？
-                // TODO: thougth.1: copy all the md files with the folder structrue to the output folder?
                 string markdownIndexOutputFolder = outputMardownMapFileFolder;
                 string apiIndexOutputFolder = outputApiMapFileFolder;
                 string referenceOutputFolder = outputReferenceFolder;
@@ -455,8 +452,9 @@ namespace DocAsCode.EntityModel
                                                      MarkdownFilePath = mdFile,
                                                      MarkdownMapFileOutputFolder = markdownIndexOutputFolder,
                                                      ApiMapFileOutputFolder = apiIndexOutputFolder,
-                                                     ReferenceOutputFolder = referenceOutputFolder
-                                                 };
+                                                     ReferenceOutputFolder = referenceOutputFolder,
+                                                     RootDirectory = inputRoot
+                    };
                     var result = MarkdownIndexer.MarkdownIndexer.Exec(context);
                     result.WriteToConsole();
                 }

@@ -12,7 +12,6 @@ namespace UnitTest
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
-    [DeploymentItem("NativeBinaries", "NativeBinaries")]
     public class GenerateMetadataE2eUnitTest
     {
         [TestMethod]
@@ -44,7 +43,7 @@ namespace UnitTest
             FileExtensions.CopyFile(md, Path.Combine(output, md));
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, "output", "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync("output/index.yml", Path.Combine(output, md), string.Empty, string.Empty, string.Empty);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(output, "output/index.yml", Path.Combine(output, md), string.Empty, string.Empty, string.Empty);
             Assert.IsTrue(Directory.Exists(output));
             Assert.Fail();
         }
@@ -62,7 +61,7 @@ namespace UnitTest
             string mdList = "Assets/Markdown/AboutCodeSnippet.md";
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, "output", "index.yml", "toc.yml", "api", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync("output/index.yml", mdList, "map", "map", "reference");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync("output", "output/index.yml", mdList, "map", "map", "reference");
             Assert.Fail();
         }
     }

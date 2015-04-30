@@ -75,7 +75,7 @@
                 detail.RemoteBranch = branch.Name;
                 detail.Description = repo.Head.CurrentCommit.ShortHash;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 // SWALLOW exception?
                 // Console.Error.WriteLine(e.Message);
