@@ -40,10 +40,7 @@
     <Content Include="articles\about.md" />
     <Content Include="articles\index.md" />
     <Content Include="toc.yml" />
-<<<<<<< HEAD
     <Content Include="logo.png" />
-=======
->>>>>>> origin/develop
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />

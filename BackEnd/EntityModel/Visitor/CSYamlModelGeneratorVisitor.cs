@@ -195,11 +195,15 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as VariableDeclaratorSyntax;
                         if (syntax != null)
                         {
-                            syntaxStr = syntax
-                            .WithInitializer(null)
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
+                            if (syntax.Parent as VariableDeclarationSyntax != null && syntax.Parent.Parent as FieldDeclarationSyntax != null)
+                            {
+                                var variableDeclarationSyntax = syntax.Parent.ReplaceNode(syntax, syntax.WithInitializer(null)) as VariableDeclarationSyntax;
+                                var fieldDeclarationSyntax = syntax.Parent.Parent.ReplaceNode(syntax.Parent, variableDeclarationSyntax) as FieldDeclarationSyntax;
+                                syntaxStr = fieldDeclarationSyntax
+                                    .NormalizeWhitespace()
+                                    .ToString()
+                                    .Trim();
+                            }
                         }
 
                         break;
