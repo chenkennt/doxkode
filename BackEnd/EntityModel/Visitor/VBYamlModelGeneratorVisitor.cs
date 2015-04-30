@@ -23,7 +23,7 @@ namespace DocAsCode.EntityModel
             SymbolDisplayKindOptions.None,
             SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
 
-        public VBYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.VB)
+        public VBYamlModelGeneratorVisitor(object context, Compilation compilation) : base(context, compilation, SyntaxLanguage.VB)
         {
         }
 

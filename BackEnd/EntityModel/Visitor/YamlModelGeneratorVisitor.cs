@@ -12,10 +12,12 @@
         private MetadataItem parent = new MetadataItem();
         private MetadataItem currentNamespace = new MetadataItem();
         private MetadataItem currentAssembly = new MetadataItem();
+        private readonly Compilation compilation;
         private readonly SyntaxLanguage language;
 
-        public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
+        public YamlModelGeneratorVisitor(object context, Compilation compilation, SyntaxLanguage language)
         {
+            this.compilation = compilation;
             this.language = language;
         }
 
@@ -24,6 +26,8 @@
         public abstract SymbolDisplayFormat DisplayFormat { get; }
 
         public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
+
+        public Compilation Compilation { get { return compilation; } }
 
         public override MetadataItem DefaultVisit(ISymbol symbol)
         {

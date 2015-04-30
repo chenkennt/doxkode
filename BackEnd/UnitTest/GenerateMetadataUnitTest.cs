@@ -56,7 +56,7 @@ namespace Test1
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public void TestGenereateMetadataAsync_CSharp_Generic()
+        public void TestGenereateMetadata_CSharp_GenericClass()
         {
             string code = @"
 using System.Collections.Generic
@@ -184,7 +184,7 @@ namespace Test1
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public void TestGenereateMetadataAsync_CSharp_Interface()
+        public void TestGenereateMetadata_CSharp_Interface()
         {
             string code = @"
 namespace Test1
@@ -244,6 +244,77 @@ namespace Test1
                 //Assert.AreEqual("System.Int32", returnValue.Type.Name);
                 //Assert.AreEqual("int", returnValue.Type.DisplayName);
             }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Interface_Inherits()
+        {
+            string code = @"
+namespace Test1
+{
+    public interface IFoo { }
+    public interface IBar : IFoo { }
+    public interface IFooBar : IBar { }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+
+            var ifoo = output.Items[0].Items[0];
+            Assert.IsNotNull(ifoo);
+            Assert.AreEqual("IFoo", ifoo.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.IFoo", ifoo.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public interface IFoo", ifoo.Syntax.Content[SyntaxLanguage.CSharp]);
+
+            var ibar = output.Items[0].Items[1];
+            Assert.IsNotNull(ibar);
+            Assert.AreEqual("IBar", ibar.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.IBar", ibar.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public interface IBar : IFoo", ibar.Syntax.Content[SyntaxLanguage.CSharp]);
+
+            var ifoobar = output.Items[0].Items[2];
+            Assert.IsNotNull(ifoobar);
+            Assert.AreEqual("IFooBar", ifoobar.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.IFooBar", ifoobar.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public interface IFooBar : IBar, IFoo", ifoobar.Syntax.Content[SyntaxLanguage.CSharp]);
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Class_Inherits()
+        {
+            string code = @"
+namespace Test1
+{
+    public class Foo : IFoo { }
+    public class Bar : Foo, IBar { }
+    public class FooBar : Bar, IFooBar { }
+    public interface IFoo { }
+    public interface IBar { }
+    public interface IFooBar : IFoo, IBar { }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+
+            var foo = output.Items[0].Items[0];
+            Assert.IsNotNull(foo);
+            Assert.AreEqual("Foo", foo.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.Foo", foo.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public class Foo : IFoo", foo.Syntax.Content[SyntaxLanguage.CSharp]);
+
+            var bar = output.Items[0].Items[1];
+            Assert.IsNotNull(bar);
+            Assert.AreEqual("Bar", bar.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.Bar", bar.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public class Bar : Foo, IFoo, IBar", bar.Syntax.Content[SyntaxLanguage.CSharp]);
+
+            var foobar = output.Items[0].Items[2];
+            Assert.IsNotNull(foobar);
+            Assert.AreEqual("FooBar", foobar.DisplayNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("Test1.FooBar", foobar.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+            Assert.AreEqual("public class FooBar : Bar, IFooBar, IFoo, IBar", foobar.Syntax.Content[SyntaxLanguage.CSharp]);
         }
 
         private static Compilation CreateCompilationFromCsharpCode(string code)
