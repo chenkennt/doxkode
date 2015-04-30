@@ -35,11 +35,11 @@
     });
 
     // watch for resize and reset height of side section
-    $(window).resize(function () {
+    /*$(window).resize(function () {
       $scope.$apply(function () {
         bodyOffset();
       });
-    });
+    });*/
 
     function getMdItemIndex(item, tocPath, mdPath, mdInitial, mdResolved) {
       var itemHref = (tocPath || '') + '/' + item.href;
@@ -92,12 +92,12 @@
       }
     }
 
-    function bodyOffset() {
+    /*function bodyOffset() {
       var navHeight = $('.topnav').height() + $('.subnav').height();
       $('.sidefilter').css('top', navHeight + 'px');
       $('.sidetoc').css('top', navHeight + 60 + 'px');
-      $('#wrapper').css('padding-top', navHeight + 'px');
-    }
+      $('.article').css('margin-top', navHeight + 30 + 'px');
+    }*/
   }
 
 })();

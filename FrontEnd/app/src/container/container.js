@@ -30,6 +30,7 @@
     $scope.contentLoading = 0;
     $scope.tocLoading = 0;
 
+    $scope.expandAll = expandAll;
     $scope.filteredItems = filteredItems;
     $scope.tocClass = tocClass;
     $scope.getTocHref = getTocHref;
@@ -243,6 +244,16 @@
       return function(x) {
               return x.uid === child;
             };
+    }
+    
+    // expand / collapse all logic for model items
+    function expandAll(state) {
+      var partialModel = $scope.partialModel? $scope.partialModel.model : null;
+      if (partialModel && partialModel.items) {
+        partialModel.items.forEach(function(e) {
+          e.showDetail = state;
+        });
+      }
     }
   }
 })();
