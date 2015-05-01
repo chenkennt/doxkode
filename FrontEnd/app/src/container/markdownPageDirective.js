@@ -15,38 +15,62 @@
   angular.module('docascode.directives')
   /**
    * markdownPage Directive
-   * @param  {Function} $anchorScroll
+   * @param  {Function} contentService
+   * @param  {Function} markdownService
+   * @param  {Function} urlService
    *
-   * @description Ensure that the browser scrolls when the anchor is clicked
+   * @description Render a page with .md file, supporting try...code
    */
+    .directive('markdown', ['contentService', 'markdownService', 'urlService', markdown])
     .directive('markdownPage', ['contentService', 'markdownService', 'urlService', markdownPage]);
-
+  function markdown(contentService, markdownService, urlService){
+    function render(element, content) {
+      var html = markdownService.transform(content);
+      element.html(html);
+    }
+    return {
+      restrict: 'AE',
+      link: function (scope, element, attrs) {
+        if (attrs.src) {
+          scope.$watch(attrs.src, function (value, oldValue) {
+            if (!value) return;
+            element.html('');
+            
+            contentService.getMarkdownContent(value)
+              .then(
+              function (result) {
+                render(element, result);
+              },
+              function (result) { }
+              );
+          });
+        }
+        if (attrs.ngModel) {
+          scope.$watch(attrs.ngModel, function (value, oldValue) {
+            if (value === undefined) return;
+            render(element, value);
+          });
+        }
+      }
+    };
+  }
+  
   function markdownPage(contentService, markdownService, urlService) {
-    var template = 
-    '<div>' +
+    var template =
+      '<div>' +
       '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn pull-right mobile-hide">' +
       '<!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc' +
       '</a>' +
-      '<markdown></markdown>' +
-     '</div>';
+      '<markdown src="markdownPageModel.src"></markdown>' +
+      '</div>';
     function render(scope, element, markdownFilePath, loadMapFile) {
       if (!markdownFilePath) return;
+      
+      scope.markdownPageModel = {
+        src: markdownFilePath
+      };
       var mapFilePath = markdownFilePath + ".map";
       console.log("Start loading map file" + mapFilePath);
-      angular.forEach(element.find("markdown"), function (block){
-        block.innerHTML = '';
-      });
-      contentService.getMarkdownContent(markdownFilePath)
-        .then(
-        function (result) {
-          var html = markdownService.transform(result);
-          angular.forEach(element.find("markdown"), function (block) {
-            block.innerHTML = html;
-          });
-        },
-        function (result) { }
-        );
-
       if (loadMapFile) {
         contentService.getMdContent(mapFilePath)
           .then(
@@ -55,15 +79,14 @@
             for (var key in data) {
               if (data.hasOwnProperty(key)) {
                 var value = data[key];
-                if (value.remote && value.remote.repo){
-                  if (!scope.markdownPageModel) scope.markdownPageModel = {};
+                if (value.remote && value.remote.repo) {
                   scope.markdownPageModel.href = urlService.getRemoteUrl(value, value.startLine);
                 }
               }
             }
           },
-          function (result) { 
-            
+          function (result) {
+
           }
           );
       }
@@ -72,12 +95,13 @@
       restrict: 'E',
       replace: true,
       template: template,
+      priority: 100,
       link: function (scope, element, attrs) {
-        if (attrs.src){
-          
+        if (attrs.src) {
+
           var getMap = attrs.getMap === "true";
           var localScope = scope;
-          scope.$watch(attrs.src, function(value, oldValue){
+          scope.$watch(attrs.src, function (value, oldValue) {
             if (value === undefined) return;
             render(localScope, element, value, getMap);
           });

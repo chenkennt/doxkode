@@ -14,7 +14,7 @@
       marked.setOptions({
         gfm: true,
         pedantic: false,
-        sanitize: true
+        sanitize: false, // DONOT sanitize html tags
       });
 
       var toHtml = function (markdown) {
