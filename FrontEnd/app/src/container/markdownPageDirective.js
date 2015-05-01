@@ -45,8 +45,8 @@
               );
           });
         }
-        if (attrs.ngModel) {
-          scope.$watch(attrs.ngModel, function (value, oldValue) {
+        if (attrs.data) {
+          scope.$watch(attrs.data, function (value, oldValue) {
             if (value === undefined) return;
             render(element, value);
           });
@@ -76,6 +76,7 @@
           .then(
           function (result) {
             var data = result.data;
+            // TODO: change md.map's key to "default" to make it much easier
             for (var key in data) {
               if (data.hasOwnProperty(key)) {
                 var value = data[key];
