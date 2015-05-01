@@ -5,7 +5,7 @@
       <a ng-if="::model.mdHref" ng-href="{{::model.mdHref}}" class="btn pull-right mobile-hide">
         <!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc
       </a>
-      <a class="btn pull-right mobile-hide" ng-href={{::getViewSourceHref()}}>
+      <a class="btn pull-right mobile-hide" ng-href={{::getViewSourceHref(model)}}>
         <!--<span class="glyphicon glyphicon-eye-open">&nbsp;</span>-->View Source
       </a>
       <h1>{{::model.type}} {{::model.name}}</h1>
@@ -50,7 +50,7 @@
           <div class="item-section">
             <div class="item-header">
               <div class="pull-right mobile-hide">
-                <a ng-href="{{::getViewSourceHref(item.source.startLine)}}">View Source</a>
+                <a ng-href="{{::getViewSourceHref(item)}}">View Source</a>
                 <span ng-if="item.mdHref">
                   <span class="divider">|</span>
                   <a ng-href="{{item.mdHref}}">Improve this Doc</a>

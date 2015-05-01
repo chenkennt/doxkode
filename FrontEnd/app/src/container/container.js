@@ -213,9 +213,9 @@
       return current;
     }
 
-    function getViewSourceHref(){
+    function getViewSourceHref(model){
       /* jshint validthis: true */
-      return urlService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
+      return urlService.getRemoteUrl(model.source, model.source.startLine + 1);
     }
 
     function partialModelHandler(data) {
