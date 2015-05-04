@@ -62,7 +62,7 @@ namespace Test1
 using System.Collections.Generic
 namespace Test1
 {
-    public class Class1<T> where T : struct
+    public sealed class Class1<T> where T : struct, IEnumerable<T>
     {
         public TResult? Func1<TResult>(T? x, IEnumerable<T> y) where T : struct
         {
@@ -77,7 +77,15 @@ namespace Test1
 ";
             MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
             Assert.AreEqual(1, output.Items.Count);
-
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Class1<T>", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Class1<T>", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Class1`1", type.Name);
+                Assert.AreEqual(@"public sealed class Class1<T>
+    where T : struct, IEnumerable<T>", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
             {
                 var function = output.Items[0].Items[0].Items[0];
                 Assert.IsNotNull(function);
@@ -315,6 +323,124 @@ namespace Test1
             Assert.AreEqual("FooBar", foobar.DisplayNames[SyntaxLanguage.CSharp]);
             Assert.AreEqual("Test1.FooBar", foobar.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
             Assert.AreEqual("public class FooBar : Bar, IFooBar, IFoo, IBar", foobar.Syntax.Content[SyntaxLanguage.CSharp]);
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Enum()
+        {
+            string code = @"
+namespace Test1
+{
+    public enum ABC{A,B,C}
+    public enum YN : byte {Y=1, N=0}
+    public enum XYZ:int{X,Y,Z}
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("ABC", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.ABC", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.ABC", type.Name);
+                Assert.AreEqual("public enum ABC", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var type = output.Items[0].Items[1];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("YN", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.YN", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.YN", type.Name);
+                Assert.AreEqual("public enum YN : byte", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var type = output.Items[0].Items[2];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("XYZ", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.XYZ", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.XYZ", type.Name);
+                Assert.AreEqual("public enum XYZ", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Struct()
+        {
+            string code = @"
+using System.Collections
+using System.Collections.Generic
+namespace Test1
+{
+    public struct Foo{}
+    public struct Bar<T> : IEnumerable<T>
+    {
+        public IEnumerator<T> GetEnumerator() => null;
+        IEnumerator IEnumerable.GetEnumerator() => null;
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Foo", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo", type.Name);
+                Assert.AreEqual("public struct Foo", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var type = output.Items[0].Items[1];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Bar<T>", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar<T>", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar`1", type.Name);
+                Assert.AreEqual("public struct Bar<T> : IEnumerable<T>, IEnumerable", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Delegate()
+        {
+            string code = @"
+using System.Collections.Generic
+namespace Test1
+{
+    public delegate void Foo();
+    public delegate T Bar<T>(IEnumerable<T> x = null) where T : class;
+    public delegate void FooBar(ref int x, out string y, params byte[] z);
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Foo", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo", type.Name);
+                Assert.AreEqual("public delegate void Foo();", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var type = output.Items[0].Items[1];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Bar<T>", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar<T>", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar`1", type.Name);
+                Assert.AreEqual(@"public delegate T Bar<T>(IEnumerable<T> x = null)where T : class;", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var type = output.Items[0].Items[2];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("FooBar", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.FooBar", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.FooBar", type.Name);
+                Assert.AreEqual(@"public delegate void FooBar(ref int x, out string y, params byte[] z);", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
         }
 
         private static Compilation CreateCompilationFromCsharpCode(string code)
