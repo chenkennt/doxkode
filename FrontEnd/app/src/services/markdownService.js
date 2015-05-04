@@ -9,7 +9,7 @@
 (function () {
   'use strict';
   /*jshint validthis:true */
-  function provider($q, $http, $location, urlService, csplayService) {
+  function provider($q, $http, $location, urlService, csplayService, contentService, docUtility) {
     this.transform = transform;
 
     var md = (function () {
@@ -65,11 +65,24 @@
       angular.forEach(element.find("table"), function (block) {
         $(block).addClass('table table-bordered table-striped table-condensed');
       });
-      return html;
+      angular.forEach(element.find("code-snippet", function (block) {
+        var src = block.attributes['src'];
+        var startLine = block.attributes['sl'];
+        var endLine = block.attributes['el'];
+        contentService.getMdContent(src).then(function(result){
+          var data = result.data;
+          var snippet = docUtility.substringLine(data, startLine, endLine);
+          var wrapper = document.createElement("div");
+          wrapper.innerHTML = snippet;
+          block.parentNode.replaceChild(wrapper, block);
+        });
+      }));
+      
+      return element.html();
     }
   }
 
-  angular.module('docascode.markdownService', ['docascode.urlService', 'docascode.csplayService'])
-    .service('markdownService', ['$q', '$http', '$location', 'urlService', 'csplayService', provider]);
+  angular.module('docascode.markdownService', ['docascode.urlService', 'docascode.csplayService', 'docascode.contentService', 'docascode.util'])
+    .service('markdownService', ['$q', '$http', '$location', 'urlService', 'csplayService', 'contentService', 'docUtility', provider]);
 
 })();

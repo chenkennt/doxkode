@@ -54,9 +54,19 @@
         itemTypes[prop].show = false;
       }
       if (!items) return itemTypes;
-      items.forEach(function(e) {
-        if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
-      });
+      if (angular.isArray(items)) {
+        items.forEach(function (e) {
+          if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
+        });
+      } else {
+        for (var key in items) {
+          if (items.hasOwnProperty(key)) {
+            var e = items[key];
+            if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
+
+          }
+        }
+      }
       return itemTypes;
     };
 

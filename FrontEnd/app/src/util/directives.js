@@ -7,7 +7,7 @@
 (function() {
   'use strict';
 
-  angular.module('docascode.directives', ['itemTypes', 'docascode.urlService', 'docascode.markdownService', 'docascode.csplayService','docascode.contentService'])
+  angular.module('docascode.directives', ['itemTypes', 'docascode.urlService', 'docascode.util', 'docascode.markdownService', 'docascode.csplayService','docascode.contentService'])
     /**
      * backToTop Directive
      * @param  {Function} $anchorScroll

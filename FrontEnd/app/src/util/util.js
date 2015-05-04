@@ -30,6 +30,10 @@
       }
       return snippet;
     };
+    
+    this.escapeRegExp = function (str) {
+      return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    };
   }
 
   angular.module('docascode.util', [])

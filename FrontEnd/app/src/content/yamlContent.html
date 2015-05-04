@@ -8,7 +8,7 @@
   </table>
   <article ng-switch-when="namespace">
     <div id="article-header">
-      <a ng-if="model.mdHref" ng-href="{{model.mdHref}}" class="btn pull-right mobile-hide">
+      <a ng-if="model.map" ng-href="{{getImproveTheDocHref(model.map)}}" class="btn pull-right mobile-hide">
         <!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc
       </a>
       <a class="btn pull-right mobile-hide" ng-href={{getViewSourceHref(model)}}>
@@ -19,13 +19,13 @@
         <markdown data="model.summary"></markdown>
       </section>
       <section>
-        <markdown data="model.mdContent"></markdown>
+        <markdown data="model.map.content"></markdown>
       </section>
     </div>
     <section id="article-body">
       <div class="" ng-repeat="itemtype in itemtypes">
         <h3 class="" ng-if="itemtype.show">{{itemtype.description}}</h3>
-        <div class="" ng-repeat="item in model.items" ng-if="(item.type == itemtype.name)">
+        <div class="" ng-repeat="(id, item) in model.items" ng-if="(item.type == itemtype.name)">
           <div class="item-section">
             <div class="item-header">
               <a class="item-toggle" href="{{getLinkHref(item.href)}}">
@@ -45,7 +45,7 @@
   
   <article ng-switch-when="class">
     <div id="article-header">
-      <a ng-if="model.mdHref" ng-href="{{model.mdHref}}" class="btn pull-right mobile-hide">
+      <a ng-if="model.map" ng-href="{{getImproveTheDocHref(model.map)}}" class="btn pull-right mobile-hide">
         <!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc
       </a>
       <a class="btn pull-right mobile-hide" ng-href={{getViewSourceHref(model)}}>
@@ -53,10 +53,10 @@
       </a>
       <h1>{{model.type}} {{model.name}}</h1>
       <section>
-        <markdown data="model.summary"></markdown>
+        <markdown data="model.map.override.summary || model.summary"></markdown>
       </section>
       <section>
-        <markdown data="model.mdContent"></markdown>
+        <markdown data="model.map.content"></markdown>
       </section>
       <section id="metadata_table" class="inheritance">
         <div class="" ng-if="model.inheritance">
@@ -89,14 +89,14 @@
       </div>
       <div class="" ng-repeat="itemtype in itemtypes">
         <h3 class="" ng-if="itemtype.show">{{itemtype.description}}</h3>
-        <div class="" ng-repeat="item in model.items" ng-if="(item.type == itemtype.name)">
+        <div class="" ng-repeat="(id, item) in model.items" ng-if="(item.type == itemtype.name)">
           <div class="item-section">
             <div class="item-header">
               <div class="pull-right mobile-hide">
                 <a ng-href="{{getViewSourceHref(item)}}">View Source</a>
-                <span ng-if="item.mdHref">
+                <span ng-if="item.map">
                   <span class="divider">|</span>
-                  <a ng-href="{{item.mdHref}}">Improve this Doc</a>
+                  <a ng-href="{{getImproveTheDocHref(item.map)}}">Improve this Doc</a>
                 </span>
               </div>
               <a class="item-toggle" ng-init="item.showDetail = false" ng-click="item.showDetail = !item.showDetail">
@@ -106,10 +106,10 @@
               </a>
             </div>
             <div class="item-summary">
-              <markdown data="item.summary"></markdown>
+              <markdown data="item.map.override.summary || item.summary"></markdown>
             </div>
             <div class="item-collapsible" ng-show="item.showDetail">
-              <markdown data="item.mdContent"></markdown>
+              <markdown data="item.map.conten"></markdown>
               <div class="" ng-if="item.syntax">
                 <div class="declaration">
                   <h5>Declaration</h5>
@@ -176,5 +176,5 @@
       </div>
     </section>
   </article>
-  <div ng-switch-default>Oops, No suitable pages found for {{contentType}}</div>
+  <div ng-switch-default>Loading...</div>
 </div>

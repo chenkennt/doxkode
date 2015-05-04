@@ -70,7 +70,7 @@
         src: markdownFilePath
       };
       var mapFilePath = markdownFilePath + ".map";
-      console.log("Start loading map file" + mapFilePath);
+      // console.log("Start loading map file" + mapFilePath);
       if (loadMapFile) {
         contentService.getMdContent(mapFilePath)
           .then(

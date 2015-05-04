@@ -1,1 +1,13 @@
-{"CatLibrary.Cat`2.CalculateFood(System.DateTime)":{"id":"CatLibrary.Cat`2.CalculateFood(System.DateTime)","path":"../../apimd/md_catlibrary.md","startLine":15,"endLine":19,"remote":{"branch":"master","repo":"https://github.com/vicancy/CatLibraryDocumentation.git","key":"c9c56ab0"}}}
+{
+    "CatLibrary.Cat`2.CalculateFood(System.DateTime)": {
+        "endLine": 19,
+        "id": "CatLibrary.Cat`2.CalculateFood(System.DateTime)",
+        "path": "../../apimd/md_catlibrary.md",
+        "remote": {
+            "branch": "master",
+            "key": "c9c56ab0",
+            "repo": "https://github.com/vicancy/CatLibraryDocumentation.git"
+        },
+        "startLine": 15
+    }
+}

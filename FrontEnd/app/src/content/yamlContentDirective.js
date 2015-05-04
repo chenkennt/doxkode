@@ -21,9 +21,9 @@
    *
    * @description Render a page with .md file, supporting try...code
    */
-    .directive('yamlContent', ['NG_ITEMTYPES', '$location', 'contentService', 'markdownService', 'urlService', yamlContent]);
+    .directive('yamlContent', ['NG_ITEMTYPES', '$location', 'contentService', 'markdownService', 'urlService', 'docUtility', yamlContent]);
  
-  function yamlContent(NG_ITEMTYPES, $location, contentService, markdownService, urlService) {
+  function yamlContent(NG_ITEMTYPES, $location, contentService, markdownService, urlService, utility) {
 
     function getItemWithSameUidFunction(child) {
       return function (x) {
@@ -31,6 +31,12 @@
       };
     }
 
+    function getImproveTheDocHref(mapItem) {
+      /* jshint validthis: true */
+      if (!mapItem) return '';
+      return urlService.getRemoteUrl(mapItem, mapItem.startLine + 1);
+    }
+    
     function getViewSourceHref(model) {
       /* jshint validthis: true */
       if (!model || !model.source) return '';
@@ -74,13 +80,14 @@
 
         // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
         var item = items[0];
+        
         references = items.slice(1).concat(references || []);
         if (item.children) {
-          var children = [];
+          var children = {};
           for (var i = 0, l = item.children.length; i < l; i++) {
             var matched = references.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
             if (matched.uid) {
-              children.push(matched);
+              children[matched.uid] = matched;
             }
           }
           item.items = children;
@@ -108,11 +115,22 @@
           function (result) {
             if (!result) return;
             var data = result.data;
+            var model = scope.model;
             // TODO: change md.map's key to "default" to make it much easier
             for (var key in data) {
               if (data.hasOwnProperty(key)) {
                 var value = data[key];
-                if (value.remote && value.remote.repo) {
+                // 1. If it is the .map info for current model
+                if (key === model.uid ){
+                  model.map = value;
+                  loadMapInfo(model.map);
+                } else {
+                  // 2. If it is the .map info for model.children
+                  var itemModel = model.items[key];
+                  if (itemModel){
+                    itemModel.map = value;
+                    loadMapInfo(itemModel.map);
+                  }
                 }
               }
             }
@@ -123,6 +141,64 @@
           );
       }
 
+    }
+    
+    function loadMapInfo(mapModel){
+      var path = mapModel.path;
+      var startLine = mapModel.startLine;
+      var endLine = mapModel.endLine;
+      var override = mapModel.override;
+      var references = mapModel.references;
+      var absolutePath = urlService.getAbsolutePath($location.path(), path);
+      contentService.getMdContent(absolutePath).then(function(result){
+        var data = result.data;
+        var section = utility.substringLine(data, startLine, endLine);
+        var copied = section;
+        // replace the ones in references
+        if (references){
+          for (var key in references) {
+              if (references.hasOwnProperty(key)) {
+                var reference = references[key];
+                // Use a hack(check if path exists) to distingushi from CodeSnippet and Link.. 
+                var replacement = '';
+                if (reference.path) {
+                  // If path exists, it is CodeSnippet, need async load content
+                  var codeSnippetPath = urlService.getAbsolutePath(absolutePath, reference.path);
+                  var sl = reference.startLine;
+                  var el = reference.endLine;
+                  
+                  contentService.getMdContent(codeSnippetPath).then(makeReplaceCodeSnippetFunction(mapModel, reference.Keys));
+                } else {
+                  var id = reference.id;
+                  // TODO: currently .map file is not generating the correct relative path
+                  var href = urlService.getPageHref($location.path(), reference.href);
+                  replacement = "<a href='" + href + "'>" + id + "</a>";
+                  copied = replaceAllKeys(reference.Keys, copied, replacement);
+                }
+              }
+          }
+          
+          mapModel.content = copied;                                          
+        }
+      });
+    }
+    
+    function makeReplaceCodeSnippetFunction(mapModel, keys){
+      return function (result) {
+        if (!result) return;
+        var codeSnippet = result.data;
+        // TODO: check if succeed
+        var preCodeSnippetResolved = mapModel.content;
+        mapModel.content = replaceAllKeys(keys, preCodeSnippetResolved, codeSnippet);
+      };
+    }
+    
+    function replaceAllKeys(keys, content, replacement) {
+      for (var i = 0; i < keys.length; i++) {
+        var reg = new RegExp(utility.escapeRegExp(keys[i]), 'g');
+        content = content.replace(reg, replacement);
+      }
+      return content;
     }
     
     // Href relative to current toc file
@@ -136,6 +212,7 @@
     
     function YamlContentController($scope){
       $scope.getViewSourceHref = getViewSourceHref;
+      $scope.getImproveTheDocHref = getImproveTheDocHref;
       $scope.getLinkHref = getLinkHref;
       $scope.expandAll = expandAll;
       $scope.getNumber = getNumber;
