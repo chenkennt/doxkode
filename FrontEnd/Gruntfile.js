@@ -46,9 +46,10 @@ module.exports = function(grunt) {
       'app/src/container/container.js',
       'app/src/navbar/navbar.js',
 
-      'app/src/util/directives.js',
-      'app/src/container/markdownPageDirective.js',
       'app/src/util/pages-data.js',
+      'app/src/util/directives.js',
+      'app/src/content/yamlContentDirective.js',
+      'app/src/content/markdownContentDirective.js',
       'app/src/util/util.js',
       'app/src/util/versions-data.js',
       'app/src/util/versions.js',
@@ -65,11 +66,13 @@ module.exports = function(grunt) {
 
     ],
     jsFiles: [
+      'app/bower_components/highlightjs/highlight.pack.js',
       'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/angular/angular.js',
     ],
     unminifiedCssFiles: [],
     unminifiedJsFiles: [
+      'app/bower_components/highlightjs/highlight.pack.js',
       'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/angular/angular.js',
     ],
@@ -78,7 +81,7 @@ module.exports = function(grunt) {
       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.2/custom/bootstrap.min.css",
     ],
     cdnJsFiles: [
-      "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
+//      "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js",
       "//cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js",
       // "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",

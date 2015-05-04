@@ -1,12 +1,12 @@
 /**
  * @ngdoc directive
- * @name docascode.directive:markdownPage
+ * @name docascode.directive:markdownContent
  * @restrict E
  * @element ANY
  * @priority 1000
  * @scope
  * 
- * @description markdownPage directive to help render markdown pages
+ * @description markdownContent directive to help render markdown pages
  **/
 
 (function () {
@@ -14,7 +14,7 @@
 
   angular.module('docascode.directives')
   /**
-   * markdownPage Directive
+   * markdownContent Directive
    * @param  {Function} contentService
    * @param  {Function} markdownService
    * @param  {Function} urlService
@@ -22,7 +22,7 @@
    * @description Render a page with .md file, supporting try...code
    */
     .directive('markdown', ['contentService', 'markdownService', 'urlService', markdown])
-    .directive('markdownPage', ['contentService', 'markdownService', 'urlService', markdownPage]);
+    .directive('markdownContent', ['contentService', 'markdownService', 'urlService', markdownContent]);
   function markdown(contentService, markdownService, urlService){
     function render(element, content) {
       var html = markdownService.transform(content);
@@ -55,7 +55,7 @@
     };
   }
   
-  function markdownPage(contentService, markdownService, urlService) {
+  function markdownContent(contentService, markdownService, urlService) {
     var template =
       '<div>' +
       '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn pull-right mobile-hide">' +
@@ -75,6 +75,7 @@
         contentService.getMdContent(mapFilePath)
           .then(
           function (result) {
+            if (!result) return;
             var data = result.data;
             // TODO: change md.map's key to "default" to make it much easier
             for (var key in data) {

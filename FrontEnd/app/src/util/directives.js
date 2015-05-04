@@ -7,7 +7,7 @@
 (function() {
   'use strict';
 
-  angular.module('docascode.directives', ['docascode.urlService', 'docascode.markdownService', 'docascode.csplayService','docascode.contentService'])
+  angular.module('docascode.directives', ['itemTypes', 'docascode.urlService', 'docascode.markdownService', 'docascode.csplayService','docascode.contentService'])
     /**
      * backToTop Directive
      * @param  {Function} $anchorScroll
@@ -30,9 +30,13 @@
     .directive('code', function() {
       return {
         restrict: 'E',
+        require: 'ngModel',
+        scope: {
+          bindonce: "@",
+        },
         terminal: true,
-        link: function(scope, element, attrs) {
-          var unwatch = scope.$watch(attrs.ngModel, function(value, oldValue) {
+        link: function(scope, element, attrs, ngModel) {
+          var unwatch = scope.$watch(function () { return ngModel.$modelValue; }, function(value, oldValue) {
             if (value === undefined) return;
             var language;
             var content;
@@ -48,7 +52,9 @@
             angular.forEach(element, function(block) {
               hljs.highlightBlock(block, language);
             });
-            unwatch();
+            if (scope.bindonce){
+              unwatch();
+            }
           });
         }
       };

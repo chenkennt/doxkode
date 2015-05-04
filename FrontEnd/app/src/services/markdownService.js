@@ -1,3 +1,5 @@
+/* global marked */
+/* global hljs */
 /*
  * Define content load related functions used in docsController
  * Wrap Angular components in an Immediately Invoked Function Expression (IIFE)

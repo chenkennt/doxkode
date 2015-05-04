@@ -1,3 +1,4 @@
+/* global angular */
 /*
  * Define the main functionality used in docsApp
  * Wrap Angular components in an Immediately Invoked Function Expression (IIFE)
@@ -30,12 +31,9 @@
     $scope.contentLoading = 0;
     $scope.tocLoading = 0;
 
-    $scope.expandAll = expandAll;
     $scope.filteredItems = filteredItems;
     $scope.tocClass = tocClass;
     $scope.getTocHref = getTocHref;
-    $scope.getViewSourceHref = getViewSourceHref;
-    $scope.getLinkHref = getLinkHref;
     $scope.getNumber = function(num) { return new Array(num + 1); };
 
     $scope.toc = null;
@@ -67,28 +65,15 @@
       var tocPage = newValues[0];
       var currentHomepage = newValues[1];
       if (!tocPage) return;
-      var partialModel = $scope.partialModel;
-      if (!partialModel) partialModel = $scope.partialModel = {};
+      var scope = $scope;
+      
       // If current homepage exists, use homepage
       if (currentHomepage) {
-        partialModel.path = currentHomepage;
-        partialModel.contentType = 'md';
+        scope.contentPath = currentHomepage;
+        scope.contentType = 'markdown';
       } else {
-        contentService.getContent(tocPage).then(function (data) {
-          // If path is already set to homepage, return;
-          if (partialModel.path) return;
-          
-          // toc list
-          partialModel.path = 'template/tocpage.html';
-          partialModel.model = data;
-          partialModel.contentType = 'yaml';
-        }).catch(
-          function () {
-            $scope.partialModel = {
-              path: 'template/error404.html',
-            };
-          }
-          );
+        scope.contentPath = tocPage;
+        scope.contentType = 'toc';
       }
     });
 
@@ -96,42 +81,23 @@
         if (!url) return;
         var pathInfo = urlService.getPathInfo(url);
         var path = urlService.getContentFilePath(pathInfo);
+        var scope = $scope;
         if (path) {
           // If is toc.yml and home page exists, set to $scope and return
           // TODO: refactor using ngRoute
-          $scope.tocPage = (docConstants.TocYamlRegexExp).test(path) ? path : '';
-          if ($scope.tocPage) return;
+          scope.tocPage = (docConstants.TocYamlRegexExp).test(path) ? path : '';
+          if (scope.tocPage) return;
+          scope.contentPath = path;
           
           // If end with .md
           if ((docConstants.MdRegexExp).test(path)) {
-            var partialModel = {
-              contentType: 'md',
-              path: path,
-              title: path,
-            };
-
-            $scope.partialModel = partialModel;
+            // TODO: Improve TITLE
+            scope.title = path;
+            scope.contentType = 'markdown';
           } else if ((docConstants.YamlRegexExp).test(path)) {
-            // if is yaml
-            // 1. try get md.yaml from the same path as toc, or current path if toc is not there
-            contentService.getMdContent(path).then(function(data){
-              $scope.mdIndex = data;
-            });
-
-            contentService.getContent(path).then(function(data) {
-                $scope.partialModel = partialModelHandler(data);
-              }).catch(
-              function() {
-                $scope.partialModel = {
-                  path : 'template/error404.html',
-                };
-                $scope.breadcrumb = [];
-              }
-            );
-          } else {
-            // If not md or yaml, simply try load the path
-            $scope.partialPath = path;
+            scope.contentType = 'yaml';
           }
+          // If not md or yaml, simply try load the path
         }
     }
     // Href relative to current toc file
@@ -141,13 +107,6 @@
       var pathInfo = urlService.getPathInfo(currentPath);
       pathInfo.contentPath = '';
       return urlService.getHref(pathInfo.tocPath, '', url);
-    }
-
-    // Href relative to current file
-    function getLinkHref(url) {
-      var currentPath = $location.path();
-      var pathInfo = urlService.getPathInfo(currentPath);
-      return urlService.getHref(pathInfo.tocPath, pathInfo.contentPath, url);
     }
 
     function filteredItems(f) {
@@ -211,66 +170,6 @@
         }
       }
       return current;
-    }
-
-    function getViewSourceHref(model){
-      /* jshint validthis: true */
-      return urlService.getRemoteUrl(model.source, model.source.startLine + 1);
-    }
-
-    function partialModelHandler(data) {
-      var partialModel = {
-        model: undefined,
-        path: undefined,
-        title: undefined,
-        itemtypes: undefined,
-        contentType: 'yaml'
-      };
-      {
-        var items = data.items;
-        var references = data.references || [];
-
-        // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
-        var item = items[0];
-        references = items.slice(1).concat(references || []);
-        if (item.children){
-          var children = [];
-          for(var i = 0, l = item.children.length; i < l; i++) {
-            var matched = references.filter(getItemWithSameUidFunction(item.children[i]))[0] || {};
-            if (matched.uid){
-              children.push(matched);
-            }
-          }
-          item.items = children;
-        }
-
-        partialModel.model = item;
-        partialModel.title = item.name;
-        if (item.type.toLowerCase() === 'namespace') {
-          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, item.items);
-          partialModel.path = 'template' + '/namespace.html';
-        } else {
-          partialModel.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, item.items);
-          partialModel.path = 'template' + '/class.html';
-        }
-      }
-      return partialModel;
-    }
-
-    function getItemWithSameUidFunction(child){
-      return function(x) {
-              return x.uid === child;
-            };
-    }
-    
-    // expand / collapse all logic for model items
-    function expandAll(state) {
-      var partialModel = $scope.partialModel? $scope.partialModel.model : null;
-      if (partialModel && partialModel.items) {
-        partialModel.items.forEach(function(e) {
-          e.showDetail = state;
-        });
-      }
     }
   }
 })();

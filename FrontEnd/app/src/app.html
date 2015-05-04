@@ -12,6 +12,28 @@
   <meta name="fragment" content="!">
   <title ng-bind-template="Docascode: {{ currentArea.name }} {{ partialModel.title || currentPage || 'Generating Documentations For You'}}">Docascode</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<!--  <script type="text/javascript" src="app/bower_components/highlightjs/highlight.pack.js"></script>
+  <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="app/bower_components/angular/angular.js"></script>
+    
+  <script type="text/javascript" src="app/src/services/contentService.js"></script>
+  <script type="text/javascript" src="app/src/services/csplayService.js"></script>
+  <script type="text/javascript" src="app/src/services/urlService.js"></script>
+  <script type="text/javascript" src="app/src/services/markdownService.js"></script>
+  <script type="text/javascript" src="app/src/content/yamlContentDirective.js"></script>
+  <script type="text/javascript" src="app/src/content/markdownContentDirective.js"></script>
+  <script type="text/javascript" src="app/src/container/container.js"></script>
+  <script type="text/javascript" src="app/src/navbar/navbar.js"></script>
+  <script type="text/javascript" src="app/src/util/bootstrap.js"></script>
+  <script type="text/javascript" src="app/src/util/constants.js"></script>
+  <script type="text/javascript" src="app/src/util/pages-data.js"></script>
+  <script type="text/javascript" src="app/src/util/directives.js"></script>
+  <script type="text/javascript" src="app/src/util/util.js"></script>
+  <script type="text/javascript" src="app/src/util/versions-data.js"></script>
+  <script type="text/javascript" src="app/src/util/versions.js"></script>
+    
+  <script type="text/javascript" src="app/src/controller.js"></script>
+  <script type="text/javascript" src="app/src/app.js"></script>-->
 
 <<%
     var mode = compileConfig.mode;
@@ -261,11 +283,13 @@
       </div>
       <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
         <div id="contentLoading" ng-show="contentLoading">Loading...</div>
-        <markdown-page get-map="true" src="partialModel.path" ng-cloak ng-if="partialModel.contentType === 'md'" ng-hide="contentLoading" autoscroll></markdown-page>
-        <div ng-cloak ng-if="partialModel.contentType !== 'md'" ng-hide="contentLoading" ng-repeat="model in [partialModel.model]" ng-include="partialModel.path" autoscroll></div>
+        <!--For conceptual-->
+        <markdown-content get-map="true" src="contentPath" ng-cloak ng-if="contentType === 'markdown'" ng-hide="contentLoading" autoscroll></markdown-content>
+        <!--For yaml pages-->
+        <yaml-content content-type="{{contentType}}" get-map="true" ng-model="contentPath" ng-cloak ng-if="contentType !== 'markdown'" ng-hide="contentLoading" autoscroll></yaml-content>
       </div>
     </div>
-    <footer>
+   <footer>
       <div class="grad-bottom"></div>
       <div class="footer">
         <div class="container">
