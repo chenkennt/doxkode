@@ -67,7 +67,9 @@
  
     function render(scope, element, yamlFilePath, loadMapFile) {
       if (!yamlFilePath) return;
-
+      scope.contentType = '';
+      scope.model = {};
+      scope.title = '';
       contentService.getContent(yamlFilePath).then(function (data) {
         // If data is array, current page is toc page;
         if (angular.isArray(data)){
@@ -151,6 +153,7 @@
       var references = mapModel.references;
       var absolutePath = urlService.getAbsolutePath($location.path(), path);
       contentService.getMdContent(absolutePath).then(function(result){
+        if (!result) return;
         var data = result.data;
         var section = utility.substringLine(data, startLine, endLine);
         var copied = section;
