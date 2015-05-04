@@ -26,7 +26,7 @@ namespace DocAsCode.EntityModel
             SymbolDisplayKindOptions.None,
             SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
 
-        public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
+        public CSYamlModelGeneratorVisitor(object context, Compilation compilation) : base(context, compilation, SyntaxLanguage.CSharp)
         {
         }
 
@@ -57,10 +57,23 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as ClassDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
+                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        IEnumerable<INamedTypeSymbol> baseTypeList;
+                        if (symbol.BaseType.GetDocumentationCommentId() == "T:System.Object")
+                        {
+                            baseTypeList = symbol.AllInterfaces;
+                        }
+                        else
+                        {
+                            baseTypeList = new[] { symbol.BaseType }.Concat(symbol.AllInterfaces);
+                        }
+                        var baseList = baseTypeList.Any() ? SyntaxFactory.BaseList().AddTypes(
+                            (from t in baseTypeList
+                             select SyntaxFactory.SimpleBaseType(SyntaxFactory.ParseTypeName(t.ToDisplayString(ShortDisplayFormat)))).ToArray()) : null;
                         syntaxStr
                             = syntax
                             .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
+                            .WithBaseList(baseList)
                             .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
@@ -103,10 +116,15 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as InterfaceDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
+                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var baseList = symbol.AllInterfaces.Any() ? SyntaxFactory.BaseList().AddTypes(
+                            (from t in symbol.AllInterfaces
+                             select SyntaxFactory.SimpleBaseType(SyntaxFactory.ParseTypeName(t.ToDisplayString(ShortDisplayFormat)))).ToArray()) : null;
+
                         syntaxStr =
                             syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                                .WithBaseList(null)
+                                .WithBaseList(baseList)
                                 .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
                                 .NormalizeWhitespace()
                                 .ToString();

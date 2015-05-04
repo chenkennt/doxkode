@@ -346,11 +346,11 @@ namespace DocAsCode.EntityModel
             YamlModelGeneratorVisitor visitor;
             if (compilation.Language == "Visual Basic")
             {
-                visitor = new VBYamlModelGeneratorVisitor(visitorContext);
+                visitor = new VBYamlModelGeneratorVisitor(visitorContext, compilation);
             }
             else if (compilation.Language == "C#")
             {
-                visitor = new CSYamlModelGeneratorVisitor(visitorContext);
+                visitor = new CSYamlModelGeneratorVisitor(visitorContext, compilation);
             }
             else
             {

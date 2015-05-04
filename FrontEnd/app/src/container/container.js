@@ -30,6 +30,7 @@
     $scope.contentLoading = 0;
     $scope.tocLoading = 0;
 
+    $scope.expandAll = expandAll;
     $scope.filteredItems = filteredItems;
     $scope.tocClass = tocClass;
     $scope.getTocHref = getTocHref;
@@ -60,6 +61,36 @@
           }
         });
     });
+    
+    $scope.$watchGroup(['tocPage', 'currentHomepage'], function(newValues, oldValues){
+      if (!newValues) return;
+      var tocPage = newValues[0];
+      var currentHomepage = newValues[1];
+      if (!tocPage) return;
+      var partialModel = $scope.partialModel;
+      if (!partialModel) partialModel = $scope.partialModel = {};
+      // If current homepage exists, use homepage
+      if (currentHomepage) {
+        partialModel.path = currentHomepage;
+        partialModel.contentType = 'md';
+      } else {
+        contentService.getContent(tocPage).then(function (data) {
+          // If path is already set to homepage, return;
+          if (partialModel.path) return;
+          
+          // toc list
+          partialModel.path = 'template/tocpage.html';
+          partialModel.model = data;
+          partialModel.contentType = 'yaml';
+        }).catch(
+          function () {
+            $scope.partialModel = {
+              path: 'template/error404.html',
+            };
+          }
+          );
+      }
+    });
 
     function loadContent(url){
         if (!url) return;
@@ -68,11 +99,9 @@
         if (path) {
           // If is toc.yml and home page exists, set to $scope and return
           // TODO: refactor using ngRoute
-          if ((docConstants.TocYamlRegexExp).test(path)){
-            $scope.tocPage = true;
-            if (loadHomepage($scope.currentHomepage)) return;
-          }
-
+          $scope.tocPage = (docConstants.TocYamlRegexExp).test(path) ? path : '';
+          if ($scope.tocPage) return;
+          
           // If end with .md
           if ((docConstants.MdRegexExp).test(path)) {
             var partialModel = {
@@ -184,16 +213,9 @@
       return current;
     }
 
-    function getViewSourceHref(){
+    function getViewSourceHref(model){
       /* jshint validthis: true */
-      return urlService.getRemoteUrl(this.model.source, this.model.source.startLine + 1);
-    }
-    function loadHomepage(homepage){
-      if (!homepage || !$scope.tocPage) return false;
-      if (!$scope.partialModel) $scope.partialModel = {};
-      $scope.partialModel.path = homepage;
-      $scope.partialModel.contentType = 'md';
-      return true;
+      return urlService.getRemoteUrl(model.source, model.source.startLine + 1);
     }
 
     function partialModelHandler(data) {
@@ -204,11 +226,7 @@
         itemtypes: undefined,
         contentType: 'yaml'
       };
-      if (data instanceof Array) {
-        // toc list
-        partialModel.path = 'template' + '/tocpage.html';
-        partialModel.model = data;
-      } else {
+      {
         var items = data.items;
         var references = data.references || [];
 
@@ -243,6 +261,16 @@
       return function(x) {
               return x.uid === child;
             };
+    }
+    
+    // expand / collapse all logic for model items
+    function expandAll(state) {
+      var partialModel = $scope.partialModel? $scope.partialModel.model : null;
+      if (partialModel && partialModel.items) {
+        partialModel.items.forEach(function(e) {
+          e.showDetail = state;
+        });
+      }
     }
   }
 })();

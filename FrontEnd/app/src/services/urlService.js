@@ -37,10 +37,12 @@
         var linenum = startLine ? startLine : item.startLine;
         if (repo.match(/https:\/\/.*\.visualstudio\.com\/.*/g)) {
           // TODO: line not working for vso
-          return repo + '#path=/' + item.path + '&line=' + linenum;
+          return repo + '#path=/' + item.path;
         }
         if (repo.match(/https:\/\/.*github\.com\/.*/g)) {
-          return repo + '/blob' + '/' + item.remote.branch + '/' + item.path + '/#L' + linenum;
+          var path = repo + '/blob' + '/' + item.remote.branch + '/' + item.path;
+          if (linenum > 0) path += '/#L' + linenum;
+          return path;
         }
       } else {
         return "#";
@@ -251,6 +253,12 @@
       var path = this.getAbsolutePath(sourcePageHref, targetPageHref);
 
       return '#' + this.getContentUrl({tocPath:tocPath, contentPath:path});
+    };
+    
+    // Href relative to current file
+    this.getPageHref = function(currentPath, targetUrl) {
+      var pathInfo = this.getPathInfo(currentPath);
+      return this.getHref(pathInfo.tocPath, pathInfo.contentPath, targetUrl);
     };
   }
 

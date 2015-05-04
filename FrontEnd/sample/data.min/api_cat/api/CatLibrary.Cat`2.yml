@@ -11,7 +11,7 @@ items:
       key: 42596848
     path: Class1.cs
     startLine: 112
-  summary: 'Here''s main class of this Demo.You can see mostly type of article within this class and you for more detail, please see the remarks.this class is a template class. It has two Generic parameter. they are:  and .The extension method of this class can refer to  class'
+  summary: 'Here''s **main** class of this Demo.<b>You</b> can see mostly type of article within this class and you for more detail, please see the remarks.this class is a template class. It has two Generic parameter. they are:  and .The extension method of this class can refer to  class'
   syntax:
     content:
       CSharp: 'public class Cat<T, K> where T : class, new ()where K : struct'
