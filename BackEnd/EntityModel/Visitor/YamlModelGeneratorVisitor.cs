@@ -251,9 +251,6 @@
                             case MethodKind.Conversion:
                             case MethodKind.DelegateInvoke:
                             case MethodKind.Destructor:
-                            case MethodKind.EventAdd:
-                            case MethodKind.EventRaise:
-                            case MethodKind.EventRemove:
                             case MethodKind.ExplicitInterfaceImplementation:
                             case MethodKind.UserDefinedOperator:
                             case MethodKind.Ordinary:
@@ -264,9 +261,12 @@
                             case MethodKind.Constructor:
                             case MethodKind.StaticConstructor:
                                 return MemberType.Constructor;
-                            // Property's get and set, ignore
+                            // ignore: Property's get/set, and event's add/remove/raise
                             case MethodKind.PropertyGet:
                             case MethodKind.PropertySet:
+                            case MethodKind.EventAdd:
+                            case MethodKind.EventRemove:
+                            case MethodKind.EventRaise:
                             default:
                                 return MemberType.Default;
                         }
@@ -283,7 +283,7 @@
             item.Type = this.GetMemberTypeFromSymbol(symbol);
             if (item.Type == MemberType.Default)
             {
-                // If Default, then it is PropertyGet or PropertySet, ignore
+                // If Default, then it is Property get/set or Event add/remove/raise, ignore
                 return null;
             }
 

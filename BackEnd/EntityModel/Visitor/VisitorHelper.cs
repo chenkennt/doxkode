@@ -25,45 +25,31 @@
             var methodSymbol = symbol as IMethodSymbol;
             if (methodSymbol != null)
             {
-                switch (methodSymbol.DeclaredAccessibility)
-                {
-                    case Accessibility.Public:
-                    case Accessibility.Protected:
-                    case Accessibility.ProtectedOrInternal:
-                        return true;
-                    default:
-                        break;
-                }
-                if (methodSymbol.ExplicitInterfaceImplementations.Length > 0)
-                {
-                    for (int i = 0; i < methodSymbol.ExplicitInterfaceImplementations.Length; i++)
-                    {
-                        if (CanVisit(methodSymbol.ExplicitInterfaceImplementations[i].ContainingType))
-                        {
-                            return true;
-                        }
-                    }
-                }
+                return CanVisitCore(methodSymbol);
             }
 
-            // todo : property and other members
+            var propertySymbol = symbol as IPropertySymbol;
+            if (propertySymbol != null)
+            {
+                return CanVisitCore(propertySymbol);
+            }
 
-            // special case for nested type.
+            var eventSymbol = symbol as IEventSymbol;
+            if (eventSymbol != null)
+            {
+                return CanVisitCore(eventSymbol);
+            }
+
+            var fieldSymbol = symbol as IFieldSymbol;
+            if (fieldSymbol != null)
+            {
+                return CanVisitCore(fieldSymbol);
+            }
+
             var typeSymbol = symbol as INamedTypeSymbol;
             if (typeSymbol != null)
             {
-                if (typeSymbol.ContainingType != null)
-                {
-                    switch (typeSymbol.DeclaredAccessibility)
-                    {
-                        case Accessibility.Public:
-                        case Accessibility.Protected:
-                        case Accessibility.ProtectedOrInternal:
-                            return CanVisit(typeSymbol.ContainingType);
-                        default:
-                            return false;
-                    }
-                }
+                return CanVisitCore(typeSymbol);
             }
 
             if (symbol.DeclaredAccessibility != Accessibility.Public)
@@ -72,6 +58,109 @@
             }
 
             return true;
+        }
+
+        private static bool CanVisitCore(INamedTypeSymbol symbol)
+        {
+            if (symbol.ContainingType != null)
+            {
+                switch (symbol.DeclaredAccessibility)
+                {
+                    case Accessibility.Public:
+                    case Accessibility.Protected:
+                    case Accessibility.ProtectedOrInternal:
+                        return CanVisit(symbol.ContainingType);
+                    default:
+                        return false;
+                }
+            }
+            return symbol.DeclaredAccessibility == Accessibility.Public;
+        }
+
+        private static bool CanVisitCore(IMethodSymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Public:
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    return true;
+                default:
+                    break;
+            }
+            if (symbol.ExplicitInterfaceImplementations.Length > 0)
+            {
+                for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+                {
+                    if (CanVisit(symbol.ExplicitInterfaceImplementations[i].ContainingType))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private static bool CanVisitCore(IPropertySymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Public:
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    return true;
+                default:
+                    break;
+            }
+            if (symbol.ExplicitInterfaceImplementations.Length > 0)
+            {
+                for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+                {
+                    if (CanVisit(symbol.ExplicitInterfaceImplementations[i].ContainingType))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private static bool CanVisitCore(IEventSymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Public:
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    return true;
+                default:
+                    break;
+            }
+            if (symbol.ExplicitInterfaceImplementations.Length > 0)
+            {
+                for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+                {
+                    if (CanVisit(symbol.ExplicitInterfaceImplementations[i].ContainingType))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private static bool CanVisitCore(IFieldSymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Public:
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    return true;
+                default:
+                    break;
+            }
+            return false;
         }
 
         public static void FeedComments(MetadataItem item)
