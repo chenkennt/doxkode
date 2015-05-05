@@ -57,7 +57,7 @@
     // expand / collapse all logic for model items
     function expandAll(model, state) {
       if (model && model.items) {
-        model.items.forEach(function (e) {
+        angular.forEach(model.items, function (e) {
           e.showDetail = state;
         });
       }
