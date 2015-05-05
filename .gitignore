@@ -32,6 +32,7 @@ debugSettings.json
 launchSettings.json
 project.lock.json
 nuget.exe
+*.sublime-workspace
 
 
 ############################
