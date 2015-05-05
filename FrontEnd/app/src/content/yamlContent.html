@@ -1,11 +1,4 @@
 <div ng-switch="contentType">
-  <table ng-switch-when="toc">
-    <tr ng-repeat="item in model">
-      <td>
-        <a ng-href="{{getTocHref(item.href)}}">{{item.name}}</a>
-      </td>
-    </tr>
-  </table>
   <article ng-switch-when="namespace">
     <div id="article-header">
       <a ng-if="model.map" ng-href="{{getImproveTheDocHref(model.map)}}" class="btn pull-right mobile-hide">
@@ -176,5 +169,10 @@
       </div>
     </section>
   </article>
-  <div ng-switch-default>Loading...</div>
+  <div ng-switch-when="error">
+    <h1>Oops!</h1>
+    <p>The page you requested does not exist. Perhaps you were looking for something else...</p> 
+  </div>
+  <div ng-switch-default>
+  </div>
 </div>

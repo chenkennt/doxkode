@@ -75,12 +75,6 @@
       scope.model = {};
       scope.title = '';
       contentService.getContent(yamlFilePath).then(function (data) {
-        // If data is array, current page is toc page;
-        if (angular.isArray(data)) {
-          scope.contentType = 'toc';
-          scope.model = data;
-          return;
-        }
         var items = data.items;
         var references = data.references || [];
 
@@ -112,9 +106,10 @@
         if (loadMapFile) {
           loadMapInfo(yamlFilePath + ".map", scope.model);
         }
-      }).catch(
-      // Set to error messages in the page
-        );
+      }).catch(function(){
+        scope.contentType = 'error';
+      }
+      );
     }
 
     function loadMapInfo(mapFilePath, model) {
@@ -240,7 +235,6 @@
       require: 'ngModel',
       scope: {
         getMap: "=",
-        contentType: "@",
       },
       controller: YamlContentController,
       link: function (scope, element, attrs, ngModel) {

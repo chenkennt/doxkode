@@ -27,24 +27,34 @@
     function render(element, content) {
       markdownService.transform(element, content);
     }
+    
+    function loadSrc(element, value) {
+      if (!value) return;
+      element.html('');
+
+      contentService.getMarkdownContent(value)
+        .then(
+        function (result) {
+          render(element, result);
+        },
+        function (result) {
+          element.html(result.data);
+        }
+        );
+    }
+    
     return {
       restrict: 'AE',
       link: function (scope, element, attrs) {
         if (attrs.src) {
+          // loadSrc(scope, element, attrs.src);
           scope.$watch(attrs.src, function (value, oldValue) {
-            if (!value) return;
-            element.html('');
-            
-            contentService.getMarkdownContent(value)
-              .then(
-              function (result) {
-                render(element, result);
-              },
-              function (result) { }
-              );
+            loadSrc(element, value);
           });
         }
+        
         if (attrs.data) {
+          // render(element, attrs.data);
           scope.$watch(attrs.data, function (value, oldValue) {
             if (value === undefined) return;
             render(element, value);
@@ -100,6 +110,7 @@
 
           var getMap = attrs.getMap === "true";
           var localScope = scope;
+          // render(localScope, element, attrs.src, getMap);
           scope.$watch(attrs.src, function (value, oldValue) {
             if (value === undefined) return;
             render(localScope, element, value, getMap);

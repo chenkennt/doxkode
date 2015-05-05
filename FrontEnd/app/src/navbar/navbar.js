@@ -53,13 +53,18 @@
             var navPath = pathInfo.tocPath || pathInfo.contentPath;
             var navItem = $scope.model.filter(function(x){ return urlService.urlAreEqual(x.href, navPath);})[0];
             breadCrumbWatcher(navItem);
-
-            var currentNavItem = $scope.currentNavItem;
-            if (navItem && currentNavItem !== navItem) {
-              $scope.currentNavItem = currentNavItem = navItem;
-              $rootScope.$broadcast("activeNavItemChanged", {
-                active: navItem
-              });
+            if (navItem) {
+              var currentNavItem = $scope.currentNavItem;
+              if (navItem && currentNavItem !== navItem) {
+                $scope.currentNavItem = currentNavItem = navItem;
+                $rootScope.$broadcast("activeNavItemChanged", {
+                  active: navItem
+                });
+              }
+            } else {
+              // path does not match a valid navbar item
+              $scope.currentNavItem = null;
+              $rootScope.$broadcast("activeNavItemError");
             }
           }
         });

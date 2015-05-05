@@ -47,6 +47,7 @@
 
     $rootScope.$on("activeNavItemChanged", function(event, args){
       $scope.toc = null;
+      if ($scope.contentType === 'error') $scope.contentType = 'success';
       var currentNavItem = args.active;
       $scope.currentHomepage = currentNavItem.homepage;
       var currentNavbar = args.active;
@@ -60,12 +61,18 @@
         });
     });
     
+    $rootScope.$on("activeNavItemError", function(event, args){
+      $scope.contentType = 'error';
+      $scope.toc = null;
+    });
+    
     $scope.$watchGroup(['tocPage', 'currentHomepage'], function(newValues, oldValues){
       if (!newValues) return;
       var tocPage = newValues[0];
       var currentHomepage = newValues[1];
       if (!tocPage) return;
       var scope = $scope;
+      if (scope.contentType === 'error') return;
       
       // If current homepage exists, use homepage
       if (currentHomepage) {
@@ -96,6 +103,8 @@
             scope.contentType = 'markdown';
           } else if ((docConstants.YamlRegexExp).test(path)) {
             scope.contentType = 'yaml';
+          } else{
+            scope.contentType = 'error';
           }
           // If not md or yaml, simply try load the path
         }
