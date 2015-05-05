@@ -268,7 +268,8 @@
     // Href relative to current file
     this.getPageHref = function(currentPath, targetUrl) {
       var pathInfo = this.getPathInfo(currentPath);
-      return this.getHref(pathInfo.tocPath, pathInfo.contentPath, targetUrl);
+      var currentPagePath = this.getContentFilePath(pathInfo);
+      return this.getHref(pathInfo.tocPath, currentPagePath, targetUrl);
     };
   }
 
