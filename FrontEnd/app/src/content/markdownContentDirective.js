@@ -25,8 +25,7 @@
     .directive('markdownContent', ['contentService', 'markdownService', 'urlService', markdownContent]);
   function markdown(contentService, markdownService, urlService){
     function render(element, content) {
-      var html = markdownService.transform(content);
-      element.html(html);
+      markdownService.transform(element, content);
     }
     return {
       restrict: 'AE',

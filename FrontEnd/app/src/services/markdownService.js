@@ -29,17 +29,16 @@
         toHtml: toHtml
       };
     } ());
-
-    function transform(markdown) {
+    
+    function transform(element, markdown) {
       var html = md.toHtml(markdown);
-      var element = angular.element(document.createElement("div"));
       element.html(html);
       angular.forEach(element.find("code"), function (block) {
         // use highlight.js to highlight code
         hljs.highlightBlock(block);
         // Add try button
         block = block.parentNode;
-        if ($(block).is("pre")) { //make sure the parent is pre and not inline code
+        if (angular.element(block).is("pre")) { //make sure the parent is pre and not inline code
           var wrapper = document.createElement("div");
           wrapper.className = "codewrapper";
           wrapper.innerHTML = '<div class="trydiv"><span class="tryspan">Try this code</span></div>';
@@ -63,7 +62,7 @@
           block.attributes['src'].value = urlService.getAbsolutePath($location.path(), url);
       });
       angular.forEach(element.find("table"), function (block) {
-        $(block).addClass('table table-bordered table-striped table-condensed');
+        angular.element(block).addClass('table table-bordered table-striped table-condensed');
       });
       angular.forEach(element.find("code-snippet", function (block) {
         var src = block.attributes['src'];
@@ -78,7 +77,8 @@
         });
       }));
       
-      return element.html();
+      // Only return html() makes registered event, e.g. onclick missing
+      // Instead, pass in element
     }
   }
 
