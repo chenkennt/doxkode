@@ -17,8 +17,5 @@
         public string ApiMapFileOutputFolder { get; set; }
 
         public string ReferenceOutputFolder { get; set; }
-
-        public string RootDirectory { get; set; }
-
     }
 }

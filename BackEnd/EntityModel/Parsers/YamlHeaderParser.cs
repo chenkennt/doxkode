@@ -141,7 +141,7 @@ is not in a valid YAML format: {1}.", content, e.Message);
             var notExistsKeys = requiredKeyExistence.Where(s => !s.Value);
             if (notExistsKeys.Any())
             {
-                message = string.Format("Required properties {{{{{0}}}}} are not set. Note that keys are case insensitive.", string.Join(",", notExistsKeys));
+                message = string.Format("Required properties {{{{{0}}}}} are not set. Note that keys are case insensitive.", string.Join(",", notExistsKeys.Select(s => s.Key)));
                 return false;
             }
 

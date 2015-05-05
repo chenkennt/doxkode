@@ -61,20 +61,21 @@
                     string apiMapFileFullPath = FileExtensions.GetFullPath(apiMapFileFolder, apiMapFileName);
 
                     // Path should be the relative path from .yml to .md
-                    var markdownFilePath = Path.GetFullPath(item.Path);
+                    var markdownFilePath = context.MarkdownFilePath;
                     var indexFolder = Path.GetDirectoryName(context.ApiIndexFilePath);
                     var apiYamlFilePath = FileExtensions.GetFullPath(indexFolder, api.Href);
                     var relativePath = FileExtensions.MakeRelativePath(Path.GetDirectoryName(apiYamlFilePath), markdownFilePath).BackSlashToForwardSlash();
                     MapFileItemViewModel apiMapFileSection = new MapFileItemViewModel
-                                                                 {
-                                                                     Id = apiId,
-                                                                     Path = relativePath,
-                                                                     Remote = item.Remote,
-                                                                     Startline = markdownSection.Location.StartLocation.Line + 1,
-                                                                     Endline = markdownSection.Location.EndLocation.Line + 1, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n
+                    {
+                        Id = apiId,
+                        Remote = item.Remote,
+                        Href = relativePath,
+                        Startline = markdownSection.Location.StartLocation.Line + 1,
+                        Endline = markdownSection.Location.EndLocation.Line + 1, // Endline + 1 - 1, +1 for it starts from 0, -1 for it is actually the start line for next charactor, in code snippet, is always a \n
                         References = SelectReferenceSection(references, markdownSection.Location),
-                                                                     CustomProperties = yamlHeader.Properties,
-                                                                 };
+                        CustomProperties = yamlHeader.Properties,
+                        MapFileType = MapFileType.Yaml
+                    };
                     MapFileViewModel apiMapFile;
                     if (File.Exists(apiMapFileFullPath))
                     {

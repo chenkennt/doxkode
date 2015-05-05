@@ -112,7 +112,7 @@ namespace DocAsCode.EntityModel
             return await Task.Run(() => MergeYamlMetadataFromMetadataListCore(metadataList, outputFolder, indexFileName, tocFileName, apiFolder));
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string inputRoot, string inputApiIndexFilePath, string inputMarkdownListFile, string outputApiMapFileFolder, string outputMarkdownMapFileFolder, string outputReferenceFolder)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string inputApiIndexFilePath, string inputMarkdownListFile, string outputApiMapFileFolder, string outputMarkdownMapFileFolder, string outputReferenceFolder)
         {
             return Task.Run(() => {
                 var markdownList = GetFileList(inputMarkdownListFile);
@@ -121,7 +121,7 @@ namespace DocAsCode.EntityModel
                     return new ParseResult(ResultLevel.Warn, "No markdown file listed in {0}, Exiting", inputMarkdownListFile);
                 }
 
-                return TryGenerateMarkdownIndexFileCore(inputRoot, inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);
+                return TryGenerateMarkdownIndexFileCore(inputApiIndexFilePath, markdownList, outputMarkdownMapFileFolder, outputApiMapFileFolder, outputReferenceFolder);
             });
         }
 
@@ -436,7 +436,7 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static ParseResult TryGenerateMarkdownIndexFileCore(string inputRoot, string inputApiIndexFilePath, List<string> mdFiles, string outputMardownMapFileFolder, string outputApiMapFileFolder, string outputReferenceFolder)
+        private static ParseResult TryGenerateMarkdownIndexFileCore(string inputApiIndexFilePath, List<string> mdFiles, string outputMardownMapFileFolder, string outputApiMapFileFolder, string outputReferenceFolder)
         {
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
@@ -453,7 +453,6 @@ namespace DocAsCode.EntityModel
                                                      MarkdownMapFileOutputFolder = markdownIndexOutputFolder,
                                                      ApiMapFileOutputFolder = apiIndexOutputFolder,
                                                      ReferenceOutputFolder = referenceOutputFolder,
-                                                     RootDirectory = inputRoot
                     };
                     var result = MarkdownIndexer.MarkdownIndexer.Exec(context);
                     result.WriteToConsole();

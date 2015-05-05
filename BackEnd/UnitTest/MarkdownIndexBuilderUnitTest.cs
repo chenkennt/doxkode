@@ -46,7 +46,6 @@ namespace UnitTest
             var result =
                 await
                 BuildMetaHelper.GenerateIndexForMarkdownListAsync(
-                    Environment.CurrentDirectory,
                     outputIndexFile,
                     inputMarkdownList,
                     outputMapFileFolder,
@@ -94,7 +93,7 @@ namespace UnitTest
             Assert.IsNotNull(cat1);
             Assert.AreEqual(24, cat1.Startline);
             Assert.AreEqual(28, cat1.Endline);
-            Assert.AreEqual("../../../Assets/Markdown/AboutCodeSnippet.md", cat1.Path);
+            Assert.AreEqual("../../../Assets/Markdown/AboutCodeSnippet.md", cat1.Href);
             Assert.IsNull(cat1.References);
             Assert.IsNull(cat1.CustomProperties);
 
@@ -120,13 +119,13 @@ namespace UnitTest
             var mdMapFileViewModel = LoadMapFile(Path.Combine(outputMapFileFolder, mdMapFileName));
 
             Assert.AreEqual(1, mdMapFileViewModel.Count);
-            var references = mdMapFileViewModel["assets/markdown/aboutcodesnippet.md"].References;
+            var references = mdMapFileViewModel["default"].References;
             Assert.AreEqual(3, references.Count);
             var reference1 = references["../testclass1/catlibrary/class1.cs[20-46]"];
             Assert.IsNotNull(reference1);
             Assert.AreEqual(20, reference1.Startline);
             Assert.AreEqual(46, reference1.Endline);
-            Assert.AreEqual("../../output/reference/.._.._Assets_TestClass1_CatLibrary_Class1.cs", reference1.Path);
+            Assert.AreEqual("../../output/reference/ref.._.._Assets_TestClass1_CatLibrary_Class1.cs", reference1.Href);
             Assert.AreEqual(1, reference1.Keys.Count);
             Assert.AreEqual(@"{{'../TestClass1/CatLibrary/Class1.cs'[20-46]}}", reference1.Keys[0]);
 
@@ -151,7 +150,7 @@ namespace UnitTest
 
         private static MapFileViewModel LoadMapFile(string path)
         {
-            return YamlUtility.Deserialize<MapFileViewModel>(path);
+            return JsonUtility.Deserialize<MapFileViewModel>(path);
         }
     }
 }

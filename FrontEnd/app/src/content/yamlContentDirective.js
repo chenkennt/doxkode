@@ -34,13 +34,13 @@
     function getImproveTheDocHref(mapItem) {
       /* jshint validthis: true */
       if (!mapItem) return '';
-      return urlService.getRemoteUrl(mapItem, mapItem.startLine + 1);
+      return urlService.getRemoteUrl(mapItem.remote, mapItem.startLine + 1);
     }
 
     function getViewSourceHref(model) {
       /* jshint validthis: true */
-      if (!model || !model.source) return '';
-      return urlService.getRemoteUrl(model.source, model.source.startLine + 1);
+      if (!model || !model.source || !model.source.remote) return '';
+      return urlService.getRemoteUrl(model.source.remote, model.source.startLine + 1);
     }
 
     function getNumber(num) {
@@ -57,9 +57,13 @@
     // expand / collapse all logic for model items
     function expandAll(model, state) {
       if (model && model.items) {
-        angular.forEach(model.items, function (e) {
-          e.showDetail = state;
-        });
+        var items = model.items;
+        for (var key in items) {
+          if (items.hasOwnProperty(key)) {
+            var e = items[key];
+            e.showDetail = state;
+          }
+        }
       }
     }
     
@@ -147,7 +151,7 @@
     }
 
     function loadMapInfoForEachItem(mapModel) {
-      var path = mapModel.path;
+      var path = mapModel.href;
       var startLine = mapModel.startLine;
       var endLine = mapModel.endLine;
       var override = mapModel.override;
@@ -163,15 +167,19 @@
           for (var key in references) {
             if (references.hasOwnProperty(key)) {
               var reference = references[key];
-              // Use a hack(check if path exists) to distingushi from CodeSnippet and Link.. 
               var replacement = '';
-              if (reference.path) {
+              if (reference.type === 'codeSnippet') {
                 // If path exists, it is CodeSnippet, need async load content
-                var codeSnippetPath = urlService.getAbsolutePath(absolutePath, reference.path);
-                var sl = reference.startLine;
-                var el = reference.endLine;
+                if (reference.href) {
+                  var codeSnippetPath = urlService.getAbsolutePath(absolutePath, reference.href);
+                  var sl = reference.startLine;
+                  var el = reference.endLine;
 
-                contentService.getMdContent(codeSnippetPath).then(makeReplaceCodeSnippetFunction(mapModel, reference.Keys));
+                  contentService.getMdContent(codeSnippetPath).then(makeReplaceCodeSnippetFunction(mapModel, reference.Keys));
+                } else {
+                  var resolveErrorTag = 'Warning: Unable to resolve ' + reference.id + ': ' + reference.message;
+                  copied = replaceAllKeys(reference.Keys, copied, resolveErrorTag);
+                }
               } else {
                 var id = reference.id;
                 // TODO: currently .map file is not generating the correct relative path

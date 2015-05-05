@@ -33,15 +33,23 @@ namespace DocAsCode.EntityModel
         }
     }
 
+    public enum MapFileType
+    {
+        Markdown,
+        Yaml,
+        Link,
+        CodeSnippet,
+    }
+
     public class MapFileItemViewModel : ICloneable
     {
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         [JsonProperty("id")]
         public string Id { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "path")]
-        [JsonProperty("path")]
-        public string Path { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "type")]
+        [JsonProperty("type")]
+        public MapFileType MapFileType { get; set; }
 
         /// <summary>
         /// Similar to yaml, href is the location of md in the generated website, currently it is copied to md folder

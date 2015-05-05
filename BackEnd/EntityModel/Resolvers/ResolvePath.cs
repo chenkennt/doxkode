@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
+using DocAsCode.Utility;
 
 namespace DocAsCode.EntityModel
 {
@@ -19,10 +21,7 @@ namespace DocAsCode.EntityModel
                     {
                         current.Inheritance.ForEach(s =>
                         {
-                            if (!s.IsExternalPath)
-                            {
-                                s.Href = ResolveInternalLink(yaml.Indexer, s.Name);
-                            }
+                            SetHref(s, yaml.Indexer, current.Name);
                         });
                     }
 
@@ -31,16 +30,13 @@ namespace DocAsCode.EntityModel
                         current.Syntax.Parameters.ForEach(s =>
                         {
                             Debug.Assert(s.Type != null);
-                            if (s.Type != null && !s.Type.IsExternalPath)
-                            {
-                                s.Type.Href = ResolveInternalLink(yaml.Indexer, s.Type.Name);
-                            }
+                            SetHref(s.Type, yaml.Indexer, current.Name);
                         });
                     }
 
                     if (current.Syntax != null && current.Syntax.Return != null && current.Syntax.Return.Type != null)
                     {
-                        current.Syntax.Return.Type.Href = ResolveInternalLink(yaml.Indexer, current.Syntax.Return.Type.Name);
+                        SetHref(current.Syntax.Return.Type, yaml.Indexer, current.Name);
                     }
 
                     return Task.FromResult(true);
@@ -50,15 +46,29 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string ResolveInternalLink(Dictionary<string, MetadataItem> index, string name)
+        private static void SetHref(SourceDetail s, Dictionary<string, MetadataItem> index, string currentName)
         {
-            Debug.Assert(!string.IsNullOrEmpty(name));
-            if (string.IsNullOrEmpty(name)) return name;
+            if (s == null) return;
+            if (!s.IsExternalPath)
+            {
+                s.Href = ResolveInternalLink(index, s.Name, currentName);
+            }
+            else
+            {
+                // Set ExternalPath to null;
+                s.Href = null;
+            }
+        }
 
+        private static string ResolveInternalLink(Dictionary<string, MetadataItem> index, string name, string currentName)
+        {
+            Debug.Assert(!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(currentName));
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(currentName)) return name;
+            var currentHref = index[currentName].Href;
             MetadataItem item;
             if (index.TryGetValue(name, out item))
             {
-                return item.Href;
+                return FileExtensions.MakeRelativePath(Path.GetDirectoryName(currentHref), item.Href);
             }
 
             return name;

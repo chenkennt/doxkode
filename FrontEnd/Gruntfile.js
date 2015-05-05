@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     jsFiles: [
       'app/bower_components/highlightjs/highlight.pack.js',
       'app/bower_components/jquery/dist/jquery.js',
-      'app/bower_components/angular/angular.js',
+      'app/bower_components/angular/angular.min.js',
     ],
     unminifiedCssFiles: [],
     unminifiedJsFiles: [
@@ -312,7 +312,8 @@ module.exports = function(grunt) {
           flatten: true,
           src: ['<%= index.release.dest %>'],
           dest: 'release/index.html'
-        }, ]
+        },
+        ]
       },
       release_ref: {
         files: [{

@@ -25,6 +25,8 @@
                 var codeSnippetPath = FileExtensions.GetFullPath(Path.GetDirectoryName(filePath), codeSnippet.Path);
                 // As reference, copy file to local
                 var targetFileName = FileExtensions.MakeRelativePath(referenceFolder, codeSnippetPath).ToValidFilePath();
+                // Append ref incase the file name starts with ".", which means a hidden file in Linux
+                targetFileName = "ref" + targetFileName;
                 var targetPath = Path.Combine(referenceFolder, targetFileName);
                 MapFileItemViewModel reference;
                 if (!File.Exists(codeSnippetPath))
@@ -33,7 +35,8 @@
                     {
                         Id = referenceId,
                         ReferenceKeys = codeSnippet.MatchedSections,
-                        Message = string.Format("{0} does not exist.", Path.GetFullPath(codeSnippetPath))
+                        Message = string.Format("{0} does not exist.", Path.GetFullPath(codeSnippetPath)),
+                        MapFileType = MapFileType.CodeSnippet
                     };
 
                     ParseResult.WriteToConsole(ResultLevel.Warn, reference.Message);
@@ -45,9 +48,10 @@
                     {
                         Id = referenceId,
                         ReferenceKeys = codeSnippet.MatchedSections,
-                        Path = FileExtensions.MakeRelativePath(Path.GetDirectoryName(filePath), targetPath).BackSlashToForwardSlash(),
+                        Href = FileExtensions.MakeRelativePath(Path.GetDirectoryName(filePath), targetPath).BackSlashToForwardSlash(),
                         Startline = codeSnippet.StartLine,
                         Endline = codeSnippet.EndLine,
+                        MapFileType = MapFileType.CodeSnippet
                     };
                 }
 

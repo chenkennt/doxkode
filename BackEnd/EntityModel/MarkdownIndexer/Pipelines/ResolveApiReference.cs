@@ -25,11 +25,12 @@
                 if (apis.TryGetValue(apiId, out api))
                 {
                     var reference = new MapFileItemViewModel
-                                        {
-                                            Id = referenceId,
-                                            ReferenceKeys = matchDetail.MatchedSections,
-                                            Href = api.Href.BackSlashToForwardSlash()
-                                        };
+                    {
+                        Id = referenceId,
+                        ReferenceKeys = matchDetail.MatchedSections,
+                        Href = api.Href.BackSlashToForwardSlash(),
+                        MapFileType = MapFileType.Link
+                    };
 
                     // Api Index file only contains Id and Href
                     references.AddItem(reference);

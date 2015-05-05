@@ -81,9 +81,7 @@
             for (var key in data) {
               if (data.hasOwnProperty(key)) {
                 var value = data[key];
-                if (value.remote && value.remote.repo) {
-                  scope.markdownPageModel.href = urlService.getRemoteUrl(value, value.startLine);
-                }
+                scope.markdownPageModel.href = urlService.getRemoteUrl(value.remote, value.startLine);
               }
             }
           },

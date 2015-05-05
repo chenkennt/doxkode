@@ -1,7 +1,7 @@
 ﻿namespace DocAsCode.Utility
 {
     using System;
-
+    using System.IO;
     using GitSharp;
     using GitSharp.Commands;
 
@@ -11,6 +11,13 @@
 
     public class GitDetail
     {
+        /// <summary>
+        /// Relative path of current file to the Git Root Directory
+        /// </summary>
+        [YamlMember(Alias = "path")]
+        [JsonProperty("path")]
+        public string RelativePath { get; set; }
+
         [YamlMember(Alias = "branch")]
         [JsonProperty("branch")]
         public string RemoteBranch { get; set; }
@@ -44,7 +51,7 @@
 
         public override string ToString()
         {
-            return string.Format("branch: {0}, url: {1}, local: {2}, desc: {3}", RemoteBranch, RemoteRepositoryUrl, LocalWorkingDirectory, Description);
+            return string.Format("branch: {0}, url: {1}, local: {2}, desc: {3}, file: {4}", RemoteBranch, RemoteRepositoryUrl, LocalWorkingDirectory, Description, RelativePath);
         }
     }
     public static class GitUtility
@@ -74,6 +81,7 @@
                 detail.RemoteRepositoryUrl = repo.Config["remote.origin.url"];
                 detail.RemoteBranch = branch.Name;
                 detail.Description = repo.Head.CurrentCommit.ShortHash;
+                detail.RelativePath = FileExtensions.MakeRelativePath(Path.GetDirectoryName(repoPath), path);
             }
             catch (Exception)
             {

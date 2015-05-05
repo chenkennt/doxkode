@@ -30,8 +30,8 @@
 
             MapFileViewModel mapFile = new MapFileViewModel();
 
-            // Normalize file path as the key
-            mapFile.Add(item.Path.ToLowerInvariant(), item);
+            // For map file, always one key corresponding to the value
+            mapFile.Add("default", item);
             JsonUtility.Serialize(markdownMapFileFullPath, mapFile);
 
             return new ParseResult(ResultLevel.Success, "Finish processing {0}, successfully generated {0}", context.MarkdownFilePath, markdownMapFileFullPath);

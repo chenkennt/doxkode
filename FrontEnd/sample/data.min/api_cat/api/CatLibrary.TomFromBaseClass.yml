@@ -6,6 +6,7 @@ items:
   type: Class
   source:
     remote: &o0
+      path: Class1.cs
       branch: master
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
@@ -14,7 +15,7 @@ items:
   summary: '*TomFromBaseClass* inherits from @'
   syntax:
     content:
-      CSharp: public class TomFromBaseClass
+      CSharp: 'public class TomFromBaseClass : TestProperty'
   inheritance:
   - id: Microsoft.DevDev.Build.PropertyOverload.TestProperty
     name: TestProperty

@@ -65,7 +65,7 @@ namespace DocAsCode.EntityModel
                 {
                     var jsonSerializer = new JsonSerializer();
                     jsonSerializer.NullValueHandling = NullValueHandling.Ignore;
-                    
+                    jsonSerializer.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter { CamelCaseText = true });
                     return jsonSerializer;
                 });
 

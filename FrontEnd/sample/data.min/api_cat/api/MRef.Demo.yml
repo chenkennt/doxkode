@@ -6,6 +6,7 @@ items:
   type: Namespace
   source:
     remote:
+      path: Class1.cs
       branch: master
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848

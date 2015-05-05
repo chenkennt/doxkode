@@ -109,7 +109,9 @@ namespace DocAsCode.Utility
                 return Path.GetRandomFileName();
             }
 
-            return new string(input.Select(s => InvalidFilePathChars.Contains(s) ? '_' : s).ToArray());
+            string validPath = new string(input.Select(s => InvalidFilePathChars.Contains(s) ? '_' : s).ToArray());
+            
+            return validPath;
         }
 
         public static void SaveFileListToFile(List<string> fileList, string filePath)
@@ -183,7 +185,7 @@ namespace DocAsCode.Utility
                 relativePath = relativePath.Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar);
             }
 
-            return relativePath;
+            return relativePath.BackSlashToForwardSlash();
         }
 
         public static string GetFullPath(string folder, string href)

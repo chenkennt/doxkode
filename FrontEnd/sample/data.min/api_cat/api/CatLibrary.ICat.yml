@@ -6,6 +6,7 @@ items:
   type: Interface
   source:
     remote: &o0
+      path: Class1.cs
       branch: master
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
@@ -14,7 +15,7 @@ items:
   summary: Cat's interface
   syntax:
     content:
-      CSharp: public interface ICat
+      CSharp: 'public interface ICat : IAnimal'
   id: CatLibrary.ICat
   children:
   - CatLibrary.ICat.eat
