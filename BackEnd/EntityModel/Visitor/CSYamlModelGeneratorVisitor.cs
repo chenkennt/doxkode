@@ -381,74 +381,80 @@ namespace DocAsCode.EntityModel
                             SyntaxKind.NullLiteralExpression,
                             SyntaxFactory.Token(SyntaxKind.NullKeyword)));
                 }
+                else if (parameter.ExplicitDefaultValue is bool)
+                {
+                    return SyntaxFactory.EqualsValueClause(
+                        SyntaxFactory.LiteralExpression(
+                            (bool)parameter.ExplicitDefaultValue ? SyntaxKind.TrueLiteralExpression : SyntaxKind.FalseLiteralExpression));
+                }
                 else if (parameter.ExplicitDefaultValue is long)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((long)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is ulong)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((ulong)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is int)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((int)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is uint)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((uint)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is short)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((short)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is ushort)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((ushort)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is byte)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((byte)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is sbyte)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.NumericLiteralToken,
+                            SyntaxKind.NumericLiteralExpression,
                             SyntaxFactory.Literal((sbyte)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is char)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.CharacterLiteralToken,
+                            SyntaxKind.CharacterLiteralExpression,
                             SyntaxFactory.Literal((char)parameter.ExplicitDefaultValue)));
                 }
                 else if (parameter.ExplicitDefaultValue is string)
                 {
                     return SyntaxFactory.EqualsValueClause(
                         SyntaxFactory.LiteralExpression(
-                            SyntaxKind.StringLiteralToken,
+                            SyntaxKind.StringLiteralExpression,
                             SyntaxFactory.Literal((string)parameter.ExplicitDefaultValue)));
                 }
             }
