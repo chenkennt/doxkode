@@ -102,25 +102,11 @@
     <None Include="DocumentationWebsite.csproj" />
     <None Include="DocumentationWebsiteTemplate.ico" />
     <None Include="logo.png" />
-    <Content Include="template\class.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="template\error404.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="template\namespace.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="template\navbar.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="template\toc.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="template\tocpage.tmpl">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <None Include="toc.yml" />
+    <Content Include="template\error404.html" />
+    <Content Include="template\navbar.html" />
+    <Content Include="template\toc.html" />
+    <Content Include="template\yamlContent.html" />
     <Content Include="web.config">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

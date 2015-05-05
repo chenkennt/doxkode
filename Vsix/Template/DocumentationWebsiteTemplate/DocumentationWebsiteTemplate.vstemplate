@@ -32,12 +32,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="docascode.js">docascode.js</ProjectItem>
       </Folder>
       <Folder Name="template" TargetFolderName="template">
-        <ProjectItem ReplaceParameters="false" TargetFileName="class.tmpl">class.tmpl</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="error404.tmpl">error404.tmpl</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="namespace.tmpl">namespace.tmpl</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="navbar.tmpl">navbar.tmpl</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="toc.tmpl">toc.tmpl</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="tocpage.tmpl">tocpage.tmpl</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="error404.html">error404.html</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="navbar.html">navbar.html</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="toc.html">toc.html</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="yamlContent.html">yamlContent.html</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName=".gitignore">.gitignore</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName=".nojekyll">.nojekyll</ProjectItem>
