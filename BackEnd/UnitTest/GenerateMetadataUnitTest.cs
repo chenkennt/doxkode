@@ -64,7 +64,7 @@ namespace Test1
 {
     public sealed class Class1<T> where T : struct, IEnumerable<T>
     {
-        public TResult? Func1<TResult>(T? x, IEnumerable<T> y) where T : struct
+        public TResult? Func1<TResult>(T? x, IEnumerable<T> y) where TResult : struct
         {
             return null;
         }
@@ -112,7 +112,7 @@ namespace Test1
                 Assert.IsNotNull(returnValue.Type);
                 Assert.AreEqual("System.Nullable{``0}", returnValue.Type.Name);
                 Assert.AreEqual("TResult?", returnValue.Type.DisplayName);
-                Assert.AreEqual(@"public TResult? Func1<TResult>(T? x, IEnumerable<T> y)where T : struct", function.Syntax.Content[SyntaxLanguage.CSharp]);
+                Assert.AreEqual(@"public TResult? Func1<TResult>(T? x, IEnumerable<T> y)where TResult : struct", function.Syntax.Content[SyntaxLanguage.CSharp]);
             }
             {
                 var proptery = output.Items[0].Items[0].Items[1];
@@ -440,6 +440,66 @@ namespace Test1
                 Assert.AreEqual("Test1.FooBar", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
                 Assert.AreEqual("Test1.FooBar", type.Name);
                 Assert.AreEqual(@"public delegate void FooBar(ref int x, out string y, params byte[] z);", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Eii()
+        {
+            string code = @"
+using System.Collections.Generic
+namespace Test1
+{
+    public class Foo<T> : IFoo, IFoo<string>, IFoo<T> where T : class
+    {
+        object IFoo.Bar(ref int x) => null;
+        string IFoo<string>.Bar<TArg>(TArg[] x) => "";
+        T IFoo<T>.Bar<TArg>(TArg[] x) => null;
+    }
+    public interface IFoo
+    {
+        object Bar(ref int x);
+    }
+    public interface IFoo<out T>
+    {
+        T Bar<TArg>(TArg[] x)
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Foo<T>", type.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>", type.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1", type.Name);
+                Assert.AreEqual(@"public class Foo<T> : IFoo, IFoo<string>, IFoo<T> where T : class", type.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("IFoo.Bar(ref int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo.Bar(ref int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo#Bar(System.Int32@)", method.Name);
+                Assert.AreEqual(@"object IFoo.Bar(ref int x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("IFoo<string>.Bar<TArg>(TArg[])", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<string>.Bar<TArg>(TArg[])", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{System#String}#Bar``1(``0[])", method.Name);
+                Assert.AreEqual(@"string IFoo<string>.Bar<TArg>(TArg[] x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("IFoo<T>.Bar<TArg>(TArg[])", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<T>.Bar<TArg>(TArg[])", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{T}#Bar``1(``0[])", method.Name);
+                Assert.AreEqual(@"T IFoo<T>.Bar<TArg>(TArg[] x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 

@@ -25,6 +25,11 @@ namespace DocAsCode.EntityModel
             SymbolDisplayLocalOptions.None,
             SymbolDisplayKindOptions.None,
             SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
+        private static readonly SymbolDisplayFormat EiiMethodFormat = new SymbolDisplayFormat();
+        private static readonly SymbolDisplayFormat EiiContainerTypeFormat = new SymbolDisplayFormat(
+            typeQualificationStyle: SymbolDisplayTypeQualificationStyle.NameAndContainingTypes,
+            genericsOptions: SymbolDisplayGenericsOptions.IncludeTypeParameters,
+            miscellaneousOptions: SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
 
         public CSYamlModelGeneratorVisitor(object context, Compilation compilation) : base(context, compilation, SyntaxLanguage.CSharp)
         {
@@ -184,10 +189,28 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as MethodDeclarationSyntax;
                         if (syntax != null)
                         {
-                            syntaxStr = syntax.WithBody(null)
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
+                            var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                            ExplicitInterfaceSpecifierSyntax eii = null;
+                            if (symbol.ExplicitInterfaceImplementations.Length > 0)
+                            {
+                                eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(symbol)));
+                            }
+                            syntaxStr = SyntaxFactory.MethodDeclaration(
+                            new SyntaxList<AttributeListSyntax>(),
+                            SyntaxFactory.TokenList(GetMemberModifiers(symbol)),
+                            SyntaxFactory.ParseTypeName(symbol.ReturnType.ToDisplayString(ShortFormat)),
+                            eii,
+                            SyntaxFactory.Identifier(GetMemberName(symbol)),
+                            GetTypeParameters(symbol),
+                            SyntaxFactory.ParameterList(
+                                SyntaxFactory.SeparatedList(
+                                    from p in symbol.Parameters
+                                    select GetParameter(p))),
+                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)),
+                            null,
+                            null)
+                            .NormalizeWhitespace()
+                            .ToString();
                             break;
                         }
                         var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
@@ -299,6 +322,41 @@ namespace DocAsCode.EntityModel
 
             if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.NormalizeWhitespace().ToString().Trim();
             return syntaxStr;
+        }
+
+        private static string GetMemberName(IMethodSymbol symbol)
+        {
+            string name = symbol.Name;
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return symbol.Name;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ToDisplayString(EiiMethodFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return symbol.Name;
+        }
+
+        private static string GetEiiContainerTypeName(IMethodSymbol symbol)
+        {
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return null;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ContainingType.ToDisplayString(EiiContainerTypeFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return null;
         }
 
         private static ParameterSyntax GetParameter(IParameterSymbol p)
@@ -432,6 +490,21 @@ namespace DocAsCode.EntityModel
             }
         }
 
+        private static IEnumerable<TypeParameterConstraintClauseSyntax> GetTypeParameterConstraints(IMethodSymbol symbol)
+        {
+            if (symbol.TypeArguments.Length == 0)
+            {
+                yield break;
+            }
+            foreach (ITypeParameterSymbol ta in symbol.TypeArguments)
+            {
+                if (ta.HasConstructorConstraint || ta.HasReferenceTypeConstraint || ta.HasValueTypeConstraint || ta.ConstraintTypes.Length > 0)
+                {
+                    yield return SyntaxFactory.TypeParameterConstraintClause(SyntaxFactory.IdentifierName(ta.Name), SyntaxFactory.SeparatedList(GetTypeParameterConstraint(ta)));
+                }
+            }
+        }
+
         private static IEnumerable<TypeParameterConstraintSyntax> GetTypeParameterConstraint(ITypeParameterSymbol symbol)
         {
             if (symbol.HasReferenceTypeConstraint)
@@ -505,6 +578,21 @@ namespace DocAsCode.EntityModel
                         SyntaxFactory.Identifier(t.Name))));
         }
 
+        private static TypeParameterListSyntax GetTypeParameters(IMethodSymbol symbol)
+        {
+            if (symbol.TypeArguments.Length == 0)
+            {
+                return null;
+            }
+            return SyntaxFactory.TypeParameterList(
+                SyntaxFactory.SeparatedList(
+                    from ITypeParameterSymbol t in symbol.TypeArguments
+                    select SyntaxFactory.TypeParameter(
+                        new SyntaxList<AttributeListSyntax>(),
+                        GetVarianceToken(t),
+                        SyntaxFactory.Identifier(t.Name))));
+        }
+
         private static SyntaxToken GetVarianceToken(ITypeParameterSymbol t)
         {
             if (t.Variance == VarianceKind.In)
@@ -557,6 +645,57 @@ namespace DocAsCode.EntityModel
                         yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
                     }
                 }
+            }
+        }
+
+        private static IEnumerable<SyntaxToken> GetMemberModifiers(IMethodSymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Private:
+                    if (symbol.ExplicitInterfaceImplementations.Length == 0)
+                    {
+                        yield return SyntaxFactory.Token(SyntaxKind.PrivateKeyword);
+                    }
+                    break;
+                case Accessibility.ProtectedAndInternal:
+                    // todo : not supported in c#.
+                    break;
+                case Accessibility.Protected:
+                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                    break;
+                case Accessibility.Internal:
+                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
+                    break;
+                case Accessibility.ProtectedOrInternal:
+                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
+                    break;
+                case Accessibility.Public:
+                    yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
+                    break;
+                default:
+                    break;
+            }
+            if (symbol.IsStatic)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.StaticKeyword);
+            }
+            if (symbol.IsAbstract && symbol.ContainingType.TypeKind != TypeKind.Interface)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.AbstractKeyword);
+            }
+            if (symbol.IsVirtual)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.VirtualKeyword);
+            }
+            if (symbol.IsOverride)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.OverrideKeyword);
+            }
+            if (symbol.IsSealed)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
             }
         }
     }
