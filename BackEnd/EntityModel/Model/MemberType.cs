@@ -16,5 +16,6 @@
         Event,
         Constructor,
         Method,
+        Operator,
     }
 }

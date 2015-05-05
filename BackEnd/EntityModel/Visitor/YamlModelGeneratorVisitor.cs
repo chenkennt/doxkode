@@ -248,12 +248,13 @@
                             case MethodKind.DelegateInvoke:
                             case MethodKind.Destructor:
                             case MethodKind.ExplicitInterfaceImplementation:
-                            case MethodKind.UserDefinedOperator:
                             case MethodKind.Ordinary:
                             case MethodKind.ReducedExtension:
-                            case MethodKind.BuiltinOperator:
                             case MethodKind.DeclareMethod:
                                 return MemberType.Method;
+                            case MethodKind.BuiltinOperator:
+                            case MethodKind.UserDefinedOperator:
+                                return MemberType.Operator;
                             case MethodKind.Constructor:
                             case MethodKind.StaticConstructor:
                                 return MemberType.Constructor;

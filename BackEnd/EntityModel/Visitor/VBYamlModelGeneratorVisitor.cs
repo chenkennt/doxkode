@@ -158,6 +158,10 @@ namespace DocAsCode.EntityModel
                             .Trim();
                         break;
                     };
+                case MemberType.Operator:
+                    {
+                        break;
+                    };
                 case MemberType.Constructor:
                     {
                         var syntax = syntaxNode as ConstructorBlockSyntax;

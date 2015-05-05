@@ -31,6 +31,7 @@ namespace DocAsCode.EntityModel
             typeQualificationStyle: SymbolDisplayTypeQualificationStyle.NameAndContainingTypes,
             genericsOptions: SymbolDisplayGenericsOptions.IncludeTypeParameters,
             miscellaneousOptions: SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
+        private static readonly Regex BracesRegex = new Regex(@"\s*\{(\S|\s)*", RegexOptions.Compiled);
         #endregion
 
         public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
@@ -58,7 +59,6 @@ namespace DocAsCode.EntityModel
         public override string GetSyntaxContent(MemberType typeKind, ISymbol symbol, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;
-            int openBracketIndex = -1;
             switch (typeKind)
             {
                 case MemberType.Class:
@@ -77,15 +77,7 @@ namespace DocAsCode.EntityModel
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        if (openBracketIndex > -1)
-                        {
-                            syntaxStr = syntaxStr.Substring(0, openBracketIndex).Trim();
-                        }
-                        else
-                        {
-                            syntaxStr = syntaxStr.Trim();
-                        }
+                        syntaxStr = RemoveBraces(syntaxStr);
                         break;
                     };
                 case MemberType.Enum:
@@ -102,15 +94,7 @@ namespace DocAsCode.EntityModel
                             new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        if (openBracketIndex > -1)
-                        {
-                            syntaxStr = syntaxStr.Substring(0, openBracketIndex).Trim();
-                        }
-                        else
-                        {
-                            syntaxStr = syntaxStr.Trim();
-                        }
+                        syntaxStr = RemoveBraces(syntaxStr);
                         break;
                     };
                 case MemberType.Interface:
@@ -129,15 +113,7 @@ namespace DocAsCode.EntityModel
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        if (openBracketIndex > -1)
-                        {
-                            syntaxStr = syntaxStr.Substring(0, openBracketIndex).Trim();
-                        }
-                        else
-                        {
-                            syntaxStr = syntaxStr.Trim();
-                        }
+                        syntaxStr = RemoveBraces(syntaxStr);
                         break;
                     };
                 case MemberType.Struct:
@@ -156,15 +132,7 @@ namespace DocAsCode.EntityModel
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
-                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
-                        if (openBracketIndex > -1)
-                        {
-                            syntaxStr = syntaxStr.Substring(0, openBracketIndex).Trim();
-                        }
-                        else
-                        {
-                            syntaxStr = syntaxStr.Trim();
-                        }
+                        syntaxStr = RemoveBraces(syntaxStr);
                         break;
                     };
                 case MemberType.Delegate:
@@ -217,6 +185,10 @@ namespace DocAsCode.EntityModel
                             .ToString();
                             break;
                         }
+                        break;
+                    };
+                case MemberType.Operator:
+                    {
                         var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
                         if (opertatorSyntax != null)
                         {
@@ -227,7 +199,7 @@ namespace DocAsCode.EntityModel
                             break;
                         }
                         break;
-                    };
+                    }
                 case MemberType.Constructor:
                     {
                         var syntax = syntaxNode as ConstructorDeclarationSyntax;
@@ -265,7 +237,7 @@ namespace DocAsCode.EntityModel
                         if (syntax != null)
                         {
                             syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
-                            syntaxStr = Regex.Replace(syntaxStr, @"\s*\{(\S|\s)*", "");
+                            syntaxStr = RemoveBraces(syntaxStr);
                             break;
                         }
                         var variable = syntaxNode as VariableDeclaratorSyntax;
@@ -705,6 +677,11 @@ namespace DocAsCode.EntityModel
             {
                 yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
             }
+        }
+
+        private static string RemoveBraces(string text)
+        {
+            return BracesRegex.Replace(text, string.Empty);
         }
 
         #endregion
