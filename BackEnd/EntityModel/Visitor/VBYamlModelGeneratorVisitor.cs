@@ -23,7 +23,7 @@ namespace DocAsCode.EntityModel
             SymbolDisplayKindOptions.None,
             SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
 
-        public VBYamlModelGeneratorVisitor(object context, Compilation compilation) : base(context, compilation, SyntaxLanguage.VB)
+        public VBYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.VB)
         {
         }
 
@@ -43,7 +43,7 @@ namespace DocAsCode.EntityModel
             }
         }
 
-        public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
+        public override string GetSyntaxContent(MemberType typeKind, ISymbol symbol, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;
             int openBracketIndex = -1;

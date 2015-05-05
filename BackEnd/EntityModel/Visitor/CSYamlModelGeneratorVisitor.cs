@@ -13,6 +13,7 @@ namespace DocAsCode.EntityModel
 
     public class CSYamlModelGeneratorVisitor : YamlModelGeneratorVisitor
     {
+        #region Fields
         private static readonly SymbolDisplayFormat ShortFormat = new SymbolDisplayFormat(
             SymbolDisplayGlobalNamespaceStyle.Omitted,
             SymbolDisplayTypeQualificationStyle.NameOnly,
@@ -30,10 +31,13 @@ namespace DocAsCode.EntityModel
             typeQualificationStyle: SymbolDisplayTypeQualificationStyle.NameAndContainingTypes,
             genericsOptions: SymbolDisplayGenericsOptions.IncludeTypeParameters,
             miscellaneousOptions: SymbolDisplayMiscellaneousOptions.UseSpecialTypes | SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers | SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays | SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName);
+        #endregion
 
-        public CSYamlModelGeneratorVisitor(object context, Compilation compilation) : base(context, compilation, SyntaxLanguage.CSharp)
+        public CSYamlModelGeneratorVisitor(object context) : base(context, SyntaxLanguage.CSharp)
         {
         }
+
+        #region Overrides
 
         public override SymbolDisplayFormat ShortDisplayFormat
         {
@@ -51,7 +55,7 @@ namespace DocAsCode.EntityModel
             }
         }
 
-        public override string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode)
+        public override string GetSyntaxContent(MemberType typeKind, ISymbol symbol, SyntaxNode syntaxNode)
         {
             string syntaxStr = null;
             int openBracketIndex = -1;
@@ -62,14 +66,14 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as ClassDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.ClassDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetTypeModifiers(symbol)),
-                            SyntaxFactory.Identifier(symbol.Name),
-                            GetTypeParameters(symbol),
-                            GetBaseTypeList(symbol),
-                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)),
+                            SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
+                            SyntaxFactory.Identifier(typeSymbol.Name),
+                            GetTypeParameters(typeSymbol),
+                            GetBaseTypeList(typeSymbol),
+                            SyntaxFactory.List(GetTypeParameterConstraints(typeSymbol)),
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
@@ -89,12 +93,12 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as EnumDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.EnumDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetTypeModifiers(symbol)),
-                            SyntaxFactory.Identifier(symbol.Name),
-                            GetEnumBaseTypeList(symbol),
+                            SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
+                            SyntaxFactory.Identifier(typeSymbol.Name),
+                            GetEnumBaseTypeList(typeSymbol),
                             new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
@@ -114,14 +118,14 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as InterfaceDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.InterfaceDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetTypeModifiers(symbol)),
-                            SyntaxFactory.Identifier(symbol.Name),
-                            GetTypeParameters(symbol),
-                            GetBaseTypeList(symbol),
-                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)),
+                            SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
+                            SyntaxFactory.Identifier(typeSymbol.Name),
+                            GetTypeParameters(typeSymbol),
+                            GetBaseTypeList(typeSymbol),
+                            SyntaxFactory.List(GetTypeParameterConstraints(typeSymbol)),
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
@@ -141,14 +145,14 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as StructDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.StructDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetTypeModifiers(symbol)),
-                            SyntaxFactory.Identifier(symbol.Name),
-                            GetTypeParameters(symbol),
-                            GetBaseTypeList(symbol),
-                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)),
+                            SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
+                            SyntaxFactory.Identifier(typeSymbol.Name),
+                            GetTypeParameters(typeSymbol),
+                            GetBaseTypeList(typeSymbol),
+                            SyntaxFactory.List(GetTypeParameterConstraints(typeSymbol)),
                             new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
                             .ToString();
@@ -168,18 +172,18 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as DelegateDeclarationSyntax;
                         Debug.Assert(syntax != null);
                         if (syntax == null) break;
-                        var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                        var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.DelegateDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetTypeModifiers(symbol)),
-                            SyntaxFactory.ParseTypeName(symbol.DelegateInvokeMethod.ReturnType.ToDisplayString(ShortFormat)),
-                            SyntaxFactory.Identifier(symbol.Name),
-                            GetTypeParameters(symbol),
+                            SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
+                            SyntaxFactory.ParseTypeName(typeSymbol.DelegateInvokeMethod.ReturnType.ToDisplayString(ShortFormat)),
+                            SyntaxFactory.Identifier(typeSymbol.Name),
+                            GetTypeParameters(typeSymbol),
                             SyntaxFactory.ParameterList(
                                 SyntaxFactory.SeparatedList(
-                                    from p in symbol.DelegateInvokeMethod.Parameters
+                                    from p in typeSymbol.DelegateInvokeMethod.Parameters
                                     select GetParameter(p))),
-                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)))
+                            SyntaxFactory.List(GetTypeParameterConstraints(typeSymbol)))
                             .NormalizeWhitespace()
                             .ToString();
                         break;
@@ -189,24 +193,24 @@ namespace DocAsCode.EntityModel
                         var syntax = syntaxNode as MethodDeclarationSyntax;
                         if (syntax != null)
                         {
-                            var symbol = Compilation.GetSemanticModel(syntax.SyntaxTree).GetDeclaredSymbol(syntax);
+                            var methodSymbol = (IMethodSymbol)symbol;
                             ExplicitInterfaceSpecifierSyntax eii = null;
-                            if (symbol.ExplicitInterfaceImplementations.Length > 0)
+                            if (methodSymbol.ExplicitInterfaceImplementations.Length > 0)
                             {
-                                eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(symbol)));
+                                eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(methodSymbol)));
                             }
                             syntaxStr = SyntaxFactory.MethodDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
-                            SyntaxFactory.TokenList(GetMemberModifiers(symbol)),
-                            SyntaxFactory.ParseTypeName(symbol.ReturnType.ToDisplayString(ShortFormat)),
+                            SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
+                            SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
                             eii,
-                            SyntaxFactory.Identifier(GetMemberName(symbol)),
-                            GetTypeParameters(symbol),
+                            SyntaxFactory.Identifier(GetMemberName(methodSymbol)),
+                            GetTypeParameters(methodSymbol),
                             SyntaxFactory.ParameterList(
                                 SyntaxFactory.SeparatedList(
-                                    from p in symbol.Parameters
+                                    from p in methodSymbol.Parameters
                                     select GetParameter(p))),
-                            SyntaxFactory.List(GetTypeParameterConstraints(symbol)),
+                            SyntaxFactory.List(GetTypeParameterConstraints(methodSymbol)),
                             null,
                             null)
                             .NormalizeWhitespace()
@@ -323,6 +327,10 @@ namespace DocAsCode.EntityModel
             if (string.IsNullOrEmpty(syntaxStr)) syntaxStr = syntaxNode.NormalizeWhitespace().ToString().Trim();
             return syntaxStr;
         }
+
+        #endregion
+
+        #region Private methods
 
         private static string GetMemberName(IMethodSymbol symbol)
         {
@@ -698,5 +706,7 @@ namespace DocAsCode.EntityModel
                 yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
             }
         }
+
+        #endregion
     }
 }

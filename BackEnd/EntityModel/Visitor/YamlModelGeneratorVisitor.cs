@@ -12,12 +12,10 @@
         private MetadataItem parent = new MetadataItem();
         private MetadataItem currentNamespace = new MetadataItem();
         private MetadataItem currentAssembly = new MetadataItem();
-        private readonly Compilation compilation;
         private readonly SyntaxLanguage language;
 
-        public YamlModelGeneratorVisitor(object context, Compilation compilation, SyntaxLanguage language)
+        public YamlModelGeneratorVisitor(object context, SyntaxLanguage language)
         {
-            this.compilation = compilation;
             this.language = language;
         }
 
@@ -25,9 +23,7 @@
 
         public abstract SymbolDisplayFormat DisplayFormat { get; }
 
-        public abstract string GetSyntaxContent(MemberType typeKind, SyntaxNode syntaxNode);
-
-        public Compilation Compilation { get { return compilation; } }
+        public abstract string GetSyntaxContent(MemberType typeKind, ISymbol symbol, SyntaxNode syntaxNode);
 
         public override MetadataItem DefaultVisit(ISymbol symbol)
         {
@@ -138,7 +134,7 @@
             }
 
             item.Type = VisitorHelper.GetMemberTypeFromTypeKind(symbol.TypeKind);
-            string syntaxStr = this.GetSyntaxContent(item.Type, syntaxNode);
+            string syntaxStr = this.GetSyntaxContent(item.Type, symbol, syntaxNode);
             Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
             if (string.IsNullOrEmpty(syntaxStr)) return null;
 
@@ -311,7 +307,7 @@
                 item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
             }
 
-            string syntaxStr = this.GetSyntaxContent(item.Type, syntaxNode);
+            string syntaxStr = this.GetSyntaxContent(item.Type, symbol, syntaxNode);
 
             Debug.Assert(!string.IsNullOrEmpty(syntaxStr));
             if (string.IsNullOrEmpty(syntaxStr)) return null;
