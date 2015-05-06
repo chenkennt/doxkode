@@ -67,7 +67,7 @@
   function markdownContent(contentService, markdownService, urlService) {
     var template =
       '<div>' +
-      '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn pull-right mobile-hide">' +
+      '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn btn-primary pull-right mobile-hide">' +
       '<!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc' +
       '</a>' +
       '<markdown src="markdownPageModel.src"></markdown>' +
