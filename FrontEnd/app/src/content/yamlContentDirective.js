@@ -178,7 +178,7 @@
               } else {
                 var id = reference.id;
                 // TODO: currently .map file is not generating the correct relative path
-                var href = urlService.getPageHref($location.path(), reference.href);
+                var href = reference.href;
                 replacement = "<a href='" + href + "'>" + id + "</a>";
                 copied = replaceAllKeys(reference.Keys, copied, replacement);
               }

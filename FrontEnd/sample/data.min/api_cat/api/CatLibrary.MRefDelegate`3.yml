@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 336
+    startLine: 346
   summary: Generic delegate with many constrains.
   syntax:
     content:

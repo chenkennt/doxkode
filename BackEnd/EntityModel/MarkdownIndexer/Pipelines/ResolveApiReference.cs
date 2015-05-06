@@ -1,5 +1,6 @@
 ﻿namespace DocAsCode.EntityModel.MarkdownIndexer
 {
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
@@ -28,7 +29,7 @@
                     {
                         Id = referenceId,
                         ReferenceKeys = matchDetail.MatchedSections,
-                        Href = api.Href.BackSlashToForwardSlash(),
+                        Href = FileExtensions.MakeRelativePath(Path.GetDirectoryName(filePath), api.Href),
                         MapFileType = MapFileType.Link
                     };
 

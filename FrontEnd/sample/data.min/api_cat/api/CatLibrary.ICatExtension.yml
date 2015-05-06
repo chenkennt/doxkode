@@ -11,14 +11,14 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 302
+    startLine: 312
   summary: >-
     It's the class that contains ICat interface's extension method.
 
     This class must be public and static.Also it shouldn't be a geneic class
   syntax:
     content:
-      CSharp: public static class ICatExtension
+      CSharp: public class ICatExtension
   inheritance:
   - id: System.Object
     name: object
@@ -35,17 +35,17 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 309
+    startLine: 319
   summary: Extension method hint that how long the cat can sleep.
   syntax:
     content:
-      CSharp: public static void Sleep(this ICat icat, long hours)
+      CSharp: public static void Sleep(ICat icat, long hours)
     parameters:
     - id: icat
       type:
         id: CatLibrary.ICat
         name: ICat
-        href: api/CatLibrary.ICat.yml
+        href: CatLibrary.ICat.yml
       description: The type will be extended.
     - id: hours
       type:
@@ -62,17 +62,17 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 316
+    startLine: 326
   summary: Extension method to let cat play
   syntax:
     content:
-      CSharp: public static void Play(this ICat icat, string toy)
+      CSharp: public static void Play(ICat icat, string toy)
     parameters:
     - id: icat
       type:
         id: CatLibrary.ICat
         name: ICat
-        href: api/CatLibrary.ICat.yml
+        href: CatLibrary.ICat.yml
       description: Cat
     - id: toy
       type:

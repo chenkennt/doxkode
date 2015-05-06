@@ -159,7 +159,7 @@
           if (relPath.length > 0) {
             relPath.pop();
           } else {
-            throw "invalid path: " + relative;
+            relPath.push('..');
           }
         } else {
           relPath.push(pathPart);
@@ -260,7 +260,7 @@
       if (this.isAbsoluteUrl(targetPageHref)) return targetPageHref;
       if (!targetPageHref) return '';
       // TODO: if path is : /#/toc1!../a.md => toc should be toc1/toc.yml?
-      var path = this.getAbsolutePath(sourcePageHref, targetPageHref);
+       var path = this.getAbsolutePath(sourcePageHref, targetPageHref);
 
       return '#' + this.getContentUrl({tocPath:tocPath, contentPath:path});
     };
@@ -268,8 +268,8 @@
     // Href relative to current file
     this.getPageHref = function(currentPath, targetUrl) {
       var pathInfo = this.getPathInfo(currentPath);
-      var currentPagePath = this.getContentFilePath(pathInfo);
-      return this.getHref(pathInfo.tocPath, currentPagePath, targetUrl);
+      
+      return this.getHref(pathInfo.tocPath, pathInfo.contentPath, targetUrl);
     };
   }
 

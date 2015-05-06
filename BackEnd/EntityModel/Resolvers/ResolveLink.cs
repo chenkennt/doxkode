@@ -17,15 +17,15 @@ namespace DocAsCode.EntityModel
                 }, (member, parent) =>
                 {
                     // get all the possible places where link is possible
-                    member.Remarks = ResolveText(index, member.Remarks);
-                    member.Summary = ResolveText(index, member.Summary);
+                    member.Remarks = ResolveText(index, member.Remarks, member.Name);
+                    member.Summary = ResolveText(index, member.Summary, member.Name);
                     if (member.Syntax != null && member.Syntax.Parameters != null)
                         member.Syntax.Parameters.ForEach(s =>
                         {
-                            s.Description = ResolveText(index, s.Description);
+                            s.Description = ResolveText(index, s.Description, member.Name);
                         });
                     if (member.Syntax != null && member.Syntax.Return != null)
-                        member.Syntax.Return.Description = ResolveText(index, member.Syntax.Return.Description);
+                        member.Syntax.Return.Description = ResolveText(index, member.Syntax.Return.Description, member.Name);
 
                     // resolve parameter's Type
 
@@ -37,10 +37,10 @@ namespace DocAsCode.EntityModel
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string ResolveText(Dictionary<string, MetadataItem> dict, string input)
+        private static string ResolveText(Dictionary<string, MetadataItem> dict, string input, string currentMemberName)
         {
             if (string.IsNullOrEmpty(input)) return null;
-            return LinkParser.ResolveToMarkdownLink(dict, input);
+            return LinkParser.ResolveToMarkdownLink(dict, input, currentMemberName);
         }
     }
 }

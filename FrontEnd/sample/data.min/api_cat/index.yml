@@ -1,6 +1,12 @@
 CatLibrary:
   id: CatLibrary
   href: api/CatLibrary.yml
+CatLibrary.A:
+  id: CatLibrary.A
+  href: api/CatLibrary.A.yml
+CatLibrary.A.F:
+  id: CatLibrary.A.F
+  href: api/CatLibrary.A.yml
 CatLibrary.IAnimal:
   id: CatLibrary.IAnimal
   href: api/CatLibrary.IAnimal.yml
@@ -61,14 +67,32 @@ CatLibrary.Cat`2.op_Explicit(CatLibrary.Cat{`0,`1})~CatLibrary.Tom:
 CatLibrary.Cat`2.Item(System.String):
   id: CatLibrary.Cat`2.Item(System.String)
   href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.Age:
+  id: CatLibrary.Cat`2.Age
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.ownEat:
   id: CatLibrary.Cat`2.ownEat
   href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.isHealthy:
   id: CatLibrary.Cat`2.isHealthy
   href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.CatLibrary#IAnimal#Eat:
+  id: CatLibrary.Cat`2.CatLibrary#IAnimal#Eat
+  href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.CatLibrary#IAnimal#Eat``1(``0):
+  id: CatLibrary.Cat`2.CatLibrary#IAnimal#Eat``1(``0)
+  href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.CatLibrary#IAnimal#Eat(System.String):
+  id: CatLibrary.Cat`2.CatLibrary#IAnimal#Eat(System.String)
+  href: api/CatLibrary.Cat`2.yml
 CatLibrary.Cat`2.Name:
   id: CatLibrary.Cat`2.Name
+  href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.CatLibrary#IAnimal#Item(System.Int32):
+  id: CatLibrary.Cat`2.CatLibrary#IAnimal#Item(System.Int32)
+  href: api/CatLibrary.Cat`2.yml
+CatLibrary.Cat`2.CatLibrary#ICat#eat:
+  id: CatLibrary.Cat`2.CatLibrary#ICat#eat
   href: api/CatLibrary.Cat`2.yml
 CatLibrary.Tom:
   id: CatLibrary.Tom

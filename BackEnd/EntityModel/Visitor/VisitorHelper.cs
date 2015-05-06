@@ -173,7 +173,7 @@
         {
             if (symbol == null)
             {
-                return symbol.MetadataName;
+                return null;
             }
 
             string str = symbol.GetDocumentationCommentId();

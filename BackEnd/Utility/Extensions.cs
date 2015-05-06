@@ -163,8 +163,8 @@ namespace DocAsCode.Utility
         /// <exception cref="InvalidOperationException"></exception>
         public static string MakeRelativePath(string basePath, string absolutePath)
         {
-            if (string.IsNullOrEmpty(basePath)) throw new ArgumentNullException("fromPath");
-            if (string.IsNullOrEmpty(absolutePath)) throw new ArgumentNullException("toPath");
+            if (string.IsNullOrEmpty(basePath)) return absolutePath;
+            if (string.IsNullOrEmpty(absolutePath)) return null;
 
             // Append / to the directory
             if (basePath[basePath.Length - 1] != '/')

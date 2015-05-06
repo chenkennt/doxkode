@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 283
+    startLine: 293
   summary: '*TomFromBaseClass* inherits from @'
   syntax:
     content:
@@ -31,7 +31,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 290
+    startLine: 300
   summary: 'This is a #ctor with parameter'
   syntax:
     content:

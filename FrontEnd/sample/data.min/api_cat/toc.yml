@@ -2,6 +2,9 @@
   name: CatLibrary
   href: api/CatLibrary.yml
   items:
+  - uid: CatLibrary.A
+    name: A
+    href: api/CatLibrary.A.yml
   - uid: CatLibrary.IAnimal
     name: IAnimal
     href: api/CatLibrary.IAnimal.yml

@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 349
+    startLine: 359
   summary: Fake delegate
   syntax:
     content:

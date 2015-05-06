@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 375
+    startLine: 385
   summary: Enumeration ColorType
   syntax:
     content:
@@ -39,7 +39,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 380
+    startLine: 390
   summary: this color is red
   syntax:
     content:
@@ -53,7 +53,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 384
+    startLine: 394
   summary: blue like river
   syntax:
     content:
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 388
+    startLine: 398
   summary: yellow comes from desert
   syntax:
     content:

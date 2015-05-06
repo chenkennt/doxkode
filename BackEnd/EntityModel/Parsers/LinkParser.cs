@@ -17,10 +17,13 @@
         // self written link should be ended with a whitespace
         public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")", RegexOptions.Compiled);
 
-        public static string ResolveToMarkdownLink(Dictionary<string, MetadataItem> dict, string input)
+        public static string ResolveToMarkdownLink(Dictionary<string, MetadataItem> dict, string input, string currentMemberName)
         {
             return ResolveText(dict, input, s =>
-                 string.Format("[{0}]({1})", s.Name, s.Href), s => string.Format("[{0}](#)", s)
+                 {
+                     var href = MetadataModelUtility.ResolveApiHrefRelativeToCurrentApi(dict, s.Name, currentMemberName);
+                     return string.Format("[{0}]({1})", s.Name, href);
+                 }, s => string.Format("[{0}]()", s)
                 );
         }
 

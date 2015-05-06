@@ -14,6 +14,7 @@ items:
     startLine: 6
   id: CatLibrary
   children:
+  - CatLibrary.A
   - CatLibrary.IAnimal
   - CatLibrary.ICat
   - CatLibrary.Cat`2
@@ -24,6 +25,10 @@ items:
   - CatLibrary.MRefDelegate`3
   - CatLibrary.FakeDelegate`1
 references:
+- uid: CatLibrary.A
+  href: CatLibrary.A.yml
+  name: A
+  type: Class
 - uid: CatLibrary.IAnimal
   href: CatLibrary.IAnimal.yml
   name: IAnimal

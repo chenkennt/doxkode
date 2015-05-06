@@ -62,16 +62,7 @@ namespace DocAsCode.EntityModel
 
         private static string ResolveInternalLink(Dictionary<string, MetadataItem> index, string name, string currentName)
         {
-            Debug.Assert(!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(currentName));
-            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(currentName)) return name;
-            var currentHref = index[currentName].Href;
-            MetadataItem item;
-            if (index.TryGetValue(name, out item))
-            {
-                return FileExtensions.MakeRelativePath(Path.GetDirectoryName(currentHref), item.Href);
-            }
-
-            return name;
+            return MetadataModelUtility.ResolveApiHrefRelativeToCurrentApi(index, name, currentName);
         }
     }
 }

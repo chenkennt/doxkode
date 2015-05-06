@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 53
+    startLine: 63
   summary: Cat's interface
   syntax:
     content:
@@ -27,7 +27,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 59
+    startLine: 69
   summary: eat event of cat. Every cat must implement this event.
   syntax:
     content:

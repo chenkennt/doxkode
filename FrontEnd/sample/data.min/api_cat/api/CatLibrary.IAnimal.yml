@@ -11,7 +11,7 @@ items:
       repo: https://github.com/vicancy/CatLibrary.git
       key: 42596848
     path: Class1.cs
-    startLine: 15
+    startLine: 25
   summary: This is basic interface of all animal.
   syntax:
     content:
@@ -31,7 +31,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 21
+    startLine: 31
   summary: Name of Animal.
   syntax:
     content:
@@ -51,7 +51,7 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 28
+    startLine: 38
   summary: Return specific number animal's name.
   syntax:
     content:
@@ -71,11 +71,11 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 33
+    startLine: 43
   summary: Animal's eat method.
   syntax:
     content:
-      CSharp: void Eat();
+      CSharp: public void Eat()
     parameters: []
   id: CatLibrary.IAnimal.Eat
 - uid: CatLibrary.IAnimal.Eat``1(``0)
@@ -86,11 +86,11 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 40
+    startLine: 50
   summary: Overload method of eat. This define the animal eat by which tool.
   syntax:
     content:
-      CSharp: 'void Eat<Tool>(Tool tool)where Tool : class;'
+      CSharp: 'public void Eat<Tool>(Tool tool)where Tool : class'
     parameters:
     - id: tool
       type:
@@ -107,11 +107,11 @@ items:
   source:
     remote: *o0
     path: Class1.cs
-    startLine: 47
+    startLine: 57
   summary: Feed the animal with some food
   syntax:
     content:
-      CSharp: void Eat(string food);
+      CSharp: public void Eat(string food)
     parameters:
     - id: food
       type:
