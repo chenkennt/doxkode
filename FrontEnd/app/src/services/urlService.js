@@ -71,7 +71,7 @@
     };
 
     this.getPathInfo = function(currentPath) {
-      if (!currentPath) return '';
+      if (!currentPath) return null;
       currentPath = normalizeUrl(currentPath);
 
       // seperate toc and content with !

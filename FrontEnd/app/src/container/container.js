@@ -42,7 +42,11 @@
 
     });
     $scope.$watch(function(){return $location.path();}, function(path){
-      loadContent(path);
+      var pathInfo = urlService.getPathInfo(path);
+      var contentPath = urlService.getContentFilePath(pathInfo);
+      $scope.currentContentPath = pathInfo ? pathInfo.contentPath : null;
+      $scope.currentTocPath = pathInfo ? pathInfo.tocPath : null;
+      loadContent(contentPath);
     });
 
     $rootScope.$on("activeNavItemChanged", function(event, args){
@@ -84,10 +88,7 @@
       }
     });
 
-    function loadContent(url){
-        if (!url) return;
-        var pathInfo = urlService.getPathInfo(url);
-        var path = urlService.getContentFilePath(pathInfo);
+    function loadContent(path){
         var scope = $scope;
         if (path) {
           // If is toc.yml and home page exists, set to $scope and return
@@ -111,11 +112,9 @@
     }
     // Href relative to current toc file
     function getTocHref(url) {
-      // if (!$scope.model) return '';
-      var currentPath = $location.path();
-      var pathInfo = urlService.getPathInfo(currentPath);
-      pathInfo.contentPath = '';
-      return urlService.getHref(pathInfo.tocPath, '', url);
+      var currentTocPath = $scope.currentTocPath;
+      if (!currentTocPath) return null;
+      return urlService.getHref(currentTocPath, '', url);
     }
 
     function filteredItems(f) {
@@ -154,11 +153,11 @@
      ****************************************/
     function tocClass(selectedItem) {
       /* jshint validthis: true */
-      var currentPath = $location.path();
-      var pathInfo = urlService.getPathInfo(currentPath);
-
+      var currentContentPath = $scope.currentContentPath;
+      if (!currentContentPath) return null;
+      
       var current = {
-        active: selectedItem.href && pathInfo.contentPath === selectedItem.href,
+        active: selectedItem.href && currentContentPath === selectedItem.href,
         'nav-index-section': selectedItem.type === 'section'
       };
 

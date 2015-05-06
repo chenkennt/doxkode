@@ -37,10 +37,7 @@
     contentService.getNavBar().then(
       function(data) {
         var navbar = data;
-        contentService.getDefaultItem(navbar,
-          function(defaultItem) {
-            if (!$location.path() && defaultItem.href) $location.url(defaultItem.href);
-          });
+        
         $scope.model = navbar;
         $rootScope.$broadcast("navbarLoaded", {
           navbar: data
@@ -48,6 +45,10 @@
 
 
         $scope.$watch(function(){return $location.path();}, function(path){
+          
+          if (!path && navbar && navbar.length > 0 && navbar[0].href) 
+            $location.url(navbar[0].href);
+        
           var pathInfo = urlService.getPathInfo(path);
           if (pathInfo) {
             var navPath = pathInfo.tocPath || pathInfo.contentPath;
