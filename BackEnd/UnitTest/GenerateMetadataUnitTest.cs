@@ -503,6 +503,265 @@ namespace Test1
             }
         }
 
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Operator()
+        {
+            string code = @"
+using System.Collections.Generic
+namespace Test1
+{
+    public class Foo
+    {
+        // unary
+        public static Foo operator +(Foo x) => x;
+        public static Foo operator -(Foo x) => x;
+        public static Foo operator !(Foo x) => x;
+        public static Foo operator ~(Foo x) => x;
+        public static Foo operator ++(Foo x) => x;
+        public static Foo operator --(Foo x) => x;
+        public static Foo operator true(Foo x) => x;
+        public static Foo operator false(Foo x) => x;
+        // binary
+        public static Foo operator +(Foo x, int y) => x;
+        public static Foo operator -(Foo x, int y) => x;
+        public static Foo operator *(Foo x, int y) => x;
+        public static Foo operator /(Foo x, int y) => x;
+        public static Foo operator %(Foo x, int y) => x;
+        public static Foo operator &(Foo x, int y) => x;
+        public static Foo operator |(Foo x, int y) => x;
+        public static Foo operator ^(Foo x, int y) => x;
+        public static Foo operator >>(Foo x, int y) => x;
+        public static Foo operator <<(Foo x, int y) => x;
+        // comparison
+        public static bool operator ==(Foo x, int y) => false;
+        public static bool operator !=(Foo x, int y) => false;
+        public static bool operator >(Foo x, int y) => false;
+        public static bool operator <(Foo x, int y) => false;
+        public static bool operator >=(Foo x, int y) => false;
+        public static bool operator <=(Foo x, int y) => false;
+        // convertion
+        public static implicit operator Foo (int x) => null;
+        public static explicit operator int (Foo x) => 0;
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            // unary
+            {
+                var method = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator +(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator +(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_UnaryPlus(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator +(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator -(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator -(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_UnaryNegation(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator -(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator !(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator !(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_LogicalNot(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator !(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator ~(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator ~(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_OnesComplement(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator ~(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[4];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator ++(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator ++(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Increment(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator ++(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[5];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator --(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator --(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Decrement(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator --(Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[6];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator true(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator true(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_True(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator true (Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[7];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator false(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator false(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_False(Test1.Foo)", method.Name);
+                Assert.AreEqual(@"public static Foo operator false (Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            // binary
+            {
+                var method = output.Items[0].Items[0].Items[8];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator +(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator +(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Addition(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator +(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[9];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator -(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator -(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Subtraction(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator -(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[10];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator *(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator *(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Multiply(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator *(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[11];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator /(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator /(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Division(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator /(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[12];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator %(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator %(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Modulus(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator %(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[13];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator &(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator &(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_BitwiseAnd(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator &(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[14];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator |(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator |(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_BitwiseOr(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator |(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[15];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator ^(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator ^(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_ExclusiveOr(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator ^(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[16];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator >>(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator >>(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_RightShift(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator >>(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[17];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator <<(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator <<(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_LeftShift(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static Foo operator <<(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            // comparison
+            {
+                var method = output.Items[0].Items[0].Items[18];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator ==(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator ==(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Equality(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator ==(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[19];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator !=(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator !=(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Inequality(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator !=(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[20];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator >(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator >(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_GreaterThan(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator>(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[21];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator <(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator <(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_LessThan(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator <(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[22];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator >=(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator >=(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_GreaterThanOrEqual(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator >=(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[23];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("operator <=(Foo, int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.operator <=(Test1.Foo, int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_LessThanOrEqual(Test1.Foo,System.Int32)", method.Name);
+                Assert.AreEqual(@"public static bool operator <=(Foo x, int y)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            // conversion
+            {
+                var method = output.Items[0].Items[0].Items[24];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("implicit operator Foo(int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.implicit operator Test1.Foo(int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Implicit(System.Int32)~Test1.Foo", method.Name);
+                Assert.AreEqual(@"public static implicit operator Foo(int x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[25];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("explicit operator int(Foo)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.explicit operator int(Test1.Foo)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo.op_Explicit(Test1.Foo)~System.Int32", method.Name);
+                Assert.AreEqual(@"public static explicit operator int (Foo x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
         private static Compilation CreateCompilationFromCsharpCode(string code)
         {
             var tree = SyntaxFactory.ParseSyntaxTree(code);

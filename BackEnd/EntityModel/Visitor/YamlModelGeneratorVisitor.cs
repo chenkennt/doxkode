@@ -244,7 +244,6 @@
                         switch (methodSymbol.MethodKind)
                         {
                             case MethodKind.AnonymousFunction:
-                            case MethodKind.Conversion:
                             case MethodKind.DelegateInvoke:
                             case MethodKind.Destructor:
                             case MethodKind.ExplicitInterfaceImplementation:
@@ -254,6 +253,7 @@
                                 return MemberType.Method;
                             case MethodKind.BuiltinOperator:
                             case MethodKind.UserDefinedOperator:
+                            case MethodKind.Conversion:
                                 return MemberType.Operator;
                             case MethodKind.Constructor:
                             case MethodKind.StaticConstructor:

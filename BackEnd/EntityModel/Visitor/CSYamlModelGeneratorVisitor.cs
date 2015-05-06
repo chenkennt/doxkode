@@ -63,9 +63,6 @@ namespace DocAsCode.EntityModel
             {
                 case MemberType.Class:
                     {
-                        var syntax = syntaxNode as ClassDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
                         var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.ClassDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
@@ -79,12 +76,9 @@ namespace DocAsCode.EntityModel
                             .ToString();
                         syntaxStr = RemoveBraces(syntaxStr);
                         break;
-                    };
+                    }
                 case MemberType.Enum:
                     {
-                        var syntax = syntaxNode as EnumDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
                         var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.EnumDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
@@ -96,12 +90,9 @@ namespace DocAsCode.EntityModel
                             .ToString();
                         syntaxStr = RemoveBraces(syntaxStr);
                         break;
-                    };
+                    }
                 case MemberType.Interface:
                     {
-                        var syntax = syntaxNode as InterfaceDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
                         var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.InterfaceDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
@@ -115,12 +106,9 @@ namespace DocAsCode.EntityModel
                             .ToString();
                         syntaxStr = RemoveBraces(syntaxStr);
                         break;
-                    };
+                    }
                 case MemberType.Struct:
                     {
-                        var syntax = syntaxNode as StructDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
                         var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.StructDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
@@ -134,12 +122,9 @@ namespace DocAsCode.EntityModel
                             .ToString();
                         syntaxStr = RemoveBraces(syntaxStr);
                         break;
-                    };
+                    }
                 case MemberType.Delegate:
                     {
-                        var syntax = syntaxNode as DelegateDeclarationSyntax;
-                        Debug.Assert(syntax != null);
-                        if (syntax == null) break;
                         var typeSymbol = (INamedTypeSymbol)symbol;
                         syntaxStr = SyntaxFactory.DelegateDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
@@ -155,19 +140,16 @@ namespace DocAsCode.EntityModel
                             .NormalizeWhitespace()
                             .ToString();
                         break;
-                    };
+                    }
                 case MemberType.Method:
                     {
-                        var syntax = syntaxNode as MethodDeclarationSyntax;
-                        if (syntax != null)
+                        var methodSymbol = (IMethodSymbol)symbol;
+                        ExplicitInterfaceSpecifierSyntax eii = null;
+                        if (methodSymbol.ExplicitInterfaceImplementations.Length > 0)
                         {
-                            var methodSymbol = (IMethodSymbol)symbol;
-                            ExplicitInterfaceSpecifierSyntax eii = null;
-                            if (methodSymbol.ExplicitInterfaceImplementations.Length > 0)
-                            {
-                                eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(methodSymbol)));
-                            }
-                            syntaxStr = SyntaxFactory.MethodDeclaration(
+                            eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(methodSymbol)));
+                        }
+                        syntaxStr = SyntaxFactory.MethodDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
                             SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
                             SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
@@ -183,20 +165,47 @@ namespace DocAsCode.EntityModel
                             null)
                             .NormalizeWhitespace()
                             .ToString();
-                            break;
-                        }
                         break;
-                    };
+                    }
                 case MemberType.Operator:
                     {
-                        var opertatorSyntax = syntaxNode as OperatorDeclarationSyntax;
-                        if (opertatorSyntax != null)
+                        var methodSymbol = (IMethodSymbol)symbol;
+                        var operatorToken = GetOperatorToken(methodSymbol);
+                        if (operatorToken == null)
                         {
-                            syntaxStr = opertatorSyntax.WithBody(null)
+                            syntaxStr = "Not supported in c#";
+                        }
+                        else if (operatorToken.Value.Kind() == SyntaxKind.ImplicitKeyword || operatorToken.Value.Kind() == SyntaxKind.ExplicitKeyword)
+                        {
+                            syntaxStr = SyntaxFactory.ConversionOperatorDeclaration(
+                                new SyntaxList<AttributeListSyntax>(),
+                                SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
+                                operatorToken.Value,
+                                SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
+                                SyntaxFactory.ParameterList(
+                                    SyntaxFactory.SeparatedList(
+                                        from p in methodSymbol.Parameters
+                                        select GetParameter(p))),
+                                null,
+                                null)
                                 .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                            break;
+                                .ToString();
+                        }
+                        else
+                        {
+                            syntaxStr = SyntaxFactory.OperatorDeclaration(
+                                new SyntaxList<AttributeListSyntax>(),
+                                SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
+                                SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
+                                operatorToken.Value,
+                                SyntaxFactory.ParameterList(
+                                    SyntaxFactory.SeparatedList(
+                                        from p in methodSymbol.Parameters
+                                        select GetParameter(p))),
+                                null,
+                                null)
+                                .NormalizeWhitespace()
+                                .ToString();
                         }
                         break;
                     }
@@ -682,6 +691,46 @@ namespace DocAsCode.EntityModel
             if (symbol.IsSealed)
             {
                 yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
+            }
+        }
+
+        private static SyntaxToken? GetOperatorToken(IMethodSymbol symbol)
+        {
+            switch (symbol.Name)
+            {
+                // unary
+                case "op_UnaryPlus": return SyntaxFactory.Token(SyntaxKind.PlusToken);
+                case "op_UnaryNegation": return SyntaxFactory.Token(SyntaxKind.MinusToken);
+                case "op_LogicalNot": return SyntaxFactory.Token(SyntaxKind.ExclamationToken);
+                case "op_OnesComplement": return SyntaxFactory.Token(SyntaxKind.TildeToken);
+                case "op_Increment": return SyntaxFactory.Token(SyntaxKind.PlusPlusToken);
+                case "op_Decrement": return SyntaxFactory.Token(SyntaxKind.MinusMinusToken);
+                case "op_True": return SyntaxFactory.Token(SyntaxKind.TrueKeyword);
+                case "op_False": return SyntaxFactory.Token(SyntaxKind.FalseKeyword);
+                // binary
+                case "op_Addition": return SyntaxFactory.Token(SyntaxKind.PlusToken);
+                case "op_Subtraction": return SyntaxFactory.Token(SyntaxKind.MinusToken);
+                case "op_Multiply": return SyntaxFactory.Token(SyntaxKind.AsteriskToken);
+                case "op_Division": return SyntaxFactory.Token(SyntaxKind.SlashToken);
+                case "op_Modulus": return SyntaxFactory.Token(SyntaxKind.PercentToken);
+                case "op_BitwiseAnd": return SyntaxFactory.Token(SyntaxKind.AmpersandToken);
+                case "op_BitwiseOr": return SyntaxFactory.Token(SyntaxKind.BarToken);
+                case "op_ExclusiveOr": return SyntaxFactory.Token(SyntaxKind.CaretToken);
+                case "op_RightShift": return SyntaxFactory.Token(SyntaxKind.GreaterThanGreaterThanToken);
+                case "op_LeftShift": return SyntaxFactory.Token(SyntaxKind.LessThanLessThanToken);
+                // comparision
+                case "op_Equality": return SyntaxFactory.Token(SyntaxKind.EqualsEqualsToken);
+                case "op_Inequality": return SyntaxFactory.Token(SyntaxKind.ExclamationEqualsToken);
+                case "op_GreaterThan": return SyntaxFactory.Token(SyntaxKind.GreaterThanToken);
+                case "op_LessThan": return SyntaxFactory.Token(SyntaxKind.LessThanToken);
+                case "op_GreaterThanOrEqual": return SyntaxFactory.Token(SyntaxKind.GreaterThanEqualsToken);
+                case "op_LessThanOrEqual": return SyntaxFactory.Token(SyntaxKind.LessThanEqualsToken);
+                // conversion
+                case "op_Implicit": return SyntaxFactory.Token(SyntaxKind.ImplicitKeyword);
+                case "op_Explicit": return SyntaxFactory.Token(SyntaxKind.ExplicitKeyword);
+                // not supported:
+                //case "op_Assign": return SyntaxFactory.Token(SyntaxKind.EqualsToken);
+                default: return null;
             }
         }
 
