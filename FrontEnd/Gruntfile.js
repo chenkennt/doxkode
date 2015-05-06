@@ -375,7 +375,8 @@ module.exports = function(grunt) {
           projectList = projectList.replace(/\//g, "\\");
           target = target.replace(/\//g, "\\");
           return "..\\drop\\release\\buildmeta\\buildmeta.exe " + projectList + " /o:" + target + " && del " + projectList + " " + target + "\\index.yml";
-        }
+        },
+        maxBuffer: 1024 * 1024 // NOTE: Make sure this is big enough, child_process has a bug that if output exceeds max buffer exec() will return early
       }
     },
     updatetest: {

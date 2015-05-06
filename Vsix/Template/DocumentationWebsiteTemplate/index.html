@@ -127,17 +127,7 @@
       </div>-->
     </header>
 
-    <div role="main" class="container" ng-controller="ContainerController">
-      <div ng-if="toc" class="grid-left sidenav" ng-repeat="model in [toc.content]" ng-include="'template/toc.html'">
-      </div>
-      <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
-        <div id="contentLoading" ng-show="contentLoading">Loading...</div>
-        <!--For conceptual-->
-        <markdown-content get-map="true" src="contentPath" ng-cloak ng-if="contentType === 'markdown'" ng-hide="contentLoading" autoscroll></markdown-content>
-        <!--For yaml pages-->
-        <yaml-content content-type="{{contentType}}" get-map="true" ng-model="contentPath" ng-cloak ng-if="contentType !== 'markdown'" ng-hide="contentLoading" autoscroll></yaml-content>
-      </div>
-    </div>
+   <div role="main" class="container" ng-controller="ContainerController" ng-include="'template/container.html'"></div>
    <footer>
       <div class="grad-bottom"></div>
       <div class="footer">
