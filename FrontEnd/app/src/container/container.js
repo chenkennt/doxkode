@@ -121,7 +121,7 @@
     function filteredItems(f) {
       /* jshint validthis: true */
       var globalVisible = !f;
-      this.model.forEach(function(a, i, o) {
+      this.toc.content.forEach(function(a, i, o) {
         // show namespace if any of its child is visible
         // show all the children if the namespace is visible
         var firstLevelTocName = a.uid || a.name;
