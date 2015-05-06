@@ -445,6 +445,119 @@ namespace Test1
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Method()
+        {
+            string code = @"
+using System.Threading.Tasks
+namespace Test1
+{
+    public abstract class Foo<T>
+    {
+        public abstract void M1();
+        protected virtual Foo<T> M2<TArg>(TArg arg) where TArg : Foo<T> => this;
+        public static TResult M3<TResult>(string x) where TResult : class => null;
+        public void M4(int x){}
+    }
+    public class Bar : Foo<string>, IFooBar
+    {
+        public override void M1(){}
+        protected override sealed Foo<T> M2<TArg>(TArg arg) where TArg : Foo<string> => this;
+        public int M5<TArg>(TArg arg) where TArg : struct, new() => 2;
+    }
+    public interface IFooBar
+    {
+        void M1();
+        Foo<T> M2<TArg>(TArg arg) where TArg : Foo<string>;
+        int M5<TArg>(TArg arg) where TArg : struct, new();
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var method = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M1()", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.M1()", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.M1", method.Name);
+                Assert.AreEqual("public abstract void M1()", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M2<TArg>(TArg)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.M2<TArg>(TArg)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.M2``1(``0)", method.Name);
+                Assert.AreEqual("protected virtual Foo<T> M2<TArg>(TArg arg)where TArg : Foo<T>", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M3<TResult>(string)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.M3<TResult>(string)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.M3``1(System.String)", method.Name);
+                Assert.AreEqual("public static TResult M3<TResult>(string x)where TResult : class", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M4(int)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.M4(int)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.M4(System.Int32)", method.Name);
+                Assert.AreEqual("public void M4(int x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[1].Items[0];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M1()", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M1()", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M1", method.Name);
+                Assert.AreEqual("public override void M1()", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[1].Items[1];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M2<TArg>(TArg)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M2<TArg>(TArg)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M2``1(``0)", method.Name);
+                Assert.AreEqual("protected override sealed Foo<T> M2<TArg>(TArg arg)where TArg : Foo<string>", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[1].Items[2];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M5<TArg>(TArg)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M5<TArg>(TArg)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.M5``1(``0)", method.Name);
+                Assert.AreEqual("public int M5<TArg>(TArg arg)where TArg : struct, new ()", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[2].Items[0];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M1()", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M1()", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M1", method.Name);
+                Assert.AreEqual("void M1()", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[2].Items[1];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M2<TArg>(TArg)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M2<TArg>(TArg)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M2``1(``0)", method.Name);
+                Assert.AreEqual("Foo<T> M2<TArg>(TArg arg)where TArg : Foo<string>", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var method = output.Items[0].Items[2].Items[2];
+                Assert.IsNotNull(method);
+                Assert.AreEqual("M5<TArg>(TArg)", method.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M5<TArg>(TArg)", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.M5``1(``0)", method.Name);
+                Assert.AreEqual("int M5<TArg>(TArg arg)where TArg : struct, new ()", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
         public void TestGenereateMetadata_CSharp_Eii()
         {
             string code = @"
@@ -767,7 +880,6 @@ namespace Test1
         public void TestGenereateMetadata_CSharp_Constructor()
         {
             string code = @"
-using System.Collections.Generic
 namespace Test1
 {
     public class Foo<T>
@@ -825,6 +937,49 @@ namespace Test1
                 Assert.AreEqual("Test1.Bar.Bar(int)", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
                 Assert.AreEqual("Test1.Bar.#ctor(System.Int32)", constructor.Name);
                 Assert.AreEqual("protected Bar(int x)", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Field()
+        {
+            string code = @"
+namespace Test1
+{
+    public class Foo<T>
+    {
+        public volatile int X;
+        protected static readonly Foo<T> Y = null;
+        protected internal const string Z = "";
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var constructor = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("X", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.X", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.X", constructor.Name);
+                Assert.AreEqual("public volatile int X", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Y", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Y", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Y", constructor.Name);
+                Assert.AreEqual("protected static readonly Foo<T> Y", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Z", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Z", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Z", constructor.Name);
+                Assert.AreEqual("protected const string Z", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 

@@ -228,20 +228,18 @@ namespace DocAsCode.EntityModel
                     };
                 case MemberType.Field:
                     {
-                        var syntax = syntaxNode as VariableDeclaratorSyntax;
-                        if (syntax != null)
-                        {
-                            if (syntax.Parent as VariableDeclarationSyntax != null && syntax.Parent.Parent as FieldDeclarationSyntax != null)
-                            {
-                                var variableDeclarationSyntax = syntax.Parent.ReplaceNode(syntax, syntax.WithInitializer(null)) as VariableDeclarationSyntax;
-                                var fieldDeclarationSyntax = syntax.Parent.Parent.ReplaceNode(syntax.Parent, variableDeclarationSyntax) as FieldDeclarationSyntax;
-                                syntaxStr = fieldDeclarationSyntax
-                                    .NormalizeWhitespace()
-                                    .ToString()
-                                    .Trim();
-                            }
-                        }
-
+                        var fieldSymbol = (IFieldSymbol)symbol;
+                        syntaxStr = SyntaxFactory.FieldDeclaration(
+                            new SyntaxList<AttributeListSyntax>(),
+                            SyntaxFactory.TokenList(GetMemberModifiers(fieldSymbol)),
+                            SyntaxFactory.VariableDeclaration(
+                                GetTypeSyntax(fieldSymbol.Type),
+                                SyntaxFactory.SingletonSeparatedList(
+                                    SyntaxFactory.VariableDeclarator(
+                                        SyntaxFactory.Identifier(fieldSymbol.Name)))))
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .TrimEnd(';');
                         break;
                     };
                 case MemberType.Event:
@@ -636,20 +634,23 @@ namespace DocAsCode.EntityModel
 
         private static IEnumerable<SyntaxToken> GetMemberModifiers(IMethodSymbol symbol)
         {
-            switch (symbol.DeclaredAccessibility)
+            if (symbol.ContainingType.TypeKind != TypeKind.Interface)
             {
-                case Accessibility.Protected:
-                case Accessibility.ProtectedOrInternal:
-                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
-                    break;
-                case Accessibility.Public:
-                    yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
-                    break;
-                case Accessibility.ProtectedAndInternal:
-                case Accessibility.Internal:
-                case Accessibility.Private:
-                default:
-                    break;
+                switch (symbol.DeclaredAccessibility)
+                {
+                    case Accessibility.Protected:
+                    case Accessibility.ProtectedOrInternal:
+                        yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                        break;
+                    case Accessibility.Public:
+                        yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
+                        break;
+                    case Accessibility.ProtectedAndInternal:
+                    case Accessibility.Internal:
+                    case Accessibility.Private:
+                    default:
+                        break;
+                }
             }
             if (symbol.IsStatic)
             {
@@ -670,6 +671,44 @@ namespace DocAsCode.EntityModel
             if (symbol.IsSealed)
             {
                 yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
+            }
+        }
+
+        private static IEnumerable<SyntaxToken> GetMemberModifiers(IFieldSymbol symbol)
+        {
+            switch (symbol.DeclaredAccessibility)
+            {
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                    break;
+                case Accessibility.Public:
+                    yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
+                    break;
+                case Accessibility.ProtectedAndInternal:
+                case Accessibility.Internal:
+                case Accessibility.Private:
+                default:
+                    break;
+            }
+            if (symbol.IsConst)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.ConstKeyword);
+            }
+            else
+            {
+                if (symbol.IsStatic)
+                {
+                    yield return SyntaxFactory.Token(SyntaxKind.StaticKeyword);
+                }
+                if (symbol.IsReadOnly)
+                {
+                    yield return SyntaxFactory.Token(SyntaxKind.ReadOnlyKeyword);
+                }
+                if (symbol.IsVolatile)
+                {
+                    yield return SyntaxFactory.Token(SyntaxKind.VolatileKeyword);
+                }
             }
         }
 
