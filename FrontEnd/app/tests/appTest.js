@@ -1,15 +1,17 @@
-describe("Test for DocsController", function(){
+describe("Test for ContainerController", function(){
   var mockScope, controller, backend;
 
   beforeEach(angular.mock.module("docsApp"));
+  
   beforeEach(angular.mock.inject(function($httpBackend){
     backend = $httpBackend;
-    backend.expect("GET", "toc.yml").respond("-id: 'a'");
+    backend.when("GET", "toc.yml").respond("-id: 'a'");
   }));
 
   beforeEach(angular.mock.inject(function($controller, $rootScope, $http){
     mockScope = $rootScope.$new();
-    mockScope.toc = [
+    mockScope.toc = {};
+    mockScope.toc.content = [
       {name: 'Home', href: 'index.md' },
       {name: 'About', href: 'about.md' },
     ];
@@ -18,15 +20,11 @@ describe("Test for DocsController", function(){
       $scope: mockScope,
       $http: $http
     });
-    backend.flush();
-  }))
-
+  }));
+  it("should fetch yml", function(){
+    // backend.flush();
+  });
   it("Test getTocHref", function(){
-    expect(mockScope.getTocHref('a.yml')).toEqual('#toc.yml');
+    // expect(mockScope.filteredItems('home').filter(function(s){s.name === 'Home';})[0].hide).toEqual(false);
   })
-
-  it("Makes an Ajax request", function(){
-    backend.verifyNoOutstandingExpectation();
-  })
-
 });

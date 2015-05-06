@@ -23,8 +23,10 @@ module.exports = function(config) {
       "http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js",
       "http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js",
       "http://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.2.7/js-yaml.min.js",
-      'app/js/*.js',
-      'app/js/**/*.js',
+      'app/src/util/directives.js',
+      'app/src/*.js',
+      'app/src/**/*.js',
+      'app/tests/**/*.js',
       'app/tests/*.js'
     ],
 

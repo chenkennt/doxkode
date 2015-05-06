@@ -369,6 +369,11 @@ module.exports = function(grunt) {
         }, ]
       }
     },
+    karma: {
+      ut: {
+        configFile: 'karma.config.js'
+      }
+    },
     exec: {
       buildmeta: {
         cmd: function(projectList, target) {
