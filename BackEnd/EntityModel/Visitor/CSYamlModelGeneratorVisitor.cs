@@ -129,7 +129,7 @@ namespace DocAsCode.EntityModel
                         syntaxStr = SyntaxFactory.DelegateDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
                             SyntaxFactory.TokenList(GetTypeModifiers(typeSymbol)),
-                            SyntaxFactory.ParseTypeName(typeSymbol.DelegateInvokeMethod.ReturnType.ToDisplayString(ShortFormat)),
+                            GetTypeSyntax(typeSymbol.DelegateInvokeMethod.ReturnType),
                             SyntaxFactory.Identifier(typeSymbol.Name),
                             GetTypeParameters(typeSymbol),
                             SyntaxFactory.ParameterList(
@@ -152,7 +152,7 @@ namespace DocAsCode.EntityModel
                         syntaxStr = SyntaxFactory.MethodDeclaration(
                             new SyntaxList<AttributeListSyntax>(),
                             SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
-                            SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
+                            GetTypeSyntax(methodSymbol.ReturnType),
                             eii,
                             SyntaxFactory.Identifier(GetMemberName(methodSymbol)),
                             GetTypeParameters(methodSymbol),
@@ -181,7 +181,7 @@ namespace DocAsCode.EntityModel
                                 new SyntaxList<AttributeListSyntax>(),
                                 SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
                                 operatorToken.Value,
-                                SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
+                                GetTypeSyntax(methodSymbol.ReturnType),
                                 SyntaxFactory.ParameterList(
                                     SyntaxFactory.SeparatedList(
                                         from p in methodSymbol.Parameters
@@ -196,7 +196,7 @@ namespace DocAsCode.EntityModel
                             syntaxStr = SyntaxFactory.OperatorDeclaration(
                                 new SyntaxList<AttributeListSyntax>(),
                                 SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
-                                SyntaxFactory.ParseTypeName(methodSymbol.ReturnType.ToDisplayString(ShortFormat)),
+                                GetTypeSyntax(methodSymbol.ReturnType),
                                 operatorToken.Value,
                                 SyntaxFactory.ParameterList(
                                     SyntaxFactory.SeparatedList(
@@ -211,15 +211,19 @@ namespace DocAsCode.EntityModel
                     }
                 case MemberType.Constructor:
                     {
-                        var syntax = syntaxNode as ConstructorDeclarationSyntax;
-                        if (syntax != null)
-                        {
-                            syntaxStr = syntax.WithBody(null)
+                        var methodSymbol = (IMethodSymbol)symbol;
+                        syntaxStr = SyntaxFactory.ConstructorDeclaration(
+                            new SyntaxList<AttributeListSyntax>(),
+                            SyntaxFactory.TokenList(GetMemberModifiers(methodSymbol)),
+                            SyntaxFactory.Identifier(methodSymbol.ContainingType.Name),
+                            SyntaxFactory.ParameterList(
+                                SyntaxFactory.SeparatedList(
+                                    from p in methodSymbol.Parameters
+                                    select GetParameter(p))),
+                            null,
+                            null)
                             .NormalizeWhitespace()
-                            .ToString()
-                            .Trim();
-                        }
-
+                            .ToString();
                         break;
                     };
                 case MemberType.Field:
@@ -353,7 +357,7 @@ namespace DocAsCode.EntityModel
             return SyntaxFactory.Parameter(
                 new SyntaxList<AttributeListSyntax>(),
                 SyntaxFactory.TokenList(GetParameterModifiers(p)),
-                SyntaxFactory.ParseTypeName(p.Type.ToDisplayString(ShortFormat)),
+                GetTypeSyntax(p.Type),
                 SyntaxFactory.Identifier(p.Name),
                 GetDefaultValueClause(p));
         }
@@ -514,7 +518,7 @@ namespace DocAsCode.EntityModel
             {
                 for (int i = 0; i < symbol.ConstraintTypes.Length; i++)
                 {
-                    yield return SyntaxFactory.TypeConstraint(SyntaxFactory.ParseTypeName(symbol.ConstraintTypes[i].ToDisplayString(ShortFormat)));
+                    yield return SyntaxFactory.TypeConstraint(GetTypeSyntax(symbol.ConstraintTypes[i]));
                 }
             }
             if (symbol.HasConstructorConstraint)
@@ -541,7 +545,7 @@ namespace DocAsCode.EntityModel
             return SyntaxFactory.BaseList(
                 SyntaxFactory.SeparatedList<BaseTypeSyntax>(
                     from t in baseTypeList
-                    select SyntaxFactory.SimpleBaseType(SyntaxFactory.ParseTypeName(t.ToDisplayString(ShortDisplayFormat)))));
+                    select SyntaxFactory.SimpleBaseType(GetTypeSyntax(t))));
         }
 
         private BaseListSyntax GetEnumBaseTypeList(INamedTypeSymbol symbol)
@@ -554,8 +558,7 @@ namespace DocAsCode.EntityModel
             return SyntaxFactory.BaseList(
                 SyntaxFactory.SingletonSeparatedList<BaseTypeSyntax>(
                     SyntaxFactory.SimpleBaseType(
-                        SyntaxFactory.ParseTypeName(
-                            underlyingType.ToDisplayString(ShortDisplayFormat)))));
+                        GetTypeSyntax(underlyingType))));
         }
 
         private static TypeParameterListSyntax GetTypeParameters(INamedTypeSymbol symbol)
@@ -601,21 +604,9 @@ namespace DocAsCode.EntityModel
         {
             switch (symbol.DeclaredAccessibility)
             {
-                case Accessibility.Private:
-                    yield return SyntaxFactory.Token(SyntaxKind.PrivateKeyword);
-                    break;
-                case Accessibility.ProtectedAndInternal:
-                    // todo : not supported in c#.
-                    break;
                 case Accessibility.Protected:
-                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
-                    break;
-                case Accessibility.Internal:
-                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
-                    break;
                 case Accessibility.ProtectedOrInternal:
                     yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
-                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
                     break;
                 case Accessibility.Public:
                     yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
@@ -647,28 +638,16 @@ namespace DocAsCode.EntityModel
         {
             switch (symbol.DeclaredAccessibility)
             {
-                case Accessibility.Private:
-                    if (symbol.ExplicitInterfaceImplementations.Length == 0)
-                    {
-                        yield return SyntaxFactory.Token(SyntaxKind.PrivateKeyword);
-                    }
-                    break;
-                case Accessibility.ProtectedAndInternal:
-                    // todo : not supported in c#.
-                    break;
                 case Accessibility.Protected:
-                    yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
-                    break;
-                case Accessibility.Internal:
-                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
-                    break;
                 case Accessibility.ProtectedOrInternal:
                     yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
-                    yield return SyntaxFactory.Token(SyntaxKind.InternalKeyword);
                     break;
                 case Accessibility.Public:
                     yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
                     break;
+                case Accessibility.ProtectedAndInternal:
+                case Accessibility.Internal:
+                case Accessibility.Private:
                 default:
                     break;
             }
@@ -737,6 +716,12 @@ namespace DocAsCode.EntityModel
         private static string RemoveBraces(string text)
         {
             return BracesRegex.Replace(text, string.Empty);
+        }
+
+        private static TypeSyntax GetTypeSyntax(ITypeSymbol type)
+        {
+            // todo : need to verify it when type.language is not c#
+            return SyntaxFactory.ParseTypeName(type.ToDisplayString(ShortFormat));
         }
 
         #endregion

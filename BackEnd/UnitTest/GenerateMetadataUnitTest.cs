@@ -762,6 +762,72 @@ namespace Test1
             }
         }
 
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Constructor()
+        {
+            string code = @"
+using System.Collections.Generic
+namespace Test1
+{
+    public class Foo<T>
+    {
+        static Foo(){}
+        public Foo(){}
+        public Foo(int x) : base(x){}
+        protected internal Foo(string x) : base(0){}
+    }
+    public class Bar
+    {
+        public Bar(){}
+        protected Bar(int x){}
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var constructor = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Foo()", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Foo()", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.#ctor", constructor.Name);
+                Assert.AreEqual("public Foo()", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Foo(int)", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Foo(int)", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.#ctor(System.Int32)", constructor.Name);
+                Assert.AreEqual("public Foo(int x)", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Foo(string)", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Foo(string)", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.#ctor(System.String)", constructor.Name);
+                Assert.AreEqual("protected Foo(string x)", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[1].Items[0];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Bar()", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.Bar()", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.#ctor", constructor.Name);
+                Assert.AreEqual("public Bar()", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var constructor = output.Items[0].Items[1].Items[1];
+                Assert.IsNotNull(constructor);
+                Assert.AreEqual("Bar(int)", constructor.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.Bar(int)", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.#ctor(System.Int32)", constructor.Name);
+                Assert.AreEqual("protected Bar(int x)", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
         private static Compilation CreateCompilationFromCsharpCode(string code)
         {
             var tree = SyntaxFactory.ParseSyntaxTree(code);
