@@ -109,24 +109,24 @@ module.exports = function(grunt) {
       test: {
         files: [
           'Gruntfile.js',
-          'app/src/*.*',
-          'app/src/**/*.*',
-          'app/content/*.*',
-          'app/content/**/*.*',
-          'app/*.*',
-          'sample/data/**/*.*',
+          'app/src/*',
+          'app/src/**/*',
+          'app/content/*',
+          'app/content/**/*',
+          'app/*',
+//          'sample/data/**/*', // Comment out as it is too large for watch
         ],
         tasks: ['jshint', 'test']
       },
       'test.min': {
         files: [
           'Gruntfile.js',
-          'app/src/*.*',
-          'app/src/**/*.*',
-          'app/content/*.*',
-          'app/content/**/*.*',
-          'app/*.*',
-          'sample/data.min/**/*.*',
+          'app/src/*',
+          'app/src/**/*',
+          'app/content/*',
+          'app/content/**/*',
+          'app/*',
+          'sample/data.min/**/*',
         ],
         tasks: ['jshint', 'test.min']
       }

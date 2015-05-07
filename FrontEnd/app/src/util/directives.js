@@ -1,3 +1,4 @@
+/* global angular */
 /*
  * Define directives used in docsApp
  * Wrap Angular components in an Immediately Invoked Function Expression (IIFE)
