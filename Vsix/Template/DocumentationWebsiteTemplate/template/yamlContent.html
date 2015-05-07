@@ -9,7 +9,7 @@
       </a>
       <h1>{{model.type}} {{model.name}}</h1>
       <section>
-        <markdown data="model.summary"></markdown>
+        <markdown data="model.map.override.summary || model.summary"></markdown>
       </section>
       <section>
         <markdown data="model.map.content"></markdown>
@@ -28,7 +28,7 @@
               </a>
             </div>
             <div class="item-summary">
-              <markdown data="item.summary"></markdown>
+              <markdown data="item.map.override.summary || item.summary"></markdown>
             </div>
           </div>
         </div>
