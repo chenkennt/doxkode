@@ -32,7 +32,7 @@
   <ItemGroup>
     <Content Include="template\error404.html" />
     <Content Include="template\navbar.html" />
-    <Content Include="template\toc.html" />
+    <Content Include="template\container.html" />
     <Content Include="template\yamlContent.html" />
     <Content Include="api\NOTE.md" />
     <Content Include="articles\about.md" />

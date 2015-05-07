@@ -103,9 +103,9 @@
     <None Include="DocumentationWebsiteTemplate.ico" />
     <None Include="logo.png" />
     <None Include="toc.yml" />
+    <Content Include="template\container.html" />
     <Content Include="template\error404.html" />
     <Content Include="template\navbar.html" />
-    <Content Include="template\toc.html" />
     <Content Include="template\yamlContent.html" />
     <Content Include="web.config">
       <IncludeInVSIX>true</IncludeInVSIX>

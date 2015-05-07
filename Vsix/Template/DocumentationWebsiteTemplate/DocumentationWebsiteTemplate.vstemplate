@@ -34,7 +34,7 @@
       <Folder Name="template" TargetFolderName="template">
         <ProjectItem ReplaceParameters="false" TargetFileName="error404.html">error404.html</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="navbar.html">navbar.html</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="toc.html">toc.html</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="container.html">container.html</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="yamlContent.html">yamlContent.html</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName=".gitignore">.gitignore</ProjectItem>
