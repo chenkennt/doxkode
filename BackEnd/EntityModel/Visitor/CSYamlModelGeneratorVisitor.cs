@@ -244,65 +244,61 @@ namespace DocAsCode.EntityModel
                     };
                 case MemberType.Event:
                     {
-                        var syntax = syntaxNode as EventDeclarationSyntax;
-                        if (syntax != null)
+                        var eventSymbol = (IEventSymbol)symbol;
+                        ExplicitInterfaceSpecifierSyntax eii = null;
+                        if (eventSymbol.ExplicitInterfaceImplementations.Length > 0)
                         {
-                            syntaxStr = syntax.WithoutTrivia().NormalizeWhitespace().ToString().Trim();
-                            syntaxStr = RemoveBraces(syntaxStr);
-                            break;
+                            eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(eventSymbol)));
                         }
-                        var variable = syntaxNode as VariableDeclaratorSyntax;
-                        if (variable != null)
-                        {
-                            syntaxStr = variable.Parent.Parent.NormalizeWhitespace().ToString().Trim();
-                            break;
-                        }
+                        syntaxStr = SyntaxFactory.EventDeclaration(
+                            new SyntaxList<AttributeListSyntax>(),
+                            SyntaxFactory.TokenList(GetMemberModifiers(eventSymbol)),
+                            SyntaxFactory.Token(SyntaxKind.EventKeyword),
+                            GetTypeSyntax(eventSymbol.Type),
+                            eii,
+                            SyntaxFactory.Identifier(GetMemberName(eventSymbol)),
+                            SyntaxFactory.AccessorList())
+                            .NormalizeWhitespace()
+                            .ToString();
+                        syntaxStr = RemoveBraces(syntaxStr);
                         break;
                     };
                 case MemberType.Property:
                     {
                         Debug.Assert(syntaxNode is PropertyDeclarationSyntax || syntaxNode is IndexerDeclarationSyntax);
-
-                        var syntax = syntaxNode as PropertyDeclarationSyntax;
-                        if (syntax != null)
+                        var propertySymbol = (IPropertySymbol)symbol;
+                        ExplicitInterfaceSpecifierSyntax eii = null;
+                        if (propertySymbol.ExplicitInterfaceImplementations.Length > 0)
                         {
-                            SyntaxList<AccessorDeclarationSyntax> accessorList;
-                            if (syntax.AccessorList != null)
-                            {
-                                var accessors = syntax.AccessorList.Accessors.Where(x => !x.Modifiers.Any(SyntaxKind.PrivateKeyword) && !x.Modifiers.Any(SyntaxKind.InternalKeyword));
-                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().AddRange(accessors);
-                            }
-                            else if (syntax.ExpressionBody != null)
-                            {
-                                // If it's an expression bodied property, it should have a getter accessor
-                                var getter = SyntaxFactory.AccessorDeclaration(SyntaxKind.GetAccessorDeclaration);
-                                accessorList = new SyntaxList<AccessorDeclarationSyntax>().Add(getter);
-                            }
-                            else
-                            {
-                                throw new InvalidDataException(string.Format("Property declaration '{0}' does not have any accessor.", syntax));
-                            }
-
-                            var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
-                            SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
-                            syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                            var simplifiedSyntax = syntax.WithExpressionBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.None)).WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
-                            syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
+                            eii = SyntaxFactory.ExplicitInterfaceSpecifier(SyntaxFactory.ParseName(GetEiiContainerTypeName(propertySymbol)));
+                        }
+                        if (propertySymbol.IsIndexer)
+                        {
+                            syntaxStr = SyntaxFactory.IndexerDeclaration(
+                                new SyntaxList<AttributeListSyntax>(),
+                                SyntaxFactory.TokenList(GetMemberModifiers(propertySymbol)),
+                                GetTypeSyntax(propertySymbol.Type),
+                                eii,
+                                SyntaxFactory.BracketedParameterList(
+                                    SyntaxFactory.SeparatedList(
+                                        from p in propertySymbol.Parameters
+                                        select GetParameter(p))),
+                                SyntaxFactory.AccessorList(SyntaxFactory.List(GetPropertyAccessors(propertySymbol))))
+                                .NormalizeWhitespace()
+                                .ToString();
                         }
                         else
                         {
-                            var syntaxIndexer = syntaxNode as IndexerDeclarationSyntax;
-                            if (syntaxIndexer != null)
-                            {
-                                var accessorList = syntaxIndexer.AccessorList.Accessors;
-                                var simplifiedAccessorList = accessorList.Select(s => s.WithBody(null).WithSemicolonToken(SyntaxFactory.Token(SyntaxKind.SemicolonToken)));
-                                SyntaxList<AccessorDeclarationSyntax> syntaxList = new SyntaxList<AccessorDeclarationSyntax>();
-                                syntaxList = syntaxList.AddRange(simplifiedAccessorList);
-                                var simplifiedSyntax = syntaxIndexer.WithAccessorList(SyntaxFactory.AccessorList(syntaxList));
-                                syntaxStr = simplifiedSyntax.NormalizeWhitespace().ToString().Trim();
-                            }
+                            syntaxStr = SyntaxFactory.PropertyDeclaration(
+                                new SyntaxList<AttributeListSyntax>(),
+                                SyntaxFactory.TokenList(GetMemberModifiers(propertySymbol)),
+                                GetTypeSyntax(propertySymbol.Type),
+                                eii,
+                                SyntaxFactory.Identifier(GetMemberName(propertySymbol)),
+                                SyntaxFactory.AccessorList(SyntaxFactory.List(GetPropertyAccessors(propertySymbol))))
+                                .NormalizeWhitespace()
+                                .ToString();
                         }
-
                         break;
                     };
             }
@@ -333,7 +329,77 @@ namespace DocAsCode.EntityModel
             return symbol.Name;
         }
 
+        private static string GetMemberName(IEventSymbol symbol)
+        {
+            string name = symbol.Name;
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return symbol.Name;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ToDisplayString(EiiMethodFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return symbol.Name;
+        }
+
+        private static string GetMemberName(IPropertySymbol symbol)
+        {
+            string name = symbol.Name;
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return symbol.Name;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ToDisplayString(EiiMethodFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return symbol.Name;
+        }
+
         private static string GetEiiContainerTypeName(IMethodSymbol symbol)
+        {
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return null;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ContainingType.ToDisplayString(EiiContainerTypeFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return null;
+        }
+
+        private static string GetEiiContainerTypeName(IEventSymbol symbol)
+        {
+            if (symbol.ExplicitInterfaceImplementations.Length == 0)
+            {
+                return null;
+            }
+            for (int i = 0; i < symbol.ExplicitInterfaceImplementations.Length; i++)
+            {
+                if (VisitorHelper.CanVisit(symbol.ExplicitInterfaceImplementations[i]))
+                {
+                    return symbol.ExplicitInterfaceImplementations[i].ContainingType.ToDisplayString(EiiContainerTypeFormat);
+                }
+            }
+            Debug.Fail("Should not be here!");
+            return null;
+        }
+
+        private static string GetEiiContainerTypeName(IPropertySymbol symbol)
         {
             if (symbol.ExplicitInterfaceImplementations.Length == 0)
             {
@@ -674,6 +740,90 @@ namespace DocAsCode.EntityModel
             }
         }
 
+        private static IEnumerable<SyntaxToken> GetMemberModifiers(IEventSymbol symbol)
+        {
+            if (symbol.ContainingType.TypeKind != TypeKind.Interface)
+            {
+                switch (symbol.DeclaredAccessibility)
+                {
+                    case Accessibility.Protected:
+                    case Accessibility.ProtectedOrInternal:
+                        yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                        break;
+                    case Accessibility.Public:
+                        yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
+                        break;
+                    case Accessibility.ProtectedAndInternal:
+                    case Accessibility.Internal:
+                    case Accessibility.Private:
+                    default:
+                        break;
+                }
+            }
+            if (symbol.IsStatic)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.StaticKeyword);
+            }
+            if (symbol.IsAbstract && symbol.ContainingType.TypeKind != TypeKind.Interface)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.AbstractKeyword);
+            }
+            if (symbol.IsVirtual)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.VirtualKeyword);
+            }
+            if (symbol.IsOverride)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.OverrideKeyword);
+            }
+            if (symbol.IsSealed)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
+            }
+        }
+
+        private static IEnumerable<SyntaxToken> GetMemberModifiers(IPropertySymbol symbol)
+        {
+            if (symbol.ContainingType.TypeKind != TypeKind.Interface)
+            {
+                switch (symbol.DeclaredAccessibility)
+                {
+                    case Accessibility.Protected:
+                    case Accessibility.ProtectedOrInternal:
+                        yield return SyntaxFactory.Token(SyntaxKind.ProtectedKeyword);
+                        break;
+                    case Accessibility.Public:
+                        yield return SyntaxFactory.Token(SyntaxKind.PublicKeyword);
+                        break;
+                    case Accessibility.ProtectedAndInternal:
+                    case Accessibility.Internal:
+                    case Accessibility.Private:
+                    default:
+                        break;
+                }
+            }
+            if (symbol.IsStatic)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.StaticKeyword);
+            }
+            if (symbol.IsAbstract && symbol.ContainingType.TypeKind != TypeKind.Interface)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.AbstractKeyword);
+            }
+            if (symbol.IsVirtual)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.VirtualKeyword);
+            }
+            if (symbol.IsOverride)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.OverrideKeyword);
+            }
+            if (symbol.IsSealed)
+            {
+                yield return SyntaxFactory.Token(SyntaxKind.SealedKeyword);
+            }
+        }
+
         private static IEnumerable<SyntaxToken> GetMemberModifiers(IFieldSymbol symbol)
         {
             switch (symbol.DeclaredAccessibility)
@@ -749,6 +899,73 @@ namespace DocAsCode.EntityModel
                 // not supported:
                 //case "op_Assign": return SyntaxFactory.Token(SyntaxKind.EqualsToken);
                 default: return null;
+            }
+        }
+
+        private static IEnumerable<AccessorDeclarationSyntax> GetPropertyAccessors(IPropertySymbol propertySymbol)
+        {
+            var getAccessor = GetPropertyAccessorCore(propertySymbol, propertySymbol.GetMethod, SyntaxKind.GetAccessorDeclaration, SyntaxKind.GetKeyword);
+            if (getAccessor != null)
+            {
+                yield return getAccessor;
+            }
+            var setAccessor = GetPropertyAccessorCore(propertySymbol, propertySymbol.SetMethod, SyntaxKind.SetAccessorDeclaration, SyntaxKind.SetKeyword);
+            if (setAccessor != null)
+            {
+                yield return setAccessor;
+            }
+        }
+
+        private static AccessorDeclarationSyntax GetPropertyAccessorCore(
+            IPropertySymbol propertySymbol, IMethodSymbol methodSymbol,
+            SyntaxKind kind, SyntaxKind keyword)
+        {
+            if (methodSymbol == null)
+            {
+                return null;
+            }
+            switch (methodSymbol.DeclaredAccessibility)
+            {
+                case Accessibility.Protected:
+                case Accessibility.ProtectedOrInternal:
+                    if (propertySymbol.DeclaredAccessibility == Accessibility.Protected ||
+                        propertySymbol.DeclaredAccessibility == Accessibility.ProtectedOrInternal)
+                    {
+                        return SyntaxFactory.AccessorDeclaration(kind,
+                            new SyntaxList<AttributeListSyntax>(),
+                            new SyntaxTokenList(),
+                            SyntaxFactory.Token(keyword),
+                            null,
+                            SyntaxFactory.Token(SyntaxKind.SemicolonToken));
+                    }
+                    else
+                    {
+                        return SyntaxFactory.AccessorDeclaration(
+                            kind,
+                            new SyntaxList<AttributeListSyntax>(),
+                            SyntaxFactory.TokenList(SyntaxFactory.Token(SyntaxKind.ProtectedKeyword)),
+                            SyntaxFactory.Token(keyword),
+                            null,
+                            SyntaxFactory.Token(SyntaxKind.SemicolonToken));
+                    }
+                case Accessibility.Public:
+                    return SyntaxFactory.AccessorDeclaration(kind,
+                        new SyntaxList<AttributeListSyntax>(),
+                        new SyntaxTokenList(),
+                        SyntaxFactory.Token(keyword),
+                        null,
+                        SyntaxFactory.Token(SyntaxKind.SemicolonToken));
+                default:
+                    if (methodSymbol.ExplicitInterfaceImplementations.Length > 0)
+                    {
+                        return SyntaxFactory.AccessorDeclaration(kind,
+                            new SyntaxList<AttributeListSyntax>(),
+                            new SyntaxTokenList(),
+                            SyntaxFactory.Token(keyword),
+                            null,
+                            SyntaxFactory.Token(SyntaxKind.SemicolonToken));
+                    }
+                    return null;
             }
         }
 

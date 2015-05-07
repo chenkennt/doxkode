@@ -140,7 +140,7 @@ namespace Test1
                 Assert.AreEqual("Test1.Class1`1.Event1", event1.Name);
                 Assert.IsNull(event1.Syntax.Parameters);
                 Assert.IsNull(event1.Syntax.Return);
-                Assert.AreEqual("public event EventHandler Event1;", event1.Syntax.Content[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("public event EventHandler Event1", event1.Syntax.Content[SyntaxLanguage.CSharp]);
             }
             {
                 var operator1 = output.Items[0].Items[0].Items[3];
@@ -244,7 +244,7 @@ namespace Test1
                 Assert.AreEqual("FooBar", @event.DisplayNames.First().Value);
                 Assert.AreEqual("Test1.IFoo.FooBar", @event.DisplayQualifiedNames.First().Value);
                 Assert.AreEqual("Test1.IFoo.FooBar", @event.Name);
-                Assert.AreEqual("event EventHandler FooBar;", @event.Syntax.Content[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("event EventHandler FooBar", @event.Syntax.Content[SyntaxLanguage.CSharp]);
                 Assert.IsNull(@event.Syntax.Parameters);
                 Assert.IsNull(@event.Syntax.Return);
                 //Assert.IsNotNull(returnValue);
@@ -569,14 +569,22 @@ namespace Test1
         object IFoo.Bar(ref int x) => null;
         string IFoo<string>.Bar<TArg>(TArg[] x) => "";
         T IFoo<T>.Bar<TArg>(TArg[] x) => null;
+        string IFoo<string>.P { get; set; }
+        T IFoo<T>.P { get; set; }
+        int IFoo<string>.this[string x] { get { return 1; } }
+        int IFoo<T>.this[T x] { get { return 1; } }
+        event EventHandler IFoo.E { add { } remove { } }
     }
     public interface IFoo
     {
         object Bar(ref int x);
+        event EventHandler E;
     }
     public interface IFoo<out T>
     {
         T Bar<TArg>(TArg[] x)
+        T P { get; set; }
+        int this[T x] { get; }
     }
 }
 ";
@@ -613,6 +621,60 @@ namespace Test1
                 Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<T>.Bar<TArg>(TArg[])", method.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
                 Assert.AreEqual("Test1.Foo`1.Test1#IFoo{T}#Bar``1(``0[])", method.Name);
                 Assert.AreEqual(@"T IFoo<T>.Bar<TArg>(TArg[] x)", method.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var p = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(p);
+                Assert.AreEqual("IFoo<string>.P", p.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<string>.P", p.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{System#String}#P", p.Name);
+                Assert.AreEqual(@"string IFoo<string>.P
+{
+    get;
+    set;
+}", p.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var p = output.Items[0].Items[0].Items[4];
+                Assert.IsNotNull(p);
+                Assert.AreEqual("IFoo<T>.P", p.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<T>.P", p.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{T}#P", p.Name);
+                Assert.AreEqual(@"T IFoo<T>.P
+{
+    get;
+    set;
+}", p.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var p = output.Items[0].Items[0].Items[5];
+                Assert.IsNotNull(p);
+                Assert.AreEqual("IFoo<string>.this[string]", p.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<string>.this[string]", p.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{System#String}#Item(System.String)", p.Name);
+                Assert.AreEqual(@"int IFoo<string>.this[string x]
+{
+    get;
+}", p.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var p = output.Items[0].Items[0].Items[6];
+                Assert.IsNotNull(p);
+                Assert.AreEqual("IFoo<T>.this[T]", p.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo<T>.this[T]", p.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo{T}#Item(`0)", p.Name);
+                Assert.AreEqual(@"int IFoo<T>.this[T x]
+{
+    get;
+}", p.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var e = output.Items[0].Items[0].Items[7];
+                Assert.IsNotNull(e);
+                Assert.AreEqual("IFoo.E", e.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.Test1.IFoo.E", e.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Test1#IFoo#E", e.Name);
+                Assert.AreEqual(@"event EventHandler IFoo.E", e.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 
@@ -980,6 +1042,483 @@ namespace Test1
                 Assert.AreEqual("Test1.Foo<T>.Z", constructor.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
                 Assert.AreEqual("Test1.Foo`1.Z", constructor.Name);
                 Assert.AreEqual("protected const string Z", constructor.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Event()
+        {
+            string code = @"
+using System;
+namespace Test1
+{
+    public abstract class Foo<T> where T : EventArgs
+    {
+        public event EventHandler A;
+        protected static event EventHandler B { add {} remove {}}
+        protected internal abstract event EventHandler<T> C;
+        public virtual event EventHandler<T> D { add {} remove {}}
+    }
+    public class Bar<T> : Foo<T> where T : EventArgs
+    {
+        public new event EventHandler A;
+        protected internal override sealed event EventHandler<T> C;
+        public override event EventHandler<T> D;
+    }
+    public interface IFooBar<T> where T : EventArgs
+    {
+        event EventHandler A;
+        event EventHandler<T> D;
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var a = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.A", a.Name);
+                Assert.AreEqual("public event EventHandler A", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("B", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.B", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.B", b.Name);
+                Assert.AreEqual("protected static event EventHandler B", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("C", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.C", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.C", c.Name);
+                Assert.AreEqual("protected abstract event EventHandler<T> C", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var d = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(d);
+                Assert.AreEqual("D", d.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.D", d.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.D", d.Name);
+                Assert.AreEqual("public virtual event EventHandler<T> D", d.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[1].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar<T>.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar`1.A", a.Name);
+                Assert.AreEqual("public event EventHandler A", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[1].Items[1];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("C", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar<T>.C", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar`1.C", c.Name);
+                Assert.AreEqual("protected override sealed event EventHandler<T> C", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var d = output.Items[0].Items[1].Items[2];
+                Assert.IsNotNull(d);
+                Assert.AreEqual("D", d.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar<T>.D", d.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar`1.D", d.Name);
+                Assert.AreEqual("public override event EventHandler<T> D", d.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[2].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar<T>.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar`1.A", a.Name);
+                Assert.AreEqual("event EventHandler A", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var d = output.Items[0].Items[2].Items[1];
+                Assert.IsNotNull(d);
+                Assert.AreEqual("D", d.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar<T>.D", d.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar`1.D", d.Name);
+                Assert.AreEqual("event EventHandler<T> D", d.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Property()
+        {
+            string code = @"
+namespace Test1
+{
+    public abstract class Foo<T> where T : class
+    {
+        public int A { get; set; }
+        public virtual int B { get { return 1; } }
+        public abstract int C { set; }
+        protected int D { get; private set; }
+        public T E { get; protected set; }
+        protected internal static int F { get; protected set; }
+    }
+    public class Bar : Foo<string>, IFooBar
+    {
+        public new virtual int A { get; set; }
+        public override int B { get { return 2; } }
+        public override sealed int C { set; }
+    }
+    public interface IFooBar
+    {
+        int A { get; set; }
+        int B { get; }
+        int C { set; }
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var a = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.A", a.Name);
+                Assert.AreEqual(@"public int A
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("B", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.B", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.B", b.Name);
+                Assert.AreEqual(@"public virtual int B
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("C", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.C", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.C", c.Name);
+                Assert.AreEqual(@"public abstract int C
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var d = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(d);
+                Assert.AreEqual("D", d.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.D", d.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.D", d.Name);
+                Assert.AreEqual(@"protected int D
+{
+    get;
+}", d.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var e = output.Items[0].Items[0].Items[4];
+                Assert.IsNotNull(e);
+                Assert.AreEqual("E", e.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.E", e.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.E", e.Name);
+                Assert.AreEqual(@"public T E
+{
+    get;
+    protected set;
+}", e.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var f = output.Items[0].Items[0].Items[5];
+                Assert.IsNotNull(f);
+                Assert.AreEqual("F", f.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.F", f.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.F", f.Name);
+                Assert.AreEqual(@"protected static int F
+{
+    get;
+    set;
+}", f.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[1].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.A", a.Name);
+                Assert.AreEqual(@"public virtual int A
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[1].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("B", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.B", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.B", b.Name);
+                Assert.AreEqual(@"public override int B
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[1].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("C", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.C", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.C", c.Name);
+                Assert.AreEqual(@"public override sealed int C
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[2].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("A", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.A", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.A", a.Name);
+                Assert.AreEqual(@"int A
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[2].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("B", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.B", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.B", b.Name);
+                Assert.AreEqual(@"int B
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[2].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("C", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.C", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.C", c.Name);
+                Assert.AreEqual(@"int C
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Indexer()
+        {
+            string code = @"
+using System;
+namespace Test1
+{
+    public abstract class Foo<T> where T : class
+    {
+        public int this[int x] { get { return 0; } set { } }
+        public virtual int this[string x] { get { return 1; } }
+        public abstract int this[object x] { set; }
+        protected int this[DateTime x] { get { return 0; } private set { } }
+        public int this[T t] { get { return 0; } protected set { } }
+        protected internal int this[int x, T t] { get; protected set; }
+    }
+    public class Bar : Foo<string>, IFooBar
+    {
+        public new virtual int this[int x] { get { return 0; } set { } }
+        public override int this[string x] { get { return 2; } }
+        public override sealed int this[object x] { set; }
+    }
+    public interface IFooBar
+    {
+        int this[int x] { get; set; }
+        int this[string x] { get; }
+        int this[object x] { set; }
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var a = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("this[int]", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[int]", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(System.Int32)", a.Name);
+                Assert.AreEqual(@"public int this[int x]
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[0].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("this[string]", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[string]", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(System.String)", b.Name);
+                Assert.AreEqual(@"public virtual int this[string x]
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[0].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("this[object]", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[object]", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(System.Object)", c.Name);
+                Assert.AreEqual(@"public abstract int this[object x]
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var d = output.Items[0].Items[0].Items[3];
+                Assert.IsNotNull(d);
+                Assert.AreEqual("this[DateTime]", d.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[System.DateTime]", d.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(System.DateTime)", d.Name);
+                Assert.AreEqual(@"protected int this[DateTime x]
+{
+    get;
+}", d.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var e = output.Items[0].Items[0].Items[4];
+                Assert.IsNotNull(e);
+                Assert.AreEqual("this[T]", e.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[T]", e.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(`0)", e.Name);
+                Assert.AreEqual(@"public int this[T t]
+{
+    get;
+    protected set;
+}", e.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var f = output.Items[0].Items[0].Items[5];
+                Assert.IsNotNull(f);
+                Assert.AreEqual("this[int, T]", f.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo<T>.this[int, T]", f.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Foo`1.Item(System.Int32,`0)", f.Name);
+                Assert.AreEqual(@"protected int this[int x, T t]
+{
+    get;
+    set;
+}", f.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[1].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("this[int]", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.this[int]", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.Item(System.Int32)", a.Name);
+                Assert.AreEqual(@"public virtual int this[int x]
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[1].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("this[string]", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.this[string]", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.Item(System.String)", b.Name);
+                Assert.AreEqual(@"public override int this[string x]
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[1].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("this[object]", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.this[object]", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.Bar.Item(System.Object)", c.Name);
+                Assert.AreEqual(@"public override sealed int this[object x]
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var a = output.Items[0].Items[2].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual("this[int]", a.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.this[int]", a.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.Item(System.Int32)", a.Name);
+                Assert.AreEqual(@"int this[int x]
+{
+    get;
+    set;
+}", a.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var b = output.Items[0].Items[2].Items[1];
+                Assert.IsNotNull(b);
+                Assert.AreEqual("this[string]", b.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.this[string]", b.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.Item(System.String)", b.Name);
+                Assert.AreEqual(@"int this[string x]
+{
+    get;
+}", b.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+            {
+                var c = output.Items[0].Items[2].Items[2];
+                Assert.IsNotNull(c);
+                Assert.AreEqual("this[object]", c.DisplayNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.this[object]", c.DisplayQualifiedNames[SyntaxLanguage.CSharp]);
+                Assert.AreEqual("Test1.IFooBar.Item(System.Object)", c.Name);
+                Assert.AreEqual(@"int this[object x]
+{
+    set;
+}", c.Syntax.Content[SyntaxLanguage.CSharp]);
+            }
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_CSharp_Method_DefaultValue()
+        {
+            string code = @"
+namespace Test1
+{
+    public class Foo
+    {
+        public void Test(
+            int a = 1, uint b = 1,
+            short c = 1, ushort d = 1,
+            long e = 1, ulong f= 1,
+            byte g = 1, sbyte h = 1,
+            char i = '1', string j = ""1"",
+            bool k = true, object l = null)
+        {
+        }
+    }
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromCsharpCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var a = output.Items[0].Items[0].Items[0];
+                Assert.IsNotNull(a);
+                Assert.AreEqual(@"public void Test(int a = 1, uint b = 1U, short c = 1, ushort d = 1, long e = 1L, ulong f = 1UL, byte g = 1, sbyte h = 1, char i = '1', string j = ""1"", bool k = true, object l = null)", a.Syntax.Content[SyntaxLanguage.CSharp]);
             }
         }
 
