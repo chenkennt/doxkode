@@ -6,9 +6,11 @@
     using DocAsCode.EntityModel;
 
     using Microsoft.CodeAnalysis;
-    using Microsoft.CodeAnalysis.CSharp;
     using Microsoft.CodeAnalysis.MSBuild;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    using CS = Microsoft.CodeAnalysis.CSharp;
+    using VB = Microsoft.CodeAnalysis.VisualBasic;
 
     /// <summary>
     /// MEF is used for workspace host service provider, need to copy dll manually
@@ -21,6 +23,8 @@
     public class GenerateMetadataUnitTest
     {
         private static readonly MSBuildWorkspace Workspace = MSBuildWorkspace.Create();
+
+        #region CSharp
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
@@ -1524,13 +1528,87 @@ namespace Test1
 
         private static Compilation CreateCompilationFromCsharpCode(string code)
         {
-            var tree = SyntaxFactory.ParseSyntaxTree(code);
-            var compilation = CSharpCompilation.Create(
+            var tree = CS.SyntaxFactory.ParseSyntaxTree(code);
+            var compilation = CS.CSharpCompilation.Create(
                 "test.dll",
-                options: new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary),
+                options: new CS.CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary),
                 syntaxTrees: new[] { tree },
                 references: new[] { MetadataReference.CreateFromAssembly(typeof(object).Assembly) });
             return compilation;
         }
+
+        #endregion
+
+        #region VB
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
+        public void TestGenereateMetadata_VB_Class()
+        {
+            string code = @"
+Imports System.Collections.Generic
+Namespace Test1
+{
+    Public Class Class1
+    End Class
+    Public Class Class2(Of T)
+        Inherits List(Of T)
+    End Class
+    Public Class Class3(Of T1, T2 As T1)
+    End Class
+    Public Class Class4(Of T1 As { Structure, IEnumerable(Of T2) }, T2 As { Class, New })
+    End Class
+}
+";
+            MetadataItem output = BuildMetaHelper.GenerateYamlMetadata(CreateCompilationFromVBCode(code));
+            Assert.AreEqual(1, output.Items.Count);
+            {
+                var type = output.Items[0].Items[0];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Class1", type.DisplayNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class1", type.DisplayQualifiedNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class1", type.Name);
+                Assert.AreEqual(@"Public Class Class1", type.Syntax.Content[SyntaxLanguage.VB]);
+            }
+            {
+                var type = output.Items[0].Items[1];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Class2(Of T)", type.DisplayNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class2(Of T)", type.DisplayQualifiedNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class2`1", type.Name);
+                Assert.AreEqual(@"Public Class Class2(Of T)
+    Inherits List(Of T)
+    Implements IList(Of T), ICollection(Of T), IList, ICollection, IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable", type.Syntax.Content[SyntaxLanguage.VB]);
+            }
+            {
+                var type = output.Items[0].Items[2];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Class3(Of T1, T2)", type.DisplayNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class3(Of T1, T2)", type.DisplayQualifiedNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class3`2", type.Name);
+                Assert.AreEqual(@"Public Class Class3(Of T1, T2 As T1)", type.Syntax.Content[SyntaxLanguage.VB]);
+            }
+            {
+                var type = output.Items[0].Items[3];
+                Assert.IsNotNull(type);
+                Assert.AreEqual("Class4(Of T1, T2)", type.DisplayNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class4(Of T1, T2)", type.DisplayQualifiedNames[SyntaxLanguage.VB]);
+                Assert.AreEqual("Test1.Class4`2", type.Name);
+                Assert.AreEqual(@"Public Class Class4(Of T1 As {Structure, IEnumerable(Of T2)}, T2 As {Class, New})", type.Syntax.Content[SyntaxLanguage.VB]);
+            }
+        }
+
+        private static Compilation CreateCompilationFromVBCode(string code)
+        {
+            var tree = VB.SyntaxFactory.ParseSyntaxTree(code);
+            var compilation = VB.VisualBasicCompilation.Create(
+                "test.dll",
+                options: new VB.VisualBasicCompilationOptions(OutputKind.DynamicallyLinkedLibrary),
+                syntaxTrees: new[] { tree },
+                references: new[] { MetadataReference.CreateFromAssembly(typeof(object).Assembly) });
+            return compilation;
+        }
+
+        #endregion
     }
 }

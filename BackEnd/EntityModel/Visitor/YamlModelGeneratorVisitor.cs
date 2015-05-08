@@ -35,8 +35,8 @@
                 Language = this.language,
             };
 
-            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(ShortDisplayFormat) } };
-            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.ToDisplayString(DisplayFormat) } };
+            item.DisplayNames = new Dictionary<SyntaxLanguage, string>() { { language, symbol.ToDisplayString(ShortDisplayFormat) } };
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { language, symbol.ToDisplayString(DisplayFormat) } };
             item.Source = VisitorHelper.GetSourceDetail(symbol);
             VisitorHelper.FeedComments(item);
 
