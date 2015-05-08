@@ -22,27 +22,32 @@ Other elements like parameters, generic parameters are not standalone *items*, t
 2. Identifiers
 --------------
 
+### 2.1 Unique Identifiers
+
+For any *item* in .NET languages, its *UID* is defined by concatenating its parent's *UID* and its own *ID* by dot.
+The *ID* for each kind of item is defined in the following sections.
+
 ### 2.1 Namespaces
 
-For a namespace, *ID* is its name and *UID* is defined by concatenating its parent namespace's *UID* and its own *ID*, separated by dot. 
+For a namespace, *ID* is its name. 
 
 > Example 2.1 *ID* and *UID* for namespace
 >
 > C#:
 > ```csharp
-> namespace System.Xml
+> namespace System.IO
 > {
 > }
 > ```
 > YAML:
 > ```yaml
-> uid: System.Xml
-> id: Xml
+> uid: System.IO
+> id: IO
 > ```
 
 ### 2.2 Types
 Types include classes, structs, interfaces, enums, and delegates.
-The definition of *ID* and *UID* of type is same as namespace.
+*ID* for a type is also its name.
 
 > Example 2.2 *ID* and *UID* for types
 > 
@@ -73,8 +78,9 @@ The definition of *ID* and *UID* of type is same as namespace.
 
 #### Nested Types
 
-Nested types are a bit different, the *ID* of a nested class if defined by concatenating the *ID* of all its containing types, separated by dot.
-The definition of *UID* is same as normal types. 
+For nested types, *ID* is defined by concatenating the *ID* of all its containing types and the *ID* of itself, separated by dot.
+
+The parent type of a nested type is its containing namespace, rather than its containing type.
 
 > Example 2.3 *ID* and *UID* for nested type
 >
@@ -98,6 +104,95 @@ The definition of *UID* is same as normal types.
 
 Members include fields, properties, methods, events.
 
+The *ID* of field, property or event is its name.
 
-#### 2.3.1 Explicit Interface Implementation
-#### 2.3.2 Operator Overloads
+> Example 2.4 *ID* and *UID* for field, property and event
+>
+> C#:
+> ```csharp
+> namespace System
+> {
+>     public sealed class String
+>     {
+>         public static readonly String Empty;
+>         public int Length { get; }
+>     }
+>
+>     public static class Console
+>     {
+>         public static event ConsoleCancelEventHandler CancelKeyPress;
+>     }
+> }
+> ```
+> YAML:
+> ```yaml
+> - uid: System.String.Empty
+>   id: Empty
+> - uid: System.String.Length
+>   id: Length
+> - uid: System.Console.CancelKeyPress
+>   id: CancelKeyPress
+> ```
+
+#### Methods
+
+The *ID* of a method are defined by its name, followed by the list of the *UIDs* of its parameters:
+```yaml
+method_name(param1,param2,...)
+```
+
+Even a method does not have parameter, its *ID* **MUST** end with parentheses.
+
+Constructor is treated as normal methods, i.e., its *ID* is the name of the type, followed by parameters. 
+
+> Example 2.5 *ID* and *UID* for method
+>
+> C#:
+> ```csharp
+> namespace System
+> {
+>     public sealed class String
+>     {
+>         public String();
+>         public String ToString();
+>         public String ToString(IFormatProvider provider);
+>     }
+> }
+> ```
+> YAML:
+> ```yaml
+> - uid: System.String()
+>   id: String()
+> - uid: System.String.ToString()
+>   id: ToString()
+> - uid: System.String.ToString(System.IFormatProvider)
+>   id: ToString(System.IFormatProvider)
+> ```
+
+#### Explicit Interface Implementation
+
+The *ID* of an explicit interface implementation (EII) member **MUST** be prefixed by the *UID* of the interface it implements, enclosed by `[]`.
+
+> Example 2.6 *ID* and *UID* for EII
+>
+> C#:
+> ```csharp
+> namespace System
+> {
+>     using System.Collections;
+>
+>     public sealed class String : IEnumerable
+>     {
+>         IEnumerator IEnumerable.GetEnumerator();
+>     }
+> }
+> ```
+> YAML:
+> ```yaml
+> - uid: "System.String.[System.Collections.IEnumerable.]GetEnumerator()"
+>   id: "[System.Collections.IEnumerable.]GetEnumerator()"
+> ```
+
+#### Operator Overloads
+
+#### Conversion Operator

@@ -539,7 +539,11 @@ module.exports = function(grunt) {
       grunt.log.write("Verifying test case (" + (index + 1) + "/" + list.length + "): " + name + "...");
 
       // Load baseline
-      var baseline = yaml.safeLoad(grunt.file.read(path + "/baseline.yml"));
+      var baseline = { error: "Not a valid YAML" };
+      try {
+        baseline = yaml.safeLoad(grunt.file.read(path + "/baseline.yml"));
+      } catch (e) {
+      }
 
       // Load test result
       var result = [];
