@@ -33,7 +33,7 @@
 </div>
 <div ng-class="{grid: !toc, 'grid-right': toc}" class="article">
   <div ng-switch="contentType">
-    <markdown-content ng-switch-when="markdown" get-map="true" src="contentPath" ng-cloak ng-hide="contentLoading" autoscroll></markdown-content>
+    <markdown-content ng-switch-when="markdown" get-map="true" ng-model="contentPath" ng-cloak ng-hide="contentLoading" autoscroll></markdown-content>
     <yaml-content ng-switch-when="yaml" content-type="{{contentType}}" get-map="true" ng-model="contentPath"
     ng-cloak ng-hide="contentLoading" autoscroll></yaml-content>
     <table ng-switch-when="toc">

@@ -6,23 +6,33 @@ angular.module('itemTypes', [])
   .value('NG_ITEMTYPES', {
     "class": {
       "Property": {
+        "id": "property",
         "name": "Property",
         "description": "Properties",
         "show": false
       },
       "Method": {
+        "id": "method",
         "name": "Method",
         "description": "Methods",
         "show": false
       },
       "Constructor": {
+        "id": "ctor",
         "name": "Constructor",
         "description": "Constructors",
         "show": false
       },
       "Field": {
+        "id": "field",
         "name": "Field",
         "description": "Fields",
+        "show": false
+      },
+      "Operator": {
+        "id": "operator",
+        "name": "Operator",
+        "description": "Operators",
         "show": false
       },
     },
@@ -34,26 +44,31 @@ angular.module('itemTypes', [])
     // ],
     "namespace": {
       "Class": {
+        "id": "class",
         "name": "Class",
         "description": "Classes",
         "show": false
       },
       "Enum": {
+        "id": "enum",
         "name": "Enum",
         "description": "Enums",
         "show": false
       },
       "Delegate": {
+        "id": "delegate",
         "name": "Delegate",
         "description": "Delegates",
         "show": false
       },
       "Interface": {
+        "id": "interface",
         "name": "Interface",
         "description": "Interfaces",
         "show": false
       },
       "Struct": {
+        "id": "struct",
         "name": "Struct",
         "description": "Structs",
         "show": false

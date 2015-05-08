@@ -16,6 +16,20 @@
       }
       return newArray;
     };
+    
+    this.getArray = function (items) {
+      if (angular.isArray(items)) {
+        return items;
+      } else {
+        var array = [];
+        for (var key in items) {
+          if (items.hasOwnProperty(key)) {
+            array.push(items[key]);
+          }
+        }
+        return array;
+      }
+    };
 
     // StartLine starts @1 to be consistent with IDE
     this.substringLine = function (input, startline, endline) {

@@ -399,6 +399,87 @@ header .navbar {
   max-width: 100%;
 }
 
+
+//========================================
+//  START Affix
+//========================================
+
+#docs-subnavbar {
+  font-size: 12px;
+}
+
+#docs-subnavbar h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+// For all the <li>
+#docs-subnavbar .nav>li>a:before {
+  color: @grey-border;
+  position: absolute;
+}
+#docs-subnavbar .nav>li>a:hover {
+  background: none;
+  color: @grey;
+}
+
+#docs-subnavbar .nav>li.active>a,
+#docs-subnavbar .nav>li.active>a:before
+{
+  color: @brand-color;
+}
+
+// For top level <li>
+#docs-subnavbar .nav>li>a {
+  padding: 5px 12px;
+  color: @grey;
+}
+#docs-subnavbar>.nav>li>a:before {
+  content: "|";
+  font-size: 16px;
+  top: 1px;
+  left: 0;
+}
+#docs-subnavbar>.nav>li.active>a,
+#docs-subnavbar>.nav>li.active>a:before
+{
+  color: @brand-color;
+  font-weight: bold;
+}
+
+// For not top level <li>
+#docs-subnavbar .nav .nav>li>a {
+  padding: 1px 15px;
+}
+#docs-subnavbar .nav .nav>li>a:before {
+  content: ">";
+  font-size: 14px;
+  top: -2px;
+  left: 5px;
+}
+
+#docs-subnavbar .nav>li>a:before,
+#docs-subnavbar .nav .nav 
+{
+  display: none;
+}
+
+// show child .nav when li.active
+#docs-subnavbar .nav>li.active>.nav,
+// show <li>'s decorator when .active
+#docs-subnavbar .nav>li.active>a:before,
+#docs-subnavbar .nav>li>a:hover:before
+{
+  display: block;
+}
+
+//========================================
+//  END Affix
+//========================================
+
 //========================================
 //  console
 //========================================

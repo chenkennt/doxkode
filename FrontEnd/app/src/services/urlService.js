@@ -49,27 +49,6 @@
       }
     };
 
-    this.setItemTypeVisiblity = function(itemTypes, items) {
-      for (var prop in itemTypes) {
-        itemTypes[prop].show = false;
-      }
-      if (!items) return itemTypes;
-      if (angular.isArray(items)) {
-        items.forEach(function (e) {
-          if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
-        });
-      } else {
-        for (var key in items) {
-          if (items.hasOwnProperty(key)) {
-            var e = items[key];
-            if (itemTypes[e.type] && !itemTypes[e.type].show) itemTypes[e.type].show = true;
-
-          }
-        }
-      }
-      return itemTypes;
-    };
-
     this.getPathInfo = function(currentPath) {
       if (!currentPath) return null;
       currentPath = normalizeUrl(currentPath);

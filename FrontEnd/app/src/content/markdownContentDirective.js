@@ -67,17 +67,64 @@
   function markdownContent(contentService, markdownService, urlService) {
     var template =
       '<div>' +
-      '<a ng-if="markdownPageModel.href" ng-href="{{markdownPageModel.href}}" class="btn btn-primary pull-right mobile-hide">' +
+      '<div ng-class="{\'col-sm-9\':affixModel, \'col-md-10\':affixModel}">' +
+      '<a ng-if="href" ng-href="{{href}}" class="btn btn-primary pull-right mobile-hide">' +
       '<!--<span class="glyphicon glyphicon-edit">&nbsp;</span>-->Improve this Doc' +
       '</a>' +
-      '<markdown src="markdownPageModel.src"></markdown>' +
-      '</div>';
+      '<article></article>' +
+      '</div>' +
+      '<div class="hidden-xs col-sm-3 col-md-2" ng-if="affixModel">' +
+      '<affix-bar title="In this article" id="docs-subnavbar" data="affixModel">' +
+      '</affix-bar>' +
+      '</div>' +
+      '</div>'
+      ;
+      
+    function loadSrc(scope, element, value) {
+      if (!value) return;
+      element.html('');
+
+      contentService.getMarkdownContent(value)
+        .then(
+        function (result) {
+          markdownService.transform(element, result);
+          // Build Affix Bar:
+          // Ignore h1, h2 as top level, h3 as leaf level
+          var affixModel = [];
+          var currentH2Item;
+          angular.forEach(element.find('h2,h3'), function(header){
+            var ele = angular.element(header);
+            if (ele.is('h2')){
+              // If is top level
+              currentH2Item = {htmlId: header.id, title:header.innerText, items:[]};
+              affixModel.push(currentH2Item);
+            } else {
+              // If is leaf level
+              if (!currentH2Item){
+                // If does not have h2 in previous section, use a default one
+                currentH2Item = {title:"Summary", items:[]};
+                affixModel.push(currentH2Item);
+              }
+              var h3Item = {htmlId: header.id, title: header.innerText};
+              currentH2Item.items.push(h3Item);
+            }
+          });
+          angular.forEach(affixModel, function(item){
+            if (item.items.length === 0) item.items = null;
+          });          
+          if (affixModel.length === 0) affixModel = null;
+          scope.affixModel = affixModel;
+        },
+        function (result) {
+          element.html(result.data);
+        }
+        );
+    }
+    
     function render(scope, element, markdownFilePath, loadMapFile) {
       if (!markdownFilePath) return;
-      
-      scope.markdownPageModel = {
-        src: markdownFilePath
-      };
+      var article = angular.element(element.find('article')[0]);
+      loadSrc(scope, article, markdownFilePath);
       var mapFilePath = markdownFilePath + ".map";
       // console.log("Start loading map file" + mapFilePath);
       if (loadMapFile) {
@@ -90,7 +137,7 @@
             for (var key in data) {
               if (data.hasOwnProperty(key)) {
                 var value = data[key];
-                scope.markdownPageModel.href = urlService.getRemoteUrl(value.remote, value.startLine);
+                scope.href = urlService.getRemoteUrl(value.remote, value.startLine);
               }
             }
           },
@@ -105,17 +152,17 @@
       replace: true,
       template: template,
       priority: 100,
-      link: function (scope, element, attrs) {
-        if (attrs.src) {
-
-          var getMap = attrs.getMap === "true";
-          var localScope = scope;
-          // render(localScope, element, attrs.src, getMap);
-          scope.$watch(attrs.src, function (value, oldValue) {
-            if (value === undefined) return;
-            render(localScope, element, value, getMap);
-          });
-        }
+      require: 'ngModel',
+      scope:{
+        getMap: "=",
+      },
+      link: function (scope, element, attrs, ngModel) {
+        var localScope = scope;
+        // render(localScope, element, attrs.src, getMap);
+        scope.$watch(function () { return ngModel.$modelValue; }, function (value, oldValue) {
+          if (value === undefined) return;
+          render(localScope, element, value, localScope.getMap);
+        });
       }
     };
   }

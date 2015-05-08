@@ -16,14 +16,13 @@
   /**
    * yamlContent Directive
    * @param  {Function} contentService
-   * @param  {Function} markdownService
    * @param  {Function} urlService
    *
    * @description Render a page with .md file, supporting try...code
    */
-    .directive('yamlContent', ['NG_ITEMTYPES', '$location', 'contentService', 'markdownService', 'urlService', 'docUtility', yamlContent]);
+    .directive('yamlContent', ['NG_ITEMTYPES', '$location', 'contentService', 'urlService', 'docUtility', yamlContent]);
 
-  function yamlContent(NG_ITEMTYPES, $location, contentService, markdownService, urlService, utility) {
+  function yamlContent(NG_ITEMTYPES, $location, contentService, urlService, utility) {
 
     function getItemWithSameUidFunction(child) {
       return function (x) {
@@ -58,12 +57,11 @@
     function expandAll(model, state) {
       if (model && model.items) {
         var items = model.items;
-        for (var key in items) {
-          if (items.hasOwnProperty(key)) {
-            var e = items[key];
-            e.showDetail = state;
-          }
-        }
+        angular.forEach(items, function(item){
+          angular.forEach(item.items, function(i){
+            i.showDetail = state;
+          });
+        });
       }
     }
     
@@ -80,7 +78,7 @@
 
         // TODO: what if items are not in order? what if items are not arranged as expected, e.g. multiple namespaces in one yml?
         var item = items[0];
-
+        var allItems;
         references = items.slice(1).concat(references || []);
         if (item.children) {
           var children = {};
@@ -90,18 +88,48 @@
               children[matched.uid] = matched;
             }
           }
-          item.items = children;
+          allItems = children;
         }
-
+        
         if (item.type.toLowerCase() === 'namespace') {
           scope.contentType = 'namespace';
-          scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.namespace, item.items);
         } else {
           scope.contentType = 'class';
-          scope.itemtypes = urlService.setItemTypeVisiblity(NG_ITEMTYPES.class, item.items);
         }
+        
+        var childrenModel = [];
+        if (allItems){
+          var displayTypes = scope.contentType === 'namespace' ? NG_ITEMTYPES.namespace : NG_ITEMTYPES.class;
+          for (var key in displayTypes){
+            if (displayTypes.hasOwnProperty(key)) {
+              var displayType = displayTypes[key];
+              var htmlId = escapeId(displayType.id);
 
+              // htmlId and title are for affix display
+              var subModel = {value: displayType, title: displayType.description, htmlId: htmlId, items: []};
+              for (var itemKey in allItems){
+                if (allItems.hasOwnProperty(itemKey)){
+                  var currentItem = allItems[itemKey];
+                  if (currentItem.type === displayType.name){
+                    // NOTE: escape ID for html
+                    // htmlId and title are for affix display
+                    currentItem.htmlId = escapeId(currentItem.uid);
+                    currentItem.title = currentItem.name;
+                    subModel.items.push(currentItem);
+                  }
+                }
+              }
+              if (subModel.items.length > 0){
+                childrenModel.push(subModel);
+              }
+            }
+          }
+        }
+        if (childrenModel.length > 0) item.items = childrenModel;
         scope.model = item;
+        // For affix:
+        var firstItem = {title: "Summary", htmlId: "article-header"};
+        scope.affixModel = [firstItem].concat(item.items);
         scope.title = item.name;
         if (loadMapFile) {
           loadMapInfo(yamlFilePath + ".map", scope.model);
@@ -216,7 +244,14 @@
       pathInfo.contentPath = '';
       return urlService.getHref(pathInfo.tocPath, '', url);
     }
-
+    
+    function escapeId(id) {
+      // html id attr only allows a-z A-Z 0-9 . : _
+      // while . : are valid selectors
+      if (!id) return id;
+      return id.replace(/[^a-zA-Z0-9_]/g, '_');
+    }
+    
     function YamlContentController($scope) {
       $scope.getViewSourceHref = getViewSourceHref;
       $scope.getImproveTheDocHref = getImproveTheDocHref;
